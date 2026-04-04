@@ -1,0 +1,1738 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Service Configuration Management (CMDB) Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish the Configuration Management Database (CMDB) as the authoritative record of configuration identity for all deployed IT assets within the Elko County Information Operations Department.
+ This policy defines what constitutes a Configuration Item (CI),
+ governs the creation,
+ maintenance,
+ and verification of CI records in the designated system of record (Redmine),
+ and establishes the enforcement mechanism by which CI record accuracy is embedded into day-to-day operational work.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A CI record is distinct from an asset record.
+ A 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ asset record answers whether a physical asset exists,
+ who owns it,
+ where it is,
+ and what its lifecycle status is.
+ A 
+\series bold
+Policy 3.08
+\series default
+ CI record answers what that asset's current configuration identity is,
+ what its operational relationships are,
+ and whether its record is complete and current.
+ Both records co-exist in Redmine and cross-reference each other via the Related Issues field,
+ but they serve different governance purposes and neither substitutes for the other.
+ An asset enters inventory under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ It becomes a CI under this policy at the time of deployment into the operational environment.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department treats CI record accuracy as an operational obligation,
+ not an administrative one.
+ A deployed asset with an incomplete or inaccurate CI record is not fully serviceable.
+ This policy establishes the mechanisms by which that standard is maintained continuously.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel and governs the creation,
+ maintenance,
+ verification,
+ and retirement of CI records for all assets with Deployed status in Redmine.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+CI types within scope include hardware assets,
+ software and application instances,
+ network infrastructure components,
+ and virtual infrastructure components —
+ any deployed asset whose configuration identity and operational relationships require tracking to support service delivery,
+ incident response,
+ problem investigation,
+ and change management.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following are outside the scope of this policy:
+ consumables and passive peripherals excluded from asset tracking under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+;
+ assets not yet deployed (those are 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ asset records awaiting CI creation at deployment);
+ active endpoint configuration state including OS version,
+ patch level,
+ and software inventory (those are owned by Comodo/XCitium as defined in Section 6.2);
+ and security baseline definitions and hardening requirements (those are owned by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+).
+ Financial controls governing asset acquisition and payment are established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and are not restated here.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy shall not govern change authorization.
+ Change authorization is owned by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy enforces the CI record update obligation that is the downstream consequence of every authorized change.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the approving authority for any modification to the CI minimum field set defined in Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that the annual physical asset audit conducted under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ incorporates the CI verification obligation defined in Section 6.5 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review and approve exceptions to CI record requirements in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall ensure that CI record creation,
+ maintenance,
+ and verification obligations are consistently applied by all IT Department personnel in accordance with this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall monitor Redmine for deployed assets whose CI records contain record deficits and shall ensure remediation obligations are tracked to completion.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that deployed assets whose Verified date exceeds the twelve (12) month threshold defined in Section 6.5 are flagged and scheduled for verification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate with the IT Director to ensure that supply chain review status under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is confirmed before CI record creation is initiated for any new asset.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel (All Tiers)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall create a CI record in Redmine for every asset at the time of deployment,
+ following confirmation that supply chain review under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is complete.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall verify that all required CI fields defined in Section 6.3 are populated accurately as a condition of work order closure for any work order in which the asset is the primary subject of active work,
+ in accordance with Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall remediate any CI record deficit discovered during a work order before closing that work order,
+ in accordance with Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall update the CI record in Redmine to reflect the post-change configuration state before or concurrent with closing any change record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ in accordance with Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall update CI records associated with emergency changes within twenty-four (24) hours of the emergency change,
+ in accordance with Section 6.6.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall not modify,
+ relocate,
+ or alter any deployed IT asset in a manner that would affect its CI record without initiating a work order through the Information Operations Department.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all Information Operations Department personnel within scope.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ CI record accuracy,
+ work order closure quality,
+ annual verification currency,
+ and change record coupling shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to create required CI records at deployment,
+ failure to remediate CI record deficits before work order closure,
+ failure to update CI records following authorized changes,
+ or failure to meet the annual verification obligations defined in this policy shall be treated as non-compliance and may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Financial Management and Procurement Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management (SCRM) and Vendor Governance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Secure Configuration Baselines and Hardening Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Problem Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits and Self-Assessment Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Work Order Structure and Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section CM-1 (Configuration Management Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section CM-2 (Baseline Configuration)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section CM-8 (System Component Inventory)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.AM-01 (Inventories of hardware managed by the organization)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.AM-02 (Inventories of software,
+ services,
+ and systems managed by the organization)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CM-1 (Configuration Management Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CM-2 (Baseline Configuration)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CM-8 (System Component Inventory)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CM-8(1) (Updates During Installation and Removal)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ BAI09 (Manage Assets)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ BAI10 (Manage Configuration)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Service Configuration Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Configuration Item Definition and Lifecycle
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A Configuration Item (CI) is any deployed IT asset whose configuration identity,
+ operational relationships,
+ and work order history require tracking to support service delivery,
+ incident response,
+ problem investigation,
+ and change management.
+ A CI record is created in Redmine at the time an asset is deployed into the operational environment.
+ CI record creation shall not precede completion of supply chain review under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The CI record shall co-exist with the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ asset record for the same physical asset and shall cross-reference it via the Related Issues field in Redmine.
+ The CI record shall be retired when the asset is decommissioned under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 System of Record Architecture
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department operates a two-layer configuration management architecture.
+ Both layers are authoritative within their respective domains.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Redmine
+\series default
+ is the designated system of record for CI identity and inventory.
+ Redmine holds configuration identity,
+ physical location,
+ lifecycle status,
+ funding source,
+ assigned user,
+ network identifiers,
+ work order linkage,
+ and annual verification date.
+ Redmine is the authoritative record of what a deployed asset is and where it belongs within the County's operational environment.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Comodo/XCitium
+\series default
+ is the designated system of record for active endpoint configuration management.
+ Comodo/XCitium holds OS version,
+ patch level,
+ software inventory,
+ and endpoint compliance state.
+ Comodo/XCitium is the authoritative source for what a deployed asset is running.
+ Reporting and compliance obligations for endpoint configuration state shall be satisfied by reference to Comodo/XCitium output.
+ Redmine CI records shall not attempt to replicate Comodo/XCitium data,
+ and population of Redmine fields shall not be used as a substitute for Comodo/XCitium compliance reporting.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Active configuration compliance —
+ including OS patch level and endpoint hardening state —
+ is enforced through Comodo/XCitium.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ defines the security baseline requirements that Comodo/XCitium enforces.
+ This policy does not restate those requirements and does not own baseline enforcement.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 CI Minimum Field Set
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following fields constitute a complete CI record in Redmine and shall all be populated for any deployed asset.
+ The obligation this policy establishes is population discipline —
+ ensuring that these fields are populated accurately and kept current —
+ not the creation of new fields beyond those defined here.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Subject (Device Name / Asset Tag)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Status
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Location and Room Number
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Date Received
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Equipment Type
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Manufacturer and Model
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Serial Number
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Assigned User (where applicable)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Device Name
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+IP Address (Ethernet and/or Wireless,
+ where applicable)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+MAC Address (Ethernet and/or Wireless,
+ where applicable)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Funding Source
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Cost
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Expected Expiration Date
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Verified (annual audit date)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Related Issues (work order linkage)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Network identity fields (IP Address and MAC Address) shall be populated for all deployed networked assets.
+ A deployed asset with Deployed status and empty network identity fields constitutes a record deficit requiring remediation.
+ Modifications to the CI minimum field set shall be approved by the IT Director.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 CI Record Accuracy —
+ Governing Principle and Work Order Closure Condition
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department treats CI record deficits as operationally equivalent to functional deficits.
+ A deployed asset with an incomplete or inaccurate CI record is not fully serviceable.
+ A work order in which that asset is the primary subject of active work shall not be closed until the record deficit is remediated.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The CI verification and remediation obligation applies when the asset is the primary subject of active work in the work order —
+ the asset being repaired,
+ configured,
+ deployed,
+ or serviced.
+ This obligation shall be restricted to the primary CI;
+ it shall not extend to assets mentioned incidentally in a work order where active work is being performed on a different asset.
+ The annual physical audit defined in Section 6.5 is the systematic mechanism for identifying and remediating record deficits on assets not recently touched by a work order.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following mechanics govern CI record accuracy enforcement:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any work order in which an asset is the primary subject shall include verification that all required CI fields defined in Section 6.3 are populated as a condition of closure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+If a technician discovers a record deficit during a work order,
+ the technician shall remediate the CI record before closing the work order.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+If remediation requires information the technician cannot obtain independently,
+ the work order shall remain open until the information is obtained and the CI record is updated.
+ Work orders shall not be closed with a known CI deficit documented and deferred.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Discovery of a CI record deficit during any work order shall be treated as a defect requiring correction,
+ not an observation to be deferred.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This principle does not create a standalone SLA or a separate monitoring obligation.
+ It embeds CI record hygiene into the work order closure standard established by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Annual CI Verification
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+CI records shall be actively verified against the deployed asset on an annual basis,
+ tied to the physical asset audit conducted under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The Verified field in Redmine shall be updated to reflect the date of verification at the time of each annual audit.
+ A deployed asset whose Verified date is more than twelve (12) months prior to the current date shall be treated as pending verification for audit purposes.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The annual physical audit is the systematic sweep for CI record accuracy across the full deployed asset population.
+ Work order closure enforcement under Section 6.4 is the continuous mechanism between audits.
+ Both mechanisms are complementary and shall operate in parallel.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 CI Record Updates and Change Management Coupling
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The coupling between this policy and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Change Management Policy) is bidirectional and mandatory.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Policy 3.08 → Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ direction
+\series default
+:
+ No CI record in Redmine shall be modified to reflect a configuration change without a corresponding authorized change record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ A CI update reflecting a configuration change without a corresponding change record constitutes a compliance failure under this policy.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ → Policy 3.08 direction
+\series default
+:
+ No change record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall be closed without a corresponding CI record update confirming that the Redmine record reflects the post-change configuration state.
+ A closed change record with an un-updated CI record constitutes a compliance failure under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Emergency changes
+\series default
+:
+ Emergency changes executed under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ emergency protocols may precede the formal change record.
+ In those cases,
+ the CI record update obligation is deferred,
+ not waived.
+ The CI record shall be updated within twenty-four (24) hours of the emergency change,
+ or by noon on the next business day,
+ whichever is later,
+ concurrent with the catch-up documentation obligation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Both timelines are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Relationship to Downstream Policies
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+CI record accuracy directly supports the operational effectiveness of the following policies.
+ The obligations defined in each relationship are stated here for clarity and shall not be construed as restatements of those policies' requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ (Operational Incident Management)
+\series default
+:
+ Incident work orders reference CI records to identify affected assets and their configuration identity.
+ An incomplete CI record at the time of an incident is an operational liability that degrades incident response speed and accuracy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ (Problem Management)
+\series default
+:
+ Problem investigations use CI records and work order history to trace failure patterns and support root cause analysis.
+ CI record accuracy and work order linkage directly support investigation quality.
+ An incomplete or inaccurate CI record may impair the Investigator's ability to establish a reliable configuration baseline for comparison.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ (Supply Chain Risk Management)
+\series default
+:
+ CI record creation shall not be initiated for any new asset until supply chain review under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is complete.
+ CI creation is a post-clearance event.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1548 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Service Delivery Feedback and Grievance Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to define how the Elko County Information Operations Department receives,
+ routes,
+ and responds to service-related feedback and grievances.
+ It establishes the authoritative definition of service quality under the Department's compliance-enforcement mandate,
+ specifies the legitimate channels through which feedback is accepted,
+ defines formal grievance pathways for end users and County departments,
+ and protects IT personnel from lateral political pressure by decoupling staff performance evaluation from end-user satisfaction with compliance outcomes.
+ This policy does not govern employment or personnel matters,
+ which are subject to County HR policies and applicable collective bargaining agreements.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel.
+ It governs service-related feedback,
+ grievances,
+ and complaints concerning service delivery,
+ technical decisions,
+ and compliance-enforcement activities conducted by IT Department personnel in the performance of their duties.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy does not govern personnel or employment complaints —
+ including allegations of misconduct,
+ harassment,
+ discrimination,
+ or ethics violations —
+ which are subject to County HR processes regardless of whether the subject of the complaint is an IT staff member.
+ The boundary between service grievances and personnel complaints is addressed in Section 6.5.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy does not alter or supersede the professional conduct standards established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Code of Ethics and Professional Conduct) or 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Standard Operating Ethos),
+ which define the mandatory conduct floor for all IT personnel and remain in full effect during all service interactions.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the primary authority for receiving,
+ evaluating,
+ and dispositioning service-related grievances brought by department heads or end users.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall solicit feedback from the County Manager at each regularly scheduled monthly meeting as a minimum cadence,
+ and may bring matters to the County Manager outside that cadence when circumstances warrant.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall receive and evaluate upward feedback from IT staff through the chain of command.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall evaluate grievances against IT personnel by reference to the compliance record,
+ the communication standards in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and the conduct standards in 
+\series bold
+Policies 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document grievance dispositions in the Department's system of record.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not be subject to lateral pressure from department heads on technical or compliance decisions;
+ service grievances against the IT Director shall be directed to the County Manager in accordance with Section 6.3.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall receive and route service-related feedback and complaints directed to the Department.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that IT personnel are aware of and consistently apply the grievance pathways defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall surface staff-sourced operational feedback to the IT Director through the established chain of command.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All IT Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall document service-related feedback received through informal channels in the relevant work order within one (1) business day in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall escalate complaints or expressions of dissatisfaction that exceed their authority to the Assistant IT Director or IT Director without delay.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not commit to operational or compliance-related changes in response to end-user or departmental pressure without authorization from the appropriate authority as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Serves as the escalation authority for department heads unsatisfied with the IT Director's disposition of a service grievance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Serves as the direct authority for complaints about the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The County Manager's role in this policy is defined by the governance structure established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the delegation framework in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall direct service-related grievances to the IT Director in writing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not use informal channels,
+ lateral communication,
+ or HR processes as substitutes for the grievance pathways defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Requests to relax or waive compliance standards are not service grievances and shall be directed through the risk management process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ not through this policy.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to the routing and documentation requirements of this policy is mandatory for all Information Operations personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with grievance routing and documentation requirements shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to route,
+ document,
+ or disposition service-related feedback in accordance with this policy may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be documented with justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+
+\series default
+ except where the exception concerns a complaint about the IT Director,
+ in which case County Manager approval is required.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Code of Ethics and Professional Conduct
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Standard Operating Ethos
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Governance and Oversight Structure
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Level Management and Metrics Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ End-User Communication Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Performance Metrics and Operational KPIs
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 244 (Counties:
+ Government)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 281A (Ethics in Government)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.OC-02 (Stakeholder Expectations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.RR-01 (Leadership Accountability)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.RR-02 (Roles,
+ Responsibilities,
+ and Authorities)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PL-4 (Rules of Behavior)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-2 (Information Security Program Leadership)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO09 (Manage Service Agreements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS02 (Manage Service Requests and Incidents)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA01 (Manage Performance and Conformance Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Relationship Management Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Service Level Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Definition of Service Quality
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department operates as a compliance-enforcement and technology governance function within Elko County.
+ The Department's mandate is to establish,
+ maintain,
+ and enforce compliance with information and technology standards,
+ and to bring non-compliant systems and practices into alignment with those standards.
+ It does not operate as a hospitality or satisfaction-driven service organization,
+ and end-user satisfaction with the outcome of a compliance decision does not constitute a measure of service quality under this mandate.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Service quality is defined by accuracy,
+ auditability,
+ and adherence to policy.
+ A technician who brings a non-compliant system into compliance clearly,
+ professionally,
+ and in accordance with the communication standards defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ has delivered service of the highest quality,
+ regardless of whether the end user found the outcome convenient or welcome.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director is accountable to the County Manager for the performance and conduct of the Department.
+ Department heads and end users are not the Department's managerial authority,
+ and their dissatisfaction with a technically correct and professionally executed compliance action does not constitute grounds for corrective action against IT personnel.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Authorized Feedback Channels
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department does not operate passive feedback collection mechanisms such as satisfaction surveys,
+ open feedback forms,
+ or suggestion systems.
+ End-user satisfaction with compliance outcomes is not an operational input to technical standards or service delivery decisions,
+ and passive feedback mechanisms of this type do not produce actionable intelligence sufficient to justify the administrative overhead or the implied premise that survey sentiment governs operational direction.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department accepts feedback through the following authorized channels:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+ The IT Director shall solicit feedback from the County Manager at each regularly scheduled monthly meeting as a minimum cadence.
+ This does not limit communication —
+ the County Manager may raise concerns,
+ complaints,
+ commendations,
+ or observations at any time through any channel,
+ and the IT Director may likewise bring matters to the County Manager outside the scheduled meeting when circumstances warrant.
+ The monthly meeting establishes the routine checkpoint;
+ it does not constrain the relationship to that interval.
+ The IT Director shall document the substance of any actionable feedback received through this channel in the Department's system of record (Redmine) and shall initiate a response or corrective action as warranted.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Work Order System and Written Correspondence
+\series default
+:
+ End users and department heads may provide service-related feedback through the designated work order system (Redmine) or in direct written correspondence addressed to the IT Director.
+ IT personnel shall document feedback received informally —
+ including verbal complaints and hallway conversations —
+ in the relevant work order in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Feedback submitted through the work order system or written correspondence shall be acknowledged by the IT Director or Assistant IT Director within five (5) business days of receipt.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Staff (Upward Feedback)
+\series default
+:
+ IT personnel shall surface operational feedback,
+ service delivery concerns,
+ and process improvement observations to their direct supervisor or the IT Director through the established chain of command.
+ Staff observations have direct operational value as the Department's primary ground-level intelligence on service delivery effectiveness and shall be actively solicited and considered by Department leadership.
+ This upward feedback channel is the Department's principal mechanism for identifying process improvements and service delivery gaps.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Grievance Pathways
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Service-related grievances —
+ defined as formal expressions of dissatisfaction with IT service delivery,
+ technical decisions,
+ or compliance-enforcement actions —
+ shall be routed exclusively through the pathways defined in this section.
+ These pathways are the only legitimate channels for service grievances.
+ Informal or lateral communications that attempt to circumvent these pathways —
+ including direct appeals to County leadership outside the defined chain,
+ back-channel pressure on IT staff,
+ or misrouting of service disputes into HR processes —
+ shall be redirected to the appropriate channel by the receiving party.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Grievance against an IT technician or staff member
+\series default
+:
+ The complainant shall submit the grievance in writing to the IT Director.
+ The IT Director shall evaluate the grievance against the compliance record,
+ the communication standards in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and the conduct standards in 
+\series bold
+Policies 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Where the grievance concerns a technically correct and professionally executed compliance action,
+ the IT Director shall document the finding,
+ close the matter,
+ and provide written notification of the disposition to the complainant.
+ Where the grievance identifies a legitimate conduct or process deficiency,
+ the IT Director shall initiate appropriate corrective action through the Department's internal performance management process.
+ Grievance dispositions shall be documented in the Department's system of record.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Grievance against the IT Director
+\series default
+:
+ The complainant shall direct the grievance to the County Manager.
+ The County Manager serves as the IT Director's administrative authority and is the appropriate party to evaluate complaints about the IT Director's decisions or conduct.
+ This pathway shall not be used as a mechanism to compel changes to compliance policy or technical standards;
+ such requests remain subject to the risk management process in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ regardless of the channel through which they are raised.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department head escalation
+\series default
+:
+ Where a department head is unsatisfied with the IT Director's written disposition of a service grievance,
+ the department head may escalate the matter to the County Manager.
+ This pathway represents the final internal escalation available for service-related disputes.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Compliance relaxation requests
+\series default
+:
+ A request by any party to relax,
+ waive,
+ or deviate from a technical standard or compliance control is not a service grievance and shall not be processed through the pathways defined in this section.
+ Such requests shall be directed to the IT Director and processed through the formal risk acceptance process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ This determination applies regardless of how the request is framed.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Staff Protection and Performance Evaluation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+IT personnel shall not be subject to negative performance evaluations,
+ formal corrective action,
+ or adverse informal treatment on the basis of end-user or departmental dissatisfaction with a compliance outcome,
+ provided the personnel member acted in accordance with the technical standards of this manual,
+ the communication standards of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and the conduct standards of 
+\series bold
+Policies 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This protection is precise in its scope.
+ It shields IT personnel from lateral political pressure to violate or circumvent compliance standards.
+ It does not shield personnel from accountability for:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Genuine conduct deficiencies,
+ including rudeness,
+ unprofessional behavior,
+ or violations of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ or 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Errors in technical execution or professional judgment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Failure to document actions in accordance with the requirements of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Failure to escalate appropriately within the chain of command as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Performance evaluations for IT personnel shall be conducted by the IT Director or Assistant IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ External pressure from department heads or end users shall not substitute for,
+ or override,
+ the Department's internal performance evaluation process.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Boundary with HR and Personnel Processes
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy governs service-related feedback and grievances only.
+ Complaints alleging employee misconduct,
+ harassment,
+ discrimination,
+ ethics violations,
+ or other employment-related matters are not service grievances and are not governed by this policy.
+ Such complaints shall be directed to the County's Human Resources function and handled in accordance with County HR policies and applicable collective bargaining agreements,
+ regardless of whether the subject of the complaint is an IT staff member.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The distinction between a service grievance and a personnel complaint shall be determined by the substance of the allegation,
+ not its framing or channel of submission.
+ A complaint that characterizes a technically correct and professionally executed compliance action as hostile,
+ inappropriate,
+ or otherwise objectionable —
+ when submitted to HR rather than through the grievance pathways in Section 6.3 —
+ remains a service grievance and shall be evaluated as such.
+ When a complaint is redirected from the HR channel to the service grievance process,
+ the IT Director shall notify HR of the routing decision and its rationale in writing.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Conversely,
+ a genuine allegation of misconduct —
+ including an alleged violation of the Code of Ethics under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ —
+ that arises in the context of a service interaction shall not be processed under this policy.
+ The IT Director shall route such allegations to HR immediately upon identification.
+ Where the allegation is directed against the IT Director,
+ the County Manager shall be notified directly and HR shall be engaged by the County Manager.
+\end_layout
+
+\end_body
+\end_document

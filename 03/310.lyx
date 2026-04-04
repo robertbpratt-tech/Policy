@@ -1,0 +1,1412 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Release and Deployment Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.10"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish the deployment mechanics by which authorized changes are packaged,
+ tested,
+ and moved to production within the Elko County Information Operations Department.
+ This policy governs how applications,
+ drivers,
+ firmware,
+ and associated documentation are sourced,
+ validated,
+ and deployed across all change categories defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ It designates the IOPS Software Repository as the authoritative and exclusive source for all deployment packages,
+ establishes the eligibility criteria that govern repository contents,
+ and defines the category-specific deployment requirements that apply to Standard,
+ Significant,
+ and Emergency changes.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy is the downstream operational partner of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Change Management Policy).
+ Where 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs the authorization decision —
+ whether a change may proceed and on what terms —
+ this policy governs what happens after that authorization is granted.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel involved in the deployment of applications,
+ drivers,
+ firmware,
+ and associated documentation to production environments within the County technology environment administered by the Information Operations Department.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All three change categories defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ —
+ Standard,
+ Significant,
+ and Emergency —
+ have distinct deployment mechanics under this policy,
+ and all are within scope.
+ Firmware deployments to network devices,
+ switches,
+ and infrastructure are within scope and shall follow the same category-based mechanics as all other deployments.
+ Device-specific deployment procedures are not prescribed by this policy;
+ those procedures are maintained in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following are outside the scope of this policy:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Change authorization is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ CCA authorization from 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is a mandatory prerequisite for all Significant and Emergency deployments under this policy but is not restated here.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CI record governance following deployment is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The CI update obligation is unchanged by this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor deployments in cloud environments that ECIO does not directly control are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Where a vendor deployment affects County-managed systems,
+ notification and CI update obligations apply as described in Section 6.9.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ The IT Director shall ensure this policy is implemented and enforced across all deployment activity within the Information Operations Department.
+ The IT Director shall ensure the IOPS Software Repository is maintained as the exclusive authorized deployment source and that the Department's test environment is established and operational.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+ The Assistant IT Director shall ensure deployment activities comply with this policy across all change categories.
+ The Assistant IT Director shall ensure the pre-deployment checklist for Emergency deployments is completed and documented before any Emergency deployment proceeds.
+ The Assistant IT Director shall oversee post-deployment verification for Significant and Emergency deployments and shall confirm that CI update obligations under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ are fulfilled within the applicable timelines.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel
+\series default
+:
+ IT Department personnel authorized with write access to the IOPS Software Repository shall ensure that only items with a corresponding Supported classification under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ are present in the repository.
+ All other IT Department personnel shall deploy exclusively from the IOPS Software Repository under all change categories.
+ No personnel shall deploy from any source other than the IOPS Software Repository regardless of urgency or authorization status.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All deployment activity within the scope of this policy shall conform to the requirements established herein.
+ Deviation from mandatory requirements designated by "shall" or "must" constitutes a policy violation and is subject to enforcement under Policy 5.01.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Exceptions to recommended practices designated by "should" require written approval from the IT Director prior to the deviation.
+ The IT Director shall document the rationale and any compensating controls in the relevant change or work order record.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+No exception process exists for the IOPS Software Repository requirement.
+ Deployment from any source other than the IOPS Software Repository is prohibited under all change categories,
+ including Emergency,
+ and shall not be authorized by any exception mechanism under this policy or 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB) Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits and Self-Assessment Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Vendor Compliance and Third-Party Assurance Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Work Order Structure and Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section CM-3 (Configuration Change Control)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SA-10 (Developer Configuration Management)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.PS-01 (Configuration management practices are established and applied)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.PS-02 (Software is maintained,
+ replaced,
+ and removed commensurate with risk)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CM-3 (Configuration Change Control)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CM-7 (Least Functionality)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SA-10 (Developer Configuration Management)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ BAI06 (Manage IT Changes)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ BAI07 (Manage IT Change Acceptance and Transitioning)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Deployment Management Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Release Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 The IOPS Software Repository
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IOPS Software Repository is the IT-controlled repository designated as the authoritative and exclusive source for all deployment packages within the scope of this policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IOPS Software Repository shall be read-only for all personnel except IT Department personnel with authorized write access.
+ No personnel shall modify,
+ add to,
+ or remove items from the repository except through the write-access process established by the IT Director.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IOPS Software Repository shall not be referred to by server path or share name in this policy or in any policy instrument.
+ References shall use the designation "IOPS Software Repository" to preserve policy validity if the repository is relocated.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Repository Eligibility
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Only applications,
+ drivers,
+ firmware,
+ and associated documentation corresponding to items with a current Supported classification on the Supported software list maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall be present in the IOPS Software Repository and eligible for deployment.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Presence in the repository without a corresponding Supported classification under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ constitutes a policy violation.
+ The Assistant IT Director shall remediate any such condition upon discovery.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director approval for adding an item to the Supported software list under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is the intake authorization gate for repository eligibility.
+ No separate intake approval process is required under this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Repository Requirement —
+ No Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Deployment from any source other than the IOPS Software Repository is prohibited under all change categories,
+ including Emergency.
+ This requirement applies regardless of urgency,
+ authorization status,
+ or the identity of the personnel directing the deployment.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Emergency category in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ authorizes expedited change authorization.
+ It does not alter,
+ waive,
+ or supersede the deployment source requirement or the Supported software list eligibility requirement established in this policy.
+ An Incident Commander's Emergency designation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ does not constitute authorization to deploy from an uncontrolled source.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Standard Deployments
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A Standard deployment shall be deployed from the IOPS Software Repository per the pre-approved Knowledge Base procedure maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The Knowledge Base procedure is the deployment control for Standard changes;
+ no staging or pilot group is required.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The deploying technician shall document the deployment within the associated work order in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The CI update obligation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ applies upon completion of the deployment.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Post-deployment verification for Standard deployments is implicit in work order closure under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Significant Deployments
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A Significant deployment shall be deployed from the IOPS Software Repository.
+ Before implementation,
+ a deployment package shall be prepared and documented within the RFC record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Staging or pilot group testing is required prior to full production deployment,
+ in accordance with the testing requirements defined in Section 6.7.
+ For Significant deployments affecting end-user systems,
+ a phased rollout —
+ pilot group before full production —
+ shall be the default approach where operationally feasible.
+ Where a phased rollout is not operationally feasible,
+ the deploying technician shall document the basis for that determination in the RFC record.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The rollback procedure shall be verified as operational before the deployment proceeds to production.
+ All deployment steps shall be documented in the RFC record.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Post-deployment verification is required before the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ PIR may be initiated.
+ The Assistant IT Director shall confirm that post-deployment verification is complete and documented in the RFC record before the PIR is opened.
+ The CI update obligation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ applies upon completion of the deployment.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Emergency Deployments
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+An Emergency deployment shall be deployed from the IOPS Software Repository.
+ No exception to this requirement applies under Emergency conditions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Before any Emergency deployment proceeds,
+ a pre-deployment checklist shall be completed and documented by the deploying technician.
+ The checklist shall confirm each of the following:
+ the deployment source is the IOPS Software Repository;
+ the package has a corresponding Supported classification under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+;
+ and the deploying technician has confirmed the target systems.
+ The Assistant IT Director shall verify that the completed checklist is documented in the catch-up RFC record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Staging is waived for Emergency deployments.
+ Post-deployment verification is required before the catch-up RFC record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ may be closed.
+ The 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ PIR serves as the post-deployment review for Emergency deployments;
+ no separate deployment review record is required.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The CI update obligation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ applies under the same twenty-four (24) hour and noon-next-business-day timeline established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Staging and Testing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department shall maintain a dedicated test environment for pre-production validation of Significant deployments.
+ The test environment shall consist of one or more virtual machines representative of production system configurations.
+ Maintenance of the test environment is a standing operational obligation within the IT Director's operational authority to establish and maintain.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Where the dedicated test environment is not applicable to a specific deployment type —
+ for example,
+ infrastructure changes that cannot be meaningfully replicated in a virtual machine environment —
+ a defined pilot group shall serve as the validation mechanism.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The criteria for test environment applicability and pilot group selection shall be documented in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The Assistant IT Director shall ensure that the relevant Knowledge Base entries are current.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Post-Deployment Verification and PIR Sequencing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Post-deployment verification is a prerequisite to initiating the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ PIR for Significant and Emergency deployments.
+ The PIR shall not be initiated until post-deployment verification confirms that the deployment completed successfully and that no immediate unintended impacts are present.
+ The 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ PIR is sufficient for both change review and deployment review purposes;
+ no separate deployment post-implementation record is required.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For Standard deployments,
+ post-deployment verification is implicit in work order closure under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.9 Vendor Cloud Deployments
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Where a vendor deployment in a cloud environment that ECIO does not directly control affects County-managed systems,
+ the IT Director or Assistant IT Director shall be notified.
+ A CI update obligation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is triggered upon such notification.
+ Vendor deployment obligations are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and are not restated here.
+\end_layout
+
+\end_body
+\end_document

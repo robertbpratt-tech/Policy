@@ -1,0 +1,1581 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Service Level Management and Metrics Reporting
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.02"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish the operational framework for monitoring,
+ measuring,
+ and reporting on the Information Operations Department's adherence to the service level commitments defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Catalog and SLA Policy).
+ This policy governs the in-flight collection of service performance data,
+ the thresholds and protocols that trigger corrective action when commitments are at risk,
+ and the reporting cadence through which performance data is surfaced to the IT Director and,
+ ultimately,
+ to the organizational performance management function defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Performance Metrics and Operational KPIs).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy is concerned with operational execution:
+ whether commitments are being met,
+ when and how deviations are detected,
+ and what happens next.
+ It does not redefine SLA targets (
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+),
+ establish the broader KPI taxonomy (
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+),
+ or govern the audit and self-assessment functions that verify long-term compliance (
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+).
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations personnel involved in service delivery,
+ triage,
+ escalation,
+ vendor coordination,
+ or performance reporting.
+ It governs:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All active work orders subject to the service level commitments established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All IT-Managed and IT-Supported assets as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ for which the Information Operations Department holds response and resolution obligations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor-Managed assets for which IT holds a referral obligation,
+ to the extent that vendor response performance is monitored under Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All performance data collected for the purpose of service level management,
+ internal reporting,
+ and upward contribution to the KPI framework in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy does not govern the collection or retention of system audit logs (
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+),
+ security event monitoring (
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+),
+ or infrastructure availability monitoring beyond its intersection with service level commitments.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall serve as the approving authority for service level performance reports and any corrective action plans arising from sustained SLA non-compliance.
+ Shall review monthly performance summary reports prepared by the Assistant IT Director.
+ Shall authorize any formal deviation from reporting cadences or data collection standards established in this policy.
+ Shall ensure that performance data generated under this policy is integrated with the quarterly KPI review process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+ Shall serve as the primary operational owner of the service level management and reporting function.
+ Shall ensure that performance data is collected continuously and accurately from the work order system and any supporting monitoring tools.
+ Shall monitor SLA adherence across all open and closed work orders no less than weekly.
+ Shall prepare and distribute the reports defined in Section 6.4.
+ Shall identify deviations meeting the thresholds defined in Section 6.3,
+ document them in the work order system,
+ and initiate the prescribed escalation or corrective action response.
+ Shall ensure that vendor SLA performance is tracked and reported in accordance with Section 6.5.
+ Shall prepare the quarterly performance data summary submitted to the IT Director for integration with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ reporting.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel (All Tiers)
+\series default
+:
+ Shall document all triage decisions,
+ reclassifications,
+ remediation milestones,
+ escalation actions,
+ and closure decisions in the work order system in sufficient detail to support accurate SLA adherence measurement.
+ Shall notify the Assistant IT Director promptly when a work order is at risk of missing a response or resolution commitment.
+ Shall cooperate with data collection and reporting activities as directed.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Department Heads
+\series default
+:
+ Shall review service level performance summaries for services used by their departments when distributed by the Assistant IT Director.
+ Shall communicate service delivery concerns to the Assistant IT Director through the work order system or direct written correspondence.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to the data collection,
+ monitoring,
+ escalation,
+ and reporting obligations defined in this policy is mandatory for all Information Operations personnel within scope.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with this policy shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to collect required performance data,
+ report deviations within the required windows,
+ or produce reports on the cadences established in Section 6.4 shall be treated as non-compliance and may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits and Self-Assessment Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Compliance Monitoring and Corrective Action Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Performance Metrics and Operational KPIs
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Vendor Compliance and Third-Party Assurance Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA:
+ Nevada Local Government Records Retention Schedule (Amended October 3,
+ 2022)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-04 (Incident response performance data are used to improve incident response)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.AT-03 (Information security performance is measured and evaluated)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-6 (Information Security Measures of Performance)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA01 (Manage Performance and Conformance Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Measurement and Reporting Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Service Level Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Performance Data Collection
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department shall maintain continuous,
+ accurate collection of service performance data as the operational foundation of this policy.
+ Performance data collection shall be systematic,
+ automated where technically supported by the designated work order system,
+ and sufficient to support the SLA adherence measurements,
+ deviation analyses,
+ and reports defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Work Order System as System of Record
+\series default
+:
+ The designated work order system (Redmine) is the authoritative source for all service level performance data.
+ IT Department personnel shall ensure that all triage completions,
+ response actions,
+ escalation events,
+ and closure decisions are recorded in the work order system with timestamps accurate to the minute.
+ No performance measurement activity shall rely on data sources that are not traceable to the work order system or a formally designated supplementary monitoring tool approved by the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data Collection Intervals
+\series default
+:
+ For work orders subject to Critical or Urgent severity commitments,
+ the Assistant IT Director shall verify adherence status no less than every four (4) business hours from triage completion.
+ For High severity work orders,
+ adherence status shall be verified no less than daily.
+ Normal and Low severity work orders shall be reviewed in aggregate no less than weekly.
+ These intervals represent minimum monitoring frequency;
+ continuous automated alerting,
+ where available,
+ shall supplement but not replace these review obligations.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Required Data Elements
+\series default
+:
+ For each closed work order,
+ the following elements shall be captured and retained to support SLA adherence measurement:
+ (a) work order identifier and submission timestamp,
+ (b) assigned severity level at triage completion and triage completion timestamp,
+ (c) response action timestamp and responding technician,
+ (d) resolution or escalation timestamp and disposition,
+ (e) any reclassifications with documented rationale,
+ (f) asset support classification (IT-Managed,
+ IT-Supported,
+ or Vendor-Managed) as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and (g) escalation chain and vendor contact timestamps where applicable.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Automated Monitoring Tools
+\series default
+:
+ Where automated monitoring tools are deployed to support service delivery,
+ the Assistant IT Director shall ensure that tool outputs are integrated with the work order system or formally reconciled against it at minimum weekly.
+ Tool configurations and data collection parameters shall be reviewed no less than annually by the Assistant IT Director and approved by the IT Director.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 SLA Adherence Monitoring
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall maintain ongoing visibility into SLA adherence across all active work orders,
+ using the performance data defined in Section 6.1 and the service level commitments established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Adherence Tracking
+\series default
+:
+ The Assistant IT Director shall maintain a current adherence view of all open work orders that are within or approaching their response or resolution windows.
+ This view shall be updated continuously from the work order system and shall be accessible to IT Department personnel for self-monitoring.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+At-Risk Identification
+\series default
+:
+ A work order shall be classified as At-Risk when 75% or more of its applicable response or resolution window has elapsed without the required action being completed.
+ At the time of At-Risk classification,
+ the assigned technician shall be notified by the Assistant IT Director and the work order status shall be flagged in the system.
+ The assigned technician shall acknowledge the At-Risk flag and provide a written status update within one (1) business hour of notification.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Breach Detection
+\series default
+:
+ A work order shall be recorded as an SLA Breach when the applicable response or resolution commitment has not been met by the deadline established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ All SLA Breaches shall be recorded in the work order system with a Breach designation,
+ the breach timestamp,
+ and the technician of record at time of breach.
+ SLA Breaches are distinct from formal escalations;
+ a work order may breach a commitment and remain under active remediation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Trend Monitoring
+\series default
+:
+ The Assistant IT Director shall review SLA adherence trends no less than monthly,
+ examining breach rates by severity level,
+ by technician,
+ by asset support classification,
+ and by service category.
+ Trend data shall be incorporated into the monthly summary report defined in Section 6.4.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Deviation Thresholds and Corrective Action Protocol
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Not all SLA deviations require the same response.
+ This section establishes the thresholds at which a deviation escalates from a work order management issue to a documented operational deficiency requiring formal action,
+ and defines the required response at each threshold.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Threshold 1 —
+ Individual Breach (Operational Response)
+\series default
+:
+ A single SLA Breach shall trigger an At-Risk review at next-business-hour by the Assistant IT Director.
+ The Assistant IT Director shall document the cause in the work order record and determine whether the breach resulted from (a) resource or workload conditions,
+ (b) a process or triage failure,
+ (c) a vendor response gap,
+ or (d) an approved exception.
+ No formal corrective action plan is required for an isolated breach,
+ but the cause documentation shall be retained and counted toward threshold calculations below.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Threshold 2 —
+ Severity-Weighted Breach Rate (Formal Review)
+\series default
+:
+ When the SLA breach rate for any individual severity level exceeds ten percent (10%) of all work orders at that severity level within any rolling thirty (30) calendar day period,
+ the Assistant IT Director shall initiate a formal review.
+ The formal review shall be documented in writing,
+ completed within five (5) business days of threshold detection,
+ and submitted to the IT Director.
+ The review shall identify systemic causes,
+ affected services or personnel,
+ and recommended remediation.
+ The IT Director shall approve or direct modifications to the recommended remediation within five (5) business days of receipt.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Threshold 3 —
+ Sustained Non-Compliance (Corrective Action Plan)
+\series default
+:
+ When a formal review under Threshold 2 identifies the same root cause for the second consecutive thirty-day period,
+ or when the breach rate for any severity level exceeds twenty percent (20%) in any single thirty-day period,
+ a formal Corrective Action Plan (CAP) shall be initiated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The CAP shall be assigned to the Assistant IT Director,
+ approved by the IT Director,
+ and tracked to closure.
+ Open CAPs shall be reported in the monthly performance summary defined in Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Vendor-Specific Deviation
+\series default
+:
+ When a vendor governing an IT-Supported asset fails to meet contracted SLA terms and the failure results in an IT breach of the referral or escalation commitment defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the Assistant IT Director shall document the vendor failure separately from the IT breach record.
+ Vendor performance data shall be maintained as defined in Section 6.5.
+ Sustained vendor SLA failures shall be escalated to the vendor compliance framework under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Service Level Reporting
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department shall produce and distribute service level performance reports on the following cadences,
+ with the defined content and distribution.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Weekly At-Risk and Open Ticket Summary
+\series default
+:
+ The Assistant IT Director shall produce a brief internal summary each week identifying all open work orders classified as At-Risk,
+ all open SLA Breaches in active remediation,
+ and any Threshold 2 formal reviews in progress.
+ Distribution is internal to IT Department personnel.
+ This report is an operational tool and shall be retained as a transitory record until no longer administratively useful,
+ in accordance with applicable retention schedules.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Monthly Performance Summary Report
+\series default
+:
+ The Assistant IT Director shall produce a formal Monthly Performance Summary Report and submit it to the IT Director no later than the fifth (5th) business day of the following month.
+ This report shall include,
+ at minimum:
+ (a) total work orders opened and closed by severity level;
+ (b) SLA compliance rate by severity level,
+ expressed as a percentage of work orders meeting both response and resolution commitments;
+ (c) breach count and breach rate by severity level;
+ (d) open Corrective Action Plans and their current status;
+ (e) vendor SLA performance summary as defined in Section 6.5;
+ (f) Recurring Ticket analysis as defined in Section 6.6;
+ and (g) any notable trends or anomalies requiring IT Director attention.
+ The IT Director shall review and acknowledge each Monthly Performance Summary Report within five (5) business days of receipt.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Quarterly Contribution to KPI Framework
+\series default
+:
+ No later than ten (10) business days following the close of each calendar quarter,
+ the Assistant IT Director shall prepare and submit to the IT Director a Quarterly Service Level Performance Summary for integration with the departmental KPI review process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This summary shall aggregate the three preceding monthly reports and provide trend analysis across the quarter for all service level KPIs identified in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ that are sourced from service level management data.
+ The IT Director shall include this summary in the quarterly KPI review.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+On-Request Reporting
+\series default
+:
+ The IT Director may request performance reports outside the standard cadences for any purpose,
+ including audit preparation,
+ vendor negotiations,
+ budget planning,
+ or executive presentation.
+ The Assistant IT Director shall produce requested reports within the timeframe specified by the IT Director,
+ not to exceed five (5) business days for standard compilation requests.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Report Format and Retention
+\series default
+:
+ All formal reports produced under this section shall be stored in the designated system of record (Redmine) and retained in accordance with the Nevada Local Government Records Retention Schedule (for a minimum of three (3) years) from the date of production.
+ Report formats shall be reviewed annually by the Assistant IT Director for accuracy and utility,
+ with proposed format changes submitted to the IT Director for approval.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Vendor SLA Performance Monitoring
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For all IT-Supported and Vendor-Managed assets governed by a vendor contract that includes defined service level terms,
+ as required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.6,
+ the Information Operations Department shall maintain active monitoring of vendor adherence to those terms.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Vendor Performance Tracking
+\series default
+:
+ The Assistant IT Director shall maintain a vendor SLA performance record for each IT-Supported and Vendor-Managed asset with contractual service level terms.
+ This record shall be maintained in the IT Asset Catalog entry for the applicable asset in Redmine and shall capture:
+ (a) contracted response and resolution commitments;
+ (b) each vendor escalation event,
+ including the timestamp IT initiated contact,
+ the timestamp vendor acknowledged,
+ and the timestamp vendor resolved or reported status;
+ and (c) a running compliance calculation for each vendor across the current contract period.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Vendor Breach Recording
+\series default
+:
+ A vendor SLA breach shall be recorded when a vendor fails to meet a contracted response or resolution commitment.
+ Vendor breaches are separate from IT SLA breaches but shall be included in the monthly performance summary required by Section 6.4.
+ Vendor breach records shall be preserved for the duration of the applicable contract plus three (3) years and shall be made available to the IT Director and,
+ where applicable,
+ to the vendor compliance review process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Contract Renewal Input
+\series default
+:
+ No later than ninety (90) calendar days prior to any contract renewal,
+ the Assistant IT Director shall prepare a vendor SLA performance summary for IT Director review.
+ This summary shall inform vendor compliance evaluation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and shall be retained as part of the contract renewal documentation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Contracts Without Defined SLA Terms
+\series default
+:
+ For existing contracts that do not include defined service level terms,
+ as identified under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.6,
+ the Assistant IT Director shall document vendor response and resolution performance by extracting and analyzing all available vendor communication timestamps,
+ ticket histories,
+ and resolution logs currently held within the work order system.
+ This documentation shall be used to support SLA negotiation at renewal.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Recurring Ticket Analysis and Upward Reporting Integration
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Recurring Ticket Identification
+\series default
+:
+ Consistent with 
+\series bold
+Policy 
+\series default
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ a work order shall be flagged as a Recurring Ticket when the same user experiences the same issue within any rolling ninety (90) calendar day window and a prior work order for that issue was closed as resolved.
+ The Assistant IT Director shall review the work order system monthly to identify recurring ticket patterns and shall ensure that all Recurring Tickets are flagged in the system.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Root Cause Assignment
+\series default
+:
+ Each Recurring Ticket flag shall trigger assignment of a root cause determination by the Assistant IT Director or delegated technician.
+ Root cause determinations shall be documented in the work order record within five (5) business days of the Recurring Ticket flag and shall classify the cause as one of the following:
+ (a) user training or documentation gap,
+ (b) unresolved underlying technical issue,
+ (c) process failure,
+ or (d) environmental or infrastructure condition.
+ Root cause classifications shall be reported in the Monthly Performance Summary.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Upward Reporting to Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+:
+ The monthly and quarterly reports produced under Section 6.4 constitute the primary data feed from this policy into the organizational performance management function governed by 
+\series bold
+Policy 5.05
+\series default
+.
+ The following service level KPIs defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ are sourced from this policy's data collection and reporting activities:
+ SLA compliance rate;
+ Recurring Ticket Ratio;
+ Mean Time to Repair/Recovery (MTTR);
+ and first contact resolution rate.
+ The Assistant IT Director shall ensure these values are accurately derived from the work order system and accurately reported in the quarterly contribution required by Section 6.4.
+ No separate data collection process for these KPIs shall be established outside this policy;
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ reporting shall draw from the authoritative values produced here.
+\end_layout
+
+\end_body
+\end_document

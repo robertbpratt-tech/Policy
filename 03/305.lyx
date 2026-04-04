@@ -1,0 +1,2076 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Service Request Fulfillment Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.05"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to define the complete lifecycle of work order management within the Elko County Information Operations Department,
+ from initial intake through authorized closure.
+ This policy establishes the work order as the non-negotiable unit of accountability for all IT work,
+ regardless of origin,
+ and defines the mandatory requirements for intake routing,
+ triage,
+ authorization,
+ execution,
+ documentation,
+ and closure across all categories of IT activity.
+ It further codifies the labor ceiling framework for Deprecated assets referenced in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel and governs all work performed by the Department,
+ whether reactive (user-submitted requests) or proactive (IT-initiated tasks).
+ No work performed by IT Department personnel that constitutes an actionable task is exempt from work order requirements,
+ regardless of the channel through which the work was identified or initiated.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy does not redefine the service level commitments,
+ asset lifecycle classifications,
+ or triage severity framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ nor the performance monitoring and reporting obligations established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ nor the communication standards established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ nor the feedback and grievance framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ All of those policies remain in full effect and are incorporated by reference where applicable.
+ The work order operational standards defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ govern the technical anatomy of work orders —
+ field definitions,
+ status workflows,
+ category taxonomy,
+ and the terminal closure state —
+ and are incorporated by reference throughout this policy.
+ Where this policy establishes procedural mandates,
+ 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ provides the operational detail for executing them.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the approving authority for IT-initiated work orders requiring Director-level authorization as defined in Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct disposition reviews for Deprecated assets flagged under the labor ceiling framework defined in Section 6.5 and shall issue written disposition decisions within the timeframes specified therein.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize continued remediation beyond the standard labor ceiling by written notation in the work order,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review emergency exception work orders in aggregate no less than quarterly in accordance with Section 6.8.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall ensure that work order intake,
+ triage,
+ and documentation standards are consistently applied by all IT personnel in accordance with this policy and 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall monitor the work order queue for compliance with triage timeliness obligations defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that Deprecated asset trigger calculations are maintained and that flagged assets are escalated to the IT Director within the timeframes defined in Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that emergency exception work orders are created and acknowledged within the timeframes defined in Section 6.8.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct monthly audits of work order closure quality and report findings to the IT Director.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel (All Tiers)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall create a work order for every actionable task,
+ without exception,
+ regardless of task origin or channel of identification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall adhere to the intake,
+ triage,
+ documentation,
+ and closure standards defined in this policy and 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall flag Deprecated assets meeting objective trigger thresholds,
+ or submit written technical assessments through the Technician Judgment Pathway,
+ as defined in Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document emergency actions and create catch-up work orders within the timeframes defined in Section 6.8.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Personnel and Department Heads
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall utilize the designated work order system as the primary and initial method for submitting all service requests.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall route walk-in and telephone requests to the work order system in accordance with Section 6.2 when directed to do so by IT staff.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall respond to IT requests for additional information within five (5) consecutive business days to prevent work order closure under the provisions of Section 6.4.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all Information Operations personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with work order creation,
+ documentation,
+ triage,
+ and closure obligations shall be assessed through the service level reporting process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to create required work orders,
+ document actions within work orders,
+ or meet closure standards without documented justification shall be treated as non-compliance and may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Standard Operating Ethos
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Level Management and Metrics Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ End-User Communication Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Delivery Feedback and Grievance Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits and Self-Assessment Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Work Order Structure and Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NAC 239.155 (Retention and Disposition of Local Government Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071715 (Work Orders)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SI-12 (Information Management and Retention)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.PO-01 (Policy Establishment)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.AM-01 (Hardware Inventories)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CM-8 (System Component Inventory)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ MA-2 (Controlled Maintenance)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SA-22 (Unsupported System Components)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ BAI09 (Manage Assets)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS02 (Manage Service Requests and Incidents)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Service Request Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Work Order as Universal Requirement
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The work order is the non-negotiable unit of accountability for all work performed by the Information Operations Department.
+ A work order shall be created for every actionable task,
+ without exception.
+ This obligation applies regardless of whether the work is reactive or proactive,
+ regardless of the channel through which the work was identified or requested,
+ and regardless of the estimated duration or complexity of the task.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+No IT work shall be performed,
+ and no commitment to perform IT work shall be made,
+ without an associated work order.
+ The work order is the authoritative record of why a task was undertaken,
+ who authorized it,
+ what was done,
+ and how it was resolved.
+ The absence of a work order for completed work constitutes a documentation failure regardless of the operational outcome.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The creation of a work order indicates that a request has been submitted to the IT Department for evaluation.
+ It does not guarantee acceptance or execution.
+ Work orders that fall outside the scope of IT responsibilities,
+ that are submitted for Unsupported assets,
+ or that cannot be resourced within current operational capacity shall be dispositioned in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Intake and Channel Routing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The designated work order system (Redmine) is the authoritative intake channel for all service requests.
+ Requests received through any other channel shall be routed to the work order system immediately,
+ and in all cases no later than one (1) business hour following the receipt of the request or the initiation of the task,
+ whichever occurs first.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Walk-in requests
+\series default
+:
+ When a County employee presents a request in person,
+ the receiving IT staff member shall direct the requester to submit the request through the work order system.
+ Where the requester is unable to do so,
+ the IT staff member shall create the work order on the requester's behalf,
+ ensuring that the Requested By field accurately identifies the actual requester in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Telephone requests
+\series default
+:
+ Requests received by telephone shall be handled in the same manner as walk-in requests.
+ The IT staff member shall create a work order concurrent with or immediately following the call and shall document the substance of the conversation in the work order notes in accordance with the out-of-band summarization requirements of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.1.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Email and informal digital communications:
+ Requests received by email or other informal digital channels shall be routed to the work order system.
+ The communication shall be summarized in the work order notes in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+In all cases,
+ the work order is the record of the request.
+ Channel acknowledgment to the requester —
+ including verbal or informal confirmation —
+ does not substitute for work order creation.
+ IT staff shall not begin work on a request prior to work order creation except as provided under the emergency exception in Section 6.8.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 IT-Initiated Work Orders
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department regularly initiates work that is not triggered by a user request.
+ This includes infrastructure maintenance,
+ proactive upgrades,
+ compliance remediations,
+ internal projects,
+ and any other IT-driven activity that constitutes actionable work.
+ All IT-initiated work requires a work order,
+ and all IT-initiated work orders shall be designated using the Internal Project checkbox as defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The Internal Project designation is mandatory for all IT-initiated work without exception.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Authorization requirements for IT-initiated work orders are as follows:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Routine IT-initiated tasks
+\series default
+ —
+ including scheduled maintenance,
+ standard configuration updates,
+ and minor proactive remediations —
+ may be authorized by the assigned technician in accordance with their defined role authority under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The basis for authorization shall be documented in the work order at the time of creation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Non-routine or significant IT-initiated tasks
+\series default
+ —
+ including infrastructure changes,
+ new deployments,
+ system decommissions,
+ or any task that materially alters the County's operational technology environment —
+ shall be authorized by the Assistant IT Director or IT Director prior to work commencement.
+ The authorizing official's name and the basis for authorization shall be documented in the work order before work begins.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Project-level IT-initiated work
+\series default
+ —
+ as determined by scope,
+ resource requirements,
+ or duration —
+ shall additionally be subject to the project management requirements of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Triage and Authorization
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All work orders shall undergo IT-side triage prior to the commencement of active work,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.3.
+ Triage confirms or reclassifies the severity level,
+ validates scope,
+ identifies the applicable asset support classification,
+ and initiates or queues the appropriate response.
+ Work shall not begin on a work order until triage is complete.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Where a submitted work order lacks sufficient information to complete triage,
+ the assigned technician or queue reviewer shall document the triage attempt,
+ specify the information required,
+ and notify the requester that more information is needed.
+ The work order shall remain in Queued status for the duration of this pending information period.
+ Service level clocks shall be paused and shall resume upon receipt of the required information from the requester.
+ Work orders that remain without requester response for five (5) consecutive business days shall be closed by the assigned technician or queue reviewer,
+ with closure rationale documented in the work order.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Waiting for User status,
+ as defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ applies during the active execution phase of a work order when an IT-side action cannot proceed due to a user-side dependency —
+ not during triage.
+ IT staff shall apply Waiting for User status in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ when that condition is encountered after triage and work commencement.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Triage for Unsupported assets shall result in immediate closure with a documented replacement referral,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.2.
+ No remediation shall be performed.
+ Triage for Deprecated assets shall include confirmation of the asset's lifecycle status and shall initiate the labor ceiling monitoring obligations defined in Section 6.5.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Deprecated Asset Labor Ceiling
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department operates on the principle that unreliable tools are replaced rather than indefinitely maintained.
+ For Deprecated assets —
+ those already formally identified for replacement —
+ this principle governs remediation decisions.
+ The Department's obligation is to keep the user functional for the duration of the replacement window,
+ not to restore a failing asset to full health.
+ Where an asset demonstrates a pattern of failure that undermines that reliability,
+ the appropriate response is to accelerate replacement,
+ not to continue investing remediation labor.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This framework operates through one objective trigger and a technician judgment pathway.
+ Either activates the IT Director disposition review process.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Objective Trigger —
+ Incident Frequency
+\series default
+:
+ A Deprecated asset shall be flagged for IT Director disposition review when it generates five (5) or more reactive work orders within the same category within any rolling ninety (90) calendar day window.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The same-category requirement is essential.
+ Five or more reactive tickets across different categories may indicate a heavily utilized asset.
+ Five or more within the same category indicates a specific,
+ repeating failure pattern in that functional dimension.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Tickets in different categories do not aggregate toward this trigger,
+ even if the total exceeds five.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+For purposes of this trigger,
+ reactive work orders are those submitted in response to asset failures or degradation,
+ as distinct from IT-initiated maintenance or proactive work orders.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Technician Judgment Pathway
+\series default
+:
+ The assigned technician may initiate a disposition review for any Deprecated asset at any time,
+ independent of whether the objective trigger has been crossed.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The technician shall enter a written technical assessment in the work order record identifying the specific observations,
+ failure patterns,
+ or reliability concerns supporting the recommendation.
+ Qualitative characterizations without supporting observations do not satisfy this requirement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+This pathway is the primary mechanism of this framework.
+ Reliability failure does not always express itself in countable tickets —
+ it expresses itself in whether the asset can be depended upon.
+ That judgment,
+ when documented,
+ is sufficient basis for a disposition review.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall issue a written disposition decision within five (5) business days of the assessment being entered in the work order record.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director Disposition Review
+\series default
+:
+ When a Deprecated asset is flagged under either mechanism,
+ the Assistant IT Director shall notify the IT Director within one (1) business day,
+ with a summary of the trigger conditions or technician assessment and the relevant work order history.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall issue a written disposition decision within five (5) business days of notification,
+ except where the Technician Judgment Pathway specifies its own review window above.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The disposition decision shall be one of the following:
+ (a) authorize replacement acceleration;
+ (b) authorize continued remediation beyond the standard labor ceiling in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.2,
+ with documented rationale;
+ or (c) determine that the existing replacement timeline remains appropriate and direct that remediation continue within existing parameters.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All disposition decisions shall be documented in the relevant work order and in the IT Asset Catalog entry for the asset.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Proximity-to-Deadline Standard
+\series default
+:
+ Deprecated assets with an established replacement deadline within thirty (30) calendar days of the date of triage shall be subject to a restricted remediation standard.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Remediation shall be limited to maintaining basic operational capability sufficient for the user to perform their assigned job function.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Full trigger framework analysis is not required for assets already imminently scheduled for replacement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The assigned technician shall inform the user of the replacement timeline and advise of any available interim workarounds.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exclusions from Disposition Decisions
+\series default
+:
+ The following factors are explicitly excluded from consideration in any disposition decision made under this framework.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Sunk cost
+\series default
+:
+ Prior investment in consumables,
+ supplies,
+ parts,
+ or remediation labor is not a factor.
+ Disposition shall be evaluated on the basis of forward-looking operational analysis only.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+End-user workflow disruption and preference
+\series default
+:
+ If the user can perform their assigned job function,
+ the operational standard is met.
+ User preferences regarding specific equipment shall not influence IT disposition decisions.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Execution and Documentation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Once a work order has been triaged,
+ authorized,
+ and assigned,
+ the assigned technician shall execute the work in accordance with the scope defined in the work order and the service level commitments defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ All actions taken during the lifecycle of a work order shall be documented in the Notes section in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and shall be entered into the work order system within twenty-four (24) hours of each action taken,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.4.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Documentation shall be specific and sufficient to reconstruct the work performed by a subsequent reviewer who was not present.
+ This standard is not aspirational —
+ it is the minimum required to support resolution audits,
+ continuity across technicians,
+ SLA adherence measurement under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the broader reporting obligations of the Department.
+ Required documentation elements include,
+ at minimum:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Troubleshooting steps taken and their outcomes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Configuration changes made,
+ with before and after states where applicable.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+User communications summarized in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any escalations,
+ their rationale,
+ and their outcomes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The basis for any reclassification of severity or scope.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Where a user has transmitted Criminal Justice Information (CJI),
+ Personally Identifiable Information (PII),
+ or credentials into a work order,
+ the assigned technician shall immediately execute the information spillage protocols defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.7.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The use of Private Notes shall comply with the constraints defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.1.
+ Private Notes are not a substitute for standard documentation and shall not be used to conceal routine work activity from the record.
+ Subtasks,
+ related issues,
+ asset linkages,
+ and checklist items shall be maintained in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ throughout the work order lifecycle.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Closure Standards
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A work order shall not be closed until the work is complete,
+ the resolution is documented,
+ and the appropriate closure status has been applied in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The terminal closure state for confirmed,
+ properly completed work is Resolution Confirmed,
+ as defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Resolution Confirmed seals the work order record.
+ Any future work on the same asset or issue requires a new work order.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Prior to applying any closed status,
+ the assigned technician shall ensure that:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All actions taken are documented in the Notes section.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The resolution or disposition is stated clearly and completely.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Applicable assets are linked via the Related Issues field.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The user has been notified of the closure or disposition in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Where user confirmation is required,
+ the Reached for Confirmation checkbox has been applied and the user's response documented.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Closure status selection is not discretionary —
+ it is a data element used in performance reporting under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and shall accurately characterize the terminal outcome of the work.
+ The available closure statuses and their definitions are established in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Work orders closed due to requester non-response shall have the five-day notification requirement documented prior to closure,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.3 and Section 6.4 of this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Emergency Exception
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When an operational emergency requires immediate IT action before a work order can be created,
+ the assigned technician or responding IT staff member may proceed with emergency action prior to work order creation.
+ This exception is narrow.
+ It applies only when the time required to create a work order before acting would materially extend the duration or severity of the impact.
+ It does not represent a general relaxation of the work order requirement.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The emergency exception suspends the sequence;
+ it does not eliminate the requirement.
+ A work order shall be created as soon as operationally practicable and in all cases no later than one (1) business hour following the initiation of emergency action or the conclusion of the immediate emergency phase,
+ whichever is earlier.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Work orders created under this exception shall document:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The nature of the emergency and the specific conditions that justified bypassing standard work order creation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All actions taken prior to work order creation,
+ with the most precise timestamps recoverable.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A notation in the work order that the emergency exception was invoked.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The acknowledgment of the Assistant IT Director,
+ which shall occur within one (1) business day of work order creation.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The On-Call checkbox defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall be applied to all work orders created in connection with after-hours emergency response for statistical tracking purposes.
+ The IT Director shall review emergency exception work orders in aggregate no less than quarterly.
+ Patterns of emergency exception usage inconsistent with the narrow criteria defined above shall be addressed as a compliance matter under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_body
+\end_document

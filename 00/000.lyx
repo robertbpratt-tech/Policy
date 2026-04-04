@@ -1,0 +1,408 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letter
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Abstract / Executive Summary
+\end_layout
+
+\begin_layout Section*
+Abstract
+\end_layout
+
+\begin_layout Standard
+The Elko County Information Operations Policy Manual (maintained as the master 
+\shape italic
+Policy_Manual.lyx
+\shape default
+ file) is the 
+\series bold
+designated Authoritative System of Record for all governance controls
+\series default
+,
+ including the departmental security and service management standards defined herein.
+ It establishes the mandatory frameworks required to ensure consistency,
+ accountability,
+ and compliance with applicable laws,
+ regulations,
+ and industry standards across the County's technology landscape.
+\end_layout
+
+\begin_layout Section*
+Executive Summary
+\end_layout
+
+\begin_layout Standard
+The policies contained herein are 
+\series bold
+administratively mandatory
+\series default
+ and align the Department’s strategic objectives with statutory requirements and industry control frameworks.
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+Compliance Alignment & Order of Precedence
+\end_layout
+
+\begin_layout Standard
+In accordance with 
+\series bold
+Policy
+\series default
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the controls in this manual align with the following frameworks,
+ listed in order of authority:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Nevada Revised Statutes (NRS)
+\series default
+:
+ Chapter 239 (Public Records),
+ Chapter 205 (Computer Crimes),
+ Chapter 603A (Security of Personal Information),
+ and other applicable provisions.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Nevada Records Management
+\series default
+:
+ Local Government Records Management Program and mandatory retention schedules (including system log retention).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Law Enforcement Compliance
+\series default
+:
+ FBI CJIS Security Policy Version 6.0.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Strategic Risk
+\series default
+:
+ NIST Cybersecurity Framework (CSF) 2.0.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Security Controls
+\series default
+:
+ NIST SP 800-53 Revision 5 (Security and Privacy Controls for Information Systems and Organizations).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Risk Management
+\series default
+:
+ NIST SP 800-37 Revision 2 (Risk Management Framework).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Incident Response
+\series default
+:
+ NIST SP 800-61 Revision 3 (Computer Security Incident Handling Guide).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Workforce
+\series default
+:
+ NIST SP 800-181 Revision 1 (NICE Workforce Framework for Cybersecurity) and SFIA 9.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Governance
+\series default
+:
+ COBIT 2019 (Governance and Management Objectives).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Service Management
+\series default
+:
+ ITIL v4 (Service Value System and Practices).
+\end_layout
+
+\begin_layout Subsection*
+Authority and Scope
+\end_layout
+
+\begin_layout Standard
+This manual,
+ alongside the procedural library maintained in the System of Engagement (Redmine),
+ serves as the primary reference for governance,
+ operational decision-making,
+ audit defense,
+ and interdepartmental service level agreements.
+\end_layout
+
+\begin_layout Standard
+Compliance with these policies is 
+\series bold
+mandatory
+\series default
+ for:
+\end_layout
+
+\begin_layout Enumerate
+All Elko County Information Operations personnel.
+\end_layout
+
+\begin_layout Enumerate
+All County employees,
+ contractors,
+ and vendors who access,
+ administer,
+ or support County information systems,
+ infrastructure,
+ or data governed by the Information Operations Department.
+\end_layout
+
+\begin_layout Standard
+Deviations from these policies shall be managed through the formal exception process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy and Documentation Formatting Standards) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights).
+\end_layout
+
+\end_body
+\end_document

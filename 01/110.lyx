@@ -1,0 +1,1205 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+IT Financial Management and Procurement Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:1.10"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish mandatory governance and internal controls for the financial stewardship and procurement of Elko County technology resources.
+ This policy enforces a strict separation between 
+\series bold
+Technical Authority
+\series default
+ (validation of need,
+ compatibility,
+ lifecycle impact,
+ inventory integration,
+ and security) and 
+\series bold
+Financial Authority
+\series default
+ (budget verification and lawful purchasing execution).
+ This separation is required to prevent unauthorized technology acquisition (“Shadow IT”),
+ ensure value realization,
+ and maintain full auditability of public funds in accordance with Nevada Revised Statutes.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all technology-related financial transactions conducted by any Elko County entity,
+ department,
+ or elected office,
+ regardless of funding source or purchasing mechanism.
+ This includes,
+ but is not limited to:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Hardware,
+ software,
+ and infrastructure procurement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Cloud services (SaaS,
+ IaaS,
+ PaaS),
+ subscriptions,
+ renewals,
+ and auto-renewals.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Consulting,
+ support,
+ and managed service contracts.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Technology purchases made via Departmental Purchase Cards (P-Cards),
+ regardless of the funding source.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Grant-funded technology acquisitions and renewals.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Technical Approval
+\series default
+:
+ Shall act as technical authority and shall approve technical specifications,
+ security requirements,
+ and lifecycle/architecture impact for all technology purchases prior to the obligation of funds,
+ execution of purchasing actions,
+ or acceptance of contract terms.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Vendor Governance
+\series default
+:
+ Shall serve as the primary owner for County IT vendor technical standards,
+ security requirements,
+ and technical dispute escalation activities delegated to the Information Operations Department.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Delegation
+\series default
+:
+ Shall designate technical approvers only through 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority) and shall ensure such delegations are documented.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Workflow Execution
+\series default
+:
+ Shall execute day-to-day procurement workflow tasks (e.g.,
+ requisitions,
+ tracking,
+ receiving coordination) as directed by the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Audit Readiness
+\series default
+:
+ Shall maintain procurement tracking artifacts required for audit and reconciliation,
+ including the linkage of purchases to requisitions,
+ receiving records,
+ work orders/tickets,
+ project codes,
+ and inventory/CMDB entries.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Fiscal Affairs (Financial Authority)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Verification
+\series default
+:
+ Shall verify budget availability and execute purchasing and payment activities in accordance with applicable County procurement rules and NRS 332.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Gatekeeper Function
+\series default
+:
+ Shall not process technology invoices,
+ reimbursements,
+ or payment requests that lack documented Technical Approval from the IT Director or a formally delegated technical approver.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads / Elected Offices
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Requirement Definition
+\series default
+:
+ Shall define business requirements and coordinate with the Information Operations Department for technology needs.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Restriction
+\series default
+:
+ Shall not negotiate with technology vendors,
+ authorize technology procurement,
+ or accept/execute technology contract terms (including click-through terms,
+ EULAs,
+ MSAs,
+ SOWs,
+ renewals,
+ or auto-renewals) without Information Operations Department review and documented Technical Approval.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all County technology procurement and technology-related financial activity.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance shall be assessed through procurement review activities,
+ audit support activities,
+ and the annual policy review process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Non-compliance may result in corrective actions defined under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation and Enforcement Framework).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Emergency Procurement
+\series default
+:
+ Purchases immediately necessary to protect life,
+ safety,
+ or critical infrastructure may proceed without prior Technical Approval only when delay would materially increase harm.
+ Such procurements shall be reported to the IT Director and Fiscal Affairs within twenty-four (24) hours and shall undergo post-incident technical review,
+ inventory/CMDB capture,
+ and documentation for audit.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Standing Exceptions
+\series default
+:
+ Standing or permanent exceptions to this policy shall be documented with justification and approved in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Code of Ethics and Professional Conduct
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Governance and Oversight Structure
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management (SCRM) and Vendor Governance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB) Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Vendor Compliance and Third-Party Assurance Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 332 (Purchasing:
+ Local Governments)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section 5.1.1.5 (Private Contractor User Agreements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section Appendix H (CJIS Security Addendum / Certification)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.RR-03 (Resource Allocation)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.SC-06 (Supply Chain Due Diligence)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ AC-5 (Separation of Duties)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-3 (Information Security and Privacy Resources)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SA-2 (Allocation of Resources)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SA-4 (Acquisition Process)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SR-3 (Supply Chain Controls and Processes)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO06.01 (Manage Finance and Accounting)
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 The Technical–Fiscal Handshake
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Elko County shall employ a mandatory two-step validation for all technology spending:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Technical Approval (Information Operations Department)
+\series default
+:
+ Validation that the request meets County standards.
+ Technical Approval shall be valid only when recorded as a distinct approval status within the Department's designated System of Record (CMDB/Service Desk).
+ Email correspondence or verbal assent shall not constitute Technical Approval.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Financial Approval (Fiscal Affairs)
+\series default
+:
+ Validates budget availability and ensures purchasing actions comply with applicable procurement requirements (including competitive bidding thresholds and required documentation).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Restrictions
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+A budget line item does not constitute authorization to procure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Fiscal Affairs shall not process payment without documented Technical Approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Information Operations Department shall not integrate,
+ support,
+ or onboard technology resources that were acquired without documented Technical Approval.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Procurement Controls and “Shadow IT” Prohibition
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Centralized Procurement
+\series default
+:
+ All County software,
+ hardware,
+ and cloud subscriptions shall be procured through the Information Operations Department to ensure security review,
+ asset tagging,
+ license compliance,
+ and inventory/CMDB integration.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+P-Card Restrictions
+\series default
+:
+ The use of departmental P-Cards for technology hardware,
+ software,
+ or subscriptions is prohibited without written pre-authorization by the IT Director (or formally delegated technical approver).
+ Fiscal Affairs shall flag suspected technology P-Card transactions for review and audit.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Grant-Funded Technology
+\series default
+:
+ Grant-funded technology is subject to the same standards as County-funded assets,
+ including security requirements,
+ inventory/CMDB entry,
+ supportability,
+ and lifecycle cost planning.
+ Departments shall engage the Information Operations Department during grant application development to validate feasibility and total cost of ownership.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Auto-Renewal Controls
+\series default
+:
+ Technology subscriptions shall not auto-renew without Technical Approval.
+ Where feasible,
+ auto-renewal shall be disabled,
+ and renewals shall be reviewed in advance to prevent unmanaged commitments.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Bid Splitting
+\series default
+:
+ Splitting a single requirement into multiple smaller transactions to evade competitive bidding thresholds (NRS 332) is strictly prohibited.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Budgeting and Security Allocation
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security Resourcing
+\series default
+:
+ The Information Operations Department shall plan,
+ request,
+ and maintain discrete funding necessary to implement required security controls and compliance obligations (NIST PM-3,
+ SA-2).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Lifecycle Forecasting
+\series default
+:
+ Budget submissions shall include Total Cost of Ownership (TCO) considerations,
+ including licensing,
+ maintenance,
+ support,
+ required security controls,
+ power/cooling (as applicable),
+ and disposal.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Asset Integration Controls
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To preserve inventory integrity and ensure auditability of technology assets and services:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Receiving Control
+\series default
+:
+ Technology shipments shall be directed to the Information Operations Department (or a designated receiving process approved by the IT Director) for inspection and inventory capture.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+No Tag,
+ No Pay
+\series default
+:
+ Hardware invoices shall not be approved for payment until assets are received,
+ inspected,
+ tagged in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and entered into the CMDB and/or asset inventory per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+No Registration,
+ No Pay
+\series default
+:
+ Software and SaaS invoices shall not be approved for payment until the subscription/license is recorded in the designated license management process and the vendor/service has completed required supply chain review steps per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Vendor Integrity and Security Addendums
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Conflict of Interest and Gifts
+\series default
+:
+ Personnel participating in procurement decisions shall comply with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Conflicts of interest shall be disclosed and managed.
+ Gifts or gratuities from vendors are prohibited where County ethics rules apply.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Contract Security Requirements
+\series default
+:
+ Contracts involving County data exchange,
+ hosting,
+ or access to County systems shall include required security and data protection terms as defined by Information Operations standards and applicable County contract requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS Requirement (Contractors)
+\series default
+:
+ When a vendor/contractor may have logical or physical access to Criminal Justice Information (CJI):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+The contract shall incorporate the 
+\series bold
+CJIS Security Addendum
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+The contracting agency shall ensure each contractor employee with CJI access is provided a copy of the 
+\series bold
+CJIS Security Addendum
+\series default
+ and the 
+\series bold
+CJIS Security Policy
+\series default
+,
+ and executes the 
+\series bold
+Security Addendum Certification
+\series default
+ acknowledging receipt and agreement to comply,
+ consistent with 
+\series bold
+CJIS Security Policy 5.1.1.5
+\series default
+ and 
+\series bold
+Appendix H
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+The contracting agency shall retain executed certifications/acknowledgments and ensure they remain available for audit purposes.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Records Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Procurement and procurement-related records shall be retained in accordance with the 
+\series bold
+Nevada Local Government Records Retention Schedule
+\series default
+ and applicable County retention requirements.
+ At a minimum,
+ procurement records shall be retained for the period required to support audits,
+ claims,
+ litigation holds,
+ and statutory retention obligations.
+\end_layout
+
+\end_body
+\end_document

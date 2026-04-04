@@ -1,0 +1,2122 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+IT Project Management Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.14"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish a consistent,
+ auditable framework for the designation,
+ governance,
+ execution,
+ and closure of IT projects within the Elko County Information Operations Department.
+ This policy defines what constitutes a formal IT project,
+ governs the full project lifecycle from charter through post-mortem,
+ and ensures that project work is authorized,
+ documented,
+ and delivered in alignment with the Department's governance obligations and service commitments.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+ This policy governs all initiatives formally designated as IT projects by the Information Operations Department,
+ including new system implementations,
+ major infrastructure changes,
+ county-wide technology rollouts,
+ departmental pilots,
+ and multi-stakeholder technology initiatives managed by the Department.
+ Both internal projects —
+ those originated by the Information Operations Department to fulfill its own operational,
+ infrastructure,
+ or governance objectives —
+ and external projects —
+ those initiated by a County department,
+ agency,
+ or external entity where the Department participates as a technical authority and service partner —
+ are governed by this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+ The following are explicitly excluded from this policy:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Routine and standard operational work,
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Standard and Significant changes that fall below the project designation threshold in Section 6.1,
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Unauthorized technology procurement or implementation,
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor governance and supply chain risk review,
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+SDLC and secure development requirements for system acquisitions,
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Cybersecurity incident post-mortems,
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Budget appropriation and funding timelines —
+ the sponsoring department's obligation,
+ outside the scope of this policy.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+External Project Authority
+\series default
+:
+ In external projects,
+ the sponsoring department or entity provides direction on business objectives and outcomes.
+ The Information Operations Department retains full authority over technical design,
+ security compliance,
+ architecture decisions,
+ and all IT governance obligations established in this manual.
+ External project sponsors hold no supervisory or directive authority over IT personnel or IT technical determinations.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the approving authority for all project charters.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the approving authority for any change to the active project priority order.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the approving authority for all annual project re-authorizations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall receive project status as part of the monthly executive report obligation established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize emergency project designations and emergency waivers of project process components with documented rationale;
+ normal procedures shall resume as soon as operationally practicable.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as joint authority with the Assistant IT Director for formal IT withdrawal from external projects.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide final sign-off for project closure on all complex projects and on any project involving a Significant or Emergency change.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the primary owner of the project portfolio per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain the active project priority order in Redmine.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure project documentation compliance across all active projects.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate with the IT Director on charter approval,
+ re-authorization,
+ and closure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall confirm go-live stability as the trigger for complex project post-mortems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that all KB,
+ CMDB,
+ CI update,
+ and service catalog obligations are satisfied at project closure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as joint authority with the IT Director for formal IT withdrawal from external projects.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide sign-off for routine project closure,
+ with IT Director countersign.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Project Owner
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Project Owner is a functional designation assigned per-project to an existing role holder —
+ IT Director,
+ Assistant IT Director,
+ or Administrator.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall be designated at charter by the IT Director for internal projects.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall be designated as the assigned ECIO Administrator for vendor-led external projects.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate stakeholders,
+ own the project timeline and task assignments,
+ and ensure that all required documentation is attached to the project record throughout the lifecycle.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall escalate risks and scope changes to the Assistant IT Director promptly upon identification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct or coordinate the post-mortem.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the primary notification recipient if IT withdrawal is invoked on an external project.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Staff
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute assigned project tasks documented in child work orders.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document execution details,
+ configuration changes,
+ and risk observations in the work order system per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall raise risks to the Project Owner promptly upon identification.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Departmental Stakeholders
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall participate in requirements definition,
+ testing,
+ and evaluation as designated in the project charter.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall participate in post-mortem review as designated.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Receives project status via the IT Director's monthly executive report per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall receive written notification prior to any IT withdrawal from an external project.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+May,
+ at her option,
+ serve as a neutral arbitrator between the sponsoring agency and the Information Operations Department prior to withdrawal being finalized,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all personnel of the Information Operations Department and all stakeholders participating in formally designated IT projects.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Project management compliance shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and through internal audit procedures defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be authorized in writing by the IT Director.
+ Emergency waivers of specific process components are permitted per Section 6.1 of this policy.
+ All exceptions shall be documented in the project record and retained with the master work order.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Non-compliance may result in corrective actions as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Financial Management and Procurement Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management (SCRM) and Vendor Governance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Stakeholder Engagement and Communications Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Level Management and Metrics Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB) Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Release and Deployment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits and Self-Assessment Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Performance Metrics and Operational KPIs
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ BAI01 (Manage Programs)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ BAI02 (Manage Requirements Definition)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Project Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Project Designation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+An initiative qualifies for formal project designation when it (a) requires three or more discrete work orders to complete,
+ and (b) requires advance resource planning,
+ stakeholder coordination,
+ or sequenced task dependencies that cannot be captured within a single work order record.
+ Both conditions shall be satisfied for threshold-based designation.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director or IT Director may designate any initiative as a formal project regardless of whether it meets the threshold criteria.
+ No initiative may self-designate as a project below the threshold without authorization from the Assistant IT Director or IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Emergency Designation
+\series default
+:
+ An initiative may be formally designated as a project after work has already begun when urgency precludes advance charter preparation —
+ for example,
+ a county-mandated security remediation requiring an immediate multi-work-order response.
+ Emergency designation requires IT Director authorization.
+ Catch-up documentation,
+ including the project charter,
+ risk log,
+ stakeholder map,
+ and all other required project record elements defined in Section 6.10,
+ shall be completed and attached to the master work order within five business days of emergency designation.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Project Record Structure
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Each formally designated project shall be represented in Redmine as a master work order,
+ which serves as the project record and coordination hub.
+ The master work order shall have the Internal Project checkbox set per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Individual task units shall be created as child work orders and linked to the master via the Related Issues field.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Post-Implementation Review (PIR) fires on any Significant or Emergency change within a child work order per the timelines and mechanics established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This is a change-level obligation that runs independently of this policy.
+ A separate project post-mortem under Section 6.7 fires when the master work order closes,
+ covering the initiative as a whole.
+ These two obligations are parallel and distinct.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Phase 1 —
+ Initiation and Charter
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Project Owner shall define the project scope,
+ objectives,
+ impacted stakeholders,
+ resource requirements,
+ success criteria,
+ and target completion date.
+ The charter shall explicitly document:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Whether the project is net-new-service-bearing,
+ for purposes of the service catalog closure gate in Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Whether the project involves vendor engagement,
+ which triggers the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ SCRM gate before contracts are executed.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Whether the project involves systems that process,
+ store,
+ or transmit County data,
+ which flags the data classification obligation in Section 6.4.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall approve the charter before any project work begins.
+ The master work order shall be created in Redmine upon charter approval.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For emergency project designations,
+ IT Director authorization substitutes for advance charter approval.
+ Catch-up documentation shall be completed within five business days of emergency designation per Section 6.1.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Phase 2 —
+ Planning
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Project Owner shall complete the following activities during the planning phase,
+ before execution begins:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Stakeholder and tester identification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Solution evaluation and selection,
+ including vendor demonstrations where applicable.
+ Solution evaluation shall follow the requirements definition standards in COBIT 2019 BAI02.
+ Planning-phase activities shall not absorb SDLC or secure development obligations governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+For projects involving systems that process,
+ store,
+ or transmit County data:
+ data classification under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall be completed during this phase before execution begins.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Timeline and milestone definition,
+ with task ownership assigned per work order.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Risk log creation.
+ Risk scoring shall apply the criteria established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Communication plan development.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Child work orders shall be created for each discrete task unit and linked to the master work order via the Related Issues field.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Phase 3 —
+ Execution and Ongoing Oversight
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All task execution shall be documented in child work orders per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ All production changes shall be classified and authorized per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+;
+ Significant and Emergency changes trigger 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ PIR obligations on the relevant child work orders independently of this policy.
+ All deployments shall be executed from the IOPS Software Repository per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The Project Owner shall monitor KPIs against defined success criteria and escalate identified risks to the Assistant IT Director promptly.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Ninety-Day Status Reviews
+\series default
+:
+ For projects exceeding ninety days in duration,
+ a status review shall be conducted at ninety-day intervals from project initiation for the life of the project.
+ Each review shall confirm that scope,
+ budget,
+ and timeline remain on track and shall be documented in the project record.
+ Any ninety-day review that identifies material scope,
+ budget,
+ or resource changes shall escalate to IT Director re-authorization regardless of where it falls on the annual re-authorization clock.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Annual Re-Authorization
+\series default
+:
+ For projects exceeding twelve months in duration,
+ the IT Director shall provide annual re-authorization confirming that the project continues under its current charter.
+ Re-authorization shall be documented in the project record.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Phase 4 —
+ Closure Gates
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following gates shall be satisfied before the master work order may be closed:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All child work orders resolved or formally dispositioned.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CI records updated per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+KB documentation completed per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ PIRs completed for any Significant or Emergency changes,
+ within the timelines established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+For net-new-service-bearing projects
+\series default
+:
+ the service shall be registered in the service catalog under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and SLA targets shall be established under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ before closure.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Formal acceptance
+\series default
+:
+ the Assistant IT Director and IT Director shall jointly confirm that acceptance criteria have been met and shall authorize transition to steady-state operations.
+ For external projects,
+ the Project Owner shall countersign acceptance.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Phase 5 —
+ Post-Mortem
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A project post-mortem shall be conducted for every formally designated project upon master work order closure.
+ Post-mortem timing is tiered by project complexity:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Routine projects
+\series default
+ —
+ those completing within ninety days with no Significant or Emergency changes —
+ shall conduct the post-mortem within two weeks of master work order closure.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Complex projects
+\series default
+ —
+ those exceeding ninety days in duration,
+ involving Significant or Emergency changes,
+ or involving vendor delivery —
+ shall initiate the post-mortem upon Assistant IT Director confirmation of go-live stability,
+ with a hard outer bound of thirty calendar days from master work order closure regardless of stability status.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The post-mortem shall address:
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Whether the project achieved its defined success criteria.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Scope,
+ budget,
+ and timeline variance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Risks that materialized and the means by which they were resolved
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Stakeholder and communication plan effectiveness
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Actionable takeaways for future projects.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The post-mortem summary shall be documented in the project record and retained with the master work order.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Training requirements identified during a project shall be documented in the project charter and communicated to the relevant department for that department's own planning purposes.
+ End-user training delivery falls outside the Department's service delivery mission and carries no project closure gate obligation under this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Project Portfolio Management
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall maintain the active project priority order in Redmine.
+ Any change to the active project priority order requires IT Director approval,
+ documented in the project record at the time the change is made.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When a vendor leads project delivery,
+ an ECIO Administrator shall serve as the internal Project Owner and shall carry all oversight obligations defined in this policy.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs the vendor governance obligations;
+ this policy governs the internal accountability structure.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Project KPI performance data shall feed into the broader performance management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.9 Project Cancellation,
+ Suspension,
+ and IT Withdrawal
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Internal Projects
+\series default
+:
+ Formal cancellation or suspension of an internal project requires IT Director authorization.
+ All in-flight child work orders shall be closed or suspended with their current state documented.
+ CMDB and KB entries shall be updated to reflect completed work.
+ No obligation exists to revert partially-configured systems to their pre-project baseline.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+External Projects —
+ Agreed Closure
+\series default
+:
+ IT's role in an external project may be formally closed when the IT Director and all project sponsors concur that IT's role is complete.
+ IT's role may be formally closed while the project continues under the sponsor's direction.
+ Upon formal closure of IT's involvement,
+ the Information Operations Department carries no further obligation for the project's outcomes.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+External Projects —
+ IT Withdrawal Over Objection
+\series default
+:
+ The IT Director and Assistant IT Director may jointly declare a formal IT withdrawal from an external project when continued involvement is technically,
+ financially,
+ or operationally untenable —
+ for example,
+ when scope changes imposed by external parties conflict with the Department's security,
+ architecture,
+ or resource obligations,
+ or when the project direction creates unacceptable risk to County systems or ongoing service commitments.
+ Neither the IT Director nor the Assistant IT Director may invoke withdrawal unilaterally.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Prior to withdrawal,
+ the County Manager shall be notified in writing of the basis for the Department's position.
+ The County Manager may,
+ at her option,
+ serve as a neutral arbitrator between the sponsoring agency and the Information Operations Department to ensure good-faith resolution before withdrawal is finalized,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ If the County Manager's arbitration does not resolve the impasse,
+ the IT Director and Assistant IT Director may proceed with withdrawal.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Upon withdrawal,
+ the Project Owner and County Manager shall receive written notice documenting the basis for withdrawal and the current state of all IT work.
+ All in-flight IT work orders shall be closed or suspended with their current state documented.
+ CMDB and KB entries shall be updated to reflect completed work.
+ No obligation exists to revert partially-configured systems to their pre-project baseline.
+ The project may continue under the sponsor's direction;
+ the Information Operations Department carries no further obligation for its outcomes.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.10 Documentation Requirements
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All project records shall include the following elements,
+ maintained in Redmine as the system of record,
+ attached to or linked from the master work order:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Project Charter (IT Director approved;
+ or catch-up charter for emergency designations,
+ completed within five business days of emergency designation)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Stakeholder Map
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Risk Log
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Timeline and Task Assignments
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Communication Plan
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+KPI Results
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Post-Mortem Summary
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Ninety-day status review records (for projects exceeding ninety days in duration)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Annual re-authorization record (for projects exceeding twelve months in duration)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Project records shall be retained under the work order retention framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_body
+\end_document

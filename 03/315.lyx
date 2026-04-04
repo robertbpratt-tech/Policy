@@ -1,0 +1,1951 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Service Continuity and Contingency Planning Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.15"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy establishes the framework by which the Elko County Information Operations Department (ECIO) plans for,
+ prepares against,
+ and recovers from disruptions to IT services.
+ It defines the governing requirements for business impact analysis,
+ asset criticality classification,
+ recovery objective-setting,
+ continuity plan maintenance,
+ backup governance,
+ continuity plan activation,
+ and operational recovery sequencing.
+ It provides the planning artifacts against which operational incident response execution under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ operates,
+ and it establishes the receiving mechanics for operational recovery authority following a cybersecurity incident response phase governed by Chapter 4 policies.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all IT systems,
+ services,
+ and infrastructure operated or managed by the Information Operations Department.
+ Governed activities include:
+ Business Impact Analysis (BIA) development and maintenance,
+ asset criticality classification,
+ Recovery Time Objective (RTO) and Recovery Point Objective (RPO) definition,
+ Continuity Plan development and maintenance,
+ backup governance framework requirements,
+ continuity plan activation,
+ and operational recovery sequencing following plan activation or Operational Handback from Chapter 4.The following are outside the scope of this policy:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Steady-state capacity and availability management —
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Real-time monitoring,
+ alerting,
+ and event detection —
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Operational incident response execution —
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Cybersecurity incident response and security-phase recovery sequencing,
+ including recovery operations during the active security response phase —
+ governed by Chapter 4 policies.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs recovery operations and Operational Handback initiation mechanics during that phase.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Physical security and environmental controls,
+ including UPS governance and emergency power —
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Risk scoring and Risk Register maintenance —
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Backup operational procedures,
+ including execution,
+ verification,
+ and storage —
+ maintained as Knowledge Base procedures under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+SLA target-setting for normal operations —
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Change authorization for infrastructure changes identified during continuity planning —
+ governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the Incident Commander by default for all continuity plan activations,
+ consistent with the designation established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the approving authority for the Business Impact Analysis,
+ including all criticality classification assignments,
+ RTOs,
+ RPOs,
+ and backup minimums.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the approving authority for the Continuity Plan and all material amendments to it.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize continuity plan activation under the Incident Commander judgment pathway defined in Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize any formal exception to the testing cadence established in Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall receive the annual tabletop exercise findings report.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall own the Business Impact Analysis as a planning artifact and shall maintain it on the cadence defined in Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall develop and maintain the Continuity Plan in Redmine.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate the annual tabletop exercise,
+ document findings,
+ and present the findings report to the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that Knowledge Base documentation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for backup procedures and test procedures remains current and consistent with the backup minimums approved in the BIA.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that CI records and CMDB entries under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ reflect recovery configuration requirements for in-scope systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate with the Systems Administrator to ensure quarterly backup restoration verification records are produced and retained.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute backup operations in accordance with the procedures maintained in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall implement and maintain cryptographic mechanisms to protect the confidentiality and integrity of all backups at rest and in transit.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct quarterly backup restoration verification and document results in a restoration verification record.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall escalate backup failures or integrity verification failures to the Assistant IT Director within one business day of identification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall participate in annual tabletop exercises.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall maintain awareness of network infrastructure dependencies documented in the BIA.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall participate in annual tabletop exercises.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall support recovery operations as directed by the Incident Commander upon plan activation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Staff
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute assigned recovery tasks as directed by the Incident Commander upon plan activation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall participate in annual tabletop exercises as designated by the IT Director or Assistant IT Director.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all Information Operations personnel within scope.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with BIA maintenance,
+ continuity plan currency,
+ backup governance obligations,
+ and testing cadence shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to maintain the BIA,
+ produce or maintain the Continuity Plan,
+ execute required backups,
+ conduct required testing,
+ or document required activation and handback decisions without documented justification shall be treated as non-compliance and may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Physical Security and Environmental Controls Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB) Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Capacity and Availability Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Monitoring and Event Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Recovery Operations and Restoration Prioritization
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits and Self-Assessment Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.RA-04 (Risk Impacts)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.CO-03 (Recovery Communications)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-01 (Recovery Plan Execution)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-02 (Recovery Actions Selection and Execution)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-03 (Backup and Restoration Asset Integrity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-04 (Post-Incident Operational Norms)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-05 (Restoration Verification)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-06 (Recovery Closure and Documentation)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-1 (Contingency Planning Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-2 (Contingency Plan)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-4 (Contingency Plan Testing)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-9 (System Backup)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-9(8) (Cryptographic Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-10 (System Recovery and Reconstitution)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS04 (Manage Continuity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ IT Service Continuity Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Purpose and Governing Principle
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department shall maintain a documented,
+ tested,
+ and IT Director-approved Continuity Plan that enables the restoration of IT services following any disruption affecting systems within the scope of this policy.
+ Recovery planning under this policy governs failure scenarios;
+ Service Level Agreement targets for normal operations are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The two frameworks are complementary and distinct —
+ neither supersedes the other.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Business Impact Analysis
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Business Impact Analysis (BIA) is a formal planning artifact owned by the Assistant IT Director and approved by the IT Director.
+ The BIA is distinct from the Risk Register governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The Risk Register produces risk scores;
+ the BIA produces recovery planning outputs.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+'s Criticality Analysis informs BIA inputs;
+ the BIA produces the criticality classifications,
+ RTOs,
+ RPOs,
+ backup minimums,
+ and recovery sequence priority order that continuity execution depends upon.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The BIA shall document,
+ at minimum:
+ a criticality classification assignment for each in-scope system and service using the four-class taxonomy defined in Section 6.4;
+ the approved RTO for each criticality classification;
+ the approved RPO for each criticality classification;
+ the minimum backup frequency,
+ retention period,
+ and offsite storage requirement for each criticality classification;
+ and the recovery sequence priority order across all in-scope systems.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The BIA shall be reviewed and updated no less than annually and following any Significant or Emergency change as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ that materially alters the service catalog or infrastructure.
+ The IT Director shall approve each updated version before it takes effect.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Continuity Plan
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Continuity Plan is a governed document maintained in Redmine by the Assistant IT Director.
+ The Continuity Plan shall be protected from unauthorized disclosure and modification.
+ The Continuity Plan shall contain,
+ at minimum:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Criticality Classification Register
+\series default
+ —
+ all in-scope systems and services assigned to one of the four classifications defined in Section 6.4,
+ with BIA-derived RTO,
+ RPO,
+ and backup minimums for each classification documented alongside.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Recovery Sequence Priority Order
+\series default
+ —
+ the order in which systems are restored by classification.
+ Where multiple systems exist within the same wave,
+ the priority order within that wave shall be explicitly documented.
+ Security Infrastructure sequencing shall follow the three-state rule defined in Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Backup Procedures Reference
+\series default
+ —
+ a pointer to the Knowledge Base procedures under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governing the operational execution of backups to achieve the BIA-approved schedules,
+ retention cadences,
+ and offsite storage requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Activation Criteria and Authority
+\series default
+ —
+ a summary of the two-pathway activation model defined below and the documented authority for each pathway.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Operational Handback Protocol
+\series default
+ —
+ the receiving mechanics upon Operational Handback from Chapter 4,
+ including documentation requirements and a cross-reference to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for handback initiation mechanics.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Recovery Procedures Reference
+\series default
+ —
+ pointers to system-specific recovery procedures maintained in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Testing Records
+\series default
+ —
+ the most recent annual tabletop exercise record and the four most recent quarterly backup restoration verification records.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Continuity plan activation may occur through either of two pathways.
+ Both pathways require the activation decision to be documented in the incident work order at the time it is made.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Objective Trigger
+\series default
+:
+ When the projected or elapsed restoration time for a disrupted system exceeds the RTO established for that system's criticality classification in the BIA,
+ the Incident Commander shall declare continuity plan activation and initiate recovery procedures under this policy.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Incident Commander Judgment Pathway
+\series default
+:
+ The Incident Commander may declare continuity plan activation at any time,
+ independent of whether the objective RTO threshold has been crossed,
+ based on a documented professional assessment of operational conditions —
+ for example,
+ where the nature of the failure,
+ resource availability,
+ or cascading impact makes continued repair inadvisable before the RTO is breached.
+ Qualitative assessments without supporting observations do not satisfy this requirement.
+ The basis for the judgment shall be documented in the incident work order at the time of activation.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Asset Criticality Classification
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department operates four asset classification classes for continuity and backup governance purposes.
+ Specific RTO,
+ RPO,
+ and backup minimums for each classification are established in the BIA and approved by the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tier 1 —
+ Mission Critical
+\series default
+:
+ Systems whose failure immediately impairs the Department's ability to deliver mandated services or maintain operations across the County.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tier 2 —
+ Operationally Important
+\series default
+:
+ Systems that support individual department functions.
+ Their failure degrades service for specific departments but does not immediately impair County-wide operations.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tier 3 —
+ Administrative / Deferrable
+\series default
+:
+ Systems that provide operational convenience or supplementary capability.
+ County operations continue normally without these systems.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security Infrastructure
+\series default
+:
+ Systems that support the Department's security monitoring,
+ logging,
+ and vulnerability management functions.
+ Recovery priority is driven by security posture rather than operational impact;
+ sequencing follows the three-state rule below.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Recovery sequencing for Security Infrastructure is determined by the Incident Commander's declared event classification,
+ documented in the incident work order:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Known non-security disruption:
+
+\series default
+ Hardware failure,
+ utility outage,
+ natural disaster,
+ or other event with no security nexus,
+ as declared by the Incident Commander.
+ Security Infrastructure recovers at Tier 2 priority,
+ in the second wave alongside Tier 2 operational systems.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Known or suspected security event
+\series default
+:
+ Operational Handback received from Chapter 4,
+ or security nexus not yet ruled out.
+ Security Infrastructure recovers concurrently with Tier 1.
+ Log visibility shall be confirmed before broader restoration proceeds,
+ to ensure no residual threat is present before systems are returned to the environment.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Unknown or unclassified disruption
+\series default
+:
+ Treated as a suspected security event until the Incident Commander explicitly declares otherwise.
+ Security Infrastructure recovers concurrently with Tier 1 by default.
+ This principle is consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ under which uncertainty is resolved in favor of caution.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Testing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall coordinate an annual tabletop exercise covering the full Continuity Plan.
+ The exercise shall produce a written record documenting participants,
+ scenarios tested,
+ and findings,
+ which the IT Director shall receive.
+ IT staff designated for contingency roles shall receive contingency training within thirty days of assuming those responsibilities and following any significant change to the Continuity Plan or in-scope systems.
+ Annual participation in the tabletop exercise satisfies the recurring training obligation;
+ no additional training artifact is required.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Systems Administrator shall conduct quarterly backup restoration verification by restoring from backup to a non-production environment and confirming data integrity.
+ Results shall be documented in a restoration verification record.
+ Backup failures or integrity verification failures shall be escalated to the Assistant IT Director within one business day of identification.
+ Specific test procedures are maintained in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The most recent annual tabletop exercise record and the four most recent quarterly backup restoration verification records shall be retained with the Continuity Plan.
+ Exceptions to the testing cadence require written IT Director approval and shall be documented in the Continuity Plan.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Backup Governance
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All in-scope systems shall have backups maintained in accordance with the parameters established in this section.
+ The BIA shall define minimum backup frequency,
+ retention period,
+ and offsite storage requirements by asset classification,
+ subject to IT Director approval.
+ Operational procedures to execute,
+ verify,
+ and store backups in compliance with the BIA-approved parameters shall be maintained in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ All backups shall be encrypted at rest and in transit regardless of the classification of the system being backed up.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Operational Handback
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Operational Handback is the mechanism by which operational recovery authority passes from Chapter 4 back to this policy following a cybersecurity incident.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs Operational Handback initiation —
+ the conditions under which the Incident Commander declares the Chapter 4 security response phase complete,
+ the declaration procedure,
+ and the documentation requirements on the Chapter 4 side.
+ This policy governs the receiving obligations that attach upon Operational Handback.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Chapter 4 authority holds until the Incident Commander explicitly declares Operational Handback.
+ Ambiguity or assumption of handback is not permitted.
+ Upon Operational Handback,
+ the BIA-driven recovery priority order established in this policy governs operational restoration sequencing,
+ subject to the Security Infrastructure sequencing rules in Section 6.4.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For hybrid events where a cybersecurity incident has also caused infrastructure failure,
+ Chapter 4 holds full authority through the security response phase.
+ This policy receives authority for operational restoration only after explicit Operational Handback is declared.
+ The Incident Commander's declaration shall be documented in the incident work order at the time it is made.
+ Upon receiving Operational Handback,
+ the Assistant IT Director shall confirm that the Continuity Plan's Operational Handback Protocol section has been consulted and that recovery sequencing is proceeding in accordance with the BIA priority order.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Relationship to Change Management
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Infrastructure changes identified as necessary during continuity planning or recovery operations require change authorization under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy does not modify or supersede change authorization requirements.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.9 Relationship to Capacity and Availability Management
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs steady-state capacity and availability management and explicitly designates failure-scenario recovery planning as the domain of this policy.
+ The two policies are complementary;
+ findings from capacity or availability trend analysis conducted under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ may inform BIA inputs.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.10 Relationship to Monitoring and Event Management
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs real-time monitoring,
+ alerting,
+ and event detection and explicitly states that service continuity and recovery are governed by this policy.
+ Events escalated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ that result in continuity plan activation are subject to the activation mechanics defined in Section 6.3.
+\end_layout
+
+\end_body
+\end_document

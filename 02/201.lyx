@@ -1,0 +1,815 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Acceptable Use of Information Technology Resources Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:2.01"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy establishes mandatory rules of behavior governing the acceptable use of Elko County Information Technology (IT) resources.
+ It defines authorized and prohibited user activities to protect County operations,
+ information,
+ personnel,
+ and the public from security,
+ legal,
+ operational,
+ and reputational risk.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all users granted access to County IT resources,
+ including employees,
+ elected officials,
+ contractors,
+ vendors,
+ interns,
+ and volunteers .
+ County IT resources include County-owned,
+ County-managed,
+ and County-provisioned systems and services,
+ including endpoints,
+ networks,
+ applications,
+ cloud services,
+ accounts,
+ and County data.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director (LASO):
+
+\series default
+ Shall maintain this policy and serve as the final authority on acceptable-use determinations and exception approvals.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Human Resources (HR):
+
+\series default
+ Shall ensure user acknowledgments are executed prior to initial access and retained for a minimum of seven (7) years following separation of employment or contract termination in accordance with the Nevada Local Government Records Retention Schedule .
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads:
+
+\series default
+ Shall ensure all personnel under their supervision execute required acknowledgments prior to access provisioning and report security incidents or lost CJI-capable devices within one (1) hour of discovery.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Users:
+
+\series default
+ Shall comply with this policy as a condition of access to County IT resources and shall protect County assets from unauthorized access,
+ loss,
+ or misuse.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Compliance:
+
+\series default
+ Adherence to this policy is mandatory.
+ Violations may result in access revocation,
+ disciplinary action up to and including termination,
+ contract remedies,
+ and referral for civil or criminal enforcement under 
+\series bold
+NRS 205
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Universal Applicability
+\series default
+:
+ The standards defined herein apply to the use of County IT resources at all times and in all locations,
+ including but not limited to County facilities,
+ remote work locations,
+ and during official travel.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions:
+
+\series default
+ Exceptions shall be documented,
+ risk-assessed,
+ time-bound (not to exceed 12 months),
+ and approved in writing by the IT Director.
+ Exceptions involving CJI shall not reduce CJIS-mandated requirements.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Stakeholder Engagement and Communications Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Access Control Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supporting Documentation
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 205.4765 (Unlawful acts regarding computers)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section CM-11 (User-Installed Software)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section PL-4 (Rules of Behavior)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section PS-6 (Access Agreements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.AT-01 (Awareness and Training)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CM-11 (User-Installed Software)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PL-4 (Rules of Behavior)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PS-6 (Access Agreements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO01.02 (Manage ethical and professional behavior)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS05.01 (Protect against malicious software)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS05.03 (Manage endpoint security)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Incident Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1.
+ Ownership and Consent to Monitoring
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Property
+\series default
+:
+ All Information Technology resources,
+ including hardware,
+ software,
+ and data created,
+ stored,
+ or transmitted upon them,
+ remain the sole property of Elko County regardless of the physical location of the asset.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+No Expectation of Privacy
+\series default
+:
+ Users shall have no reasonable expectation of privacy when using County IT resources.
+ Use constitutes consent to monitoring,
+ logging,
+ and disclosure for operational,
+ security,
+ legal,
+ and investigative purposes.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+System Notification
+\series default
+:
+ System use notification banners implementing 
+\series bold
+NIST SP 800-53 AC-8
+\series default
+ shall be displayed on County systems as specified in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ to provide continuous notice of monitoring consent.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2.
+ Identity and Credentials
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Credential Protection
+\series default
+:
+ Users shall not share passwords,
+ tokens,
+ or access badges.
+ Account sharing is strictly prohibited.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Workstation Security
+\series default
+:
+ Users shall lock devices (Win+L) whenever left unattended,
+ even for brief periods.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3.
+ Acceptable Use Standards
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Official Use
+\series default
+:
+ County IT resources are provided to support the official business of Elko County.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incidental Personal Use
+\series default
+:
+ Limited personal use is permissible only if it is brief,
+ occurs during non-work time (breaks/lunch),
+ incurs no cost to the County,
+ and does not interfere with productivity or violate any other County policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4.
+ Prohibited Activities Users shall not:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Install unauthorized software,
+ disable security controls,
+ or use anonymization tools to bypass network filters.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Input Confidential or Restricted County data (per Policy 1.11) into external Generative AI or public Large Language Models (LLMs).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Use County IT resources for political campaigning,
+ lobbying,
+ or personal commercial ventures.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Access,
+ store,
+ or distribute harassing,
+ discriminatory,
+ or sexually explicit content.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5.
+ Reporting Requirements
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security Incidents
+\series default
+:
+ Users shall report suspected security incidents to Information Operations immediately.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Lost CJI Assets
+\series default
+:
+ Lost or stolen devices capable of accessing Criminal Justice Information (CJI) must be reported to the IT Director (LASO) no later than 
+\series bold
+one (1) hour
+\series default
+ after discovery.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+General Assets
+\series default
+:
+ All other lost or stolen County devices shall be reported within 
+\series bold
+one (1) business day
+\series default
+ of discovery.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6.
+ Acknowledgment Requirement
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Prerequisite
+\series default
+:
+ All users shall execute the Acceptable Use Policy Acknowledgment (found in Appendix 6.08) prior to being granted access to County IT resources.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Refreshes
+\series default
+:
+ This acknowledgment shall be refreshed annually or upon significant updates to this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Refusal
+\series default
+:
+ Refusal to sign shall result in the immediate denial or revocation of access to all IT resources.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7.
+ Additional Requirements for Privileged Users
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Users with elevated privileges (Tier L3 and above) shall use privileged accounts only for tasks requiring elevated access;
+ routine activities shall be performed using standard accounts.
+ Privileged access is contingent on maintaining required background screening and role-based training specified in Policy 1.07 and Policy 2.03 .
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1479 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Workforce Roles,
+ Responsibilities,
+ and Competency Framework
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:1.07"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to define the internal organizational structure,
+ operational scope,
+ behavioral expectations,
+ and advancement pathways for all personnel within the Elko County Information Operations Department.
+ It establishes a formal hierarchy of authority,
+ accountability,
+ and technical competency aligned with industry frameworks to ensure the consistent delivery of technology services and the security of County information assets.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations personnel,
+ including full-time employees,
+ part-time staff,
+ trainees,
+ contractors,
+ and temporary workers.
+ It governs internal role design,
+ authority delegation,
+ support escalation,
+ and professional development expectations.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall serve as the department head and senior technical authority,
+ responsible for strategic alignment,
+ governance oversight,
+ and final competency adjudication.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+ Shall serve as the operational executive,
+ responsible for day-to-day service delivery,
+ workforce development,
+ and ensuring role clarity among staff.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Supervisors and Leads
+\series default
+:
+ Shall enforce role boundaries,
+ validate competency mastery,
+ ensure position descriptions incorporate STAK-defined skills,
+ and conduct performance evaluations against the standards defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Personnel
+\series default
+:
+ Shall act strictly within the scope of their assigned role and authority,
+ shall not perform duties reserved for higher tiers without documented delegation in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and shall maintain the competencies defined for their role in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Personnel shall act only within the scope of their assigned role and technical authorization level.
+ Any temporary delegation of authority or acting capacity must be documented in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Role alignment and competency mastery shall be assessed annually during performance reviews.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Acknowledgment
+\series default
+:
+ All personnel shall acknowledge receipt and understanding of this policy and their assigned role definition upon hire,
+ upon role change,
+ and annually thereafter.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to adhere to assigned role boundaries,
+ Tier restrictions,
+ or competency requirements may be treated as non-compliance and escalated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation and Enforcement Framework).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to the role structure or minimum competency requirements must be reviewed and approved in writing by the IT Director.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Personnel Security and Background Screening Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Security Awareness and Training Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles STAK Matrix
+\end_layout
+
+\begin_layout Itemize
+NRS 242.171 (Responsibilities of Office/Director)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section PS-3 (Personnel Screening)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.PO-01 (Policy Establishment)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.RR-02 (Roles,
+ Responsibilities,
+ and Authorities)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AT-1 (Awareness and Training Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AT-3 (Role-Based Training)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PM-13 (Security and Privacy Workforce)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PS-1 (Personnel Security Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PS-4 (Personnel Termination)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PS-7 (External Personnel Security)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PS-9 (Position Descriptions)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-181 Rev.
+ 1:
+ (NICE Workforce Framework for Cybersecurity)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ APO07 (Manage Human Resources)
+\end_layout
+
+\begin_layout Itemize
+ITIL v4:
+ Workforce and Talent Management Practice
+\end_layout
+
+\begin_layout Itemize
+SFIA 9:
+ (Skills Framework for the Information Age)
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Role Tier Structure & Security Clearance
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department is organized into hierarchical role tiers to ensure operational clarity,
+ escalation discipline,
+ and professional development.
+ Role tiers L0–L5 correspond directly to the roles defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Workforce Roles STAK Matrix).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security Screening Requirements
+\series default
+:
+ Assignment of any individual,
+ including contractors and temporary personnel,
+ to a role above "Trainee" is contingent upon the successful adjudication of background screening required for that tier as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Personnel Security).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Rescreening
+\series default
+:
+ Personnel with access to Criminal Justice Information (CJI) shall undergo rescreening at least once every five (5) years in accordance with 
+\series bold
+CJIS Security Policy Section 5.12
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Advancement
+\series default
+:
+ Advancement between tiers shall require verification that the individual's background screening adjudication remains current and appropriate for the target tier's access level.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Competency Maintenance and Privileged Access Eligibility
+\series default
+:
+ Assignment to Tier L3 (Administrator) and above is contingent upon maintaining the current,
+ valid role requirements designated as mandatory in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Workforce Roles STAK Matrix) and the Departmental Career Ladder,
+ including any required certifications and renewals where specified.
+ A lapse in a mandatory requirement (e.g.,
+ expiration,
+ revocation,
+ or failure to maintain renewal status) shall result in the immediate suspension of administrative privileges and removal from unsupervised Tier L3+ duties.
+ The individual shall be temporarily reassigned to Tier L2 duties (Support Specialist) or lower until the requirement is reinstated or a written exception is approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ All suspensions,
+ exceptions,
+ and reinstatements shall be documented in the Department’s system of record and managed under the corrective action framework in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tier Definitions
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Director Level (Tier L5)
+\series default
+:
+ Provides strategic leadership,
+ governance,
+ and oversight.
+ Focus is on Strategy and Risk.
+ Aligns with NICE OV-EXL-001 / SFIA Levels 6-7.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant Director Level (Tier L4)
+\series default
+:
+ Manages operations and workforce development.
+ Focus is on Operations and Governance.
+ Aligns with NICE OV-MGT-001 / SFIA Levels 5-6.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Administrator Level (Tier L3)
+\series default
+:
+ Manages critical infrastructure,
+ security controls,
+ and engineering.
+ Focus is on Stability and Security.
+ Aligns with NICE OM-ADM-001 (Systems) & OM-NET-001 (Network) / SFIA Levels 4-5.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Support Specialist Level (Tier L2)
+\series default
+:
+ Provides Tier 1 support and resolution.
+ Focus is on Service and Resolution.
+ Aligns with NICE OM-STS-001 / SFIA Level 3.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Administrative Assistant Level (Tier L1)
+\series default
+:
+ Provides triage and logistics.
+ Focus is on Process and Logistics.
+ Aligns with SFIA Level 2.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Trainee Level (Tier L0)
+\series default
+:
+ Focus is on Learning and Assimilation.
+ Aligns with SFIA Level 1.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Role Definitions and Duties
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following roles define the operational and governance structure of the Information Operations Department.
+ Formal County position descriptions shall align with these definitions and with the STAK competencies in Appendix 6.05.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ The IT Director is the senior technology authority,
+ reporting to the County Manager.
+ The Director shall:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Strategic Planning
+\series default
+:
+ Develop and drive IT strategy aligned with Elko County’s statutory duties and public service objectives.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Governance
+\series default
+:
+ Establish and maintain the Information Operations Policy Manual,
+ ensuring compliance with Federal,
+ State,
+ and Local mandates.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security Leadership
+\series default
+:
+ Serve as the designated Chief Information Security Officer (CISO) function,
+ holding ultimate accountability for the County's cybersecurity posture.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Financial Management
+\series default
+:
+ Manage the departmental budget,
+ capital improvement plans (CIP),
+ and procurement contracts.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+ The Assistant IT Director serves as the operational executive and deputizes for the Director.
+ The Assistant Director shall:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Operations Management
+\series default
+:
+ Oversee daily IT service delivery,
+ ensuring adherence to Service Level Agreements (SLAs).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Workforce Development
+\series default
+:
+ Manage staffing,
+ performance evaluations,
+ and the execution of the training program.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Project Governance
+\series default
+:
+ Lead the IT project portfolio to ensure initiatives are delivered on time,
+ within scope,
+ and on budget.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Deputization
+\series default
+:
+ Assume decision-making authority in the Director’s absence only to the extent formally delegated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
+\series default
+:
+ The Systems Administrator manages server infrastructure,
+ identity,
+ and data integrity.
+ The Systems Administrator shall:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Server Management
+\series default
+:
+ Provision,
+ harden,
+ and maintain physical and virtual server infrastructure (Windows/UNIX).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Identity Management
+\series default
+:
+ Manage Active Directory,
+ Group Policy,
+ and role-based access control (RBAC) in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data Integrity
+\series default
+:
+ Manage backups,
+ disaster recovery replication,
+ and database security (SQL) to ensure data availability and confidentiality.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Patch Management
+\series default
+:
+ Execute the vulnerability management program for server endpoints.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+ The Network Administrator manages connectivity,
+ boundary defenses,
+ and transport infrastructure.
+ The Network Administrator shall:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Architecture
+\series default
+:
+ Design and maintain LAN/WAN/Wireless topologies to ensure high availability and fault tolerance.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Boundary Defense
+\series default
+:
+ Configure firewalls,
+ VPNs,
+ and intrusion detection systems (IDS/IPS) to protect the network perimeter.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Traffic Analysis
+\series default
+:
+ Monitor network flow and performance metrics to identify anomalies or capacity bottlenecks.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Physical Infrastructure
+\series default
+:
+ Manage structured cabling,
+ switching infrastructure,
+ and environmental controls in network closets.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Support Specialist
+\series default
+:
+ Support Specialists serve as the primary interface for end-user assistance and resolution.
+ Support Specialists shall:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident Resolution
+\series default
+:
+ Diagnose and resolve Tier 1 hardware and software issues for end-users via the service desk.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Deployment
+\series default
+:
+ Configure and install new endpoints,
+ peripherals,
+ and software in accordance with standard baselines.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+User Guidance
+\series default
+:
+ Educate users on approved software configurations and best practices.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Escalation
+\series default
+:
+ Accurately document and escalate unresolved issues to Administrators with complete diagnostic data.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Administrative Assistant
+\series default
+:
+ The Administrative Assistant manages departmental front-end operations and logistics.
+ The Administrative Assistant shall:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Access Triage
+\series default
+:
+ Validate visitor credentials,
+ issue visitor badges,
+ and manage physical access logs in compliance with physical security policies.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Credential Support
+\series default
+:
+ Perform verified password resets (non-privileged accounts only) and initial ticket intake/classification under documented procedures.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Coordination
+\series default
+:
+ Manage departmental procurement receiving,
+ phone routing,
+ and scheduling logistics.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Documentation Support
+\series default
+:
+ Assist with formatting and distributing IT communications in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Trainee
+\series default
+:
+ Trainees operate under a structured development program.
+ Trainees shall:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Mentorship Rotation
+\series default
+:
+ Participate in mandatory rotations across Support and Infrastructure domains.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Certification
+\series default
+:
+ Obtain CompTIA A+ and Network+ certifications (or Director-approved equivalents) within 
+\series bold
+twelve (12) months
+\series default
+ of hire date.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Operational Discipline
+\series default
+:
+ Demonstrate cultural alignment,
+ professional communication,
+ and adherence to the Code of Ethics (
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS Restriction
+\series default
+:
+ Trainees shall not be assigned duties involving access to Criminal Justice Information (CJI) or CJIS-connected systems until all required CJIS personnel security screening defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ has been successfully adjudicated.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Advancement Pathways
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Advancement within the Department is meritocratic,
+ earned through demonstrated competency mastery,
+ certification acquisition,
+ and cultural adherence.
+ Tenure alone shall not constitute grounds for promotion.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Criteria
+\series default
+:
+ Advancement decisions shall consider both technical competency and security compliance history (e.g.,
+ adherence to policies,
+ absence of unresolved disciplinary actions).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Pathways
+\series default
+:
+ Specific criteria for advancement from Trainee,
+ Support Specialist,
+ and Administrator roles are defined in the Departmental Career Ladder and aligned with the STAK Matrix.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Competency and Skills Framework (STAK)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To ensure objective evaluation of personnel,
+ the Department utilizes a 
+\series bold
+Skills,
+ Tasks,
+ Abilities,
+ and Knowledge (STAK)
+\series default
+ framework.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Definition
+\series default
+:
+ Specific STAK requirements for each role are defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Alignment
+\series default
+:
+ These competencies are mapped to the 
+\series bold
+NICE Workforce Framework for Cybersecurity
+\series default
+ and 
+\series bold
+SFIA 9
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Evaluation
+\series default
+:
+ Performance reviews shall explicitly reference the STAK matrix to identify skill gaps and assign remedial training.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Training
+\series default
+:
+ The Director shall ensure that personnel with security-relevant duties complete role-based cybersecurity training at onboarding and at least annually thereafter,
+ consistent with the competencies defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_body
+\end_document

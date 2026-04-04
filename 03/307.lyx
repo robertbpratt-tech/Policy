@@ -1,0 +1,1902 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Problem Management Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.07"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to govern the formal investigation of the root causes of IT service failures within the Elko County Information Operations Department.
+ A Problem is the underlying cause of one or more incidents.
+ Where 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs the restoration of service,
+ this policy governs the identification and permanent elimination of the conditions that caused the service to fail.
+ The objective of this policy is durable resolution —
+ finding why something broke and ensuring it does not break the same way again.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy establishes the mandatory framework for opening,
+ investigating,
+ authorizing,
+ and closing Problem records,
+ defines the roles and decision rights governing investigation and remediation authorization,
+ codifies the Known Error management process that feeds documented workarounds back to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ technicians,
+ and defines the formal closure declaration that triggers mass-resolution of linked child work orders under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.6.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel and governs all formal Problem investigations involving County IT assets and services.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A Problem record is opened under this policy through one of two objective triggers defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.7,
+ or by IT Director discretion.
+ Problem records are not opened by individual technician preference outside of those mechanisms.
+ The investigation of a Problem is the Department's deliberate,
+ structured response to evidence that a failure condition is systemic or significant —
+ not a general-purpose research activity.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy does not govern the restoration of service during active incidents.
+ That function belongs exclusively to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Problem investigations shall not delay incident closure under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ incidents shall not be held open pending root cause identification.
+ The Problem record is the continuation of accountability after service has been restored,
+ not a parallel track to restoration.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy does not govern cybersecurity incident postmortems.
+ Post-incident reviews following Chapter 4 events are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Postmortem Review and Lessons Learned).
+ Where a Chapter 4 event also generates operational findings that warrant a Problem investigation under this policy,
+ the IT Director shall determine whether a 
+\series bold
+Policy 3.07
+\series default
+ Problem record is appropriate and shall authorize its opening.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the final authorizing authority for all permanent remediations and system changes proposed through the Problem management process,
+ in accordance with the authorization framework defined in Section 6.4 (Separation of Investigative and Remediation Authority).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize the opening of discretionary Problem records outside the objective spawn triggers defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.7.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review and sign off on Problem record closure in accordance with Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall determine investigation priority when an active Problem investigation conflicts with other operational demands,
+ in accordance with Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review Known Error declarations and confirm publication authorization to the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ where required by Section 6.5.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall ensure that Problem records are opened in accordance with the spawn triggers defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.7 and shall notify the IT Director when a Problem record is opened.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review proposed remediations prior to IT Director authorization and shall provide a documented recommendation to the IT Director as part of the authorization workflow defined in Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as co-authorizing authority alongside the IT Director for permanent remediations,
+ in accordance with Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that Known Error workarounds are published to the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ within the timeframes defined in Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall verify Problem record closure quality and confirm that all required documentation elements are present before the IT Director's closure sign-off is sought.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall monitor open Problem records for compliance with the investigation activity obligations defined in Section 6.3 and shall escalate stalled investigations to the IT Director.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel (All Tiers) —
+ Investigator Role
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Any IT Department staff member at any tier may be assigned as the Investigator on a Problem record.
+ Assignment as Investigator shall not require a specific seniority level.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The assigned Investigator shall conduct all analysis activities defined in Section 6.3,
+ including log analysis,
+ configuration review,
+ routing traces,
+ and any other investigative action required to pursue root cause.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Investigator shall document all investigative steps,
+ findings,
+ and intermediate conclusions in the Problem record in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.4,
+ within twenty-four (24) hours of each investigative action taken.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Investigator shall not implement any permanent system change or deploy any Known Error workaround independently.
+ All proposed remediations shall be submitted for authorization in accordance with Section 6.4 before implementation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Investigator shall notify the Assistant IT Director when root cause has been identified and a remediation proposal is ready for authorization review.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Investigator shall notify the Assistant IT Director when a Known Error condition exists and a workaround is available for publication,
+ in accordance with Section 6.5.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all Information Operations personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with Problem record opening obligations,
+ investigation documentation standards,
+ Known Error publication timelines,
+ remediation authorization requirements,
+ and closure sign-off obligations shall be assessed through the service level reporting process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to open a required Problem record following a spawn trigger,
+ failure to document investigation activity within required timeframes,
+ implementation of a permanent remediation without required authorization,
+ or closure of a Problem record without required sign-off,
+ without documented justification,
+ shall be treated as non-compliance and may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Standard Operating Ethos
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Level Management and Metrics Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Work Order Structure and Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-03 (Improvements are identified from the execution of operational processes,
+ procedures,
+ and activities)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CA-7 (Continuous Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-4 (Incident Handling)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS02 (Manage Service Requests and Incidents)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS03 (Manage Problems)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Knowledge Management Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Problem Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Problem Record Intake
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A Problem record shall be opened through one of the following three mechanisms.
+ No other mechanism authorizes the creation of a Problem record.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Objective Trigger —
+ Major Incident
+\series default
+:
+ Every incident classified as Critical severity under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall generate a formal Problem record upon closure of the originating incident work order,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.7.
+ The technician closing the qualifying incident work order shall open the Problem record no later than the close of business on the calendar day the incident work order is resolved.
+ The Problem record shall be linked to the originating incident work order via the Related Issues field in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ at the time of creation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Objective Trigger —
+ Recurring Incident
+\series default
+:
+ Five (5) or more incidents against the same asset or service,
+ within the same work order category,
+ within any rolling thirty (30) calendar day window,
+ shall generate a formal Problem record.
+ The technician closing the fifth qualifying incident shall open the Problem record at the time of that closure,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.7.
+ The Problem record shall be linked to all qualifying incident work orders via the Related Issues field in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ at the time of creation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director Discretion
+\series default
+:
+ The IT Director may authorize the opening of a Problem record for any failure condition that,
+ in the IT Director's judgment,
+ warrants formal root cause investigation outside the objective triggers above.
+ The IT Director's authorization shall be documented in the Problem record at the time of creation.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Upon opening,
+ all Problem records shall include,
+ at minimum:
+ the originating trigger or authorization,
+ a description of the symptoms and affected asset or service,
+ links to all associated incident work orders,
+ and the name of the assigned Investigator.
+ The Assistant IT Director shall be notified of all Problem record openings no later than the close of business on the day the record is created.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Relationship to Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ Deprecated Asset Trigger
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Recurring Incident spawn trigger above shall not be conflated with the Deprecated Asset labor ceiling trigger defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.5.
+ These are related but distinct mechanisms operating on different windows and asking different questions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ trigger uses a ninety (90) calendar day window to ask whether a Deprecated asset is failing with sufficient frequency to warrant accelerated replacement.
+ The 
+\series bold
+Policy 3.07
+\series default
+ trigger uses a thirty (30) calendar day window to ask whether something is actively wrong with an asset or service right now.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Both triggers may fire simultaneously on the same asset.
+ When they do,
+ the Problem investigation and the disposition review shall proceed in parallel as complementary obligations.
+ The Problem Investigator shall ask why the asset is failing.
+ The IT Director disposition review shall ask whether the asset is worth fixing.
+ The findings of the Problem investigation shall be made available to the IT Director as an input to the disposition decision,
+ but the two processes shall not be merged or held pending the other's conclusion.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Investigation Conduct and Priority
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Investigator Authority
+\series default
+:
+
+\series bold
+ 
+\series default
+The assigned Investigator shall be authorized to pursue root cause through any analytical method appropriate to the failure condition.
+ This includes,
+ without limitation:
+ log analysis,
+ network trace and routing review,
+ configuration comparison,
+ vendor documentation review,
+ testing in non-production environments,
+ and consultation with subject matter experts within or outside the Department.
+ The Investigator's analytical authority shall be unrestricted.
+ The Investigator's remediation authority shall be strictly limited in accordance with Section 6.4.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+The Department's operating philosophy on Problem investigation is that curiosity and investigative drive shall not be gatekept by job title.
+ Any staff member at any tier may be assigned as Investigator and shall be given the full investigative access necessary to pursue root cause.
+ The quality of the investigation is measured by the rigor of the documentation and the validity of the findings,
+ not by the seniority of the Investigator.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Investigation Documentation
+\series default
+:
+ The Investigator shall document all investigative steps,
+ analytical findings,
+ and intermediate conclusions in the Problem record within twenty-four (24) hours of each action taken,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.4.
+ Documentation shall be specific and sufficient to reconstruct the investigation by a subsequent reviewer who was not present.
+ At minimum,
+ the Problem record shall contain:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+A description of each investigative action taken and the system or data source examined.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The findings or output of each investigative action.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any hypotheses considered and the basis on which they were confirmed or eliminated.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The identified root cause,
+ stated with sufficient specificity to inform a permanent remediation proposal.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The proposed remediation,
+ including scope,
+ affected systems,
+ and estimated implementation effort.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Investigation Priority
+\series default
+:
+
+\series bold
+ 
+\series default
+Active 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ incidents classified as Critical or Urgent severity against the same asset or service as an open Problem investigation shall automatically take priority over the Problem investigation for the duration of the active incident.
+ The Investigator shall pause investigation activity on the affected asset and shall support incident resolution under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ as directed by the Incident Commander.
+ Investigation activity shall resume upon closure of the preempting incident.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Below the Critical and Urgent threshold,
+ the IT Director shall determine priority between active Problem investigations and other operational demands on a case-by-case basis.
+ The IT Director's priority determination shall be documented in the Problem record.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+RCA Methodology
+\series default
+:
+ This policy shall not prescribe a specific root cause analysis methodology.
+ The Investigator shall select and apply the analytical approach best suited to the failure condition under investigation.
+ The obligation is that root cause analysis is conducted rigorously,
+ documented completely,
+ and produces a finding that is specific enough to support a permanent remediation proposal.
+ The methodology used shall be noted in the Problem record.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Separation of Investigative and Remediation Authority
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Problem management process is divided into two distinct phases with different authority structures:
+ Execution and Authorization.
+ This separation ensures that investigative capability is distributed across all staff tiers while permanent system changes remain subject to appropriate oversight.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Execution —
+ The Investigation
+\series default
+:
+ The assigned Investigator,
+ at any staff tier,
+ shall be fully authorized to conduct all investigative activities described in Section 6.3 without restriction or additional approval.
+ The Investigator shall not require supervisory sign-off to analyze logs,
+ review configurations,
+ trace network paths,
+ or pursue any other analytical activity in furtherance of root cause identification.
+ Investigation is the Investigator's domain.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Authorization —
+ The Fix
+\series default
+:
+ The Investigator shall not implement any permanent system change,
+ configuration modification,
+ patch deployment,
+ architectural adjustment,
+ or other remediation action independently.
+ Once the Investigator has identified root cause and developed a remediation proposal,
+ the following authorization process applies before any remediation action is taken:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+The Investigator shall document the proposed remediation in full in the Problem record,
+ including:
+ the root cause finding,
+ the proposed corrective action,
+ the systems affected,
+ the implementation plan,
+ and any risks or dependencies associated with the remediation.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+The Investigator shall notify the Assistant IT Director that a remediation proposal is ready for review.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+The Assistant IT Director shall review the proposal and shall provide a documented recommendation to the IT Director within three (3) business days of notification.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+The IT Director shall review the proposal and the Assistant IT Director's recommendation and shall issue a written authorization or denial within five (5) business days of the Assistant IT Director's recommendation.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Remediation shall not commence until the IT Director's written authorization is documented in the Problem record.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+If the IT Director denies the proposed remediation,
+ the denial shall be documented with rationale in the Problem record.
+ The Investigator may develop an alternative remediation proposal,
+ which shall follow the same authorization process.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Problem record shall not be closed without IT Director sign-off,
+ regardless of whether a remediation has been implemented.
+ A Problem record that reaches closure without a viable permanent remediation shall be closed as a Known Error in accordance with Section 6.5.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Known Error Management and Knowledge Base Publication
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A Known Error is a Problem for which root cause has been identified but for which a permanent remediation has not yet been implemented,
+ whether because the remediation is pending authorization,
+ pending resources,
+ pending a vendor fix,
+ or has been determined not to be cost-effective relative to an available workaround.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Known Error Declaration
+\series default
+:
+ When the Investigator identifies root cause and determines that a permanent remediation will not be immediately implemented —
+ for any reason —
+ the Investigator shall notify the Assistant IT Director and shall declare a Known Error condition in the Problem record.
+ The Known Error declaration shall include:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The identified root cause.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The reason a permanent remediation is not immediately forthcoming.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A documented workaround sufficient to restore or maintain service for affected users in the interim.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Knowledge Base Publication
+\series default
+:
+ Upon Known Error declaration,
+ the Assistant IT Director shall ensure that the documented workaround is published to the Knowledge Base maintained under Policy 3.13 within two (2) business days of the declaration.
+ The published entry shall include the symptoms that identify the Known Error condition,
+ the workaround procedure,
+ and the Problem record number for traceability.
+ Publication to the Knowledge Base shall not be deferred pending Problem closure.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang english
+This publication obligation is the direct upstream feed for the mandatory workaround search required of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ technicians under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.4.
+ A Known Error workaround that is not published to the Knowledge Base is not accessible to the technicians who need it,
+ and the Knowledge Base's value as a resolution resource degrades accordingly.
+ Timely publication is not optional.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Known Error Lifecycle
+\series default
+:
+ A Known Error entry in the Knowledge Base shall remain active until the underlying Problem record is formally closed with a permanent remediation implemented and verified.
+ Upon permanent remediation,
+ the Assistant IT Director shall ensure that the corresponding Knowledge Base entry is updated to reflect the resolution and marked inactive within two (2) business days of Problem closure.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Problem Closure and the Formal Closure Declaration
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Problem Record Resolution Conditions
+\series default
+:
+ A Problem record shall not be considered resolved by informal agreement or by the cessation of investigation activity.
+ Closure requires a formal declaration that satisfies all of the following conditions:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+\lang english
+Root cause has been identified
+\series default
+ and is documented in the Problem record with sufficient specificity to distinguish the underlying cause from its symptoms.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\lang english
+A permanent remediation has been implemented and verified
+\series default
+,
+ or the Problem has been formally reclassified as a Known Error in accordance with Section 6.5 with a workaround published to the Knowledge Base.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\lang english
+All required authorization documentation
+\series default
+ under Section 6.4 is present in the Problem record,
+ including the IT Director's written authorization for any remediation implemented.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\lang english
+The Assistant IT Director has reviewed the record
+\series default
+ and confirmed that all required documentation elements are complete.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\lang english
+The IT Director has reviewed and signed off
+\series default
+ on the closure.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Formal Closure Declaration
+\series default
+:
+ Upon satisfaction of all conditions above,
+ the IT Director shall issue the Formal Closure Declaration by updating the Problem record status to the appropriate closed status in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and documenting the closure rationale.
+ The IT Director's status update constitutes the authoritative declaration that the Problem is resolved.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Trigger for Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ Child Work Order Mass-Closure
+\series default
+:
+ The Formal Closure Declaration is the event that triggers the mass-closure of child work orders linked to the Problem record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.6.
+ Upon the IT Director's closure of the Problem record,
+ the Assistant IT Director shall notify all technicians with linked child work orders that the Parent Problem record has been closed and that child work orders are to be dispositioned in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.6 —
+ as either Duplicate or Resolved depending on whether end-system work was required.
+ This notification shall occur no later than the close of business on the day the Formal Closure Declaration is issued.
+ Child work order dispositions shall be completed within two (2) business days of notification.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Relationship to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ —
+ Jurisdictional Boundary
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Policy 3.07
+\series default
+ is the downstream continuation of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ These two policies are sequential,
+ not concurrent.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall govern service restoration.
+ 
+\series bold
+Policy 3.07
+\series default
+ shall govern root cause identification.
+ The jurisdictional boundary between them shall be the closure of the originating incident work order.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Policy 3.07
+\series default
+ shall not be used as a mechanism to defer incident closure.
+ A technician shall not hold a 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ incident work order open on the grounds that root cause has not yet been identified.
+ Service restoration and root cause identification are different jobs,
+ owned by different policy instruments.
+ When service is restored,
+ the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ work order closes and the 
+\series bold
+Policy 3.07
+\series default
+ Problem record begins —
+ not before.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Problem record inherits the evidentiary record of the originating incident work order.
+ The closed 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ work order is not modified after sealing.
+ All subsequent findings,
+ analysis,
+ and remediation documentation belong to the Problem record.
+\end_layout
+
+\end_body
+\end_document

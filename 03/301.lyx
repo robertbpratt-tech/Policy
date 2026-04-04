@@ -1,0 +1,1174 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Service Catalog and SLA Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.01"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish the governance framework for the Elko County Information Operations Department's IT Asset Catalog and service level commitments.
+ This policy defines the lifecycle status classifications governing IT support posture,
+ the standards by which work orders are triaged and prioritized,
+ and the response and resolution commitments the Department makes to County personnel and departments.
+ It ensures that service delivery expectations are clearly defined,
+ consistently applied,
+ and auditably enforced across all asset types and support tiers.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all hardware models,
+ software titles,
+ and services within the operational purview of the Information Operations Department,
+ regardless of asset support tier as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ It governs all work orders submitted to the Department by County personnel,
+ departments,
+ or internal IT staff,
+ and all vendor contracts or service agreements for IT-Supported and Vendor-Managed assets.
+ This policy applies to all Information Operations personnel involved in triage,
+ service delivery,
+ escalation,
+ and vendor coordination.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall serve as the sole approving authority for the IT Asset Catalog and all lifecycle status classifications and reclassifications.
+ Shall maintain the authoritative list of mission-critical systems eligible for after-hours on-call activation.
+ Shall authorize extensions to Deprecated asset replacement deadlines in writing.
+ Shall authorize continued remediation beyond the standard labor ceiling by written notation in the work order.
+ Shall approve vendor SLA terms at contract execution.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+ Shall ensure the IT Asset Catalog is maintained current in Redmine.
+ Shall conduct lifecycle status classification reviews and prepare reclassification proposals for IT Director approval.
+ Shall ensure triage is performed within required timeframes and that service level commitments are met across all active work orders.
+ Shall monitor vendor SLA performance in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Shall maintain after-hours contact procedures and on-call rotation schedules in Redmine.
+ Shall identify and document vendor SLA gaps in existing contracts and present them to the IT Director no later than ninety (90) days prior to each applicable renewal opportunity.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel (All Tiers)
+\series default
+:
+ Shall perform triage on assigned work orders within the required window,
+ confirming or reclassifying severity based on verified operational impact.
+ Shall document all reclassifications,
+ remediation attempts,
+ escalation rationale,
+ and closure decisions in the work order.
+ Shall adhere to response and resolution commitments as defined in this policy.
+ Shall refer work orders for Unsupported assets to the IT Director for disposition without performing remediation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Personnel and Department Heads
+\series default
+:
+ Shall submit service requests through the designated work order system.
+ Shall provide sufficient information at the time of submission to enable triage.
+ Shall respond to pending information requests from IT staff within five (5) consecutive business days to prevent work order closure.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all Information Operations personnel involved in service delivery,
+ triage,
+ escalation,
+ or vendor coordination.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with service level commitments,
+ triage timeliness,
+ and catalog maintenance obligations shall be assessed through the service level reporting process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to meet triage,
+ response,
+ or resolution commitments without documented escalation or rationale shall be treated as non-compliance and may result in corrective actions under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Vendor non-compliance with contracted SLA terms shall be addressed through the vendor compliance framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to the service level commitments defined in this policy shall be documented with justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Exceptions shall not be granted on an open-ended basis and shall specify a defined remediation timeline.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management (SCRM) and Vendor Governance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Level Management and Metrics Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB) Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Vendor Compliance and Third-Party Assurance Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 332 (Purchasing:
+ Local Governments)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.SC-06 (Cybersecurity Supply Chain Risk Management)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.AM-01 (Inventories of hardware managed by the organization)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.AM-02 (Inventories of software,
+ services,
+ and systems managed by the organization)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-5 (System Inventory)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SA-9 (External System Services)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO09 (Manage Service Agreements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO10 (Manage Vendors)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS02 (Manage Service Requests and Incidents)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Service Catalogue Management Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Service Level Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 IT Asset Catalog
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Information Operations shall maintain a current IT Asset Catalog in the designated system of record (Redmine).
+ The catalog shall enumerate all hardware models,
+ software titles,
+ and services that fall within the operational purview of the Information Operations Department,
+ regardless of asset support tier as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+
+\series default
+ The IT Asset Catalog is an internal operational reference document maintained for IT Department use and shall not be published to general County staff.
+ The IT Director holds sole authority to establish and approve the catalog and its contents.
+ The Assistant IT Director shall ensure the catalog is maintained current in Redmine and shall present the catalog for IT Director review and approval no less than annually and following any significant change to the County's technology environment,
+ contract portfolio,
+ or vendor relationships.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Asset Lifecycle Status Classifications
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Every hardware model,
+ software title,
+ and service enumerated in the IT Asset Catalog shall carry one of the following three lifecycle status classifications.
+ These classifications govern the IT Department's support commitment for each item and inform service level obligations as defined in Section 6.4 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Supported
+\series default
+ status designates hardware,
+ software,
+ or services that are fully endorsed and actively supported by the Information Operations Department.
+ Assets carrying Supported status represent the standard authorized technology environment for Elko County.
+ The IT Department shall fulfill its full service level commitments for Supported assets as defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Deprecated
+\series default
+ status designates hardware,
+ software,
+ or services that remain operational but have been formally identified for replacement.
+ At the time of Deprecated classification,
+ the IT Director shall establish and document a mandatory replacement deadline in the IT Asset Catalog.
+ Deprecated assets are no longer authorized for new deployments or expanded use.
+ The IT Department shall provide best-effort support for Deprecated assets within the labor ceiling defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for the duration of the replacement window.
+ Upon reaching the replacement deadline,
+ the asset shall automatically transition to Unsupported status unless the IT Director has formally authorized an extension in writing,
+ documented in the IT Asset Catalog with a new deadline and supporting rationale.
+ No open-ended extensions shall be granted.
+ The IT Director may,
+ by written notation in the work order,
+ authorize continued remediation beyond the standard labor ceiling.
+ Such authorization constitutes a deliberate project-level commitment and supersedes the Deprecated asset replacement preference for the duration of the authorized effort.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Unsupported
+\series default
+ status designates hardware,
+ software,
+ or services that the Information Operations Department does not support and will not remediate.
+ Unsupported assets represent an active operational and security risk and shall be prioritized for immediate replacement or decommissioning under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Work orders submitted for Unsupported assets shall be closed with a documented replacement referral.
+ The IT Department's obligation for Unsupported assets is limited to documenting the referral and initiating the replacement process.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall approve all lifecycle status classifications and reclassifications.
+ The Assistant IT Director shall ensure that classification reviews are conducted no less than annually and whenever a vendor announces end-of-life,
+ a contract expires,
+ a security risk materially changes,
+ or a replacement technology is formally adopted.
+ Reclassification proposals shall be prepared by the Assistant IT Director,
+ documented with the proposed effective date and supporting rationale,
+ and submitted to the IT Director for approval prior to implementation in the IT Asset Catalog.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Triage and Severity Classification Authority
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All work orders submitted to the Information Operations Department shall undergo IT-side triage prior to the commencement of active work.
+ User-submitted severity levels represent the requester's assessment and shall be treated as an input to triage,
+ not as a binding operational classification.
+ The assigned technician or queue reviewer shall confirm or reclassify the severity level based on verified operational impact assessment prior to committing to a service level response.
+ Any reclassification shall be documented in the work order with a brief rationale.
+ The operative severity,
+ as confirmed or reclassified by IT staff,
+ governs all service level commitments defined in this policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall ensure that triage is attempted within one (1) business hour of work order submission.
+ Triage is complete when IT staff have assessed the ticket,
+ confirmed or reclassified the severity,
+ and initiated or queued the appropriate response.
+ Where a submitted work order lacks sufficient information to complete triage,
+ IT staff shall document the attempt,
+ specify the information required,
+ and notify the requester that more information is required.
+ Service level clocks shall be paused for the duration of pending information status and shall resume upon receipt of the required information from the requester.
+ Work orders that remain in pending information status without requester response for five (5) consecutive business days shall be closed by the assigned technician or queue reviewer,
+ with closure rationale documented in the work order.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Service Level Commitments
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Service level commitments consist of two sequential obligations:
+ a response commitment and a resolution or escalation commitment.
+ All timeframes are measured in business hours or business days from the completion of triage unless otherwise specified.
+ Business hours are defined as Monday through Friday,
+ 8:00 AM to 5:00 PM,
+ excluding Elko County observed holidays.
+ The Assistant IT Director shall ensure that service level commitments are met and shall monitor adherence in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Response and resolution commitments by severity level are as follows:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Critical severity
+\series default
+:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Response within one (1) business hour of triage completion
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Resolution or formal escalation within one (1) business day of triage completion.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Urgent severity
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Response within two (2) business hours of triage completion
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Resolution or formal escalation within three (3) business days of triage completion.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+High severity
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Response within four (4) business hours of triage completion
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Resolution or formal escalation within five (5) business days of triage completion.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Normal severity
+\series default
+:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Response within one (1) business day of triage completion
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Resolution or formal escalation within ten (10) business days of triage completion.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Low severity
+\series default
+:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Response within two (2) business days of triage completion
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Resolution or formal escalation within twenty (20) business days of triage completion.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Where a Low severity ticket carries a specified due date at the time of submission,
+ that due date governs resolution in lieu of the default twenty (20) business day window.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+Resolution commitments apply in full to IT-Managed assets as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ For IT-Supported assets,
+ the resolution commitment represents IT's obligation to initiate vendor escalation within the defined window,
+ not to guarantee vendor resolution within that timeframe.
+ Vendor resolution timelines for IT-Supported assets are governed by the applicable contract or service agreement.
+ For Vendor-Managed assets,
+ IT's commitment is limited to referral —
+ the Information Operations Department shall route the request to the appropriate vendor contact within the response window defined above,
+ and resolution execution shall be handled entirely by the vendor.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 After-Hours and Emergency Response
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department maintains an on-call capability for after-hours emergencies.
+ Severity level alone does not constitute sufficient basis for after-hours on-call activation.
+ A situation qualifies for after-hours on-call response only when a mission-critical system supporting public safety operations,
+ law enforcement functions,
+ or a time-bound legal or financial obligation is completely non-functional and no reasonable operational workaround exists.
+ Low and Normal severity tickets are explicitly excluded from after-hours on-call activation by definition.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall maintain and annually review the authoritative list of systems qualifying as mission-critical for purposes of after-hours on-call activation in the designated system of record.
+ The Assistant IT Director shall maintain after-hours contact procedures and on-call rotation schedules in Redmine.
+ These operational details are not enumerated in this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Vendor SLA Requirements
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Any contract or service agreement governing an IT-Supported or Vendor-Managed asset entered into or renewed following the effective date of this policy shall include defined vendor response and resolution commitments as a condition of the engagement.
+ The Assistant IT Director shall ensure that vendor SLA terms are documented at the time of contract execution and recorded in the IT Asset Catalog entry for the applicable system,
+ subject to IT Director approval.
+ Vendor SLA performance shall be monitored by the Assistant IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and evaluated under the vendor compliance framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Where an existing contract does not include defined service level terms,
+ the Assistant IT Director shall identify the gap,
+ document it in the IT Asset Catalog,
+ and present it to the IT Director no later than ninety (90) days prior to the next available renewal opportunity so that incorporation of vendor SLA terms may be pursued at renewal.
+\end_layout
+
+\end_body
+\end_document

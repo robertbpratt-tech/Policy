@@ -1,0 +1,1021 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+System and Communications Protection Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:2.07"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish mandatory technical and procedural controls for the protection of Elko County information systems during transmission and storage.
+ This policy mandates the implementation of boundary protection,
+ cryptographic standards,
+ and architectural isolation to ensure the confidentiality,
+ integrity,
+ and availability of County data against internal and external threats.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Elko County Information Operations (ECIO) personnel,
+ employees,
+ contractors,
+ vendors,
+ and volunteers,
+ and all information systems,
+ networks,
+ and infrastructure owned,
+ leased,
+ or operated by Elko County.
+ This specifically includes:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Boundary Components
+\series default
+:
+ Firewalls,
+ routers,
+ switches,
+ and gateways.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Cryptographic Components
+\series default
+:
+ Encryption keys,
+ certificates,
+ and modules.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Communication Channels
+\series default
+:
+ VoIP,
+ VPNs,
+ and wireless networks.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Protected Data
+\series default
+:
+ CJI,
+ Personally Identifiable Information (PII),
+ and Restricted County records.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the Authorizing Official (AO) for the County’s security architecture.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve in writing all ingress/egress traffic policy changes that deviate from the "Deny-by-Default" standard.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize all connections to external information systems via formal Interconnection Security Agreements.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall configure and maintain boundary protection devices to enforce "Deny-by-Default" traffic policies.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall implement and verify network segregation between public,
+ internal,
+ and CJI-dedicated network segments (DMZ implementation).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review firewall rule sets monthly to ensure no unauthorized access points exist.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall configure encryption for data in-transit and at-rest using only FIPS-validated cryptographic modules.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall manage cryptographic keys in accordance with Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall disable split tunneling on all remote access endpoints.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Users
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall use only County-authorized methods for remote access and data transmission.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall physically disconnect or disable collaborative computing devices (e.g.,
+ webcams,
+ microphones) when accessing CJI,
+ unless the device is authorized for specific operational use.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Mandatory Enforcement
+\series default
+ - Personnel and systems must comply with the requirements defined herein.
+ Failure to comply shall result in:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Immediate disconnection of the non-compliant system from the County network.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Revocation of administrative privileges where applicable.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Disciplinary action up to and including termination of employment and referral to law enforcement for statutory violations (e.g.,
+ NRS 205.4765).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Any deviation from this policy must be documented in a Risk Acceptance Memo in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Exceptions
+\series default
+:
+ Exceptions regarding CJI encryption,
+ boundary protection,
+ or split tunneling require explicit written concurrence from the Nevada CJIS Systems Officer (CSO) prior to implementation.
+ The IT Director shall not approve CJI-related exceptions without this external authorization.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Access Control Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 205.4765 (Unlawful acts regarding computers)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 603A.210 (Security measures for personal information)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-1 (System and Communications Protection Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-5 (Denial-of-Service Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-7 (Boundary Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-8 (Transmission Confidentiality and Integrity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-10 (Network Disconnect)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-12 (Cryptographic Key Establishment and Management)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-13 (Cryptographic Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-15 (Collaborative Computing Devices and Applications)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-28 (Protection of Information at Rest)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.AA-05 (Access Permissions and Authorizations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.DS-01 (Data-at-Rest Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.DS-02 (Data-in-Transit Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.IR-01 (Network Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SC-7 (Boundary Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SC-8 (Transmission Confidentiality and Integrity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SC-13 (Cryptographic Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SC-28 (Protection of Information at Rest)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS05 (Manage Security Services)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Architecture Management Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Information Security Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Boundary Protection and Architecture
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Network Administrator shall monitor and control communications at the external managed interfaces to the system and at key internal managed interfaces.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Managed Interfaces
+\series default
+:
+ Connections to external networks (Internet) or external information systems shall occur only through managed interfaces (e.g.,
+ firewalls,
+ proxies,
+ gateways) arranged in accordance with the security architecture.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Deny-by-Default
+\series default
+:
+ Boundary protection devices shall be configured to deny all traffic (inbound and outbound) by default and allow only those services and ports explicitly authorized by the IT Director for business need.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Split Tunneling Prohibition
+\series default
+:
+ For all remote access sessions connecting to the County network,
+ the Systems Administrator shall configure the remote access mechanism to disable "split tunneling." All network traffic from the remote device must be routed through the County’s managed boundary protection devices for inspection.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+DMZ Implementation
+\series default
+:
+ Publicly accessible system components (e.g.,
+ web servers) shall reside in a Demilitarized Zone (DMZ),
+ physically or logically separated from internal organizational networks.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Denial of Service (DoS)
+\series default
+:
+ The Network Administrator shall configure boundary devices to detect and mitigate DoS attacks by implementing rate limiting and traffic filtering to reduce attack traffic.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Transmission Confidentiality and Integrity
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Systems Administrator shall protect the confidentiality and integrity of transmitted information.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Encryption In-Transit
+\series default
+:
+ CJI and PII transmitted outside a physically secure location (as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+) shall be encrypted.
+ Wireless transmission of CJI is prohibited unless encrypted using a FIPS-validated module.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Cryptographic Standards
+\series default
+:
+ Encryption mechanisms for data in-transit shall use cryptographic modules validated under the Cryptographic Module Validation Program (CMVP) as compliant with FIPS 140-3 (or FIPS 140-2 until sunset date of Sept 21,
+ 2026).
+ The symmetric cipher key strength shall be at least 128-bit.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Session Authenticity
+\series default
+:
+ Systems shall protect the authenticity of communications sessions (e.g.,
+ TLS 1.2 or higher) to prevent Man-in-the-Middle (MitM) attacks or session hijacking.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Disconnect (Idle Timeout)
+\series default
+:
+ To limit exposure of open sessions,
+ the Network Administrator shall configure VPN and remote access gateways to automatically terminate connections after fifteen (15) minutes of inactivity.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exemption
+\series default
+:
+ As defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ remote access sessions utilizing certificate-based authentication on devices located within a secure Criminal Justice Conveyance (e.g.,
+ patrol vehicles) are exempt from this timeout to ensure officer safety.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Protection of Information at Rest
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Systems Administrator shall protect the confidentiality and integrity of information at rest.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Encryption
+\series default
+:
+ CJI stored on digital media (servers,
+ workstations,
+ mobile devices,
+ external drives) outside of a physically secure location shall be encrypted using FIPS-validated cryptographic modules (FIPS 140-2/3) with a minimum 128-bit key strength.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Mobile Devices
+\series default
+:
+ All County-issued laptops,
+ tablets,
+ and smartphones shall have full-disk encryption enabled prior to deployment.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Cryptographic Key Management
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Systems Administrator shall manage cryptographic keys to secure the key lifecycle.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Generation
+\series default
+:
+ Keys shall be generated using FIPS-validated Random Number Generators.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Distribution
+\series default
+:
+ Keys shall be distributed via secure methods that prevent unauthorized disclosure (e.g.,
+ encrypted channels).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Storage
+\series default
+:
+ Unencrypted keys shall not be stored on the same system or media as the encrypted data they protect.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Destruction
+\series default
+:
+ Keys shall be destroyed/zeroized immediately when they are no longer needed or when the association with the authorized user/entity is terminated.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Collaborative Computing Devices
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To prevent unauthorized remote surveillance,
+ the Systems Administrator shall configure systems to prohibit the remote activation of collaborative computing devices (cameras,
+ microphones).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Indication of Use
+\series default
+:
+ Devices shall provide a physical or on-screen indication when collaborative devices are active.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Disablement
+\series default
+:
+ Users accessing CJI via a workstation with a built-in camera/microphone must physically cover or logically disable the device if the environment is not secure or if the device is not required for the immediate task.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Secure Name/Address Resolution (DNS)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Network Administrator shall ensure the integrity of the Domain Name System (DNS).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Forgery Protection
+\series default
+:
+ Recursive resolvers shall be configured to request and validate DNS Security Extensions (DNSSEC) signatures to verify the authenticity of DNS responses.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Fault Tolerance
+\series default
+:
+ The County shall maintain at least two geographically separated DNS servers (or utilize a redundant cloud DNS provider) to ensure availability.
+\end_layout
+
+\end_body
+\end_document

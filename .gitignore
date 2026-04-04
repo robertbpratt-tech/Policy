@@ -1,0 +1,12 @@
+# LyX backup and temporary files
+*.lyx~
+*.lyx#
+.#*.lyx
+
+# Compilation artifacts (if compiling in the same dir)
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out

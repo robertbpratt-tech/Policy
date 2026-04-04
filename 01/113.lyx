@@ -1,0 +1,1206 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Supply Chain Risk Management (SCRM) and Vendor Governance
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:1.13"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy establishes a consistent and enforceable governance framework for the engagement,
+ onboarding,
+ oversight,
+ and offboarding of third-party service providers,
+ contractors,
+ vendors,
+ and consultants.
+ It incorporates Supply Chain Risk Management (SCRM) principles to identify and mitigate risks associated with the acquisition of technology products and services.
+ Its primary objective is to ensure that external entities interacting with Elko County information systems adhere to the same security,
+ privacy,
+ and operational standards required of County personnel.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all third-party entities,
+ including vendors,
+ contractors,
+ consultants,
+ and managed service providers (MSPs),
+ who:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Are granted physical or logical access to County IT assets,
+ facilities,
+ or systems;
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Provide hardware,
+ software,
+ or cloud-based solutions integrated with County operations;
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Require network connectivity (on-premise,
+ VPN,
+ or cloud integration);
+ or
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Store,
+ process,
+ transmit,
+ or administer Elko County data.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Exclusion
+\series default
+:
+ This policy does not apply to commodity off-the-shelf (COTS) consumables (e.g.,
+ toner,
+ cables) where the vendor has no access to County systems,
+ data,
+ or secure facilities.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall serve as the Technical Authority.
+ Shall validate technical scope,
+ approve architectural fit,
+ define security boundaries,
+ and reject vendors that fail to meet minimum security requirements or refuse required security addendums.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Requesting Department Head
+\series default
+:
+ Shall serve as the Relationship Manager.
+ Shall define business requirements,
+ fund the engagement,
+ manage vendor deliverables/timelines,
+ and ensure vendor adherence to County operational requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Human Resources
+\series default
+:
+ Shall maintain personnel tracking for individual contractors requiring system access and shall coordinate required background screening processes where applicable.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Fiscal Affairs
+\series default
+:
+ Shall ensure contracts include County-required indemnification and procurement clauses and shall verify CJIS contract requirements are applied when CJI may be accessed.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Mandatory Compliance
+\series default
+:
+ Adherence to this policy is mandatory for all third-party interactions involving County information systems or data.
+ Unauthorized provisioning of access or assets to a third party is a security violation subject to corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Unauthorized Commitments (“Shadow IT”)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Information Operations Department shall not integrate,
+ onboard,
+ or support technology acquired without documented Technical Approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Fiscal Affairs shall not process payment for technology purchases or subscriptions without documented Technical Approval,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (“No Registration,
+ No Pay”).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Requesting Department shall fund remediation,
+ replacement,
+ and incident-response costs resulting from unauthorized technology commitments.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions shall be requested in writing,
+ documented with justification,
+ reviewed by the IT Director,
+ and approved in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Financial Management and Procurement Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Access Control Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Audit Logging and Monitoring Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Media Protection and Sanitization Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB)
+\end_layout
+
+\begin_layout Itemize
+NRS 332 (Purchasing:
+ Local Governments)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section 5.1 (Information Exchange Agreements)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section IR (Incident Response)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section Appendix H (Security Addendum)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.OV-01 (Risk Management Strategy Review)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.SC-01 (Cybersecurity Supply Chain Risk Management)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.SC-04 (Supplier Prioritization)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.SC-06 (Supply Chain Due Diligence)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ ID.RA-01 (Vulnerability Identification)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PS-7 (External Personnel Security)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ SA-9 (External System Services)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ SR-1 (Supply Chain Risk Management Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ APO10 (Manage Vendors)
+\end_layout
+
+\begin_layout Itemize
+2 CFR §200.216 (Prohibition on certain telecommunications and video surveillance equipment or services)
+\end_layout
+
+\begin_layout Itemize
+FCC Covered List:
+ 47 CFR §1.50002 (Covered List)
+\end_layout
+
+\begin_layout Itemize
+NDAA FY2019:
+ §889 (Covered telecommunications equipment/services prohibition)
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Operational Boundaries
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To ensure clarity of mission and resource allocation,
+ the following boundaries are established:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Business Ownership
+\series default
+:
+ The Requesting Department shall serve as Project Lead and shall manage scope,
+ timelines,
+ acceptance,
+ and invoicing.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Technical Enablement
+\series default
+:
+ Information Operations shall provide security validation,
+ network connectivity,
+ and infrastructure provisioning necessary to support approved engagements.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Prohibition
+\series default
+:
+ Information Operations shall not serve as Project Manager for third-party engagements initiated by other departments,
+ and departments shall not delegate contract ownership or business-logic decisions to IT personnel.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Supply Chain Risk Management (SCRM)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Elko County shall assess and manage risk associated with the Information and Communications Technology (ICT) supply chain.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Vendor Risk Assessment
+\series default
+:
+ All new technology vendors shall undergo a risk assessment prior to contract execution commensurate with service criticality and data classification.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Prohibited Technologies (NDAA §889 / Federal Funding Integrity)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Elko County shall not procure,
+ renew,
+ or expand deployment of equipment or services identified as “covered” under applicable federal restrictions,
+ including items appearing on the FCC Covered List,
+ to preserve eligibility for federal funding and reduce supply chain exposure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Information Operations shall identify discovered covered equipment and shall require segregation and replacement planning based on risk and lifecycle constraints.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enhanced Due Diligence
+\series default
+:
+ For high-impact vendors,
+ Information Operations may require independent attestations (e.g.,
+ SOC reports),
+ security questionnaires,
+ or other evidence of control effectiveness.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Contracting and Pre-Engagement Controls
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+No Contract,
+ No Access
+\series default
+:
+ No third-party logical access shall be granted,
+ and no vendor hardware shall be installed or connected,
+ until a contract or formal agreement is fully executed.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data Protection Addendum
+\series default
+:
+ Contracts involving Confidential or Restricted data (per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+) shall incorporate County-required security and data protection terms.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS Mandate
+\series default
+:
+ Any vendor with potential logical access to CJI,
+ or unescorted access to physically secure locations where CJI is processed,
+ shall execute the CJIS Security Addendum (Appendix H) and comply with CJIS contractor oversight requirements,
+ including acknowledgments retained for audit.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS Contractor Certifications
+\series default
+:
+ The contracting agency shall ensure each contractor employee with CJI access is provided a copy of the CJIS Security Addendum and CJIS Security Policy,
+ executes the CJIS Security Addendum Certification,
+ and that executed certifications are retained and available for audit.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS External Provider Oversight
+\series default
+:
+ For vendors providing external system services with access to CJI,
+ agreements shall provide the CSA/CSO (and their designated auditors,
+ including County representatives as authorized) authority to conduct audits (at minimum triennially) and unannounced security inspections,
+ and to require evidence of control compliance.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Fingerprinting
+\series default
+:
+ Prior to granting logical or unescorted physical access to CJI,
+ all vendor personnel shall undergo a state of residency and national fingerprint-based record check,
+ adjudicated by the CSA/SIB,
+ in accordance with CJIS Security Policy 5.12.1.1.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident Notification and Cooperation
+\series default
+:
+ Agreements shall require vendors to notify Information Operations immediately of any suspected or confirmed incident affecting County systems or County data.
+ If CJI may be impacted,
+ vendor notification shall occur immediately and no later than one (1) hour after discovery,
+ to support mandatory CJIS reporting timelines.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Monitoring and Service Oversight
+\series default
+:
+ Contracts shall support County monitoring,
+ review,
+ and sufficient visibility into security aspects of the provided services,
+ consistent with CJIS monitoring expectations where applicable.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Asset Integration,
+ Inventory,
+ and Tagging
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+County-Owned Technology:
+ Vendor-provided or vendor-installed hardware that is owned wholly by the County,
+ or is tagged and treated as County-governed / IO-managed technology under County custody for the duration of its deployment,
+ and becomes part of County infrastructure shall be tagged and governed in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Leased Infrastructure Equipment (GREEN Tags)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Leased or rented devices that connect to County networks (e.g.,
+ copiers/MFPs) shall be tagged with GREEN County asset tags and treated as County-governed / IO-managed technology under County custody for the duration of service.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+GREEN Tag Governance
+\series default
+:
+ GREEN tags indicate Information Operations technical administration,
+ configuration control,
+ and lifecycle governance for the duration of deployment;
+ contractual ownership and vendor maintenance obligations remain defined by the lease/SLA.
+ For purposes of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ “procured” includes leased acquisitions when Information Operations exercises configuration control and lifecycle governance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Such devices shall be recorded in the Configuration Management Database (CMDB) as distinct configuration items,
+ referencing lease/contract identifiers,
+ to support lifecycle control and decommission verification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Prior to return,
+ devices shall undergo data sanitization appropriate to stored data/media in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+NIST SP 800-88
+\series default
+ guidance.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Assets not tagged (where applicable) or not recorded in the Asset Inventory/CMDB shall be denied network connectivity and technical support.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Contractor Equipment and Support Model
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Default Requirement
+\series default
+:
+ Contractors shall provide their own equipment unless an exception is approved in writing by the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+BYOD (Zero Support Model)
+\series default
+:
+ Information Operations shall not troubleshoot,
+ configure,
+ or install software on non-County devices.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Admission Enforcement
+\series default
+:
+ Information Operations may deny connectivity to contractor devices that do not meet County security requirements.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 System and Network Access Control
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Least Privilege
+\series default
+:
+ Third-party access shall be explicitly authorized,
+ time-bounded where feasible,
+ and limited to least privilege required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Named Accounts Only
+\series default
+:
+ Generic/shared vendor accounts are prohibited.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Remote Access
+\series default
+:
+ Vendors shall use County-approved secure remote access (VPN + MFA).
+ Persistent,
+ unmonitored tunnels are prohibited unless explicitly authorized by the IT Director for critical support.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Logging and Monitoring
+\series default
+:
+ Vendor activity shall be logged and monitored in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Data Sovereignty and Protection
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Non-CJI Data Residency
+\series default
+:
+ County data (excluding CJI) stored or processed by third-party cloud providers shall reside within the continental United States unless an exception is approved through the exception process.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Sovereignty
+\series default
+:
+ Criminal Justice Information (CJI) shall comply with Policy 1.11 CJI Data Sovereignty requirements.
+ Where requirements conflict,
+ CJI sovereignty requirements shall govern.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data Ownership
+\series default
+:
+ County data remains the property of Elko County.
+ Vendors acquire no rights beyond contractually authorized use.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Termination and Offboarding
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Upon contract termination or project completion:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Immediate Revocation
+\series default
+:
+ The Requesting Department shall notify Information Operations within 24 hours;
+ Information Operations shall disable logical access.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Asset Reclamation
+\series default
+:
+ County-issued assets shall be returned within three (3) business days.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data Return/Destruction
+\series default
+:
+ Vendors shall certify return or secure destruction of County data consistent with County sanitization standards.
+\end_layout
+
+\end_body
+\end_document

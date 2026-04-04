@@ -1,0 +1,2310 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Policy and Documentation Formatting Standards
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:1.04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy establishes the mandatory formatting,
+ structural,
+ and stylistic standards governing all policies,
+ procedures,
+ and official documentation maintained by the Elko County Information Operations Department (ECIO).
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations personnel responsible for drafting,
+ editing,
+ approving,
+ or maintaining any document that is part of the Information Operations Policy Manual or supporting procedural library.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Policy documents within the Information Operations Policy Manual.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Standard Operating Procedures (SOPs) maintained in the System of Engagement (Redmine).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Playbooks maintained as governed Knowledge Base artifacts in the System of Engagement (Redmine).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Informal working documents,
+ drafts in progress,
+ and internal correspondence not intended for publication in the Policy Manual or procedural library.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall maintain this policy and serve as the final authority on formatting standards,
+ style determinations,
+ and exception approvals.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall return documents found to be non-compliant to the author for revision prior to publication.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall apply the structural,
+ grammatical,
+ and stylistic standards defined in this policy when drafting,
+ editing,
+ or maintaining any document within scope.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall verify cross-reference accuracy and citation completeness prior to submitting a document for review.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations personnel engaged in documentation tasks.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to formatting and style standards shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and in accordance with the review schedule defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The IT Director shall return documents found to be non-compliant to the author for revision prior to publication.
+ Repeated non-compliance may be escalated under 
+\series bold
+Policy 5.01
+\series default
+ (Policy Implementation and Enforcement Framework).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to formatting standards shall be documented with justification and approved in writing by the IT Director.
+ Oral exceptions are not valid.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Review and Update Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Containment Strategy and Playbooks
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Glossary and Definitions
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.010 (Applicability and Public Records)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO01.01 (Design the management system for enterprise I&T)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO01.09 (Define and communicate policies and procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Knowledge Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+6.1 Source of Truth and Document Authority
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+Elko County Information Operations Policy Manual
+\series default
+ (maintained as the master 
+\shape italic
+Policy_Manual.lyx
+\shape default
+ file) is the designated 
+\series bold
+Authoritative System of Record
+\series default
+ for all governance controls.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Master Repository
+\series default
+:
+ The LyX source file constitutes the legally authoritative master record.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Public Records Status
+\series default
+:
+ Designation of an "authoritative" copy is for version control only and does not alter public records status,
+ retention obligations,
+ or disclosure requirements applicable to records in any medium under NRS 239.010.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Operational Interface (System of Engagement)
+\series default
+:
+ The Departmental Knowledge Base (Redmine) serves as the accessible operational interface for day-to-day reference.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Synchronization
+\series default
+:
+ Content published in Redmine shall be sourced directly from the LyX master.
+ In the event of a discrepancy,
+ the LyX master record (and its compiled PDF) takes precedence.
+\end_layout
+
+\begin_layout Subsubsection*
+6.2 Policy Document Structure
+\end_layout
+
+\begin_layout Standard
+All policies within the Information Operations Policy Manual shall adhere to the following six-section structure,
+ presented in this exact order.
+ No sections shall be omitted,
+ reordered,
+ or renamed.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Purpose
+\series default
+:
+ A concise statement defining what the policy governs.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Scope
+\series default
+:
+ Defines who and what the policy applies to,
+ and what it does not.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Roles and Responsibilities
+\series default
+:
+ Identifies specific roles tasked with execution or oversight.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Compliance and Exceptions
+\series default
+:
+ Defines assessment mechanisms,
+ enforcement authority,
+ and the exception process.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+References
+\series default
+:
+ Citations of upstream frameworks and internal cross-references that are directly cited in the body of the policy.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Policy Statement
+\series default
+:
+ The core directives,
+ organized into subsections.
+\end_layout
+
+\begin_layout Standard
+Subsections within the Policy Statement shall use decimal notation (e.g.,
+ 6.1,
+ 6.2).
+ Nesting beyond two levels (e.g.,
+ 6.1.1) is prohibited.
+\end_layout
+
+\begin_layout Subsubsection*
+6.3 Purpose Section Template
+\end_layout
+
+\begin_layout Standard
+The Purpose section shall consist of one (1) sentence,
+ or two (2) sentences at maximum.
+ It shall answer a single question:
+ what does this policy govern?
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Opening Construction
+\series default
+:
+ Every Purpose statement shall open with the construction "This policy [verb]s..." using a direct,
+ present-tense verb (e.g.,
+ "This policy establishes...," "This policy defines...," "This policy governs...").
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Prohibited Constructions
+\series default
+:
+ The preamble "The purpose of this policy is to..." is prohibited.
+ Introductory filler,
+ risk justification,
+ and framework alignment rationale shall not appear in the Purpose section.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Rationale Placement
+\series default
+:
+ Context that explains why the policy matters,
+ what risk it addresses,
+ or how it aligns with external frameworks shall be placed in the opening paragraph of Section 6 (Policy Statement) or in the Policy Matrix appendix.
+\end_layout
+
+\begin_layout Subsubsection*
+6.4 Scope Section Template
+\end_layout
+
+\begin_layout Standard
+The Scope section shall open with a single universal applicability statement using the construction "This policy applies to [who/what]."
+\end_layout
+
+\begin_layout Standard
+When boundary clarification is required,
+ the Scope section shall use the following labeled subsections,
+ formatted as bolded bullet labels with sub-bullets:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+In Scope
+\series default
+:
+ Capitalized noun phrases identifying what the policy governs.
+ Each item shall appear as a sub-bullet beneath the label and consist of a standalone noun phrase with a terminal period.
+ No policy pointers are required,
+ as the governed items reside within this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Out of Scope
+\series default
+:
+ Capitalized noun phrases identifying what the policy does not govern.
+ Each item shall appear as a sub-bullet beneath the label,
+ followed by a colon and the routing pointer to the governing policy.
+ Format:
+ "[Topic]:
+ 
+\series bold
+Policy [X.XX]
+\series default
+."
+\end_layout
+
+\begin_layout Standard
+Not every policy requires both In Scope and Out of Scope subsections.
+ Simple policies where the applicability sentence is sufficient may omit them.
+ However,
+ when boundaries are drawn,
+ they shall be drawn with labels and sub-bullets,
+ not with narrative prose.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Exclusion
+\series default
+:
+ The Scope section shall not contain directives,
+ compliance language,
+ or enforcement statements.
+ Those belong in Section 4.
+\end_layout
+
+\begin_layout Subsubsection*
+6.5 Roles and Responsibilities Section Template
+\end_layout
+
+\begin_layout Standard
+The Roles and Responsibilities section shall identify every role with accountability under the policy.
+ Roles shall be listed in descending order of authority (e.g.,
+ IT Director,
+ County Manager,
+ Assistant IT Director,
+ then operational roles,
+ then external stakeholders).
+\end_layout
+
+\begin_layout Standard
+Each role shall be formatted as follows:
+\end_layout
+
+\begin_layout Itemize
+The role title shall appear as a bolded bullet item followed by a colon.
+ No text shall follow the colon on the role title line.
+\end_layout
+
+\begin_layout Itemize
+Each distinct obligation shall appear as a sub-bullet beneath the role,
+ opening with the word "Shall" and containing exactly one (1) directive.
+\end_layout
+
+\begin_layout Itemize
+Obligations shall not be chained together in a single comma-separated sentence.
+ Each auditable obligation requires its own sub-bullet.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Role Identity Requirement
+\series default
+:
+ Every role listed in Section 3 shall correspond to a defined position in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework),
+ an established County institutional title (e.g.,
+ County Manager,
+ Board of County Commissioners),
+ or a defined group with a clear membership boundary (e.g.,
+ "All Information Operations Personnel," "All County Personnel," "Department Heads").
+ Descriptive activity labels (e.g.,
+ "Policy Authors," "Approving Authorities," "System Owners") shall not be used as role identifiers in Section 3.
+ If a responsibility applies to any person performing a given activity,
+ it shall be assigned to the defined role or group that performs that activity.
+\end_layout
+
+\begin_layout Standard
+The Roles and Responsibilities section shall focus on ownership of outcomes,
+ not step-by-step procedures.
+ Procedural detail belongs in Section 6.
+\end_layout
+
+\begin_layout Subsubsection*
+6.6 Compliance and Exceptions Section Template
+\end_layout
+
+\begin_layout Standard
+The Compliance and Exceptions section shall open with a single sentence establishing the mandatory nature of the policy (e.g.,
+ "Compliance with this policy is mandatory for all Information Operations personnel involved in [relevant activity].").
+\end_layout
+
+\begin_layout Standard
+The section shall contain the following three (3) mandatory labeled bullet items,
+ in this order:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Assessment
+\series default
+:
+ Identifies how and when compliance with this policy is evaluated.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Enforcement
+\series default
+:
+ Identifies the consequences of non-compliance and the authority that enforces the policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Exceptions
+\series default
+:
+ Defines the process for requesting deviations.
+ Shall state that oral exceptions are not valid.
+\end_layout
+
+\begin_layout Standard
+Additional labeled bullets may be included when the policy warrants them.
+ The following are the governed set of optional labels:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Constructive Notice
+\series default
+:
+ For policies where publication constitutes notice.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Emergency Deviations
+\series default
+:
+ For policies with time-critical override procedures.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sanctions
+\series default
+:
+ For policies with specific disciplinary consequences beyond the standard enforcement framework.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Universal Applicability
+\series default
+:
+ For policies that apply regardless of location or work status.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Mandatory Compliance
+\series default
+:
+ For policies that apply without exception to all personnel classes.
+\end_layout
+
+\begin_layout Standard
+No other labels shall be introduced without IT Director approval and incorporation into this governing list.
+ The Compliance and Exceptions section shall not use numbered subsections (e.g.,
+ 4.1,
+ 4.2);
+ it shall use the flat bolded-bullet-label structure defined above.
+\end_layout
+
+\begin_layout Subsubsection*
+6.7 References Section Template
+\end_layout
+
+\begin_layout Standard
+The References section is the legal and framework audit trail.
+ It shall be formatted as a flat list of citation line items with no narrative prose.
+ The section shall be divided into two (2) labeled subsections:
+ Cited References and Framework Alignment.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cited References
+\series default
+:
+ This subsection contains citations that are directly referenced by number or identifier in the body of the policy (Sections 1 through 4 and Section 6).
+ A policy or framework that is not cited in the body text shall not appear in this subsection.
+ Conversely,
+ any policy or framework cited by number in the body text shall have a corresponding entry in this subsection.
+ Cited References are load-bearing —
+ they support specific directives,
+ cross-references,
+ or compliance statements within the policy.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Framework Alignment
+\series default
+:
+ This subsection contains framework mappings that establish where the policy sits in the broader governance landscape,
+ regardless of whether they are explicitly cited in the body text.
+ Framework Alignment entries support traceability,
+ feed the Policy Matrix (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+),
+ and make governance alignment visible at the policy level.
+ A framework reference that is directly cited in the body text shall appear under Cited References,
+ not Framework Alignment.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Default Placement
+\series default
+:
+ 
+\end_layout
+
+\begin_layout Itemize
+The following categories shall default to Cited References unless they are not cited in the body text:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ECIO Policies.
+\end_layout
+
+\begin_layout Itemize
+ECIO Appendices.
+\end_layout
+
+\begin_layout Itemize
+NRS.
+\end_layout
+
+\begin_layout Itemize
+NAC.
+\end_layout
+
+\begin_layout Itemize
+LRDA.
+\end_layout
+
+\begin_layout Itemize
+CJIS.
+\end_layout
+
+\begin_layout Itemize
+NIST CSF.
+\end_layout
+
+\begin_layout Itemize
+NIST SP.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The following categories shall default to Framework Alignment unless they are directly cited by identifier in the body text:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+COBIT 2019.
+\end_layout
+
+\begin_layout Itemize
+ITIL v4.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+A COBIT or ITIL reference that is directly invoked by identifier in the body text shall be promoted to Cited References.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ordering
+\series default
+:
+ Within each subsection,
+ citations shall follow the categorical sequence and sub-ordering rules defined in Section 6.11 of this policy.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Formatting Rules
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+Each citation shall be a distinct,
+ individual line item.
+ Citations shall not be grouped on a single line.
+\end_layout
+
+\begin_layout Itemize
+Reference line items shall not end with a terminal period.
+ They are citations,
+ not sentences.
+\end_layout
+
+\begin_layout Itemize
+Internal ECIO policy and appendix references shall not be bolded in either subsection.
+ All citation line items shall receive uniform formatting to avoid visually privileging internal references over upstream frameworks.
+\end_layout
+
+\begin_layout Itemize
+Internal ECIO policy and appendix references shall use LyX cross-reference insets (CommandInset ref) to maintain link integrity.
+ They shall not be manually typed.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Citation Syntax
+\series default
+:
+ Citation formatting for each framework category is defined in Section 6.11 of this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+6.8 Policy Statement Section Template
+\end_layout
+
+\begin_layout Standard
+The Policy Statement is the operational core of the policy,
+ containing the auditable controls and directives.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Framing Preamble
+\series default
+:
+ When a policy requires contextual framing —
+ risk justification,
+ framework alignment rationale,
+ or dual-audience explanation —
+ that context shall appear as an opening paragraph or paragraphs before Section 6.1 begins,
+ or as the opening content of Section 6.1 itself.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subsection Organization
+\series default
+:
+ Content shall be organized into labeled subsections (6.1,
+ 6.2,
+ etc.) grouped by operational sub-domain.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+One Directive Per Item
+\series default
+:
+ Each numbered or bulleted item within the Policy Statement shall contain exactly one (1) directive or requirement.
+ Blended rules that combine multiple obligations in a single item are prohibited.
+\end_layout
+
+\begin_layout Subsubsection*
+6.9 Compliance Language Standards
+\end_layout
+
+\begin_layout Standard
+To ensure clear enforceability during audits,
+ the following terminology definitions apply to all policy documents within the Information Operations Policy Manual.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+"Shall" or "Must"
+\series default
+:
+ Indicates a mandatory requirement.
+ Non-compliance is auditable and enforceable.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+"Should"
+\series default
+:
+ Indicates a recommended best practice.
+ Deviations from "Should" requirements shall be documented in writing and approved by the IT Director or Policy Owner prior to implementation.
+ Justifications shall be retained for audit.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+"May"
+\series default
+:
+ Indicates a permissible or discretionary action.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Anchoring Requirement
+\series default
+:
+ Every directive shall be anchored to a specific,
+ capitalized role.
+ Orphaned directives (e.g.,
+ "Logs shall be reviewed weekly" with no identified role) are prohibited.
+ The correct form is "The Systems Administrator shall review logs weekly."
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Prohibited Language
+\series default
+:
+ The following terms and phrases are prohibited in Section 6 (Policy Statement) of any policy.
+ Authors shall map the intended obligation to "Shall," "Should," or "May" with an explicit role anchor.
+\end_layout
+
+\begin_layout Itemize
+"expected to"
+\end_layout
+
+\begin_layout Itemize
+"responsible for"
+\end_layout
+
+\begin_layout Itemize
+"as needed"
+\end_layout
+
+\begin_layout Itemize
+"where possible"
+\end_layout
+
+\begin_layout Itemize
+"where feasible"
+\end_layout
+
+\begin_layout Itemize
+"is not feasible" / "not feasible" / "technically feasible"
+\end_layout
+
+\begin_layout Itemize
+"as appropriate"
+\end_layout
+
+\begin_layout Itemize
+"in a timely manner / 
+\begin_inset Quotes eld
+\end_inset
+
+timely
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+reasonable
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+"when practical" / "where practical"
+\end_layout
+
+\begin_layout Itemize
+"if necessary"
+\end_layout
+
+\begin_layout Itemize
+"attempt to"
+\end_layout
+
+\begin_layout Itemize
+"strive to"
+\end_layout
+
+\begin_layout Itemize
+"best effort"
+\end_layout
+
+\begin_layout Itemize
+"strongly encouraged"
+\end_layout
+
+\begin_layout Subsubsection*
+6.10 Universal Style and Grammar Standards
+\end_layout
+
+\begin_layout Standard
+The following style and grammar rules apply to all text within the Information Operations Policy Manual.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Voice and Tense
+\series default
+:
+ All policy text shall use present-tense,
+ active voice (e.g.,
+ "The IT Director reviews logs" rather than "Logs are reviewed by the IT Director").
+ Passive constructions are permitted only when the acting role is genuinely irrelevant or unknown.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Time and Quantity Syntax
+\series default
+:
+ All deadlines,
+ timeframes,
+ and quantities shall be written as the number in words followed immediately by the numerical digit in parentheses (e.g.,
+ "five (5) business days," "twenty-four (24) hours," "ninety (90) calendar days").
+ Neither the word nor the digit shall appear alone.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Institutional Capitalization
+\series default
+:
+ The following shall always be capitalized:
+ proper nouns,
+ official job titles (e.g.,
+ "IT Director," "Systems Administrator"),
+ institutional concepts (e.g.,
+ "County," "Department," "Information Operations Department"),
+ defined terms from the Glossary (
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+),
+ and named policy constructs (e.g.,
+ "Incident Commander," "Hard Fork," "Operational Handback").
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Acronym Protocol
+\series default
+:
+ The first instance of a technical term or organizational name within each policy shall be fully spelled out,
+ followed by its abbreviation in parentheses (e.g.,
+ "Criminal Justice Information Services (CJIS)").
+ Subsequent references within the same policy may use the abbreviation alone.
+ Acronym definitions do not carry across policies;
+ each policy shall define its own terms on first use.
+ Standard terms defined in the Glossary (
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+) are exempt from the first-use requirement only when the policy explicitly states reliance on the Glossary.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Oxford Comma
+\series default
+:
+ The Oxford comma is mandatory in all lists (e.g.,
+ "systems,
+ services,
+ and infrastructure").
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Official Systems Terminology
+\series default
+:
+ Software and platforms referenced in policy documents shall be cited by their governance function first,
+ followed by the vendor or product name in parentheses (e.g.,
+ "System of Engagement (Redmine)," "Authoritative System of Record (LyX master)").
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Policy Numbering
+\series default
+:
+ Policy numbers shall follow a strictly padded two-digit decimal system within each chapter (e.g.,
+ Policy 1.01,
+ Policy 2.05,
+ Policy 3.14).
+ Single-digit policy numbers (e.g.,
+ Policy 1.1) are prohibited.
+\end_layout
+
+\begin_layout Subsubsection*
+6.11 Cross-Reference,
+ Citation,
+ and Bold Standards
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cross-Reference Syntax
+\series default
+:
+ Internal references to other policies shall use the following rules:
+\end_layout
+
+\begin_layout Itemize
+Every reference shall use the singular construction "Policy [X.XX]" (e.g.,
+ "Policy 2.04").
+ The word "Policy" shall appear before every number,
+ even when citing multiple policies in sequence (e.g.,
+ "Policy 3.03 and Policy 3.04," never "Policies 3.03 and 3.04").
+\end_layout
+
+\begin_layout Itemize
+The first reference to an internal policy within each policy shall include the parenthetical title immediately after the cross-reference (e.g.,
+ "Policy 1.08 (Delegation of Authority and Decision Rights)").
+ The parenthetical title shall not be bolded;
+ bold applies only to the cross-reference itself.
+ All subsequent references within the same policy shall use the short form only (e.g.,
+ "Policy 1.08").
+\end_layout
+
+\begin_layout Itemize
+Every in-body cross-reference (Sections 1 through 4 and Section 6) shall be bolded and implemented as a LyX cross-reference inset (CommandInset ref) to maintain link integrity.
+ Manually typed policy numbers are prohibited in the body of any policy.
+\end_layout
+
+\begin_layout Itemize
+Cross-references within Section 5 (References) shall not be bolded,
+ consistent with the uniform citation formatting rule in Section 6.7.
+ They shall still use LyX cross-reference insets.
+\end_layout
+
+\begin_layout Itemize
+Directional phrases such as "see below," "see above," "as described later," and hard-coded page numbers are prohibited.
+ All internal references shall use absolute numerical pointers (e.g.,
+ "Policy 2.04" or "Section 6.2").
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+External Framework First-Use Syntax
+\series default
+:
+ The first reference to an external framework citation within each policy shall include the full citation with parenthetical topic (e.g.,
+ "NIST SP 800-53 Rev.
+ 5:
+ IR-4 (Incident Handling)").
+ Subsequent references within the same policy may use the short form (e.g.,
+ "NIST SP 800-53 IR-4" or the control identifier alone if context is unambiguous).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reference Citation Syntax
+\series default
+:
+ Citations within Section 5 (References) shall follow the formatting defined below for each framework category.
+ These formats apply uniformly within both the Cited References and Framework Alignment subsections.
+\end_layout
+
+\begin_layout Itemize
+Internal Policies:
+ ECIO Policy [Number]:
+ [Policy Title]
+\end_layout
+
+\begin_layout Itemize
+Internal Appendices:
+ ECIO Appendix [Number]:
+ [Appendix Title]
+\end_layout
+
+\begin_layout Itemize
+NRS:
+ NRS [Chapter].[Section] ([Short Topic Description])
+\end_layout
+
+\begin_layout Itemize
+NAC:
+ NAC [Chapter].[Section] ([Short Topic Description])
+\end_layout
+
+\begin_layout Itemize
+LRDA:
+ LRDA [LRDA Number] ([Record Series Title])
+\end_layout
+
+\begin_layout Itemize
+CJIS:
+ CJIS Security Policy v[Version]:
+ Section [ID] ([Topic])
+\end_layout
+
+\begin_layout Itemize
+NIST CSF:
+ NIST CSF [Version]:
+ [Function].[Category]-[ID] ([Title])
+\end_layout
+
+\begin_layout Itemize
+NIST SP:
+ NIST SP [Number] Rev.
+ [Revision]:
+ [Control ID] ([Control Title])
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ COBIT 2019:
+ [Process ID] ([Process Name])
+\end_layout
+
+\begin_layout Itemize
+ITIL v4:
+ ITIL v4:
+ [Practice Name]
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reference Sub-Ordering Within Categories
+\series default
+:
+ The following ordering rules apply within each subsection (Cited References and Framework Alignment) independently.
+ Citations shall not be interleaved across subsections.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+ECIO Policies
+\series default
+:
+ Sorted numerically by Policy Number in ascending order.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+ECIO Appendices
+\series default
+:
+ Sorted numerically by Appendix Number in ascending order.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+State of Nevada
+\series default
+:
+ Grouped by authority in the sequence NRS,
+ NAC,
+ then LRDA.
+ Within each group,
+ sorted numerically by Chapter,
+ Schedule Number,
+ or LRDA Number.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+CJIS
+\series default
+:
+ Sorted alphanumerically by Section or Control Family identifier.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+NIST CSF
+\series default
+:
+ Sorted by Core Function sequence (GV,
+ ID,
+ PR,
+ DE,
+ RS,
+ RC),
+ then alphanumerically by Category and Subcategory identifier.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+NIST SP
+\series default
+:
+ Sorted numerically by Publication Number (e.g.,
+ SP 800-37 precedes SP 800-53),
+ then alphanumerically by Control Identifier.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+COBIT 2019
+\series default
+:
+ Sorted alphanumerically by Core Model Objective or Domain identifier.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+ITIL v4
+\series default
+:
+ Sorted alphabetically by Practice name.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Other Frameworks
+\series default
+:
+ Sorted alphabetically by issuing authority,
+ then publication title.
+\end_layout
+
+\begin_layout Standard
+This ordering establishes structural consistency and does not alter the legal hierarchy of authority established in the Manual Executive Summary.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Bold Usage
+\series default
+:
+ Bold formatting is a navigational and structural tool,
+ not an emphasis tool.
+ Bold shall be reserved for the following uses only:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Internal Cross-References
+\series default
+:
+ Bolded on every instance in the policy body (Sections 1 through 4 and Section 6).
+ Not bolded in Section 5 (References).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Glossary-Defined Terms
+\series default
+:
+ Bolded on first use within each policy only.
+ Not linked to the Glossary;
+ the bold treatment serves as a visual flag that the term carries a specific defined meaning.
+ The criteria for Glossary inclusion are defined in Section 6.14.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Structural Labels
+\series default
+:
+ Role titles in Section 3,
+ compliance labels in Section 4,
+ In Scope and Out of Scope labels in Section 2,
+ and contextual clarifier tags (defined in Section 6.12).
+ Bolded by virtue of their structural position.
+\end_layout
+
+\begin_layout Standard
+Bold shall not be applied to external framework references (CJIS,
+ NIST,
+ COBIT control IDs),
+ numerical values,
+ parenthetical titles accompanying cross-references,
+ or general emphasis within prose.
+\end_layout
+
+\begin_layout Subsubsection*
+6.12 List and Structural Formatting Standards
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Terminal Periods
+\series default
+:
+ Every bulleted and sub-bulleted list item shall end with a terminal period,
+ regardless of whether the item is a full sentence or a fragment.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Exception
+\series default
+:
+ Citation line items in Section 5 (References) shall not end with a terminal period.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Bulleted Lists vs.
+ Numbered Lists
+\series default
+:
+ Bulleted lists (Itemize) shall be used for unordered collections of items.
+ Numbered lists (Enumerate) shall be used only when the items represent an ordered sequence where position is meaningful (e.g.,
+ a workflow,
+ a hierarchy of precedence).
+ Numbered lists shall not be used solely for the purpose of counting items.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sub-Bullets
+\series default
+:
+ Nested list items shall use the LyX begin_deeper environment (rendered as indented sub-bullets).
+ Nesting beyond two levels is prohibited.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Bold Label Formatting
+\series default
+:
+ When a bold label is used to identify a bullet item,
+ a paragraph-level directive,
+ or a topic block within a subsection,
+ the label shall always be followed by a colon,
+ never a period.
+ The colon signals that the label identifies the content that follows.
+ Bold labels followed by periods are prohibited.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Contextual Clarifiers
+\series default
+:
+ When a directive requires boundary-setting,
+ explanation,
+ or qualification,
+ the clarifying statement shall be separated from the primary directive using a bolded tag followed by a colon,
+ placed on a new line or as a sub-bullet.
+ The following tags constitute the governed vocabulary of permitted contextual clarifiers:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Constraint
+\series default
+:
+ Defines a hard limitation or boundary condition on the directive.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Rationale
+\series default
+:
+ Provides the justification for a requirement that may not be self-evident.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Exception
+\series default
+:
+ Identifies a specific,
+ defined circumstance under which the directive does not apply.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Exclusion
+\series default
+:
+ Carves out a specific item,
+ group,
+ or system from the scope of the directive.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Clarification
+\series default
+:
+ Resolves a potential ambiguity in the directive's application.
+\end_layout
+
+\begin_layout Standard
+No other contextual clarifier tags shall be introduced without IT Director approval and incorporation into this governed list.
+\end_layout
+
+\begin_layout Subsubsection*
+6.13 Visual and Typography Standards
+\end_layout
+
+\begin_layout Standard
+Typography,
+ spacing,
+ and layout are controlled programmatically by the LyX document class (book) and the master preamble to ensure absolute consistency.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Manual Overrides
+\series default
+:
+ Authors shall not use manual formatting commands (e.g.,
+ forcing font sizes,
+ manual line breaks,
+ or changing margins) within the LyX editor.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Images and Diagrams
+\series default
+:
+ Workflow diagrams may be included when necessary.
+ They shall be inserted as standard LyX "Floats" with a caption and created in a format that renders clearly in grayscale (PDF).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Term Definitions
+\series default
+:
+ Policies shall not redefine standard terms already defined in the central Glossary (
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+).
+ If a policy requires a term that does not yet appear in the Glossary and meets the inclusion criteria defined in Section 6.14,
+ the IT Director shall approve the term for addition to 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ prior to or concurrent with publication of the policy.
+\end_layout
+
+\begin_layout Subsubsection*
+6.14 Glossary Governance and Term Criteria
+\end_layout
+
+\begin_layout Standard
+The Glossary (
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+) is the authoritative repository for defined terms used within the Information Operations Policy Manual.
+ The IT Director shall maintain the Glossary and approve all additions,
+ modifications,
+ and removals.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inclusion Criteria
+\series default
+:
+ A term warrants a Glossary entry if it meets any of the following conditions:
+\end_layout
+
+\begin_layout Itemize
+The term is coined by the ECIO Policy Manual and has no standard external definition (e.g.,
+ "Hard Fork," "Operational Handback").
+\end_layout
+
+\begin_layout Itemize
+The term is a standard industry or framework term that the manual uses with a specific institutional meaning that narrows,
+ modifies,
+ or contextualizes the common definition (e.g.,
+ "Incident Commander" as scoped by the ECIO framework).
+\end_layout
+
+\begin_layout Itemize
+The term is an acronym or abbreviation whose expansion is not obvious to the intended audience of the manual.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Exclusion Criteria
+\series default
+:
+ The following shall not receive Glossary entries:
+\end_layout
+
+\begin_layout Itemize
+Plain-language terms used in their ordinary,
+ commonly understood sense (e.g.,
+ "server," "firewall," "email").
+\end_layout
+
+\begin_layout Itemize
+Terms whose meaning is fully self-evident to a competent IT professional without further definition.
+\end_layout
+
+\begin_layout Itemize
+External framework terms (e.g.,
+ NIST control names,
+ COBIT process identifiers) that are used in their standard published meaning without institutional modification.
+ These terms are defined by their issuing authority and do not require local redefinition.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Bold Treatment
+\series default
+:
+ Terms that appear in the Glossary shall be bolded on first use within each policy,
+ as defined in Section 6.11.
+ Glossary terms shall not be hyperlinked to 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+;
+ the bold treatment serves as the visual indicator that the term carries a defined meaning.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Maintenance Cadence
+\series default
+:
+ The Glossary shall be reviewed as part of each annual policy review cycle defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Terms that are no longer referenced by any active policy shall be candidates for removal.
+\end_layout
+
+\begin_layout Subsubsection*
+6.15 Procedural Document Formatting
+\end_layout
+
+\begin_layout Standard
+Standard Operating Procedures (SOPs) are distinct from policies and are maintained as tickets or wiki entries in the System of Engagement (Redmine).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Taxonomy
+\series default
+:
+ The Subject Line shall clearly identify the task.
+ The Category field shall correspond to the ticket taxonomy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Linkage
+\series default
+:
+ The procedure shall link to at least one (1) work order or policy that triggered the documentation.
+ Informational documentation is exempt from this requirement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Ownership
+\series default
+:
+ Each SOP shall identify the owning role that shall keep the procedure current.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Required Body Elements
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Prerequisites
+\series default
+:
+ Required roles,
+ permissions,
+ or system states.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Quick Guide
+\series default
+:
+ A condensed summary for experienced technicians.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Step-by-Step
+\series default
+:
+ A detailed,
+ narrative walkthrough.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Outputs
+\series default
+:
+ Artifacts or logs generated by the procedure.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+6.16 Playbook Formatting
+\end_layout
+
+\begin_layout Standard
+Playbooks are scenario-based operational artifacts that govern decision-making and technical execution during defined incident or operational scenarios.
+ They are distinct from SOPs in that they present branching decision logic rather than linear procedural steps.
+ Playbooks are maintained as governed Knowledge Base artifacts in the System of Engagement (Redmine).
+\end_layout
+
+\begin_layout Standard
+Each playbook shall include the following structural elements:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subject Line
+\series default
+:
+ Shall identify the scenario type and governing policy (e.g.,
+ "Chapter 4 Playbook —
+ Category B:
+ Malicious Code Activity | Governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Containment Strategy and Playbooks)").
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Version and Effective Date
+\series default
+:
+ Shall be maintained in the document header and updated upon each revision.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Governing Policy Reference
+\series default
+:
+ Shall cite the policy that mandates the playbook's existence and defines its content requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Owning Role
+\series default
+:
+ Shall identify the role that shall maintain the playbook and initiate reviews.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Required Content Sections
+\series default
+:
+ As defined by the governing policy for each playbook type.
+\end_layout
+
+\begin_layout Standard
+Review cadence and content requirements for each playbook class are defined in the governing policy.
+ Playbook versioning and Knowledge Base artifact governance are subject to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy).
+\end_layout
+
+\end_body
+\end_document

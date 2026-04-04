@@ -1,0 +1,1021 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Policy Review and Update Procedures
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:1.05"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to define the lifecycle,
+ cadence,
+ responsibilities,
+ and mechanisms for reviewing,
+ updating,
+ and reauthorizing official IT policies within the Elko County Information Operations Department.
+ Its goal is to ensure all policies remain current,
+ enforceable,
+ and aligned with legal,
+ operational,
+ and institutional realities.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all formal Information Technology policies governed by the Elko County Information Operations Department (the "Policy Manual").
+ It does not apply to draft procedures,
+ working documents,
+ or informal guidance.
+ 
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall oversee annual reviews,
+ approve internal revisions,
+ and issue emergency changes when operational integrity is at risk.
+ Shall ensure review records are available for audit.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+ Grants final approval for standard policy updates,
+ governance changes,
+ and formal exceptions.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Commission
+\series default
+:
+ Approves policies requiring legal ratification,
+ funding appropriation,
+ or significant changes to County governance structure.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all activities related to the development,
+ review,
+ approval,
+ retirement,
+ and maintenance of IT policies.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Completion and timeliness of required policy reviews and resanctions shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to conduct required reviews,
+ resanctions,
+ or tracker updates in accordance with this policy may be treated as non-compliance and escalated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation and Enforcement Framework).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Emergency Deviations
+\series default
+:
+ Deviations from standard review timelines shall be documented and approved by the IT Director,
+ including justification and a revised review date.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be justified in writing and approved by the County Manager in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights) and documented in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy and Documentation Formatting Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Revision History and Version Control
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section 5.1.1.6 (Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.PO-02 (Policy Review)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-1 (Information Security Program Plan)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-2 (Information Security Program Leadership)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA01 (Monitor,
+ Evaluate and Assess Performance and Conformance)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA03 (Monitor,
+ Evaluate and Assess Compliance with External Requirements)
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Review Cadence
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To ensure continued relevance and compliance,
+ all policies shall undergo the following review cycles:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Annual Internal Review
+\series default
+:
+ The IT Director or designated Policy Owners shall conduct an annual internal review of each policy to evaluate compliance,
+ technical accuracy,
+ and workforce awareness.
+ This review supports 
+\series bold
+NIST SP 800-53 Rev.
+ 5 PM-1
+\series default
+ and 
+\series bold
+PM-2
+\series default
+ and 
+\series bold
+CJIS Security Policy v6.0 Section 5.1.1.6
+\series default
+ by ensuring program leadership actively evaluates and maintains the policy framework.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Biennial Resanction
+\series default
+:
+ The IT Director shall coordinate biennial resanction of the Policy Manual with the County Manager and,
+ where required,
+ the County Commission.
+ This resanction reaffirms institutional support,
+ risk tolerance,
+ and funding alignment for the IT governance framework.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Ad Hoc Reviews
+\series default
+:
+ Policy Owners shall initiate ad hoc reviews when triggered by:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Regulatory or legal changes (e.g.,
+ FBI CJIS Security Policy updates).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Internal or external audit findings.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Major incidents or critical system events requiring post-mortem policy adjustment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Significant organizational changes (e.g.,
+ departmental mergers or new mandates).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Significant technology changes (e.g.,
+ new platforms,
+ major infrastructure shifts).
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Policy Lifecycle and Change Control
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Updates to the Policy Manual shall follow this strict change control workflow:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\lang english
+Identification
+\series default
+:
+ The reviewer or Policy Owner shall identify needed revisions based on the criteria in Section 6.1.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\lang english
+Drafting
+\series default
+:
+ Draft updates shall be prepared in accordance with the formatting standards in Policy 1.04 and the version control requirements in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\lang english
+Approval
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall approve technical and operational changes that do not alter governance structures or budget authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The County Manager shall approve changes that affect governance constructs,
+ decision rights,
+ or risk appetite,
+ and shall escalate to the County Commission when legal ratification or additional appropriation is required.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\lang english
+Notification
+\series default
+:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall notify all affected personnel of every approved policy change within five (5) business days.
+ Notification shall include an effective date,
+ a summary of changes,
+ and a link to the authoritative policy record.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All personnel whose duties are impacted by the change shall complete a documented acknowledgement (electronic or written) within 
+\series bold
+ten (10) business days
+\series default
+ of notice.
+ Failure to acknowledge does not delay the effective date and constitutes noncompliance.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\lang english
+Publication
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The policy version shall be incremented in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The new version shall be committed to the Authoritative System of Record (LyX/PDF) and synchronized to the System of Engagement (Redmine).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The previous version shall be marked "Obsolete" and archived in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and applicable retention schedules.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\lang english
+Retirement
+\series default
+:
+ Policies deemed no longer necessary must be formally retired.
+ The retirement process requires the same approval level as the policy's original creation.
+ Retired policies are removed from active circulation but retained in the archive in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and applicable retention schedules for legal defensibility.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Emergency Policy Changes
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director may issue temporary policy amendments ("Technical Directives") when standard policies obstruct legal compliance,
+ operational integrity,
+ or incident response.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Permissible Scenarios
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+A CJIS,
+ HIPAA,
+ or statutory compliance deadline requiring immediate action.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Response to a zero-day vulnerability or active threat.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Critical failure affecting escalation,
+ access control,
+ or procedures.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraints
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Must be documented immediately in the Policy Review Tracker.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Must include justification,
+ scope,
+ and a specific expiration date.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Emergency Deviations established through Technical Directives are subject to the same documentation and exception requirements defined in Section 4.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Automatic Expiration
+\series default
+:
+ Emergency policies expire after 
+\series bold
+90 calendar days
+\series default
+.
+ Upon expiration,
+ the Technical Directive shall either be (a) incorporated into a formally approved policy revision following the process in Section 6.2,
+ or (b) explicitly rescinded and documented in the Policy Review Tracker.
+ The same or substantially similar emergency policy shall not be re-issued within twelve (12) months of expiration without formal adoption through the standard approval process.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Limitation
+\series default
+:
+ Emergency powers may not be used to alter budget authority or core governance roles defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Policy Review Tracker
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All policy review and update activity shall be recorded in the Departmental Knowledge Base (Redmine).
+ Policy Owners shall ensure that review and update records for their assigned policies are created and maintained,
+ and the IT Director shall ensure these records are available to support internal audits and the maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Required metadata for every update includes:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Policy ID and Title
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Last Review Date and Next Scheduled Review Date
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Responsible Reviewer or Policy Owner
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Review Status (Compliant/Revision Needed/Obsolete)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Associated Work Order or Ticket Reference Link
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Reference to any applicable audit finding,
+ incident report,
+ or regulatory change.
+\end_layout
+
+\end_body
+\end_document

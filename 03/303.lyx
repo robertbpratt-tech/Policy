@@ -1,0 +1,1140 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+End-User Communication Standards
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.03"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish mandatory standards for all communications conducted by Elko County Information Operations personnel with end users,
+ internal stakeholders,
+ vendors,
+ and external partners.
+ Clear,
+ professional,
+ and documented communication is foundational to service accountability,
+ operational continuity,
+ and public trust in County IT operations.
+ This policy ensures that all interactions —
+ regardless of channel or audience —
+ are traceable,
+ appropriately scoped,
+ and consistent with the Department's governance obligations.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel,
+ including the IT Director,
+ Assistant IT Director,
+ and all IT staff at every tier.
+ It governs verbal,
+ written,
+ and electronic communications conducted in the performance of IT duties,
+ including but not limited to:
+ service request interactions with County end users and department heads;
+ coordination with vendors and managed service providers;
+ and communications with external partners acting on behalf of or in support of County IT operations.
+ This policy does not govern security incident communications during active incident response;
+ those communications are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ with this policy providing foundational channel and documentation standards that apply during the pre-escalation and post-resolution phases.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall serve as the final authority on communication standards and shall conduct or authorize spot audits of communication quality and traceability as part of quarterly reviews,
+ postmortems,
+ or compliance assessments.
+ Shall approve all exceptions to this policy in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Shall ensure vendor and external partner communication expectations are codified in applicable contracts and service agreements in coordination with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+ Shall ensure that all IT Department personnel are trained on and consistently applying the communication standards defined in this policy.
+ Shall review communication quality during service level reporting activities under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and shall flag systemic communication deficiencies to the IT Director.
+ Shall maintain documentation templates and work order notation standards in the designated system of record (Redmine).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+All IT Personnel
+\series default
+:
+ Shall follow the communication protocols defined in this policy for all service interactions,
+ including documentation,
+ clarification,
+ escalation,
+ and closure.
+ Shall ensure that verbal and informal communications are summarized in the relevant work order within one (1) business day.
+ Shall apply the writing standards defined in Section 6.2 in all written communications conducted on behalf of the Department.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all Information Operations personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Communication quality,
+ channel compliance,
+ and documentation traceability shall be assessed as part of quarterly service reviews,
+ postmortem processes,
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Repeated failure to document communications,
+ use required channels,
+ or adhere to the writing and conduct standards defined in this policy shall be treated as non-compliance and may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions —
+ such as operationally necessary verbal briefings that cannot be fully documented —
+ must still be summarized within internal work order documentation using Private Notes strictly in accordance with the Private Note constraints defined in Section 6.1,
+ and within one (1) business day.
+ Where the sensitive nature of an exception precludes narrative documentation,
+ a placeholder record shall be generated in the work order system referencing the authorized exception without disclosing the sensitive content.
+ All exceptions must be approved in writing by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and shall not be granted on an open-ended basis.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management (SCRM) and Vendor Governance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Stakeholder Engagement and Communications Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Level Management and Metrics Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Project Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NAC 239.155 (Retention and Disposition of Local Government Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NAC 239.155 (Retention and Disposition of Local Government Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071280 (Correspondence:
+ Transitory)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071715 (Work Orders)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20141919 (Correspondence:
+ Routine Business)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SI-12 (Information Management and Retention)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ AU-3 (Content of Audit Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ AU-6 (Audit Record Review,
+ Analysis,
+ and Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-7 (Incident Response Assistance)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PL-4 (Rules of Behavior)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO09 (Manage Service Agreements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO10 (Manage Vendors)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS02 (Manage Service Requests and Incidents)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Service Desk Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Service Level Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Required Communication Channels
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The designated work order system (Redmine) is the authoritative channel for all service requests,
+ technical communications,
+ and service lifecycle documentation.
+ Work order records are subject to retention obligations under the Nevada Local Government Records Retention Schedule.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Channel Mandate
+\series default
+:
+ Unless the work order system is inaccessible due to a documented system outage,
+ all service requests and IT responses shall be initiated,
+ tracked,
+ and closed within the work order system.
+ Channel exceptions require justification documented in the relevant work order.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out-of-Band Summarization
+\series default
+:
+ Verbal or informal communications —
+ including hallway conversations,
+ phone calls,
+ and instant messages —
+ shall be summarized and entered into the relevant work order by the IT staff member conducting or receiving the communication.
+ This entry shall be completed within one (1) business day of the interaction,
+ or prior to ticket closure,
+ whichever occurs first.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint on Private Notes
+\series default
+:
+ Standard,
+ user-visible notes shall be the default for all ticket documentation.
+ Private Notes shall only be utilized for the following authorized purposes:
+ documenting internal security vulnerabilities or unpatched exploit data;
+ redacting or handling accidental spillage of PII,
+ PHI,
+ or CJI;
+ documenting personnel-sensitive actions such as HR-directed account lockouts;
+ and internal technical diagnostics that would not be meaningful for the end user.
+ Private Notes remain subject to applicable retention obligations and public records law.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Vendor and External Partner Communications
+\series default
+:
+ Communications with vendors or external partners shall likewise be summarized in the relevant work order or project record.
+ Where such communications occur outside the work order system (e.g.,
+ via vendor portal,
+ email,
+ or phone),
+ IT staff shall document the substance of those communications in Redmine within one (1) business day.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Written Communication as Default
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Written communication is the departmental standard.
+ It reduces ambiguity,
+ supports auditability,
+ and ensures continuity of service knowledge across staff.
+ Requests from County personnel shall be directed to the work order system rather than resolved through informal verbal channels.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 English Prime (E-Prime) Guidance
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+IT personnel may apply English Prime (E-Prime) principles in written communications —
+ specifically,
+ avoiding forms of the verb "to be" when greater precision or flexibility would benefit the communication.
+ This practice reduces false certainty in service communications and naturally invites end-user confirmation.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For example:
+ "This appears to be resolved" or "This should be working now —
+ please verify" invites the user to confirm,
+ whereas "This is fixed" places the user in a position of either agreement or conflict.
+ The goal is not to introduce ambiguity,
+ but to invite collaborative confirmation and reduce premature closure of unresolved issues.
+ E-Prime is guidance,
+ not a rigid rule;
+ personnel may apply it where it improves communication clarity.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Disambiguation and Clarity
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+IT personnel shall communicate in plain language accessible to non-technical County staff.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Unexplained acronyms and technical jargon shall not be used in end-user communications without definition.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+When multiple questions are required,
+ they shall be numbered individually.
+ Example:
+ "1.
+ When did the issue begin?
+ 2.
+ What error message appears?
+ 3.
+ Can you reproduce the issue consistently?" This format reduces missed answers and vague responses.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Compound or binary questions that allow for ambiguous single-word answers shall be avoided.
+ Example:
+ "Can I come before or after lunch?" invites the response "Yes." The clearer form is "Can I come before lunch?
+ If not,
+ what time after lunch works for you?" The goal is not to talk down to users,
+ but to provide prompts precise enough that their responses are actionable.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Vendor and External Partner Communications
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When communicating with vendors or external partners on behalf of the Department,
+ IT personnel shall maintain the same documentation and clarity standards as for end-user communications.
+ Commitments made to vendors —
+ including agreed timelines,
+ approved scopes,
+ or escalation acknowledgments —
+ shall be confirmed in writing and documented in the relevant work order or contract record.
+ IT personnel shall not communicate acceptance of deliverables,
+ changes to contracted scope,
+ or authorization of additional costs without IT Director approval in accordance with 
+\series bold
+Policies 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Accountability in Language
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+IT personnel shall use precise language of personal and departmental accountability in service communications.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Use "I" when taking personal responsibility for a specific action or commitment.
+ Example:
+ "I will follow up with you by 3:00 PM today."
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Use "We" when speaking on behalf of the Department as a whole.
+ Example:
+ "We received your request and are currently reviewing it."
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Do not imply action,
+ approval,
+ or authority beyond the scope of your assigned role.
+ Commitments that exceed role authority shall be escalated to the designated authority as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the Service Catalog before being communicated to the user or vendor.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Information Spillage Prevention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO personnel shall not instruct or permit end users to transmit passwords,
+ Criminal Justice Information (CJI),
+ or unprotected Personally Identifiable Information (PII) through standard work order notes or unencrypted email.
+ If a user transmits such data into a work order,
+ the receiving IT staff member shall immediately move the data to a Private Note,
+ sanitize the user-facing record,
+ and initiate the data spillage protocols required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures),
+ consistent with CJIS Security Policy v6.0:
+ SI-12 (Information Management and Retention).
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Communication During Service Incidents
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+During active service incidents or outages,
+ the communication standards defined in this policy remain in effect for documentation and channel requirements.
+ Specific protocols governing the frequency,
+ content,
+ and escalation of communications during active incident response —
+ including user notification timelines and external reporting obligations —
+ are defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ IT personnel shall not communicate incident scope,
+ affected systems,
+ or estimated recovery timelines to external parties,
+ media,
+ or non-IT County staff without IT Director authorization.
+\end_layout
+
+\end_body
+\end_document

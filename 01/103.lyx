@@ -1,0 +1,1005 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Standard Operating Ethos
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:1.03"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to define the internal culture,
+ operational mindset,
+ and behavioral expectations of the Elko County Information Operations Department.
+ It serves as the unifying ethos that aligns individual conduct with the organizational mission—
+defining how the Department leads,
+ operates,
+ and serves.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations personnel,
+ including full-time employees,
+ part-time staff,
+ contractors,
+ vendors,
+ and volunteers.
+ It governs the cultural and professional baseline for Department interactions,
+ decision-making,
+ and conflict resolution.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall serve as the final arbiter on matters of operational conduct and maintain this policy as the standard for Department culture.
+ Shall define and document operational delegations and escalation paths in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Supervisors
+\series default
+:
+ Shall actively reinforce these standards,
+ mentor teams in execution,
+ and model the ethos in daily operations.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+All IT Personnel
+\series default
+:
+ Shall operate in strict alignment with this ethos,
+ modeling professional discipline,
+ initiative,
+ and leadership at every level.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all IT personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to this policy shall be evaluated as part of individual performance reviews and during the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Non-compliance with this policy may result in corrective actions as defined under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation and Enforcement Framework),
+ including coaching,
+ supervisory feedback,
+ or formal performance management.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Acknowledgment
+\series default
+:
+ All personnel shall acknowledge receipt and understanding of this policy upon hire,
+ upon any substantive revision,
+ and annually thereafter.
+ Acknowledgments shall be documented and maintained in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Awareness and Training Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions that materially alter the operational structure or chain of command shall be documented with justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy and Documentation Formatting Standards) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights).
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Code of Ethics and Professional Conduct
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Security Awareness and Training Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+NRS 239 (Public Records)
+\end_layout
+
+\begin_layout Itemize
+NRS 281A (Ethics in Government)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section 5.1 (Information Exchange Agreements)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.SC-01 (Cybersecurity Supply Chain Risk Management)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AT-2 (Literacy Training and Awareness)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PL-4 (Rules of Behavior)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PM-1 (Information Security Program Plan)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PS-7 (External Personnel Security)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ APO01.01 (Design the management system for enterprise I&T)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ APO07.01 (Maintain adequate and appropriate staffing)
+\end_layout
+
+\begin_layout Itemize
+ITIL v4:
+ Workforce and Talent Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Operational Authority and Autonomy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department shall maintain 
+\series bold
+comprehensive operational authority
+\series default
+ over the administration,
+ security,
+ architecture,
+ and configuration of all Elko County information systems,
+ infrastructure,
+ and technology assets placed under the governance of the Information Operations Department as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Unified Authority
+\series default
+:
+ To support compliance with the strict connectivity and security requirements of the 
+\series bold
+FBI CJIS Security Policy Section 5.1.1.4
+\series default
+,
+ Elko County has adopted a unified governance structure for shared infrastructure.
+ Under this structure,
+ the IT Director retains final decision-making authority over all technical controls and risk mitigation strategies across the enterprise,
+ subject to the statutory management control authority of Criminal Justice Agencies (CJA) over CJIS data policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Independence
+\series default
+:
+ While administratively reporting to County Management,
+ the Department's operational decisions shall be driven by technical standards,
+ security mandates,
+ and risk assessments.
+ Political pressure or external influence shall not supersede mandatory security controls or engineering standards.
+ Technical decisions shall be made in accordance with the delegation framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Chain of Command and Escalation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The chain of command is a mechanism for accountability and risk management.
+ Personnel shall utilize the chain of command to ensure decisions are made at the appropriate authority level.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Act Decisively
+\series default
+:
+ Personnel shall execute duties with precision within their assigned scope of authority.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Escalate with Purpose
+\series default
+:
+ Personnel shall escalate issues to their direct supervisor 
+\series bold
+within the same business day
+\series default
+ when operational risk,
+ legal constraints,
+ or policy ambiguity exceed their defined authority or expertise.
+ During active incidents,
+ escalation shall occur as soon as safely possible without interrupting critical response activities.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Unified Direction
+\series default
+:
+ Leadership is defined by judgment,
+ communication,
+ and accountability,
+ not solely by title.
+ Once a decision is made by the designated authority,
+ personnel shall implement that decision promptly.
+ Concerns about implementation shall be raised through the escalation process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ without impeding execution unless a safety or legal issue is identified.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Leadership and Crisis Management
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Leadership in Information Operations is defined by consistency,
+ clarity,
+ and accountability.
+ Supervisors and designated leads shall:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Communicate with Precision
+\series default
+:
+ Ambiguity causes downtime.
+ Instructions and status reports shall be clear,
+ specific,
+ and actionable.
+ Personnel shall confirm understanding of critical directives before execution.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Decide based on Standards
+\series default
+:
+ Operational decisions shall be based on data,
+ policy,
+ and formal risk assessment,
+ not sentiment or pressure.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Accountability
+\series default
+:
+ Shall acknowledge errors transparently and document lessons learned within 
+\series bold
+five (5) business days
+\series default
+ of incident closure.
+ Remediation actions shall be tracked to completion in the designated system of record.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Crisis Discipline
+\series default
+:
+ During major incidents,
+ personnel shall adhere to established Incident Response protocols (
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+).
+ Leaders shall provide clear,
+ evidence-based direction to maintain operational discipline and prevent panic-driven decision-making.
+ Leaders shall participate in formal post-incident reviews to document lessons learned.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Operational Discipline
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Operational discipline is the foundation of the Department's credibility.
+ Personnel shall execute duties according to the following standards:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Own the Scope
+\series default
+:
+ Personnel shall fully own tasks within their job role.
+ If a task falls outside their scope,
+ they shall escalate it with clear context and documentation rather than ignoring it.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Document as Standard
+\series default
+:
+ Dependence on memory or hallway conversations is prohibited in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ All operational actions,
+ changes,
+ and decisions shall be documented in the designated System of Engagement (Redmine) within 
+\series bold
+24 hours of completion
+\series default
+,
+ except during active incident response where documentation shall occur during incident closure in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Documentation shall be maintained in systems designated as records repositories in accordance with 
+\series bold
+NRS 239
+\series default
+.
+ Required documentation shall be completed.
+ Failure to document required actions constitutes noncompliance and may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Prioritize based on Risk
+\series default
+:
+ Urgency shall be assessed based on impact to County operations and security,
+ not solely on the volume of the request.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Resolve or Escalate
+\series default
+:
+ Issues shall not remain in a stagnant state.
+ Every ticket or work order must be actively moved toward resolution or escalated to the appropriate tier with sufficient context for action.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Performance and Cultural Alignment
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this ethos shall be evaluated through:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Individual performance evaluations incorporating specific behavioral competencies defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Incident post-mortem analysis examining adherence to escalation and documentation standards per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Annual policy review and maturity assessment per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Supervisor observations and peer feedback regarding operational discipline and professional conduct.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,793 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Privacy and Data Protection Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:2.06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy establishes mandatory requirements for the protection of privacy and data,
+ including Criminal Justice Information (CJIS),
+ Personally Identifiable Information (PII),
+ and Protected Health Information (PHI),
+ to ensure the confidentiality,
+ integrity,
+ and availability of Elko County information assets.
+ This policy ensures compliance with applicable federal and state laws,
+ regulations,
+ and standards,
+ with adherence verified through the audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Elko County Information Operations personnel,
+ including all employees,
+ elected officials,
+ contractors,
+ vendors,
+ interns,
+ and volunteers,
+ who access,
+ use,
+ store,
+ process,
+ or transmit County information assets.
+ This policy governs all systems,
+ applications,
+ and projects that process,
+ store,
+ or transmit County data,
+ regardless of location or media.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Board of County Commissioners
+\series default
+:
+ Shall approve the annual data governance plan submitted by the IT Director and review quarterly compliance reports on data protection incidents and remediation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director (LASO)
+\series default
+:
+ Serves as the County’s primary authority for data security and privacy.
+ Shall conduct quarterly compliance audits of data handling practices and ensure incident response capabilities meet statutory timelines.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data Owners
+\series default
+:
+ Shall classify data in accordance with this policy and review access privileges semi-annually.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Personnel
+\series default
+:
+ Shall strictly adhere to data handling procedures and report all suspected incidents immediately.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Failure to comply with this policy may result in disciplinary action,
+ up to and including termination of employment,
+ termination of contract,
+ and civil or criminal prosecution.
+ Exceptions to this policy must be documented in writing,
+ formally approved by the IT Director and the District Attorney’s Office,
+ and reviewed annually.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Financial Management and Procurement Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Security Awareness and Training Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits and Self-Assessment Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.010 (Public Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 603A.220 (Disclosure of breach of security of system data)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR (Incident Response)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC (System and Communications Protection and Information Integrity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.PO-01 (Policy Establishment)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.DS-01 (Data-at-Rest Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.DS-02 (Data-in-Transit Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ AR-1 (Governance and Privacy Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ AR-2 (Privacy Impact and Risk Assessment)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ AT-2 (Literacy Training and Awareness)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ AT-3 (Role-Based Training)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SA-8 (Security and Privacy Engineering Principles)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SC-13 (Cryptographic Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SC-28 (Protection of Information at Rest)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO14 (Manage Data)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS05 (Manage Security Services)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Information Security Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1.
+ Privacy by Design
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+New systems and major modifications to existing systems shall incorporate privacy protections into the system architecture during the initial design phase.
+ Projects shall not proceed to development until a Privacy Impact Assessment (PIA) is approved by the IT Director.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2.
+ Data Collection and Minimization
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Only data strictly necessary for the performance of defined County business functions shall be collected.
+ Determining the necessity of data collection shall be the responsibility of the designated Data Owner.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3.
+ Access Control
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Access to non-public data shall be granted on a "Need-to-Know" and "Least Privilege" basis.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Access rights shall be reviewed in accordance with the recertification cadence defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Access shall be revoked upon termination of employment or contract in accordance with the timelines defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4.
+ Encryption and Data Residency
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data at Rest
+\series default
+:
+ All PII,
+ PHI,
+ and CJIS data stored on mobile devices,
+ laptops,
+ or removable media must be encrypted.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data in Transit
+\series default
+:
+ All sensitive data transmitted over public networks must be encrypted using TLS 1.2 or higher.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Cryptographic Standards
+\series default
+:
+ Encryption shall use FIPS 140-3 validated modules.
+ Legacy FIPS 140-2 validated modules are permitted only until September 21,
+ 2026,
+ after which they must be replaced.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data Residency
+\series default
+:
+ All County data must be stored within the physical borders of the United States.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5.
+ Regulatory Alignment
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Elko County shall comply with NRS Chapter 603A and applicable federal privacy requirements.
+ The IT Director shall maintain a register of applicable federal and state privacy laws and shall update this policy within 90 days of any new law taking effect.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6.
+ Data Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Data shall be retained and disposed of in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the applicable Nevada Local Government Records Retention Schedules.
+ Destruction of digital media must render the data irretrievable in accordance with NIST SP 800-88 Guidelines for Media Sanitization.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7.
+ Data Classification Review
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Data Owners shall review data classification annually and document the results in writing to the IT Director.
+ Data Owners shall update classification within 30 days when sensitivity changes and shall notify Information Operations Personnel in writing within 5 business days to implement updated safeguards.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8.
+ Data Security and Privacy Training
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All personnel shall complete initial and annual security awareness and privacy training.
+ Personnel must complete remedial training within 30 days of a major security event or policy violation.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.9.
+ Incident Reporting
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Suspected or confirmed data breaches,
+ privacy incidents,
+ or security events shall be reported to the IT Director (LASO) immediately upon discovery,
+ not to exceed 1 hour,
+ regardless of the time of day,
+ day of week,
+ or holiday status.
+ This strict timeline is mandatory to comply with FBI CJIS reporting requirements and NRS breach notification statutes.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,967 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+IT Governance and Oversight Structure
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:1.06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy defines the structure and authority through which Information Technology (IT) governance is established,
+ maintained,
+ and executed within Elko County.
+ It articulates the formal relationships,
+ decision rights,
+ and operational responsibilities required to ensure effective oversight,
+ strategic alignment,
+ and accountability for Information Operations.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Elko County departments,
+ elected officials,
+ appointed leadership,
+ and employees who interact with,
+ procure,
+ or rely on Information Operations services.
+ It governs the mechanisms by which IT decisions are made,
+ funded,
+ and overseen.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Board of County Commissioners
+\series default
+:
+ Shall provide strategic vision,
+ ratify County-wide policy,
+ and exercise final budgetary authority for IT capital investments.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+ Shall provide operational oversight of County administration,
+ approve administrative policies,
+ and arbitrate conflicts between the Information Operations Department and other County entities.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall serve as the primary governance authority for technical standards,
+ security controls,
+ and infrastructure operations,
+ consistent with the delegation framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads
+\series default
+:
+ Shall define business requirements,
+ participate in governance processes as requested,
+ and comply with established IT standards and procedures.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Decision-making authority for specific governance and operational actions shall follow the delegation framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights).
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory.
+ Circumvention of IT governance (e.g.,
+ "Shadow IT," unauthorized procurement,
+ or unauthorized system changes) is a violation of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Risk Recording
+\series default
+:
+ Confirmed instances of Shadow IT or unauthorized procurement shall be documented as governance violations and evaluated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy) in addition to being addressed through corrective actions as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Non-compliance may result in corrective actions defined under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation and Enforcement Framework).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions regarding decision rights must be documented and approved by the County Manager in consultation with the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Standard Operating Ethos
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Financial Management and Procurement Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management (SCRM) and Vendor Governance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Personnel Security and Background Screening Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Access Control Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+NRS 244 (Counties:
+ Government)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section 5.1 (Information Exchange Agreements)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section 5.1.1.4 (Management Control Agreements)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.OC-02 (Stakeholder Expectations)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.RR-01 (Leadership Accountability)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PM-1 (Information Security Program Plan)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PM-3 (Information System Resources)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ EDM01 (Ensure Governance Framework Setting and Maintenance)
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Delegated Governance Framework
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Elko County hereby establishes a delegated governance model for IT oversight.
+ While strategic direction and budget appropriation are established by the Board of County Commissioners,
+ the execution of technical strategy is delegated to the Information Operations Department in accordance with the decision rights defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Program Leadership (NIST PM-2)
+\series default
+:
+ The IT Director serves as the designated senior official with responsibility and authority to coordinate,
+ develop,
+ implement,
+ and maintain the County's information security program,
+ consistent with NIST SP 800-53 PM-2.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Central Authority
+\series default
+:
+ The Information Operations Department is designated as the sole authoritative source for all IT-related governance policy,
+ technical standards,
+ and architecture coordination across County departments.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Operational Independence
+\series default
+:
+ To ensure security and stability,
+ the Information Operations Department shall operate with the autonomy required to enforce compliance standards,
+ as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Policy and Enforcement Authority
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director holds the delegated authority to develop IT policy,
+ enforce technical standards,
+ and manage operational decisions.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Binding Nature
+\series default
+:
+ The Information Operations Department shall enforce all formally adopted IT policies and technical standards across all Elko County departments,
+ systems,
+ and personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS Management Control
+\series default
+:
+ Consistent with 
+\series bold
+CJIS Security Policy Section 5.1.1.4
+\series default
+ and applicable Management Control Agreements,
+ the Criminal Justice Agency (CJA) retains management control over criminal justice functions and CJI.
+ Within that framework,
+ the IT Director (or designated CJIS Information Security Officer),
+ acting as the CJA’s technical agent,
+ shall exercise exclusive administrative control over the configuration,
+ security,
+ and management of hardware,
+ software,
+ and firmware that transmit or store CJI on County-managed infrastructure,
+ regardless of the user department.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Access and Change Governance
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To maintain the integrity of the County network,
+ specific decision rights are reserved exclusively for Information Operations leadership:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Access Control
+\series default
+:
+ The granting,
+ modification,
+ and revocation of logical access privileges to County information systems and physical access to IT-controlled facilities (e.g.,
+ data centers,
+ server rooms,
+ network closets) shall fall under the operational authority of the IT Director,
+ implemented in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Access Control Policy) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Personnel Security and Background Screening Policy).
+ For systems processing CJI,
+ access decisions shall further comply with CJIS Security Policy and applicable Management Control Agreements.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Change Control
+\series default
+:
+ Changes affecting cross-departmental services,
+ core infrastructure,
+ or security baselines must be reviewed and approved by the IT Director and processed in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Change Management Policy).
+ Significant changes affecting County-wide operations may require County Manager notification or approval in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Interdepartmental Dependencies and Obligations
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Effective governance requires strict coordination between control functions.
+ The following dependencies are mandatory:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Human Services
+\series default
+ (HR):
+ HR serves as the authoritative source for personnel status.
+ HR shall provide notification to IT—
+through the designated HR information system or service desk process—
+regarding onboarding,
+ termination,
+ or role changes to ensure secure access control (See 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Fiscal Affairs
+\series default
+:
+ Fiscal Affairs governs financial processing for technology purchases.
+ Fiscal Affairs shall collaborate with IT to ensure all technology procurement aligns with the governance standards defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and supply chain risk criteria in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and shall reject non-compliant requisitions.
+\end_layout
+
+\end_body
+\end_document

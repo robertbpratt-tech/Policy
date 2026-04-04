@@ -1,0 +1,1702 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Monitoring and Event Management Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:3.12"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish the operational framework for real-time monitoring and event management within the Elko County Information Operations Department.
+ This policy governs how the Department monitors IT services,
+ infrastructure,
+ endpoints,
+ and applications;
+ classifies events according to a defined taxonomy;
+ and routes events to the appropriate response path.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy shall govern real-time detection and operational response:
+ collecting monitoring data,
+ classifying events,
+ generating work orders for actionable conditions,
+ and ensuring that threshold breaches feed the capacity and availability investigation process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Proactive planning,
+ baselining,
+ and threshold definition are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The threshold values that this policy implements are defined there.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel and governs the real-time monitoring of all IT services,
+ infrastructure,
+ endpoints,
+ and applications administered by the Department.
+ In-scope data collection types include availability and ping checks,
+ performance metrics (CPU utilization,
+ memory utilization,
+ disk utilization,
+ and application response times),
+ flow data (NetFlow and sFlow),
+ syslog and event logs from network equipment and servers,
+ and SNMP polling.
+ All events generated by the monitoring function shall be classified under the event taxonomy defined in Section 6.2 of this policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy governs operational performance and resource utilization monitoring,
+ establishing a strict boundary from security event logging governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Audit Logging and Monitoring Policy).
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ owns security event logging and the SIEM;
+ this policy owns operational and performance monitoring.
+ These are distinct data streams,
+ and the boundary between them is intentional and maintained.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following are outside the scope of this policy:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Configuration drift detection
+\series default
+ is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Secure Configuration Baselines and Hardening Policy).
+ This policy may serve as transport infrastructure for drift detection signals,
+ but the governance,
+ remediation timeframes,
+ and escalation path for those signals are owned by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Physical security and environmental monitoring
+\series default
+ is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Physical Security and Environmental Controls Policy).
+ Camera motion events,
+ door access log anomalies,
+ temperature and humidity readings,
+ power monitoring,
+ and UPS monitoring are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ with response paths defined there.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security audit logging
+\series default
+ is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy governs operational performance monitoring only.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Threshold definition and capacity planning
+\series default
+ are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy implements thresholds;
+ it does not define them.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident response once a work order is opened
+\series default
+ is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Operational Incident Management Policy).
+ This policy's obligation ends when the work order is created;
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs all subsequent response activity.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Service continuity and recovery
+\series default
+ are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Continuity and Contingency Planning Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Specific monitoring tool names,
+ tool configurations,
+ and tool-specific procedures
+\series default
+ are maintained in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy).
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the Incident Commander by default for all events that generate work orders under this policy,
+ consistent with the designation established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the external communications spokesperson for monitoring-triggered incidents.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall escalate to the County Manager,
+ the Board,
+ or Department Heads as warranted by the nature and scope of the event.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize any formal deviation from the monitoring cadences,
+ configuration review requirements,
+ or threshold implementation obligations established in this policy.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the primary operational owner of the monitoring and event management function.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that all in-scope monitoring functions are operational and producing current data.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review events and ensure that work orders are generated for Alert and Major events in accordance with this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that monitoring tool configurations are maintained current and reviewed on the cadence established in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that threshold values received from 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ are implemented in monitoring configurations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that relevant Knowledge Base entries under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ remain current where applicable.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall configure all network equipment within scope to forward syslog and event data to the designated collection infrastructure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain network equipment SNMP configurations to support polling.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that NetFlow and sFlow export configurations on applicable network devices are current and functioning.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document relevant network monitoring configurations in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall maintain the monitoring collection infrastructure,
+ including servers and collection platforms.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall configure server-side monitoring agents and ensure that performance and availability data is collected from all in-scope systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that server syslog forwarding to the collection infrastructure is current and functioning.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document relevant server monitoring configurations in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall respond to work orders generated by automated monitoring events in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document all actions taken in the work order system.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all Information Operations personnel within scope.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with monitoring configuration currency,
+ event classification,
+ work order generation,
+ threshold implementation,
+ and retention obligations shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to maintain required monitoring configurations,
+ classify and route events in accordance with the taxonomy established in this policy,
+ generate required work orders,
+ or retain monitoring records for the required period without documented justification shall be treated as non-compliance and may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Secure Configuration Baselines and Hardening Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Audit Logging and Monitoring Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Physical Security and Environmental Controls Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Level Management and Metrics Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Problem Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Capacity and Availability Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation and Enforcement Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits and Self-Assessment Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071728 (IT Access Control Reviews and Audit Trails)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ BAI04 (Manage Availability and Capacity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS01 (Manage Operations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Monitoring and Event Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Monitoring Scope and Configuration Ownership
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department shall maintain real-time monitoring coverage across all IT services,
+ infrastructure,
+ endpoints,
+ and applications within the scope defined in Section 2.
+ In-scope data collection includes availability and ping checks,
+ performance metrics,
+ flow data,
+ syslog and event logs,
+ and SNMP polling.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Network Administrator owns monitoring configurations for all network equipment within scope.
+ The Systems Administrator owns the monitoring collection infrastructure and all server-side monitoring configurations.
+ The Assistant IT Director is accountable for ensuring that both configuration sets are current,
+ functional,
+ and producing data sufficient to support event classification under this policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Tool configurations,
+ procedures,
+ and monitoring runbooks shall be maintained in the Knowledge Base under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Event Taxonomy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All events generated by the monitoring function shall be classified under the following four-tier taxonomy,
+ regardless of monitoring stream.
+ A single taxonomy governs all in-scope monitoring data types.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Informational
+\series default
+ —
+ System behavior is within normal parameters.
+ No action is required.
+ Events at this tier shall be logged for baseline and trending purposes.
+ No work order is generated.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Warning
+\series default
+ —
+ System behavior is approaching a defined threshold.
+ No action is required.
+ Events at this tier shall be logged.
+ The Assistant IT Director shall maintain awareness of Warning-tier events as part of the threshold review obligations established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.3.
+ No work order is generated.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Alert
+\series default
+ —
+ A defined threshold has been breached and action is required.
+ A work order shall be generated in Redmine at Urgent or High severity,
+ determined by the scope of impact at the time of the event.
+ Alert-tier events initiate the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ incident intake process and are subject to all intake,
+ triage,
+ and response obligations defined there.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Major
+\series default
+ —
+ Service impact is confirmed or imminent.
+ A work order shall be generated in Redmine at Critical severity.
+ The IT Director shall be notified immediately.
+ Major-tier events initiate the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ incident intake process and are subject to all intake,
+ triage,
+ and response obligations defined there.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Security Handoff
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Any event at any tier that meets the Indicator of Compromise (IoC) definition in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall route immediately to Chapter 4,
+ regardless of its tier classification at the time.
+ The event tier governs operational response;
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs jurisdictional transfer.
+ This handoff is consistent with the Hard Fork procedure established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.2.
+ Tier classification does not delay or qualify the security handoff obligation.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Automated Event Intake and Work Order Generation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The monitoring system is a valid intake channel under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.4.
+ Work orders generated by Alert and Major events shall be created in Redmine no later than one (1) business hour following event detection,
+ consistent with the intake obligation established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for all intake channels.
+ Work orders shall be created following the same submission standards as any other intake channel.
+ Once created,
+ the work order is triaged and worked under standard 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ mechanics.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+No response activity shall proceed on an Alert or Major event without an associated work order.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ problem spawn path is satisfied organically through this mechanism.
+ Persistent threshold breach patterns produce recurring work orders that accumulate in the work order queue and trigger the existing 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ spawn conditions without requiring a separate mechanism under this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Threshold Implementation and Review
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Threshold values shall be received from the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ process defined in Section 6.3 of that policy and implemented by the Assistant IT Director in monitoring configurations.
+ Threshold values in monitoring configurations shall be reviewed no less than annually or whenever a Significant or Emergency change,
+ as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ is executed against the service catalog or infrastructure.
+ This review cadence mirrors the obligation established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.3.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When monitoring under this policy identifies a threshold breach,
+ the Assistant IT Director shall conduct the investigation defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.5 to determine whether the breach represents a transient condition or a structural capacity or availability gap.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Monitoring records shall be retained for a minimum of three (3) calendar years from the end of the calendar year in which the review or audit was concluded,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) and the Nevada Local Government Records Retention Schedule:
+ LRDA 20071728 (IT Access Control Reviews and Audit Trails).
+\end_layout
+
+\end_body
+\end_document

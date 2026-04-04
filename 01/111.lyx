@@ -1,0 +1,1471 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Data Governance and Classification Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:1.11"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy establishes a mandatory governance framework for identifying,
+ classifying,
+ and protecting Elko County data assets.
+ The County shall assign value and sensitivity to information so security controls are applied consistently and proportionally to the risk of unauthorized access,
+ disclosure,
+ modification,
+ destruction,
+ or loss of availability.
+ This policy mandates data stewardship and security attribute association while preserving statutory transparency obligations under Nevada law.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all data created,
+ received,
+ maintained,
+ processed,
+ stored,
+ or transmitted by Elko County,
+ regardless of format (digital,
+ physical,
+ or audiovisual) or location (on-premises,
+ cloud-hosted,
+ mobile,
+ or third-party managed).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This includes,
+ but is not limited to:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Production Data
+\series default
+:
+ Records,
+ databases,
+ and application files supporting County operations.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Operational and Security Data
+\series default
+:
+ System logs,
+ audit trails,
+ configuration data,
+ and network telemetry.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Physical Media
+\series default
+:
+ Printed documents,
+ tapes,
+ portable media,
+ and removable storage devices.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All data residing on County infrastructure or processed on behalf of the County is County property.
+ The use of unsanctioned systems,
+ repositories,
+ or "Shadow IT" to store or process County data is prohibited.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Board of County Commissioners
+\series default
+:
+ Upon adoption of this policy,
+ the Board delegates authority to the IT Director to administer retention and disposition procedures for Information Operations records and IT-managed data assets in accordance with Nevada retention schedules,
+ County directives,
+ and applicable legal holds.
+ This delegation applies to Information Operations records and IT-managed data assets and shall not be interpreted as superseding statutory duties assigned to other County offices.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall serve as the primary governance authority for data classification and data security.
+ The IT Director shall:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Define and enforce the County Data Classification Schema and mandatory safeguards.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Serve as the 
+\series bold
+Local Agency Security Officer (LASO)
+\series default
+ and provide direct oversight for Criminal Justice Information (CJI) within County-controlled systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Serve as the 
+\series bold
+Information Operations Records Custodian
+\series default
+ under Board delegation for Information Operations records and IT-managed data assets,
+ including retention and disposition procedures.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Ensure required technical controls,
+ handling standards,
+ and exception decisions are implemented and enforced County-wide for County-managed systems.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Terminal Agency Coordinator (TAC)
+\series default
+:
+ Shall serve as the operational CJIS program point of contact for the County.
+ The TAC shall coordinate CJIS operational requirements (including user administration processes,
+ CJIS audit support,
+ and CJIS compliance communications) with the LASO,
+ CSA/CSO as applicable,
+ and County stakeholders.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads (Data Owners)
+\series default
+:
+ Shall classify departmental data at creation or intake,
+ ensure access is limited to authorized personnel based on business need-to-know,
+ and ensure departmental processes comply with the handling requirements defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Information Operations Personnel (Data Custodians)
+\series default
+:
+ Shall implement and operate the technical controls (e.g.,
+ access enforcement,
+ encryption,
+ segmentation,
+ logging) required to protect data according to its assigned classification.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel
+\series default
+:
+ Shall handle,
+ transmit,
+ and store data in accordance with this policy and the assigned classification.
+ Personnel shall report suspected misclassification,
+ mishandling,
+ or unauthorized disclosure promptly through established reporting channels to the IT Director.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all County departments and personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Mandatory Classification
+\series default
+:
+ All County data shall be classified.
+ Data not yet classified shall be handled as Restricted until formally evaluated and assigned a classification level.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Public Records and Legal Precedence
+\series default
+:
+ Security classification shall not be treated as an automatic exemption from disclosure.
+ Public records requests under NRS 239 shall be handled through the County’s established legal review process.
+ When classification controls appear to conflict with a public records obligation,
+ the District Attorney’s Office shall provide binding guidance.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Conflict Hierarchy
+\series default
+:
+ In any conflict,
+ statutory requirements (NRS) and CJIS Security Policy requirements shall take precedence,
+ followed by County policy,
+ then departmental procedures.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Records Retention
+\series default
+:
+ Retention periods shall be applied in accordance with the Nevada Local Government Records Retention Schedule and County retention requirements.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+IT security logs,
+ including access control and audit logs,
+ shall be retained for a minimum of three (3) calendar years from the end of the calendar year in which the review or audit was concluded,
+ per the applicable Nevada Local Government Records Retention Schedule for IT Security Audit Records (currently LRDA 20071728).
+ This exceeds the CJIS minimum of one (1) year.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+For CJIS audit records,
+ the greater of the CJIS minimum (one year) or the applicable Nevada retention requirement shall apply.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall ensure Information Operations retention and disposition actions are suspended during litigation holds,
+ public records preservation requirements,
+ audits,
+ or other legal hold events.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement and Sanctions
+\series default
+:
+ Unauthorized disclosure or mishandling of Confidential or Restricted information may result in corrective action,
+ disciplinary action up to and including termination,
+ referral for investigation,
+ and/or criminal prosecution under applicable law (including NRS 205).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be documented with justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Any exception involving Restricted CJI shall require explicit written approval of the IT Director (as LASO) and,
+ where applicable,
+ written approval by the CSA/CSO or other CJIS governing authority required by governing agreements.
+ All such approvals shall be retained for audit.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy and Documentation Formatting Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management (SCRM) and Vendor Governance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Access Control Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Authentication Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Privacy and Data Protection Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Audit Logging and Monitoring Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Media Protection and Sanitization Policy
+\end_layout
+
+\begin_layout Itemize
+NRS 205 (Crimes Against Property)
+\end_layout
+
+\begin_layout Itemize
+NRS 239 (Public Records)
+\end_layout
+
+\begin_layout Itemize
+NRS 239.125 (Local Government Records)
+\end_layout
+
+\begin_layout Itemize
+NRS 603A (Security of Personal Information)
+\end_layout
+
+\begin_layout Itemize
+NAC 239.155 (Retention Schedule Adoption)
+\end_layout
+
+\begin_layout Itemize
+NAC 239.165 (Destruction of Confidential Records)
+\end_layout
+
+\begin_layout Itemize
+LRDA:
+ Nevada Local Government Records Retention Schedule (Amended October 3,
+ 2022)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section 4 (Criminal Justice Information and Personally Identifiable Information)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section AU (Audit and Accountability)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section MP (Media Protection)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section SC-13 (Cryptographic Protection)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section Appendix G.3 (Cloud Computing)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ ID.AM-05 (Asset Prioritization)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ ID.AM-07 (Data Inventories and Metadata)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ PR.DS-01 (Data-at-Rest Protection)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ PR.DS-02 (Data-in-Transit Protection)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AC-3 (Access Enforcement)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AC-16 (Security and Privacy Attributes)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-11 (Audit Record Retention)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ MP-3 (Media Marking)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PM-5 (System Inventory)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ RA-2 (Security Categorization)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ SC-8 (Transmission Confidentiality and Integrity)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ SC-28 (Protection of Information at Rest)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ APO13 (Manage Security)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ APO14 (Manage Data)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ BAI09 (Manage Assets)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ DSS05 (Manage Security Services)
+\end_layout
+
+\begin_layout Itemize
+NIST CMVP:
+ FIPS 140-2 Transition Guidance
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Data Classification Schema
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The County shall classify all data into one (1) of four (4) levels based on the potential impact of unauthorized disclosure,
+ modification,
+ destruction,
+ or loss of availability.
+ Classification shall drive mandatory safeguards,
+ handling restrictions,
+ and access enforcement.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+\lang english
+6.2 Level 1 —
+ Public
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Public information explicitly approved for unrestricted distribution.
+ Unauthorized disclosure would reasonably result in no harm to the County.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Examples
+\series default
+:
+ Published press releases,
+ public meeting agendas,
+ job postings,
+ public website content.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Minimum Safeguards
+\series default
+:
+ Integrity controls sufficient to prevent unauthorized modification or defacement.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+\lang english
+6.3 Level 2 —
+ Internal Use
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Operational information intended for internal County business use.
+ Disclosure may cause operational confusion,
+ reputational harm,
+ or unnecessary disruption but is not inherently sensitive.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Examples
+\series default
+:
+ Internal memos,
+ internal directories,
+ standard procedures,
+ non-sensitive drafts.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Minimum Safeguards
+\series default
+:
+ Standard access controls (unique user authentication),
+ standard backup,
+ and retention per approved schedules.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Level 3 —
+ Confidential
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Sensitive information that,
+ if compromised,
+ could negatively impact individual privacy,
+ County finances,
+ legal posture,
+ or operational security.
+ Access shall be limited to personnel with a validated business need-to-know.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Examples
+\series default
+:
+ PII (as defined in NRS 603A),
+ personnel records,
+ vendor contracts containing non-public financial terms,
+ draft budgets,
+ privileged legal communications.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Minimum Safeguards
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Access
+\series default
+:
+ Role-based access control (RBAC) and least privilege enforcement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Encryption
+\series default
+:
+ County-approved encryption at rest shall be required for mobile devices,
+ portable storage,
+ and systems storing Confidential data outside a County-controlled physically secure location.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Logging
+\series default
+:
+ Systems storing Confidential information shall generate audit logs appropriate to the risk,
+ and privileged access to such systems shall be logged in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Level 4 —
+ Restricted
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Highly sensitive data protected by strict federal or state requirements.
+ Unauthorized disclosure or modification could result in severe legal penalties,
+ loss of program access,
+ loss of funding,
+ or public safety impacts.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Examples
+\series default
+:
+ Criminal Justice Information (CJI),
+ Protected Health Information (PHI) where applicable,
+ active investigative data,
+ administrative credentials,
+ cryptographic keys.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Minimum Safeguards
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Encryption
+\series default
+:
+ Restricted data shall be protected using FIPS-validated cryptographic modules (FIPS 140-3,
+ or FIPS 140-2 until September 21,
+ 2026) for data at rest and in transit,
+ consistent with CJIS requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Access
+\series default
+:
+ Multi-factor authentication (MFA) shall be required for access to Restricted data systems,
+ Restricted data repositories,
+ and administrative functions.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exposure Controls
+\series default
+:
+ Restricted data systems shall not be directly exposed to the public Internet without County-approved boundary protection and segmentation appropriate to the risk and consistent with CJIS requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Auditing
+\series default
+:
+ The County shall capture and retain audit records for access,
+ modification,
+ and deletion events in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ CJIS requirements for CJI,
+ and mandatory Nevada retention requirements.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Data Handling and Stewardship Principles
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Classification Assignment and Security Attributes
+\series default
+:
+ Data Owners shall assign the appropriate classification at creation or intake.
+ The County shall associate classification as a security attribute where technically feasible to support access enforcement,
+ handling rules,
+ and auditability.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Labeling and Marking
+\series default
+:
+ Where technically feasible,
+ digital documents and physical media containing Confidential or Restricted information shall be labeled with the assigned classification (e.g.,
+ headers/footers,
+ watermarking,
+ media labels) to ensure personnel are aware of required handling and disclosure constraints.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Access Control and Need-to-Know
+\series default
+:
+ Confidential and Restricted data shall be accessible only to authorized users with a validated business need-to-know.
+ Access shall be enforced through approved identity and access management controls consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and shall be reviewed and adjusted when personnel roles change or upon termination of employment or contract.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Transmission Security
+\series default
+:
+ Confidential and Restricted data shall not be transmitted over unprotected channels.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Restricted Data
+\series default
+:
+ Shall be transmitted only using County-approved secure methods that enforce strong encryption in transit (e.g.,
+ approved VPN,
+ TLS 1.2 or higher,
+ or other approved secure protocols consistent with CJIS requirements).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Email Restrictions
+\series default
+:
+ Standard unencrypted email shall not be used to transmit Restricted data.
+ If transmission is explicitly authorized for business necessity,
+ the County shall use an approved encryption method or secure delivery mechanism authorized by the IT Director.
+ Restricted CJI shall only be transmitted in accordance with the FBI CJIS Security Policy.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Authorized Storage Locations and Cloud Security Assurance
+\series default
+:
+ County data shall be stored only in authorized repositories and systems approved by the IT Director.
+ Personal cloud storage,
+ personal email accounts,
+ and unsanctioned collaboration tools are prohibited for County data.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Cloud Security Assurance
+\series default
+:
+ Vendors or cloud service providers hosting Confidential or Restricted County data shall be evaluated and governed through the vendor governance process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Third-party authorizations (e.g.,
+ FedRAMP,
+ StateRAMP,
+ SOC 2) may support due diligence but shall not be represented as automatically meeting CJIS Security Policy requirements or substituting for required CJIS agreements/addenda.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Cloud Requirements
+\series default
+:
+ Systems storing or processing CJI in cloud environments shall meet all CJIS Security Policy requirements for encryption,
+ access control,
+ auditing,
+ personnel security,
+ and agreement/oversight obligations applicable to the service model.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Data Sovereignty
+\series default
+:
+ As an Elko County standard for CJIS risk control and audit defensibility,
+ CJI shall only be stored or processed within the legal jurisdiction of an APB-member country and under the legal authority of an APB-member agency unless permitted by the CSA/CSO and approved in writing by the LASO,
+ with all required CJIS governing approvals documented.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+Storage,
+ Media Control,
+ and Disposal:
+ Confidential and Restricted data shall be protected through secure storage controls and shall be destroyed or sanitized when no longer required,
+ consistent with retention requirements and Policy 2.12,
+ in a manner that renders the data unrecoverable prior to disposal,
+ transfer,
+ or reuse of the media.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Reclassification
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Data classification is not static.
+ Data Owners shall review classifications annually,
+ at minimum,
+ and shall update classification when sensitivity,
+ disclosure status,
+ legal posture,
+ or operational context changes.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Reclassification Constraint
+\series default
+:
+ Restricted CJI shall not be reclassified downward without written authorization from the IT Director (as LASO) and any additional CJIS authority required by governing agreements.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Data Inventory
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director,
+ in coordination with Department Heads,
+ shall maintain a County Data Inventory that identifies:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data categories and assigned classification levels.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data Owner (Department Head) for each category.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Logical and physical storage locations (including approved cloud services).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Applicable retention requirements based on mandatory Nevada retention schedules and County directives.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Data Inventory shall be reviewed and updated annually and following significant changes to systems,
+ services,
+ or regulatory obligations.
+ The Data Inventory shall support the System Inventory maintained under Policy 1.12 and the Risk Register maintained under Policy 1.09.
+\end_layout
+
+\end_body
+\end_document

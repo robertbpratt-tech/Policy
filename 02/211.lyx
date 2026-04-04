@@ -1,0 +1,993 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+Audit Logging and Monitoring Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:2.11"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy establishes the mandatory requirements for the generation,
+ protection,
+ review,
+ and retention of security audit logs across all Elko County information systems.
+ It ensures that system activity is continuously recorded and monitored to detect unauthorized access,
+ support forensic investigations,
+ maintain individual accountability,
+ and fulfill the strict audit and accountability mandates of the FBI Criminal Justice Information Services (CJIS) Security Policy and Nevada Revised Statutes.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Elko County information systems,
+ network infrastructure,
+ endpoints,
+ and cloud services that process,
+ store,
+ or transmit County data.
+ It governs the configurations,
+ aggregation systems (e.g.,
+ SIEM),
+ and personnel responsible for security event logging.
+ Operational performance logging (e.g.,
+ resource utilization metrics) is explicitly out of scope for this policy and is governed under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Monitoring and Event Management Policy).
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+ Shall serve as the final authority on audit logging requirements,
+ ensure configurations for systems processing Criminal Justice Information (CJI) meet federal mandates,
+ and serve as the delegated Information Operations Records Custodian for IT-managed data assets.
+ The IT Director shall designate a Records Liaison responsible for maintaining the exact mapping between system log types and the Nevada retention schedule record series (LRDA 20071728).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+ Shall oversee the centralized log management architecture,
+ allocate sufficient storage capacity,
+ ensure automated audit review mechanisms are configured to alert on anomalous activities,
+ coordinate incident response activities triggered by audit findings,
+ and ensure the mandated weekly review of aggregated security audit logs is conducted.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+System and Network Administrators
+\series default
+:
+ Shall configure information systems to generate required audit records,
+ forward those records to the centralized log repository,
+ review automated security alerts in accordance with established SLAs,
+ and protect log facilities from unauthorized access.
+ To comply with separation of duties,
+ personnel administering security access controls shall not possess the capability to modify or delete the audit logs that record their actions,
+ nor shall they be the sole reviewers of their own administrative logs.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads (Data Owners)
+\series default
+:
+ Shall identify any specific business or regulatory logging requirements applicable to their departmental data and coordinate implementation with the Information Operations Department.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Personnel
+\series default
+:
+ Shall not disable,
+ bypass,
+ or tamper with system auditing functions.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Mandatory Enforcement:
+ Compliance with this policy is mandatory.
+ The intentional disablement,
+ circumvention,
+ or alteration of audit logging mechanisms by unauthorized personnel constitutes a severe security violation and shall result in immediate access revocation and disciplinary action,
+ up to and including termination and criminal referral under NRS 205.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Exceptions:
+ Exceptions shall be documented in a formal Risk Acceptance Memo,
+ including defined compensating controls and an expiration date not to exceed twelve (12) months,
+ and must be approved in writing by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Any exception affecting systems that process CJI shall require explicit written approval from the CJIS Systems Officer (CSO) prior to implementation.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Monitoring and Event Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Itemize
+NRS 205 (Computer Crimes)
+\end_layout
+
+\begin_layout Itemize
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+LRDA 20071728 (IT Access Control Reviews and Audit Trails)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section AU-2 (Event Logging)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section AU-3 (Content of Audit Records)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section AU-6 (Audit Record Review,
+ Analysis,
+ and Reporting)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section AU-11 (Audit Record Retention)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section AU-12 (Audit Record Generation)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ DE.AE-01 (Anomalous Activity Detection)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-2 (Event Logging)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-3 (Content of Audit Records)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-4 (Audit Log Storage Capacity)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-5 (Response to Audit Processing Failures)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-6 (Audit Record Review,
+ Analysis,
+ and Reporting)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-7 (Audit Record Reduction and Report Generation)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-8 (Time Stamps)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-9 (Protection of Audit Information)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-11 (Audit Record Retention)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AU-12 (Audit Record Generation)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ DSS05.07 (Monitor the infrastructure for security-related events)
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Auditable Events (Event Generation)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department shall configure all County information systems,
+ network infrastructure,
+ and cloud environments to generate audit records for security-relevant events.
+ At a minimum,
+ the following events shall be logged:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Authentication and Access
+\series default
+:
+ All successful and unsuccessful logon attempts,
+ session disconnections,
+ and access to systems processing Criminal Justice Information (CJI) or Restricted County data.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Privileged Operations
+\series default
+:
+ All actions executed under elevated or administrative privileges (Tier L3 and above),
+ including "break-glass" emergency access.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Account Management
+\series default
+:
+ The creation,
+ modification,
+ enablement,
+ disablement,
+ and deletion of any system or user account.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data Manipulation
+\series default
+:
+ The creation,
+ modification,
+ and deletion of Restricted data (including CJI) and Confidential data.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security Control Modifications
+\series default
+:
+ Any modification to security baselines,
+ firewall rules,
+ group policies,
+ or audit logging configurations.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+System Integrity
+\series default
+:
+ System restarts,
+ shutdowns,
+ and alerts generated by malicious code protection or file integrity monitoring (FIM) mechanisms.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Content of Audit Records
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To ensure forensic viability and individual accountability,
+ every generated audit record shall contain the following mandatory data elements:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Timestamp
+\series default
+:
+ The exact date and time the event occurred.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Identity
+\series default
+:
+ The unique identifier (e.g.,
+ username,
+ service account ID) of the individual or process causing the event.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Event Type
+\series default
+:
+ A clear categorization of the action attempted or executed.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Outcome
+\series default
+:
+ An indicator of success or failure.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Originating Source
+\series default
+:
+ The logical and/or physical origin of the request (e.g.,
+ source IP address,
+ MAC address,
+ terminal identifier).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Target Asset
+\series default
+:
+ The name,
+ ID,
+ or file path of the system,
+ application,
+ or data record impacted by the event.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Log Centralization,
+ Capacity,
+ and Tamper Protection
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To satisfy separation of duties and protect audit integrity,
+ audit logs shall be protected from unauthorized modification,
+ deletion,
+ and spoofing.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Storage Capacity
+\series default
+:
+ The Assistant IT Director shall allocate sufficient audit record storage capacity to prevent logs from being overwritten or dropped prior to their scheduled archival.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Centralized Repository
+\series default
+:
+ Systems shall forward audit records continuously,
+ or at highly frequent intervals,
+ to a centralized,
+ logically isolated log management repository (e.g.,
+ SIEM).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Append-Only Enforcemen
+\series default
+t:
+ Personnel with administrative control over security baselines or system configurations shall not have the ability to modify or delete audit logs that record their actions.
+ The centralized repository shall enforce append-only or read-only privileges for all system and network administrators.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tamper Detection
+\series default
+:
+ The central log repository shall employ cryptographic mechanisms (e.g.,
+ file hashing) or strict access control monitoring to detect unauthorized modifications to archived log files.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Audit Review,
+ Analysis,
+ and Alerting
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Information Operations Department shall proactively analyze audit records to detect anomalous activity,
+ unauthorized access attempts,
+ and potential security incidents.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Review Frequency
+\series default
+:
+ The Assistant IT Director shall ensure designated Tier L3 personnel conduct a formal review of aggregated security audit logs at least weekly to identify anomalous patterns that may not trigger automated alerts.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Automated Alerting
+\series default
+:
+ The Department shall employ automated tools configured to generate real-time alerts for critical security events,
+ including but not limited to:
+ multiple failed authentication attempts,
+ unauthorized access to CJI repositories,
+ and detection of malicious code.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Alert Routing
+\series default
+:
+ System-generated security alerts shall be transmitted to the Assistant IT Director and designated Tier L3 System Administrators in real-time.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Alert Review SLA
+\series default
+:
+ Alerts generated by the automated system shall be reviewed by designated Tier L3 Administrators within four (4) business hours of generation during standard operating hours,
+ or by the start of the next business day for off-hours alerts.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident Trigger
+\series default
+:
+ Personnel shall analyze and respond to alerts in accordance with the incident declaration and response protocols defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Response to Audit Processing Failures
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To ensure continuous visibility,
+ the logging architecture must immediately detect and report failures.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Failure Alerting
+\series default
+:
+ The logging system shall be configured to alert the Assistant IT Director and designated Administrators within one (1) hour of an audit processing failure (e.g.,
+ software/hardware errors,
+ network disruption,
+ or storage reaching capacity thresholds).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Restoration SLA
+\series default
+:
+ Personnel shall initiate troubleshooting and restoration of logging functionality within one (1) hour of receiving the failure alert.
+ If restoration cannot be achieved,
+ the affected system may be subject to logical isolation based on its risk profile,
+ as determined by the IT Director or Assistant IT Director.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Time Synchronization
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To ensure accurate correlation of audit records across distinct systems,
+ all County information systems and network devices shall synchronize their internal clocks to an authoritative,
+ County-approved Network Time Protocol (NTP) source.
+ The primary internal NTP servers shall synchronize with a trusted,
+ stratum-1 external time source (e.g.,
+ NIST internet time servers).
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Records Retention and Disposition
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Audit logs constitute official County records and shall be retained in strict accordance with the Nevada Local Government Records Retention Schedule and statutory public records mandates.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Minimum Retention Period
+\series default
+:
+ IT security logs,
+ including access control and audit logs,
+ shall be retained for a minimum of three (3) calendar years from the end of the calendar year in which the review or audit was concluded.
+ This standard explicitly exceeds the CJIS minimum requirement of one (1) year.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Legal Hold
+\series default
+:
+ The IT Director,
+ acting as the Records Custodian,
+ shall ensure all automated and manual log disposition actions are immediately suspended during active litigation holds,
+ public records preservation requirements,
+ audits,
+ or active incident investigations.
+\end_layout
+
+\end_body
+\end_document

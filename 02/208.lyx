@@ -1,0 +1,919 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master ../Policy_Manual.lyx
+\maintain_unincluded_children no
+\begin_local_layout
+Format 66
+
+# 1. RENAME "Chapter" to "1. Functional Area"
+# Used for "Governance", "Security", etc.
+Style Chapter
+    LabelString "Part \thechapter"
+    TocLevel 0
+End
+
+# 2. RENAME "Section" to "1.01 Policy Title"
+# This creates the Policy ID and puts it in the TOC.
+Style Section
+    Category "Policy Structure"
+    Margin Dynamic
+    LabelType Counter
+    LabelCounter section
+    LabelString "\thesection"
+    TocLevel 1
+    Font
+      Size Large
+      Series Bold
+    EndFont
+End
+
+# 3. NEW STYLE: "Policy Metadata"
+# Used for the "Effective Date | Version" line.
+Style "Policy Metadata"
+    Category "Policy Structure"
+    LatexType Environment
+    LatexName policymetadata
+    Margin Static
+    NextNoIndent 1
+    LeftMargin 0cm
+    RightMargin 0cm
+    ParSkip 0
+    ItemSep 0
+    TopSep 0
+    BottomSep 0
+    Font
+      Size Small
+    EndFont
+End
+
+# 4. STANDARDIZE "Subsection*" as "Policy Header"
+# Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
+Style Subsection*
+    Category "Policy Structure"
+    LabelType Static
+    LabelString "Header:"
+    Font
+      Series Bold
+      Size Larger
+    EndFont
+End
+
+# 5. STANDARDIZE "Subsubsection*" as "Role/Topic"
+# Used for "IT Director", "Fiscal Affairs" headers.
+Style Subsubsection*
+    Category "Policy Structure"
+    LabelType Static
+    Font
+      Series Bold
+      Shape Italic
+    EndFont
+End
+\end_local_layout
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip halfline
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang english
+System Integrity and Malware Protection Policy
+\begin_inset CommandInset label
+LatexCommand label
+name "pol:2.08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+1.
+ Purpose
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The purpose of this policy is to establish mandatory controls for maintaining the integrity of Elko County information systems.
+ This policy mandates the implementation of malicious code protection,
+ system monitoring,
+ and integrity verification mechanisms to detect and prevent unauthorized changes,
+ exploitation,
+ and data corruption.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Elko County Information Operations (ECIO) personnel,
+ employees,
+ contractors,
+ vendors,
+ and volunteers,
+ and all information systems,
+ networks,
+ and endpoints owned,
+ leased,
+ or operated by Elko County.
+ This specifically includes all systems that process,
+ store,
+ or transmit Criminal Justice Information (CJI) and the infrastructure supporting these systems.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the final Authorizing Official (AO) for malicious code protection selection and system monitoring tools.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall oversee the security posture and ultimate accountability for the County’s information system integrity.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall sign Risk Acceptance Memos for systems unable to support standard integrity controls.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall oversee the operational execution of the system integrity program and coordinate incident response for detected malware.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure technical personnel are trained and equipped to maintain protection mechanisms.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall provision,
+ harden,
+ and maintain malware protection agents on all workstations and servers.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall configure automated tools (e.g.,
+ endpoint protection) to update signatures and scanning engines daily.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall execute integrity checks (e.g.,
+ File Integrity Monitoring) and remediate system flaws in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall configure and monitor boundary protection devices (Firewalls,
+ IDS/IPS) to detect and block malicious traffic at system entry and exit points.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall monitor network flow to identify anomalies or traffic patterns indicative of malware command-and-control activity.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Support Specialist
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall verify the presence and compliance of antivirus and device encryption during endpoint deployment and troubleshooting.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report and escalate confirmed malware infections to Administrators according to established incident protocols.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Users
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall comply with the Acceptable Use Policy (
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+) and shall not disable or circumvent security controls.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report suspected security anomalies to the Service Desk immediately.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Mandatory Enforcement
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Personnel and systems must comply with the requirements defined herein.
+ Failure to comply shall result in one or more of the following enforcement actions:
+ (a) immediate isolation of the non-compliant system from the network;
+ (b) revocation of user access privileges;
+ (c) disciplinary action up to and including termination of employment.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Any deviation from this policy must be documented in a Risk Acceptance Memo in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Exceptions for CJI systems regarding malicious code protection or monitoring require:
+ (a) explicit written approval from the IT Director,
+ AND (b) documented consultation with the Nevada CJIS Systems Officer (CSO) if the exception involves removing mandatory CJIS controls.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+5.
+ References
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Vulnerability and Patch Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 205.473 (Unlawful acts regarding computers and information services)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.051 (Public Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR (Incident Response Family)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SI-3 (Malicious Code Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SI-4 (System Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SI-5 (Security Alerts,
+ Advisories,
+ and Directives)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SI-8 (Spam Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SI-10 (Information Input Validation)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.DS-01 (Data-at-Rest Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.DS-02 (Data-in-Transit Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ DE.AE-01 (Anomalous Activity Detection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ DE.CM-01 (Continuous Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SI-2 (Flaw Remediation)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SI-3 (Malicious Code Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SI-4 (System Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SI-7 (Software,
+ Firmware,
+ and Information Integrity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SI-8 (Spam Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SI-10 (Information Input Validation)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SI-16 (Memory Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS05.01 (Protect against malware)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Information Security Management Practice
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+6.
+ Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Malicious Code Protection
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+System Administrators shall implement malicious code protection mechanisms at system entry and exit points and on all workstations,
+ servers,
+ and mobile devices to detect and eradicate malicious code.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Automatic Updates
+\series default
+:
+ Malicious code protection mechanisms shall be configured to perform automatic updates of virus definitions and scanning engines at least daily.
+ If automatic updates are not feasible,
+ manual updates shall be performed daily.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Real-Time Scanning
+\series default
+:
+ Mechanisms shall be configured to perform real-time scanning of files from external sources as they are downloaded,
+ opened,
+ or executed.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Periodic Scanning
+\series default
+:
+ Mechanisms shall perform full system scans at weekly intervals or in accordance with the schedule defined in the System Security Plan (SSP).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Response Actions
+\series default
+:
+ Upon detection of malicious code,
+ the mechanism shall automatically block or quarantine the malicious code and alert the IT Service Desk.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 System Monitoring
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department shall ensure that information systems are monitored to detect attacks and indicators of potential attacks.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Monitoring Tools:
+ The Department shall employ automated tools (e.g.,
+ IDS/IPS,
+ SIEM) to monitor inbound and outbound communications traffic for unusual or unauthorized activities or conditions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Perimeter Monitoring:
+ Monitoring shall check for indicators of attacks and unauthorized connections at external boundaries and at key internal boundaries.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Alerting:
+ System-generated security alerts shall be transmitted to the ISO and designated System Administrators in real-time.
+ Personnel shall analyze and respond to alerts in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Legal Review:
+ The IT Director shall consult with the District Attorney's Office to ensure that monitoring activities comply with applicable federal and state privacy laws.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Information Integrity and Input Validation
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Integrity Checks
+\series default
+:
+ System Administrators shall employ integrity verification tools (e.g.,
+ File Integrity Monitoring - FIM) to detect unauthorized changes to software,
+ firmware,
+ and information.
+ For systems processing CJI,
+ integrity checks shall be performed at least weekly.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Input Validation
+\series default
+:
+ Developers and System Administrators shall ensure that information systems check the validity of information inputs (e.g.,
+ character set,
+ length,
+ numerical range,
+ format) to prevent injection attacks (e.g.,
+ SQL injection,
+ Cross-Site Scripting) and data corruption.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Spam Protection
+\series default
+:
+ The Department shall employ spam protection mechanisms at information system entry and exit points to detect and action unsolicited messages.
+ Spam protection signatures shall be updated automatically.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Flaw Remediation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Flaw remediation (patching) shall be executed in strict accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ System Administrators shall identify,
+ report,
+ and correct information system flaws,
+ test software updates for effectiveness and potential side effects,
+ and install security-relevant updates within the timelines mandated by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Memory Protection
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+System Administrators shall ensure that operating systems and applications utilize memory protection controls (e.g.,
+ Data Execution Prevention [DEP],
+ Address Space Layout Randomization [ASLR]) to prevent the execution of unauthorized code.
+\end_layout
+
+\end_body
+\end_document
