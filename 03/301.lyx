@@ -361,12 +361,12 @@ nolink "false"
 
 
 \series default
- and the annual policy review and maturity scoring process defined in 
+ and the annual policy review and maturity scoring process defined in
 \series bold
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.06"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -620,10 +620,10 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy 
+ECIO Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.06"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"

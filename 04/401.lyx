@@ -521,12 +521,12 @@ nolink "false"
 
 \lang english
 IR roles and contact directory —
- governed by 
+ governed by
 \series bold
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -543,12 +543,12 @@ nolink "false"
 
 \lang english
 External partner integration procedures —
- governed by 
+ governed by
 \series bold
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -744,12 +744,12 @@ Shall serve as the primary operational coordinator for incident response activit
 \begin_layout Itemize
 
 \lang english
-Shall ensure the IR Roles and Contact Directory maintained under 
+Shall ensure the IR Roles and Contact Directory maintained under
 \series bold
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1372,10 +1372,10 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy 
+ECIO Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1390,10 +1390,10 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy 
+ECIO Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2075,12 +2075,12 @@ External Partner Relationships
  incident coordination resources,
  and analytical support from the broader state and national cybersecurity community.
  The ECIO also maintains working relationships with the Federal Bureau of Investigation (FBI) and the Nevada Department of Public Safety (DPS) for purposes of incident coordination and law enforcement referral.
- The operational procedures governing engagement with these and other external partners are established in 
+ The operational procedures governing engagement with these and other external partners are established in
 \series bold
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3098,10 +3098,10 @@ nolink "false"
 
 \series bold
 \lang english
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3126,10 +3126,10 @@ Lifecycle Phase:
 
 \series bold
 \lang english
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3176,12 +3176,12 @@ nolink "false"
 
 \series default
  and are incorporated by reference.
- 
+
 \series bold
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3214,10 +3214,10 @@ nolink "false"
 
 \series bold
 \lang english
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3226,9 +3226,7 @@ nolink "false"
 \end_inset
 
  —
- Integration with Local,
- State,
- and Federal Partners
+ Communication Protocols and Partner Integration
 \end_layout
 
 \begin_layout Standard
@@ -3244,10 +3242,10 @@ Lifecycle Phase:
 
 \series bold
 \lang english
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3257,17 +3255,32 @@ nolink "false"
 
 
 \series default
- governs the operational procedures for engaging external partners during a cybersecurity incident.
- It establishes the conditions and criteria under which ECIO initiates contact with the MS-ISAC,
+ governs incident communication protocols and incorporates external partner integration as a dedicated subsection.
+ The partner integration subsection of
+\series bold
+Policy
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ establishes the conditions and criteria under which ECIO initiates contact with the MS-ISAC,
  NV-ISAC,
  FBI,
  Nevada DPS,
  and other external entities;
  the authorization requirements for sharing incident information with external parties;
  and the documentation obligations for all external partner interactions.
- All external partner engagement during an active incident requires Incident Commander authorization and shall be executed consistent with the communication constraints established in 
+ All external partner engagement during an active incident requires Incident Commander authorization and shall be executed within the One Voice Rule and communication authorization framework established by
 \series bold
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
@@ -3281,12 +3294,13 @@ nolink "false"
 
 \series default
 .
- 
+ Partner integration is not governed by a standalone policy;
+ it is addressed as an integrated subsection of
 \series bold
-Policy 
+Policy
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -3296,8 +3310,7 @@ nolink "false"
 
 
 \series default
- does not modify the One Voice Rule or the communication authorization framework;
- it establishes the partner-specific procedures that operate within those constraints.
+.
 \end_layout
 
 \end_body
