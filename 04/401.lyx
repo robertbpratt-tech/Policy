@@ -484,7 +484,7 @@ Data and system classification for recovery prioritization —
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1339,7 +1339,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2652,7 +2652,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2732,7 +2732,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2868,7 +2868,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2896,7 +2896,7 @@ Lifecycle Phase:
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2913,7 +2913,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2947,7 +2947,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.07"
+reference "pol:4.05"
 plural "false"
 caps "false"
 noprefix "false"
