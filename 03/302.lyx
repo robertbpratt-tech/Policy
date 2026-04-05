@@ -1481,8 +1481,6 @@ Recurring Ticket Identification
  Consistent with 
 \series bold
 Policy 
-\series default
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.04"
@@ -1493,6 +1491,8 @@ nolink "false"
 
 \end_inset
 
+
+\series default
 ,
  a work order shall be flagged as a Recurring Ticket when the same user experiences the same issue within any rolling ninety (90) calendar day window and a prior work order for that issue was closed as resolved.
  The Assistant IT Director shall review the work order system monthly to identify recurring ticket patterns and shall ensure that all Recurring Tickets are flagged in the system.
@@ -1534,7 +1534,18 @@ nolink "false"
 :
  The monthly and quarterly reports produced under Section 6.4 constitute the primary data feed from this policy into the organizational performance management function governed by 
 \series bold
-Policy 5.05
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
  The following service level KPIs defined in 

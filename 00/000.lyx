@@ -76,7 +76,7 @@ Style Subsubsection*
     EndFont
 End
 \end_local_layout
-\language english
+\language american 
 \language_package default
 \inputencoding utf8
 \fontencoding auto

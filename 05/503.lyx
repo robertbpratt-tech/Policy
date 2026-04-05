@@ -284,7 +284,7 @@ nolink "false"
 
 
 \series default
- (Risk Management Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -306,7 +306,7 @@ nolink "false"
 
 
 \series default
- (Service Catalog and SLA Policy) and 
+ and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -321,7 +321,7 @@ nolink "false"
 
 
 \series default
- (Service Level Management and Metrics Reporting).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -343,9 +343,7 @@ nolink "false"
 
 
 \series default
- (Policy Implementation,
- Enforcement,
- and Legal Alignment).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -369,9 +367,7 @@ nolink "false"
 
 
 \series default
- (Internal Audits,
- Self-Assessment,
- and Control Testing).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -393,7 +389,7 @@ nolink "false"
 
 
 \series default
- (Vendor Compliance and Third-Party Assurance).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -415,7 +411,7 @@ nolink "false"
 
 
 \series default
- (Annual Policy Review and Maturity Scoring).
+.
 \end_layout
 
 \end_deeper

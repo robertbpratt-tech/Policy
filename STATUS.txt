@@ -64,7 +64,7 @@ Immutable Levels:
 |501|Policy Implementation, Enforcement, and Legal Alignment|3||
 |502|Internal Audits, Self-Assessment, and Control Testing|3||
 |503|Compliance Monitoring and Corrective Action|3||
-|504|Performance Metrics and Operational KPIs|0||
+|504|Performance Metrics and Operational KPIs|3||
 |505|Security Control Assessment and Authorization|0||
 |506|Vendor Compliance and Third-Party Assurance|0||
 |507|Annual Policy Review and Maturity Scoring|0||

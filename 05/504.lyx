@@ -190,6 +190,17 @@ Version:
  Purpose
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy establishes the governance framework for defining,
+ reviewing,
+ and acting upon departmental performance metrics and operational key performance indicators (KPIs) used by the Elko County Information Operations Department to evaluate service performance,
+ operational resilience,
+ security posture,
+ and organizational sustainability.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -197,6 +208,201 @@ Version:
  Scope
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations personnel involved in KPI definition,
+ data aggregation,
+ performance review,
+ or executive reporting.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Departmental KPI taxonomy and domain coverage requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+KPI definition,
+ approval,
+ and threshold governance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Quarterly KPI review and recordkeeping.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Underperformance pattern identification and routing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Annual executive performance reporting.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Individual personnel performance evaluations:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+SLA target definition:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+In-flight service level measurement and operational reporting:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Service improvement intake and triage:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Internal audit and control testing mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Corrective Action Plan lifecycle:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -204,11 +410,323 @@ Version:
  Roles and Responsibilities
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall approve the KPI domain structure,
+ initial KPI selection,
+ and material threshold changes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review the Quarterly KPI Review Summary prepared by the Assistant IT Director and document review acknowledgment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall determine whether a single-period deviation is sufficiently severe to require immediate escalation despite the absence of a consecutive miss.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve the annual executive KPI summary prior to issuance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall incorporate aggregate service level performance and key operational metrics into the Monthly Executive Report delivered to the County Manager in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Stakeholder Engagement and Communications Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall maintain the live KPI register in the System of Engagement (Redmine) as the authoritative operational catalog of KPI definitions,
+ calculation methods,
+ targets,
+ and current status.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall validate source data practicality and record integrity for each KPI maintained in the register.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate quarterly KPI review preparation,
+ incorporating formal feeder summaries produced under source policies.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare the Quarterly KPI Review Summary and the annual executive KPI summary.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall route qualifying underperformance patterns to the Service Improvement Register under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Improvement and Continual Improvement Plan) or the Corrective Action Plan lifecycle under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Compliance Monitoring and Corrective Action) as required by Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall propose KPI additions,
+ removals,
+ or material threshold changes to the IT Director for approval.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall provide requested source data accurately and within requested timeframes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall participate in improvement activity arising from KPI review where assigned.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain process records required by the source policies that feed the KPI framework.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
 4.
  Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations personnel involved in KPI governance,
+ data aggregation,
+ performance review,
+ or executive reporting.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to KPI governance obligations,
+ review cadences,
+ and routing requirements shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to maintain required KPI records,
+ conduct required reviews,
+ or route qualifying underperformance issues in accordance with this policy may result in corrective action in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+ KPI deviations requiring improvement intake or formal remediation shall be routed through the existing mechanisms defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Parallel improvement logs,
+ corrective-action trackers,
+ or memo-only review processes shall not be created under this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -218,11 +736,1198 @@ Version:
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Financial Management and Procurement Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Stakeholder Engagement and Communications Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Level Management and Metrics Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Capacity and Availability Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Monitoring and Event Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Project Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Improvement and Continual Improvement Plan
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Compliance Monitoring and Corrective Action
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Vendor Compliance and Third-Party Assurance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071558 (Activity Reports)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.AT-03 (Information Security Performance Is Measured and Evaluated)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CA-7 (Continuous Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-6 (Measures of Performance)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA01 (Managed Performance and Conformance Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Continual Improvement Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Measurement and Reporting Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy governs the Department's KPI framework at the scorecard and governance level.
+ It defines what qualifies as a KPI,
+ the required domains of KPI coverage,
+ the recordkeeping and review cadence,
+ and the routing rules for performance results that require action.
+ Operational data collection remains governed by the source policies identified in the KPI register;
+ corrective action follows the lifecycle defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+;
+ and improvement intake follows the routing defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 KPI Qualification Criteria
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A measure shall qualify as a KPI under this policy only when it meets all of the following conditions:
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+It is reviewed at the IT Director or Assistant IT Director quarterly governance level
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+It reflects departmental outcome,
+ control health,
+ or operational resilience
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+It is stable enough to trend across review periods
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+It is capable of triggering a governance response.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Measures that do not meet this threshold remain supporting metrics owned by their source policies.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Required KPI Domains
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department shall maintain KPI coverage across,
+ at minimum,
+ the following domains:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Financial Stewardship
+\series default
+:
+ Budget-to-actual performance,
+ cost stewardship,
+ and financially meaningful ratios supporting procurement,
+ budgeting,
+ and sustainability decisions.
+ Source data governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Financial Management and Procurement Policy) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Asset Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Service Delivery
+\series default
+:
+ Quarterly service-level KPIs sourced from the service management stack,
+ including SLA compliance rate,
+ Recurring Ticket Ratio,
+ Mean Time to Repair/Recovery,
+ and first contact resolution rate.
+ Source data governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Level Management and Metrics Reporting).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Reliability and Availability
+\series default
+:
+ Measures reflecting core service continuity and operational resilience.
+ Source data governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Capacity and Availability Management Policy) and the monitoring function under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Monitoring and Event Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security and Control Health
+\series default
+:
+ Measures reflecting security hygiene and control effectiveness.
+ Source data governed by the applicable Chapter 2 policies and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Organizational Health
+\series default
+:
+ Aggregate sustainability indicators addressing workforce readiness,
+ delivery capacity,
+ critical role coverage,
+ or succession fragility.
+ Source data drawn from existing HR and departmental records.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Improvement and Remediation
+\series default
+:
+ Measures reflecting whether adverse signals are translating into tracked improvement activity and corrective action.
+ Source data governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Project Delivery
+\series default
+:
+ On-time,
+ on-budget,
+ and on-scope performance for initiatives meeting the project designation threshold defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Project Management Policy).
+ Source data governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Vendor Performance
+\series default
+:
+ Supplier and service-provider measures affecting county service reliability,
+ contractual accountability,
+ or renewal decisions.
+ Source data governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5 and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Vendor Compliance and Third-Party Assurance).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Not every domain must contain the same number of KPIs.
+ The KPI register shall remain deliberately limited and shall prioritize measures that are decision-useful at the departmental governance level.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 KPI Register and Definition Requirements
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall maintain a live KPI register in the System of Engagement (Redmine).
+ The KPI register is the authoritative operational catalog for KPI definitions and current status.
+ The policy manual defines governance requirements;
+ the KPI register carries current formulas,
+ targets,
+ and statuses.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Each KPI record in the register shall include,
+ at minimum:
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+KPI title.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Assigned domain.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Source policy or source system.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Calculation method or formula.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Review cadence.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Target value.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Warning threshold,
+ where used.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Critical threshold,
+ where used.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Trend direction convention.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Expected routing action when performance falls outside approved tolerances.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Initial KPI selection and all target or threshold changes shall be proposed by the Assistant IT Director and approved by the IT Director before becoming active.
+ No KPI shall be added to,
+ removed from,
+ or redefined within the register without IT Director approval.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Data Sourcing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All KPI data shall be sourced exclusively from existing authoritative systems and the data collection processes governed by the source policies identified in the KPI register.
+ Personnel shall not create manual tracking spreadsheets,
+ shadow databases,
+ or parallel data collection pipelines for KPIs where system-generated reporting is technically feasible.
+ The Quarterly Service Level Performance Summary required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4,
+ the project performance data feed required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.8,
+ and other formal feeder summaries produced under source policies shall be incorporated into the KPI review process rather than duplicated.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Quarterly KPI Review
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+No later than fifteen (15) business days following the close of each calendar quarter,
+ the Assistant IT Director shall prepare a Quarterly KPI Review Summary for IT Director review.
+ The IT Director shall review the summary and document review acknowledgment.
+ The Quarterly KPI Review Summary shall be maintained in the System of Engagement (Redmine) as the authoritative internal record of quarterly KPI governance review.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Quarterly KPI Review Summary shall include,
+ at minimum:
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The quarter covered.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The KPIs reviewed.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Current status and trend direction for each KPI.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any single-period misses requiring monitoring.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any underperformance patterns requiring intake under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any deviations requiring Corrective Action Plan development under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Approved target or threshold changes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Assigned follow-up actions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+IT Director review acknowledgment.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Underperformance Thresholds and Routing
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Single-Period Miss
+\series default
+:
+ A KPI single-period miss exists when a KPI falls below its approved target or outside its approved tolerance during one quarterly review period.
+ A single-period miss shall be documented in the Quarterly KPI Review Summary and monitored during the next review cycle.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Underperformance Pattern
+\series default
+:
+ A KPI underperformance pattern exists when either:
+ (a) the same KPI records two consecutive quarterly misses;
+ or (b) the IT Director determines that a single deviation is sufficiently severe,
+ persistent,
+ or strategically significant to require tracked improvement despite the absence of a second consecutive miss.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Routing
+\series default
+:
+ Upon identification of a KPI underperformance pattern,
+ the Assistant IT Director shall log a Service Improvement Register entry in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ unless the issue instead requires direct routing into the Corrective Action Plan lifecycle under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Where KPI deviation reflects a control deficiency,
+ compliance gap,
+ sustained policy nonconformance,
+ or other condition requiring formal remediation with milestones,
+ the Assistant IT Director shall initiate or update a Corrective Action Plan in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy does not create a separate remediation tracker.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Pattern Analysis
+\series default
+:
+ Recurring Ticket Ratio and similar pattern-based KPIs shall be reviewed for evidence of documentation weakness,
+ training need,
+ recurring failure mode,
+ or process design deficiency.
+ Where the analysis identifies a systemic improvement opportunity,
+ the Assistant IT Director shall route the issue through the Service Improvement Register.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Organizational Health Boundary
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Organizational Health KPIs shall be limited to indicators that affect workforce sustainability,
+ delivery capacity,
+ succession fragility,
+ or operational overdependence on specific personnel.
+ Such indicators shall be reviewed primarily in aggregate.
+ This policy shall not be used as an employee ranking or disciplinary scorecard.
+ Individual personnel actions arising from organizational health review shall be handled through normal supervisory and HR processes,
+ not through the KPI governance process defined in this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Executive Reporting
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall extract a targeted subset of the KPI taxonomy to fulfill the Monthly Executive Report obligation established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.2.
+ The Monthly Executive Report content is the IT Director's executive communication derivative;
+ it draws from,
+ but does not replace,
+ the quarterly governance record.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+No later than the end of the first calendar quarter following year-end,
+ the Assistant IT Director shall prepare an annual KPI and operational performance summary for IT Director approval.
+ This summary may be incorporated into the Department's annual reporting or other executive communication issued through County leadership channels.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.9 Records Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Quarterly KPI Review Summary is the authoritative record of KPI governance review.
+ Annual executive summaries are derivative communication artifacts and do not replace the quarterly record.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Quarterly KPI Review Summaries shall be maintained in the System of Engagement (Redmine) and retained in accordance with the Nevada Local Government Records Retention Schedule under NRS 239.125,
+ for a minimum of three (3) years from the date of production unless a longer period is required by another applicable authority:
+ LRDA 20071558 (Activity Reports).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Where annual executive summaries are issued as formal reports or memoranda,
+ they shall be retained in accordance with the applicable County records-management practice for the record series under which they are filed.
 \end_layout
 
 \end_body
