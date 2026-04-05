@@ -192,6 +192,18 @@ Version:
  Purpose
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy establishes the internal audit program,
+ self-assessment procedures,
+ and control testing methodology that the Information Operations Department uses to evaluate the implementation,
+ operating effectiveness,
+ and continued adequacy of controls,
+ processes,
+ and obligations defined throughout the ECIO Policy Manual.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -199,6 +211,207 @@ Version:
  Scope
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy applies to all policies,
+ controls,
+ processes,
+ and systems governed by the ECIO Policy Manual.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Internal audit planning,
+ scheduling,
+ and execution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Self-assessment procedures and process-owner evaluations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Control testing and validation methodology.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Audit and assessment documentation,
+ evidence handling,
+ and record retention.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Deficiency identification,
+ classification,
+ and routing.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Policy lifecycle management and version control:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Enforcement actions and formal sanctions:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Corrective action plan development,
+ tracking,
+ and closure:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Security control authorization decisions:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor and third-party compliance assessments:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Annual policy review and maturity scoring:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -206,11 +419,334 @@ Version:
  Roles and Responsibilities
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the audit authority for the ECIO Policy Manual.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve the Annual Audit Plan defined in Section 6.1.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall receive and review all audit summary reports and deficiency notifications produced under this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize unplanned audits when circumstances require assessment outside the approved schedule.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that audit activities maintain sufficient objectivity as defined in Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall evaluate the need for external assessment services when internal objectivity cannot be achieved for Criminal Justice Information Services (CJIS) relevant controls,
+ consistent with CJIS Security Policy v6.0:
+ CA-2(1) (Independent Assessors) and CA-7(1) (Independent Assessment).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall develop the draft Annual Audit Plan for IT Director approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall execute or coordinate the execution of all internal audits,
+ self-assessments,
+ and control tests scheduled under this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain audit records and evidence in the System of Engagement (Redmine).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that audit-derived evidence is protected against unauthorized modification or deletion in accordance with CJIS Security Policy v6.0:
+ AU-9 (Protection of Audit Information).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare audit summary reports for IT Director review.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall classify findings and route deficiencies in accordance with Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct or coordinate the quarterly self-assessments defined in Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain the Control Testing Register defined in Section 6.3.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall cooperate fully with internal audit and control testing activities,
+ including providing access to systems,
+ records,
+ and documentation within their operational responsibility.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct self-assessments of controls within their assigned operational areas when directed by the Assistant IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not obstruct,
+ delay,
+ or withhold information from audit or assessment activities.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads (Non-IT County Departments)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall cooperate with audit and assessment activities that evaluate controls applicable to their personnel or systems,
+ including access reviews,
+ acceptable use compliance,
+ and training verification.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
 4.
  Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Adherence to this policy is mandatory for all personnel within scope,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with audit planning,
+ execution,
+ documentation,
+ and reporting obligations shall be assessed through the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to execute scheduled audits,
+ failure to document audit findings,
+ failure to route deficiencies as required,
+ or obstruction of audit activities shall be treated as non-compliance and may result in corrective action in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to any requirement of this policy shall be documented in writing with a business justification,
+ identification of residual risk,
+ and any compensating measures.
+ Exceptions affecting audit scope minimums,
+ CJIS testing cadences,
+ or the objectivity safeguards established in Section 6.4 shall be approved by the County Manager in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights) and the exception management framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ All other exceptions shall be approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline.
 \end_layout
 
 \begin_layout Subsection*
@@ -220,11 +756,918 @@ Version:
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Review and Update Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Compliance Monitoring and Corrective Action
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Security Control Assessment and Authorization
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ AU-9 (Protection of Audit Information)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-1 (Assessment,
+ Authorization,
+ and Monitoring Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-2 (Control Assessments)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-7 (Continuous Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-01 (Improvements are identified from evaluations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-02 (Improvements are identified from security tests and exercises)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CA-2 (Control Assessments)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CA-7 (Continuous Monitoring)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA02 (Managed System of Internal Control)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Continual Improvement Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Audit Planning and Annual Schedule
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall approve an Annual Audit Plan no later than thirty (30) calendar days after the beginning of each fiscal year.
+ The Assistant IT Director shall prepare the draft plan and submit it to the IT Director for review.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Annual Audit Plan shall identify,
+ at minimum:
+ the policies,
+ controls,
+ and processes to be assessed during the fiscal year;
+ the assessment method for each item (internal audit,
+ self-assessment,
+ or control test);
+ the planned quarter of execution;
+ and the personnel or role responsible for conducting each assessment.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Audit scope shall be determined on a risk-informed basis.
+ The following factors shall inform prioritization:
+ the results of the previous year's audit and assessment cycle,
+ the risk ratings maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy),
+ any open deficiencies tracked under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Compliance Monitoring and Corrective Action),
+ changes to the regulatory or threat environment,
+ and the results of any external audits or assessments conducted during the prior period.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Every policy in the ECIO Policy Manual shall be assessed through at least one of the three mechanisms defined in this policy —
+ internal audit,
+ self-assessment,
+ or control test —
+ within each annual cycle.
+ Policies governing controls subject to CJIS Security Policy obligations shall be assessed no less than annually through internal audit or control testing;
+ self-assessment alone does not satisfy the CJIS assessment requirement.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Annual Audit Plan is a planning instrument;
+ it does not prevent the IT Director from authorizing additional assessments during the fiscal year.
+ The IT Director may initiate unplanned audits in response to cybersecurity incidents,
+ enforcement actions,
+ external audit findings,
+ regulatory changes,
+ or risk conditions identified under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The Assistant IT Director shall document unplanned audits in the System of Engagement with the same rigor as planned audits.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Self-Assessment Procedures
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Self-assessments are process-owner evaluations that determine whether the controls assigned to a given operational area are implemented,
+ are operating as intended,
+ and are producing the expected outcome.
+ Self-assessments supplement —
+ but do not replace —
+ the internal audit and control testing activities defined in Sections 6.1 and 6.3.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall conduct or coordinate self-assessments on a quarterly cadence.
+ Each quarterly self-assessment cycle shall cover the policies and controls designated in the Annual Audit Plan for that quarter.
+ Where the Annual Audit Plan designates a policy for self-assessment rather than internal audit,
+ the quarterly self-assessment constitutes the annual assessment obligation for that policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Each self-assessment shall evaluate,
+ at minimum:
+ whether the required controls are documented and current,
+ whether the controls have been executed within the cadences defined in the governing policy,
+ and whether evidence of control execution exists in the System of Engagement or the applicable system of record.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall document self-assessment results in a work order in the System of Engagement in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy).
+ Each self-assessment record shall include:
+ the policy or control area assessed,
+ the assessment date,
+ the controls evaluated,
+ the determination for each control (conforming,
+ observation,
+ or deficiency as defined in Section 6.5),
+ and any recommended actions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Where a self-assessment reveals a condition that requires deeper evaluation,
+ the Assistant IT Director shall escalate the finding to the IT Director with a recommendation to initiate an unplanned internal audit or control test of the affected area.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Control Testing and Validation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Control testing validates that a specific technical or procedural control produces its intended security or operational outcome when exercised.
+ Control testing goes beyond self-assessment by directly exercising the control mechanism rather than evaluating documentation and evidence of prior execution.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall maintain a Control Testing Register in the System of Engagement.
+ The register shall list each testable control,
+ the governing policy,
+ the testing method,
+ the testing cadence,
+ and the date and result of the most recent test.
+ The register is a living instrument;
+ the Assistant IT Director shall update it as policies are added,
+ revised,
+ or retired under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall select testing methods appropriate to the control being tested.
+ Testing methods shall include one or more of the following:
+ examination of documentation,
+ records,
+ or configuration artifacts;
+ interview of personnel responsible for the control's operation;
+ and direct testing through observation,
+ execution,
+ or simulation of the control mechanism.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Each control test shall document:
+ the control tested and the governing policy reference,
+ the testing method used,
+ the expected outcome,
+ the actual outcome,
+ the pass or fail determination,
+ and any anomalies or observations noted during the test.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Testing cadence shall be risk-informed and shall comply with the following minimum frequencies:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Controls implementing CJIS Security Policy requirements shall be tested no less than annually.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Controls identified as high-risk under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall be tested no less than annually.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All other controls shall be tested no less than once every twenty-four (24) months.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director may establish more frequent testing cadences for specific controls based on risk conditions,
+ regulatory changes,
+ or prior test failures.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Where a control test results in a failure,
+ the Assistant IT Director shall classify the finding per Section 6.5 and route it accordingly.
+ The Assistant IT Director shall retest a failed control after remediation is complete;
+ the retest result shall be documented in the same work order chain as the original test.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Audit Execution and Documentation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall conduct internal audits in accordance with the Annual Audit Plan or under IT Director authorization for unplanned assessments.
+ Each internal audit shall follow a consistent methodology comprising four stages:
+ scoping,
+ evidence collection,
+ analysis,
+ and reporting.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Scoping
+\series default
+:
+ The auditor shall define the controls under assessment,
+ the assessment criteria,
+ the evidence to be collected,
+ and the systems or records to be examined.
+ The auditor shall retain the scoping document with the audit record.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Evidence Collection
+\series default
+:
+ The auditor shall gather sufficient evidence to support a determination of control effectiveness.
+ Evidence may include system configurations,
+ log records,
+ work order histories,
+ training records,
+ policy acknowledgment records,
+ and direct observation of operational procedures.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Analysis
+\series default
+:
+ The auditor shall evaluate collected evidence against the requirements of the governing policy and applicable framework controls to determine whether each assessed control is conforming,
+ warrants an observation,
+ or constitutes a deficiency.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Reporting
+\series default
+:
+ The auditor shall prepare an audit summary that documents the scope,
+ methodology,
+ evidence collected,
+ findings by control,
+ and recommended actions.
+ The auditor shall submit the audit summary to the IT Director within fifteen (15) business days of the completion of evidence collection.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Objectivity is a core requirement of the audit function.
+ Personnel shall not serve as the primary auditor for controls they materially implement,
+ administer,
+ or routinely operate.
+ Where staffing constraints make full independence impractical,
+ the IT Director shall document the constraint and ensure that audit results receive independent review.
+ For the purposes of this policy,
+ independent review means review by a person who did not participate in the implementation,
+ operation,
+ or assessment of the controls under evaluation.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall evaluate the need for external assessment services when internal objectivity cannot be achieved for CJIS-relevant controls,
+ consistent with CJIS Security Policy CA-2(1) and CA-7(1).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall maintain all audit documentation —
+ scoping documents,
+ evidence artifacts,
+ working papers,
+ and audit summaries —
+ in the System of Engagement and shall classify audit records in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy).
+ Audit records may be subject to disclosure under NRS 239 unless protected by a specific statutory exemption;
+ classification and handling shall follow 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Findings,
+ Classification,
+ and Routing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall classify audit findings,
+ self-assessment results,
+ and control test outcomes using a three-tier scheme.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Conforming
+\series default
+:
+ The assessed control is implemented correctly,
+ is operating as intended,
+ and is producing the desired outcome.
+ Conforming findings shall be recorded in the Control Testing Register and shall contribute to the maturity scoring process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Observation
+\series default
+:
+ A minor gap,
+ inconsistency,
+ or area for improvement that does not constitute a material failure of the control's protective or operational function.
+ The Assistant IT Director shall document and track observations.
+ The Assistant IT Director shall reclassify observations that recur across two (2) or more consecutive assessment cycles as deficiencies.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Deficiency
+\series default
+:
+ The control is not implemented,
+ is not operating as intended,
+ or is not producing the desired outcome,
+ and the gap creates material risk to the security,
+ compliance,
+ or operational posture of the Department.
+ The Assistant IT Director shall route deficiencies to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for corrective action plan development within ten (10) business days of classification.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When a deficiency affects a control implementing a CJIS Security Policy requirement,
+ the IT Director shall evaluate whether the deficiency constitutes a reportable condition under the applicable CJIS notification obligations and shall act accordingly.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When an audit or assessment reveals that non-compliance by an individual has occurred,
+ the Assistant IT Director shall route the finding to the IT Director for evaluation under the enforcement framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The audit function identifies the condition;
+ enforcement authority remains with the IT Director under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall prepare a consolidated Annual Audit Summary Report at the conclusion of each annual audit cycle.
+ The report shall document:
+ the total number of assessments conducted by type (internal audit,
+ self-assessment,
+ and control test);
+ the number and distribution of findings by classification tier;
+ the policies and controls with open deficiencies;
+ trend data comparing current-year results to prior-year results;
+ and recommendations for the next annual cycle.
+ The Assistant IT Director shall submit the Annual Audit Summary Report to the IT Director and shall make it available as an input to the annual policy review and maturity scoring process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Audit Record Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall retain audit records,
+ self-assessment documentation,
+ control test results,
+ evidence artifacts,
+ and audit summary reports in the System of Engagement in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the applicable Nevada Local Government Records Retention Schedule.
+ Where multiple retention requirements apply,
+ the longest applicable period shall govern.
+ Audit records shall be retained for a minimum of three (3) years from the date of the assessment where no longer retention period is specified by an applicable schedule.
 \end_layout
 
 \end_body
