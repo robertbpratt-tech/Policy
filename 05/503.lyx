@@ -190,6 +190,15 @@ Version:
  Purpose
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy governs the development,
+ approval,
+ tracking,
+ and closure of Corrective Action Plans and establishes the compliance monitoring function that verifies the Department's ongoing adherence to its statutory and regulatory notification obligations.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -197,6 +206,219 @@ Version:
  Scope
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy applies to all deficiencies,
+ control failures,
+ and compliance gaps identified through the assessment,
+ audit,
+ and operational monitoring functions of the ECIO Policy Manual that require documented remediation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Corrective Action Plan development,
+ content requirements,
+ and approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Corrective Action Plan tracking,
+ milestone management,
+ and closure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Verification of remediation effectiveness.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Compliance monitoring of incident reporting and breach notification obligations.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Risk assessment methodology and Risk Register maintenance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Service level target-setting and SLA deviation thresholds:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Catalog and SLA Policy) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Level Management and Metrics Reporting).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Enforcement actions against individuals and formal sanctions:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Audit planning,
+ assessment execution,
+ and deficiency classification:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor compliance assessments:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Vendor Compliance and Third-Party Assurance).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Annual policy review and maturity scoring:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring).
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -204,11 +426,341 @@ Version:
  Roles and Responsibilities
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall approve all Corrective Action Plans prior to execution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve Corrective Action Plan closures upon receipt of verification evidence.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall evaluate whether a deficiency affecting a control implementing a Criminal Justice Information Services (CJIS) Security Policy requirement,
+ or any statutory breach notification obligation,
+ triggers external or interagency reporting requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that required notifications are executed in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration) when reporting is required.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize exceptions to this policy in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall develop the Corrective Action Plan for each deficiency routed to this policy within the timeframes defined in Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain all open Corrective Action Plans in the System of Engagement (Redmine).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review all open Corrective Action Plans no less than monthly and shall update milestone status as material progress occurs.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall request verification assessments through the mechanisms defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ upon completion of remediation activities.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that each Corrective Action Plan is linked to the corresponding entry in the Risk Register maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct the compliance monitoring reviews defined in Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report open Corrective Action Plans and their current status as part of the reporting cadences defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Performance Metrics and Operational KPIs).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute remediation tasks assigned under an approved Corrective Action Plan within the milestone timelines established in the plan.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document remediation actions in the System of Engagement (Redmine) as they are completed.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
 4.
  Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations personnel involved in deficiency remediation,
+ compliance monitoring,
+ or Corrective Action Plan management.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to Corrective Action Plan development timelines,
+ milestone tracking,
+ verification requirements,
+ and compliance monitoring obligations shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to develop required Corrective Action Plans within the timelines defined in Section 6.2,
+ failure to maintain milestone tracking,
+ or failure to conduct required compliance monitoring reviews shall be treated as non-compliance and may result in corrective action in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline.
 \end_layout
 
 \begin_layout Subsection*
@@ -218,11 +770,1196 @@ Version:
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Level Management and Metrics Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols and Partner Integration
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Performance Metrics and Operational KPIs
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 603A.220 (Disclosure of Breach of Security of System Data)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-5 (Plan of Action and Milestones)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-7 (Continuous Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-01 (Improvements Are Identified from Evaluations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-03 (Improvements Are Identified from Execution of Operational Processes)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CA-5 (Plan of Action and Milestones)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CA-7 (Continuous Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-4 (Plan of Action and Milestones Process)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA01.05 (Ensure the Implementation of Corrective Actions)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Continual Improvement Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Problem Management Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Scope and Intake Sources
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy governs two functions.
+ First,
+ it defines the lifecycle for Corrective Action Plans (CAPs) —
+ the documented remediation instruments used to correct deficiencies,
+ control failures,
+ and compliance gaps identified across the ECIO Policy Manual.
+ Second,
+ it establishes the compliance monitoring function that verifies the Department's adherence to its incident reporting and breach notification obligations.
+ These functions are connected:
+ gaps identified through compliance monitoring enter the same CAP lifecycle as deficiencies from any other intake source.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Corrective Action Plans constitute the Department's implementation of NIST SP 800-53 Rev.
+ 5:
+ CA-5 (Plan of Action and Milestones) and CJIS Security Policy v6.0:
+ CA-5.
+ All remediation tracking instruments within the ECIO Policy Manual —
+ regardless of the label used in the originating policy —
+ shall follow the lifecycle defined in this policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall initiate CAPs from the following intake sources.
+ This policy does not redefine the triggers or thresholds that generate these inputs;
+ it receives them and governs what happens next.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Audit-Derived Deficiencies
+\series default
+:
+ Deficiencies classified under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5 and routed to this policy for corrective action plan development.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Service Level Corrective Action
+\series default
+:
+ Corrective Action Plans triggered by the sustained non-compliance threshold defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Risk Response Remediation
+\series default
+:
+ Remediation actions identified through the risk response process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ that require documented tracking with milestones.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Compliance Monitoring Findings
+\series default
+:
+ Gaps identified through the compliance monitoring function defined in Section 6.5 of this policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The boundary between this policy and its adjacent policies is as follows.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ identifies deficiencies through audit,
+ self-assessment,
+ and control testing;
+ this policy develops and manages the remediation.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ enforces consequences against individuals for non-compliance;
+ this policy remediates the process or control that failed.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ maintains the Risk Register and defines when a risk response is needed;
+ this policy governs the remediation lifecycle once that response requires tracked corrective action.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Corrective Action Plan Content and Approval
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall develop a CAP for each deficiency routed to this policy.
+ Development shall be completed within ten (10) business days of receipt from the originating source.
+ When a deficiency is routed from 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the ten (10) business day development window begins on the date of classification under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Each CAP shall be documented in the System of Engagement (Redmine) and shall include,
+ at minimum,
+ the following content:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Deficiency Description
+\series default
+:
+ A clear statement of the control failure,
+ compliance gap,
+ or process breakdown,
+ including the originating source and the affected policy or control.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Root Cause
+\series default
+:
+ The identified or probable cause of the deficiency.
+ Where the root cause cannot be determined within the development window,
+ the CAP shall state that root cause analysis is ongoing and shall include a milestone for completing it.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Remediation Actions
+\series default
+:
+ The specific actions required to correct the deficiency,
+ stated with sufficient precision that completion is objectively verifiable.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Milestones
+\series default
+:
+ Each CAP shall include one or more defined milestones with target completion dates.
+ Milestones shall represent measurable interim checkpoints —
+ not a single end-state target.
+ The milestone structure shall be sufficient to enable progress tracking and early detection of delays.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Verification Criteria
+\series default
+:
+ The standard by which remediation will be confirmed complete.
+ Verification criteria shall identify the assessment method (control re-test,
+ self-assessment,
+ or audit) and the expected evidence of remediation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Responsible Role
+\series default
+:
+ The role assigned to execute remediation actions.
+ Assignment shall follow the role definitions established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Risk Register Linkage
+\series default
+:
+ The Risk ID of the corresponding entry in the Risk Register maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ When a deficiency does not yet have a Risk Register entry,
+ the Assistant IT Director shall create one at the time of CAP development.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS Impact Indicator
+\series default
+:
+ A determination of whether the deficiency affects a control implementing a CJIS Security Policy requirement.
+ When the indicator is affirmative,
+ the IT Director shall evaluate whether the deficiency triggers external or interagency reporting requirements and shall ensure that required notifications are executed in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall review and approve each CAP prior to execution.
+ Approval constitutes authorization to begin remediation activities and acceptance of the proposed milestones and timeline.
+ The IT Director may direct modifications to the remediation approach,
+ milestones,
+ or timeline prior to approval.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Tracking and Update Cadence
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall maintain all open CAPs in the System of Engagement (Redmine).
+ The Assistant IT Director shall review all open CAPs no less than monthly and shall update milestone status upon the completion of any milestone,
+ upon discovery of a delay,
+ or no less than monthly.
+ Each monthly review shall document:
+ milestone completion status,
+ any changes to the remediation approach or timeline,
+ and an assessment of whether the CAP remains on track for closure within its approved timeline.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall update CAPs whenever new information becomes available from control assessments,
+ independent audits or reviews,
+ or continuous monitoring activities,
+ consistent with CJIS Security Policy v6.0:
+ CA-5,
+ which requires updates at least every six (6) months or when new information is available.
+ The monthly review cadence established in this policy meets and exceeds this minimum.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall report open CAPs through the existing reporting structures established in the manual.
+ Open CAPs and their current status shall be included in the monthly performance summary defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4.
+ Open CAPs shall be available as an input to the annual policy review and maturity scoring process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy does not establish separate reporting cadences or standalone CAP status reports.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When a CAP milestone target date is missed,
+ the Assistant IT Director shall document the reason for the delay and establish a revised target date.
+ When two (2) or more milestones within a single CAP are missed,
+ the Assistant IT Director shall escalate the CAP to the IT Director for review.
+ The IT Director shall determine whether the CAP requires revision,
+ additional resources,
+ or risk acceptance for the underlying deficiency in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Verification and Closure
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall verify remediation before a CAP is closed.
+ The Assistant IT Director shall request verification through the assessment mechanisms defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ —
+ control re-test,
+ self-assessment,
+ or audit —
+ appropriate to the nature of the original deficiency.
+ This policy does not establish a separate verification methodology;
+ it uses the assessment infrastructure that 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ already provides.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The verification assessment shall confirm that the remediation actions have been implemented,
+ are operating as intended,
+ and are producing the desired outcome —
+ the same standard used for the "Conforming" classification in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A CAP shall not be closed solely on the basis of task completion.
+ Closure requires documented verification that the remediation achieved the stated control,
+ process,
+ or compliance outcome.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Upon receipt of a conforming verification result,
+ the Assistant IT Director shall prepare the CAP for closure and submit it to the IT Director with the verification evidence.
+ The IT Director shall approve the closure.
+ Upon closure,
+ the Assistant IT Director shall update the corresponding Risk Register entry under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ to reflect the resolved status.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When verification reveals that remediation was not effective,
+ the Assistant IT Director shall not close the CAP.
+ The Assistant IT Director shall revise the remediation approach,
+ establish new milestones,
+ and resubmit the revised CAP to the IT Director for approval.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Compliance Monitoring
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Department maintains statutory and regulatory obligations for incident reporting and breach notification that are operationally executed by other policies in the manual.
+ CJIS Security Policy v6.0:
+ IR-6 (Incident Reporting) establishes the incident reporting obligation;
+ its operational execution is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ NRS 603A.220 establishes the breach notification obligation;
+ its operational execution is also governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This section establishes the compliance monitoring function that verifies whether those obligations are being met.
+ Gaps identified through this function constitute a CAP intake source under Section 6.1 and enter the same remediation lifecycle as deficiencies from any other source.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall review,
+ no less than annually,
+ whether the Department's incident reporting and breach notification processes are being executed in accordance with the requirements defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The review shall evaluate,
+ at minimum:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Whether incidents meeting the CJIS IR-6 reporting criteria were reported within the required timelines.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Whether breach notifications required by NRS 603A.220 were issued within the timeframes mandated by that statute.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Whether the documentation requirements established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ were satisfied.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall treat gaps identified through the compliance monitoring review as deficiencies and shall route them into the CAP lifecycle defined in Sections 6.2 through 6.4 of this policy.
+ When a compliance monitoring review identifies a gap in a CJIS-reportable process,
+ the IT Director shall evaluate whether the gap itself triggers external or interagency reporting requirements and shall ensure that required notifications are executed in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The compliance monitoring review may be conducted as part of the annual audit cycle under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ or as a standalone review.
+ Regardless of the mechanism,
+ the Assistant IT Director shall document the results and retain them in the System of Engagement (Redmine).
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Record Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall retain all CAP records —
+ including the CAP documentation,
+ milestone tracking updates,
+ verification evidence,
+ and closure approvals —
+ in the System of Engagement (Redmine) in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) and the applicable Nevada Local Government Records Retention Schedule under NRS 239.125.
+ Where multiple retention requirements apply,
+ the longest applicable period shall govern.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall retain compliance monitoring review records under the same framework.
+ All records generated under this policy are subject to NRS 239 and may be subject to public disclosure unless protected by a specific statutory exemption.
+ Classification and handling shall follow 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_body
