@@ -1,6 +1,8 @@
 # ECIO Policy Manual — Cleanup Obligation List
 ## Based on manual state as of April 5, 2026
 
+3.02 §6.6: Add to cleanup obligations — correct "Policy 5.05" to "Policy 5.04" in body text.
+
 ---
 
 ## 1.07 — Add training compliance verification clause
