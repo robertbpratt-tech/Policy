@@ -689,7 +689,7 @@ Incident Response Roles and Contact Directory —
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.09"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -711,7 +711,7 @@ External partner engagement procedures —
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.10"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1111,7 +1111,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1502,7 +1502,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.09"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1520,7 +1520,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.10"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1576,7 +1576,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"

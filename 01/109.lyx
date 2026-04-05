@@ -516,22 +516,7 @@ Template
 \series bold
 Risk Acceptance Memo Template
 \series default
- located in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ located in.
 \end_layout
 
 \begin_layout Itemize
@@ -792,38 +777,6 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
-ECIO Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Risk Assessment Matrix
-\end_layout
-
-\begin_layout Itemize
-ECIO Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Supporting Documentation
-\end_layout
-
-\begin_layout Itemize
 NRS 239.125 (Local Government Records Management Program)
 \end_layout
 
@@ -1015,22 +968,7 @@ Risk Management Strategy
  The Assistant IT Director shall maintain a documented Risk Management Strategy that defines risk appetite/tolerance,
  prioritization criteria,
  management decision rules for selecting risk responses,
- scoring methodology (
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-),
+ scoring methodology,
  reporting thresholds,
  and review cadence;
  the IT Director shall approve it at least annually (
@@ -1156,18 +1094,7 @@ Risk assessments must identify threats,
  vulnerabilities,
  likelihood,
  and impact specific to the system environment.
- Assessments shall utilize the standardized scoring criteria defined in Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
- (Risk Assessment Matrix).
+ Assessments shall utilize the standardized scoring criteria.
  Assessments shall explicitly consider supply chain risks in accordance with 
 \series bold
 Policy 
@@ -1376,17 +1303,6 @@ nolink "false"
  and 
 \series bold
 Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
 \series default
 .
 \end_layout

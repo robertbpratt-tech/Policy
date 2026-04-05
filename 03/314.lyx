@@ -776,7 +776,7 @@ Assessment
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1162,7 +1162,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1275,7 +1275,7 @@ nolink "false"
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1495,22 +1495,7 @@ nolink "false"
 
 
 \series default
- and 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ .
 \end_layout
 
 \begin_layout Itemize

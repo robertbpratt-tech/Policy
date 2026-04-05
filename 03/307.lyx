@@ -661,7 +661,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -888,7 +888,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -906,7 +906,7 @@ nolink "false"
 ECIO Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1038,7 +1038,7 @@ nolink "false"
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1086,7 +1086,7 @@ nolink "false"
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1682,7 +1682,7 @@ Formal Closure Declaration
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"

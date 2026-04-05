@@ -471,7 +471,7 @@ nolink "false"
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -704,7 +704,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -985,7 +985,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1003,7 +1003,7 @@ nolink "false"
 ECIO Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1644,7 +1644,7 @@ The technician shall update the work order status to the appropriate terminal st
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1812,7 +1812,7 @@ Set the work order status to In Progress in accordance with
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1833,7 +1833,7 @@ Link the work order to the Parent Problem record via the Related Issues field in
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1876,7 +1876,7 @@ At the time the Parent Problem record is resolved,
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2195,7 +2195,7 @@ nolink "false"
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"

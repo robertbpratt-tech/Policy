@@ -490,7 +490,7 @@ Annual governance and framework maturity scoring —
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -638,7 +638,7 @@ Shall receive the annual improvement summary as part of the
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -728,7 +728,7 @@ Shall produce the annual improvement summary for submission to the IT Director i
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -824,7 +824,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1192,7 +1192,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1780,7 +1780,7 @@ The Assistant IT Director shall produce an annual improvement summary documentin
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.10"
+reference "pol:5.07"
 plural "false"
 caps "false"
 noprefix "false"

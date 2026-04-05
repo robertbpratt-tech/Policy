@@ -557,7 +557,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.09"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1058,7 +1058,7 @@ Information Operations shall maintain and periodically validate an up-to-date co
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.09"
+reference "pol:4.08"
 plural "false"
 caps "false"
 noprefix "false"

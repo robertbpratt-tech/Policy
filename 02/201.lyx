@@ -431,24 +431,6 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Supporting Documentation
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 NRS 205.4765 (Unlawful acts regarding computers)
 \end_layout
 

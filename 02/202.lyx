@@ -503,22 +503,6 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
-ECIO Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Supporting Documentation
-\end_layout
-
-\begin_layout Itemize
 NRS 179A (Records of Criminal History)
 \end_layout
 

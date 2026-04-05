@@ -687,7 +687,7 @@ nolink "false"
 ECIO Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.06"
+reference "app:6.04"
 plural "false"
 caps "false"
 noprefix "false"
