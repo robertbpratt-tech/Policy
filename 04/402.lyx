@@ -667,7 +667,7 @@ Postmortem review and lessons learned —
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
+reference "pol:4.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -689,7 +689,7 @@ Incident Response Roles and Contact Directory —
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
+reference "pol:4.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -711,7 +711,7 @@ External partner engagement procedures —
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
+reference "pol:4.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1484,7 +1484,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
+reference "pol:4.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1502,7 +1502,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
+reference "pol:4.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1520,7 +1520,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
+reference "pol:4.07"
 plural "false"
 caps "false"
 noprefix "false"

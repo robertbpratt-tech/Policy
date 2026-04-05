@@ -524,7 +524,7 @@ Postmortem review and lessons learned —
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
+reference "pol:4.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -761,7 +761,7 @@ Policy 5.02
 \series default
  and the annual policy review and maturity scoring process governed by 
 \series bold
-Policy 5.10
+Policy 5.07
 \series default
 .
 \end_layout
@@ -930,7 +930,7 @@ ECIO Policy 5.02:
 \begin_layout Standard
 
 \lang english
-ECIO Policy 5.10:
+ECIO Policy 5.07:
  Annual Policy Review and Maturity Scoring
 \end_layout
 
