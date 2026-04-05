@@ -366,7 +366,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.07"
+reference "pol:5.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -409,7 +409,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.07"
+reference "pol:5.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -605,7 +605,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.07"
+reference "pol:5.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -623,7 +623,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.07"
+reference "pol:5.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1153,7 +1153,7 @@ nolink "false"
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.07"
+reference "pol:5.06"
 plural "false"
 caps "false"
 noprefix "false"

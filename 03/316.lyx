@@ -534,7 +534,7 @@ KPI taxonomy and baseline definition —
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.05"
+reference "pol:5.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1174,7 +1174,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.05"
+reference "pol:5.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1358,7 +1358,7 @@ A KPI underperformance pattern identified under
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.05"
+reference "pol:5.04"
 plural "false"
 caps "false"
 noprefix "false"

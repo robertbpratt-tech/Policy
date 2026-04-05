@@ -301,7 +301,7 @@ nolink "false"
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.05"
+reference "app:6.03"
 plural "false"
 caps "false"
 noprefix "false"
@@ -487,7 +487,7 @@ nolink "false"
 ECIO Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.05"
+reference "app:6.03"
 plural "false"
 caps "false"
 noprefix "false"
@@ -607,7 +607,7 @@ The Information Operations Department is organized into hierarchical role tiers 
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.05"
+reference "app:6.03"
 plural "false"
 caps "false"
 noprefix "false"
@@ -685,7 +685,7 @@ Competency Maintenance and Privileged Access Eligibility
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.05"
+reference "app:6.03"
 plural "false"
 caps "false"
 noprefix "false"
@@ -834,7 +834,7 @@ IT Trainee Level (Tier L0)
 
 \lang english
 The following roles define the operational and governance structure of the Information Operations Department.
- Formal County position descriptions shall align with these definitions and with the STAK competencies in Appendix 6.05.
+ Formal County position descriptions shall align with these definitions and with the STAK competencies in Appendix 6.03.
 \end_layout
 
 \begin_layout Itemize
@@ -1393,7 +1393,7 @@ Definition
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.05"
+reference "app:6.03"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1447,7 +1447,7 @@ Training
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.05"
+reference "app:6.03"
 plural "false"
 caps "false"
 noprefix "false"

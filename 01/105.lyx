@@ -472,7 +472,7 @@ nolink "false"
 ECIO Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.04"
+reference "app:6.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -671,7 +671,7 @@ Drafting
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.04"
+reference "app:6.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -760,7 +760,7 @@ The policy version shall be incremented in accordance with
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.04"
+reference "app:6.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -787,7 +787,7 @@ The previous version shall be marked "Obsolete" and archived in accordance with
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.04"
+reference "app:6.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -815,7 +815,7 @@ Retirement
 Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "app:6.04"
+reference "app:6.05"
 plural "false"
 caps "false"
 noprefix "false"

@@ -366,7 +366,7 @@ Cybersecurity incident post-mortems,
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
+reference "pol:4.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1144,7 +1144,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.05"
+reference "pol:5.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1905,7 +1905,7 @@ Project KPI performance data shall feed into the broader performance management 
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.05"
+reference "pol:5.04"
 plural "false"
 caps "false"
 noprefix "false"
