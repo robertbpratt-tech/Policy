@@ -190,6 +190,14 @@ Version:
  Purpose
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy establishes the authorization decision process by which the IT Director,
+ as the designated Authorizing Official,
+ reviews security control assessment results and renders formal authorization decisions for County information systems and controls governed by the ECIO Policy Manual.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -197,6 +205,206 @@ Version:
  Scope
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy applies to all information systems,
+ controls,
+ and assets governed by the ECIO Policy Manual that require formal authorization to operate within the County production environment.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Review of assessment results and audit findings for authorization decisions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Formal authorization,
+ conditional authorization,
+ or denial decisions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Documentation and retention of authorization decision records.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Risk-informed conditions attached to conditional authorizations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Reauthorization determinations following changes to system boundary,
+ risk profile,
+ or control posture.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Risk assessment methodology and Risk Register maintenance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Enforcement actions and formal sanctions:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Control testing,
+ self-assessment,
+ and internal audit mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Corrective Action Plan development,
+ tracking,
+ and closure:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor and third-party compliance assessments:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Annual policy review and maturity scoring:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -204,11 +412,394 @@ Version:
  Roles and Responsibilities
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the Authorizing Official for all County information systems and controls,
+ consistent with the designation established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review assessment results delivered under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and render formal authorization decisions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall attach risk-based conditions or require compensating controls when granting conditional authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that each authorization decision is documented in an authorization decision record and retained in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall evaluate whether denial of authorization for a system processing Criminal Justice Information Services (CJIS) data affects active CJIS compliance obligations and,
+ when warranted,
+ shall ensure that appropriate operational,
+ service-restriction,
+ or partner-notification steps are taken through the applicable policies:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Compliance Monitoring and Corrective Action),
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures),
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall compile the decision inputs for each authorization review by assembling the current 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ assessment results,
+ the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ risk ratings and security categorization documentation,
+ and the status of any open Corrective Action Plans under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall present the compiled decision inputs to the IT Director with a risk summary and a recommendation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document the IT Director's authorization decision in the System of Engagement (Redmine) and maintain the authorization decision record.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall route deficiencies identified through a denial decision to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for Corrective Action Plan development.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall update the corresponding Risk Register entry under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ to reflect the authorization status following each decision.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Department Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall provide requested evidence or clarification during the authorization review process when directed by the IT Director or Assistant IT Director.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
 4.
  Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations personnel involved in authorization decision preparation,
+ review,
+ or documentation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to authorization decision documentation,
+ retention,
+ and routing requirements shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Deployment of any information system to the County production network without a valid authorization,
+ or failure to document authorization decisions as required by this policy,
+ may result in corrective action in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline.
 \end_layout
 
 \begin_layout Subsection*
@@ -218,11 +809,694 @@ Version:
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols and Partner Integration
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Compliance Monitoring and Corrective Action
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-1 (Assessment,
+ Authorization,
+ and Monitoring Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.RA-06 (Risk Responses)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-37 Rev.
+ 2:
+ (Risk Management Framework for Information Systems and Organizations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CA-6 (Authorization)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA02 (Managed System of Internal Control)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Risk Management Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Authorization Decision Process
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+No County information system shall process production data or maintain persistent connectivity to the County production network without a valid authorization decision rendered by the IT Director.
+ This policy implements the Authorize step of the NIST Risk Management Framework lifecycle adopted in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.1.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Authorization decisions shall be made solely on the basis of assessment results and audit findings delivered under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ current risk ratings and security categorization documentation maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and the status of any open Corrective Action Plans tracked under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No separate or parallel testing,
+ assessment,
+ or evidence-collection activity shall be performed under this policy.
+ Where the IT Director determines that existing assessment coverage is insufficient to support an authorization decision,
+ the IT Director shall direct the Assistant IT Director to schedule supplemental assessment activity through the mechanisms defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall compile the decision inputs and present them to the IT Director with a risk summary that identifies:
+ the system or control under review,
+ the security categorization,
+ the assessment results and any open deficiencies,
+ the current risk rating,
+ and a recommendation.
+ The IT Director shall review the compiled inputs and render one of the decision outcomes defined in Section 6.2.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Decision Outcomes
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall render one of the following decisions for each system or control submitted for authorization review.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Authorization to Operate
+\series default
+:
+ Issued when 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ assessment results verify that controls are implemented correctly,
+ operating as intended,
+ and producing the desired outcome,
+ and residual risk is within the risk tolerance defined in the Risk Management Strategy maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The system is approved for production operation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Conditional Authorization
+\series default
+:
+ Issued when residual risk exceeds tolerance but can be managed through documented compensating controls or time-bound conditions.
+ The authorization decision record shall identify each condition,
+ the compensating control or remediation action required,
+ and the timeframe for resolution.
+ When a conditional authorization depends on acceptance of residual risk above tolerance,
+ the condition shall be supported by a Risk Acceptance Memo under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and documented in the Risk Register.
+ Conditions shall be tracked through the Corrective Action Plan lifecycle under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ when they require milestone-based remediation.
+ The IT Director may revoke a conditional authorization at any time if conditions are not met within the specified timeframe or if the risk posture deteriorates.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Denial of Authorization
+\series default
+:
+ Issued when controls are inadequate and residual risk exceeds tolerance without acceptable compensating controls.
+ A denial prohibits the system from operating in the production environment.
+ The Assistant IT Director shall route the underlying deficiencies to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for Corrective Action Plan development.
+ A system that has been denied authorization may be resubmitted for review after remediation is verified through the assessment mechanisms defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Authorization Decision Record
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Each authorization decision shall be documented in the System of Engagement (Redmine) as an authorization decision record.
+ The record shall include,
+ at minimum:
+ the system or control name and identifier,
+ the security categorization,
+ the decision outcome,
+ the assessment results summary relied upon,
+ the risk rationale supporting the decision,
+ any conditions attached to a conditional authorization,
+ and the IT Director's approval.
+ The Assistant IT Director shall maintain authorization decision records in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the Nevada Local Government Records Retention Schedule under NRS 239.125,
+ for a minimum of three (3) years from the date of the decision unless a longer period is required by another applicable authority.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Reauthorization and Revocation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Authorization decisions remain valid until a subsequent event requires the IT Director to render a new decision.
+ The following events shall trigger a reauthorization review:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The annual assessment cycle conducted under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ produces findings that change the risk posture of an authorized system.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A change to the system boundary,
+ architecture,
+ data classification,
+ or control posture that alters the system's risk profile occurs.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director determines that a change in the threat environment,
+ regulatory landscape,
+ or operational context warrants reauthorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A Corrective Action Plan associated with a conditional authorization fails to achieve closure within the approved timeframe.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall render a new authorization decision following the same process defined in Sections 6.1 and 6.2.
+ The new decision shall supersede the prior authorization decision record.
+ The prior record shall be retained in accordance with Section 6.3.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director may revoke an existing authorization at any time when the risk posture requires immediate action,
+ without waiting for a reauthorization trigger.
+ A revocation shall be documented as a new authorization decision record with Denial of Authorization as the outcome and shall include the risk rationale for immediate action.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 CJIS-Specific Considerations
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For systems processing Criminal Justice Information Services (CJIS) data,
+ authorization decisions shall incorporate the CJIS-specific assessment frequency and independent-assessor requirements already defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy does not establish separate CJIS assessment mechanics;
+ it consumes the CJIS-relevant assessment results that 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ produces.
+ Denial or revocation of authorization for any system processing CJIS data shall trigger the IT Director's evaluation of whether the system's inability to operate affects active CJIS compliance obligations,
+ and when warranted,
+ the IT Director shall ensure that appropriate operational and notification steps are taken through 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_body

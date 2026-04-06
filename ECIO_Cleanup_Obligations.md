@@ -261,6 +261,8 @@ Do these after all stubs are written and all references are fixed.
   Policy 5.01" or variants; ~4 use "in accordance with Policy 5.01." Target
   standard: "corrective action in accordance with Policy 5.01."
 
+Section 4 exception clause — authoritative routing clarification: The exception management framework lives in Policy 5.01, not Policy 1.08. Policy 1.08 governs delegation of authority and decision rights; it is not the exception-approval authority. Multiple reviewers (across 5.01, 5.05, and earlier policy drafting cycles) have argued for routing exceptions to 1.08 based on the pattern found in older, pre-standardization policies. That pattern is the problem being corrected, not the model to follow. The target standard — "in accordance with the exception management framework established in Policy 5.01" — is authoritative. Policies that currently route to 1.08 for exception approval will be corrected during the global rewrite pass. The only policy where 1.08 is correctly cited alongside 5.01 in the exception clause is Policy 5.02, where exceptions affecting audit scope minimums, CJIS testing cadences, or objectivity safeguards require County Manager approval under 1.08's delegation rules — a specific escalation, not the general exception pathway.
+
 - **Section 4 exception clause standardization:** Append "in accordance with
   the exception management framework established in Policy 5.01" to each
   policy's exception clause. Currently 1 policy uses this construction.
