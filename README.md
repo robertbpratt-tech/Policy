@@ -59,27 +59,32 @@ These three tasks span nearly every policy and act as prerequisites for the indi
 
 ---
 
-### GLOBAL-D — Vendor and Product Name Abstraction 🔴
+### GLOBAL-D — Vendor and Product Name Removal 🔴
 
-Per Policy 1.04 §6.10, all software and platforms must be cited by their **governance function first**, followed by the product name in parentheses — e.g., `System of Engagement (Redmine)`. This means bare product names are non-compliant, and switching platforms later only requires updating the parenthetical rather than hunting through the entire manual.
+**Policy 1.04 §6.10 has been amended.** The previous rule required governance label first, product name in parentheses — e.g., `System of Engagement (Redmine)`. That still couples the policy to a specific product: switch platforms and you're immediately out of compliance with your own manual. The amended rule prohibits product names in policy text entirely.
 
-| Vendor / Product | Current Location(s) | Governance Label (per 1.04 §6.10) |
+> **Official Systems Terminology (amended):** Software and platforms referenced in policy documents shall be cited by their governance function label only (e.g., "System of Engagement," "Authoritative System of Record," "Endpoint Protection Platform," "Productivity Suite"). Vendor and product names shall not appear in policy text. Product-specific names, configurations, and implementation details belong in operational documentation maintained in the System of Engagement.
+
+Product names belong in SOPs and Knowledge Base entries — not in governance documents. A platform migration should require zero policy edits.
+
+| Vendor / Product to Remove | Current Location(s) | Replace With |
 |---|---|---|
-| Redmine | 1.04, 1.08, 1.14, 3.01–3.17, 6.04 | `System of Engagement (Redmine)` |
-| Office 365 | 2.14 §2 | `Productivity Suite (Office 365)` |
-| Comodo / XCitium | 3.08 §6.2 | `Endpoint Protection Platform (Comodo/XCitium)` |
-| Justware | 6.04 (Report Building category; Vendor Resolved description) | `Case Management System (Justware)` |
-| HID DigitalPersona | 2.05 §6.10 | `Public Key-Based Authentication Hardware (HID DigitalPersona)` |
-| Xerox | 6.04 (Vendor Resolved status description) | `Managed Print Services / Output Devices` |
+| Redmine | 1.04, 1.08, 1.14, 3.01–3.17, 6.04 | `System of Engagement` |
+| Office 365 | 2.14 §2 | `Productivity Suite` |
+| Comodo / XCitium | 3.08 §6.2 | `Endpoint Protection Platform` |
+| Justware | 6.04 (Report Building category; Vendor Resolved description) | `Case Management System` |
+| HID DigitalPersona | 2.05 §6.10 | `Public Key-Based Authentication Hardware` |
+| Xerox | 6.04 (Vendor Resolved status description) | `Managed Print Services` |
 
-> **Note on Xerox:** The existing 2.12 Xerox decouple item likely traces here, not to 2.12 body text. Confirm and close the 2.12 item once 6.04 is updated.
+> **Note on Xerox / 2.12:** The 2.12 decouple item traces to 6.04, not to 2.12 body text. Close the 2.12 item once 6.04 is updated.
 
-- [ ] **[Redmine]** Sweep all bare `Redmine` references across 1.04, 1.08, 1.14, 3.01–3.17, and 6.04 — all instances must follow the `System of Engagement (Redmine)` format
-- [ ] **[Office 365]** Update 2.14 §2 Scope to `Productivity Suite (Office 365)`
-- [ ] **[Comodo / XCitium]** Resolve the 3.08 decision (retain product-specific naming or abstract) then apply the governance label — this one requires a judgment call before the sweep
-- [ ] **[Justware]** Update 6.04 Report Building category and Vendor Resolved description to `Case Management System (Justware)`; verify whether any 1.04 snippet also needs updating
-- [ ] **[HID DigitalPersona]** Update 2.05 §6.10 to `Public Key-Based Authentication Hardware (HID DigitalPersona)`
-- [ ] **[Xerox / Output Devices]** Update 6.04 Vendor Resolved status description — confirm no bare Xerox reference remains in 2.12 body text, then close the 2.12 decouple item
+- [ ] **[1.04]** Apply amended §6.10 language to the source document
+- [ ] **[Redmine]** Remove all `Redmine` product-name references across 1.04, 1.08, 1.14, 3.01–3.17, and 6.04 — replace with `System of Engagement`
+- [ ] **[Office 365]** Remove `Office 365` from 2.14 §2 — replace with `Productivity Suite`
+- [ ] **[Comodo / XCitium]** Remove `Comodo/XCitium` from 3.08 §6.2 — replace with `Endpoint Protection Platform`
+- [ ] **[Justware]** Remove `Justware` from 6.04 Report Building and Vendor Resolved descriptions — replace with `Case Management System`; verify whether any 1.04 snippet also needs updating
+- [ ] **[HID DigitalPersona]** Remove `HID DigitalPersona` from 2.05 §6.10 — replace with `Public Key-Based Authentication Hardware`
+- [ ] **[Xerox]** Remove `Xerox` from 6.04 Vendor Resolved description — replace with `Managed Print Services`; confirm 2.12 body text is clean and close that item
 
 ---
 
@@ -173,7 +178,7 @@ Per Policy 1.04 §6.10, all software and platforms must be cited by their **gove
 
 > **Dependency:** 5.01
 
-- [ ] **[GLOBAL-D]** §4: "the Department's designated system of record (e.g., the Departmental Knowledge Base/Redmine or secured ECM repository)" — bare Redmine reference; wrap as `System of Engagement (Redmine)` per GLOBAL-D sweep
+- [ ] **[GLOBAL-D]** §4: bare `Redmine` reference — remove product name; replace with `System of Engagement`
 - [ ] **[Logic]** §4 exception bullets (Operational and Governance) do not route to the 5.01 exception framework — add explicit routing and oral-exception prohibition
 - [ ] **[GLOBAL-B]** §5: Implement Cited/Framework split
 
@@ -227,7 +232,7 @@ Per Policy 1.04 §6.10, all software and platforms must be cited by their **gove
 > **Dependency:** 5.01
 
 - [ ] **[Logic]** Verify §4 contractor acknowledgment language is consistent with 5.01 §6.2 (30-day lapse threshold and access-suspension mechanism)
-- [ ] **[GLOBAL-D]** Verify no bare `Redmine` references remain — `System of Engagement (Redmine)` format in §4 is correct; scan remaining sections as part of GLOBAL-D sweep
+- [ ] **[GLOBAL-D]** Scan for any remaining product-name references — remove per GLOBAL-D sweep and replace with `System of Engagement`
 - [ ] **[Format]** §4 Exceptions routes to 1.08 only — add 5.01 routing
 - [ ] **[GLOBAL-B]** §5: Implement Cited/Framework split
 
@@ -280,7 +285,7 @@ Per Policy 1.04 §6.10, all software and platforms must be cited by their **gove
 
 ### 2.05 — Identification and Authentication Policy 🔴
 
-- [ ] **[GLOBAL-D]** §6.10: `HID DigitalPersona` — update to `Public Key-Based Authentication Hardware (HID DigitalPersona)` per GLOBAL-D sweep
+- [ ] **[GLOBAL-D]** §6.10: remove `HID DigitalPersona` — replace with `Public Key-Based Authentication Hardware`
 - [ ] **[Format]** §4 non-standard labels (Mandatory Enforcement, Sanctions, CJIS Floor, Exception Process) — reconcile with 1.04 §6.6 template
 - [ ] **[GLOBAL-B]** §5: Implement Cited/Framework split
 
@@ -357,7 +362,7 @@ Per Policy 1.04 §6.10, all software and platforms must be cited by their **gove
 
 ### 2.14 — Mobile Device and Remote Access Policy 🔴
 
-- [ ] **[GLOBAL-D]** §2 Scope: `Office 365 web access` — update to `Productivity Suite (Office 365)` per GLOBAL-D sweep
+- [ ] **[GLOBAL-D]** §2 Scope: remove `Office 365` — replace with `Productivity Suite`
 - [ ] **[Standard]** §6.9 body text cites "CJIS Section 5.20.7.2" without a parenthetical topic; that section number does not appear in §5 Cited References — add properly formatted citation entry per 1.04 §6.11
 - [ ] **[Format]** §4: Verify all three mandatory bullets (Assessment, Enforcement, Exceptions) are present and properly labeled
 - [ ] **[GLOBAL-B]** §5: Implement Cited/Framework split
@@ -463,7 +468,7 @@ Per Policy 1.04 §6.10, all software and platforms must be cited by their **gove
 > **Dependency:** 1.12
 
 - [ ] **[GLOBAL-A]** Fix prohibited Purpose construction
-- [ ] **[GLOBAL-D]** §6.2 names `Comodo/XCitium` directly — make the keep-vs-abstract decision first (see GLOBAL-D), then apply `Endpoint Protection Platform (Comodo/XCitium)` governance label throughout §6.2
+- [ ] **[GLOBAL-D]** §6.2: remove `Comodo/XCitium` — replace with `Endpoint Protection Platform`
 - [ ] **[GLOBAL-C]** §5: Update old 5.01/5.02 titles
 - [ ] **[GLOBAL-B]** §5: Implement Cited/Framework split
 
@@ -750,8 +755,8 @@ No action required. Purpose construction compliant, Cited/Framework split implem
 
 > **Dependency:** Manual (awaiting system configuration decision)
 
-- [ ] **[GLOBAL-D]** Vendor Resolved status description names `JAVS, CentralSquare, Xerox` — update to `Case Management System (Justware)` and `Managed Print Services / Output Devices` per GLOBAL-D sweep; this closes the 2.12 Xerox decouple item
-- [ ] **[GLOBAL-D]** `Redmine` named directly throughout without governance-label wrapper — part of the GLOBAL-D Redmine sweep; update or defer pending system configuration decision (GLPI vs. Redmine)
+- [ ] **[GLOBAL-D]** Remove `JAVS`, `CentralSquare`, `Xerox` from Vendor Resolved status description — replace with `Case Management System` and `Managed Print Services` respectively; closes the 2.12 Xerox item
+- [ ] **[GLOBAL-D]** Remove `Redmine` product-name references throughout — replace with `System of Engagement`; defer if pending system configuration decision (GLPI vs. Redmine)
 - [ ] **[Operational]** Sync all field definitions and status workflow with final production system configuration before this appendix can be considered stable
 
 ---

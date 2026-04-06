@@ -1487,9 +1487,12 @@ Oxford Comma
 Official Systems Terminology
 \series default
 :
- Software and platforms referenced in policy documents shall be cited by their governance function first,
- followed by the vendor or product name in parentheses (e.g.,
- "System of Engagement (Redmine)," "Authoritative System of Record (LyX master)").
+ Software and platforms referenced in policy documents shall be cited by their governance function label only (e.g.,
+ "System of Engagement," "Authoritative System of Record," "Endpoint Protection Platform," "Productivity Suite").
+ Vendor and product names shall not appear in policy text.
+ Product-specific names,
+ configurations,
+ and implementation details belong in operational documentation maintained in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
