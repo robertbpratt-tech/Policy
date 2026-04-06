@@ -1469,13 +1469,43 @@ The vendor name and all associated contracts or service agreements.
 \lang english
 The asset support classifications (IT-Managed,
  IT-Supported,
- or Vendor-Managed) applicable to the vendor's services as defined in Policy 1.12 (IT Asset Management Policy).
+ or Vendor-Managed) applicable to the vendor's services as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Asset Management Policy).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The data classification tier of data the vendor accesses or processes as defined in Policy 1.11 (Data Governance and Classification Policy).
+The data classification tier of data the vendor accesses or processes as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -1494,13 +1524,43 @@ The current CJIS Security Addendum status,
 \begin_layout Itemize
 
 \lang english
-The vendor SLA performance data maintained under Policy 3.02 Section 6.5.
+The vendor SLA performance data maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-All enforcement notifications received from Policy 5.01.
+All enforcement notifications received from 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1518,7 +1578,22 @@ The outcome of each vendor compliance review conducted under Section 6.2.
 \begin_layout Itemize
 
 \lang english
-The status of any active Corrective Action Plan (CAP) associated with the vendor under Policy 5.03.
+The status of any active Corrective Action Plan (CAP) associated with the vendor under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -1526,9 +1601,54 @@ The status of any active Corrective Action Plan (CAP) associated with the vendor
 
 \lang english
 Work Order Linkage:
- The Vendor Compliance Record shall reference the work orders associated with vendor-related events including SLA breaches recorded under Policy 3.02 Section 6.5,
- enforcement actions received under Policy 5.01 Section 6.4,
- and maintenance events recorded under Policy 3.17 (System Maintenance and Vendor Repairs).
+ The Vendor Compliance Record shall reference the work orders associated with vendor-related events including SLA breaches recorded under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5,
+ enforcement actions received under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4,
+ and maintenance events recorded under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.17"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (System Maintenance and Vendor Repairs).
  The work order system is the operational evidence base;
  the Vendor Compliance Record is the compliance summary layer.
 \end_layout
@@ -1537,7 +1657,22 @@ Work Order Linkage:
 
 \lang english
 Enforcement Notification Intake:
- When the IT Director provides written notification to the vendor compliance process under Policy 5.01 Section 6.4 (Contractors and Vendors),
+ When the IT Director provides written notification to the vendor compliance process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4 (Contractors and Vendors),
  the Assistant IT Director shall log the notification in the applicable Vendor Compliance Record within two (2) business days of receipt.
  The log entry shall document the date the notification was received to establish the logging deadline.
  The log entry shall include the date of the enforcement action,
@@ -1578,7 +1713,22 @@ Review Inputs:
 
 \lang english
 Vendor SLA performance data for the review period,
- sourced from the Vendor Compliance Record and the vendor SLA performance tracking maintained under Policy 3.02 Section 6.5.
+ sourced from the Vendor Compliance Record and the vendor SLA performance tracking maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5.
 \end_layout
 
 \begin_layout Standard
@@ -1645,7 +1795,22 @@ Routing:
  Observations identified under a Compliant with Observations determination shall be documented in the Vendor Compliance Record,
  communicated to the vendor in writing,
  and evaluated during the next scheduled vendor compliance review.
- Compliance review outcomes that constitute risk-relevant findings shall be referred to the IT Director for consideration as inputs to the Risk Register under Policy 1.09.
+ Compliance review outcomes that constitute risk-relevant findings shall be referred to the IT Director for consideration as inputs to the Risk Register under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -1672,7 +1837,22 @@ Unscheduled Reviews:
 \lang english
 No later than ninety (90) calendar days prior to the expiration or renewal date of any contract with a vendor within scope of this policy,
  the Assistant IT Director shall prepare a pre-renewal compliance evaluation and submit it to the IT Director for review.
- This evaluation aligns with and incorporates the vendor SLA performance summary required by Policy 3.01 (Service Catalog and SLA Policy) Section 6.5.
+ This evaluation aligns with and incorporates the vendor SLA performance summary required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Catalog and SLA Policy) Section 6.5.
 \end_layout
 
 \begin_layout Standard
@@ -1693,7 +1873,22 @@ The complete Vendor Compliance Record history for the current contract period.
 
 \lang english
 A summary of the vendor's SLA performance across the contract period,
- sourced from Policy 3.02 Section 6.5.
+ sourced from 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5.
 \end_layout
 
 \begin_layout Standard
@@ -1737,7 +1932,22 @@ IT Director Action:
  Renew With Conditions (specifying the conditions),
  Do Not Renew,
  or Escalate to Contract Administrator and Legal Counsel.
- The documented renewal recommendation shall be provided to the Requesting Department Head identified in Policy 1.13 Section 3.
+ The documented renewal recommendation shall be provided to the Requesting Department Head identified in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 3.
 \end_layout
 
 \begin_layout Standard
@@ -1759,7 +1969,22 @@ Contracts Without Defined Renewal Dates:
 \begin_layout Standard
 
 \lang english
-For vendors whose services involve access to County data classified as Confidential or Restricted under Policy 1.11,
+For vendors whose services involve access to County data classified as Confidential or Restricted under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
  or whose services involve access to CJI,
  the Information Operations Department shall maintain an ongoing program of third-party assurance evidence collection and evaluation.
 \end_layout
@@ -1801,7 +2026,22 @@ Certifications or attestation letters from recognized bodies (e.g.,
 \begin_layout Standard
 
 \lang english
-CJIS Security Addendum Certifications required by Policy 1.13 Section 6.3.
+CJIS Security Addendum Certifications required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3.
 \end_layout
 
 \begin_layout Standard
@@ -1832,7 +2072,22 @@ Evaluation:
  qualifications,
  or findings in the evidence require County follow-up.
  Where assurance evidence reveals control deficiencies affecting County data or systems,
- the Assistant IT Director shall notify the IT Director and recommend whether the deficiency warrants a Corrective Action Plan under Policy 5.03,
+ the Assistant IT Director shall notify the IT Director and recommend whether the deficiency warrants a Corrective Action Plan under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
  a contract action recommendation under Section 6.7,
  or an unscheduled vendor compliance review.
 \end_layout
@@ -1844,7 +2099,22 @@ Failure to Provide:
  Where a vendor fails to provide requested assurance evidence within thirty (30) calendar days of the request,
  the Assistant IT Director shall escalate to the IT Director.
  The IT Director shall determine whether the failure constitutes a compliance concern warranting further action,
- including initiation of a Corrective Action Plan under Policy 5.03 or exercise of contractual audit rights.
+ including initiation of a Corrective Action Plan under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ or exercise of contractual audit rights.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1859,12 +2129,42 @@ Failure to Provide:
 For vendors with logical access to CJI,
  or unescorted access to physically secure locations where CJI is processed,
  the following CJIS-specific compliance obligations apply in addition to the general requirements of this policy.
- These obligations operationalize the contractual audit and oversight rights established in Policy 1.13 Section 6.3 and the control assessment requirements of CJIS Security Policy v6.0:
+ These obligations operationalize the contractual audit and oversight rights established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3 and the control assessment requirements of CJIS Security Policy v6.0:
  Section CA-2 (Control Assessments).
  This policy governs the County's ongoing monitoring of CJIS vendor compliance after activation;
  it does not create,
  modify,
- or weaken the underlying contractual requirements established in Policy 1.13 Section 6.3.
+ or weaken the underlying contractual requirements established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3.
 \end_layout
 
 \begin_layout Standard
@@ -1882,7 +2182,22 @@ Triennial Assessment:
  Section CA-2(1) (Independent Assessors) and the assessment resources available.
  Where internal personnel are utilized,
  the IT Director shall ensure the selected assessors possess organizational independence from the vendor management activities being assessed,
- consistent with the objectivity safeguards established in Policy 5.02 Section 6.4.
+ consistent with the objectivity safeguards established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4.
 \end_layout
 
 \begin_layout Standard
@@ -1890,7 +2205,22 @@ Triennial Assessment:
 \lang english
 Unannounced Inspections:
  The IT Director retains the authority to conduct unannounced security inspections of CJIS vendor operations,
- as provided by the contractual terms established under Policy 1.13 Section 6.3.
+ as provided by the contractual terms established under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3.
  The IT Director shall exercise this authority when risk conditions,
  enforcement notification patterns,
  or assurance evidence deficiencies indicate that a planned assessment may not provide sufficient assurance.
@@ -1902,7 +2232,22 @@ Unannounced Inspections:
 Security Addendum Verification:
  The Assistant IT Director shall verify,
  no less than annually,
- that all CJIS vendor personnel with access to CJI have executed current CJIS Security Addendum Certifications as required by Policy 1.13 Section 6.3.
+ that all CJIS vendor personnel with access to CJI have executed current CJIS Security Addendum Certifications as required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3.
  Any gap in Security Addendum coverage shall be treated as a compliance deficiency and logged in the Vendor Compliance Record.
 \end_layout
 
@@ -1914,8 +2259,38 @@ Notification Agreements:
  Section SR-8 (Notification Agreements) and NIST SP 800-53 Rev.
  5:
  SA-9 (External System Services),
- the IT Director shall verify that each CJIS vendor's contract includes the incident notification and cooperation provisions required by Policy 1.13 Section 6.3.
- Where a CJIS vendor fails to meet the notification timelines established in Policy 1.13,
+ the IT Director shall verify that each CJIS vendor's contract includes the incident notification and cooperation provisions required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3.
+ Where a CJIS vendor fails to meet the notification timelines established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
  the failure shall be documented in the Vendor Compliance Record and treated as a compliance deficiency.
 \end_layout
 
@@ -1923,8 +2298,38 @@ Notification Agreements:
 
 \lang english
 Findings Routing:
- CJIS assessment findings that constitute control deficiencies shall be routed to Policy 5.03 for Corrective Action Plan development.
- CJIS assessment findings that affect the authorization posture of a system processing CJI shall be provided to the IT Director for consideration under Policy 5.05 (Security Control Assessment and Authorization).
+ CJIS assessment findings that constitute control deficiencies shall be routed to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for Corrective Action Plan development.
+ CJIS assessment findings that affect the authorization posture of a system processing CJI shall be provided to the IT Director for consideration under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Control Assessment and Authorization).
  CJIS assessment results shall be documented in the Vendor Compliance Record.
 \end_layout
 
@@ -1940,9 +2345,39 @@ Findings Routing:
 When a vendor compliance review under Section 6.2 produces a determination of Non-Compliant —
  Remediation Required,
  or when the IT Director determines that a vendor's cumulative compliance posture warrants formal remediation,
- the identified deficiencies shall be routed to the Corrective Action Plan (CAP) lifecycle governed by Policy 5.03.
+ the identified deficiencies shall be routed to the Corrective Action Plan (CAP) lifecycle governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  This policy defines the vendor-specific triggers and referral content;
- Policy 5.03 governs CAP development,
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs CAP development,
  tracking,
  and closure.
 \end_layout
@@ -1993,7 +2428,22 @@ Vendor Notification:
  the Assistant IT Director shall provide written notification to the vendor and to the Requesting Department Head.
  The notification shall identify the deficiencies,
  the required remediation outcomes,
- and the CAP timeline established under Policy 5.03.
+ and the CAP timeline established under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  Vendor notification is an operational communication;
  it does not require vendor agreement or acceptance to take effect.
 \end_layout
@@ -2081,8 +2531,38 @@ IT Director Action:
  The IT Director shall review the contract action recommendation and determine the appropriate course of action.
  Where the IT Director concurs with the recommendation,
  the IT Director shall refer the matter to the contract administrator and County legal counsel for contract remedies,
- consistent with the referral pathway established in Policy 5.01 Section 6.4 (Contractors and Vendors).
- The IT Director's authority to revoke or restrict system access under Policy 5.01 is independent of the contract remedy process and may be exercised at any point.
+ consistent with the referral pathway established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4 (Contractors and Vendors).
+ The IT Director's authority to revoke or restrict system access under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is independent of the contract remedy process and may be exercised at any point.
 \end_layout
 
 \begin_layout Standard
@@ -2103,12 +2583,57 @@ Documentation:
 \begin_layout Standard
 
 \lang english
-This policy serves as a source data provider for the Vendor Performance KPI domain established in Policy 5.04 Section 6.2.
+This policy serves as a source data provider for the Vendor Performance KPI domain established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.2.
  The Assistant IT Director shall ensure that vendor compliance review outcomes,
  CAP status,
  assurance evidence currency,
- and CJIS compliance status are available for incorporation into the Quarterly KPI Review Summary prepared under Policy 5.04 Section 6.5.
- This data feed supplements the vendor SLA performance data provided by Policy 3.02 Section 6.5 and shall not duplicate data already captured in the service level management function.
+ and CJIS compliance status are available for incorporation into the Quarterly KPI Review Summary prepared under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5.
+ This data feed supplements the vendor SLA performance data provided by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5 and shall not duplicate data already captured in the service level management function.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2165,7 +2690,22 @@ Public Records:
  Disclosure determinations for vendor compliance records containing security findings,
  assurance evidence,
  or CJIS-related materials shall be made in coordination with the County's public records process and legal counsel,
- consistent with applicable exemptions and the data classification requirements of Policy 1.11.
+ consistent with applicable exemptions and the data classification requirements of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_body
