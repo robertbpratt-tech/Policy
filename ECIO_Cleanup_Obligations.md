@@ -301,6 +301,30 @@ Queue for Policy 3.13 build-out.
 
 ---
 
+5.06 — Add "Vendor Compliance Record" to Appendix 6.01 Glossary
+
+Status: Outstanding — queued for Glossary population.
+
+What: Policy 5.06 introduces the term "Vendor Compliance Record" as a defined construct (bolded on first use per 1.04 Section 6.10). The term is used 20+ times across 5.06 and serves as the authoritative artifact for vendor compliance posture tracking. Per 1.04 Section 6.14, terms that carry a specific defined meaning and appear across multiple sections shall be evaluated for Glossary inclusion.
+
+Suggested definition direction: "The consolidated record maintained in the System of Engagement (Redmine) for each vendor within scope of Policy 5.06, documenting the vendor's compliance posture, enforcement history, assurance evidence, compliance review outcomes, and remediation status across all assets, contracts, and service relationships."
+
+Affects: Appendix 6.01.
+5.06 — Verify 3.01 Section 4 vendor SLA routing alignment (rewrite-pass)
+
+Status: Outstanding — queued for global rewrite pass.
+
+What: Policy 3.01 Section 4 (Enforcement) states "Vendor non-compliance with contracted SLA terms shall be addressed through the vendor compliance framework established in Policy 5.06." Now that 5.06 defines a formal escalation pathway (annual review → CAP routing → contract action recommendation), the 3.01 language should be verified to confirm it aligns with the actual mechanism. The current routing direction is correct; this is a verification item, not a known defect.
+
+Affects: 3.01 Section 4 (Enforcement bullet).
+5.06 — Verify 3.02 Section 6.5 vendor breach record availability language (rewrite-pass)
+
+Status: Outstanding — queued for global rewrite pass.
+
+What: Policy 3.02 Section 6.5 states vendor breach records "shall be made available to the IT Director and, where applicable, to the vendor compliance review process under Policy 5.06." Now that 5.06 Section 6.1 defines the Vendor Compliance Record and its work order linkage, verify that the 3.02 language is consistent with the consumption model (5.06 references vendor SLA data from 3.02, not the other way around).
+
+Affects: 3.02 Section 6.5 (Vendor Breach Recording bullet).
+
 # QUICK REFERENCE: THE FULL RENUMBERING MAP
 
 ## Policies
