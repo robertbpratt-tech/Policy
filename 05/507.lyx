@@ -190,6 +190,14 @@ Version:
  Purpose
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy establishes the annual policy review process,
+ maturity scoring methodology,
+ and executive reporting requirements that the Information Operations Department uses to evaluate the implementation effectiveness and operational maturity of the ECIO Policy Manual.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -197,6 +205,249 @@ Version:
  Scope
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy applies to all policies and governed appendices within the ECIO Policy Manual.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Annual review of each policy for implementation effectiveness,
+ operational relevance,
+ and regulatory alignment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Maturity scoring of each policy using the NIST Cybersecurity Framework 2.0 Tier model.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Annual review of governed appendices for currency and accuracy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Evaluation of audit program effectiveness.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Preparation and submission of the Annual Policy Review Report.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Executive reporting to the County Manager and the Board of County Commissioners.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Policy lifecycle management,
+ version control,
+ and change control workflow:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Internal audit planning,
+ assessment execution,
+ and deficiency classification:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Enforcement actions and formal sanctions:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Corrective Action Plan development,
+ tracking,
+ and closure:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Performance metric governance and KPI catalog maintenance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor and third-party compliance assessments:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Standard Operating Procedures,
+ playbooks,
+ and operational documentation maintained in the System of Engagement:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -204,11 +455,359 @@ Version:
  Roles and Responsibilities
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall receive and review the Annual Policy Review Report submitted by the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide written acknowledgment of receipt and review within thirty (30) calendar days of submission.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall direct the IT Director to address specific concerns,
+ conduct additional analysis,
+ or revise maturity tier assignments when the County Manager determines that documented justification warrants such direction.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall determine whether Board of County Commissioners presentation is warranted,
+ applying the governance triggers defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Governance and Oversight Structure),
+ and shall present or direct presentation when required.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve exceptions to this policy that would materially affect the annual review,
+ as defined in Section 4.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall conduct the annual policy review and maturity scoring process defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall assign a maturity tier to each policy in the ECIO Policy Manual in accordance with the methodology defined in Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall evaluate the effectiveness of the internal audit program defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) in accordance with Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare and submit the Annual Policy Review Report to the County Manager in accordance with Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall route findings to the remediation pathways defined in Section 6.7.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall complete the annual policy review within the timeline defined in Section 6.1.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall compile the assessment inputs defined in Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall present compiled inputs to the IT Director prior to the start of the review.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall produce the annual improvement summary under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Improvement and Continual Improvement Plan) for inclusion as an input to the review process.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain all review records and scoring documentation in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall update the Policy Matrix (
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+) to reflect current maturity tier assignments following IT Director approval.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall provide requested evidence,
+ documentation,
+ or operational context during the annual policy review process when directed by the IT Director or Assistant IT Director.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
 4.
  Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations personnel involved in the annual policy review,
+ maturity scoring,
+ or executive reporting process.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with the review cadence,
+ scoring methodology,
+ report preparation,
+ and submission requirements of this policy shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The County Manager's review of the Annual Policy Review Report,
+ as defined in Section 6.6,
+ provides independent oversight of this policy's execution.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to conduct the annual policy review within the required timeframe,
+ failure to prepare or submit the Annual Policy Review Report,
+ or failure to route findings to the required remediation pathways may result in corrective action in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be documented in writing with a business justification.
+ Exceptions that would materially affect the annual review —
+ including extension or waiver of the submission deadline,
+ suppression or omission of required report content,
+ alteration of the scoring methodology,
+ or omission of the audit program effectiveness evaluation defined in Section 6.4 —
+ shall be approved by the County Manager in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights) and the exception management framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ All other exceptions shall be approved by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline.
 \end_layout
 
 \begin_layout Subsection*
@@ -218,11 +817,1296 @@ Version:
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy and Documentation Formatting Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Review and Update Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Governance and Oversight Structure
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Improvement and Continual Improvement Plan
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Compliance Monitoring and Corrective Action
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Performance Metrics and Operational KPIs
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Matrix
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071256 (Quality Assurance Review Audits and Reports)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-1 (Assessment,
+ Authorization,
+ and Monitoring Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.PO-02 (Policy Review)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-01 (Improvements Are Identified from Evaluations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-1 (Information Security Program Plan)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-6 (Measures of Performance)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA01 (Manage Performance and Conformance Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA03 (Monitor,
+ Evaluate and Assess Compliance with External Requirements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Continual Improvement Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Measurement and Reporting Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The ECIO Policy Manual is a living governance instrument.
+ The policies within it are not static artifacts;
+ they are operational controls that the Department shall evaluate annually for continued relevance,
+ implementation effectiveness,
+ and alignment with the regulatory and operational environment.
+ This policy establishes the structured methodology for that evaluation and the reporting mechanism that delivers accountability to County leadership.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy does not govern the policy change control lifecycle —
+ that function belongs to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy does not conduct audits,
+ self-assessments,
+ or control tests —
+ those functions belong to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy consumes the outputs of both and produces the annual maturity assessment and executive report that neither can produce independently.
+ The annual policy review conducted under this policy operationalizes the annual internal review referenced in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.1 and does not alter the review cadence,
+ approval chain,
+ or change control workflow established there.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Review Scope and Cadence
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall conduct the annual policy review and maturity scoring process once per fiscal year.
+ The IT Director shall complete the review and submit the Annual Policy Review Report to the County Manager no later than ninety (90) calendar days after the conclusion of each fiscal year.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The review shall encompass every policy in the ECIO Policy Manual.
+ The IT Director shall evaluate each policy for:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Implementation status
+\series default
+:
+ whether the policy's directives are implemented and producing the intended outcomes.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Control effectiveness
+\series default
+:
+ whether the controls defined in the policy are operating as designed,
+ informed by the assessment results produced under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Operational relevance
+\series default
+:
+ whether the policy's scope,
+ directives,
+ and controls remain appropriate given changes in the regulatory,
+ technological,
+ or operational environment since the prior review.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Workforce awareness
+\series default
+:
+ whether personnel subject to the policy demonstrate awareness of and adherence to its requirements,
+ informed by training and acknowledgment records maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Regulatory alignment
+\series default
+:
+ whether the policy's framework mappings and statutory citations remain current and accurate.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The review shall also encompass all appendices within Chapter 6 of the ECIO Policy Manual.
+ The IT Director shall evaluate each appendix for currency and accuracy —
+ whether its content reflects the current state of the policies,
+ roles,
+ frameworks,
+ and operational structures it supports.
+ Appendices do not receive maturity tier assignments;
+ they are reference artifacts,
+ not operational controls.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Clarification
+\series default
+:
+ Standard Operating Procedures,
+ playbooks,
+ and other operational documentation maintained in the System of Engagement are not within the scope of this review.
+ The currency of those documents is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy and Documentation Formatting Standards) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy);
+ their adequacy is tested through 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director may delegate data compilation and preliminary analysis to the Assistant IT Director.
+ The IT Director shall not delegate the maturity tier assignments or the preparation of the final Annual Policy Review Report.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Assessment Inputs
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall base the annual policy review on the following governed set of inputs.
+ The Assistant IT Director shall compile these inputs and present them to the IT Director prior to the commencement of the review.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ Annual Audit Summary Report
+\series default
+:
+ the consolidated results of all internal audits,
+ self-assessments,
+ and control tests conducted during the fiscal year,
+ including conforming findings,
+ observations,
+ and deficiencies classified under Policy 5.02 Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ annual KPI data
+\series default
+:
+ the performance metrics and operational KPI results produced during the fiscal year,
+ including any qualifying underperformance patterns identified under Policy 5.04.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ annual improvement summary
+\series default
+:
+ the summary of Service Improvement Register activity,
+ triage decisions,
+ and completed improvement actions produced under Policy 3.16.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ open Corrective Action Plan status
+\series default
+:
+ the current inventory of open Corrective Action Plans,
+ their milestone status,
+ and any plans that failed to achieve closure within the approved timeframe.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ Risk Register status
+\series default
+:
+ the current risk ratings,
+ risk treatment decisions,
+ and any risk posture changes recorded during the fiscal year.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ enforcement and acknowledgment records
+\series default
+:
+ the summary of enforcement actions taken during the fiscal year and the current status of policy acknowledgment compliance across all population classes.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Ad hoc inputs
+\series default
+:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Postmortem Review and Lessons Learned) incident postmortem findings,
+ external audit results,
+ regulatory changes,
+ and any other material that the IT Director determines is relevant to the review.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When an input defined above is not available at the time of review —
+ for example,
+ because a source policy has not yet been operationalized —
+ the IT Director shall document the absence and note the impact on the maturity assessment for affected policies.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Maturity Scoring Methodology
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall assign a maturity tier to each policy in the ECIO Policy Manual using criteria derived from the NIST Cybersecurity Framework (CSF) 2.0 Tier model.
+ NIST CSF 2.0 defines Tiers as a characterization of the rigor of an organization's cybersecurity risk governance and management practices at the organizational level.
+ This policy applies the Tier criteria as an internal scoring rubric for per-policy implementation effectiveness —
+ an operational derivative,
+ not a claim that NIST defines Tiers at individual-policy granularity.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The four (4) tiers,
+ as adapted for per-policy maturity assessment,
+ are:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tier 1 —
+ Partial
+\series default
+:
+ The policy exists but its implementation is ad hoc,
+ inconsistent,
+ or reactive.
+ Controls defined in the policy are not consistently applied.
+ Assessment evidence under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is absent,
+ incomplete,
+ or shows material deficiencies.
+ Personnel awareness is limited.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tier 2 —
+ Risk-Informed
+\series default
+:
+ The policy is implemented with management awareness and risk-informed practices,
+ but execution is not standardized across all areas within scope.
+ Assessment evidence exists but reveals observations or inconsistencies.
+ Corrective Action Plans under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ may be in progress for controls governed by the policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tier 3 —
+ Repeatable
+\series default
+:
+ The policy is consistently implemented across all areas within scope.
+ Controls produce reliable,
+ documented outcomes.
+ Assessment evidence under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shows predominantly conforming results.
+ The policy is reviewed and updated through the lifecycle process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tier 4 —
+ Adaptive
+\series default
+:
+ The policy implementation continuously improves based on audit findings,
+ incident lessons learned,
+ KPI data,
+ and operational experience.
+ Practices adapt proactively to changes in the threat environment,
+ regulatory landscape,
+ or operational context.
+ Improvement activity under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is linked to the policy.
+ Trend data shows sustained or improving maturity across two (2) or more consecutive review periods.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall document the rationale for each tier assignment.
+ The rationale shall reference specific assessment inputs from Section 6.2 that support the determination.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
+ The maturity tier assigned to a policy reflects the assessed state of implementation during the review period.
+ It is not a target,
+ a requirement,
+ or a compliance standard.
+ Tier assignment does not create an obligation to achieve a higher tier in the subsequent period.
+ The IT Director may establish target tiers as a planning tool,
+ but target tiers are advisory and do not carry enforcement consequences.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Clarification
+\series default
+:
+ A policy that has been recently adopted or substantially revised may appropriately receive a Tier 1 or Tier 2 assignment in its first review cycle.
+ A lower-tier assignment for a newly adopted policy does not constitute a deficiency.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Audit Program Effectiveness Review
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+As part of the annual policy review,
+ the IT Director shall evaluate whether the internal audit program defined in Policy 5.02 is being executed as designed.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall assess,
+ at minimum:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Whether the Annual Audit Plan was approved and executed within the cadences and scope requirements defined in Policy 5.02 Section 6.1.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Whether every policy in the ECIO Policy Manual received at least one (1) assessment —
+ internal audit,
+ self-assessment,
+ or control test —
+ during the fiscal year,
+ as required by Policy 5.02.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Whether policies governing controls subject to Criminal Justice Information Services (CJIS) Security Policy obligations received assessment through internal audit or control testing —
+ not self-assessment alone —
+ as required by Policy 5.02.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Whether quarterly self-assessments were conducted on the cadence defined in Policy 5.02 Section 6.2.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Whether the control testing methodology defined in Policy 5.02 Section 6.3 was applied consistently and produced documented results.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Whether audit findings were classified and routed in accordance with Policy 5.02 Section 6.5.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Whether the objectivity safeguards defined in Policy 5.02 Section 6.4 were maintained.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall document the results of this evaluation in the Annual Policy Review Report.
+ The IT Director shall route deficiencies in the audit program in accordance with Section 6.7.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Rationale:
+ Policy 5.02 cannot serve as its own assessment mechanism.
+ This section provides the independent evaluation of the audit program that Policy 5.02 Section 4 references through this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Annual Policy Review Report
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall prepare the Annual Policy Review Report as a single consolidated document following the conclusion of the annual review process.
+ The IT Director shall document the report in the System of Engagement and classify it in accordance with Policy 1.11.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Annual Policy Review Report shall contain,
+ at minimum:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The maturity tier assigned to each policy,
+ with supporting rationale.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Year-over-year tier comparison identifying policies that improved,
+ maintained their tier,
+ or regressed.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A summary of the appendix currency and accuracy review,
+ identifying any appendices requiring update.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A summary of the audit program effectiveness review conducted under Section 6.4.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The total number and classification of deficiencies identified during the review period,
+ with current remediation status under Policy 5.03.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A summary of open Corrective Action Plans and their impact on affected policy maturity assessments.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A summary of regulatory,
+ technological,
+ or operational changes that affected or should affect policy content during the next review period.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Recommendations for policy revisions to be initiated under Policy 1.05.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Recommendations for the next annual audit cycle under Policy 5.02.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Improvement candidates to be routed to the Service Improvement Register under Policy 3.16.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Executive Review and Board Reporting
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall submit the Annual Policy Review Report to the County Manager no later than the deadline established in Section 6.1.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The County Manager shall review the report and provide written acknowledgment of receipt and review within thirty (30) calendar days of submission.
+ The County Manager's review provides independent oversight of the annual review process and of the IT Director's execution of this policy.
+ The County Manager may direct the IT Director to address specific concerns,
+ conduct additional analysis,
+ or revise maturity tier assignments with documented justification.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The County Manager shall determine whether presentation of the Annual Policy Review Report,
+ or a summary prepared for governance purposes,
+ to the Board of County Commissioners is warranted.
+ The following conditions shall inform that determination:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Two (2) or more policies regressed in maturity tier within a single review cycle.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Any maturity regression affecting a policy governing a control that implements a CJIS Security Policy obligation.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Any deficiency pattern requiring budgetary action or resource allocation beyond the IT Director's delegated spending authority under Policy 1.08.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Any finding that implicates delegated authority structures under Policy 1.06 or Policy 1.08.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When the County Manager determines that Board presentation is warranted,
+ the County Manager shall present or direct presentation.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Findings Routing and Remediation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall route all actionable findings from the annual policy review through existing remediation and improvement pathways.
+ This policy does not establish parallel tracking mechanisms,
+ corrective action processes,
+ or improvement registers.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall route deficiencies in policy implementation or control effectiveness to Policy 5.03 for Corrective Action Plan development.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall initiate policy revisions identified through the review through the change control process defined in Policy 1.05.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall route improvement opportunities that do not constitute deficiencies to the Service Improvement Register under Policy 3.16.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall ensure that risk posture changes identified through the review are reflected in the Risk Register maintained under Policy 1.09.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall route deficiencies in the audit program identified under Section 6.4 to Policy 5.03 for Corrective Action Plan development and shall communicate those deficiencies to the County Manager in the Annual Policy Review Report.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Record Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall retain all annual policy review records —
+ including scoring documentation,
+ input summaries,
+ working papers,
+ the Annual Policy Review Report,
+ and County Manager acknowledgment records —
+ in the System of Engagement in accordance with Policy 1.11 and the applicable Nevada Local Government Records Retention Schedule.
+ Where multiple retention requirements apply,
+ the longest applicable period shall govern.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall retain annual policy review records for a minimum of three (3) calendar years from the end of the calendar year to which they pertain,
+ where no longer retention period is specified by an applicable schedule.
 \end_layout
 
 \end_body

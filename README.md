@@ -15,9 +15,9 @@
 | Chapter 2 — Information Security | 15 | 0 | 0 |
 | Chapter 3 — Service Management | 17 | 0 | 0 |
 | Chapter 4 — Incident Response | 7 | 0 | 0 |
-| Chapter 5 — Compliance & Oversight | 1 | 3 | 3 |
+| Chapter 5 — Compliance & Oversight | 0 | 5 | 2 |
 | Chapter 6 — Appendices | 3 | 1 | 0 |
-| **Total** | **58** | **5** | **3** |
+| **Total** | **57** | **7** | **2** |
 
 ---
 
@@ -157,6 +157,7 @@ Product names belong in SOPs and Knowledge Base entries — not in governance do
 ### 1.06 — IT Governance and Oversight Structure 🔴
 
 - [ ] **[GLOBAL-B]** §5: Implement Cited/Framework split
+- [ ] **[Logic]** Verify §6 contains governance trigger criteria compatible with 5.07 §6.6 Board reporting determination — 5.07 references 1.06 governance triggers as the basis for County Manager's decision on whether Board presentation of the Annual Policy Review Report is warranted
 
 *Purpose construction is compliant ✓*
 
@@ -547,9 +548,10 @@ Product names belong in SOPs and Knowledge Base entries — not in governance do
 
 ### 3.16 — Service Improvement and Continual Improvement Plan 🔴
 
-> **Dependency:** 5.01, 5.02
+> **Dependency:** 5.01, 5.02, 5.07
 
 - [ ] **[GLOBAL-A]** Fix prohibited Purpose construction
+- [ ] **[Logic]** §3/§6: Annual improvement summary is produced "in accordance with the Policy 5.07 review cycle" but no submission deadline is specified — evaluate whether a concrete deadline is needed to ensure the summary is available before the 5.07 input compilation begins (5.07 imposes a 90-day post-fiscal-year report deadline)
 - [ ] **[GLOBAL-C]** §4 Enforcement: update 5.01 title
 - [ ] **[GLOBAL-B]** §5: Implement Cited/Framework split
 
@@ -659,9 +661,14 @@ Product names belong in SOPs and Knowledge Base entries — not in governance do
 
 ---
 
-### 5.02 — Internal Audits, Self-Assessment, and Control Testing 🟢
+### 5.02 — Internal Audits, Self-Assessment, and Control Testing 🟡
+
+> **Dependency:** 5.07
 
 - [ ] **[Standard]** Sweep any remaining in-manual citations pointing to old 5.07 short-form title — current title "Annual Policy Review and Maturity Scoring" appears consistently in policies reviewed; confirm no stragglers
+- [ ] **[Logic]** §6.6 retention trigger misalignment: states "three (3) years from the date of the assessment" — LRDA 20071256 (Quality Assurance Review Audits and Reports) specifies "from the end of the calendar year to which they pertain"; Policy 1.11 already uses the correct construction for LRDA 20071728 — align 5.02 §6.6 to match
+- [ ] **[Logic]** §6.5 Annual Audit Summary Report has no submission deadline — 5.07 requires this report as an input and imposes a 90-day post-fiscal-year deadline; evaluate whether 5.02 needs an explicit deadline to ensure the report is available in time
+- [ ] **[Ref]** §5: Add LRDA 20071256 (Quality Assurance Review Audits and Reports) to Cited References if not already present — this is the governing retention schedule for QA review records
 
 *Title normalized ✓ · Triennial assessment independence language verified ✓*
 
@@ -701,14 +708,22 @@ No action required. Purpose construction compliant, Cited/Framework split implem
 
 ---
 
-### 5.07 — Annual Policy Review and Maturity Scoring 🔴
+### 5.07 — Annual Policy Review and Maturity Scoring 🟡
 
-> **Dependency:** 5.02
+> **Dependency:** 5.02, 1.05, 1.06
 
-- [ ] **[Draft]** Full content development required — stub only
-- [ ] **[Logic]** Map scoring rubric to NIST CSF 2.0 Tiers for external benchmarkability
-- [ ] **[Logic]** Include "Audit-the-Auditor" scope element to assess 5.02 audit program quality within the annual maturity cycle
-- [ ] **[Standard]** All other policies cite 5.07 as "Annual Policy Review and Maturity Scoring" — confirm stub header matches and title is final before any renaming
+- [x] **[Draft]** Full content development — v2 draft complete, pending final review
+- [x] **[Logic]** Scoring rubric uses NIST CSF 2.0 Tier criteria as an internal per-policy derivative — explicit disclaimer added in §6.3 that this is an operational analog, not a claim that NIST defines Tiers at individual-policy granularity
+- [x] **[Logic]** Audit-the-Auditor function implemented in §6.4 — independently evaluates whether 5.02 audit program is executed as designed, including CJIS assessment cadences, objectivity safeguards, and findings routing
+- [x] **[Logic]** §6 opening paragraphs explicitly subordinate 5.07 to 1.05: "operationalizes the annual internal review referenced in Policy 1.05 Section 6.1 and does not alter the review cadence, approval chain, or change control workflow established there"
+- [x] **[Logic]** §4 Exceptions mirror 5.02 governance pattern: exceptions materially affecting the annual review require County Manager approval under 1.08 and 5.01
+- [x] **[Logic]** §6.6 Board reporting triggers objectified with four (4) specific conditions — eliminates subjective "systemic deficiencies" / "governance-level awareness" language
+- [x] **[Logic]** §6.8 retention trigger aligned with LRDA 20071256: "from the end of the calendar year to which they pertain"
+- [x] **[Standard]** §5 Cited/Framework split implemented — NIST CSF/SP entries correctly placed in Framework Alignment (not cited by identifier in body); LRDA 20071256 added to Cited References
+- [ ] **[Standard]** Title confirmed as "Annual Policy Review and Maturity Scoring" — all other policies cite consistently; no stragglers found
+- [ ] **[QC]** Final 1.04 compliance pass: verify all quantity syntax, cross-reference parenthetical-title first-use-only rule, and contextual clarifier tags are clean across the full draft
+
+*Cited/Framework split implemented ✓ · Audit-the-auditor obligation closed ✓ · 1.05 boundary explicitly defined ✓ · Board reporting triggers objectified ✓*
 
 </details>
 
