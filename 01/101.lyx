@@ -193,9 +193,7 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to define the mission and high-level strategic objectives of the Elko County Information Operations Department and to ensure that all governance,
- security,
- and service-management activities are aligned with that mission.
+This policy defines the mission and strategic objectives of the Elko County Information Operations Department (ECIO).
 \end_layout
 
 \begin_layout Subsection*
@@ -233,24 +231,59 @@ This policy applies to all Information Operations personnel and informs the deve
 IT Director
 \series default
 :
- Shall define,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall define,
  approve,
- and periodically update the Department mission and strategic objectives to ensure alignment with County goals.
- Shall ensure that all policy development and procedural guidance explicitly map to the Department’s mission.
+ and update the Department mission and strategic objectives to ensure alignment with County goals,
+ in accordance with the review cadence established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures).
 \end_layout
 
 \begin_layout Itemize
 
+\lang english
+Shall ensure that all policy development and procedural guidance explicitly maps to the Department's mission.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
 \series bold
 \lang english
-All Department Personnel
+All Information Operations Personnel
 \series default
 :
- Shall uphold the Department mission and contribute to the realization of strategic objectives through their daily actions,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall uphold the Department mission and contribute to the realization of strategic objectives through their daily actions,
  decisions,
  and participation in governance and risk-management activities.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -261,7 +294,7 @@ All Department Personnel
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all Information Operations activities.
+Compliance with this policy is mandatory for all Information Operations personnel.
 \end_layout
 
 \begin_layout Itemize
@@ -286,7 +319,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -311,7 +344,9 @@ nolink "false"
 
 
 \series default
- (Policy Implementation and Enforcement Framework).
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -321,12 +356,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to this policy shall be documented with justification and approved by the IT Director in accordance with 
+ Exceptions to this policy shall be documented in writing with justification and approved by the IT Director in accordance with the exception management framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.04"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -336,7 +371,7 @@ nolink "false"
 
 
 \series default
- (Policy and Documentation Formatting Standards) and 
+ and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -352,6 +387,7 @@ nolink "false"
 
 \series default
  (Delegation of Authority and Decision Rights).
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -361,22 +397,13 @@ nolink "false"
  References
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\series bold
 \lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
+Cited References
+\series default
 :
- Policy and Documentation Formatting Standards
 \end_layout
 
 \begin_layout Itemize
@@ -403,6 +430,44 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.07"
 plural "false"
 caps "false"
@@ -413,6 +478,15 @@ nolink "false"
 
 :
  Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -478,7 +552,7 @@ The mission of the Elko County Information Operations Department is to establish
  comprehensive standards for technology and information management,
  ensuring secure,
  compliant,
- and efficient operations across all County departments while actively informing the County’s cybersecurity and privacy risk management approach.
+ and efficient operations across all County departments while actively informing the County's cybersecurity and privacy risk management approach.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -526,7 +600,7 @@ Risk Management
  assess,
  and mitigate risks across systems,
  departments,
- and workflows to reduce systemic vulnerabilities and support the County’s cybersecurity risk management strategy.
+ and workflows to reduce systemic vulnerabilities and support the County's cybersecurity risk management strategy.
 \end_layout
 
 \begin_layout Itemize
@@ -548,10 +622,8 @@ Service Enablement
 Decision Support
 \series default
 :
- The Department shall streamline and,
- where feasible,
- automate processes to reduce manual burden and provide accurate,
- timely,
+ The Department shall streamline and automate processes to reduce manual burden and shall provide accurate,
+ current,
  and well-governed data to County leadership.
 \end_layout
 
