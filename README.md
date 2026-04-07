@@ -1,6 +1,6 @@
 | Policy | Title | Status |
 | :--- | :--- | :---: |
-| 0.00 | Front | o |
+| 0.00 | Front | x |
 | 1.01 | Department Mission and Strategic Objectives | x |
 | 1.02 | Code of Ethics and Professional Conduct | o |
 | 1.03 | Standard Operating Ethos | o |

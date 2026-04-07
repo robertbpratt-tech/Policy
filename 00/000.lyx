@@ -76,7 +76,7 @@ Style Subsubsection*
     EndFont
 End
 \end_local_layout
-\language american 
+\language american
 \language_package default
 \inputencoding utf8
 \fontencoding auto
@@ -186,11 +186,7 @@ The Elko County Information Operations Policy Manual (maintained as the master
 \shape italic
 Policy_Manual.lyx
 \shape default
- file) is the 
-\series bold
-designated Authoritative System of Record for all governance controls
-\series default
-,
+ file) is the designated Authoritative System of Record for all governance controls,
  including the departmental security and service management standards defined herein.
  It establishes the mandatory frameworks required to ensure consistency,
  accountability,
@@ -204,30 +200,120 @@ Executive Summary
 \end_layout
 
 \begin_layout Standard
-The policies contained herein are 
-\series bold
-administratively mandatory
-\series default
- and align the Department’s strategic objectives with statutory requirements and industry control frameworks.
+The policies contained herein are administratively mandatory and align the Department's strategic objectives with statutory requirements and industry control frameworks.
 \end_layout
 
 \begin_layout Subsection*
-
-\series bold
 Compliance Alignment & Order of Precedence
 \end_layout
 
 \begin_layout Standard
-In accordance with 
-\series bold
-Policy
-\series default
- 
-\series bold
+The controls in this manual align with the following frameworks,
+ listed in order of authority:
+\end_layout
 
+\begin_layout Enumerate
+
+\series bold
+State Law
+\series default
+:
+ Nevada Revised Statutes (NRS),
+ including Chapter 239 (Public Records),
+ Chapter 205 (Computer Crimes),
+ Chapter 603A (Security of Personal Information),
+ and other applicable provisions.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Administrative Regulation
+\series default
+:
+ Nevada Administrative Code (NAC).
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Records Retention
+\series default
+:
+ Nevada Local Government Records Management Program and mandatory retention schedules (Local Records Disposal Authority) under NRS 239.125.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Law Enforcement Compliance
+\series default
+:
+ FBI CJIS Security Policy Version 6.0.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Security Controls
+\series default
+:
+ NIST SP 800-53 Revision 5 (Security and Privacy Controls for Information Systems and Organizations).
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Strategic Risk
+\series default
+:
+ NIST Cybersecurity Framework (CSF) 2.0.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Risk Management
+\series default
+:
+ NIST SP 800-37 Revision 2 (Risk Management Framework).
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Incident Response
+\series default
+:
+ NIST SP 800-61 Revision 3 (Computer Security Incident Handling Guide).
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Governance
+\series default
+:
+ COBIT 2019 (Governance and Management Objectives).
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Service Management
+\series default
+:
+ ITIL v4 (Service Value System and Practices).
+\end_layout
+
+\begin_layout Standard
+Additional Frameworks Referenced:
+ NIST SP 800-181 Revision 1 (NICE Workforce Framework for Cybersecurity) and SFIA 9 (Skills Framework for the Information Age) are referenced for workforce role alignment under 
+\series bold
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.04"
+reference "pol:1.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -237,102 +323,9 @@ nolink "false"
 
 
 \series default
-,
- the controls in this manual align with the following frameworks,
- listed in order of authority:
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Nevada Revised Statutes (NRS)
-\series default
-:
- Chapter 239 (Public Records),
- Chapter 205 (Computer Crimes),
- Chapter 603A (Security of Personal Information),
- and other applicable provisions.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Nevada Records Management
-\series default
-:
- Local Government Records Management Program and mandatory retention schedules (including system log retention).
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Law Enforcement Compliance
-\series default
-:
- FBI CJIS Security Policy Version 6.0.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Strategic Risk
-\series default
-:
- NIST Cybersecurity Framework (CSF) 2.0.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Security Controls
-\series default
-:
- NIST SP 800-53 Revision 5 (Security and Privacy Controls for Information Systems and Organizations).
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Risk Management
-\series default
-:
- NIST SP 800-37 Revision 2 (Risk Management Framework).
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Incident Response
-\series default
-:
- NIST SP 800-61 Revision 3 (Computer Security Incident Handling Guide).
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Workforce
-\series default
-:
- NIST SP 800-181 Revision 1 (NICE Workforce Framework for Cybersecurity) and SFIA 9.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Governance
-\series default
-:
- COBIT 2019 (Governance and Management Objectives).
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Service Management
-\series default
-:
- ITIL v4 (Service Value System and Practices).
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework) and do not participate in the authority resolution hierarchy above.
 \end_layout
 
 \begin_layout Subsection*
@@ -341,7 +334,7 @@ Authority and Scope
 
 \begin_layout Standard
 This manual,
- alongside the procedural library maintained in the System of Engagement (Redmine),
+ alongside the procedural library maintained in the System of Engagement,
  serves as the primary reference for governance,
  operational decision-making,
  audit defense,
@@ -349,11 +342,7 @@ This manual,
 \end_layout
 
 \begin_layout Standard
-Compliance with these policies is 
-\series bold
-mandatory
-\series default
- for:
+Compliance with these policies is mandatory for:
 \end_layout
 
 \begin_layout Enumerate
@@ -371,12 +360,12 @@ All County employees,
 \end_layout
 
 \begin_layout Standard
-Deviations from these policies shall be managed through the formal exception process defined in 
+Deviations from these policies shall be managed through the formal exception management framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.04"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -386,22 +375,9 @@ nolink "false"
 
 
 \series default
- (Policy and Documentation Formatting Standards) and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Delegation of Authority and Decision Rights).
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \end_body
