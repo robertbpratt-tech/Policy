@@ -1,0 +1,68 @@
+|Policy|Title|Status|
+|0.00|Front|o|
+|1.01|Department Mission and Strategic Objectives|o|
+|1.02|Code of Ethics and Professional Conduct|o|
+|1.03|Standard Operating Ethos|o|
+|1.04|Policy and Documentation Formatting Standards|o|
+|1.05|Policy Review and Update Procedures|o|
+|1.06|IT Governance and Oversight Structure|o|
+|1.07|Workforce Roles, Responsibilities, and Competency Framework|o|
+|1.08|Delegation of Authority and Decision Rights|o|
+|1.09|Risk Management Policy|o|
+|1.10|IT Financial Management and Procurement Policy|o|
+|1.11|Data Governance and Classification Policy|o|
+|1.12|IT Asset Management Policy|o|
+|1.13|Supply Chain Risk Management (SCRM) and Vendor Governance|o|
+|1.14|Stakeholder Engagement and Communications Policy|o|
+|2.01|Acceptable Use of Information Technology Resources Policy|o|
+|2.02|Personnel Security and Background Screening Policy|o|
+|2.03|Security Awareness and Training Policy|o|
+|2.04|Access Control Policy|o|
+|2.05|Identification and Authentication Policy|o|
+|2.06|Privacy and Data Protection Policy|o|
+|2.07|System and Communications Protection Policy|o|
+|2.08|System Integrity and Malware Protection Policy|o|
+|2.09|Vulnerability and Patch Management Policy|o|
+|2.10|Secure Configuration Baselines and Hardening Policy|o|
+|2.11|Audit Logging and Monitoring Policy|o|
+|2.12|Media Protection and Sanitization Policy|o|
+|2.13|Physical Security and Environmental Controls Policy|o|
+|2.14|Mobile Device and Remote Access Policy|o|
+|2.15|System Development and Secure Software Lifecycle Policy|o|
+|3.01|Service Catalog and SLA Policy|o|
+|3.02|Service Level Management and Metrics Reporting|o|
+|3.03|End-User Communication Standards|o|
+|3.04|Service Delivery Feedback and Grievance Policy|o|
+|3.05|Service Request Fulfillment Policy|o|
+|3.06|Operational Incident Management Policy|o|
+|3.07|Problem Management Policy|o|
+|3.08|Service Configuration Management (CMDB) Policy|o|
+|3.09|Change Management Policy|o|
+|3.10|Release and Deployment Policy|o|
+|3.11|Capacity and Availability Management Policy|o|
+|3.12|Monitoring and Event Management Policy|o|
+|3.13|Knowledge Management Policy|o|
+|3.14|IT Project Management Policy|o|
+|3.15|Service Continuity and Contingency Planning Policy|o|
+|3.16|Service Improvement and Continual Improvement Plan|o|
+|3.17|System Maintenance and Vendor Repairs|o|
+|4.01|Incident Response Policy Overview|o|
+|4.02|Identification and Reporting Procedures|o|
+|4.03|Containment Strategy and Playbooks|o|
+|4.04|Eradication Procedures and Scenario Guides|-|
+|4.05|Recovery Operations and Restoration Prioritization|-|
+|4.06|Communication Protocols and Partner Integration|-|
+|4.07|Postmortem Review and Lessons Learned|-|
+|4.08|Incident Response Roles and Contact Directory|-|
+|5.01|Policy Implementation, Enforcement, and Legal Alignment|o|
+|5.02|Internal Audits, Self-Assessment, and Control Testing|o|
+|5.03|Compliance Monitoring and Corrective Action|o|
+|5.04|Performance Metrics and Operational KPIs|o|
+|5.05|Security Control Assessment and Authorization|o|
+|5.06|Vendor Compliance and Third-Party Assurance|o|
+|5.07|Annual Policy Review and Maturity Scoring|o|
+|6.01|Glossary and Definitions|-|
+|6.02|Policy Matrix|-|
+|6.03|Workforce Roles STAK Matrix|o|
+|6.04|Work Order Structure and Standards|o|
+|6.05|Revision History and Version Control|-|
