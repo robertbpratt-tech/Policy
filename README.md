@@ -50,7 +50,7 @@
 | 4.01 | Incident Response Policy Overview | o |
 | 4.02 | Identification and Reporting Procedures | o |
 | 4.03 | Containment Strategy and Playbooks | o |
-| 4.04 | Eradication Procedures and Scenario Guides | - |
+| 4.04 | Eradication Procedures and Scenario Guides | o |
 | 4.05 | Recovery Operations and Restoration Prioritization | - |
 | 4.06 | Communication Protocols and Partner Integration | - |
 | 4.07 | Postmortem Review and Lessons Learned | - |

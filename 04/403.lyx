@@ -626,118 +626,458 @@ nolink "false"
  Roles and Responsibilities
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
-IT Director.
- The IT Director serves as Incident Commander by default,
- as established in 
+Shall serve as Incident Commander by default,
+ as established in
 \series bold
-Policy 4.01
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-,
- and exercises Designated Appointment and Emergency Declaration Authority per 
+ (Incident Response Policy Overview),
+ and shall exercise Designated Appointment and Emergency Declaration Authority per
 \series bold
-Policy 1.08
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-.
- During the containment phase,
- the IT Director completes catch-up Change Control Authority (CCA) review for all Emergency changes within 24 hours of implementation per 
+ (Delegation of Authority and Decision Rights).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall complete catch-up Change Control Authority (CCA) review for all Emergency Changes within twenty-four (24) hours of implementation per
 \series bold
-Policy 3.09
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-,
- and approves any exceptions to this policy per 
+ (Change Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize formal exceptions to the requirements of this policy in accordance with the exception management framework established in
 \series bold
-Policy 1.08
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as Incident Commander in the IT Director's absence or by designation,
+ per
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Assistant IT Director.
- The Assistant IT Director serves as Incident Commander in the IT Director's absence or by designation.
- The Assistant IT Director owns playbook maintenance under standing authority,
- ensures catch-up RFC documentation and CCA review timelines are met,
- and ensures that affected CI records are flagged at the time of containment action for subsequent update per 
+Shall own playbook maintenance under standing authority per
 \series bold
-Policy 3.08
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure catch-up RFC documentation and CCA review timelines are met.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that affected CI records are flagged at the time of containment action for subsequent update per
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Configuration Management (CMDB) Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall lead network-related containment actions as directed by the Incident Commander.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall flag affected CI records at the time of containment action for subsequent update per
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-IT Department Personnel.
- IT Department personnel execute containment directives under Incident Commander authority.
- Personnel shall not take any containment action without an associated Redmine work order and IC authorization.
- Personnel shall document all actions in work order Notes in real time,
+Shall create catch-up RFC documentation within the twenty-four (24) hour window established by
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall lead server- and endpoint-related containment actions as directed by the Incident Commander.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall flag affected CI records at the time of containment action for subsequent update per
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall create catch-up RFC documentation within the twenty-four (24) hour window established by
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident Commander (when not the IT Director)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall exercise all IC authority incorporatively from
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall select the containment mode and document the rationale against the three mandatory evaluation criteria.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall designate containment configuration actions as Emergency Changes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall make the containment-complete determination.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall designate the primary category for multi-category incidents.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall initiate emergency procurement under County emergency procedures with after-the-fact ratification,
+ per
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute containment directives under Incident Commander authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not take any containment action without an associated Redmine work order and IC authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document all actions in work order Notes in real time,
  or as close to real time as operational conditions permit,
- consistent with the documentation standards established in 
+ consistent with the documentation standards established in
 \series bold
-Policy 4.02
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
- Section 6.4.
- Personnel shall not destroy,
+ (Identification and Reporting Procedures) Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not destroy,
  overwrite,
  or cause the disposition of audit logs under any circumstances during the containment phase.
 \end_layout
 
-\begin_layout Standard
-
-\lang english
-Network Administrator.
- The Network Administrator leads network-related containment actions as directed by the Incident Commander,
- flags affected CI records at the time of containment action for subsequent update,
- and creates catch-up RFC documentation within the 24-hour window established by 
-\series bold
-Policy 3.09
-\series default
-.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Systems Administrator.
- The Systems Administrator leads server- and endpoint-related containment actions as directed by the Incident Commander,
- flags affected CI records at the time of containment action for subsequent update,
- and creates catch-up RFC documentation within the 24-hour window established by 
-\series bold
-Policy 3.09
-\series default
-.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Incident Commander (when not the IT Director).
- When the IC is not the IT Director,
- all IC authority is incorporative from 
-\series bold
-Policy 4.01
-\series default
- and 
-\series bold
-Policy 1.08
-\series default
-.
- The specific IC authorities exercised under this policy are:
- containment mode selection,
- Emergency Change designation,
- containment-complete determination,
- primary category designation for multi-category incidents,
- and emergency procurement initiation per 
-\series bold
-Policy 1.08
-\series default
-.
-\end_layout
-
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -747,31 +1087,63 @@ Policy 1.08
 
 \begin_layout Standard
 
-\series bold
 \lang english
-Compliance
+Compliance with this policy is mandatory for all Information Operations Department personnel participating in incident response operations during the containment phase.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
-\lang english
-Compliance with this policy is assessed through the ECIO internal audit program governed by 
 \series bold
-Policy 5.02
+\lang english
+Assessment
 \series default
- and the annual policy review and maturity scoring process governed by 
+:
+ Compliance with this policy shall be assessed through the ECIO internal audit program governed by
 \series bold
-Policy 5.07
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-.
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process governed by
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-The following conditions constitute specific non-compliance with this policy:
+Enforcement
+\series default
+:
+ The following conditions constitute specific non-compliance with this policy:
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
 \lang english
@@ -789,9 +1161,20 @@ Execution of containment configuration actions without IC authorization or witho
 \begin_layout Itemize
 
 \lang english
-Failure to create catch-up RFC documentation within the 24-hour window established by 
+Failure to create catch-up RFC documentation within the twenty-four (24) hour window established by
 \series bold
-Policy 3.09
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
 \end_layout
@@ -810,23 +1193,54 @@ Any containment action that destroys,
 Failure to document a containment-complete determination in the work order Notes before initiating eradication activity.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+
+\lang english
+Non-compliance may result in corrective action in accordance with
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 
 \series bold
 \lang english
 Exceptions
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Exceptions to this policy require written approval from the IT Director per 
+\series default
+:
+ Exceptions to this policy require written approval from the IT Director in accordance with the exception management framework established in
 \series bold
-Policy 1.08
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
  No open-ended exceptions are permitted.
  All approved exceptions shall be documented and time-bounded.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -838,112 +1252,283 @@ Policy 1.08
 
 \begin_layout Standard
 
+\series bold
 \lang english
-ECIO Policy 1.08:
+Cited References:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy and Documentation Formatting Standards
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Delegation of Authority and Decision Rights
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 1.09:
- Risk Management Policy
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Secure Configuration Baselines and Hardening Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 2.10:
- Security Configuration and Baseline Management Policy
-\end_layout
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
-\begin_layout Standard
+\end_inset
 
-\lang english
-ECIO Policy 2.11:
+:
  Audit Logging and Monitoring Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 3.08:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Service Configuration Management (CMDB) Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 3.09:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Change Management Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 3.13:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Knowledge Management Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.01:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Incident Response Policy Overview
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.02:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Identification and Reporting Procedures
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.04:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Eradication Procedures and Scenario Guides
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.06:
- Communication Protocols
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols and Partner Integration
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 5.01:
- Policy Implementation and Enforcement Framework
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 5.02:
- Internal Audits and Self-Assessment Procedures
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 5.07:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Annual Policy Review and Maturity Scoring
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-NRS 239.125 (Local Government Records Management Program)
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-LRDA 20071728 (IT Security Audit Records)
 \end_layout
 
 \begin_layout Standard
@@ -965,34 +1550,6 @@ CJIS Security Policy v6.0:
 \lang english
 CJIS Security Policy v6.0:
  Section IR-6 (Incident Reporting)
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-NIST CSF 2.0:
- RS.CO-02 (Stakeholder Notification)
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-NIST CSF 2.0:
- RS.MA-01 (Incident Response Plan Execution)
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-NIST CSF 2.0:
- RS.MA-03 (Incident Categorization and Prioritization)
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-NIST CSF 2.0:
- RS.MA-04 (Incident Escalation and Elevation)
 \end_layout
 
 \begin_layout Standard
@@ -1036,6 +1593,71 @@ NIST SP 800-61 Rev.
 
 \begin_layout Standard
 
+\series bold
+\lang english
+Framework Alignment:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+LRDA 20071728 (IT Security Audit Records)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NIST CSF 2.0:
+ RS.CO-02 (Stakeholder Notification)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NIST CSF 2.0:
+ RS.MA-01 (Incident Response Plan Execution)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NIST CSF 2.0:
+ RS.MA-03 (Incident Categorization and Prioritization)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NIST CSF 2.0:
+ RS.MA-04 (Incident Escalation and Elevation)
+\end_layout
+
+\begin_layout Standard
+
 \lang english
 COBIT 2019:
  DSS02 (Managed Service Requests and Incidents)
@@ -1071,7 +1693,18 @@ Policy 4.03
  activates,
  the following have been completed by 
 \series bold
-Policy 4.02
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  and are not repeated or redefined here:
  IoC evaluation,
@@ -1092,11 +1725,33 @@ For the benefit of external readers:
  the Assistant IT Director assumes it upon designation or in the IT Director's absence.
  Full IC appointment mechanics are governed by 
 \series bold
-Policy 4.01
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  and 
 \series bold
-Policy 3.06
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
 \end_layout
@@ -1111,7 +1766,18 @@ The Layer 1 IoC categories are six permanent categorical triggers governing inci
  and Category F (Improper Use with Security Nexus).
  Full definitions are governed by 
 \series bold
-Policy 4.02
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.1.
 \end_layout
@@ -1126,7 +1792,18 @@ Incident severity is classified in three tiers —
  and operational impact of the incident.
  Severity classification is governed by 
 \series bold
-Policy 4.01
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.1.
 \end_layout
@@ -1207,12 +1884,34 @@ Containment proceeds in two phases.
  sufficient to stop the immediate spread while a sustainable long-term posture is designed.
  Long-term containment establishes a sustained configuration or monitoring state that can be maintained while eradication is prepared under 
 \series bold
-Policy 4.04
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
  
 \series bold
-Policy 4.04
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  shall not be initiated until long-term containment is stable.
 \end_layout
@@ -1225,17 +1924,50 @@ Mandatory Isolation Triggers
 Two conditions mandate isolation regardless of IC mode discretion,
  pursuant to 
 \series bold
-Policy 2.10
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
  Unauthorized systems discovered without an approved configuration baseline (
 \series bold
-Policy 2.10
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 4) trigger incident response isolation protocols automatically.
  Critical-risk baseline deviations (
 \series bold
-Policy 2.10
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.6) shall result in logical isolation within 4 hours of detection if not remediated.
  When a mandatory isolation trigger applies,
@@ -1268,7 +2000,18 @@ For the benefit of external readers:
  triggered upon IoC discovery by a technician.
  Full Hard Fork mechanics are governed by 
 \series bold
-Policy 3.06
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.2.
 \end_layout
@@ -1276,7 +2019,18 @@ Policy 3.06
 \begin_layout Standard
 The system preservation obligation in 
 \series bold
-Policy 3.06
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.2 —
  which requires a technician who discovers an IoC to cease troubleshooting,
@@ -1298,7 +2052,18 @@ Surviving Forensic Obligation —
 \begin_layout Standard
 The audit log preservation obligation established in 
 \series bold
-Policy 2.11
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.7 is a standing constraint that applies to all personnel,
  including the Incident Commander,
@@ -1333,7 +2098,18 @@ Audit Log Restoration as a Containment Prerequisite
 \begin_layout Standard
 When an incident involves audit processing failure as defined in 
 \series bold
-Policy 2.11
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.5,
  restoring logging capability is a containment prerequisite.
@@ -1355,7 +2131,18 @@ Every network isolation,
  account disabling,
  or system reconfiguration executed under containment authority is an Emergency Change under 
 \series bold
-Policy 3.09
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
  Emergency Change obligations attach at the moment of implementation,
@@ -1369,7 +2156,18 @@ IC Emergency Change Designation Authority
 \begin_layout Standard
 The Incident Commander is authorized to designate containment configuration actions as Emergency Changes under 
 \series bold
-Policy 3.09
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.2.
  This authority requires no prior approval and shall be exercised at the time of action.
@@ -1381,15 +2179,26 @@ Concurrent Documentation Clocks
 
 \begin_layout Standard
 Three documentation obligations run concurrently from the moment of each containment configuration action.
- A standalone RFC record shall be created in Redmine within 24 hours of implementation,
+ The assigned technician shall create a standalone RFC record in Redmine within twenty-four (24) hours of implementation,
  or by noon on the next business day,
  whichever is later.
- Catch-up CCA review shall be completed by the IT Director within the same window.
- CI record flagging shall occur at the time of action;
+ The IT Director shall complete catch-up CCA review within the same window.
+ The assigned technician shall flag affected CI records at the time of action;
  the CI record update obligation is deferred but not waived,
  and runs on the same concurrent 24-hour clock per 
 \series bold
-Policy 3.09
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
 \end_layout
@@ -1419,7 +2228,7 @@ Post-Implementation Review
 \end_layout
 
 \begin_layout Standard
-Post-Implementation Review (PIR) documentation shall be completed within 5 business days of implementation for all Emergency changes executed under this policy.
+The IT Director or designee shall complete Post-Implementation Review (PIR) documentation within five (5) business days of implementation for all Emergency Changes executed under this policy.
 \end_layout
 
 \begin_layout Standard
@@ -1431,7 +2240,18 @@ If a containment action meets any of the following triggers,
  the County Manager shall be notified no later than 4 hours after implementation begins,
  per 
 \series bold
-Policy 3.09
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.6:
  systems whose compromise could affect elections;
@@ -1453,7 +2273,18 @@ If containment requires procurement —
  the Incident Commander is authorized to initiate emergency procurement under County emergency procedures with after-the-fact ratification,
  per 
 \series bold
-Policy 1.08
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
  Administrative funding authority shall not be exercised to delay,
@@ -1481,7 +2312,18 @@ Containment is complete when the threat has been demonstrably bounded —
  documented in the work order Notes,
  before any eradication activity under 
 \series bold
-Policy 4.04
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  begins.
 \end_layout
@@ -1515,7 +2357,18 @@ CJIS Notification Status
 \begin_layout Standard
 The CJIS IR-6 Part (a) notification clock established in 
 \series bold
-Policy 4.02
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.6 continues running during containment.
  Containment activities do not pause or satisfy external notification obligations.
@@ -1529,7 +2382,18 @@ Policy 4.02
  are not affected by the duration of the containment phase.
  External notification execution is governed by 
 \series bold
-Policy 4.06
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
 \end_layout
@@ -1544,7 +2408,18 @@ False Positive Disposition
 If a declared incident resolves as a false positive during containment,
  the false positive disposition process in 
 \series bold
-Policy 4.02
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.1 governs indicator review.
  The IC shall direct reversal of all containment actions taken,
@@ -1554,7 +2429,18 @@ Policy 4.02
  The IC shall document the false positive determination and all reversal actions in the work order Notes.
  Operational jurisdiction may return to 
 \series bold
-Policy 3.06
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  per the IC's direction.
 \end_layout
@@ -1575,11 +2461,33 @@ Policy 4.03
  mandates the existence of a governed containment playbook for each of the six Layer 1 IoC categories (A–F).
  Playbooks are maintained as Knowledge Base artifacts in Redmine per 
 \series bold
-Policy 3.13
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  and formatted per 
 \series bold
-Policy 1.04
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.9.
  All six category playbooks shall be in force at v1.0 of this policy.
@@ -1592,7 +2500,18 @@ Multi-Category Incident Playbook Selection
 \begin_layout Standard
 When an incident receives multi-category classification under 
 \series bold
-Policy 4.02
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 ,
  the IC shall designate a primary category at the time of containment strategy selection.
@@ -1610,7 +2529,18 @@ Severity tier (High,
  Medium,
  or Low per 
 \series bold
-Policy 4.01
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  Section 6.1) modulates urgency and escalation thresholds within each category playbook.
  It does not alter the fundamental playbook structure.
@@ -1649,7 +2579,18 @@ Short-Term Containment Actions.
 Long-Term Containment Posture.
  Sustained configuration or monitoring state to maintain while eradication is prepared under 
 \series bold
-Policy 4.04
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
 \end_layout
@@ -1669,7 +2610,18 @@ Eradication Handoff Criteria.
  The specific conditions that constitute containment-complete for this incident type,
  triggering handoff to 
 \series bold
-Policy 4.04
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
 \end_layout
@@ -1683,7 +2635,18 @@ Each playbook shall be reviewed no less than annually,
  upon closure of any incident that invoked it,
  and upon any change to the ECIO environment classified as a Significant or Emergency Change under 
 \series bold
-Policy 3.09
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  that is relevant to that scenario.
  The Assistant IT Director owns playbook review and maintenance under standing authority.

@@ -193,7 +193,22 @@ Version:
 \begin_layout Standard
 
 \lang english
-This policy governs the eradication of cybersecurity threats from the Elko County Information Operations environment following containment and establishes the eradication-complete determination that gates transition to recovery operations under Policy 4.05.
+This policy governs the eradication of cybersecurity threats from the Elko County Information Operations environment following containment and establishes the eradication-complete determination that gates transition to recovery operations under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsection*
@@ -216,17 +231,20 @@ This policy applies to all IT Department personnel participating in incident res
 
 \begin_layout Standard
 
+\series bold
 \lang english
-In Scope:
+In Scope
+\series default
+:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Eradication strategy selection and execution following containment-complete determination.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Threat neutralization,
@@ -237,31 +255,31 @@ Threat neutralization,
  and exploited vulnerabilities.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Pre-execution forensic confirmation for destructive or irreversible eradication actions.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Emergency Change obligations arising from eradication configuration actions.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Eradication-complete determination and recovery handoff.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Eradication procedure framework and governance.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Eradication documentation requirements.
@@ -269,78 +287,231 @@ Eradication documentation requirements.
 
 \begin_layout Standard
 
+\series bold
 \lang english
-Out of Scope:
+Out of Scope
+\series default
+:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 IoC evaluation and incident declaration:
- Policy 4.02.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Containment strategy selection and execution:
- Policy 4.03.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Recovery operations and Operational Handback:
- Policy 4.05.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Data and system classification for recovery:
- Policy 4.05.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Stakeholder communication and external notification execution:
- Policy 4.06.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Postmortem review and lessons learned:
- Policy 4.07.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 IR roles and contact directory:
- Policy 4.08.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 CI record governance:
- Policy 3.08.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Change categorization and RFC governance:
- Policy 3.09.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Security baseline definitions:
- Policy 2.10.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsection*
@@ -350,85 +521,219 @@ Security baseline definitions:
  Roles and Responsibilities
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-IT Director:
+IT Director
+\series default
+:
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
 Shall serve as Incident Commander for all cybersecurity incidents by default,
- as established in Policy 4.01 (Incident Response Policy Overview) and governed by the delegation provisions in Policy 1.08 (Delegation of Authority and Decision Rights).
+ as established in
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Incident Response Policy Overview) and governed by the delegation provisions in
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall approve the eradication strategy,
  including selection of applicable eradication procedures and authorization of destructive eradication actions.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall make the eradication-complete determination,
- documenting the basis in the work order Notes and Chapter 4 checklist before any recovery activity under Policy 4.05 (Recovery Operations and Restoration Prioritization) begins.
+ documenting the basis in the work order Notes and Chapter 4 checklist before any recovery activity under
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Recovery Operations and Restoration Prioritization) begins.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall confirm that forensic preservation requirements have been satisfied before authorizing any destructive or irreversible eradication action.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Shall complete Configuration Control Authority (CCA) review for all eradication-phase Emergency Changes within the twenty-four (24) hour concurrent documentation window established by Policy 3.09 (Change Management Policy).
+Shall complete Configuration Control Authority (CCA) review for all eradication-phase Emergency Changes within the twenty-four (24) hour concurrent documentation window established by
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Change Management Policy).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Shall authorize formal exceptions to the requirements of this policy in accordance with the exception management framework established in Policy 5.01 (Policy Implementation,
+Shall authorize formal exceptions to the requirements of this policy in accordance with the exception management framework established in
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
  Enforcement,
  and Legal Alignment).
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
+\series bold
 \lang english
-Assistant IT Director:
+Assistant IT Director
+\series default
+:
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
 Shall serve as Incident Commander in the IT Director's absence or by IT Director designation,
- per Policy 4.01 and Policy 1.08.
+ per
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall serve as the primary operational coordinator for eradication activities under Incident Commander direction.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Shall own maintenance and review of eradication procedures maintained in the Knowledge Base per Policy 3.13 (Knowledge Management Policy) under standing authority.
+Shall own maintenance and review of eradication procedures maintained in the Knowledge Base per
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy) under standing authority.
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
+\series bold
 \lang english
-Network Administrator:
+Network Administrator
+\series default
+:
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
 Shall execute network-layer eradication actions as directed by the Incident Commander,
@@ -438,25 +743,60 @@ Shall execute network-layer eradication actions as directed by the Incident Comm
  and other malicious network artifacts.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Shall flag affected CI records at the time of eradication action for subsequent update per Policy 3.08 (Service Configuration Management (CMDB) Policy).
+Shall flag affected CI records at the time of eradication action for subsequent update per
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Configuration Management (CMDB) Policy).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Shall create catch-up RFC documentation within the twenty-four (24) hour window established by Policy 3.09.
+Shall create catch-up RFC documentation within the twenty-four (24) hour window established by
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
+\series bold
 \lang english
-Systems Administrator:
+Systems Administrator
+\series default
+:
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
 Shall execute server- and endpoint-layer eradication actions as directed by the Incident Commander,
@@ -466,82 +806,162 @@ Shall execute server- and endpoint-layer eradication actions as directed by the 
  and system rebuild when required.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Shall flag affected CI records at the time of eradication action for subsequent update per Policy 3.08.
+Shall flag affected CI records at the time of eradication action for subsequent update per
+\series bold
+ Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Shall create catch-up RFC documentation within the twenty-four (24) hour window established by Policy 3.09.
+Shall create catch-up RFC documentation within the twenty-four (24) hour window established by
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
 \lang english
 Incident Commander (when not the IT Director):
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
-Shall exercise all IC authority incorporatively from Policy 4.01 and Policy 1.08.
+Shall exercise all IC authority incorporatively from
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall approve the eradication strategy and select the applicable eradication procedures.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall authorize destructive eradication actions after confirming the Forensic Preservation Gate defined in Section 6.3 has been satisfied.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall make the eradication-complete determination in accordance with Section 6.4 of this policy.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall initiate emergency procurement under County emergency procedures with after-the-fact ratification,
- per Policy 1.08,
+ per
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
  when eradication requires emergency tooling,
  replacement hardware,
  or vendor engagement.
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
 \lang english
 IT Department Personnel:
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
 Shall execute eradication activities as directed by the Incident Commander.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall not initiate eradication actions independently or deviate from the selected eradication procedures without express IC authorization.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Shall document all eradication actions taken in the work order Notes as actions are completed.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -555,77 +975,208 @@ Shall document all eradication actions taken in the work order Notes as actions 
 Compliance with this policy is mandatory for all Information Operations Department personnel participating in incident response operations during the eradication phase.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-Assessment:
- Compliance with this policy shall be assessed through the ECIO internal audit program governed by Policy 5.02 (Internal Audits,
+Assessment
+\series default
+:
+ Compliance with this policy shall be assessed through the ECIO internal audit program governed by
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
  Self-Assessment,
- and Control Testing) and the annual policy review and maturity scoring process governed by Policy 5.07 (Annual Policy Review and Maturity Scoring).
+ and Control Testing) and the annual policy review and maturity scoring process governed by
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-Enforcement:
+Enforcement
+\series default
+:
  The following conditions constitute specific non-compliance with this policy:
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
-Initiation of eradication activity before the Incident Commander has documented a containment-complete determination under Policy 4.03.
+Initiation of eradication activity before the Incident Commander has documented a containment-complete determination under
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Execution of destructive or irreversible eradication actions without prior IC authorization or without documented confirmation that forensic preservation requirements have been satisfied.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Execution of eradication actions that deviate from the IC-selected eradication procedures without documented IC authorization.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Execution of eradication actions without an associated Redmine work order.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Failure to create catch-up RFC documentation within the twenty-four (24) hour window established by Policy 3.09.
+Failure to create catch-up RFC documentation within the twenty-four (24) hour window established by
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Any eradication action that destroys,
  overwrites,
- or causes the disposition of audit logs maintained under Policy 2.11 (Audit Logging and Monitoring Policy) or forensic evidence without documented IC authorization and justification.
+ or causes the disposition of audit logs maintained under
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Audit Logging and Monitoring Policy) or forensic evidence without documented IC authorization and justification.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Failure to document an eradication-complete determination in the work order Notes before initiating recovery activity under Policy 4.05.
+Failure to document an eradication-complete determination in the work order Notes before initiating recovery activity under
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Non-compliance may result in corrective action in accordance with Policy 5.01.
+Non-compliance may result in corrective action in accordance with
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
+\series bold
 \lang english
-Exceptions:
- Exceptions to this policy require written approval from the IT Director in accordance with the exception management framework established in Policy 5.01.
+Exceptions
+\series default
+:
+ Exceptions to this policy require written approval from the IT Director in accordance with the exception management framework established in
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  No open-ended exceptions are permitted.
  All approved exceptions shall be documented and time-bounded.
  Oral exceptions are not valid.
@@ -640,6 +1191,7 @@ Exceptions:
 
 \begin_layout Standard
 
+\series bold
 \lang english
 Cited References:
 \end_layout
@@ -647,98 +1199,252 @@ Cited References:
 \begin_layout Standard
 
 \lang english
-ECIO Policy 1.04:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Policy and Documentation Formatting Standards
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 1.08:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Delegation of Authority and Decision Rights
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 2.11:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Audit Logging and Monitoring Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 3.06:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Operational Incident Management Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 3.08:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Service Configuration Management (CMDB) Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 3.09:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Change Management Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 3.13:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Knowledge Management Policy
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.01:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Incident Response Policy Overview
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.02:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Identification and Reporting Procedures
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.03:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Containment Strategy and Playbooks
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.05:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Recovery Operations and Restoration Prioritization
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.06:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Communication Protocols and Partner Integration
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 4.07:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Postmortem Review and Lessons Learned
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-ECIO Policy 5.01:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Policy Implementation,
  Enforcement,
  and Legal Alignment
@@ -747,7 +1453,18 @@ ECIO Policy 5.01:
 \begin_layout Standard
 
 \lang english
-ECIO Policy 5.02:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Internal Audits,
  Self-Assessment,
  and Control Testing
@@ -756,7 +1473,18 @@ ECIO Policy 5.02:
 \begin_layout Standard
 
 \lang english
-ECIO Policy 5.07:
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
  Annual Policy Review and Maturity Scoring
 \end_layout
 
@@ -784,6 +1512,7 @@ NIST SP 800-61 Rev.
 
 \begin_layout Standard
 
+\series bold
 \lang english
 Framework Alignment:
 \end_layout
@@ -864,17 +1593,34 @@ Eradication is the phase of the cybersecurity incident response lifecycle in whi
  3.
 \end_layout
 
-\begin_layout Standard
-
-\lang english
+\begin_layout Subsubsection*
 6.1 Activation and Handoff State
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-When Policy 4.04 activates,
- the following have been completed by Policy 4.03 (Containment Strategy and Playbooks) and are not repeated or redefined here:
+When 
+\series bold
+Policy 4.04
+\series default
+ activates,
+ the following have been completed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Containment Strategy and Playbooks) and are not repeated or redefined here:
  containment strategy selection and execution,
  short-term and long-term containment posture establishment,
  containment-complete determination by the Incident Commander (IC),
@@ -886,16 +1632,31 @@ When Policy 4.04 activates,
 \lang english
 The IC is in command.
  The Redmine work order and Chapter 4 checklist are active.
- The following documentation package has been completed under Policy 4.03 Section 6.4 and is available in the work order Notes and Chapter 4 checklist:
+ The following documentation package has been completed under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4 and is available in the work order Notes and Chapter 4 checklist:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 The confirmed containment perimeter with all affected systems identified.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Systems isolated,
@@ -903,7 +1664,7 @@ Systems isolated,
  or segments under active monitoring posture.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Evidence artifacts preserved during containment,
@@ -912,7 +1673,7 @@ Evidence artifacts preserved during containment,
  and network captures.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Outstanding catch-up RFC items with assigned owners and due dates.
@@ -921,26 +1682,67 @@ Outstanding catch-up RFC items with assigned owners and due dates.
 \begin_layout Standard
 
 \lang english
-The CJIS IR-6 notification clock established in Policy 4.02 (Identification and Reporting Procedures) Section 6.6 continues running during eradication.
+The CJIS IR-6 notification clock established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures) Section 6.6 continues running during eradication.
  Eradication activities do not pause or satisfy external notification obligations.
- External notification execution is governed by Policy 4.06 (Communication Protocols and Partner Integration).
+ External notification execution is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration).
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Eradication shall not be initiated until the IC has documented a containment-complete determination under Policy 4.03 Section 6.4 and long-term containment is stable.
+Eradication shall not be initiated until the IC has documented a containment-complete determination under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4 and long-term containment is stable.
 \end_layout
 
-\begin_layout Standard
-
-\lang english
+\begin_layout Subsubsection*
 6.2 Eradication Framework
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Eradication Authority
 \end_layout
 
@@ -955,8 +1757,6 @@ The IC holds authority over all eradication activity.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Eradication Scope Determination
 \end_layout
 
@@ -964,7 +1764,22 @@ Eradication Scope Determination
 
 \lang english
 Before eradication execution begins,
- the IC shall confirm the scope of eradication based on the containment perimeter and the incident classification established in Policy 4.02.
+ the IC shall confirm the scope of eradication based on the containment perimeter and the incident classification established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  The IC shall document the eradication scope in the work order Notes before execution begins.
  The eradication scope shall identify all systems within the containment perimeter requiring remediation,
  the specific threat artifacts and persistence mechanisms to be removed from each system,
@@ -973,8 +1788,6 @@ Before eradication execution begins,
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Categories of Eradication Actions
 \end_layout
 
@@ -1025,8 +1838,6 @@ Destructive Eradication.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Eradication and Recovery Boundary
 \end_layout
 
@@ -1041,8 +1852,6 @@ Eradication owns everything required to neutralize the threat and confirm clean 
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 CJIS Considerations During Eradication
 \end_layout
 
@@ -1058,23 +1867,49 @@ For incidents where Criminal Justice Information (CJI) involvement is confirmed 
  The assigned technician shall document all eradication actions on CJI-bearing systems with sufficient detail to support post-incident CJIS compliance review.
 \end_layout
 
-\begin_layout Standard
-
-\lang english
+\begin_layout Subsubsection*
 6.3 Change Management Integration
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Emergency Change Framework
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-All eradication configuration actions constitute Emergency Changes under Policy 3.09.
- The concurrent documentation clock established in Policy 4.03 Section 6.3 applies to eradication actions without modification.
+All eradication configuration actions constitute Emergency Changes under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The concurrent documentation clock established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3 applies to eradication actions without modification.
 \end_layout
 
 \begin_layout Standard
@@ -1085,8 +1920,38 @@ The assigned technician (Network Administrator or Systems Administrator,
  or by noon on the next business day,
  whichever is later.
  The IT Director shall complete CCA review within the same window.
- The assigned technician shall flag affected CI records at the time of action per Policy 3.08;
- the CI record update obligation is deferred but not waived and runs on the same concurrent twenty-four (24) hour clock per Policy 3.09.
+ The assigned technician shall flag affected CI records at the time of action per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+;
+ the CI record update obligation is deferred but not waived and runs on the same concurrent twenty-four (24) hour clock per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -1107,7 +1972,7 @@ Documentation obligations do not pause eradication execution.
 
 \begin_layout Standard
 
-\lang english
+\series bold
 Forensic Preservation Gate
 \end_layout
 
@@ -1116,11 +1981,41 @@ Forensic Preservation Gate
 \lang english
 Before any Destructive Eradication action is executed,
  the IC shall confirm and document in the work order Notes that all forensic preservation requirements for the affected system have been satisfied,
- including any requirements identified during containment under Policy 4.03 Section 6.2;
+ including any requirements identified during containment under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.2;
  that CJI forensic preservation obligations,
  where applicable,
  have been completed;
- and that the evidence record is sufficient to support postmortem review under Policy 4.07 (Postmortem Review and Lessons Learned) and any external investigation or compliance review.
+ and that the evidence record is sufficient to support postmortem review under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Postmortem Review and Lessons Learned) and any external investigation or compliance review.
 \end_layout
 
 \begin_layout Standard
@@ -1132,8 +2027,6 @@ The Forensic Preservation Gate is a pre-execution confirmation,
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Coordinated Batch Eradication
 \end_layout
 
@@ -1144,12 +2037,25 @@ When an eradication action requires simultaneous or coordinated changes across m
  such as domain-wide credential rotation or synchronized malware removal —
  the IC may authorize a single umbrella RFC documenting the coordinated action.
  The assigned technician shall document individual systems affected by the coordinated action as line items within the umbrella RFC rather than as separate RFC records.
- The assigned technician shall apply a CI record flag for each affected system at the time of action per Policy 3.08.
+ The assigned technician shall apply a CI record flag for each affected system at the time of action per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Third-Party Eradication Actions
 \end_layout
 
@@ -1172,8 +2078,6 @@ When eradication requires action by an external vendor,
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Emergency Procurement Authority
 \end_layout
 
@@ -1181,7 +2085,22 @@ Emergency Procurement Authority
 
 \lang english
 The IC is authorized to initiate emergency procurement under County emergency procedures with after-the-fact ratification,
- per Policy 1.08.
+ per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  This authority covers emergency tooling,
  replacement hardware,
  external incident response vendor engagement,
@@ -1193,8 +2112,6 @@ The IC is authorized to initiate emergency procurement under County emergency pr
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 County Manager Notification
 \end_layout
 
@@ -1203,7 +2120,22 @@ County Manager Notification
 \lang english
 If an eradication action meets any of the following triggers,
  the IC shall notify the County Manager no later than four (4) hours after the action begins,
- per Policy 3.09 Section 6.6:
+ per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.6:
  systems whose compromise could affect elections;
  planned downtime or degraded service visible to the public or other County departments for more than one (1) business day;
  decommission or replacement of operationally critical infrastructure;
@@ -1211,15 +2143,13 @@ If an eradication action meets any of the following triggers,
  The IC shall identify applicable triggers at the time of action and ensure notification is initiated within the four (4) hour window.
 \end_layout
 
-\begin_layout Standard
-
-\lang english
+\begin_layout Subsubsection*
 6.4 Eradication-Complete Determination
 \end_layout
 
 \begin_layout Standard
 
-\lang english
+\series bold
 Determination Standard
 \end_layout
 
@@ -1235,12 +2165,27 @@ Eradication is complete when the threat has been fully neutralized —
  No phase transition is assumed.
  The IC shall make an explicit eradication-complete determination,
  documented in the work order Notes and Chapter 4 checklist,
- before any recovery activity under Policy 4.05 begins.
+ before any recovery activity under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ begins.
 \end_layout
 
 \begin_layout Standard
 
-\lang english
+\series bold
 Mandatory Minimum Verification
 \end_layout
 
@@ -1252,7 +2197,7 @@ The following verification conditions are required for every eradication-complet
  The IC shall confirm that all scenario-specific verification criteria identified in the applicable eradication procedures have also been satisfied and shall document the basis for that confirmation in the work order Notes.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 The assigned technician shall verify all systems within the containment perimeter as clean using an authorized detection or validation method defined in the applicable eradication procedure.
@@ -1262,7 +2207,7 @@ The assigned technician shall verify all systems within the containment perimete
  the applicable eradication procedure shall define the alternative validation method.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 The assigned technician shall rotate,
@@ -1270,7 +2215,7 @@ The assigned technician shall rotate,
  or replace all identified compromised credentials.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 The assigned technician shall remove all identified persistence mechanisms,
@@ -1281,20 +2226,35 @@ The assigned technician shall remove all identified persistence mechanisms,
  and unauthorized user accounts.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 The assigned technician shall patch all identified exploited vulnerabilities or implement documented compensating controls approved by the IC.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-The assigned technician shall update CI records for all eradication-driven configuration changes per Policy 3.08,
- or confirm that pending CI updates are within the applicable documentation window with assigned owners..
+The assigned technician shall update CI records for all eradication-driven configuration changes per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ or confirm that pending CI updates are within the applicable documentation window with assigned owners.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 The assigned technician shall complete all catch-up RFC documentation for eradication-phase Emergency Changes,
@@ -1309,7 +2269,7 @@ The IC shall document the eradication-complete determination with explicit refer
 
 \begin_layout Standard
 
-\lang english
+\series bold
 Recovery Handoff
 \end_layout
 
@@ -1317,50 +2277,152 @@ Recovery Handoff
 
 \lang english
 Upon eradication-complete determination,
- the incident transitions to the recovery phase governed by Policy 4.05.
+ the incident transitions to the recovery phase governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  The eradication-complete determination is the primary criterion for initiating recovery.
- The IC remains in command through the recovery phase until Operational Handback is declared under Policy 4.05.
+ The IC remains in command through the recovery phase until Operational Handback is declared under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
-
-\lang english
+\begin_layout Subsubsection*
 6.5 Eradication Procedure Governance
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Procedure Framework
 \end_layout
 
 \begin_layout Standard
 
+\series bold
 \lang english
-Policy 4.04 mandates the existence of a governed library of eradication procedures.
+Policy 4.04
+\series default
+ mandates the existence of a governed library of eradication procedures.
  For purposes of this policy,
- the "scenario guides" referenced in the policy title and in the Policy 4.01 Chapter 4 roadmap are the governed eradication procedures maintained in Redmine.
- Eradication procedures are maintained as Knowledge Base artifacts in the System of Engagement (Redmine) per Policy 3.13 and formatted per Policy 1.04 (Policy and Documentation Formatting Standards).
+ the "scenario guides" referenced in the policy title and in the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Chapter 4 roadmap are the governed eradication procedures maintained in Redmine.
+ Eradication procedures are maintained as Knowledge Base artifacts in the System of Engagement (Redmine) per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and formatted per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy and Documentation Formatting Standards).
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The procedure library shall be sufficient to address eradication requirements across all six (6) Layer 1 Indicator of Compromise (IoC) categories (A through F) defined in Policy 4.02.
+The procedure library shall be sufficient to address eradication requirements across all six (6) Layer 1 Indicator of Compromise (IoC) categories (A through F) defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  The IT Director shall determine what procedures are required and shall authorize the creation of new procedures when operational needs or post-incident findings identify coverage gaps.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The containment playbooks maintained under Policy 4.03 shall reference the applicable eradication procedures in their Eradication Handoff Criteria element.
+The containment playbooks maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall reference the applicable eradication procedures in their Eradication Handoff Criteria element.
  When a containment playbook identifies eradication procedures for a given incident type,
  the IC shall invoke those procedures at the time of eradication unless the IC determines and documents that a different procedure set is required based on conditions discovered during containment.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Procedure Ownership and Review
 \end_layout
 
@@ -1370,12 +2432,25 @@ Procedure Ownership and Review
 The Assistant IT Director owns eradication procedure maintenance under standing authority.
  The Assistant IT Director shall review each procedure no less than annually,
  upon closure of any incident that invoked it,
- and upon any change to the ECIO environment classified as a Significant or Emergency Change under Policy 3.09 that is relevant to that procedure's technical scope.
+ and upon any change to the ECIO environment classified as a Significant or Emergency Change under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ that is relevant to that procedure's technical scope.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Minimum Procedure Structure
 \end_layout
 
@@ -1443,9 +2518,7 @@ Documentation Checkpoints.
  What the assigned technician shall document in the work order Notes and Chapter 4 checklist at each stage of procedure execution.
 \end_layout
 
-\begin_layout Standard
-
-\lang english
+\begin_layout Subsubsection*
 6.6 False Positive Disposition During Eradication
 \end_layout
 
@@ -1453,27 +2526,117 @@ Documentation Checkpoints.
 
 \lang english
 If a declared incident resolves as a false positive during eradication,
- the false positive disposition process in Policy 4.02 Section 6.1 governs indicator review.
+ the false positive disposition process in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.1 governs indicator review.
  The IC shall direct reversal of all eradication actions taken,
  unless the action constituted a Destructive Eradication action as defined in Section 6.2,
- in which case reversal is not possible and restoration shall proceed through the recovery process under Policy 4.05.
+ in which case reversal is not possible and restoration shall proceed through the recovery process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  The assigned technician shall reverse Non-Destructive Eradication and Credential and Access Remediation actions,
  including restoration of disabled accounts,
  reinstallation of removed software confirmed to be legitimate,
  and rollback of credential rotations where the original credentials were not compromised.
- The assigned technician shall create catch-up RFC documentation for any reversed Emergency Changes per Policy 3.09.
+ The assigned technician shall create catch-up RFC documentation for any reversed Emergency Changes per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  The IC shall document the false positive determination and all reversal actions in the work order Notes.
- Operational jurisdiction may return to Policy 3.06 (Operational Incident Management Policy) per the IC's direction.
+ Operational jurisdiction may return to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Operational Incident Management Policy) per the IC's direction.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
 For Destructive Eradication actions that have already been executed,
- the affected systems shall be restored through the recovery process under Policy 4.05.
+ the affected systems shall be restored through the recovery process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  The IC shall document the false positive determination,
  including the justification for the original eradication action,
- for inclusion in the postmortem under Policy 4.07.
+ for inclusion in the postmortem under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_body
