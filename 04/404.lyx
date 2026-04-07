@@ -190,11 +190,157 @@ Version:
  Purpose
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy governs the eradication of cybersecurity threats from the Elko County Information Operations environment following containment and establishes the eradication-complete determination that gates transition to recovery operations under Policy 4.05.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 2.
  Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all IT Department personnel participating in incident response operations during the eradication phase,
+ including the IT Director,
+ Assistant IT Director,
+ Network Administrator,
+ Systems Administrator,
+ and all technicians operating under Incident Commander authority.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+In Scope:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication strategy selection and execution following containment-complete determination.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Threat neutralization,
+ including removal of threat actors,
+ malicious artifacts,
+ compromised configurations,
+ persistence mechanisms,
+ and exploited vulnerabilities.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Pre-execution forensic confirmation for destructive or irreversible eradication actions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Emergency Change obligations arising from eradication configuration actions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication-complete determination and recovery handoff.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication procedure framework and governance.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication documentation requirements.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Out of Scope:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+IoC evaluation and incident declaration:
+ Policy 4.02.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Containment strategy selection and execution:
+ Policy 4.03.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Recovery operations and Operational Handback:
+ Policy 4.05.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Data and system classification for recovery:
+ Policy 4.05.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Stakeholder communication and external notification execution:
+ Policy 4.06.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Postmortem review and lessons learned:
+ Policy 4.07.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+IR roles and contact directory:
+ Policy 4.08.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+CI record governance:
+ Policy 3.08.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Change categorization and RFC governance:
+ Policy 3.09.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Security baseline definitions:
+ Policy 2.10.
 \end_layout
 
 \begin_layout Subsection*
@@ -204,11 +350,285 @@ Version:
  Roles and Responsibilities
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+IT Director:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall serve as Incident Commander for all cybersecurity incidents by default,
+ as established in Policy 4.01 (Incident Response Policy Overview) and governed by the delegation provisions in Policy 1.08 (Delegation of Authority and Decision Rights).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall approve the eradication strategy,
+ including selection of applicable eradication procedures and authorization of destructive eradication actions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall make the eradication-complete determination,
+ documenting the basis in the work order Notes and Chapter 4 checklist before any recovery activity under Policy 4.05 (Recovery Operations and Restoration Prioritization) begins.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall confirm that forensic preservation requirements have been satisfied before authorizing any destructive or irreversible eradication action.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall complete Configuration Control Authority (CCA) review for all eradication-phase Emergency Changes within the twenty-four (24) hour concurrent documentation window established by Policy 3.09 (Change Management Policy).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall authorize formal exceptions to the requirements of this policy in accordance with the exception management framework established in Policy 5.01 (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Assistant IT Director:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall serve as Incident Commander in the IT Director's absence or by IT Director designation,
+ per Policy 4.01 and Policy 1.08.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall serve as the primary operational coordinator for eradication activities under Incident Commander direction.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall own maintenance and review of eradication procedures maintained in the Knowledge Base per Policy 3.13 (Knowledge Management Policy) under standing authority.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Network Administrator:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall execute network-layer eradication actions as directed by the Incident Commander,
+ including removal of unauthorized firewall rules,
+ rogue DNS entries,
+ compromised routing configurations,
+ and other malicious network artifacts.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall flag affected CI records at the time of eradication action for subsequent update per Policy 3.08 (Service Configuration Management (CMDB) Policy).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall create catch-up RFC documentation within the twenty-four (24) hour window established by Policy 3.09.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Systems Administrator:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall execute server- and endpoint-layer eradication actions as directed by the Incident Commander,
+ including malware removal,
+ compromised account remediation,
+ persistence mechanism elimination,
+ and system rebuild when required.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall flag affected CI records at the time of eradication action for subsequent update per Policy 3.08.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall create catch-up RFC documentation within the twenty-four (24) hour window established by Policy 3.09.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Incident Commander (when not the IT Director):
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall exercise all IC authority incorporatively from Policy 4.01 and Policy 1.08.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall approve the eradication strategy and select the applicable eradication procedures.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall authorize destructive eradication actions after confirming the Forensic Preservation Gate defined in Section 6.3 has been satisfied.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall make the eradication-complete determination in accordance with Section 6.4 of this policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall initiate emergency procurement under County emergency procedures with after-the-fact ratification,
+ per Policy 1.08,
+ when eradication requires emergency tooling,
+ replacement hardware,
+ or vendor engagement.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+IT Department Personnel:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall execute eradication activities as directed by the Incident Commander.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall not initiate eradication actions independently or deviate from the selected eradication procedures without express IC authorization.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Shall document all eradication actions taken in the work order Notes as actions are completed.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 4.
  Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations Department personnel participating in incident response operations during the eradication phase.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Assessment:
+ Compliance with this policy shall be assessed through the ECIO internal audit program governed by Policy 5.02 (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process governed by Policy 5.07 (Annual Policy Review and Maturity Scoring).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Enforcement:
+ The following conditions constitute specific non-compliance with this policy:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Initiation of eradication activity before the Incident Commander has documented a containment-complete determination under Policy 4.03.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Execution of destructive or irreversible eradication actions without prior IC authorization or without documented confirmation that forensic preservation requirements have been satisfied.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Execution of eradication actions that deviate from the IC-selected eradication procedures without documented IC authorization.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Execution of eradication actions without an associated Redmine work order.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Failure to create catch-up RFC documentation within the twenty-four (24) hour window established by Policy 3.09.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Any eradication action that destroys,
+ overwrites,
+ or causes the disposition of audit logs maintained under Policy 2.11 (Audit Logging and Monitoring Policy) or forensic evidence without documented IC authorization and justification.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Failure to document an eradication-complete determination in the work order Notes before initiating recovery activity under Policy 4.05.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Non-compliance may result in corrective action in accordance with Policy 5.01.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Exceptions:
+ Exceptions to this policy require written approval from the IT Director in accordance with the exception management framework established in Policy 5.01.
+ No open-ended exceptions are permitted.
+ All approved exceptions shall be documented and time-bounded.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -218,11 +638,842 @@ Version:
  References
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+Cited References:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 1.04:
+ Policy and Documentation Formatting Standards
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 1.08:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 2.11:
+ Audit Logging and Monitoring Policy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 3.06:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 3.08:
+ Service Configuration Management (CMDB) Policy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 3.09:
+ Change Management Policy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 3.13:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 4.01:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 4.02:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 4.03:
+ Containment Strategy and Playbooks
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 4.05:
+ Recovery Operations and Restoration Prioritization
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 4.06:
+ Communication Protocols and Partner Integration
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 4.07:
+ Postmortem Review and Lessons Learned
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 5.01:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 5.02:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ECIO Policy 5.07:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NIST CSF 2.0:
+ RS.MI-02 (Incident Eradication)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NIST SP 800-61 Rev.
+ 3:
+ (Incident Response Recommendations and Considerations for Cyber Risk Management)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Framework Alignment:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+LRDA 20071728 (IT Security Audit Records)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-4 (Incident Handling)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-4 (Incident Handling)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+COBIT 2019:
+ DSS02 (Managed Service Requests and Incidents)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ITIL v4:
+ Incident Management Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy is written to serve two audiences simultaneously:
+ ECIO personnel and internal auditors who read it within the full context of the ECIO Policy Manual,
+ and external reviewers who may read it as a standalone document.
+ Where this policy references concepts,
+ roles,
+ or procedures whose authoritative definitions reside in other policies,
+ it states the operative substance in plain language sufficient for an external reader and cites the authoritative source.
+ Those plain-language statements are incorporative and do not constitute independent definitions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication is the phase of the cybersecurity incident response lifecycle in which the threat is neutralized.
+ Threat actors,
+ malicious artifacts,
+ compromised configurations,
+ persistence mechanisms,
+ and exploited vulnerabilities are identified and removed from the affected environment.
+ Eradication follows containment and precedes recovery.
+ It is governed by NIST CSF 2.0:
+ RS.MI-02 (Incident Eradication) and aligned with the guidance in NIST SP 800-61 Rev.
+ 3.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+6.1 Activation and Handoff State
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When Policy 4.04 activates,
+ the following have been completed by Policy 4.03 (Containment Strategy and Playbooks) and are not repeated or redefined here:
+ containment strategy selection and execution,
+ short-term and long-term containment posture establishment,
+ containment-complete determination by the Incident Commander (IC),
+ and all containment-phase documentation and change management obligations.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC is in command.
+ The Redmine work order and Chapter 4 checklist are active.
+ The following documentation package has been completed under Policy 4.03 Section 6.4 and is available in the work order Notes and Chapter 4 checklist:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The confirmed containment perimeter with all affected systems identified.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Systems isolated,
+ accounts disabled,
+ or segments under active monitoring posture.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Evidence artifacts preserved during containment,
+ including forensic copies,
+ log extracts,
+ and network captures.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Outstanding catch-up RFC items with assigned owners and due dates.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The CJIS IR-6 notification clock established in Policy 4.02 (Identification and Reporting Procedures) Section 6.6 continues running during eradication.
+ Eradication activities do not pause or satisfy external notification obligations.
+ External notification execution is governed by Policy 4.06 (Communication Protocols and Partner Integration).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication shall not be initiated until the IC has documented a containment-complete determination under Policy 4.03 Section 6.4 and long-term containment is stable.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+6.2 Eradication Framework
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication Authority
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC holds authority over all eradication activity.
+ No eradication action shall be initiated without IC authorization.
+ The IC shall select the applicable eradication procedures,
+ assign technical leads,
+ and direct the sequence and timing of eradication actions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication Scope Determination
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Before eradication execution begins,
+ the IC shall confirm the scope of eradication based on the containment perimeter and the incident classification established in Policy 4.02.
+ The IC shall document the eradication scope in the work order Notes before execution begins.
+ The eradication scope shall identify all systems within the containment perimeter requiring remediation,
+ the specific threat artifacts and persistence mechanisms to be removed from each system,
+ the applicable eradication procedures to be invoked,
+ and any systems where the eradication approach requires a destructive action.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Categories of Eradication Actions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication actions fall into three (3) categories,
+ distinguished by reversibility and forensic impact.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Non-Destructive Eradication.
+ Actions that remove threat artifacts without altering the underlying system's ability to be forensically examined after the fact.
+ Examples include deleting malware files,
+ removing unauthorized scheduled tasks or services,
+ closing unauthorized network connections,
+ and revoking compromised authentication tokens.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Credential and Access Remediation.
+ Actions that revoke,
+ rotate,
+ or replace compromised authentication credentials and access authorizations.
+ Examples include password resets,
+ certificate revocation,
+ API key rotation,
+ and disabling compromised accounts.
+ These actions are operationally reversible —
+ a new credential can be issued —
+ but the compromised credential cannot be un-compromised.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Destructive Eradication.
+ Actions that alter or destroy system state in a manner that cannot be reversed and that may eliminate forensic evidence if not preceded by preservation.
+ Examples include reimaging a compromised endpoint,
+ rebuilding a server from clean media,
+ wiping and redeploying a virtual machine,
+ and overwriting compromised storage volumes.
+ Destructive Eradication actions require the Forensic Preservation Gate defined in Section 6.3 to be satisfied before execution.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication and Recovery Boundary
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication owns everything required to neutralize the threat and confirm clean state.
+ Recovery owns everything required to restore operational capability.
+ A system rebuild is eradication when it is performed because the system cannot be confirmed clean.
+ A system rebuild is recovery when the system is confirmed clean and is being rebuilt to restore service.
+ The eradication-complete determination in Section 6.4 marks this boundary.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+CJIS Considerations During Eradication
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For incidents where Criminal Justice Information (CJI) involvement is confirmed or has not been ruled out at triage,
+ the IC shall ensure the following.
+ No eradication action shall alter,
+ overwrite,
+ or destroy CJI or CJI audit records without documented IC authorization and written justification.
+ The assigned technician shall complete forensic copies of CJI-bearing systems and the IC shall verify those copies before any Destructive Eradication action proceeds.
+ The assigned technician shall document all eradication actions on CJI-bearing systems with sufficient detail to support post-incident CJIS compliance review.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+6.3 Change Management Integration
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Emergency Change Framework
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All eradication configuration actions constitute Emergency Changes under Policy 3.09.
+ The concurrent documentation clock established in Policy 4.03 Section 6.3 applies to eradication actions without modification.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The assigned technician (Network Administrator or Systems Administrator,
+ depending on the affected system) shall create a standalone RFC record in Redmine within twenty-four (24) hours of implementation,
+ or by noon on the next business day,
+ whichever is later.
+ The IT Director shall complete CCA review within the same window.
+ The assigned technician shall flag affected CI records at the time of action per Policy 3.08;
+ the CI record update obligation is deferred but not waived and runs on the same concurrent twenty-four (24) hour clock per Policy 3.09.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director or designee shall complete Post-Implementation Review (PIR) documentation within five (5) business days of implementation for all Emergency Changes executed under this policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Documentation obligations do not pause eradication execution.
+ They run concurrently with,
+ or immediately following,
+ eradication actions.
+ These obligations are not prerequisites to taking technical action.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Forensic Preservation Gate
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Before any Destructive Eradication action is executed,
+ the IC shall confirm and document in the work order Notes that all forensic preservation requirements for the affected system have been satisfied,
+ including any requirements identified during containment under Policy 4.03 Section 6.2;
+ that CJI forensic preservation obligations,
+ where applicable,
+ have been completed;
+ and that the evidence record is sufficient to support postmortem review under Policy 4.07 (Postmortem Review and Lessons Learned) and any external investigation or compliance review.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Forensic Preservation Gate is a pre-execution confirmation,
+ not a new process.
+ It confirms that preservation actions already completed during containment remain intact and that no additional preservation is required before the system's state is irreversibly altered.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Coordinated Batch Eradication
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When an eradication action requires simultaneous or coordinated changes across multiple systems —
+ such as domain-wide credential rotation or synchronized malware removal —
+ the IC may authorize a single umbrella RFC documenting the coordinated action.
+ The assigned technician shall document individual systems affected by the coordinated action as line items within the umbrella RFC rather than as separate RFC records.
+ The assigned technician shall apply a CI record flag for each affected system at the time of action per Policy 3.08.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Third-Party Eradication Actions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When eradication requires action by an external vendor,
+ cloud service provider,
+ or partner organization —
+ such as revoking a certificate issued by a third-party authority,
+ requesting an ISP-level block,
+ or directing a cloud provider to terminate a compromised session —
+ the assigned technician shall document in the work order Notes the action requested,
+ the party to whom the request was directed,
+ the time of request,
+ the response received,
+ and the time of confirmation.
+ The catch-up RFC obligation does not apply to systems outside ECIO operational control.
+ The documentation obligation survives.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Emergency Procurement Authority
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC is authorized to initiate emergency procurement under County emergency procedures with after-the-fact ratification,
+ per Policy 1.08.
+ This authority covers emergency tooling,
+ replacement hardware,
+ external incident response vendor engagement,
+ and any other procurement required to sustain or complete eradication.
+ Administrative funding authority shall not be exercised to delay,
+ suspend,
+ or condition eradication actions.
+ Fiscal Affairs and Purchasing shall not delay eradication for procurement review.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+County Manager Notification
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+If an eradication action meets any of the following triggers,
+ the IC shall notify the County Manager no later than four (4) hours after the action begins,
+ per Policy 3.09 Section 6.6:
+ systems whose compromise could affect elections;
+ planned downtime or degraded service visible to the public or other County departments for more than one (1) business day;
+ decommission or replacement of operationally critical infrastructure;
+ or any action the IC determines carries political or notable operational implications.
+ The IC shall identify applicable triggers at the time of action and ensure notification is initiated within the four (4) hour window.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+6.4 Eradication-Complete Determination
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Determination Standard
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication is complete when the threat has been fully neutralized —
+ all identified threat actors,
+ malicious artifacts,
+ compromised configurations,
+ persistence mechanisms,
+ and exploited vulnerabilities have been removed or remediated across all systems within the containment perimeter.
+ No phase transition is assumed.
+ The IC shall make an explicit eradication-complete determination,
+ documented in the work order Notes and Chapter 4 checklist,
+ before any recovery activity under Policy 4.05 begins.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Mandatory Minimum Verification
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following verification conditions are required for every eradication-complete determination.
+ These conditions are necessary but explicitly not sufficient.
+ The IC shall confirm that all scenario-specific verification criteria identified in the applicable eradication procedures have also been satisfied and shall document the basis for that confirmation in the work order Notes.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The assigned technician shall verify all systems within the containment perimeter as clean using an authorized detection or validation method defined in the applicable eradication procedure.
+ Where automated scanning is supported,
+ a clean scan result from the Department's authorized scanning tools is required.
+ Where automated scanning is not supported for a given system type,
+ the applicable eradication procedure shall define the alternative validation method.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The assigned technician shall rotate,
+ revoke,
+ or replace all identified compromised credentials.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The assigned technician shall remove all identified persistence mechanisms,
+ including unauthorized services,
+ scheduled tasks,
+ registry modifications,
+ startup items,
+ and unauthorized user accounts.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The assigned technician shall patch all identified exploited vulnerabilities or implement documented compensating controls approved by the IC.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The assigned technician shall update CI records for all eradication-driven configuration changes per Policy 3.08,
+ or confirm that pending CI updates are within the applicable documentation window with assigned owners..
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The assigned technician shall complete all catch-up RFC documentation for eradication-phase Emergency Changes,
+ or confirm that pending RFC items are within the twenty-four (24) hour documentation window with assigned owners.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall document the eradication-complete determination with explicit reference to each mandatory verification condition and shall identify the eradication procedures that were invoked along with confirmation that their scenario-specific verification criteria were satisfied.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Recovery Handoff
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Upon eradication-complete determination,
+ the incident transitions to the recovery phase governed by Policy 4.05.
+ The eradication-complete determination is the primary criterion for initiating recovery.
+ The IC remains in command through the recovery phase until Operational Handback is declared under Policy 4.05.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+6.5 Eradication Procedure Governance
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Procedure Framework
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Policy 4.04 mandates the existence of a governed library of eradication procedures.
+ For purposes of this policy,
+ the "scenario guides" referenced in the policy title and in the Policy 4.01 Chapter 4 roadmap are the governed eradication procedures maintained in Redmine.
+ Eradication procedures are maintained as Knowledge Base artifacts in the System of Engagement (Redmine) per Policy 3.13 and formatted per Policy 1.04 (Policy and Documentation Formatting Standards).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The procedure library shall be sufficient to address eradication requirements across all six (6) Layer 1 Indicator of Compromise (IoC) categories (A through F) defined in Policy 4.02.
+ The IT Director shall determine what procedures are required and shall authorize the creation of new procedures when operational needs or post-incident findings identify coverage gaps.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The containment playbooks maintained under Policy 4.03 shall reference the applicable eradication procedures in their Eradication Handoff Criteria element.
+ When a containment playbook identifies eradication procedures for a given incident type,
+ the IC shall invoke those procedures at the time of eradication unless the IC determines and documents that a different procedure set is required based on conditions discovered during containment.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Procedure Ownership and Review
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director owns eradication procedure maintenance under standing authority.
+ The Assistant IT Director shall review each procedure no less than annually,
+ upon closure of any incident that invoked it,
+ and upon any change to the ECIO environment classified as a Significant or Emergency Change under Policy 3.09 that is relevant to that procedure's technical scope.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Minimum Procedure Structure
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Each eradication procedure shall contain,
+ at minimum,
+ the following seven (7) elements.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Scenario Description.
+ A characterization of the threat type and the circumstances under which this procedure is invoked.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Applicability Criteria.
+ The conditions that determine when this procedure applies,
+ including Layer 1 IoC category mapping and any environmental or system-specific preconditions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Required Tools and Access.
+ The tools,
+ elevated permissions,
+ and system access required to execute the procedure.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Eradication Steps.
+ Step-by-step technical instructions for threat removal,
+ organized in executable sequence.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+CJIS Considerations.
+ Specific forensic preservation and documentation obligations applicable when CJI involvement is confirmed or cannot be ruled out.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Verification Criteria.
+ Scenario-specific criteria that the assigned technician shall satisfy before the IC includes this procedure's scope in the eradication-complete determination.
+ These criteria supplement the mandatory minimum verification conditions established in Section 6.4 of this policy.
+ The Verification Criteria element shall define the authorized detection or validation method for systems within this procedure's scope,
+ including the alternative validation method for system types where automated scanning is not supported.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Documentation Checkpoints.
+ What the assigned technician shall document in the work order Notes and Chapter 4 checklist at each stage of procedure execution.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+6.6 False Positive Disposition During Eradication
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+If a declared incident resolves as a false positive during eradication,
+ the false positive disposition process in Policy 4.02 Section 6.1 governs indicator review.
+ The IC shall direct reversal of all eradication actions taken,
+ unless the action constituted a Destructive Eradication action as defined in Section 6.2,
+ in which case reversal is not possible and restoration shall proceed through the recovery process under Policy 4.05.
+ The assigned technician shall reverse Non-Destructive Eradication and Credential and Access Remediation actions,
+ including restoration of disabled accounts,
+ reinstallation of removed software confirmed to be legitimate,
+ and rollback of credential rotations where the original credentials were not compromised.
+ The assigned technician shall create catch-up RFC documentation for any reversed Emergency Changes per Policy 3.09.
+ The IC shall document the false positive determination and all reversal actions in the work order Notes.
+ Operational jurisdiction may return to Policy 3.06 (Operational Incident Management Policy) per the IC's direction.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For Destructive Eradication actions that have already been executed,
+ the affected systems shall be restored through the recovery process under Policy 4.05.
+ The IC shall document the false positive determination,
+ including the justification for the original eradication action,
+ for inclusion in the postmortem under Policy 4.07.
 \end_layout
 
 \end_body
