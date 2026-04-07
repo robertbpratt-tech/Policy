@@ -256,7 +256,7 @@ Preparation and submission of the Annual Policy Review Report.
 \begin_layout Itemize
 
 \lang english
-Executive reporting to the County Manager and the Board of County Commissioners.
+Executive reporting to the County Manager.
 \end_layout
 
 \end_deeper
@@ -483,29 +483,6 @@ Shall provide written acknowledgment of receipt and review within thirty (30) ca
 Shall direct the IT Director to address specific concerns,
  conduct additional analysis,
  or revise maturity tier assignments when the County Manager determines that documented justification warrants such direction.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall determine whether Board of County Commissioners presentation is warranted,
- applying the governance triggers defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (IT Governance and Oversight Structure),
- and shall present or direct presentation when required.
 \end_layout
 
 \begin_layout Itemize
@@ -868,24 +845,6 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- IT Governance and Oversight Structure
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "pol:1.08"
 plural "false"
 caps "false"
@@ -940,6 +899,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Stakeholder Engagement and Communications Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:3.13"
 plural "false"
 caps "false"
@@ -968,6 +945,24 @@ nolink "false"
 
 :
  Service Improvement and Continual Improvement Plan
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ (Postmortem Review and Lessons Learned)
 \end_layout
 
 \begin_layout Itemize
@@ -1814,7 +1809,22 @@ Clarification
 
 \lang english
 As part of the annual policy review,
- the IT Director shall evaluate whether the internal audit program defined in Policy 5.02 is being executed as designed.
+ the IT Director shall evaluate whether the internal audit program defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ is being executed as designed.
 \end_layout
 
 \begin_layout Standard
@@ -1824,13 +1834,28 @@ The IT Director shall assess,
  at minimum:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Whether the Annual Audit Plan was approved and executed within the cadences and scope requirements defined in Policy 5.02 Section 6.1.
+Whether the Annual Audit Plan was approved and executed within the cadences and scope requirements defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.1.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Whether every policy in the ECIO Policy Manual received at least one (1) assessment —
@@ -1838,39 +1863,129 @@ Whether every policy in the ECIO Policy Manual received at least one (1) assessm
  self-assessment,
  or control test —
  during the fiscal year,
- as required by Policy 5.02.
+ as required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Whether policies governing controls subject to Criminal Justice Information Services (CJIS) Security Policy obligations received assessment through internal audit or control testing —
  not self-assessment alone —
- as required by Policy 5.02.
+ as required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Whether quarterly self-assessments were conducted on the cadence defined in Policy 5.02 Section 6.2.
+Whether quarterly self-assessments were conducted on the cadence defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.2.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Whether the control testing methodology defined in Policy 5.02 Section 6.3 was applied consistently and produced documented results.
+Whether the control testing methodology defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3 was applied consistently and produced documented results.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Whether audit findings were classified and routed in accordance with Policy 5.02 Section 6.5.
+Whether audit findings were classified and routed in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Whether the objectivity safeguards defined in Policy 5.02 Section 6.4 were maintained.
+Whether the objectivity safeguards defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4 were maintained.
 \end_layout
 
 \begin_layout Standard
@@ -1880,12 +1995,45 @@ The IT Director shall document the results of this evaluation in the Annual Poli
  The IT Director shall route deficiencies in the audit program in accordance with Section 6.7.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-Rationale:
- Policy 5.02 cannot serve as its own assessment mechanism.
- This section provides the independent evaluation of the audit program that Policy 5.02 Section 4 references through this policy.
+Rationale
+\series default
+:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ cannot serve as its own assessment mechanism.
+ This section provides the independent evaluation of the audit program that 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 4 references through this policy.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1898,7 +2046,22 @@ Rationale:
 
 \lang english
 The IT Director shall prepare the Annual Policy Review Report as a single consolidated document following the conclusion of the annual review process.
- The IT Director shall document the report in the System of Engagement and classify it in accordance with Policy 1.11.
+ The IT Director shall document the report in the System of Engagement and classify it in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -1908,14 +2071,14 @@ The Annual Policy Review Report shall contain,
  at minimum:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 The maturity tier assigned to each policy,
  with supporting rationale.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 Year-over-year tier comparison identifying policies that improved,
@@ -1923,33 +2086,48 @@ Year-over-year tier comparison identifying policies that improved,
  or regressed.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 A summary of the appendix currency and accuracy review,
  identifying any appendices requiring update.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 A summary of the audit program effectiveness review conducted under Section 6.4.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 The total number and classification of deficiencies identified during the review period,
- with current remediation status under Policy 5.03.
+ with current remediation status under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 A summary of open Corrective Action Plans and their impact on affected policy maturity assessments.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
 A summary of regulatory,
@@ -1957,84 +2135,105 @@ A summary of regulatory,
  or operational changes that affected or should affect policy content during the next review period.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Recommendations for policy revisions to be initiated under Policy 1.05.
+Recommendations for policy revisions to be initiated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Recommendations for the next annual audit cycle under Policy 5.02.
+Recommendations for the next annual audit cycle under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Improvement candidates to be routed to the Service Improvement Register under Policy 3.16.
+Improvement candidates to be routed to the Service Improvement Register under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.6 Executive Review and Board Reporting
+6.6 Executive Review
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The IT Director shall submit the Annual Policy Review Report to the County Manager no later than the deadline established in Section 6.1.
+The IT Director shall submit the Annual Policy Review Report to the County Manager through the strategic reporting cadence established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Stakeholder Engagement and Communications Policy).
+ The IT Director shall present the report during the Monthly Briefing following its completion and shall retain the report as an attachment to the corresponding Monthly Executive Report.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The County Manager shall review the report and provide written acknowledgment of receipt and review within thirty (30) calendar days of submission.
+The County Manager shall provide written acknowledgment of receipt and review within thirty (30) calendar days of submission.
  The County Manager's review provides independent oversight of the annual review process and of the IT Director's execution of this policy.
  The County Manager may direct the IT Director to address specific concerns,
  conduct additional analysis,
  or revise maturity tier assignments with documented justification.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The County Manager shall determine whether presentation of the Annual Policy Review Report,
- or a summary prepared for governance purposes,
- to the Board of County Commissioners is warranted.
- The following conditions shall inform that determination:
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Two (2) or more policies regressed in maturity tier within a single review cycle.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Any maturity regression affecting a policy governing a control that implements a CJIS Security Policy obligation.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Any deficiency pattern requiring budgetary action or resource allocation beyond the IT Director's delegated spending authority under Policy 1.08.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Any finding that implicates delegated authority structures under Policy 1.06 or Policy 1.08.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-When the County Manager determines that Board presentation is warranted,
- the County Manager shall present or direct presentation.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2052,34 +2251,109 @@ The IT Director shall route all actionable findings from the annual policy revie
  or improvement registers.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-The IT Director shall route deficiencies in policy implementation or control effectiveness to Policy 5.03 for Corrective Action Plan development.
+The IT Director shall route deficiencies in policy implementation or control effectiveness to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for Corrective Action Plan development.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-The IT Director shall initiate policy revisions identified through the review through the change control process defined in Policy 1.05.
+The IT Director shall initiate policy revisions identified through the review through the change control process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-The IT Director shall route improvement opportunities that do not constitute deficiencies to the Service Improvement Register under Policy 3.16.
+The IT Director shall route improvement opportunities that do not constitute deficiencies to the Service Improvement Register under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-The IT Director shall ensure that risk posture changes identified through the review are reflected in the Risk Register maintained under Policy 1.09.
+The IT Director shall ensure that risk posture changes identified through the review are reflected in the Risk Register maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-The IT Director shall route deficiencies in the audit program identified under Section 6.4 to Policy 5.03 for Corrective Action Plan development and shall communicate those deficiencies to the County Manager in the Annual Policy Review Report.
+The IT Director shall route deficiencies in the audit program identified under Section 6.4 to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for Corrective Action Plan development and shall communicate those deficiencies to the County Manager in the Annual Policy Review Report.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2097,7 +2371,22 @@ The Assistant IT Director shall retain all annual policy review records —
  working papers,
  the Annual Policy Review Report,
  and County Manager acknowledgment records —
- in the System of Engagement in accordance with Policy 1.11 and the applicable Nevada Local Government Records Retention Schedule.
+ in the System of Engagement in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the applicable Nevada Local Government Records Retention Schedule.
  Where multiple retention requirements apply,
  the longest applicable period shall govern.
 \end_layout
