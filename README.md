@@ -51,7 +51,7 @@
 | 4.02 | Identification and Reporting Procedures | o |
 | 4.03 | Containment Strategy and Playbooks | o |
 | 4.04 | Eradication Procedures and Scenario Guides | o |
-| 4.05 | Recovery Operations and Restoration Prioritization | - |
+| 4.05 | Recovery Operations and Restoration Prioritization | o |
 | 4.06 | Communication Protocols and Partner Integration | - |
 | 4.07 | Postmortem Review and Lessons Learned | - |
 | 4.08 | Incident Response Roles and Contact Directory | - |
@@ -65,5 +65,4 @@
 | 6.01 | Glossary and Definitions | - |
 | 6.02 | Policy Matrix | - |
 | 6.03 | Workforce Roles STAK Matrix | o |
-| 6.04 | Work Order Structure and Standards | o |
-| 6.05 | Revision History and Version Control | - |
+| 6.04 | Revision History and Version Control | - |
