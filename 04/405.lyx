@@ -54,7 +54,6 @@ End
 
 # 4. STANDARDIZE "Subsection*" as "Policy Header"
 # Used for "1. Purpose", "2. Scope", etc.
-# Unnumbered in TOC, but visually bold.
 Style Subsection*
     Category "Policy Structure"
     LabelType Static
@@ -190,6 +189,28 @@ Version:
  Purpose
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy governs the recovery of IT systems,
+ services,
+ and infrastructure following cybersecurity incident eradication,
+ the Operational Handback mechanism that transfers recovery authority from Chapter 4 to \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Service Continuity and Contingency Planning Policy),
+ and the data and system classification framework that drives recovery prioritization during the security response phase.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -197,6 +218,269 @@ Version:
  Scope
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel participating in incident response operations during the recovery phase and to all personnel responsible for maintaining the data and system classification framework for recovery.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Recovery operations and system restoration following eradication-complete determination.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Security-specific recovery sequencing framework and Incident Commander override authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+System verification criteria and production readiness confirmation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Emergency Change obligations arising from recovery configuration actions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Operational Handback initiation mechanics and documentation requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data and system classification for recovery prioritization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Recovery documentation requirements.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+IoC evaluation and incident declaration:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Containment strategy selection and execution:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Eradication procedures and eradication-complete determination:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Stakeholder communication and external notification execution:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Postmortem review and lessons learned:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+IR roles and contact directory:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CI record governance:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Change categorization and RFC governance:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Security baseline definitions:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Business Impact Analysis,
+ RTO/RPO definitions,
+ continuity plan maintenance,
+ and post-Handback operational recovery sequencing:
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -204,11 +488,619 @@ Version:
  Roles and Responsibilities
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as Incident Commander for all cybersecurity incidents by default,
+ as established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Incident Response Policy Overview) and governed by the delegation provisions in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Delegation of Authority and Decision Rights).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve the recovery sequencing plan,
+ including any deviation from the standard BIA-driven recovery priority order established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall make the Operational Handback determination,
+ documenting the basis in the work order Notes and Chapter 4 checklist before recovery authority transfers to \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall confirm that all system verification requirements have been satisfied before authorizing a system's return to production status.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall complete Configuration Control Authority (CCA) review for all recovery-phase Emergency Changes within the twenty-four (24) hour concurrent documentation window established by \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Change Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize formal exceptions to the requirements of this policy in accordance with the exception management framework established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve all classification assignments and review outcomes under Section 6.2.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as Incident Commander in the IT Director's absence or by IT Director designation,
+ per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default and \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the primary operational coordinator for recovery activities under Incident Commander direction.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall own maintenance and review of the Recovery Verification Checklist maintained in the Knowledge Base per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Knowledge Management Policy) under standing authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall own maintenance and review of the recovery classification register,
+ ensuring alignment with the Business Impact Analysis maintained under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that CI records and CMDB entries under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Service Configuration Management (CMDB) Policy) reflect post-recovery configuration states.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute network-layer recovery actions as directed by the Incident Commander,
+ including restoration of network configurations,
+ firewall rules,
+ and network services.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall flag affected CI records at the time of recovery action for subsequent update per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall create catch-up RFC documentation within the twenty-four (24) hour window established by \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute server- and endpoint-layer recovery actions as directed by the Incident Commander,
+ including system rebuilds,
+ service restoration,
+ data restoration from backup,
+ and application redeployment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall flag affected CI records at the time of recovery action for subsequent update per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall create catch-up RFC documentation within the twenty-four (24) hour window established by \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall execute backup restoration operations in accordance with the procedures maintained in the Knowledge Base under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default,
+ consistent with the backup governance requirements established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.6.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident Commander
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall exercise all IC authority incorporatively from \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default and \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default when designated by the IT Director or serving in the IT Director's absence.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve the recovery sequencing plan and authorize deviations from the standard BIA-driven recovery priority order.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize system return to production following verification confirmation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall make the Operational Handback determination.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall initiate emergency procurement under County emergency procedures with after-the-fact ratification,
+ per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default,
+ when recovery requires emergency hardware,
+ replacement equipment,
+ or vendor engagement.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute recovery activities as directed by the Incident Commander.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not initiate recovery actions independently or deviate from the IC-approved recovery sequencing plan without express IC authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document all recovery actions taken in the work order Notes as actions are completed.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
 4.
  Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations Department personnel participating in incident response operations during the recovery phase.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with this policy shall be assessed through the ECIO internal audit program governed by \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process governed by \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Annual Policy Review and Maturity Scoring).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The following conditions constitute specific non-compliance with this policy:
+ initiation of recovery activity before the Incident Commander has documented an eradication-complete determination under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default;
+ return of a system to production status without documented completion of all applicable verification criteria;
+ execution of recovery configuration actions without IC authorization or without an associated Redmine work order;
+ failure to create catch-up RFC documentation within the twenty-four (24) hour window established by \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default;
+ declaration of Operational Handback without documented completion of all Handback preconditions established in Section 6.6;
+ failure to complete Handback close-out documentation within the twenty-four (24) hour window established in Section 6.6;
+ and failure to maintain the classification register review cadence established in Section 6.2.
+ Non-compliance may result in corrective action in accordance with \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy require written approval from the IT Director in accordance with the exception management framework established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+ No open-ended exceptions are permitted.
+ All approved exceptions shall be documented and time-bounded.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -218,12 +1110,1942 @@ Version:
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy and Documentation Formatting Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Vulnerability and Patch Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Secure Configuration Baselines and Hardening Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Audit Logging and Monitoring Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB) Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Continuity and Contingency Planning Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Containment Strategy and Playbooks
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Eradication Procedures and Scenario Guides
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols and Partner Integration
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Postmortem Review and Lessons Learned
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Roles and Contact Directory
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-01 (Recovery Plan Execution)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-03 (Backup and Restoration Asset Integrity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-05 (Restoration Verification)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-10 (System Recovery and Reconstitution)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-4 (Incident Handling)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-61 Rev.
+ 3:
+ Incident Response Recommendations and Considerations for Cyber Risk Management
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.CO-03 (Recovery Communications)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-02 (Recovery Actions Selection and Execution)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-04 (Post-Incident Operational Norms)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-06 (Recovery Closure and Documentation)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-2 (Contingency Plan)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-9 (System Backup)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-8 (Incident Response Plan)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS04 (Manage Continuity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ IT Service Continuity Management Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
 \end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy is written to serve two audiences simultaneously:
+ ECIO personnel and internal auditors who read it within the full context of the ECIO Policy Manual,
+ and external reviewers who may read it as a standalone document.
+ Where this policy references concepts,
+ roles,
+ or procedures whose authoritative definitions reside in other policies,
+ it states the operative substance in plain language sufficient for an external reader and cites the authoritative source.
+ Those plain-language statements are incorporative and do not constitute independent definitions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Recovery is the phase of the cybersecurity incident response lifecycle in which systems,
+ services,
+ and infrastructure are restored to operational status following threat neutralization.
+ Recovery follows eradication and precedes the postmortem review.
+ It is governed by NIST CSF 2.0:
+ RC.RP-01 (Recovery Plan Execution) and aligned with the guidance in NIST SP 800-61 Rev.
+ 3.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy governs two distinct functions under a single policy number.
+ Sections 6.1 through 6.5 and Section 6.7 govern the operational recovery process —
+ the phase-specific activities that occur during an active cybersecurity incident.
+ Section 6.6 governs the data and system classification framework for recovery —
+ support infrastructure that is maintained during the Preparation phase and consumed during the Recovery phase.
+ The 4.01 Chapter 4 roadmap describes both functions and their lifecycle phase alignment.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Activation and Handoff State
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default activates,
+ the following have been completed by \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Eradication Procedures and Scenario Guides) and are not repeated or redefined here:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Eradication strategy selection and execution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Forensic Preservation Gate confirmation for all Destructive Eradication actions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All mandatory and scenario-specific eradication verification conditions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Eradication-complete determination by the Incident Commander (IC).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All eradication-phase documentation and change management obligations.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC is in command.
+ The Redmine work order and Chapter 4 checklist are active.
+ The following documentation package has been completed under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.4 and is available in the work order Notes and Chapter 4 checklist:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Eradication-complete determination with explicit reference to each mandatory verification condition.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Identification of eradication procedures invoked and confirmation that their scenario-specific verification criteria were satisfied.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All systems within the containment perimeter verified as clean.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All identified compromised credentials rotated,
+ revoked,
+ or replaced.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All identified persistence mechanisms removed.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All identified exploited vulnerabilities patched or subject to documented compensating controls approved by the IC.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CI record updates completed or within the applicable documentation window with assigned owners.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Catch-up RFC documentation completed or within the twenty-four (24) hour documentation window with assigned owners.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The CJIS IR-6 notification clock established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Identification and Reporting Procedures) Section 6.6 continues running during recovery.
+ Recovery activities do not pause or satisfy external notification obligations.
+ External notification execution is governed by \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Communication Protocols and Partner Integration).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall not initiate recovery activity until the IC has documented an eradication-complete determination under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.4.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Data and System Classification for Recovery
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This section establishes the classification framework that drives recovery prioritization during a cybersecurity incident.
+ This section is support infrastructure:
+ the classifications are maintained during the Preparation phase so they are current and defensible at the time of an actual incident.
+ References throughout this manual to data and system classification “under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default” refer to this section.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Service Continuity and Contingency Planning Policy) Section 6.4 establishes the authoritative asset criticality classification taxonomy used across the ECIO for continuity and recovery planning.
+ That taxonomy defines four classification classes:
+ Tier 1 (Mission Critical),
+ Tier 2 (Operationally Important),
+ Tier 3 (Administrative / Deferrable),
+ and Security Infrastructure.
+ The Business Impact Analysis (BIA) maintained under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.2 produces the classification assignments,
+ Recovery Time Objectives (RTOs),
+ Recovery Point Objectives (RPOs),
+ and recovery sequence priority order for each in-scope system.
+ The \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default BIA is the single authoritative source of truth for classification assignments.
+ This policy does not define a separate tier system and does not independently assign systems to tiers.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy adopts the \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default classification taxonomy and BIA-driven classification assignments as the foundation for cybersecurity recovery prioritization.
+ The recovery classification register maintained under this section is a controlled derivative view of the \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default BIA.
+ It does not carry independent approval authority over tier assignments.
+ When a discrepancy exists between the recovery classification register and the BIA,
+ the BIA governs.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The recovery classification register supplements the BIA by documenting,
+ for each classified system:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The system's \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default tier assignment,
+ mirrored from the BIA.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Whether the system processes,
+ stores,
+ or transmits Criminal Justice Information (CJI),
+ as determined by the CJI data mapping maintained under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Data Governance and Classification Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The system's security dependencies —
+ other systems whose security posture the IC shall confirm before this system can safely return to production (for example,
+ a domain controller that the IC shall verify clean before authorizing restoration of workstations that authenticate against it).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall maintain the recovery classification register and shall review it no less than annually,
+ concurrent with the BIA review cadence established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.2,
+ and following any Significant or Emergency Change as defined in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default that materially alters the service catalog or infrastructure.
+ The IT Director shall approve each updated version before it takes effect.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Recovery Sequencing and IC Override Authority
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall ensure recovery sequencing during the security response phase follows the BIA-driven recovery sequence priority order established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default,
+ subject to the IC's security-specific override authority defined in this section.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For the benefit of external readers:
+ the BIA recovery sequence priority order determines which systems are restored first based on their criticality to County operations.
+ Tier 1 (Mission Critical) systems recover first,
+ followed by Tier 2 (Operationally Important),
+ then Tier 3 (Administrative / Deferrable).
+ Security Infrastructure —
+ logging,
+ monitoring,
+ and vulnerability management systems —
+ recovers alongside Tier 1 under security-event conditions.
+ Full classification definitions are established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.4.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.4 three-state rule for Security Infrastructure sequencing applies to all Chapter 4 recovery operations.
+ Under Chapter 4 authority,
+ every incident is a known or suspected security event by definition.
+ Security Infrastructure shall therefore recover concurrently with Tier 1 systems.
+ The IC shall confirm log visibility —
+ that audit logging and monitoring systems are operational and producing current data —
+ before authorizing broader restoration of Tier 2 and Tier 3 systems.
+ This constraint ensures that systems are not returned to the environment before the Department has the detection capability to identify any residual threat activity.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Before recovery execution begins,
+ the IC shall establish a recovery sequencing plan documented in the work order Notes.
+ The IC shall identify all systems requiring recovery,
+ their tier assignments,
+ and the planned restoration order in the sequencing plan.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC may override the standard BIA-driven recovery sequence when security considerations warrant a deviation.
+ Override authority exists because the BIA recovery order is designed for operational continuity —
+ it does not account for incident-specific security constraints that arise during a cybersecurity response.
+ Two common scenarios illustrate when override is appropriate:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A Tier 1 system was the point of compromise.
+ Restoring it first,
+ as the BIA sequence would require,
+ risks reintroducing the threat vector before the environment is confirmed clean.
+ The IC may defer its recovery until verification is complete on supporting systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A lower-tier system provides log aggregation or monitoring capability not classified as Security Infrastructure.
+ The IC may elevate its recovery priority to restore detection visibility before higher-tier systems are returned to the environment.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When the IC exercises override authority,
+ the IC shall document the following in the work order Notes before execution begins:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The specific deviation from the BIA recovery sequence.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The security justification for the deviation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The expected impact on RTOs for affected systems.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Override authority is a security-phase authority exercised during an active incident.
+ It does not modify the BIA or the \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default recovery sequence priority order.
+ Upon Operational Handback,
+ the \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default BIA-driven order governs any remaining restoration activity.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 System Verification and Production Readiness
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall not authorize any system's return to production status following a cybersecurity incident without documented completion of all applicable verification criteria.
+ System verification confirms that the system is not only operationally functional but is in a security posture suitable for production operation.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Recovery Verification Checklist shall be maintained as a governed Knowledge Base artifact in the System of Engagement (Redmine) per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default and formatted per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+ The Assistant IT Director shall own checklist maintenance under standing authority.
+ The Assistant IT Director shall review the checklist no less than annually,
+ upon closure of any incident that invoked it,
+ and upon any change to the ECIO environment classified as a Significant or Emergency Change under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default that is relevant to the checklist's technical scope.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Recovery Verification Checklist shall address,
+ at minimum,
+ the following verification domains.
+ The assigned technician shall perform each verification action and shall document the results in the work order Notes.
+ The IC shall review the documented results before authorizing the system's return to production.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Eradication confirmation
+\series default
+:
+ The assigned technician shall confirm that the eradication-complete determination under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default covers the system and that the system was verified clean through the applicable eradication verification method.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security baseline verification
+\series default
+:
+ The assigned technician shall verify the system's configuration against the applicable security baseline maintained under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Secure Configuration Baselines and Hardening Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Clean media build requirement
+\series default
+:
+ The assigned technician shall build systems rebuilt during eradication or recovery from clean,
+ baselined media in accordance with \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Audit log integrity
+\series default
+:
+ The assigned technician shall confirm that audit logging is active and intact on the system,
+ consistent with the requirements of \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Audit Logging and Monitoring Policy).
+ The assigned technician shall confirm log continuity from the pre-incident period through recovery or shall document gaps.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Post-recovery vulnerability assessment
+\series default
+:
+ The assigned technician shall complete a vulnerability scan of the system in accordance with \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Vulnerability and Patch Management Policy).
+ The assigned technician shall remediate Critical or High-severity findings on the recovered system,
+ or the IC shall approve documented compensating controls,
+ before the system is returned to production.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data integrity verification
+\series default
+:
+ Where the Systems Administrator has restored the system from backup,
+ the Systems Administrator shall confirm data integrity consistent with the backup restoration verification standards established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Security dependency confirmation
+\series default
+:
+ The IC shall confirm that all systems identified as security dependencies in the recovery classification register (Section 6.2) have themselves passed verification before authorizing this system's return to production.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall authorize each system's return to production status upon receiving documented confirmation from the assigned technician that all applicable verification criteria have been satisfied.
+ The IC shall document the authorization and the verification basis in the work order Notes.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For systems processing,
+ storing,
+ or transmitting CJI,
+ the IC shall confirm and document that all CJIS-required security controls are in force before the system is returned to production.
+ CJI systems shall not be returned to production with compensating controls in lieu of required CJIS controls unless the IT Director (as LASO) has obtained written authorization from the CSA/CSO or other CJIS governing authority required by governing agreements,
+ and the IT Director has documented that authorization in the work order.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Change Management Integration
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All recovery configuration actions constitute Emergency Changes under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+ Emergency designation by the IC authorizes immediate implementation;
+ it does not itself constitute CCA authorization.
+ Provisional CCA authority for immediate implementation rests with the IT Director or Assistant IT Director per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.2.
+ The concurrent documentation clock established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Containment Strategy and Playbooks) Section 6.3 and carried forward through \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.3 applies to recovery actions without modification.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Three documentation obligations run concurrently from the moment of each recovery configuration action:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The assigned technician (Network Administrator or Systems Administrator,
+ depending on the affected system) shall create a standalone RFC record in Redmine within twenty-four (24) hours of implementation,
+ or by noon on the next business day,
+ whichever is later.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall complete catch-up CCA review within the same window.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The assigned technician shall flag affected CI records at the time of action per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default;
+ the CI record update obligation is deferred but not waived and runs on the same concurrent twenty-four (24) hour clock per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Documentation obligations do not pause recovery execution.
+ They run concurrently with,
+ or immediately following,
+ recovery actions.
+ These obligations are not prerequisites to taking technical action.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director or designee shall complete Post-Implementation Review (PIR) documentation within five (5) business days of implementation for all Emergency Changes executed under this policy.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When a recovery action requires simultaneous or coordinated changes across multiple systems —
+ such as domain-wide service restoration or synchronized application redeployment —
+ the IC may authorize a single umbrella RFC documenting the coordinated action.
+ The assigned technician shall document individual systems affected by the coordinated action as line items within the umbrella RFC rather than as separate RFC records.
+ The assigned technician shall apply a CI record flag for each affected system at the time of action per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+If a recovery action meets any of the following triggers,
+ the IC shall notify the County Manager no later than four (4) hours after the action begins,
+ per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.6:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Systems whose compromise could affect elections.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Planned downtime or degraded service visible to the public or other County departments for more than one (1) business day.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Decommission or replacement of operationally critical infrastructure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any action the IC determines carries political or notable operational implications.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall identify applicable triggers at the time of action and shall ensure notification is initiated within the four (4) hour window.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC is authorized to initiate emergency procurement under County emergency procedures with after-the-fact ratification,
+ per \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+ This authority covers replacement hardware,
+ software licensing,
+ external vendor engagement,
+ and any other procurement required to sustain or complete recovery.
+ Administrative funding authority shall not be exercised to delay,
+ suspend,
+ or condition recovery actions.
+ Fiscal Affairs and Purchasing shall not delay recovery for procurement review.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Operational Handback
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Operational Handback is the mechanism by which the Incident Commander formally declares the security response phase complete and transfers operational recovery authority from Chapter 4 to \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+ This section governs the initiation mechanics.
+ \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.7 governs the receiving obligations.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall not assume Operational Handback.
+ An incident remains under Chapter 4 authority until the IC explicitly declares Handback.
+ Ambiguity is not permitted.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall declare Operational Handback when all of the following preconditions are satisfied:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IC has confirmed that the eradication-complete determination has been documented under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IC has confirmed that all systems designated for recovery during the security response phase have either been returned to production with documented verification,
+ or the IC has explicitly deferred them to post-Handback restoration under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default authority with documented justification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IC has made a documented professional judgment that no residual threat remains in the environment.
+ This judgment is an IC determination,
+ not a checklist item.
+ It reflects the totality of the incident —
+ the nature of the threat,
+ the thoroughness of eradication,
+ and the results of recovery verification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IC has confirmed that all evidence preservation obligations have been satisfied or have been transitioned to the retention framework established in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.7.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IC has triggered a postmortem review under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Postmortem Review and Lessons Learned),
+ or the IC has documented the basis for deferral.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall document the Operational Handback declaration in the work order Notes and Chapter 4 checklist at the time it is made.
+ The IC shall reference satisfaction of each precondition in the declaration.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Upon declaring Operational Handback,
+ the IC's emergency authority under Chapter 4 terminates.
+ All subsequent recovery activity for systems deferred to post-Handback restoration is governed by \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+ The BIA-driven recovery sequence priority order governs any remaining restoration sequencing without IC override authority.
+ Normal operational authority under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Operational Incident Management Policy) and \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default resumes.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A twenty-four (24) hour close-out window begins at the time of Operational Handback declaration.
+ Within this window,
+ the following responsible parties shall complete the following obligations:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The assigned technician shall complete all outstanding catch-up RFC documentation for recovery-phase Emergency Changes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The assigned technician shall complete all outstanding CI record updates for recovery-phase configuration changes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall complete CCA review for all recovery-phase Emergency Changes not yet reviewed.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall confirm that the Chapter 4 checklist is complete for all mandatory fields through the recovery phase.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The twenty-four (24) hour close-out window governs administrative documentation obligations only.
+ It does not extend IC authority.
+ The IC's emergency authority terminates at the moment of Handback declaration,
+ not at the expiration of the close-out window.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Re-escalation to Eradication
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+If,
+ during recovery operations,
+ conditions are discovered that indicate the eradication was incomplete —
+ including but not limited to the reappearance of threat artifacts,
+ the activation of previously unidentified persistence mechanisms,
+ or the observation of new Indicators of Compromise as defined in \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default —
+ the IC shall immediately halt recovery on the affected system or systems and shall re-escalate to eradication under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Re-escalation is not a new incident declaration.
+ The existing incident record,
+ work order,
+ and Chapter 4 checklist remain active.
+ The IC shall document the re-escalation,
+ including the conditions that triggered it,
+ in the work order Notes at the time of the determination.
+ Eradication recommences under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default authority.
+ The IC shall not resume recovery under this policy until a new eradication-complete determination has been documented under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default Section 6.4.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When re-escalation occurs after one or more systems have already been returned to production,
+ the IC shall evaluate whether the systems already restored are affected by the newly discovered conditions.
+ If the IC determines that the restored systems may be compromised,
+ the IC shall direct their re-isolation under \series bold
+Policy \begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default (Containment Strategy and Playbooks) authority.
+ The IC shall document the re-isolation decision and the basis for it in the work order Notes.
+\end_layout
+
 
 \end_body
 \end_document
