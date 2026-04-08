@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 1.3
 \end_layout
 
 \begin_layout Subsection*
@@ -193,16 +193,9 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to define the structure,
+This policy defines the structure,
  scope,
- and limitations of authority within the Elko County Information Operations Department.
- It formalizes how decision-making power—
-both operational and administrative—
-is assigned,
- delegated,
- and exercised to preserve continuity,
- accountability,
- and appropriate oversight across the Information Technology (IT) function.
+ and limitations of decision-making authority within the Elko County Information Operations Department (ECIO).
 \end_layout
 
 \begin_layout Subsection*
@@ -236,12 +229,30 @@ This policy applies to all Information Operations personnel and to any County of
 IT Director
 \series default
 :
- Holds primary operational authority and ultimate decision-making rights over technical services,
- cybersecurity,
- and infrastructure.
- Shall delegate both administrative and operational authority as required.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall hold primary operational and decision-making authority over technical services,
+ cybersecurity,
+ and infrastructure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall delegate administrative and operational authority as defined in Section 6 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain the Separation of Duties Matrix and review it at least annually.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -249,22 +260,53 @@ IT Director
 County Manager
 \series default
 :
- Holds administrative oversight of the IT Director (e.g.,
- performance evaluation,
- policy ratification).
- May temporarily assume administrative functions during the IT Director’s absence but shall not exercise operational authority over security controls.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall hold administrative oversight of the IT Director,
+ including performance evaluation and policy ratification.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Assistant IT Director (or Designated Deputy)
-\series default
-:
- Holds standing delegated operational authority and shall serve as the primary operational decision-maker in the IT Director’s absence.
+Shall not exercise operational authority over security controls.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Shall serve as the mediation authority for conflicts between administrative and operational authority as defined in Section 6.4.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall hold standing delegated operational authority as defined in Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the primary operational decision-maker in the IT Director's absence,
+ within the bounds of the standing written Delegation of Authority Order.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -272,10 +314,22 @@ Assistant IT Director (or Designated Deputy)
 Human Resources (HR)
 \series default
 :
- Holds administrative authority for personnel matters.
- Shall not direct or influence technical decisions or access control timelines.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall provide official onboarding and offboarding notifications as defined in Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not direct or influence technical decisions or access control timelines.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -283,21 +337,46 @@ Human Resources (HR)
 Fiscal Affairs
 \series default
 :
- Oversees budgetary and procurement processes.
- Shall not prescribe technical standards or override IT design decisions.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall oversee budgetary and procurement processes.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-All IT Personnel
-\series default
-:
- Shall operate strictly within their designated role and authority as defined by department policy.
- Assumption of authority requires formal delegation.
+Shall not prescribe technical standards or override IT design decisions.
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall operate strictly within their designated role and authority as defined by department policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not assume authority beyond their assigned role without formal,
+ written delegation.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -308,31 +387,61 @@ All IT Personnel
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory.
+Compliance with this policy is mandatory for all Information Operations personnel and County officials exercising authority over or within the Information Operations Department.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Documentation
+Assessment
 \series default
 :
- All delegated authority must be documented in writing (memorandum or email) and retained in the Department's designated system of record (e.g.,
- the Departmental Knowledge Base/Redmine or secured ECM repository).
- Assumed,
- informal,
- or implied authority is explicitly not recognized.
+ Compliance with delegation requirements shall be assessed through the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and through the annual review of delegation records and the Separation of Duties Matrix required under Section 6 of this policy.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Delegation Records
+Enforcement
 \series default
 :
- Delegation records shall be retained in accordance with the Nevada Local Government Records Management Program.
+ The IT Director shall treat unauthorized assumption of authority,
+ failure to document delegations,
+ or exercise of authority beyond a delegation's defined scope as non-compliance and may initiate corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -342,6 +451,25 @@ Delegation Records
 Exceptions
 \series default
 :
+ Exceptions to this policy shall be documented with written justification,
+ approved in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and processed as follows.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_deeper
@@ -366,8 +494,7 @@ Governance Exceptions
  Governance exceptions shall not grant operational authority,
  alter security baselines,
  or authorize deviation from mandatory security controls.
- Furthermore,
- governance exceptions shall not modify incident declaration authority,
+ Governance exceptions shall not modify incident declaration authority,
  Incident Commander designation criteria,
  or operational decision rights during incident response as defined in 
 \series bold
@@ -384,7 +511,7 @@ nolink "false"
 
 
 \series default
- and the Incident Response Plan.
+ (Incident Response Policy Overview).
 \end_layout
 
 \begin_layout Itemize
@@ -406,22 +533,13 @@ Stand-in Restriction
  References
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\series bold
 \lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
+Cited References
+\series default
 :
- Policy and Documentation Formatting Standards
 \end_layout
 
 \begin_layout Itemize
@@ -481,6 +599,74 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section AC-6(7) (Least Privilege — Review of User Privileges)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AC-5 (Separation of Duties)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ AC-6 (Least Privilege)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
 CJIS Security Policy v6.0:
  Section 5.1 (Information Exchange Agreements)
 \end_layout
@@ -501,12 +687,6 @@ NIST SP 800-53 Rev.
 \begin_layout Itemize
 NIST SP 800-53 Rev.
  5:
- AC-5 (Separation of Duties)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
  PM-1 (Information Security Program Plan)
 \end_layout
 
@@ -517,6 +697,19 @@ COBIT 2019:
  and authorities)
 \end_layout
 
+\begin_layout Itemize
+COBIT 2019:
+ APO01.05 (Define target capability)
+\end_layout
+
+\begin_layout Itemize
+COBIT 2019:
+ DSS06.03 (Manage roles,
+ responsibilities,
+ access privileges,
+ and levels of authority)
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -524,20 +717,27 @@ COBIT 2019:
  Policy Statement
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Standard
 
 \lang english
+This policy formalizes how decision-making power — both operational and administrative — is assigned,
+ delegated,
+ and exercised within the Information Operations Department.
+ The separation of administrative and operational authority is designed to preserve continuity,
+ accountability,
+ and appropriate oversight across the Information Technology function while ensuring that mandatory security controls are never subordinated to administrative convenience.
+\end_layout
+
+\begin_layout Subsubsection*
 6.1 Authority Classification
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Authority within the Information Operations Department is classified into two distinct categories to satisfy 
-\series bold
-NIST SP 800-53 AC-5
-\series default
- (Separation of Duties):
+Authority within the Information Operations Department is classified into two distinct categories to satisfy NIST SP 800-53 Rev.
+ 5:
+ AC-5 (Separation of Duties):
 \end_layout
 
 \begin_layout Itemize
@@ -570,23 +770,24 @@ Operational Authority
 
 \series bold
 \lang english
-Mandatory Security Controls
+Constraint
 \series default
 :
- Defined as all requirements stipulated by the CJIS Security Policy,
- Nevada Revised Statutes,
- and County-adopted security baselines.
+ Dual authority (the ability to exercise both administrative and operational functions) resides inherently with the IT Director and may only be granted to others through explicit,
+ written delegation (including the standing delegation defined in Section 6.2).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Constraint
+Clarification
 \series default
 :
- Dual authority (the ability to exercise both administrative and operational functions) resides inherently with the IT Director and may only be granted to others through explicit,
- written delegation (including the standing delegation defined in Section 6.2).
+ Mandatory security controls — defined as all requirements stipulated by the CJIS Security Policy,
+ Nevada Revised Statutes,
+ and County-adopted security baselines — shall not be subject to override by administrative stand-ins.
+ The IT Director shall ensure that mandatory security controls are maintained regardless of personnel changes or delegations.
 \end_layout
 
 \begin_layout Itemize
@@ -615,7 +816,7 @@ CJIS Management Control
 Formal Documentation
 \series default
 :
- Delegation of operational authority must be made to technically qualified personnel (Tier L3 or higher per 
+ The IT Director shall delegate operational authority only to technically qualified personnel (Tier L3 or higher per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -630,12 +831,34 @@ nolink "false"
 
 
 \series default
-) and documented in writing.
- The scope,
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework)) and shall document each delegation in writing.
+ The IT Director shall define the scope,
  conditions,
- and duration shall be clearly defined.
- Delegated authority and privileged access assignments shall be reviewed at least annually by the IT Director to validate continued business need,
- consistent with CJIS AC-6(7)
+ and duration in the delegation record.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Annual Review
+\series default
+:
+ The IT Director shall review delegated authority and privileged access assignments at least annually to validate continued business need,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-6(7) (Least Privilege — Review of User Privileges).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Retention
+\series default
+:
+ The IT Director shall retain delegation records in the Department's designated system of record in accordance with NRS 239.125 and the Nevada Local Government Records Management Program.
 \end_layout
 
 \begin_layout Itemize
@@ -645,7 +868,7 @@ nolink "false"
 Standing Delegation
 \series default
 :
- The Assistant IT Director holds permanent delegated operational authority and is authorized to exercise administrative functions in the IT Director’s absence only within the bounds of a standing written Delegation of Authority Order,
+ The Assistant IT Director holds standing delegated operational authority and is authorized to exercise administrative functions in the IT Director's absence only within the bounds of a standing written Delegation of Authority Order,
  reviewed annually.
  The Assistant IT Director shall exercise only those administrative functions explicitly delegated in writing by the IT Director.
  Authority not expressly granted is reserved to the IT Director.
@@ -663,16 +886,82 @@ Scope of Administrative Authority
  timecard approvals,
  workflow coordination,
  internal purchasing).
- It 
-\series bold
-does not
-\series default
- include authority for HR disciplinary actions,
+ It does not include authority for HR disciplinary actions,
  terminations,
  or ratification of the Countywide IT budget.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+Lapse
+\series default
+:
+ Failure to complete the annual review of the standing Delegation of Authority Order shall not automatically revoke the standing delegation,
+ but shall constitute non-compliance subject to remediation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The IT Director shall complete the overdue review within ten (10) business days of discovery,
+ and the delegation record shall be flagged as review-past-due in the Department's system of record until remediation is complete.
+\end_layout
+
 \end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Directed Deputization
+\series default
+:
+ The IT Director may designate any Tier L3+ IT Department personnel to exercise specific operational authority on the IT Director's behalf for a defined scope and duration.
+ Directed Deputization is limited to operational functions — including work order management,
+ priority retasking,
+ and representation in meetings — and shall not include administrative authority as defined in Section 6.1.
+ The IT Director shall document the designation in writing,
+ specifying the scope of authority granted,
+ the duration,
+ and any constraints.
+ Directed Deputization does not displace the Assistant IT Director from their current role,
+ modify their standing delegation,
+ or alter the chain of delegation established in this policy.
+ The IT Director retains authority to rescind any Directed Deputization at any time.
+ Directed Deputization shall not include:
+ policy exception approval,
+ formal risk acceptance,
+ incident declaration authority (unless separately authorized under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+),
+ access approval for the delegate's own account,
+ or any function prohibited by the Separation of Duties Matrix maintained under Section 6.6.
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
@@ -728,21 +1017,19 @@ nolink "false"
 \begin_layout Itemize
 
 \series bold
-Incident Commander Qualification —
- Designated Appointment
+Incident Commander Qualification — Designated Appointment
 \series default
 :
  The IT Director may designate any IT Department staff member as Incident Commander for a specific incident.
  Designation shall be made at the time it becomes effective and documented in the incident record.
  No tier-level prerequisite applies to a designated appointment.
- The IT Director retains authority to rescind any designation and resume the Incident Commander role at any time without prior notice.
+ The IT Director retains authority to rescind any designation and resume the Incident Commander role at any time.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Incident Commander Qualification —
- Emergency Declaration Authority
+Incident Commander Qualification — Emergency Declaration Authority
 \series default
 :
  When both the IT Director and the Assistant IT Director are genuinely unavailable,
@@ -781,8 +1068,8 @@ Emergency Procurement
 Fiscal Duty
 \series default
 :
- Fiscal Affairs and Purchasing shall process Incident Commander emergency procurement requests using applicable emergency procedures without delaying required containment or mandated control restoration;
- actions and approvals shall be documented in the incident record.
+ Fiscal Affairs and Purchasing shall process Incident Commander emergency procurement requests using applicable emergency procedures without delaying required containment or mandated control restoration.
+ Fiscal Affairs and Purchasing shall document all actions and approvals in the incident record.
 \end_layout
 
 \begin_layout Itemize
@@ -861,13 +1148,25 @@ To preserve operational integrity and separation of duties,
 Human Resources (HR)
 \series default
 :
- HR may enforce administrative actions (e.g.,
- terminations) and shall provide official notifications per Section 6.5,
- but shall not influence how access revocation is performed,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+HR may enforce administrative actions (e.g.,
+ terminations) and shall provide official notifications per Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+HR shall not influence how access revocation is performed,
  dictate tools,
  or establish technical response timelines without IT Director approval.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -875,7 +1174,22 @@ Human Resources (HR)
 Fiscal Affairs
 \series default
 :
- Fiscal Affairs may control budgetary limits but shall not mandate hardware standards or compel the reduction of mandatory security controls due to cost without a formal risk acceptance signed by the IT Director.
+ Fiscal Affairs may control budgetary limits but shall not mandate hardware standards or compel the reduction of mandatory security controls due to cost without a formal risk acceptance documented in the Risk Register maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy) and signed by the IT Director.
 \end_layout
 
 \begin_layout Itemize
@@ -886,11 +1200,7 @@ System Access Restrictions
 \series default
 :
  To enforce separation of duties (AC-5),
- non-IT personnel serving as administrative stand-ins 
-\series bold
-shall not
-\series default
- be granted administrative access to Information Operations systems (e.g.,
+ non-IT personnel serving as administrative stand-ins shall not be granted administrative access to Information Operations systems (e.g.,
  Active Directory,
  firewalls),
  including "break-glass" accounts,
@@ -906,7 +1216,7 @@ Facilities Access
 \series default
 :
  Facilities and custodial access provisioning for server rooms/network closets shall be controlled by Information Operations access lists;
- emergency entry by non-IT personnel shall require IT escort or the Incident Commander’s written authorization.
+ emergency entry by non-IT personnel shall require IT escort or the Incident Commander's written authorization.
 \end_layout
 
 \end_deeper
@@ -923,7 +1233,7 @@ Facilities Access
 Revocability
 \series default
 :
- All delegated authority is revocable by the IT Director at any time.
+ The IT Director may revoke any delegated authority at any time.
 \end_layout
 
 \begin_layout Itemize
@@ -933,7 +1243,7 @@ Revocability
 Conflict Resolution
 \series default
 :
- Conflicts between administrative and operational authority shall be formally escalated to the County Manager for mediation.
+ The IT Director or the party identifying the conflict shall formally escalate disputes between administrative and operational authority to the County Manager for mediation.
 \end_layout
 
 \begin_layout Itemize
@@ -944,12 +1254,8 @@ Mediation Constraints
 \series default
 :
  Mediation shall occur on an expedited basis and begin within one (1) business day of escalation.
- Mediation may address priorities and resources but 
-\series bold
-shall not
-\series default
- authorize deviation from mandatory security controls or security baselines.
- Operational containment and mandated control implementation shall continue during mediation.
+ Mediation may address priorities and resources but shall not authorize deviation from mandatory security controls or security baselines.
+ The IT Director or Incident Commander shall ensure that operational containment and mandated control implementation continue during mediation.
 \end_layout
 
 \begin_layout Itemize
@@ -960,7 +1266,7 @@ Impartiality
 \series default
 :
  If the County Manager is serving as the administrative stand-in and is a party to the conflict,
- the matter shall be escalated to the Board of County Commissioners to ensure impartial review.
+ the IT Director shall escalate the matter to the Board of County Commissioners to ensure impartial review.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -972,13 +1278,14 @@ Impartiality
 \begin_layout Standard
 
 \lang english
-The Information Operations Department grants Human Resources exclusive authority to provide official onboarding and offboarding notifications.
- This delegation is procedural—
-HR is authorized to initiate the process—
-but does not convey control over access implementation,
+The Information Operations Department designates Human Resources as the authoritative originator of official onboarding and offboarding notifications.
+ This delegation is procedural — HR is authorized to initiate the process — but does not convey control over access implementation,
  technical execution timing,
  or operational response,
  which remain with the IT Director and designated IT personnel.
+ When HR is unavailable and an urgent separation requires immediate action,
+ the County Manager or other legally authorized official may initiate the notification directly to the Information Operations Department.
+ The IT Director shall treat such notifications as valid and shall document the source and circumstances in the Department's system of record.
 \end_layout
 
 \begin_layout Itemize
@@ -1020,7 +1327,8 @@ Offboarding notifications
 Accountability
 \series default
 :
- Delays in notification that result in access control violations shall be attributed to the delaying party.
+ The IT Director shall document notification delays that result in access control violations and report them to the County Manager.
+ The delaying party bears accountability for the resulting compliance gap.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1032,12 +1340,7 @@ Accountability
 \begin_layout Standard
 
 \lang english
-To satisfy 
-\series bold
-NIST SP 800-53 AC-5
-\series default
-,
- the following duties are defined as incompatible and shall be separated:
+The IT Director shall enforce the following separation of duties requirements to satisfy NIST SP 800-53 AC-5 (Separation of Duties):
 \end_layout
 
 \begin_layout Itemize
@@ -1105,7 +1408,7 @@ Separation Matrix
  audit log review;
  (b) access provisioning vs.
  access approval.
- This matrix shall be reviewed annually.
+ The IT Director shall review this matrix annually.
 \end_layout
 
 \begin_layout Itemize
@@ -1124,13 +1427,13 @@ Delegation Constraint
 \begin_layout Standard
 
 \lang english
-Separation-of-duties role assignments and corresponding privileged access authorizations shall be documented in the Department’s access control matrix and enforced through role-based access control (RBAC).
- The access control matrix shall be reviewed at least annually and upon significant role or staffing changes.
- When staffing constraints require a single individual to perform otherwise incompatible duties,
- the Department shall implement compensating controls (e.g.,
- independent after-the-fact review within 1 business day,
+The IT Director shall document separation-of-duties role assignments and corresponding privileged access authorizations in the Department's access control matrix and shall enforce them through role-based access control (RBAC).
+ The IT Director shall review the access control matrix at least annually and upon significant role or staffing changes.
+ When the IT Director determines that staffing constraints require a single individual to perform otherwise incompatible duties,
+ the IT Director shall implement compensating controls (e.g.,
+ independent after-the-fact review within one (1) business day,
  immutable logging,
- or secondary approval via workflow) and document the exception.
+ or secondary approval via workflow) and shall document the exception.
 \end_layout
 
 \end_body
