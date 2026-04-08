@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -193,13 +193,9 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to define the internal culture,
+This policy defines the internal culture,
  operational mindset,
- and behavioral expectations of the Elko County Information Operations Department.
- It serves as the unifying ethos that aligns individual conduct with the organizational mission—
-defining how the Department leads,
- operates,
- and serves.
+ and behavioral expectations of the Elko County Information Operations Department (ECIO).
 \end_layout
 
 \begin_layout Subsection*
@@ -237,8 +233,25 @@ This policy applies to all Information Operations personnel,
 IT Director
 \series default
 :
- Shall serve as the final arbiter on matters of operational conduct and maintain this policy as the standard for Department culture.
- Shall define and document operational delegations and escalation paths in accordance with 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the final authority on matters of operational conduct and Department culture.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain this policy as the governing standard for Department conduct and professional expectations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall define and document operational delegations and escalation paths in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -253,34 +266,47 @@ nolink "false"
 
 
 \series default
-.
+ (Delegation of Authority and Decision Rights).
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-Supervisors
+Assistant IT Director
 \series default
 :
- Shall actively reinforce these standards,
- mentor teams in execution,
- and model the ethos in daily operations.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall reinforce the standards defined in this policy through active mentorship and shall model the operational ethos in daily operations.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-All IT Personnel
+All Information Operations Personnel
 \series default
 :
- Shall operate in strict alignment with this ethos,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall operate in strict alignment with this ethos,
  modeling professional discipline,
  initiative,
  and leadership at every level.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -291,7 +317,7 @@ All IT Personnel
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all IT personnel.
+Adherence to this policy is mandatory for all Information Operations personnel.
 \end_layout
 
 \begin_layout Itemize
@@ -301,7 +327,25 @@ Adherence to this policy is mandatory for all IT personnel.
 Assessment
 \series default
 :
- Adherence to this policy shall be evaluated as part of individual performance reviews and during the annual policy review and maturity scoring process defined in 
+ Adherence to this policy shall be evaluated through individual performance reviews,
+ incident post-mortem analysis examining adherence to escalation and documentation standards per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Incident Response Policy Overview),
+ supervisor observations,
+ and the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -316,7 +360,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -341,38 +385,13 @@ nolink "false"
 
 
 \series default
- (Policy Implementation and Enforcement Framework),
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment),
  including coaching,
  supervisory feedback,
  or formal performance management.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Acknowledgment
-\series default
-:
- All personnel shall acknowledge receipt and understanding of this policy upon hire,
- upon any substantive revision,
- and annually thereafter.
- Acknowledgments shall be documented and maintained in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.03"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Security Awareness and Training Policy).
+ Failure to complete required policy acknowledgments under Section 6.5 constitutes non-compliance enforceable under this section.
 \end_layout
 
 \begin_layout Itemize
@@ -382,12 +401,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions that materially alter the operational structure or chain of command shall be documented with justification and approved by the IT Director in accordance with 
+ Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.04"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -397,22 +416,8 @@ nolink "false"
 
 
 \series default
- (Policy and Documentation Formatting Standards) and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Delegation of Authority and Decision Rights).
+ §6.6.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -420,6 +425,15 @@ nolink "false"
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -438,6 +452,24 @@ nolink "false"
 
 :
  Code of Ethics and Professional Conduct
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Governance and Oversight Structure
 \end_layout
 
 \begin_layout Itemize
@@ -509,11 +541,27 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
-NRS 239 (Public Records)
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
 \end_layout
 
 \begin_layout Itemize
@@ -522,7 +570,16 @@ NRS 281A (Ethics in Government)
 
 \begin_layout Itemize
 CJIS Security Policy v6.0:
- Section 5.1 (Information Exchange Agreements)
+ Section 5.1.1.4 (Management Control Agreements)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -576,6 +633,33 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy serves as the unifying ethos that aligns individual conduct with the organizational mission —
+ defining how the Department leads,
+ operates,
+ and serves.
+ The standards established here complement the ethical obligations defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Code of Ethics and Professional Conduct) and operationalize the professional discipline required to sustain the Department's governance,
+ security,
+ and service delivery mission.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
@@ -585,11 +669,7 @@ ITIL v4:
 \begin_layout Standard
 
 \lang english
-The Information Operations Department shall maintain 
-\series bold
-comprehensive operational authority
-\series default
- over the administration,
+The Information Operations Department shall maintain operational authority over the administration,
  security,
  architecture,
  and configuration of all Elko County information systems,
@@ -609,7 +689,7 @@ nolink "false"
 
 
 \series default
-.
+ (IT Governance and Oversight Structure).
 \end_layout
 
 \begin_layout Itemize
@@ -619,11 +699,7 @@ nolink "false"
 Unified Authority
 \series default
 :
- To support compliance with the strict connectivity and security requirements of the 
-\series bold
-FBI CJIS Security Policy Section 5.1.1.4
-\series default
-,
+ To support compliance with the strict connectivity and security requirements of the CJIS Security Policy Section 5.1.1.4 (Management Control Agreements),
  Elko County has adopted a unified governance structure for shared infrastructure.
  Under this structure,
  the IT Director retains final decision-making authority over all technical controls and risk mitigation strategies across the enterprise,
@@ -641,7 +717,9 @@ Independence
  the Department's operational decisions shall be driven by technical standards,
  security mandates,
  and risk assessments.
- Political pressure or external influence shall not supersede mandatory security controls or engineering standards.
+ Political pressure or external influence shall not supersede mandatory security controls,
+ engineering standards,
+ or the ethical obligations established under NRS 281A.
  Technical decisions shall be made in accordance with the delegation framework defined in 
 \series bold
 Policy 
@@ -670,7 +748,7 @@ nolink "false"
 
 \lang english
 The chain of command is a mechanism for accountability and risk management.
- Personnel shall utilize the chain of command to ensure decisions are made at the appropriate authority level.
+ All Information Operations Personnel shall utilize the chain of command to ensure decisions are made at the appropriate authority level.
 \end_layout
 
 \begin_layout Itemize
@@ -680,7 +758,7 @@ The chain of command is a mechanism for accountability and risk management.
 Act Decisively
 \series default
 :
- Personnel shall execute duties with precision within their assigned scope of authority.
+ All Information Operations Personnel shall execute duties with precision within their assigned scope of authority.
 \end_layout
 
 \begin_layout Itemize
@@ -690,15 +768,26 @@ Act Decisively
 Escalate with Purpose
 \series default
 :
- Personnel shall escalate issues to their direct supervisor 
-\series bold
-within the same business day
-\series default
- when operational risk,
+ All Information Operations Personnel shall escalate issues to their direct supervisor within one (1) business day when operational risk,
  legal constraints,
  or policy ambiguity exceed their defined authority or expertise.
  During active incidents,
- escalation shall occur as soon as safely possible without interrupting critical response activities.
+ personnel shall escalate in accordance with the incident response escalation procedures defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -708,12 +797,8 @@ within the same business day
 Unified Direction
 \series default
 :
- Leadership is defined by judgment,
- communication,
- and accountability,
- not solely by title.
  Once a decision is made by the designated authority,
- personnel shall implement that decision promptly.
+ all Information Operations Personnel shall implement that decision promptly.
  Concerns about implementation shall be raised through the escalation process defined in 
 \series bold
 Policy 
@@ -741,10 +826,9 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Leadership in Information Operations is defined by consistency,
+Leadership within the Information Operations Department is defined by consistency,
  clarity,
  and accountability.
- Supervisors and designated leads shall:
 \end_layout
 
 \begin_layout Itemize
@@ -754,24 +838,25 @@ Leadership in Information Operations is defined by consistency,
 Communicate with Precision
 \series default
 :
- Ambiguity causes downtime.
- Instructions and status reports shall be clear,
+ The IT Director and Assistant IT Director shall issue instructions and status reports that are clear,
  specific,
  and actionable.
- Personnel shall confirm understanding of critical directives before execution.
+ All Information Operations Personnel shall confirm understanding of critical directives before execution.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Decide based on Standards
+Decide Based on Standards
 \series default
 :
- Operational decisions shall be based on data,
+ The IT Director and Assistant IT Director shall base operational decisions on data,
  policy,
- and formal risk assessment,
- not sentiment or pressure.
+ and formal risk assessment.
+ Political pressure,
+ personal sentiment,
+ or external influence shall not supersede technical standards or mandatory security controls.
 \end_layout
 
 \begin_layout Itemize
@@ -781,12 +866,8 @@ Decide based on Standards
 Accountability
 \series default
 :
- Shall acknowledge errors transparently and document lessons learned within 
-\series bold
-five (5) business days
-\series default
- of incident closure.
- Remediation actions shall be tracked to completion in the designated system of record.
+ The IT Director and Assistant IT Director shall acknowledge errors transparently and shall document lessons learned within five (5) business days of incident closure.
+ The IT Director shall ensure remediation actions are tracked to completion in the Department's system of record.
 \end_layout
 
 \begin_layout Itemize
@@ -797,7 +878,7 @@ Crisis Discipline
 \series default
 :
  During major incidents,
- personnel shall adhere to established Incident Response protocols (
+ all Information Operations Personnel shall adhere to the incident response protocols defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -812,10 +893,9 @@ nolink "false"
 
 
 \series default
-).
- Leaders shall provide clear,
- evidence-based direction to maintain operational discipline and prevent panic-driven decision-making.
- Leaders shall participate in formal post-incident reviews to document lessons learned.
+.
+ The IT Director and Assistant IT Director shall provide clear,
+ evidence-based direction to maintain operational discipline and shall participate in formal post-incident reviews to document lessons learned.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -828,7 +908,7 @@ nolink "false"
 
 \lang english
 Operational discipline is the foundation of the Department's credibility.
- Personnel shall execute duties according to the following standards:
+ All Information Operations Personnel shall execute duties according to the following standards:
 \end_layout
 
 \begin_layout Itemize
@@ -838,7 +918,7 @@ Operational discipline is the foundation of the Department's credibility.
 Own the Scope
 \series default
 :
- Personnel shall fully own tasks within their job role.
+ All Information Operations Personnel shall fully own tasks within their job role.
  If a task falls outside their scope,
  they shall escalate it with clear context and documentation rather than ignoring it.
 \end_layout
@@ -850,52 +930,9 @@ Own the Scope
 Document as Standard
 \series default
 :
- Dependence on memory or hallway conversations is prohibited in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- All operational actions,
+ All Information Operations Personnel shall document operational actions,
  changes,
- and decisions shall be documented in the designated System of Engagement (Redmine) within 
-\series bold
-24 hours of completion
-\series default
-,
- except during active incident response where documentation shall occur during incident closure in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- Documentation shall be maintained in systems designated as records repositories in accordance with 
-\series bold
-NRS 239
-\series default
-.
- Required documentation shall be completed.
- Failure to document required actions constitutes noncompliance and may result in corrective action under 
+ and decisions in accordance with the documentation requirements established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -910,17 +947,17 @@ nolink "false"
 
 
 \series default
-.
+ §6.1 (Documentation as Standard).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Prioritize based on Risk
+Prioritize Based on Risk
 \series default
 :
- Urgency shall be assessed based on impact to County operations and security,
+ All Information Operations Personnel shall assess urgency based on impact to County operations and security,
  not solely on the volume of the request.
 \end_layout
 
@@ -931,37 +968,28 @@ Prioritize based on Risk
 Resolve or Escalate
 \series default
 :
- Issues shall not remain in a stagnant state.
- Every ticket or work order must be actively moved toward resolution or escalated to the appropriate tier with sufficient context for action.
+ All Information Operations Personnel shall actively move every ticket or work order toward resolution or escalate it to the appropriate tier with sufficient context for action.
+ No ticket or work order shall remain without a documented status update beyond the timeframes established in the applicable service level targets.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.5 Performance and Cultural Alignment
+6.5 Policy Acknowledgment
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Adherence to this ethos shall be evaluated through:
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Individual performance evaluations incorporating specific behavioral competencies defined in this policy.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Incident post-mortem analysis examining adherence to escalation and documentation standards per 
+All Information Operations Personnel shall acknowledge receipt and understanding of this policy upon hire,
+ upon any substantive revision,
+ and annually thereafter.
+ The IT Director shall ensure acknowledgments are documented and maintained in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.01"
+reference "pol:2.03"
 plural "false"
 caps "false"
 noprefix "false"
@@ -971,34 +999,7 @@ nolink "false"
 
 
 \series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Annual policy review and maturity assessment per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Supervisor observations and peer feedback regarding operational discipline and professional conduct.
+ (Security Awareness and Training Policy).
 \end_layout
 
 \end_body
