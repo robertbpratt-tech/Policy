@@ -900,23 +900,6 @@ nolink "false"
  Annual Policy Review and Maturity Scoring
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-ECIO Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Work Order Structure and Standards
-\end_layout
 
 \begin_layout Itemize
 
@@ -1033,21 +1016,7 @@ nolink "false"
 ,
  Section 6.7.
  The technician closing the qualifying incident work order shall open the Problem record no later than the close of business on the calendar day the incident work order is resolved.
- The Problem record shall be linked to the originating incident work order via the Related Issues field in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ The Problem record shall be linked to the originating incident work order via the Related Issues field in the System of Engagement
  at the time of creation.
 \end_layout
 
@@ -1081,21 +1050,7 @@ nolink "false"
 \series default
 ,
  Section 6.7.
- The Problem record shall be linked to all qualifying incident work orders via the Related Issues field in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ The Problem record shall be linked to all qualifying incident work orders via the Related Issues field in the System of Engagement
  at the time of creation.
 \end_layout
 
@@ -1678,20 +1633,7 @@ Formal Closure Declaration
 :
  Upon satisfaction of all conditions above,
  the IT Director shall issue the Formal Closure Declaration by updating the Problem record status to the appropriate closed status in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+work order operational standards maintained in the System of Engagement
  and documenting the closure rationale.
  The IT Director's status update constitutes the authoritative declaration that the Problem is resolved.
 \end_layout

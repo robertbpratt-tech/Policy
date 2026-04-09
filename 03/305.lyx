@@ -307,21 +307,7 @@ nolink "false"
 \series default
 .
  All of those policies remain in full effect and are incorporated by reference where applicable.
- The work order operational standards defined in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ The work order operational standards defined in the System of Engagement
  govern the technical anatomy of work orders —
  field definitions,
  status workflows,
@@ -330,21 +316,8 @@ nolink "false"
  and are incorporated by reference throughout this policy.
  Where this policy establishes procedural mandates,
  
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- provides the operational detail for executing them.
+work order operational standards maintained in the System of Engagement
+ provide the operational detail for executing them.
 \end_layout
 
 \begin_layout Subsection*
@@ -421,21 +394,7 @@ Assistant IT Director
 \lang english
 Shall ensure that work order intake,
  triage,
- and documentation standards are consistently applied by all IT personnel in accordance with this policy and 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ and documentation standards are consistently applied by all IT personnel in accordance with this policy and work order operational standards maintained in the System of Engagement
 .
 \end_layout
 
@@ -503,21 +462,7 @@ Shall create a work order for every actionable task,
 Shall adhere to the intake,
  triage,
  documentation,
- and closure standards defined in this policy and 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ and closure standards defined in this policy and work order operational standards maintained in the System of Engagement
 .
 \end_layout
 
@@ -880,23 +825,6 @@ nolink "false"
  Annual Policy Review and Maturity Scoring
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-ECIO Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Work Order Structure and Standards
-\end_layout
 
 \begin_layout Itemize
 
@@ -1026,21 +954,7 @@ The creation of a work order indicates that a request has been submitted to the 
  It does not guarantee acceptance or execution.
  Work orders that fall outside the scope of IT responsibilities,
  that are submitted for Unsupported assets,
- or that cannot be resourced within current operational capacity shall be dispositioned in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ or that cannot be resourced within current operational capacity shall be dispositioned in accordance with work order operational standards maintained in the System of Engagement
  and this policy.
 \end_layout
 
@@ -1070,21 +984,7 @@ Walk-in requests
  the receiving IT staff member shall direct the requester to submit the request through the work order system.
  Where the requester is unable to do so,
  the IT staff member shall create the work order on the requester's behalf,
- ensuring that the Requested By field accurately identifies the actual requester in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ ensuring that the Requested By field accurately identifies the actual requester in accordance with work order operational standards maintained in the System of Engagement
 .
 \end_layout
 
@@ -1165,21 +1065,7 @@ The Information Operations Department regularly initiates work that is not trigg
  internal projects,
  and any other IT-driven activity that constitutes actionable work.
  All IT-initiated work requires a work order,
- and all IT-initiated work orders shall be designated using the Internal Project checkbox as defined in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ and all IT-initiated work orders shall be designated using the Internal Project checkbox as defined in the System of Engagement
 .
  The Internal Project designation is mandatory for all IT-initiated work without exception.
 \end_layout
@@ -1313,39 +1199,11 @@ Where a submitted work order lacks sufficient information to complete triage,
 
 \lang english
 The Waiting for User status,
- as defined in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ as defined in the System of Engagement
 ,
  applies during the active execution phase of a work order when an IT-side action cannot proceed due to a user-side dependency —
  not during triage.
- IT staff shall apply Waiting for User status in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ IT staff shall apply Waiting for User status in accordance with work order operational standards maintained in the System of Engagement
  when that condition is encountered after triage and work commencement.
 \end_layout
 
@@ -1626,21 +1484,7 @@ nolink "false"
 
 \series default
 .
- All actions taken during the lifecycle of a work order shall be documented in the Notes section in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ All actions taken during the lifecycle of a work order shall be documented in the Notes section in accordance with work order operational standards maintained in the System of Engagement
 ,
  and shall be entered into the work order system within twenty-four (24) hours of each action taken,
  in accordance with 
@@ -1765,21 +1609,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The use of Private Notes shall comply with the constraints defined in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+The use of Private Notes shall comply with the constraints defined in the System of Engagement
  and 
 \series bold
 Policy 
@@ -1801,21 +1631,7 @@ nolink "false"
  Subtasks,
  related issues,
  asset linkages,
- and checklist items shall be maintained in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ and checklist items shall be maintained in accordance with work order operational standards maintained in the System of Engagement
  throughout the work order lifecycle.
 \end_layout
 
@@ -1830,39 +1646,11 @@ nolink "false"
 \lang english
 A work order shall not be closed until the work is complete,
  the resolution is documented,
- and the appropriate closure status has been applied in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ and the appropriate closure status has been applied in accordance with work order operational standards maintained in the System of Engagement
 .
  The terminal closure state for confirmed,
  properly completed work is Resolution Confirmed,
- as defined in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ as defined in the System of Engagement
 .
  Resolution Confirmed seals the work order record.
  Any future work on the same asset or issue requires a new work order.
@@ -1942,20 +1730,7 @@ nolink "false"
 \series default
  and shall accurately characterize the terminal outcome of the work.
  The available closure statuses and their definitions are established in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+work order operational standards maintained in the System of Engagement
 .
  Work orders closed due to requester non-response shall have the five-day notification requirement documented prior to closure,
  consistent with 
@@ -2037,21 +1812,7 @@ The acknowledgment of the Assistant IT Director,
 \begin_layout Standard
 
 \lang english
-The On-Call checkbox defined in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+The On-Call checkbox defined in the System of Engagement
  shall be applied to all work orders created in connection with after-hours emergency response for statistical tracking purposes.
  The IT Director shall review emergency exception work orders in aggregate no less than quarterly.
  Patterns of emergency exception usage inconsistent with the narrow criteria defined above shall be addressed as a compliance matter under 

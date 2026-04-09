@@ -681,23 +681,6 @@ nolink "false"
  Vendor Compliance and Third-Party Assurance Policy
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-ECIO Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Work Order Structure and Standards
-\end_layout
 
 \begin_layout Itemize
 

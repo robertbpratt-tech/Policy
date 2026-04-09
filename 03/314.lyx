@@ -1271,20 +1271,7 @@ nolink "false"
 
 \series default
  and 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+work order operational standards maintained in the System of Engagement
 .
  Individual task units shall be created as child work orders and linked to the master via the Related Issues field.
 \end_layout

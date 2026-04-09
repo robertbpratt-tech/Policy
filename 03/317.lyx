@@ -1706,20 +1706,7 @@ nolink "false"
 
 \series default
  and 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+work order operational standards maintained in the System of Engagement
 .
  Where this standard imposes additional requirements beyond those established in 
 \series bold

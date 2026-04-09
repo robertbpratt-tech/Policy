@@ -467,20 +467,7 @@ nolink "false"
 \series default
 ,
  and 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+work order operational standards maintained in the System of Engagement
 .
 \end_layout
 
@@ -997,23 +984,6 @@ nolink "false"
  Annual Policy Review and Maturity Scoring
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-ECIO Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Work Order Structure and Standards
-\end_layout
 
 \begin_layout Itemize
 CJIS Security Policy v6.0:
@@ -1639,21 +1609,7 @@ If the user is unavailable to confirm resolution,
 \begin_layout Itemize
 
 \lang english
-The technician shall update the work order status to the appropriate terminal status in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+The technician shall update the work order status to the appropriate terminal status in accordance with work order operational standards maintained in the System of Engagement
  and shall document the resolution state in the work order notes.
 \end_layout
 
@@ -1807,42 +1763,14 @@ If a technician receives a new incident work order whose symptoms match those of
 \begin_layout Enumerate
 
 \lang english
-Set the work order status to In Progress in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+Set the work order status to In Progress in accordance with work order operational standards maintained in the System of Engagement
 .
 \end_layout
 
 \begin_layout Enumerate
 
 \lang english
-Link the work order to the Parent Problem record via the Related Issues field in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+Link the work order to the Parent Problem record via the Related Issues field in the System of Engagement
 .
 \end_layout
 
@@ -1871,21 +1799,7 @@ The Related Issues link to the Parent Problem record is the required audit trail
 
 \lang english
 At the time the Parent Problem record is resolved,
- the assigned technician shall revisit each linked child work order and close it with the appropriate terminal status in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ the assigned technician shall revisit each linked child work order and close it with the appropriate terminal status in accordance with work order operational standards maintained in the System of Engagement
 :
 \end_layout
 
@@ -2190,21 +2104,7 @@ nolink "false"
 
 \series default
  before or concurrently with closing the incident work order.
- The Problem record shall reference the originating incident work order via the Related Issues field in 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
+ The Problem record shall reference the originating incident work order via the Related Issues field in the System of Engagement
 .
  From that point forward,
  root cause analysis,
