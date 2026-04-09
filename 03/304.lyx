@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -193,15 +193,12 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to define how the Elko County Information Operations Department receives,
- routes,
- and responds to service-related feedback and grievances.
- It establishes the authoritative definition of service quality under the Department's compliance-enforcement mandate,
- specifies the legitimate channels through which feedback is accepted,
- defines formal grievance pathways for end users and County departments,
- and protects IT personnel from lateral political pressure by decoupling staff performance evaluation from end-user satisfaction with compliance outcomes.
- This policy does not govern employment or personnel matters,
- which are subject to County HR policies and applicable collective bargaining agreements.
+This policy governs the receipt,
+ routing,
+ and disposition of service-related feedback and grievances directed at or concerning the Elko County Information Operations Department (ECIO).
+ It defines service quality under the Department's compliance-enforcement mandate,
+ establishes authorized feedback channels and formal grievance pathways,
+ and decouples staff performance evaluation from end-user satisfaction with compliance outcomes.
 \end_layout
 
 \begin_layout Subsection*
@@ -215,29 +212,51 @@ The purpose of this policy is to define how the Elko County Information Operatio
 
 \lang english
 This policy applies to all Information Operations Department personnel.
- It governs service-related feedback,
- grievances,
- and complaints concerning service delivery,
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Service-related feedback,
+ complaints,
+ and grievances concerning service delivery,
  technical decisions,
- and compliance-enforcement activities conducted by IT Department personnel in the performance of their duties.
+ and compliance-enforcement activities conducted by Information Operations Department personnel.
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
+\series bold
 \lang english
-This policy does not govern personnel or employment complaints —
- including allegations of misconduct,
- harassment,
- discrimination,
- or ethics violations —
- which are subject to County HR processes regardless of whether the subject of the complaint is an IT staff member.
- The boundary between service grievances and personnel complaints is addressed in Section 6.5.
+Out of Scope
+\series default
+:
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
-This policy does not alter or supersede the professional conduct standards established in 
+Personnel and employment complaints:
+ County Human Resources processes and applicable collective bargaining agreements.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Professional conduct standards:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -252,7 +271,7 @@ nolink "false"
 
 
 \series default
- (Code of Ethics and Professional Conduct) or 
+ and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -267,10 +286,10 @@ nolink "false"
 
 
 \series default
- (Standard Operating Ethos),
- which define the mandatory conduct floor for all IT personnel and remain in full effect during all service interactions.
+.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -328,10 +347,10 @@ nolink "false"
 
 
 \series default
-,
+ (End-User Communication Standards),
  and the conduct standards in 
 \series bold
-Policies 
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.02"
@@ -344,9 +363,9 @@ nolink "false"
 
 
 \series default
- and 
+ (Code of Ethics and Professional Conduct) and 
 \series bold
-
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.03"
@@ -359,20 +378,42 @@ nolink "false"
 
 
 \series default
-.
+ (Standard Operating Ethos).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall document grievance dispositions in the Department's system of record.
+Shall document grievance dispositions in the documentation system designated by the IT Director.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall not be subject to lateral pressure from department heads on technical or compliance decisions;
- service grievances against the IT Director shall be directed to the County Manager in accordance with Section 6.3.
+Shall not be subject to lateral pressure from department heads on technical or compliance decisions.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the escalation authority for department heads unsatisfied with the IT Director's disposition of a service grievance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the direct authority for complaints about the IT Director.
 \end_layout
 
 \end_deeper
@@ -395,7 +436,7 @@ Shall receive and route service-related feedback and complaints directed to the 
 \begin_layout Itemize
 
 \lang english
-Shall ensure that IT personnel are aware of and consistently apply the grievance pathways defined in this policy.
+Shall ensure that Information Operations personnel are aware of and consistently apply the grievance pathways defined in this policy.
 \end_layout
 
 \begin_layout Itemize
@@ -409,7 +450,7 @@ Shall surface staff-sourced operational feedback to the IT Director through the 
 
 \series bold
 \lang english
-All IT Personnel
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -418,7 +459,7 @@ All IT Personnel
 \begin_layout Itemize
 
 \lang english
-Shall document service-related feedback received through informal channels in the relevant work order within one (1) business day in accordance with 
+Shall document service-related feedback received through informal channels in the relevant work order in accordance with the documentation and channel requirements of 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -439,7 +480,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall escalate complaints or expressions of dissatisfaction that exceed their authority to the Assistant IT Director or IT Director without delay.
+Shall escalate complaints or expressions of dissatisfaction that exceed their authority to the Assistant IT Director or IT Director within the same business day the complaint is received.
 \end_layout
 
 \begin_layout Itemize
@@ -460,66 +501,7 @@ nolink "false"
 
 
 \series default
-.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-County Manager
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Serves as the escalation authority for department heads unsatisfied with the IT Director's disposition of a service grievance.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Serves as the direct authority for complaints about the IT Director.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-The County Manager's role in this policy is defined by the governance structure established in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and the delegation framework in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ (Delegation of Authority and Decision Rights).
 \end_layout
 
 \end_deeper
@@ -550,7 +532,7 @@ Shall not use informal channels,
 \begin_layout Itemize
 
 \lang english
-Requests to relax or waive compliance standards are not service grievances and shall be directed through the risk management process defined in 
+Shall direct requests to relax or waive compliance standards through the risk management process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -565,8 +547,8 @@ nolink "false"
 
 
 \series default
-,
- not through this policy.
+ (Risk Management Policy),
+ not through the grievance pathways in this policy.
 \end_layout
 
 \end_deeper
@@ -605,7 +587,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -632,7 +614,9 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -655,11 +639,12 @@ nolink "false"
 
 \end_inset
 
-,
 
 \series default
+,
  except where the exception concerns a complaint about the IT Director,
  in which case County Manager approval is required.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -667,6 +652,15 @@ nolink "false"
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -785,42 +779,6 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Service Catalog and SLA Policy
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Service Level Management and Metrics Reporting
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "pol:3.03"
 plural "false"
 caps "false"
@@ -848,25 +806,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Performance Metrics and Operational KPIs
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -885,6 +827,15 @@ nolink "false"
 
 :
  Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -1072,7 +1023,7 @@ County Manager
  and the IT Director may likewise bring matters to the County Manager outside the scheduled meeting when circumstances warrant.
  The monthly meeting establishes the routine checkpoint;
  it does not constrain the relationship to that interval.
- The IT Director shall document the substance of any actionable feedback received through this channel in the Department's system of record (Redmine) and shall initiate a response or corrective action as warranted.
+ The IT Director shall document the substance of any actionable feedback received through this channel in the documentation system designated by the IT Director and shall initiate a response or corrective action as warranted.
 \end_layout
 
 \begin_layout Itemize
@@ -1082,7 +1033,7 @@ County Manager
 Work Order System and Written Correspondence
 \series default
 :
- End users and department heads may provide service-related feedback through the designated work order system (Redmine) or in direct written correspondence addressed to the IT Director.
+ End users and department heads may provide service-related feedback through the designated work order system or in direct written correspondence addressed to the IT Director.
  IT personnel shall document feedback received informally —
  including verbal complaints and hallway conversations —
  in the relevant work order in accordance with 
@@ -1101,7 +1052,7 @@ nolink "false"
 
 \series default
 .
- Feedback submitted through the work order system or written correspondence shall be acknowledged by the IT Director or Assistant IT Director within five (5) business days of receipt.
+ The IT Director or Assistant IT Director shall acknowledge feedback submitted through the work order system or written correspondence within five (5) business days of receipt.
 \end_layout
 
 \begin_layout Itemize
@@ -1137,7 +1088,8 @@ Service-related grievances —
  including direct appeals to County leadership outside the defined chain,
  back-channel pressure on IT staff,
  or misrouting of service disputes into HR processes —
- shall be redirected to the appropriate channel by the receiving party.
+ are not recognized as valid grievance submissions under this policy.
+ The IT Director or Assistant IT Director shall redirect misdirected grievances received by the Department to the appropriate pathway defined in this section and shall document the redirection in the documentation system designated by the IT Director.
 \end_layout
 
 \begin_layout Itemize
@@ -1167,7 +1119,7 @@ nolink "false"
 ,
  and the conduct standards in 
 \series bold
-Policies 
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.02"
@@ -1182,7 +1134,7 @@ nolink "false"
 \series default
  and 
 \series bold
-
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.03"
@@ -1202,7 +1154,7 @@ nolink "false"
  and provide written notification of the disposition to the complainant.
  Where the grievance identifies a legitimate conduct or process deficiency,
  the IT Director shall initiate appropriate corrective action through the Department's internal performance management process.
- Grievance dispositions shall be documented in the Department's system of record.
+ The IT Director shall document grievance dispositions in the documentation system designated by the IT Director.
 \end_layout
 
 \begin_layout Itemize
@@ -1213,7 +1165,38 @@ Grievance against the IT Director
 \series default
 :
  The complainant shall direct the grievance to the County Manager.
- The County Manager serves as the IT Director's administrative authority and is the appropriate party to evaluate complaints about the IT Director's decisions or conduct.
+ The County Manager serves as the IT Director's administrative authority under the governance structure established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Governance and Oversight Structure) and the delegation framework in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and is the appropriate party to evaluate complaints about the IT Director's decisions or conduct.
  This pathway shall not be used as a mechanism to compel changes to compliance policy or technical standards;
  such requests remain subject to the risk management process in 
 \series bold
@@ -1255,7 +1238,7 @@ Compliance relaxation requests
  A request by any party to relax,
  waive,
  or deviate from a technical standard or compliance control is not a service grievance and shall not be processed through the pathways defined in this section.
- Such requests shall be directed to the IT Director and processed through the formal risk acceptance process defined in 
+ The IT Director shall route such requests through the formal risk acceptance process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1270,6 +1253,7 @@ nolink "false"
 
 
 \series default
+.
  This determination applies regardless of how the request is framed.
 \end_layout
 
@@ -1304,7 +1288,7 @@ nolink "false"
 ,
  and the conduct standards of 
 \series bold
-Policies 
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.02"
@@ -1319,7 +1303,7 @@ nolink "false"
 \series default
  and 
 \series bold
-
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.03"
@@ -1463,7 +1447,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Performance evaluations for IT personnel shall be conducted by the IT Director or Assistant IT Director in accordance with 
+The IT Director or Assistant IT Director shall conduct performance evaluations for IT personnel in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1478,7 +1462,9 @@ nolink "false"
 
 
 \series default
-.
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework).
  External pressure from department heads or end users shall not substitute for,
  or override,
  the Department's internal performance evaluation process.
@@ -1499,7 +1485,7 @@ This policy governs service-related feedback and grievances only.
  discrimination,
  ethics violations,
  or other employment-related matters are not service grievances and are not governed by this policy.
- Such complaints shall be directed to the County's Human Resources function and handled in accordance with County HR policies and applicable collective bargaining agreements,
+ IT personnel who receive such complaints shall direct them to the County's Human Resources function for handling in accordance with County HR policies and applicable collective bargaining agreements,
  regardless of whether the subject of the complaint is an IT staff member.
 \end_layout
 
@@ -1513,7 +1499,7 @@ The distinction between a service grievance and a personnel complaint shall be d
  or otherwise objectionable —
  when submitted to HR rather than through the grievance pathways in Section 6.3 —
  remains a service grievance and shall be evaluated as such.
- When a complaint is redirected from the HR channel to the service grievance process,
+ When the IT Director redirects a complaint from the HR channel to the service grievance process,
  the IT Director shall notify HR of the routing decision and its rationale in writing.
 \end_layout
 
