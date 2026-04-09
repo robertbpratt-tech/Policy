@@ -47,7 +47,7 @@
 | 3.15 | Service Continuity and Contingency Planning Policy | o |
 | 3.16 | Service Improvement and Continual Improvement Plan | o |
 | 3.17 | System Maintenance and Vendor Repairs | o |
-| 4.01 | Incident Response Policy Overview | o |
+| 4.01 | Incident Response Policy Overview | x |
 | 4.02 | Identification and Reporting Procedures | o |
 | 4.03 | Containment Strategy and Playbooks | o |
 | 4.04 | Eradication Procedures and Scenario Guides | o |
