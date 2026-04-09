@@ -190,6 +190,12 @@ Version:
  Purpose
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy governs the mandatory postmortem review process conducted following every cybersecurity incident declared under Chapter 4 authority.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -197,6 +203,370 @@ Version:
  Scope
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel who participated in or supported cybersecurity incident response operations,
+ and to the IT Director and Assistant IT Director in their governance roles over the postmortem review process.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Mandatory postmortem trigger and completion timeline.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Postmortem leadership assignment and separation of duties.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Postmortem meeting requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Internal postmortem report content requirements,
+ including the reconstructed incident timeline with Known and Suspected markers.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+External (redacted) postmortem derivative preparation and distribution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Findings classification and routing to existing remediation and improvement pipelines.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Draft findings preservation requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Postmortem report retention.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+IoC evaluation and incident declaration:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Containment strategy selection and execution:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Eradication procedures and eradication-complete determination:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Recovery operations and Operational Handback initiation mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Communication execution and external notification mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CI record governance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Change categorization and RFC governance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Risk Register maintenance and risk assessment methodology:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Corrective Action Plan lifecycle:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Service improvement intake and triage:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Problem Management root cause investigation for operational findings:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Knowledge Base artifact governance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Annual policy review and maturity scoring:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -204,11 +574,336 @@ Version:
  Roles and Responsibilities
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall ensure that a postmortem review is initiated for every cybersecurity incident declared under Chapter 4 authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall assign the Postmortem Lead in accordance with the separation of duties requirements defined in Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as Postmortem Lead when the Incident Commander for the incident was not the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as a mandatory participant in the postmortem meeting when the Assistant IT Director serves as Postmortem Lead.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review and approve the completed internal postmortem report.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review and approve the external (redacted) postmortem derivative prior to distribution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall route postmortem findings to the appropriate remediation and improvement pipelines in accordance with Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall determine whether operational findings from the postmortem warrant opening a 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Problem Management Policy) Problem record,
+ in accordance with the jurisdictional boundary established in Section 6.7.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize formal exceptions to this policy in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as Postmortem Lead when the Incident Commander for the incident was the IT Director,
+ in accordance with Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall compile the communication data package prepared under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration) Section 6.10 and shall ensure its inclusion in the internal postmortem report.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall compile all source documentation from the incident work order,
+ Chapter 4 checklist,
+ and related records in preparation for the postmortem meeting.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare the external (redacted) postmortem derivative in accordance with Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall preserve the Postmortem Lead's draft findings as a permanent attachment to the postmortem record in accordance with Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain postmortem records in the System of Engagement in accordance with Section 6.8.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident Commander (when not the IT Director or Assistant IT Director)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall participate in the postmortem meeting as a mandatory attendee.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide the Postmortem Lead with a written summary of key response decisions,
+ rationale,
+ and observations prior to or during the postmortem meeting.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Department Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall attend the postmortem meeting when directed by the Postmortem Lead.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide factual input regarding response actions taken,
+ observations made,
+ and difficulties encountered during the incident.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
 4.
  Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations Department personnel involved in or supporting cybersecurity incident response.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to postmortem initiation,
+ completion timelines,
+ report content requirements,
+ findings routing obligations,
+ and retention requirements shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The following conditions constitute specific non-compliance with this policy:
+ failure to initiate a postmortem review for a declared cybersecurity incident;
+ failure to complete the internal postmortem report within the timeline established in Section 6.3;
+ failure to preserve the Postmortem Lead's draft findings as required by Section 6.4;
+ failure to prepare the external postmortem derivative within the timeline established in Section 6.5;
+ failure to route actionable findings in accordance with Section 6.6;
+ and failure to maintain postmortem records in accordance with Section 6.8.
+ Non-compliance may result in corrective action in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy require written approval from the IT Director in accordance with the exception management framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No open-ended exceptions are permitted.
+ All approved exceptions shall be documented and time-bounded.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -218,11 +913,1366 @@ Version:
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy and Documentation Formatting Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Problem Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Improvement and Continual Improvement Plan
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Containment Strategy and Playbooks
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Eradication Procedures and Scenario Guides
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Recovery Operations and Restoration Prioritization
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols and Partner Integration
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071728 (IT Security Audit Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-4 (Incident Handling)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-01 (Improvements Identified from Evaluations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-03 (Improvements Identified from Execution of Operational Processes)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RS.AN-03 (Incident Analysis and Root Cause)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-4 (Incident Handling)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-61 Rev.
+ 3:
+ Incident Response Recommendations and Considerations for Cyber Risk Management
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-1 (Incident Response Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-8 (Incident Response Plan)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-1 (Incident Response Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-8 (Incident Response Plan)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS02 (Managed Service Requests and Incidents)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Incident Management Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Problem Management Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy is written to serve two audiences simultaneously:
+ ECIO personnel and internal auditors who read it within the full context of the ECIO Policy Manual,
+ and external reviewers —
+ including the Nevada state cyber defense office —
+ who may review it as a standalone document.
+ Where this policy references concepts,
+ roles,
+ or procedures whose authoritative definitions reside in other policies,
+ it states the operative substance in plain language sufficient for an external reader and cites the authoritative source.
+ Those plain-language statements are incorporative and do not constitute independent definitions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The postmortem review is the Lessons Learned phase of the ECIO cybersecurity incident response lifecycle.
+ Its purpose is to produce a structured,
+ documented assessment of the Department's response to a cybersecurity incident —
+ what happened,
+ what worked,
+ what failed,
+ and what must change.
+ Postmortem findings feed back into the Department's governance,
+ risk,
+ and improvement frameworks to strengthen the Department's posture for the next incident.
+ This feedback loop implements NIST SP 800-53 Rev.
+ 5:
+ IR-4 (Incident Handling),
+ which requires that lessons learned from ongoing incident handling activities be incorporated into incident response procedures,
+ training,
+ and testing,
+ and aligns with NIST CSF 2.0:
+ ID.IM-01 (Improvements Identified from Evaluations) and NIST CSF 2.0:
+ ID.IM-03 (Improvements Identified from Execution of Operational Processes).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy is distinct from the Problem Management process governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Problem Management Policy),
+ which applies to operational incidents.
+ Cybersecurity incident postmortems are exclusively governed by this policy.
+ The jurisdictional boundary between the two is addressed in Section 6.7.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Mandatory Postmortem Trigger
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Every cybersecurity incident declared under Chapter 4 authority shall receive a postmortem review under this policy.
+ There are no severity-based exclusions and no deferral provisions.
+ An incident that warranted declaration warrants documentation of how the Department responded.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Incident Commander shall trigger the postmortem review as a precondition of Operational Handback under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Recovery Operations and Restoration Prioritization) Section 6.6.
+ The trigger shall be documented in the incident work order Notes and the Chapter 4 checklist at the time it is made.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Postmortem Leadership and Separation of Duties
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The person who commanded the incident response shall not lead the review of that response.
+ This separation ensures that the postmortem review is conducted with independence from the operational decisions under examination.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+When the Incident Commander was the IT Director
+\series default
+:
+ The Assistant IT Director shall serve as Postmortem Lead.
+ The IT Director shall participate in the postmortem meeting as a mandatory attendee.
+ The IT Director retains final approval authority over the completed internal postmortem report,
+ but shall not direct the investigation,
+ suppress findings,
+ or direct modifications to the Postmortem Lead's factual findings.
+ The IT Director may add a written response or addendum to the final report.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+When the Incident Commander was not the IT Director
+\series default
+:
+ The IT Director shall serve as Postmortem Lead.
+ The Incident Commander shall participate in the postmortem meeting as a mandatory attendee.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Postmortem Lead is responsible for scheduling the postmortem meeting,
+ conducting the structured review,
+ preparing the internal postmortem report,
+ and presenting findings and recommended routing dispositions to the IT Director for approval.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Postmortem Meeting and Completion Timeline
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Postmortem Meeting
+\series default
+:
+ The Postmortem Lead shall convene the postmortem meeting within five (5) business days of the Operational Handback declaration.
+ The meeting is a structured debrief conducted while operational memory is fresh.
+ All Information Operations personnel who participated in the incident response shall attend unless excused by the Postmortem Lead.
+ The Postmortem Lead shall document attendance.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Internal Postmortem Report
+\series default
+:
+ The Postmortem Lead shall complete the internal postmortem report within ten (10) business days of the Operational Handback declaration.
+ The IT Director shall review and approve the completed report.
+ IT Director approval constitutes finalization of the internal report.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+External Postmortem Derivative
+\series default
+:
+ The Assistant IT Director shall prepare the external (redacted) postmortem derivative within five (5) business days of IT Director approval of the internal report.
+ The IT Director shall review and approve the external derivative prior to any distribution.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Internal Postmortem Report Content
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The internal postmortem report is the authoritative record of the Department's review of its response to a cybersecurity incident.
+ The report shall be documented in the System of Engagement (Redmine) and shall include,
+ at minimum,
+ the following content:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident Summary
+\series default
+:
+ Incident type (Layer 1 category),
+ severity classification,
+ CJI involvement determination,
+ declaration authority and declaring party,
+ Incident Commander designation,
+ and a narrative description of the incident.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Reconstructed Incident Timeline
+\series default
+:
+ A chronological reconstruction of the incident from initial detection or report through Operational Handback.
+ Each timeline entry shall be marked as 
+\series bold
+Known
+\series default
+ (confirmed by evidence —
+ system logs,
+ work order timestamps,
+ forensic captures,
+ or other documentary evidence) or 
+\series bold
+Suspected
+\series default
+ (assessed based on professional judgment where contemporaneous technical evidence —
+ system logs,
+ forensic captures,
+ or work order timestamps —
+ is unavailable,
+ incomplete,
+ or inconclusive).
+ The Known/Suspected distinction shall be applied at the entry level,
+ not as a blanket classification for the timeline as a whole.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Communication Record
+\series default
+:
+ The communication data package compiled by the Assistant IT Director under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.10,
+ including internal status updates,
+ external notifications,
+ partner engagement records,
+ legal review metadata,
+ and media communications.
+ Data protection controls appropriate to the classification of the information under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) shall be applied to the communication record within the postmortem report.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+False Positive Documentation
+\series default
+:
+ When a false positive determination was made during the incident under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Eradication Procedures and Scenario Guides),
+ including any documentation of the justification for original eradication actions,
+ the Postmortem Lead shall incorporate that documentation into the report.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Root Cause Analysis
+\series default
+:
+ The Postmortem Lead's assessment of the root cause of the incident.
+ Where root cause cannot be determined,
+ the report shall state the basis for the indetermination and identify any investigative avenues that remain open.
+ Root cause analysis in this context addresses why the incident occurred and why it was not prevented or detected sooner.
+ It does not replace the operational root cause investigation function governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for service failures.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Phase-by-Phase Review
+\series default
+:
+ A structured assessment of the Department's performance across each lifecycle phase that was activated during the incident (Identification,
+ Containment,
+ Eradication,
+ Recovery,
+ and Communication).
+ For each phase,
+ the Postmortem Lead shall document what worked effectively,
+ what did not work effectively,
+ and specific observations or recommendations for improvement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Findings and Routing Dispositions
+\series default
+:
+ Each actionable finding shall be documented with a recommended routing disposition in accordance with Section 6.6.
+ The IT Director shall approve the routing disposition for each finding.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Postmortem Meeting Attendance Record
+\series default
+:
+ A record of all personnel who attended the postmortem meeting.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Draft Findings Preservation
+\series default
+:
+ The Postmortem Lead's draft findings —
+ including draft routing recommendations,
+ working notes,
+ and the draft report —
+ shall be preserved as a permanent attachment to the postmortem record in the System of Engagement.
+ The draft attachment shall not be modified after the IT Director approves the final internal report.
+ This preservation requirement applies regardless of whether the IT Director modifies,
+ supplements,
+ or adds an addendum to the final report.
+ The Redmine History provides the system-generated,
+ tamper-evident audit trail confirming the sequence of drafts and approvals.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 External (Redacted) Postmortem Derivative
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The external postmortem derivative is a controlled derivative of the internal postmortem report,
+ prepared for distribution to audiences outside the Department —
+ including the County Manager,
+ external partners,
+ and oversight bodies as applicable.
+ The external derivative is not an independent document;
+ its factual content shall be consistent with the approved internal report.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall prepare the external derivative by redacting the following categories of information from the internal report:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Personally Identifiable Information (PII) of affected individuals,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Criminal Justice Information (CJI),
+ in accordance with the CJIS Security Policy and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Privileged legal communications and attorney-client information,
+ consistent with the metadata-only documentation standard established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.11.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Architectural details,
+ network topology,
+ security tool configurations,
+ and other technical information whose disclosure could expose the Department's security posture.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Internal personnel performance observations and disciplinary references.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall review and approve the external derivative prior to any distribution.
+ Distribution of the external derivative shall occur through the communication authority structure established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ When the external derivative contains information related to CJI involvement,
+ breach determination,
+ or other legally sensitive content,
+ the IT Director shall route the derivative through legal review in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.8 prior to distribution.
+ Distribution of the external derivative constitutes a Post-Incident and Post-Handback Communication as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.2 and shall be documented in the incident work order.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Findings Routing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Postmortem Lead shall classify each actionable finding and recommend a routing disposition.
+ The IT Director shall approve the routing disposition for each finding.
+ This policy does not create parallel remediation trackers,
+ improvement registers,
+ or corrective action mechanisms.
+ All findings route through the existing governance pipelines established in the ECIO Policy Manual.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Risk Register (Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\series default
+:
+ Control failures,
+ compliance gaps,
+ and risk posture changes identified through the postmortem shall be routed to the Risk Register maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy).
+ The existing Risk Register-to-Corrective Action Plan pipeline under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Compliance Monitoring and Corrective Action) governs subsequent remediation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Service Improvement Register (Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\series default
+:
+ Improvement opportunities that are not control failures or compliance gaps —
+ process refinements,
+ efficiency gains,
+ coordination improvements,
+ and other enhancements that would strengthen future response —
+ shall be routed to the Service Improvement Register under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Improvement and Continual Improvement Plan).
+ The existing triage and routing process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs subsequent execution.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IoC List Maintenance (Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\series default
+:
+ Indicator updates identified through postmortem analysis —
+ including new indicators observed during the incident that are not yet reflected in the Layer 2 IoC list,
+ and existing indicators whose classification or relevance should be adjusted —
+ shall be routed to the Assistant IT Director for Layer 2 maintenance under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures) Section 6.1.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Knowledge Base (Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\series default
+:
+ Playbook updates,
+ procedural corrections,
+ and documentation improvements surfaced by the postmortem shall be routed to the Knowledge Base governance process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy).
+ The Assistant IT Director shall execute playbook updates under standing maintenance authority established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Containment Strategy and Playbooks).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A single finding may route to more than one pipeline when the finding has both a remediation component and an improvement component.
+ The IT Director shall approve multi-pipeline routing at the time of disposition.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Relationship to Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ —
+ Jurisdictional Boundary
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy governs cybersecurity incident postmortems.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ governs operational incident root cause investigation.
+ These are distinct instruments with distinct purposes,
+ and one shall not be substituted for the other.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Where a Chapter 4 cybersecurity incident also generates operational findings that warrant a formal Problem investigation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the IT Director shall determine whether a 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Problem record is appropriate and shall authorize its opening in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 2.
+ That determination is an IT Director governance decision;
+ it is not a mechanical output of the postmortem process.
+ This policy does not open 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Problem records.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Internal postmortem reports,
+ external postmortem derivatives,
+ draft findings attachments,
+ postmortem meeting attendance records,
+ and all supporting documentation produced under this policy shall be retained in the System of Engagement for a minimum of three (3) calendar years from the end of the calendar year in which the Operational Handback was declared,
+ in accordance with NRS 239.125 and the Nevada Local Government Records Retention Schedule:
+ LRDA 20071728 (IT Security Audit Records).
+ Where multiple retention requirements apply,
+ the longest applicable period shall govern.
+ The IT Director shall ensure that postmortem records are not disposed of during any active litigation hold,
+ public records preservation requirement,
+ audit,
+ or other legal hold event.
 \end_layout
 
 \end_body
