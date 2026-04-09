@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -192,25 +192,13 @@ Version:
 
 \begin_layout Standard
 
-\series bold
 \lang english
-Policy 4.02
-\series default
- establishes the identification,
+This policy establishes the identification,
  intake,
  triage,
  classification,
  notification,
  and documentation obligations for all cybersecurity incidents within the Elko County Information Operations Department (ECIO).
- This policy normalizes seven distinct upstream intake paths into a single,
- consistent handling framework;
- maintains the canonical Indicator of Compromise (IoC) list that governs incident declaration throughout the manual;
- and establishes the CJIS-compliant reporting mechanics and incident record structure required for operational execution and audit accountability.
- 
-\series bold
-Policy 4.02
-\series default
- is activated immediately upon potential cybersecurity incident discovery and governs all activity through declaration and handoff to the appropriate operational response policies.
 \end_layout
 
 \begin_layout Subsection*
@@ -222,158 +210,33 @@ Policy 4.02
 
 \begin_layout Standard
 
-\series bold
 \lang english
-In Scope
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-This policy applies to all ECIO personnel,
+This policy applies to all Information Operations personnel,
  contractors,
  and vendors operating within or interfacing with ECIO systems.
- It governs:
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Maintenance and governance of the canonical IoC list,
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Governance and maintenance of the canonical Indicator of Compromise (IoC) list,
  including its two-layer architecture and amendment procedures.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Intake channel normalization for all upstream referrals originating from 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.13"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.13"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.03"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.05"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.12"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+Intake channel normalization for upstream referrals.
 \end_layout
 
 \begin_layout Itemize
@@ -393,7 +256,7 @@ Incident type and severity classification.
 \begin_layout Itemize
 
 \lang english
-CJIS IR-6 internal one-hour reporting mechanics and external notification obligation triggers.
+CJIS-compliant internal and external reporting mechanics.
 \end_layout
 
 \begin_layout Itemize
@@ -424,23 +287,21 @@ Evidence artifact preservation and retention.
 False positive disposition and indicator review procedures.
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
 \series bold
 \lang english
 Out of Scope
+\series default
+:
 \end_layout
 
-\begin_layout Standard
-
-\lang english
-The following matters are governed by the indicated policies and shall not be addressed under this policy:
-\end_layout
-
+\begin_deeper
 \begin_layout Itemize
 
 \lang english
-Operational incident response for non-security events —
+Operational incident response for non-security events:
  
 \series bold
 Policy 
@@ -462,7 +323,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Hard Fork procedure mechanics —
+Hard Fork procedure mechanics:
  
 \series bold
 Policy 
@@ -478,14 +339,13 @@ nolink "false"
 
 
 \series default
-,
- Section 6.2.
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-CI record updates following incident-driven changes —
+CI record updates following incident-driven changes:
  
 \series bold
 Policy 
@@ -507,7 +367,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Catch-up RFC documentation for emergency configuration changes —
+Catch-up RFC documentation for emergency configuration changes:
  
 \series bold
 Policy 
@@ -529,7 +389,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Monitoring event classification and work order generation —
+Monitoring event classification and work order generation:
  
 \series bold
 Policy 
@@ -551,7 +411,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Containment strategy selection and execution —
+Containment strategy selection and execution:
  
 \series bold
 Policy 
@@ -573,7 +433,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Eradication procedures —
+Eradication procedures:
  
 \series bold
 Policy 
@@ -595,7 +455,9 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Recovery operations and Operational Handback —
+Recovery operations,
+ restoration prioritization,
+ and Operational Handback:
  
 \series bold
 Policy 
@@ -617,7 +479,10 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Communication execution and external notification mechanics —
+Communication execution,
+ external notification mechanics,
+ IR roles and contact directory,
+ and partner engagement:
  
 \series bold
 Policy 
@@ -639,29 +504,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Data and system classification for recovery —
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.05"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Postmortem review and lessons learned —
+Postmortem review and lessons learned:
  
 \series bold
 Policy 
@@ -680,50 +523,7 @@ nolink "false"
 .
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-Incident Response Roles and Contact Directory —
-
-\series bold
-Policy
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-External partner engagement procedures —
-
-\series bold
-Policy
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -733,8 +533,11 @@ nolink "false"
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-IT Director:
+IT Director
+\series default
+:
 \end_layout
 
 \begin_deeper
@@ -757,7 +560,7 @@ nolink "false"
 
 
 \series default
-,
+ (Operational Incident Management Policy),
  Section 6.3.
 \end_layout
 
@@ -779,7 +582,7 @@ nolink "false"
 
 
 \series default
-,
+ (Incident Response Policy Overview),
  Section 6.1 and 
 \series bold
 Policy 
@@ -795,13 +598,13 @@ nolink "false"
 
 
 \series default
-.
+ (Delegation of Authority and Decision Rights).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall review Safety and Security work orders in the Redmine queue and release them to Reviewed status upon declaration,
+Shall review Safety and Security work orders in the System of Engagement queue and release them to Reviewed status upon declaration,
  or document the basis for decline in the work order notes.
 \end_layout
 
@@ -848,7 +651,7 @@ Shall authorize formal exceptions to the requirements of this policy per
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -858,14 +661,19 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 
+\series bold
 \lang english
-Assistant IT Director:
+Assistant IT Director
+\series default
+:
 \end_layout
 
 \begin_deeper
@@ -901,14 +709,14 @@ Shall review Safety and Security work orders and release them to Reviewed status
 \begin_layout Itemize
 
 \lang english
-Shall own and maintain the Layer 2 IoC indicator artifact in Redmine under standing maintenance authority,
+Shall own and maintain the Layer 2 IoC indicator artifact in the System of Engagement under standing maintenance authority,
  with IT Director notification upon each update.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall conduct the thirty-day false positive indicator review for each flagged indicator.
+Shall conduct the thirty (30) day false positive indicator review for each flagged indicator.
 \end_layout
 
 \begin_layout Itemize
@@ -936,21 +744,106 @@ nolink "false"
 
 
 \series default
-.
+ (Knowledge Management Policy).
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 
+\series bold
 \lang english
-IT Department Personnel:
+Network Administrator
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall create a Safety and Security category work order in Redmine immediately upon discovery of any condition that may constitute an IoC,
+Shall provide domain-specific technical analysis for network-related incidents as delegated by the Incident Commander.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not exercise declaration authority by virtue of delegated analysis responsibility alone;
+ declaration authority remains with the IT Director,
+ the Assistant IT Director,
+ or a Tier L3+ technical lead designated in writing by the IT Director per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall provide domain-specific technical analysis for server and endpoint-related incidents as delegated by the Incident Commander.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not exercise declaration authority by virtue of delegated analysis responsibility alone;
+ declaration authority remains with the IT Director,
+ the Assistant IT Director,
+ or a Tier L3+ technical lead designated in writing by the IT Director per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall create a Safety and Security category work order in the System of Engagement immediately upon discovery of any condition that may constitute an IoC,
  without exception.
 \end_layout
 
@@ -999,56 +892,6 @@ nolink "false"
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-
-\lang english
-Network Administrator / Systems Administrator:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall provide domain-specific technical analysis as delegated by the Incident Commander.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Network Administrator shall lead analysis for network-related incidents.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Systems Administrator shall lead analysis for server and endpoint-related incidents.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall not exercise declaration authority by virtue of delegated analysis responsibility alone;
- declaration authority remains with the IT Director,
- the Assistant IT Director,
- or a Tier L3+ technical lead designated in writing by the IT Director per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -1059,7 +902,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all Information Operations Department personnel,
+Compliance with this policy is mandatory for all Information Operations personnel,
  contractors,
  and vendors subject to ECIO governance,
  in accordance with 
@@ -1106,7 +949,7 @@ nolink "false"
 
 
 \series default
- and the annual policy review and maturity scoring process defined in 
+ (Internal Audits and Self-Assessment Procedures) and the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1121,7 +964,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -1162,7 +1005,23 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved by the IT Director in advance in accordance with 
+ Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved by the IT Director in advance in accordance with the exception framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ within the delegation constraints of 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1188,6 +1047,15 @@ nolink "false"
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -1278,6 +1146,24 @@ nolink "false"
 
 :
  Physical Security and Environmental Controls Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
 \end_layout
 
 \begin_layout Itemize
@@ -1448,7 +1334,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.06"
+reference "pol:4.04"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1457,7 +1343,7 @@ nolink "false"
 \end_inset
 
 :
- Communication Protocols
+ Eradication Procedures and Scenario Guides
 \end_layout
 
 \begin_layout Itemize
@@ -1475,7 +1361,25 @@ nolink "false"
 \end_inset
 
 :
- Data and System Classification for Recovery
+ Recovery Operations and Restoration Prioritization
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols and Partner Integration
 \end_layout
 
 \begin_layout Itemize
@@ -1499,44 +1403,6 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Incident Response Roles and Contact Directory
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Integration with Local,
- State,
- and Federal Partners
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1549,7 +1415,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -1597,7 +1465,14 @@ NRS 239.125 (Local Government Records Management Program)
 \begin_layout Itemize
 
 \lang english
-NRS 603A.220 (Disclosure of breach of security of system data)
+LRDA 20071279 (Property Management:
+ Security Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071728 (IT Access Control Reviews and Audit Trails)
 \end_layout
 
 \begin_layout Itemize
@@ -1605,6 +1480,28 @@ NRS 603A.220 (Disclosure of breach of security of system data)
 \lang english
 CJIS Security Policy v6.0:
  Section AU-11 (Audit Record Retention)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 603A.220 (Disclosure of Breach of Security of System Data)
 \end_layout
 
 \begin_layout Itemize
@@ -1619,13 +1516,6 @@ CJIS Security Policy v6.0:
 \lang english
 CJIS Security Policy v6.0:
  Section IR-5 (Incident Monitoring)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
- Section IR-6 (Incident Reporting)
 \end_layout
 
 \begin_layout Itemize
@@ -1736,7 +1626,7 @@ NIST SP 800-53 Rev.
 \lang english
 NIST SP 800-61 Rev.
  3:
- (Incident Response Recommendations and Considerations for Cyber Risk Management)
+ Incident Response Recommendations and Considerations for Cyber Risk Management
 \end_layout
 
 \begin_layout Itemize
@@ -1760,6 +1650,16 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy normalizes seven (7) distinct upstream intake paths into a single,
+ consistent handling framework;
+ maintains the canonical Indicator of Compromise (IoC) list that governs incident declaration throughout the manual;
+ and establishes the CJIS-compliant reporting mechanics and incident record structure required for operational execution and audit accountability.
+ This policy is activated immediately upon potential cybersecurity incident discovery and governs all activity through declaration and handoff to the appropriate operational response policies.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
@@ -1768,11 +1668,8 @@ ITIL v4:
 
 \begin_layout Standard
 
-\series bold
 \lang english
-Policy 4.02
-\series default
- maintains the canonical IoC list that governs cybersecurity incident declaration across the ECIO Policy Manual.
+This policy maintains the canonical IoC list that governs cybersecurity incident declaration across the ECIO Policy Manual.
  The list uses a two-layer architecture separating permanent categorical triggers from current technical indicators.
 \end_layout
 
@@ -1781,14 +1678,14 @@ Policy 4.02
 \series bold
 \lang english
 Layer 1 —
- Categorical Triggers
+ Categorical Triggers:
 \series default
-.
- Layer 1 consists of six permanent,
+
+ Layer 1 consists of six (6) permanent,
  technology-agnostic categories that constitute an IoC regardless of how they manifest technically.
  Layer 1 categories reside in this policy text.
- They shall not change unless the fundamental nature of cybersecurity threats changes.
- Any change to a Layer 1 category or its definition requires IT Director approval and shall be documented as a policy amendment.
+ The IT Director shall not approve changes to Layer 1 categories or definitions unless the fundamental nature of cybersecurity threats changes.
+ The IT Director shall document any change to a Layer 1 category or its definition as a policy amendment.
 \end_layout
 
 \begin_deeper
@@ -1797,9 +1694,9 @@ Layer 1 —
 \series bold
 \lang english
 Category A —
- Unauthorized Access or Access Anomaly
+ Unauthorized Access or Access Anomaly:
 \series default
-.
+
  Any confirmed or strongly suspected access to systems,
  data,
  or accounts by an unauthorized party,
@@ -1815,9 +1712,9 @@ Category A —
 \series bold
 \lang english
 Category B —
- Malicious Code Activity
+ Malicious Code Activity:
 \series default
-.
+
  Presence or execution of malware,
  ransomware,
  spyware,
@@ -1834,9 +1731,9 @@ Category B —
 \series bold
 \lang english
 Category C —
- Denial of Service
+ Denial of Service:
 \series default
-.
+
  Any attack that impairs the availability of County IT systems or services through resource exhaustion,
  flooding,
  or disruption,
@@ -1848,9 +1745,9 @@ Category C —
 \series bold
 \lang english
 Category D —
- Data Compromise or Exfiltration
+ Data Compromise or Exfiltration:
 \series default
-.
+
  Any confirmed or suspected unauthorized access to,
  disclosure of,
  modification of,
@@ -1872,7 +1769,7 @@ nolink "false"
 
 
 \series default
-.
+ (Recovery Operations and Restoration Prioritization).
 \end_layout
 
 \begin_layout Itemize
@@ -1880,9 +1777,9 @@ nolink "false"
 \series bold
 \lang english
 Category E —
- Targeted Reconnaissance
+ Targeted Reconnaissance:
 \series default
-.
+
  Systematic probing,
  scanning,
  or enumeration of ECIO infrastructure that demonstrates specific targeting of internal systems,
@@ -1898,9 +1795,9 @@ Category E —
 \series bold
 \lang english
 Category F —
- Improper Use with Security Nexus
+ Improper Use with Security Nexus:
 \series default
-.
+
  Acceptable use violations,
  insider activity,
  or policy violations that involve attempted or confirmed unauthorized access to data,
@@ -1930,9 +1827,9 @@ nolink "false"
 \series bold
 \lang english
 Layer 2 —
- Specific Indicators
+ Specific Indicators:
 \series default
-.
+
  Layer 2 consists of current,
  actionable technical signatures —
  including file hashes,
@@ -1940,23 +1837,35 @@ Layer 2 —
  behavioral patterns,
  known malware identifiers,
  and credential stuffing signatures —
- maintained as a governed artifact in Redmine.
+ maintained as a governed artifact in the System of Engagement.
  Layer 2 reflects the evolving threat landscape and shall be updated as that landscape changes.
  The Assistant IT Director owns routine Layer 2 maintenance under standing authority.
  Routine maintenance includes adding new indicators and removing stale ones.
  The IT Director shall be notified of each update.
- Intelligence sources for Layer 2 shall be recognized threat intelligence sources and internal postmortem findings.
- No source list is hard-locked.
+ The Assistant IT Director shall source Layer 2 indicators from recognized threat intelligence sources and internal postmortem findings.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-IoC List Review
+Constraint:
 \series default
-.
- The IoC list as a whole shall be reviewed no less than quarterly.
+
+ No fixed source list shall be mandated;
+ source selection is at the discretion of the Assistant IT Director.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+IoC List Review:
+\series default
+
+ The Assistant IT Director shall review the IoC list as a whole no less than quarterly.
  The quarterly cadence is a floor,
  not a ceiling.
 \end_layout
@@ -1965,14 +1874,14 @@ IoC List Review
 
 \series bold
 \lang english
-False Positive Disposition
+False Positive Disposition:
 \series default
-.
+
  When a declared incident is determined to be a false positive,
- the triggering indicator shall be flagged in the work order notes at the time of that determination.
+ the Incident Commander shall flag the triggering indicator in the work order notes at the time of that determination.
  The indicator shall not be modified at the time of disposition.
- A standalone thirty-day review window shall be initiated at the time of false positive determination.
- Indicator modification requires a deliberate review cycle conducted within that thirty-day window,
+ A standalone thirty (30) day review window shall be initiated at the time of false positive determination.
+ Indicator modification requires a deliberate review cycle conducted within that thirty (30) day window,
  not an in-the-moment decision at disposition.
 \end_layout
 
@@ -1986,11 +1895,11 @@ False Positive Disposition
 
 \series bold
 \lang english
-Mandatory Work Order Requirement
+Mandatory Work Order Requirement:
 \series default
-.
- All Chapter 4 intake shall enter through a Safety and Security category work order in Redmine without exception.
- No cybersecurity incident response activity shall proceed without an associated work order.
+
+ All Chapter 4 intake shall enter through a Safety and Security category work order in the System of Engagement without exception.
+ All Information Operations Personnel shall not proceed with any cybersecurity incident response activity without an associated work order.
  This requirement is consistent with the work order discipline established in 
 \series bold
 Policy 
@@ -2006,7 +1915,7 @@ nolink "false"
 
 
 \series default
- and 
+ (Service Request Fulfillment Policy) and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2022,11 +1931,7 @@ nolink "false"
 
 \series default
 .
- 
-\series bold
-Policy 4.02
-\series default
- designates the Safety and Security work order category as the mandatory Chapter 4 intake channel,
+ This policy designates the Safety and Security work order category as the mandatory Chapter 4 intake channel,
  conferring explicit governance authority on that category for all cybersecurity incident intake.
 \end_layout
 
@@ -2034,14 +1939,76 @@ Policy 4.02
 
 \series bold
 \lang english
-Intake States
+Intake States:
 \series default
-.
- All upstream intake paths normalize into one of two functional states at the point of 
+
+ All upstream intake paths normalize into one of two (2) functional states at the point of evaluation under this policy.
+ Upstream sources not explicitly mapped below —
+ including referrals from 
 \series bold
-Policy 4.02
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
- evaluation.
+ (Risk Management Policy),
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Supply Chain Risk Management (SCRM) and Vendor Governance),
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (System Integrity and Malware Protection Policy),
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (End-User Communication Standards) —
+ shall enter through State 2.
 \end_layout
 
 \begin_deeper
@@ -2050,9 +2017,9 @@ Policy 4.02
 \series bold
 \lang english
 State 1 —
- Work order with existing IoC documentation
+ Work order with existing IoC documentation:
 \series default
-.
+
  This state applies to Hard Fork referrals from 
 \series bold
 Policy 
@@ -2083,15 +2050,11 @@ nolink "false"
 
 
 \series default
-.
+ (Monitoring and Event Management Policy).
  The work order already exists with the IoC observation documented in the notes,
  SLA suspension noted,
  and a forensic timestamp established.
- 
-\series bold
-Policy 4.02
-\series default
- receives the work order and proceeds directly to IoC evaluation.
+ This policy receives the work order and proceeds directly to IoC evaluation.
 \end_layout
 
 \begin_layout Itemize
@@ -2099,9 +2062,9 @@ Policy 4.02
 \series bold
 \lang english
 State 2 —
- Safety and Security intake work order
+ Safety and Security intake work order:
 \series default
-.
+
  This state applies to staff reports,
  vendor notifications relayed by staff,
  device loss or theft reports,
@@ -2120,9 +2083,9 @@ nolink "false"
 
 
 \series default
-,
+ (Physical Security and Environmental Controls Policy),
  and data spillage events.
- An IT Department staff member shall create the Safety and Security work order at the point of intake,
+ An Information Operations staff member shall create the Safety and Security work order at the point of intake,
  documenting the reported condition.
  IoC evaluation proceeds before any other response activity.
 \end_layout
@@ -2132,27 +2095,70 @@ nolink "false"
 
 \series bold
 \lang english
-Vendor Notification Handling
+Vendor Notification Handling:
 \series default
-.
+
  ECIO staff receiving a vendor notification of a suspected or confirmed security incident shall create the Safety and Security work order on the vendor's behalf,
  documenting the vendor's report as the source.
- Vendors shall not create Redmine tickets directly.
+ Vendors shall not create work orders directly in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-IoC Evaluation
+IoC Evaluation:
 \series default
-.
- IoC evaluation is mandatory for every Safety and Security work order before any other response activity proceeds.
+
+ The IT Director or the Assistant IT Director shall perform IoC evaluation for every Safety and Security work order before any other response activity proceeds.
  Evaluation shall be performed against Layer 1 categories and Layer 2 specific indicators.
- The result of each evaluation —
+ The IT Director or the Assistant IT Director shall document the result —
  declaration or decline —
- shall be documented in the work order at the time of determination.
+ in the work order at the time of determination.
  A declined work order shall include the basis for decline.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Continuous-Clock Intake:
+\series default
+
+ Any monitoring event under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ that constitutes a suspected cybersecurity incident shall enter Chapter 4 intake on a continuous calendar-hour clock.
+ The business-hour work order creation windows established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ do not apply to events routed to Chapter 4 under this policy.
+ This continuous-clock requirement is consistent with the CJIS IR-6 Part (a) one (1) hour internal reporting obligation,
+ which operates on continuous calendar hours regardless of business-hour status.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2197,10 +2203,10 @@ nolink "false"
 
 \series default
 .
- The standard Redmine triage workflow applies:
+ The standard System of Engagement triage workflow applies:
  Safety and Security work orders enter the queue,
- are reviewed by the IT Director or the Assistant IT Director,
- and are released to Reviewed status upon declaration.
+ the IT Director or the Assistant IT Director reviews them,
+ and the reviewing authority releases them to Reviewed status upon declaration.
 \end_layout
 
 \begin_layout Standard
@@ -2239,18 +2245,18 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The incident record for all declared Chapter 4 incidents shall use the existing Redmine work order infrastructure supplemented by the mandatory Chapter 4 checklist template.
- No new Redmine fields are required.
+The incident record for all declared Chapter 4 incidents shall use the existing work order infrastructure within the System of Engagement,
+ supplemented by the mandatory Chapter 4 checklist template.
 \end_layout
 
 \begin_layout Standard
 
 \series bold
 \lang english
-Work Order Infrastructure
+Work Order Infrastructure:
 \series default
-.
- The following existing Redmine work order fields constitute the structural foundation of the incident record:
+
+ The following existing work order fields constitute the structural foundation of the incident record:
  Subject,
  Description,
  Category (Safety and Security),
@@ -2260,9 +2266,8 @@ Work Order Infrastructure
  Related Issues,
  Watchers,
  and operational Severity.
- These fields shall not be modified for Chapter 4 intake purposes.
- The Redmine History provides the system-generated,
- timestamped audit trail for all status changes,
+ The IT Director shall not modify these fields for Chapter 4 intake purposes.
+ The system-generated audit trail within the System of Engagement provides the timestamped record for all status changes,
  field modifications,
  and note additions.
  This trail is tamper-evident and constitutes the authoritative chronological record of the incident.
@@ -2272,10 +2277,10 @@ Work Order Infrastructure
 
 \series bold
 \lang english
-Chapter 4 Checklist Template
+Chapter 4 Checklist Template:
 \series default
-.
- A Chapter 4 checklist template shall be maintained as a governed Knowledge Base artifact per 
+
+ The Assistant IT Director shall maintain a Chapter 4 checklist template as a governed Knowledge Base artifact per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2291,11 +2296,7 @@ nolink "false"
 
 \series default
 .
- 
-\series bold
-Policy 4.02
-\series default
- mandates the existence of the checklist and the fields it shall contain.
+ This policy mandates the existence of the checklist and the fields it shall contain.
  
 \series bold
 Policy 
@@ -2312,7 +2313,7 @@ nolink "false"
 
 \series default
  governs its maintenance and version control.
- The checklist shall be completed for every declared incident and attached to the work order.
+ The IT Director or the Assistant IT Director shall complete the checklist for every declared incident and attach it to the work order.
  The checklist shall capture,
  at minimum:
 \end_layout
@@ -2320,7 +2321,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Chapter 4 jurisdiction flag
+Chapter 4 jurisdiction flag (a binary notation confirming the work order has entered Chapter 4 governance).
 \end_layout
 
 \begin_layout Itemize
@@ -2364,7 +2365,7 @@ CJI involvement determination (confirmed,
 \lang english
 CJIS notification log,
  including:
- the internal one-hour clock start;
+ the internal one (1) hour clock start;
  the IT Director notification timestamp;
  and external notification details to the CSO,
  SIB Chief,
@@ -2382,7 +2383,7 @@ Evidence preservation log identifying what was preserved,
 \begin_layout Itemize
 
 \lang english
-False positive disposition notation and thirty-day indicator review flag,
+False positive disposition notation and thirty (30) day indicator review flag,
  where applicable.
 \end_layout
 
@@ -2413,16 +2414,14 @@ nolink "false"
 \series bold
 \lang english
 Notes Field —
- Operational Narrative
+ Operational Narrative:
 \series default
-.
+
  The work order Notes field shall serve as the running operational narrative for the incident.
- All IoC observation detail,
+ The Information Operations personnel assigned to the work order shall enter all IoC observation detail,
  investigation activity,
  response decisions and their rationale,
- and actions taken shall be entered in real time,
- or as close to real time as operational conditions permit,
- but in no case later than four hours after the action is taken or the conclusion of the assigned technician's current work shift,
+ and actions taken within four (4) hours after the action is taken or before the conclusion of that staff member's current work shift,
  whichever occurs first.
 \end_layout
 
@@ -2431,21 +2430,21 @@ Notes Field —
 \series bold
 \lang english
 Files Field —
- Evidence Artifacts
+ Evidence Artifacts:
 \series default
-.
+
  The work order Files field shall serve as the repository for all preserved evidence artifacts,
  including screenshots,
  exported logs,
  camera footage segments,
  and forensic captures attached to the record.
- If an evidence artifact exceeds the technical file-size upload limit of the Redmine system,
- the artifact may be stored in a dedicated,
+ If an evidence artifact exceeds the technical file-size upload limit of the System of Engagement,
+ the Information Operations personnel assigned to the work order may store the artifact in a dedicated,
  access-controlled directory on an ECIO-managed secure file server.
  When this alternative storage method is utilized,
- the exact network file path,
+ the Information Operations personnel assigned to the work order shall document the exact network file path,
  file name,
- and the identity of the personnel depositing the file shall be documented in the work order Notes field to preserve the chain of custody.
+ and the identity of the personnel depositing the file in the work order Notes field to preserve the chain of custody.
  Any such external storage location shall be subject to the identical access restrictions and retention schedules as the primary incident record.
 \end_layout
 
@@ -2458,7 +2457,7 @@ Files Field —
 \begin_layout Standard
 
 \lang english
-All declared Chapter 4 incidents shall be classified on two independent dimensions.
+The Incident Commander shall classify all declared Chapter 4 incidents on two (2) independent dimensions.
  Both shall be documented in the Chapter 4 checklist.
 \end_layout
 
@@ -2466,22 +2465,22 @@ All declared Chapter 4 incidents shall be classified on two independent dimensio
 
 \series bold
 \lang english
-Incident Type
+Incident Type:
 \series default
-.
+
  Incident type is determined by the applicable Layer 1 category or categories (A through F) and answers what kind of incident is being handled.
  An incident may carry multiple type classifications if it spans multiple categories.
- Incident type shall be documented at declaration and may be updated as investigation unfolds.
- Any update to incident type shall be documented in the work order Notes with the basis for the change.
+ The IT Director or the Assistant IT Director shall document incident type at declaration.
+ The Incident Commander may update incident type as investigation unfolds and shall document any update in the work order Notes with the basis for the change.
 \end_layout
 
 \begin_layout Standard
 
 \series bold
 \lang english
-Incident Severity
+Incident Severity:
 \series default
-.
+
  Incident severity is determined using the three-tier framework established in 
 \series bold
 Policy 
@@ -2518,9 +2517,8 @@ nolink "false"
 
 
 \series default
-.
- Severity may be reclassified at any point at Incident Commander direction.
- Any reclassification shall be documented in the work order Notes with the basis for the change.
+ (Service Catalog and SLA Policy).
+ The Incident Commander may reclassify severity at any point and shall document any reclassification in the work order Notes with the basis for the change.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2542,13 +2540,13 @@ CJIS Security Policy v6.0,
 \series bold
 \lang english
 Part (a) —
- Internal Reporting
+ Internal Reporting:
 \series default
-.
- All IT Department Personnel shall report any suspected or confirmed security incident to the Incident Commander immediately upon discovery,
- not to exceed one hour after discovery.
+
+ All Information Operations Personnel shall report any suspected or confirmed security incident to the Incident Commander immediately upon discovery,
+ not to exceed one (1) hour after discovery.
  Work order creation constitutes the formal internal report satisfying Part (a).
- The work order creation timestamp in Redmine is the documented record of internal report completion.
+ The work order creation timestamp in the System of Engagement is the documented record of internal report completion.
 \end_layout
 
 \begin_layout Standard
@@ -2556,9 +2554,9 @@ Part (a) —
 \series bold
 \lang english
 Part (b) —
- External Notification
+ External Notification:
 \series default
-.
+
  Upon declaration,
  the IT Director acting in the role of LASO shall notify the CSO,
  the SIB Chief,
@@ -2578,25 +2576,21 @@ nolink "false"
 
 
 \series default
- governs the execution of external notification.
- 
-\series bold
-Policy 4.02
-\series default
- owns the obligation trigger and the CJIS notification log entry documenting that handoff.
+ (Communication Protocols and Partner Integration) governs the execution of external notification.
+ This policy owns the obligation trigger and the CJIS notification log entry documenting that handoff.
 \end_layout
 
 \begin_layout Standard
 
 \series bold
 \lang english
-One-Hour Clock
+One-Hour Clock:
 \series default
-.
- The one-hour Part (a) clock starts at the first documented action in Redmine:
+
+ The one (1) hour Part (a) clock starts at the first documented action in the System of Engagement:
  the work order creation timestamp for State 2 intake events,
  and the IoC observation notation timestamp for State 1 events.
- If prior awareness is established through a channel outside of Redmine before the work order is created,
+ If prior awareness is established through a channel outside of the System of Engagement before the work order is created,
  that earlier time shall be noted in the work order and becomes the operative clock start for Part (a).
 \end_layout
 
@@ -2604,15 +2598,15 @@ One-Hour Clock
 
 \series bold
 \lang english
-CJI Involvement Determination
+CJI Involvement Determination:
 \series default
-.
+
  CJIS Part (b) external notification attaches only to declared incidents where CJI involvement is confirmed or cannot be ruled out at triage.
- A documented CJI involvement determination —
+ The IT Director or the Assistant IT Director shall record a CJI involvement determination —
  confirmed,
  possible,
  or ruled out with its basis —
- shall be recorded in the Chapter 4 checklist for every declared incident,
+ in the Chapter 4 checklist for every declared incident,
  regardless of whether Part (b) is ultimately triggered.
 \end_layout
 
@@ -2620,14 +2614,14 @@ CJI Involvement Determination
 
 \series bold
 \lang english
-Notification Windows
+Notification Windows:
 \series default
-.
+
  All notification windows are measured in continuous calendar hours.
  No business-hours qualification applies,
  and no after-hours exception applies.
  For declared incidents with a CJI nexus,
- the handoff to 
+ the IT Director shall initiate the handoff to 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2642,7 +2636,7 @@ nolink "false"
 
 
 \series default
- for external notification shall occur within the following windows measured from the time of declaration:
+ for external notification within the following windows measured from the time of declaration:
 \end_layout
 
 \begin_layout Itemize
@@ -2652,7 +2646,7 @@ nolink "false"
 High severity with CJI nexus
 \series default
 :
- not to exceed one hour from declaration
+ not to exceed one (1) hour from declaration.
 \end_layout
 
 \begin_layout Itemize
@@ -2662,7 +2656,7 @@ High severity with CJI nexus
 Medium severity with CJI nexus
 \series default
 :
- not to exceed four hours from declaration
+ not to exceed four (4) hours from declaration.
 \end_layout
 
 \begin_layout Itemize
@@ -2672,7 +2666,7 @@ Medium severity with CJI nexus
 Low severity with CJI nexus
 \series default
 :
- not to exceed twenty-four hours from declaration
+ not to exceed twenty-four (24) hours from declaration.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2685,15 +2679,15 @@ Low severity with CJI nexus
 
 \series bold
 \lang english
-Incident Record Retention
+Incident Record Retention:
 \series default
-.
+
  The incident record —
- comprising the Redmine work order,
+ comprising the work order,
  Chapter 4 checklist,
  Notes,
- and Redmine History —
- shall be retained for three calendar years from the end of the calendar year of incident closure,
+ and system-generated audit trail —
+ shall be retained for three (3) calendar years from the end of the calendar year of incident closure,
  in accordance with LRDA 20071728 (IT Access Control Reviews and Audit Trails).
  This retention period exceeds the CJIS AU-11 one-year minimum for audit records.
 \end_layout
@@ -2702,16 +2696,16 @@ Incident Record Retention
 
 \series bold
 \lang english
-Evidence Artifact Retention
+Evidence Artifact Retention:
 \series default
-.
+
  Evidence artifacts —
  including camera footage segments,
  exported logs,
  forensic captures,
  and file attachments in the work order —
  constitute security activity records and incident reports under LRDA 20071279 (Property Management:
- Security Records) and shall be retained for three calendar years from the end of the calendar year to which they pertain,
+ Security Records) and shall be retained for three (3) calendar years from the end of the calendar year to which they pertain,
  subject to the path-specific conditions below.
 \end_layout
 
@@ -2721,16 +2715,16 @@ Evidence Artifact Retention
 \lang english
 Path 1 —
  Confirmed incident,
- law enforcement involved
+ law enforcement involved:
 \series default
-.
- Evidence artifacts shall be turned over to law enforcement.
+
+ The IT Director shall turn over evidence artifacts to law enforcement.
  ECIO shall retain documentation of the transfer —
  identifying what was transferred,
  to whom,
  when,
  and under what authority —
- for three calendar years from the end of the calendar year of custody transfer.
+ for three (3) calendar years from the end of the calendar year of custody transfer.
  Evidence artifacts are released from ECIO retention upon documented custody transfer.
 \end_layout
 
@@ -2740,10 +2734,10 @@ Path 1 —
 \lang english
 Path 2 —
  Confirmed incident,
- no law enforcement involvement
+ no law enforcement involvement:
 \series default
-.
- Evidence artifacts shall be retained for three calendar years from the end of the calendar year to which the incident pertains,
+
+ The IT Director shall ensure evidence artifacts are retained for three (3) calendar years from the end of the calendar year to which the incident pertains,
  in accordance with LRDA 20071279,
  or for the duration of any related audit or legal hold,
  whichever is longer.
@@ -2754,14 +2748,14 @@ Path 2 —
 \series bold
 \lang english
 Path 3 —
- False positive disposition
+ False positive disposition:
 \series default
-.
- Evidence artifacts shall be retained for three calendar years from the end of the calendar year of the false positive determination,
+
+ The IT Director shall ensure evidence artifacts are retained for three (3) calendar years from the end of the calendar year of the false positive determination,
  in accordance with LRDA 20071279,
  or for the duration of any related audit or legal hold,
  whichever is longer.
- The thirty-day indicator review window established in Section 6.1 governs modification of the triggering IoC indicator and is independent of this retention obligation.
+ The thirty (30) day indicator review window established in Section 6.1 governs modification of the triggering IoC indicator and is independent of this retention obligation.
 \end_layout
 
 \begin_layout Itemize
@@ -2769,11 +2763,11 @@ Path 3 —
 \series bold
 \lang english
 Path 4 —
- CJI-involved incidents
+ CJI-involved incidents:
 \series default
-.
+
  Standard tiered retention as described in Paths 1 through 3 applies.
- A due-diligence review for any applicable CJIS-specific retention requirement shall be conducted before disposition.
+ The IT Director shall conduct a due-diligence review for any applicable CJIS-specific retention requirement before disposition.
 \end_layout
 
 \begin_layout Standard
