@@ -54,7 +54,6 @@ End
 
 # 4. STANDARDIZE "Subsection*" as "Policy Header"
 # Used for "1. Purpose", "2. Scope", etc.
-# Unnumbered in TOC, but visually bold.
 Style Subsection*
     Category "Policy Structure"
     LabelType Static
@@ -190,6 +189,14 @@ Version:
  Purpose
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy governs all internal and external communications conducted during a cybersecurity incident,
+ establishes the framework for external partner engagement during active incident response,
+ and maintains the incident response contact directory.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -197,6 +204,319 @@ Version:
  Scope
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel participating in or supporting cybersecurity incident response operations,
+ and to all communications produced under Chapter 4 authority.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Communication authority framework and the One Voice Rule during cybersecurity incidents.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Communication type taxonomy,
+ approval requirements,
+ and documentation obligations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Internal status update and executive notification requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy Section IR-6 Part (b) external notification execution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 603A.220 breach notification mechanics,
+ timelines,
+ and legal review routing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+External partner engagement framework for threat intelligence,
+ incident coordination,
+ and law enforcement referral.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Technical coordination and vendor communication guardrails during active incident response.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Legal review routing requirements for incident-related communications.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Media and public communication authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Post-incident and post-Handback communication requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Communication documentation and data protection obligations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Incident response contact directory governance and validation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Communication record retention.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+IoC evaluation,
+ incident declaration,
+ and CJIS IR-6 Part (a) internal one-hour reporting clock:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Containment strategy selection and playbook execution:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Eradication procedures and scenario-specific guidance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Recovery operations and Operational Handback initiation mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Postmortem review and lessons learned:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CI record governance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Change categorization and RFC governance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Non-incident stakeholder communication and governance-level communication standards:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Day-to-day end-user communication standards and channel requirements:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -204,11 +524,348 @@ Version:
  Roles and Responsibilities
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as Incident Commander for all cybersecurity incidents by default,
+ as established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Incident Response Policy Overview) and governed by the delegation provisions in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the sole authoritative source for strategic and public-facing incident communications under the One Voice Rule defined in Section 6.1.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize all external communications issued under this policy,
+ except where the technical coordination carve-out defined in Section 6.7 applies.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall render the breach determination required to initiate the NRS 603A.220 notification process defined in Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall execute all CJIS Security Policy Section IR-6 Part (b) external notification obligations in the capacity of the Local Agency Security Officer (LASO).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize a designated delegate to execute CJIS Part (b) notifications on the IT Director's behalf when the IT Director is unavailable or when Incident Command has been formally delegated,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize all external partner engagement during an active incident in accordance with Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize all media and public communications in accordance with Section 6.9.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure the incident response contact directory is validated annually in accordance with Section 6.12.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall coordinate the preparation of draft communications for IC review and authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain the incident response contact directory as a governed Knowledge Base artifact in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy) and Section 6.12.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that all communications issued under this policy are documented in the incident work order in accordance with Section 6.11.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall update the incident response contact directory within one (1) business day of any personnel change affecting an IR role assignment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare communication data for inclusion in the postmortem record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Postmortem Review and Lessons Learned) in accordance with Section 6.10.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall comply with the One Voice Rule defined in Section 6.1.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not issue external communications regarding a cybersecurity incident without IC authorization,
+ except where the technical coordination carve-out defined in Section 6.7 applies.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document all incident-related communications in the incident work order within the timeframes established in Section 6.11.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not speculate in writing or verbally on incident cause,
+ attribution,
+ scope,
+ or data compromise to any audience until authorized by the IC.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
 4.
  Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations personnel involved in or supporting cybersecurity incident response.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to communication authorization requirements,
+ notification timelines,
+ documentation obligations,
+ legal review routing requirements,
+ and contact directory maintenance shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to obtain required authorization before issuing external communications,
+ failure to execute CJIS or breach notifications within the timelines established in this policy,
+ failure to route communications through legal review when required by Section 6.8,
+ failure to document communications as required by Section 6.11,
+ or failure to maintain the contact directory validation cadence established in Section 6.12,
+ without documented justification,
+ shall be treated as non-compliance and may result in corrective action in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved by the IT Director in advance in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
+ No exception may suspend or modify the CJIS notification obligations established in Section 6.4 or the NRS 603A.220 notification obligations established in Section 6.5.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -218,11 +875,2210 @@ Version:
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Stakeholder Engagement and Communications Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ End-User Communication Standards
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB) Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Containment Strategy and Playbooks
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Eradication Procedures and Scenario Guides
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Recovery Operations and Restoration Prioritization
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Postmortem Review and Lessons Learned
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Compliance Monitoring and Corrective Action
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Security Control Assessment and Authorization
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239 (Public Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 603A.220 (Disclosure of Breach of Security of System Data)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071728 (IT Security Audit Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RS.CO-02 (Stakeholder Notification)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-61 Rev.
+ 3:
+ Incident Response Recommendations and Considerations for Cyber Risk Management
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-1 (Incident Response Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-4 (Incident Handling)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RS.CO-03 (Stakeholder Information Sharing)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.CO-03 (Recovery Communication)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-1 (Incident Response Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-7 (Incident Response Assistance)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-15 (Security and Privacy Groups and Associations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS02 (Managed Service Requests and Incidents)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ MEA03 (Managed Compliance with External Requirements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Incident Management Practice
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Relationship Management Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy is written to serve two audiences simultaneously:
+ ECIO personnel and internal auditors who read it within the full context of the ECIO Policy Manual,
+ and external reviewers who may read it as a standalone document.
+ Where this policy references concepts,
+ roles,
+ or procedures whose authoritative definitions reside in other policies,
+ it states the operative substance in plain language sufficient for an external reader and cites the authoritative source.
+ Those plain-language statements are incorporative and do not constitute independent definitions.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Incident communication is a cross-cutting function that spans the entire cybersecurity incident response lifecycle.
+ Unlike the sequential phase-specific policies in Chapter 4 (
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ through 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+),
+ this policy operates continuously from the moment of incident declaration through the conclusion of post-incident communications following Operational Handback.
+ It operationalizes the CJIS Security Policy Section IR-6 external notification obligation,
+ the NRS 603A.220 breach notification obligation,
+ and the communication governance framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Stakeholder Engagement and Communications Policy).
+ It governs the NIST CSF 2.0:
+ RS.CO-02 (Stakeholder Notification) function and is aligned with the communication guidance in NIST SP 800-61 Rev.
+ 3.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (End-User Communication Standards) establishes the foundational channel and documentation standards for all IT Department communications.
+ During active cybersecurity incident response,
+ this policy supersedes 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for all incident-related communications.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ standards resume upon the conclusion of post-incident communications following Operational Handback.
+ Where this policy does not address a specific communication requirement,
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ remains in effect as the baseline.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.1 Communication Authority and the One Voice Rule
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy establishes the One Voice Rule for cybersecurity incident communications.
+ The One Voice Rule requires that all strategic,
+ public-facing,
+ and external incident communications be authorized by the Incident Commander and issued through a single authoritative channel.
+ This rule is consistent with the broader communications governance established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.4 and is restated here in operational terms for personnel and external reviewers who may not have access to the full ECIO Policy Manual.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director,
+ serving as Incident Commander by default under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ shall be the sole authoritative source for strategic and public-facing messaging during a cybersecurity incident.
+ When IC authority has been delegated to a Tier L3+ technical lead in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the delegate shall exercise communication authorization authority within the scope of that delegation.
+ The IT Director shall retain personal authority over NRS 603A.220 breach notifications,
+ media and public statements,
+ and law enforcement referral communications regardless of IC delegation status.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall authorize all external communications before issuance.
+ No Information Operations personnel shall issue,
+ publish,
+ or transmit any external communication regarding a cybersecurity incident without prior IC authorization,
+ except where the technical coordination carve-out defined in Section 6.7 applies.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The One Voice Rule shall not prohibit internal communication necessary for incident response coordination.
+ Internal status communications among IT Department personnel do not require individual IC authorization,
+ but shall comply with the documentation requirements in Section 6.11 and the speculation prohibition in Section 3 of this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Communication Types and Approval Requirements
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy governs the following communication types.
+ Each type identifies the authorized issuer,
+ the approval authority,
+ and the applicable documentation requirement.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Internal Status Updates.
+
+\series default
+ Communications among IT Department personnel regarding incident status,
+ technical findings,
+ and task coordination.
+ Authorized issuer:
+ any Information Operations personnel participating in the response.
+ Approval authority:
+ none required.
+ Documentation:
+ incident work order within four (4) hours.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Executive and County Manager Notifications.
+
+\series default
+ Notifications to the County Manager regarding incident declaration,
+ changes in severity classification,
+ CJI involvement determination,
+ breach determination,
+ law enforcement referral,
+ NRS 603A.220 notification initiation,
+ or Operational Handback.
+ Authorized issuer:
+ the IT Director.
+ Approval authority:
+ none required (the IT Director is the authoritative source).
+ Documentation:
+ incident work order at the time of issuance.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+CJIS IR-6 Part (b) External Notifications.
+
+\series default
+ Notifications to the CJIS Systems Officer (CSO),
+ the State Identification Bureau (SIB) Chief,
+ or the Interface Agency Official.
+ Authorized issuer:
+ the IT Director acting as LASO,
+ or a delegate authorized under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Approval authority:
+ the IT Director.
+ Documentation:
+ CJIS notification log entry in the incident work order and in the Chapter 4 checklist.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+NRS 603A.220 Breach Notifications.
+
+\series default
+ Notifications to affected individuals and the public regarding a breach of personal information.
+ Authorized issuer:
+ the IT Director.
+ Approval authority:
+ the IT Director following legal review in accordance with Section 6.8.
+ Documentation:
+ breach notification record in the incident work order.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+External Partner Engagement Communications.
+
+\series default
+ Communications with the MS-ISAC,
+ NV-ISAC,
+ FBI,
+ Nevada DPS,
+ or other external entities for threat intelligence,
+ incident coordination,
+ or law enforcement referral.
+ Authorized issuer:
+ the IT Director,
+ or a delegate authorized under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for threat intelligence and incident coordination categories only.
+ Approval authority:
+ the IT Director.
+ Documentation:
+ incident work order within four (4) hours of the communication.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Technical Coordination and Vendor Communications.
+
+\series default
+ Operational and technical communications with vendors,
+ service providers,
+ or managed service partners necessary to resolve the incident.
+ Authorized issuer:
+ any Information Operations personnel,
+ subject to the restrictions in Section 6.7.
+ Approval authority:
+ subject to IC notification requirements in Section 6.7.
+ Documentation:
+ incident work order within four (4) hours.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Media and Public Communications.
+
+\series default
+ Any statement,
+ press release,
+ social media post,
+ or response to media inquiry regarding a cybersecurity incident.
+ Authorized issuer:
+ the IT Director exclusively.
+ Approval authority:
+ the IT Director following legal review in accordance with Section 6.8.
+ Documentation:
+ incident work order at the time of issuance.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Post-Incident and Post-Handback Communications.
+
+\series default
+ Communications issued after Operational Handback,
+ including incident closure notifications,
+ postmortem distribution,
+ and lessons-learned summaries.
+ Authorized issuer:
+ the IT Director.
+ Approval authority:
+ none required.
+ Documentation:
+ incident work order at the time of issuance.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Internal and Executive Communications
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Internal Status Updates.
+
+\series default
+ The IC shall determine the appropriate cadence for internal status updates based on incident severity,
+ operational tempo,
+ and response activity.
+ The IC shall ensure that internal status updates are issued no less frequently than once per twenty-four (24) hour operational period during an active incident.
+ The IC may increase the cadence at any time.
+ The IC shall ensure that all internal status updates are documented in the incident work order in accordance with Section 6.11.
+ The IC shall ensure that status updates include,
+ at minimum,
+ the current incident status,
+ actions completed since the last update,
+ actions planned,
+ and any changes to severity classification or scope.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+County Manager Notification.
+
+\series default
+ The IT Director shall notify the County Manager of the following events.
+ The IT Director shall issue each notification within four (4) hours of the triggering event.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Declaration of a cybersecurity incident.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any change in severity classification following declaration.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Confirmation or reasonable suspicion of CJI involvement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Confirmation or reasonable suspicion of a breach involving personal information.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Initiation of law enforcement referral.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Initiation of NRS 603A.220 breach notification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Declaration of Operational Handback.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall document each County Manager notification in the incident work order at the time of issuance,
+ including the method of delivery and the substance of the notification.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 CJIS IR-6 Part (b) External Notification Execution
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The CJIS Security Policy establishes a two-part incident reporting obligation.
+ Part (a) — the one-hour internal reporting clock — is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures).
+ This section governs the operational execution of Part (b) — the external notification to the CSO,
+ the SIB Chief,
+ or the Interface Agency Official.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Handoff from Policy 4.02.
+
+\series default
+ Upon incident declaration where CJI involvement is confirmed or cannot be ruled out at triage,
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ initiates the handoff to this policy for external notification execution.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ owns the obligation trigger and the CJIS notification log entry documenting that handoff.
+ This policy owns the execution mechanics from the point of handoff forward.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Notification Windows.
+
+\series default
+ The notification windows established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.6 govern the maximum time permitted from declaration to external notification execution.
+ Those windows are consumed by this policy without modification:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+High severity with CJI nexus:
+ not to exceed one (1) hour from declaration.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Medium severity with CJI nexus:
+ not to exceed four (4) hours from declaration.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Low severity with CJI nexus:
+ not to exceed twenty-four (24) hours from declaration.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All notification windows are measured in continuous calendar hours.
+ No business-hours qualification applies,
+ and no after-hours exception applies.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Execution.
+
+\series default
+ The IT Director,
+ acting as LASO,
+ shall execute the external notification by contacting the CSO,
+ the SIB Chief,
+ or the Interface Agency Official using the contact information maintained in the incident response contact directory defined in Section 6.12.
+ The IT Director shall include in the notification,
+ at minimum,
+ the date and time of incident declaration,
+ the nature of the incident as classified under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and the current status of CJI involvement.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director may delegate execution of the notification to a designee authorized under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Delegation of execution does not transfer the IT Director's LASO accountability for the notification obligation.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Documentation.
+
+\series default
+ The IT Director or designee shall document the following in the incident work order and the Chapter 4 checklist immediately upon completion of the notification:
+ the date and time of the notification,
+ the individual contacted,
+ the method of contact,
+ the substance of the notification,
+ and the name of the person who executed the notification.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Policy 5.05 CJIS Denial Notifications.
+
+\series default
+ When the IT Director determines under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Control Assessment and Authorization) that denial or revocation of authorization for a system processing CJI warrants partner notification,
+ the IT Director shall execute the notification through the same CJIS notification mechanics defined in this section.
+ The IT Director shall document the notification in the authorization decision record maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and in the incident response contact log maintained under this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 NRS 603A.220 Breach Notification
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+NRS 603A.220 requires notification to affected individuals following discovery of a breach of personal information.
+ The statute directs that disclosure be made "in the most expedient time possible and without unreasonable delay." This section establishes the Department's internal performance standards that operationalize that statutory obligation with measurable timelines.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Breach Determination.
+
+\series default
+ The IT Director shall render a formal breach determination — a documented finding that personal information was or is reasonably believed to have been acquired by an unauthorized person — within twenty-four (24) hours of the IC confirming that conditions meeting the statutory definition of a breach have been identified.
+ The IT Director shall document the breach determination in the incident work order and the Chapter 4 checklist,
+ including the basis for the determination and the categories of personal information affected.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+When IC authority has been delegated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the delegate shall escalate any condition that may constitute a breach to the IT Director immediately upon identification.
+ The IT Director shall retain sole authority over the breach determination regardless of IC delegation status.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Notification Preparation.
+
+\series default
+ The IT Director shall ensure that a draft breach notification is prepared within forty-eight (48) hours of the breach determination.
+ The Assistant IT Director shall include in the draft,
+ at minimum,
+ the nature of the breach in general terms,
+ the categories of personal information affected,
+ the approximate date of the breach,
+ a description of actions taken by the Department in response,
+ and contact information for affected individuals to obtain further information.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Legal Review.
+
+\series default
+ The IT Director shall submit the draft breach notification to the District Attorney's Office for legal review prior to issuance in accordance with the mandatory routing requirements in Section 6.8.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Issuance Timeline.
+
+\series default
+ The IT Director shall issue the breach notification to affected individuals within five (5) business days of the breach determination,
+ or upon completion of the District Attorney's Office legal review,
+ whichever is later.
+ Under no circumstance shall the IT Director issue breach notification later than ten (10) business days from the date of the breach determination.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Method of Notification.
+
+\series default
+ The IT Director shall deliver notification by written notice sent to the most recent address on file for each affected individual,
+ or by electronic notice if the affected individual has consented to electronic communication,
+ consistent with NRS 603A.220.
+ If the cost of providing individual notice exceeds ten thousand dollars ($10,000),
+ or the affected class exceeds one hundred thousand (100,000) persons,
+ or the Department does not have sufficient contact information,
+ the IT Director shall provide substitute notice in accordance with the substitute notice provisions of NRS 603A.220.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Documentation.
+
+\series default
+ The IT Director shall document the following in the incident work order:
+ the breach determination and its basis,
+ the date the draft notification was prepared,
+ the date the draft was submitted for legal review,
+ the date legal review was completed,
+ the date notification was issued,
+ the method of notification,
+ the number of individuals notified,
+ and the categories of personal information affected.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 External Partner Engagement Framework
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The ECIO maintains relationships with external entities that provide threat intelligence,
+ incident coordination resources,
+ and law enforcement support during cybersecurity incidents.
+ All external partner engagement during an active incident shall require IC authorization and shall be executed within the One Voice Rule and communication authorization framework established in Section 6.1.
+ The IC shall authorize partner engagement based on the functional category of support required.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Threat Intelligence Support.
+
+\series default
+ The IC may initiate contact with the Multi-State Information Sharing and Analysis Center (MS-ISAC) or the Nevada Information Sharing and Analysis Center (NV-ISAC) to request threat intelligence,
+ indicator sharing,
+ or analytical support relevant to the incident.
+ The IC may delegate initiation of threat intelligence requests to a designee authorized under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The IC or designee shall limit information shared with threat intelligence partners to the technical indicators and environmental context necessary to support the request.
+ The IC or designee shall not share organizational identifiers,
+ PII,
+ or CJI with threat intelligence partners without explicit IT Director authorization and compliance with the data handling requirements established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Incident Coordination.
+
+\series default
+ The IC may request incident coordination support from the MS-ISAC,
+ NV-ISAC,
+ or other entities with relevant capability when the scope or complexity of an incident exceeds internal capacity.
+ The IT Director shall authorize incident coordination engagement.
+ The IT Director shall define the scope of information authorized for sharing with the coordinating entity at the time of engagement.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Law Enforcement Referral.
+
+\series default
+ The IT Director shall determine whether an incident warrants law enforcement referral to the Federal Bureau of Investigation (FBI) or the Nevada Department of Public Safety (DPS).
+ The IT Director shall make law enforcement referral decisions personally.
+ The IT Director shall not delegate law enforcement referral authority.
+ The IT Director shall ensure that the communication is routed through the District Attorney's Office in accordance with Section 6.8 prior to initiating law enforcement referral.
+ The IT Director shall document the referral decision,
+ the basis for the decision,
+ and the date and substance of any law enforcement contact in the incident work order.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Documentation.
+
+\series default
+ The IC or designee shall document all external partner communications in the incident work order within four (4) hours of the communication.
+ The documentation shall include the date and time,
+ the partner entity contacted,
+ the individual contacted,
+ the method of contact,
+ the substance of the communication,
+ and the scope of information shared.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Technical Coordination and Vendor Communication
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The One Voice Rule shall not prohibit technical staff from communicating operational and technical details to vendors,
+ service providers,
+ or managed service partners when necessary to resolve an active incident.
+ This carve-out is subject to the following guardrails.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Permitted Scope.
+
+\series default
+ Technical coordination communications shall be limited to the technical actions required to resolve the immediate condition.
+ Technical staff may describe symptoms,
+ share log data,
+ request vendor support actions,
+ and coordinate remediation steps within the scope of the vendor's service responsibility.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Restricted Topics During Breach.
+
+\series default
+ During a confirmed or suspected breach involving personal information or Criminal Justice Information (CJI),
+ Information Operations personnel shall not discuss the following topics with vendors or external parties without explicit IC authorization:
+ the scope or magnitude of the breach,
+ the nature or volume of affected data,
+ PII or CJI involvement or exposure,
+ incident attribution or suspected threat actor identity,
+ and any information that could affect the Department's legal position.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+IC Notification.
+
+\series default
+ Information Operations personnel who initiate external technical communication during an active incident shall notify the IC within one (1) hour of the initiation of the communication.
+ The notifying personnel shall include in the notification the vendor or partner contacted,
+ the purpose of the communication,
+ and a summary of information shared.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Documentation.
+
+\series default
+ Information Operations personnel shall summarize all technical coordination communications in the incident work order within four (4) hours of the communication.
+ The summary shall include the date and time,
+ the vendor or partner contacted,
+ the technical substance discussed,
+ and any actions requested or committed.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Data Handling.
+
+\series default
+ All technical coordination communications shall comply with the data classification and handling requirements established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Information Operations personnel shall not transmit restricted data via unencrypted channels.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Legal Review Routing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall submit the following categories of incident-related communications to the District Attorney's Office for legal review prior to issuance.
+ Submission to the District Attorney's Office does not transfer communication authority;
+ the IT Director retains authorization authority over all communications under this policy.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Mandatory Legal Review Triggers:
+\series default
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All NRS 603A.220 breach notifications to affected individuals or the public.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All media and public communications regarding a cybersecurity incident.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All communications to regulatory bodies outside the CJIS notification chain,
+ including state agencies,
+ the Attorney General's Office,
+ or other regulatory authorities.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All communications associated with an incident where law enforcement referral is being considered or has occurred.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+CJIS Notification Exclusion.
+
+\series default
+ CJIS IR-6 Part (b) notifications to the CSO,
+ SIB Chief,
+ or Interface Agency Official shall not require District Attorney's Office review prior to issuance.
+ These notifications are a compliance obligation with defined notification windows,
+ and inserting additional review steps could jeopardize timely execution.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Submission.
+
+\series default
+ The IT Director shall submit the draft communication to the District Attorney's Office with a summary of the incident context,
+ the communication type,
+ and the urgency of issuance.
+ The IT Director shall document the date and time of submission in the incident work order.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Completion.
+
+\series default
+ Upon receipt of the District Attorney's Office review,
+ the IT Director shall incorporate any required modifications.
+ The IT Director shall document the completion of legal review in the incident work order,
+ including the date of completion and a summary of any modifications made.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.9 Media and Public Communications
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall serve as the sole authorized spokesperson for all media and public communications regarding a cybersecurity incident.
+ The IT Director shall not delegate media or public communication authority.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall not issue any media or public communication without prior legal review in accordance with Section 6.8.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+No Information Operations personnel shall respond to media inquiries,
+ issue public statements,
+ post to social media,
+ or otherwise communicate with the public regarding a cybersecurity incident without the IT Director's explicit written authorization.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall ensure that media and public communications do not include speculation regarding incident cause,
+ attribution,
+ scope,
+ or data compromise.
+ The IT Director shall limit such communications to confirmed facts that have been reviewed and authorized for public release.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall coordinate media and public communications with the County Manager prior to issuance.
+ The IT Director shall provide the County Manager,
+ at minimum,
+ advance notice of the communication content and timing.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.10 Post-Incident and Post-Handback Communications
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Upon declaration of Operational Handback under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Recovery Operations and Restoration Prioritization),
+ the IT Director shall issue the following post-incident communications.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Incident Closure Notification.
+
+\series default
+ The IT Director shall notify the County Manager and any previously notified stakeholders that the incident has been closed and Operational Handback has been completed.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Postmortem Data Consolidation.
+
+\series default
+ The Assistant IT Director shall compile all communication records produced under this policy — including internal status updates,
+ external notifications,
+ partner engagement documentation,
+ legal review records,
+ and media communications — and shall prepare the compiled records for inclusion in the postmortem under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The Assistant IT Director shall include all pertinent communication data,
+ regardless of source,
+ in both the internal and external postmortem reports.
+ The Assistant IT Director shall apply data protection controls appropriate to the classification of the information under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ to the postmortem record.
+ The Assistant IT Director shall handle PII,
+ CJI,
+ and restricted data in accordance with the applicable data protection requirements,
+ including redaction where necessary to protect affected individuals in externally distributed postmortem materials.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+CJIS Closure Notification.
+
+\series default
+ If CJIS IR-6 Part (b) external notification was executed during the incident,
+ the IT Director shall notify the CSO,
+ SIB Chief,
+ or Interface Agency Official of incident closure.
+ The IT Director shall include in the closure notification the date of Operational Handback and a summary of the incident outcome.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.11 Communication Documentation and Data Protection
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Documentation Standard.
+
+\series default
+ The IC shall ensure that all incident-related communications produced under this policy are documented in the incident work order maintained in the System of Engagement.
+ The documentation timeframe for each communication type is specified in Section 6.2.
+ Where a communication type specifies documentation "at the time of issuance," the responsible personnel shall enter the documentation into the work order before the end of the operational period in which the communication was issued.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Verbal and Informal Communications.
+
+\series default
+ Information Operations personnel shall summarize verbal or informal communications — including phone calls,
+ hallway conversations,
+ and instant messages — that pertain to an active cybersecurity incident and shall enter the summary into the incident work order within four (4) hours of the communication.
+ This four-hour standard supersedes the one (1) business day standard established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for non-incident operations for the duration of active incident response.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Privileged Communications.
+
+\series default
+ Communications subject to attorney-client privilege — including the substance of legal review exchanges with the District Attorney's Office — shall not be documented in the System of Engagement work order.
+ The IC shall record only metadata in the work order:
+ the date of submission,
+ the date of completion,
+ and the fact that legal review occurred.
+ The District Attorney's Office shall retain privileged substance under its own direction and in accordance with its own records management obligations.
+ This carve-out does not exempt the IT Director from documenting the outcome of legal review (modifications made,
+ approval to proceed) in the work order;
+ it protects only the privileged substance of the attorney-client exchange itself.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Private Note Usage.
+
+\series default
+ The Private Note constraints established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.1 apply to incident work order documentation under this policy.
+ Information Operations personnel shall use Private Notes only for the authorized purposes defined in that section.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Data Classification Compliance.
+
+\series default
+ All incident-related communications shall comply with the data classification and handling requirements established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Information Operations personnel shall not transmit restricted data — including PII,
+ CJI,
+ and security vulnerability details — via unencrypted email,
+ public file shares,
+ or other unprotected channels.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Public Records Awareness.
+
+\series default
+ Information Operations personnel shall compose incident-related written communications with the awareness that such records may be subject to disclosure under NRS 239 (Public Records),
+ unless protected by a specific statutory exemption or confidentiality requirement.
+ This awareness requirement is established at the governance level in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 4 and is restated here for external readers.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.12 Incident Response Contact Directory
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall ensure that the Department maintains an incident response contact directory — a living reference document that identifies current personnel assigned to incident response roles,
+ their contact information,
+ and the escalation sequence to be followed during an active incident.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Required Contact Categories.
+
+\series default
+ The Assistant IT Director shall ensure that the contact directory includes,
+ at minimum,
+ the following categories:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+IT Department personnel with incident response role assignments,
+ including the IT Director,
+ Assistant IT Director,
+ and all personnel authorized to serve as Incident Commander.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+County Manager and administrative leadership contacts for executive notification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+District Attorney's Office contact for legal review routing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Elko County Emergency Manager contact for coordination during incidents affecting county-wide operations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS notification contacts:
+ the CSO,
+ the SIB Chief,
+ and the Interface Agency Official.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+External partner contacts:
+ the MS-ISAC,
+ the NV-ISAC,
+ the FBI field office,
+ and the Nevada DPS point of contact.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor and managed service provider emergency contacts for critical infrastructure services.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Media and public affairs contacts,
+ including the County's designated media liaison if applicable.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Operational Maintenance.
+
+\series default
+ The Assistant IT Director shall maintain the contact directory as a governed Knowledge Base artifact in the System of Engagement in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The actual contact details are operational data and shall not appear in this policy.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Physical Copy Distribution.
+
+\series default
+ The Assistant IT Director shall ensure that a current physical copy of the contact directory is maintained and available at the following locations:
+ the IT Department,
+ the Elko County Emergency Manager's office,
+ and the County Manager's office.
+ The incident response contact directory is designated for physical distribution to ensure accessibility when the System of Engagement is unavailable during an active incident.
+ This requirement is established by this policy.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Validation Cadence.
+
+\series default
+ The Assistant IT Director shall validate the accuracy of the contact directory no less than annually.
+ The Assistant IT Director shall confirm that all listed personnel remain in their assigned roles,
+ that contact information is current,
+ and that the escalation sequence reflects the current organizational structure.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Immediate Update Obligation.
+
+\series default
+ The Assistant IT Director shall update the contact directory within one (1) business day of any personnel change affecting an IR role assignment.
+ Personnel changes include new hires,
+ separations,
+ role transfers,
+ and changes to contact information.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+IC Designation Records.
+
+\series default
+ Incident Commander designation records created during an active incident shall be maintained separately from the contact directory,
+ in the incident record at the time of designation,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The contact directory identifies personnel eligible for IC designation;
+ the incident record documents who was actually designated for a specific incident.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.13 Communication Record Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Communication records produced under this policy — including work order documentation of all communication types defined in Section 6.2,
+ CJIS notification log entries,
+ breach notification records,
+ external partner communication logs,
+ legal review submission and completion records,
+ and media communication records — shall be retained for three (3) calendar years from the end of the calendar year in which the incident was closed.
+ This retention period is consistent with LRDA 20071728 (IT Security Audit Records) and exceeds the CJIS AU-11 one-year minimum for audit records.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Communication records that form part of the incident record maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall be retained in accordance with the retention requirements established in that policy.
+ Where this policy and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ establish different retention periods for the same record,
+ the longer retention period shall govern.
 \end_layout
 
 \end_body
