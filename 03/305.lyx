@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -193,17 +193,90 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to define the complete lifecycle of work order management within the Elko County Information Operations Department,
- from initial intake through authorized closure.
- This policy establishes the work order as the non-negotiable unit of accountability for all IT work,
- regardless of origin,
- and defines the mandatory requirements for intake routing,
- triage,
+This policy governs the lifecycle of work order management within the Elko County Information Operations Department,
+ from intake through authorized closure,
+ and establishes the Deprecated Asset labor ceiling framework.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all Information Operations Department personnel and governs all work performed by the Department,
+ whether reactive or proactive.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+User-submitted service requests and reactive work orders.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+IT-initiated work orders,
+ including infrastructure maintenance,
+ compliance remediations,
+ and internal projects.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Work order triage,
  authorization,
  execution,
  documentation,
- and closure across all categories of IT activity.
- It further codifies the labor ceiling framework for Deprecated assets referenced in 
+ and closure standards.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Deprecated Asset labor ceiling framework and disposition review process.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Emergency exception procedures for work order creation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Service level commitments,
+ asset lifecycle classifications,
+ and triage severity framework:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -221,44 +294,11 @@ nolink "false"
 .
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Itemize
 
 \lang english
-2.
- Scope
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-This policy applies to all Information Operations Department personnel and governs all work performed by the Department,
- whether reactive (user-submitted requests) or proactive (IT-initiated tasks).
- No work performed by IT Department personnel that constitutes an actionable task is exempt from work order requirements,
- regardless of the channel through which the work was identified or initiated.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-This policy does not redefine the service level commitments,
- asset lifecycle classifications,
- or triage severity framework established in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- nor the performance monitoring and reporting obligations established in 
+Performance monitoring and metrics reporting:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -273,8 +313,14 @@ nolink "false"
 
 
 \series default
-,
- nor the communication standards established in 
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Service communication standards and documentation channel requirements:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -289,8 +335,14 @@ nolink "false"
 
 
 \series default
-,
- nor the feedback and grievance framework established in 
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Feedback and grievance framework:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -306,20 +358,9 @@ nolink "false"
 
 \series default
 .
- All of those policies remain in full effect and are incorporated by reference where applicable.
- The work order operational standards defined in the System of Engagement
- govern the technical anatomy of work orders —
- field definitions,
- status workflows,
- category taxonomy,
- and the terminal closure state —
- and are incorporated by reference throughout this policy.
- Where this policy establishes procedural mandates,
- 
-work order operational standards maintained in the System of Engagement
- provide the operational detail for executing them.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -346,7 +387,8 @@ Shall serve as the approving authority for IT-initiated work orders requiring Di
 \begin_layout Itemize
 
 \lang english
-Shall conduct disposition reviews for Deprecated assets flagged under the labor ceiling framework defined in Section 6.5 and shall issue written disposition decisions within the timeframes specified therein.
+Shall issue written disposition decisions for Deprecated assets escalated by the Assistant IT Director under the labor ceiling framework defined in Section 6.5,
+ within the timeframes specified therein.
 \end_layout
 
 \begin_layout Itemize
@@ -368,7 +410,7 @@ nolink "false"
 
 
 \series default
-,
+ (Service Catalog and SLA Policy),
  Section 6.2.
 \end_layout
 
@@ -394,8 +436,7 @@ Assistant IT Director
 \lang english
 Shall ensure that work order intake,
  triage,
- and documentation standards are consistently applied by all IT personnel in accordance with this policy and work order operational standards maintained in the System of Engagement
-.
+ and documentation standards are consistently applied by all Information Operations personnel in accordance with this policy and work order operational standards maintained in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
@@ -422,7 +463,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall ensure that Deprecated asset trigger calculations are maintained and that flagged assets are escalated to the IT Director within the timeframes defined in Section 6.5.
+Shall conduct disposition reviews for Deprecated assets flagged under the labor ceiling framework and shall escalate to the IT Director where required,
+ within the timeframes defined in Section 6.5.
 \end_layout
 
 \begin_layout Itemize
@@ -442,7 +484,7 @@ Shall conduct monthly audits of work order closure quality and report findings t
 
 \series bold
 \lang english
-IT Department Personnel (All Tiers)
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -462,8 +504,7 @@ Shall create a work order for every actionable task,
 Shall adhere to the intake,
  triage,
  documentation,
- and closure standards defined in this policy and work order operational standards maintained in the System of Engagement
-.
+ and closure standards defined in this policy and work order operational standards maintained in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
@@ -500,13 +541,13 @@ Shall utilize the designated work order system as the primary and initial method
 \begin_layout Itemize
 
 \lang english
-Shall route walk-in and telephone requests to the work order system in accordance with Section 6.2 when directed to do so by IT staff.
+Shall route walk-in and telephone requests to the work order system in accordance with Section 6.2 when directed to do so by Information Operations Personnel.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall respond to IT requests for additional information within five (5) consecutive business days to prevent work order closure under the provisions of Section 6.4.
+Shall respond to Information Operations requests for additional information within five (5) consecutive business days to prevent work order closure under the provisions of Section 6.4.
 \end_layout
 
 \end_deeper
@@ -548,7 +589,7 @@ nolink "false"
 
 
 \series default
- and the annual policy review and maturity scoring process defined in 
+ (Service Level Management and Metrics Reporting) and the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -563,7 +604,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -590,7 +631,9 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -600,12 +643,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with 
+ Exceptions to any requirement of this policy shall be documented with written justification and approved in accordance with the exception management framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -615,7 +658,9 @@ nolink "false"
 
 
 \series default
-.
+,
+ Section 6.6.
+ Oral exceptions are not valid.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline.
 \end_layout
@@ -627,22 +672,13 @@ nolink "false"
  References
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\series bold
 \lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.03"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
+Cited References
+\series default
 :
- Standard Operating Ethos
 \end_layout
 
 \begin_layout Itemize
@@ -661,24 +697,6 @@ nolink "false"
 
 :
  Delegation of Authority and Decision Rights
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.12"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- IT Asset Management Policy
 \end_layout
 
 \begin_layout Itemize
@@ -732,7 +750,7 @@ nolink "false"
 \end_inset
 
 :
- End-User Communication Standards
+ Service Communications Policy
 \end_layout
 
 \begin_layout Itemize
@@ -759,7 +777,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.06"
+reference "pol:3.14"
 plural "false"
 caps "false"
 noprefix "false"
@@ -768,7 +786,7 @@ nolink "false"
 \end_inset
 
 :
- Operational Incident Management Policy
+ IT Project Management Policy
 \end_layout
 
 \begin_layout Itemize
@@ -786,25 +804,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Internal Audits and Self-Assessment Procedures
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -825,6 +827,14 @@ nolink "false"
  Annual Policy Review and Maturity Scoring
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
 
 \begin_layout Itemize
 
@@ -917,6 +927,24 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+The work order is the non-negotiable unit of accountability for all work performed by the Information Operations Department.
+ This policy establishes the work order as the authoritative record of why a task was undertaken,
+ who authorized it,
+ what was done,
+ and how it was resolved.
+ Work order operational standards maintained in the System of Engagement govern the technical anatomy of work orders —
+ field definitions,
+ status workflows,
+ category taxonomy,
+ and the terminal closure state —
+ and are incorporated by reference throughout this policy.
+ Where this policy establishes procedural mandates,
+ work order operational standards provide the operational detail for executing them.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
@@ -926,8 +954,7 @@ ITIL v4:
 \begin_layout Standard
 
 \lang english
-The work order is the non-negotiable unit of accountability for all work performed by the Information Operations Department.
- A work order shall be created for every actionable task,
+All Information Operations Personnel shall create a work order for every actionable task,
  without exception.
  This obligation applies regardless of whether the work is reactive or proactive,
  regardless of the channel through which the work was identified or requested,
@@ -937,25 +964,20 @@ The work order is the non-negotiable unit of accountability for all work perform
 \begin_layout Standard
 
 \lang english
-No IT work shall be performed,
- and no commitment to perform IT work shall be made,
+No Information Operations Personnel shall perform IT work,
+ or make a commitment to perform IT work,
  without an associated work order.
- The work order is the authoritative record of why a task was undertaken,
- who authorized it,
- what was done,
- and how it was resolved.
  The absence of a work order for completed work constitutes a documentation failure regardless of the operational outcome.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The creation of a work order indicates that a request has been submitted to the IT Department for evaluation.
+The creation of a work order indicates that a request has been submitted to the Information Operations Department for evaluation.
  It does not guarantee acceptance or execution.
- Work orders that fall outside the scope of IT responsibilities,
+ The assigned technician or queue reviewer shall disposition work orders that fall outside the scope of Information Operations responsibilities,
  that are submitted for Unsupported assets,
- or that cannot be resourced within current operational capacity shall be dispositioned in accordance with work order operational standards maintained in the System of Engagement
- and this policy.
+ or that cannot be resourced within current operational capacity in accordance with work order operational standards maintained in the System of Engagement and this policy.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -967,8 +989,8 @@ The creation of a work order indicates that a request has been submitted to the 
 \begin_layout Standard
 
 \lang english
-The designated work order system (Redmine) is the authoritative intake channel for all service requests.
- Requests received through any other channel shall be routed to the work order system immediately,
+The designated work order system is the authoritative intake channel for all service requests.
+ All Information Operations Personnel shall route requests received through any other channel to the work order system immediately,
  and in all cases no later than one (1) business hour following the receipt of the request or the initiation of the task,
  whichever occurs first.
 \end_layout
@@ -981,11 +1003,10 @@ Walk-in requests
 \series default
 :
  When a County employee presents a request in person,
- the receiving IT staff member shall direct the requester to submit the request through the work order system.
+ the receiving Information Operations Personnel shall direct the requester to submit the request through the work order system.
  Where the requester is unable to do so,
- the IT staff member shall create the work order on the requester's behalf,
- ensuring that the Requested By field accurately identifies the actual requester in accordance with work order operational standards maintained in the System of Engagement
-.
+ the receiving Information Operations Personnel shall create the work order on the requester's behalf,
+ ensuring that the Requested By field accurately identifies the actual requester in accordance with work order operational standards maintained in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
@@ -995,8 +1016,8 @@ Walk-in requests
 Telephone requests
 \series default
 :
- Requests received by telephone shall be handled in the same manner as walk-in requests.
- The IT staff member shall create a work order concurrent with or immediately following the call and shall document the substance of the conversation in the work order notes in accordance with the out-of-band summarization requirements of 
+ The receiving Information Operations Personnel shall handle requests received by telephone in the same manner as walk-in requests.
+ The receiving Information Operations Personnel shall create a work order concurrent with or immediately following the call and shall document the substance of the conversation in the work order notes in accordance with the out-of-band summarization requirements of 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1011,16 +1032,19 @@ nolink "false"
 
 
 \series default
-,
+ (Service Communications Policy),
  Section 6.1.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Email and informal digital communications:
- Requests received by email or other informal digital channels shall be routed to the work order system.
- The communication shall be summarized in the work order notes in accordance with 
+Email and informal digital communications
+\series default
+:
+ The receiving Information Operations Personnel shall route requests received by email or other informal digital channels to the work order system.
+ The receiving Information Operations Personnel shall summarize the communication in the work order notes in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1046,7 +1070,7 @@ In all cases,
  Channel acknowledgment to the requester —
  including verbal or informal confirmation —
  does not substitute for work order creation.
- IT staff shall not begin work on a request prior to work order creation except as provided under the emergency exception in Section 6.8.
+ Information Operations Personnel shall not begin work on a request prior to work order creation except as provided under the emergency exception in Section 6.8.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1064,9 +1088,8 @@ The Information Operations Department regularly initiates work that is not trigg
  compliance remediations,
  internal projects,
  and any other IT-driven activity that constitutes actionable work.
- All IT-initiated work requires a work order,
- and all IT-initiated work orders shall be designated using the Internal Project checkbox as defined in the System of Engagement
-.
+ All Information Operations Personnel shall create a work order for all IT-initiated work,
+ and all IT-initiated work orders shall be designated using the Internal Project checkbox as defined in the System of Engagement.
  The Internal Project designation is mandatory for all IT-initiated work without exception.
 \end_layout
 
@@ -1082,11 +1105,12 @@ Authorization requirements for IT-initiated work orders are as follows:
 \lang english
 Routine IT-initiated tasks
 \series default
- —
+:
+ The assigned technician may authorize routine IT-initiated tasks —
  including scheduled maintenance,
  standard configuration updates,
  and minor proactive remediations —
- may be authorized by the assigned technician in accordance with their defined role authority under 
+ in accordance with their defined role authority under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1101,8 +1125,8 @@ nolink "false"
 
 
 \series default
-.
- The basis for authorization shall be documented in the work order at the time of creation.
+ (Delegation of Authority and Decision Rights).
+ The assigned technician shall document the basis for authorization in the work order at the time of creation.
 \end_layout
 
 \begin_layout Itemize
@@ -1111,12 +1135,13 @@ nolink "false"
 \lang english
 Non-routine or significant IT-initiated tasks
 \series default
- —
+:
+ The Assistant IT Director or IT Director shall authorize non-routine or significant IT-initiated tasks —
  including infrastructure changes,
  new deployments,
  system decommissions,
  or any task that materially alters the County's operational technology environment —
- shall be authorized by the Assistant IT Director or IT Director prior to work commencement.
+ prior to work commencement.
  The authorizing official's name and the basis for authorization shall be documented in the work order before work begins.
 \end_layout
 
@@ -1126,7 +1151,8 @@ Non-routine or significant IT-initiated tasks
 \lang english
 Project-level IT-initiated work
 \series default
- —
+:
+ IT-initiated work that meets project-level thresholds —
  as determined by scope,
  resource requirements,
  or duration —
@@ -1145,7 +1171,7 @@ nolink "false"
 
 
 \series default
-.
+ (IT Project Management Policy).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1157,7 +1183,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-All work orders shall undergo IT-side triage prior to the commencement of active work,
+The assigned technician or queue reviewer shall triage all work orders prior to the commencement of active work,
  in accordance with 
 \series bold
 Policy 
@@ -1179,7 +1205,7 @@ nolink "false"
  validates scope,
  identifies the applicable asset support classification,
  and initiates or queues the appropriate response.
- Work shall not begin on a work order until triage is complete.
+ Information Operations Personnel shall not begin work on a work order until triage is complete.
 \end_layout
 
 \begin_layout Standard
@@ -1190,8 +1216,8 @@ Where a submitted work order lacks sufficient information to complete triage,
  specify the information required,
  and notify the requester that more information is needed.
  The work order shall remain in Queued status for the duration of this pending information period.
- Service level clocks shall be paused and shall resume upon receipt of the required information from the requester.
- Work orders that remain without requester response for five (5) consecutive business days shall be closed by the assigned technician or queue reviewer,
+ The assigned technician or queue reviewer shall pause service level clocks for the duration of the pending information period and shall resume them upon receipt of the required information from the requester.
+ The assigned technician or queue reviewer shall close work orders that remain without requester response for five (5) consecutive business days,
  with closure rationale documented in the work order.
 \end_layout
 
@@ -1199,18 +1225,16 @@ Where a submitted work order lacks sufficient information to complete triage,
 
 \lang english
 The Waiting for User status,
- as defined in the System of Engagement
-,
+ as defined in the System of Engagement,
  applies during the active execution phase of a work order when an IT-side action cannot proceed due to a user-side dependency —
  not during triage.
- IT staff shall apply Waiting for User status in accordance with work order operational standards maintained in the System of Engagement
- when that condition is encountered after triage and work commencement.
+ The assigned technician shall apply Waiting for User status in accordance with work order operational standards maintained in the System of Engagement when that condition is encountered after triage and work commencement.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Triage for Unsupported assets shall result in immediate closure with a documented replacement referral,
+The assigned technician or queue reviewer shall close work orders triaged for Unsupported assets immediately with a documented replacement referral,
  in accordance with 
 \series bold
 Policy 
@@ -1228,8 +1252,8 @@ nolink "false"
 \series default
 ,
  Section 6.2.
- No remediation shall be performed.
- Triage for Deprecated assets shall include confirmation of the asset's lifecycle status and shall initiate the labor ceiling monitoring obligations defined in Section 6.5.
+ No remediation shall be performed on Unsupported assets.
+ The assigned technician or queue reviewer shall confirm the lifecycle status of Deprecated assets during triage and shall initiate the labor ceiling monitoring obligations defined in Section 6.5.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1255,8 +1279,8 @@ The Information Operations Department operates on the principle that unreliable 
 \begin_layout Standard
 
 \lang english
-This framework operates through one objective trigger and a technician judgment pathway.
- Either activates the IT Director disposition review process.
+This framework operates through one (1) objective trigger and a Technician Judgment Pathway.
+ Either activates the disposition review process.
 \end_layout
 
 \begin_layout Itemize
@@ -1267,7 +1291,7 @@ Objective Trigger —
  Incident Frequency
 \series default
 :
- A Deprecated asset shall be flagged for IT Director disposition review when it generates five (5) or more reactive work orders within the same category within any rolling ninety (90) calendar day window.
+ A Deprecated asset shall be flagged for disposition review when it generates five (5) or more reactive work orders within the same category within any rolling ninety (90) calendar day window.
 \end_layout
 
 \begin_deeper
@@ -1284,7 +1308,7 @@ The same-category requirement is essential.
 
 \lang english
 Tickets in different categories do not aggregate toward this trigger,
- even if the total exceeds five.
+ even if the total exceeds five (5).
 \end_layout
 
 \begin_layout Itemize
@@ -1293,6 +1317,21 @@ Tickets in different categories do not aggregate toward this trigger,
 For purposes of this trigger,
  reactive work orders are those submitted in response to asset failures or degradation,
  as distinct from IT-initiated maintenance or proactive work orders.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Monitoring Accountability
+\series default
+:
+ The Assistant IT Director shall maintain a monitoring mechanism —
+ whether automated reporting,
+ periodic query,
+ or scheduled review —
+ sufficient to identify Deprecated assets approaching or crossing the objective trigger threshold.
+ The monitoring method shall be documented in work order operational standards maintained in the System of Engagement.
 \end_layout
 
 \end_deeper
@@ -1311,7 +1350,7 @@ Technician Judgment Pathway
 \begin_layout Itemize
 
 \lang english
-The technician shall enter a written technical assessment in the work order record identifying the specific observations,
+The assigned technician shall enter a written technical assessment in the work order record identifying the specific observations,
  failure patterns,
  or reliability concerns supporting the recommendation.
  Qualitative characterizations without supporting observations do not satisfy this requirement.
@@ -1319,8 +1358,12 @@ The technician shall enter a written technical assessment in the work order reco
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-This pathway is the primary mechanism of this framework.
+Rationale
+\series default
+:
+ This pathway is the primary mechanism of this framework.
  Reliability failure does not always express itself in countable tickets —
  it expresses itself in whether the asset can be depended upon.
  That judgment,
@@ -1328,39 +1371,52 @@ This pathway is the primary mechanism of this framework.
  is sufficient basis for a disposition review.
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-The IT Director shall issue a written disposition decision within five (5) business days of the assessment being entered in the work order record.
-\end_layout
-
 \end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-IT Director Disposition Review
+Disposition Review Process
 \series default
 :
  When a Deprecated asset is flagged under either mechanism,
- the Assistant IT Director shall notify the IT Director within one (1) business day,
- with a summary of the trigger conditions or technician assessment and the relevant work order history.
+ the following review process shall apply.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
+\series bold
 \lang english
-The IT Director shall issue a written disposition decision within five (5) business days of notification,
- except where the Technician Judgment Pathway specifies its own review window above.
+Notification
+\series default
+:
+ The technician or queue reviewer who identifies the trigger condition shall notify the Assistant IT Director within one (1) business day,
+ with a summary of the trigger conditions or technician assessment and the relevant work order history.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-The disposition decision shall be one of the following:
+Assistant IT Director Review
+\series default
+:
+ The Assistant IT Director shall review the flagged asset within three (3) business days of notification and shall determine whether the existing replacement timeline remains appropriate or whether escalation to the IT Director is warranted.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Disposition Authority
+\series default
+:
+ The Assistant IT Director may authorize the following disposition without IT Director escalation:
+ confirm that the existing replacement timeline remains appropriate and direct that remediation continue within existing parameters.
+ The following dispositions require IT Director approval:
  (a) authorize replacement acceleration;
- (b) authorize continued remediation beyond the standard labor ceiling in accordance with 
+ or (b) authorize continued remediation beyond the standard labor ceiling in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1376,15 +1432,29 @@ nolink "false"
 
 \series default
 ,
- Section 6.2,
- with documented rationale;
- or (c) determine that the existing replacement timeline remains appropriate and direct that remediation continue within existing parameters.
+ Section 6.2.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-All disposition decisions shall be documented in the relevant work order and in the IT Asset Catalog entry for the asset.
+IT Director Escalation
+\series default
+:
+ Where the Assistant IT Director determines that replacement acceleration or continued remediation beyond the standard labor ceiling is warranted,
+ the Assistant IT Director shall escalate to the IT Director with a written recommendation within one (1) business day of completing the review.
+ The IT Director shall issue a written disposition decision within five (5) business days of escalation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Documentation
+\series default
+:
+ The official who renders the disposition decision shall document the decision in the relevant work order and in the IT Asset Catalog entry for the asset.
 \end_layout
 
 \end_deeper
@@ -1395,20 +1465,31 @@ All disposition decisions shall be documented in the relevant work order and in 
 Proximity-to-Deadline Standard
 \series default
 :
- Deprecated assets with an established replacement deadline within thirty (30) calendar days of the date of triage shall be subject to a restricted remediation standard.
+ The assigned technician shall apply a restricted remediation standard to Deprecated assets with an established replacement deadline within thirty (30) calendar days of the date of triage.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Remediation shall be limited to maintaining basic operational capability sufficient for the user to perform their assigned job function.
+The assigned technician shall limit remediation to maintaining basic operational capability sufficient for the user to perform their assigned job function.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Full trigger framework analysis is not required for assets already imminently scheduled for replacement.
+Full objective trigger framework analysis is not required for assets already imminently scheduled for replacement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Clarification
+\series default
+:
+ This exemption applies to the objective trigger analysis only.
+ The Technician Judgment Pathway remains available at all times regardless of replacement timeline proximity.
 \end_layout
 
 \begin_layout Itemize
@@ -1440,7 +1521,7 @@ Sunk cost
  supplies,
  parts,
  or remediation labor is not a factor.
- Disposition shall be evaluated on the basis of forward-looking operational analysis only.
+ The IT Director or Assistant IT Director shall evaluate disposition on the basis of forward-looking operational analysis only.
 \end_layout
 
 \begin_layout Itemize
@@ -1452,7 +1533,7 @@ End-user workflow disruption and preference
 :
  If the user can perform their assigned job function,
  the operational standard is met.
- User preferences regarding specific equipment shall not influence IT disposition decisions.
+ User preferences regarding specific equipment shall not influence disposition decisions.
 \end_layout
 
 \end_deeper
@@ -1484,15 +1565,13 @@ nolink "false"
 
 \series default
 .
- All actions taken during the lifecycle of a work order shall be documented in the Notes section in accordance with work order operational standards maintained in the System of Engagement
-,
- and shall be entered into the work order system within twenty-four (24) hours of each action taken,
- in accordance with 
+ The assigned technician shall document all actions taken during the lifecycle of a work order in the Notes section in accordance with work order operational standards maintained in the System of Engagement,
+ and shall enter documentation within the timeframe established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.03"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1503,15 +1582,24 @@ nolink "false"
 
 \series default
 ,
- Section 6.4.
+ Section 6.1.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Documentation shall be specific and sufficient to reconstruct the work performed by a subsequent reviewer who was not present.
- This standard is not aspirational —
- it is the minimum required to support resolution audits,
+The assigned technician shall ensure that documentation is specific and sufficient to reconstruct the work performed by a subsequent reviewer who was not present.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+\lang english
+Rationale
+\series default
+:
+ This standard is the minimum required to support resolution audits,
  continuity across technicians,
  SLA adherence measurement under 
 \series bold
@@ -1528,8 +1616,15 @@ nolink "false"
 
 
 \series default
+ (Service Level Management and Metrics Reporting),
  and the broader reporting obligations of the Department.
- Required documentation elements include,
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+Required documentation elements include,
  at minimum:
 \end_layout
 
@@ -1609,8 +1704,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The use of Private Notes shall comply with the constraints defined in the System of Engagement
- and 
+The assigned technician shall comply with the Private Note constraints defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1626,13 +1720,13 @@ nolink "false"
 
 \series default
 ,
- Section 6.1.
+ Section 6.1,
+ and work order operational standards maintained in the System of Engagement.
  Private Notes are not a substitute for standard documentation and shall not be used to conceal routine work activity from the record.
- Subtasks,
+ The assigned technician shall maintain subtasks,
  related issues,
  asset linkages,
- and checklist items shall be maintained in accordance with work order operational standards maintained in the System of Engagement
- throughout the work order lifecycle.
+ and checklist items in accordance with work order operational standards maintained in the System of Engagement throughout the work order lifecycle.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1644,19 +1738,17 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-A work order shall not be closed until the work is complete,
+The assigned technician shall not close a work order until the work is complete,
  the resolution is documented,
- and the appropriate closure status has been applied in accordance with work order operational standards maintained in the System of Engagement
-.
+ and the appropriate closure status has been applied in accordance with work order operational standards maintained in the System of Engagement.
  The terminal closure state for confirmed,
  properly completed work is Resolution Confirmed,
- as defined in the System of Engagement
-.
+ as defined in the System of Engagement.
  Resolution Confirmed seals the work order record.
  Any future work on the same asset or issue requires a new work order.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \lang english
 Prior to applying any closed status,
@@ -1729,10 +1821,8 @@ nolink "false"
 
 \series default
  and shall accurately characterize the terminal outcome of the work.
- The available closure statuses and their definitions are established in 
-work order operational standards maintained in the System of Engagement
-.
- Work orders closed due to requester non-response shall have the five-day notification requirement documented prior to closure,
+ The available closure statuses and their definitions are established in work order operational standards maintained in the System of Engagement.
+ The assigned technician shall document the five (5) business day notification requirement prior to closing work orders due to requester non-response,
  consistent with 
 \series bold
 Policy 
@@ -1762,7 +1852,7 @@ nolink "false"
 
 \lang english
 When an operational emergency requires immediate IT action before a work order can be created,
- the assigned technician or responding IT staff member may proceed with emergency action prior to work order creation.
+ the responding Information Operations Personnel may proceed with emergency action prior to work order creation.
  This exception is narrow.
  It applies only when the time required to create a work order before acting would materially extend the duration or severity of the impact.
  It does not represent a general relaxation of the work order requirement.
@@ -1773,14 +1863,14 @@ When an operational emergency requires immediate IT action before a work order c
 \lang english
 The emergency exception suspends the sequence;
  it does not eliminate the requirement.
- A work order shall be created as soon as operationally practicable and in all cases no later than one (1) business hour following the initiation of emergency action or the conclusion of the immediate emergency phase,
+ The responding Information Operations Personnel shall create a work order as soon as operationally practicable and in all cases no later than one (1) business hour following the initiation of emergency action or the conclusion of the immediate emergency phase,
  whichever is earlier.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Work orders created under this exception shall document:
+The responding Information Operations Personnel shall document the following in work orders created under this exception:
 \end_layout
 
 \begin_layout Itemize
@@ -1802,19 +1892,27 @@ All actions taken prior to work order creation,
 A notation in the work order that the emergency exception was invoked.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \lang english
-The acknowledgment of the Assistant IT Director,
- which shall occur within one (1) business day of work order creation.
+The Assistant IT Director shall acknowledge the emergency exception work order within one (1) business day of its creation by entering an acknowledgment notation in the work order.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The On-Call checkbox defined in the System of Engagement
- shall be applied to all work orders created in connection with after-hours emergency response for statistical tracking purposes.
- The IT Director shall review emergency exception work orders in aggregate no less than quarterly.
+The assigned technician shall apply the On-Call checkbox defined in the System of Engagement to all work orders created in connection with after-hours emergency response for statistical tracking purposes.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall review emergency exception work orders in aggregate no less than quarterly.
+ The quarterly review shall examine the frequency of emergency exception invocations,
+ the consistency of catch-up work order creation with the one (1) business hour requirement,
+ the adequacy of documented justifications,
+ and whether patterns indicate systemic conditions warranting process improvement rather than continued exception use.
+ The IT Director shall document review findings and any resulting corrective actions in the System of Engagement.
  Patterns of emergency exception usage inconsistent with the narrow criteria defined above shall be addressed as a compliance matter under 
 \series bold
 Policy 
