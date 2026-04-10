@@ -32,7 +32,7 @@
 | 2.15 | System Development and Secure Software Lifecycle Policy | o |
 | 3.01 | Service Catalog and SLA Policy | o |
 | 3.02 | Service Level Management and Metrics Reporting | o |
-| 3.03 | End-User Communication Standards | o |
+| 3.03 | Service Communication Policy | x |
 | 3.04 | Service Delivery Feedback and Grievance Policy | x |
 | 3.05 | Service Request Fulfillment Policy | o |
 | 3.06 | Operational Incident Management Policy | o |
