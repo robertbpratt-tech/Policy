@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.3
+ 1.4
 \end_layout
 
 \begin_layout Subsection*
@@ -641,6 +641,10 @@ NRS 239.125 (Local Government Records Management Program)
 \end_layout
 
 \begin_layout Itemize
+NRS 603A.220 (Disclosure of Breach of Security of System Data)
+\end_layout
+
+\begin_layout Itemize
 CJIS Security Policy v6.0:
  Section AC-6(7) (Least Privilege — Review of User Privileges)
 \end_layout
@@ -927,7 +931,7 @@ nolink "false"
 Directed Deputization
 \series default
 :
- The IT Director may designate any Tier L3+ IT Department personnel to exercise specific operational authority on the IT Director's behalf for a defined scope and duration.
+ The IT Director may designate any Tier L3+ Information Operations Department personnel to exercise specific operational authority on the IT Director's behalf for a defined scope and duration.
  Directed Deputization is limited to operational functions — including work order management,
  priority retasking,
  and representation in meetings — and shall not include administrative authority as defined in Section 6.1.
@@ -939,10 +943,27 @@ Directed Deputization
  modify their standing delegation,
  or alter the chain of delegation established in this policy.
  The IT Director retains authority to rescind any Directed Deputization at any time.
- Directed Deputization shall not include:
- policy exception approval,
- formal risk acceptance,
- incident declaration authority (unless separately authorized under 
+ Directed Deputization shall not include the following functions:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Policy exception approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Formal risk acceptance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Incident declaration authority,
+ unless separately authorized under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -957,10 +978,53 @@ nolink "false"
 
 
 \series default
-),
- access approval for the delegate's own account,
- or any function prohibited by the Separation of Duties Matrix maintained under Section 6.6.
+.
 \end_layout
+
+\begin_layout Itemize
+
+\lang english
+Access approval for the delegate's own account.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 603A.220 breach determination authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Law enforcement referral authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Media and public communication authority during cybersecurity incidents.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LASO accountability for CJIS Security Policy incident reporting obligations.
+ 
+\series bold
+Clarification
+\series default
+:
+ Execution of CJIS notifications may be delegated under Section 6.2;
+ accountability for the obligation is non-delegable.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Any function prohibited by the Separation of Duties Matrix maintained under Section 6.6.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -1020,7 +1084,7 @@ nolink "false"
 Incident Commander Qualification — Designated Appointment
 \series default
 :
- The IT Director may designate any IT Department staff member as Incident Commander for a specific incident.
+ The IT Director may designate any Information Operations Department personnel as Incident Commander for a specific incident.
  Designation shall be made at the time it becomes effective and documented in the incident record.
  No tier-level prerequisite applies to a designated appointment.
  The IT Director retains authority to rescind any designation and resume the Incident Commander role at any time.
@@ -1033,10 +1097,10 @@ Incident Commander Qualification — Emergency Declaration Authority
 \series default
 :
  When both the IT Director and the Assistant IT Director are genuinely unavailable,
- authority to declare a cybersecurity incident and serve as Incident Commander shall be limited to Tier L3+ IT Department personnel identified in writing by the IT Director.
+ authority to declare a cybersecurity incident and serve as Incident Commander shall be limited to Tier L3+ Information Operations Department personnel identified in writing by the IT Director.
  The IT Director shall maintain this list and review it at least annually.
  In all cases,
- the Incident Commander shall be an IT Department staff member.
+ the Incident Commander shall be Information Operations Department personnel.
  Personnel serving in a non-technical administrative or acting capacity are not eligible to serve as Incident Commander under either path.
 \end_layout
 
