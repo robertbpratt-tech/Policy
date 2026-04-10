@@ -14,7 +14,7 @@
 | 1.11 | Data Governance and Classification Policy | o |
 | 1.12 | IT Asset Management Policy | o |
 | 1.13 | Supply Chain Risk Management (SCRM) and Vendor Governance | o |
-| 1.14 | Stakeholder Engagement and Communications Policy | o |
+| 1.14 | Stakeholder Engagement and Communications Policy | x |
 | 2.01 | Acceptable Use of Information Technology Resources Policy | o |
 | 2.02 | Personnel Security and Background Screening Policy | o |
 | 2.03 | Security Awareness and Training Policy | o |

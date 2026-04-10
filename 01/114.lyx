@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -193,12 +193,10 @@ Version:
 \begin_layout Standard
 
 \lang english
-This policy establishes mandatory standards for internal and external communications conducted by the Elko County Information Operations Department.
- It defines formal versus informal communication boundaries,
- promotes transparency and accountability,
- and ensures consistent stakeholder engagement across governance,
- operational,
- and service contexts.
+This policy governs internal and external communications conducted by the Elko County Information Operations Department,
+ including formal and informal communication boundaries,
+ stakeholder engagement,
+ and incident-adjacent reporting obligations.
 \end_layout
 
 \begin_layout Subsection*
@@ -216,48 +214,146 @@ This policy applies to all Information Operations personnel,
  part-time staff,
  contractors,
  vendors,
- and volunteers.
- It governs communications with:
+ and volunteers,
+ and governs communications with County leadership,
+ elected and appointed officials,
+ department heads,
+ third-party vendors and contractors,
+ regulatory bodies,
+ and the public.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Day-to-day service request,
+ fulfillment,
+ and end-user communication standards:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The Board of County Commissioners,
- County Manager,
- and Administrative leadership.
+Active cybersecurity incident communications,
+ CJIS Security Policy Section IR-6 Part (b) execution,
+ NRS 603A.220 breach notification mechanics,
+ legal review routing during incidents,
+ and the Incident Response Contact Directory:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Elected Officials,
- Department Heads,
- and department leadership staff.
+CJIS Security Policy Section IR-6 Part (a) one (1) hour internal reporting clock and incident declaration:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Third-party vendors,
- service providers,
- and contractors.
+Operational incident Root Cause Analysis (RCA) cadence,
+ ownership,
+ and delivery:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Regulatory,
- compliance,
- and auditing bodies.
+Data classification,
+ handling,
+ and transmission requirements:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-The public and media (only where explicitly authorized).
-\end_layout
-
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -272,35 +368,38 @@ The public and media (only where explicitly authorized).
 IT Director
 \series default
 :
- Shall serve as the primary strategic spokesperson for Information Operations and shall retain final approval authority for communications that establish County commitments,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the primary strategic spokesperson for the Information Operations Department.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall retain final approval authority for communications that establish County commitments,
  risk posture,
  or policy direction.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Assistant IT Director
-\series default
-:
- Shall manage operational communication standards and shall ensure service communications meet the notification requirements in this policy.
+Shall provide the Monthly Executive Report and Monthly Briefing to the County Manager in accordance with Section 6.2.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
- Shall adhere to this policy’s formal vs.
- informal requirements and shall document material stakeholder communications in accordance with Section 6 and 
+Shall approve exceptions to this policy in accordance with the exception framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.03"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -310,9 +409,153 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment) §6.6,
+ within delegated authority under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights).
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Local Agency Security Officer (LASO)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute CJIS Security Policy Section IR-6 Part (b) external notification obligations during cybersecurity incidents in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve in writing any exception to a communication or transmission requirement that affects Criminal Justice Information (CJI),
+ in coordination with the CJIS Systems Agency (CSA),
+ CJIS Systems Officer (CSO),
+ or other governing authority required by applicable CJIS agreements.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall manage operational communication standards across the Department.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall issue scheduled maintenance notifications and unplanned outage notifications in accordance with Section 6.3.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall receive the Monthly Executive Report and Monthly Briefing from the IT Director in accordance with Section 6.2.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall adhere to the formal versus informal communication boundaries established in Section 6.1.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document material stakeholder communications in accordance with the documentation standard established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.1.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall comply with the One Voice Rule established in Section 6.4 during cybersecurity incidents and infrastructure crises.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -323,22 +566,66 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory.
+Compliance with this policy is mandatory for all Information Operations personnel involved in internal or external stakeholder communications.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Documentation Standard
+Assessment
 \series default
 :
- Material decisions,
- commitments,
- approvals,
- and scope changes shall be documented in the designated System of Engagement (Redmine) or other designated system of record.
- Required documentation shall be completed.
- Failure to document required actions constitutes noncompliance and may result in corrective action under 
+ Adherence to communication documentation,
+ channel compliance,
+ and notification requirements shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Failure to document material communications,
+ failure to use required channels,
+ failure to comply with the Written Confirmation Rule,
+ or failure to meet emergency or stakeholder notification timelines,
+ without documented justification,
+ shall be treated as non-compliance and may result in corrective action under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -360,15 +647,15 @@ nolink "false"
 
 \series bold
 \lang english
-Data Handling
+Exceptions
 \series default
 :
- Communications shall comply with 
+ Exceptions to this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with the exception framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.11"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -378,33 +665,8 @@ nolink "false"
 
 
 \series default
- data classification and handling requirements.
- Restricted data shall not be transmitted via unencrypted email or public file shares.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Public Records
-\series default
-:
- Personnel shall write formal communications with the assumption they may be records subject to disclosure under 
-\series bold
-NRS 239
-\series default
-,
- unless protected by a specific statutory exemption or confidentiality requirement.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exceptions
-\series default
-:
- Exceptions shall be approved in writing by the IT Director in accordance with 
+ §6.6,
+ within the delegation constraints of 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -420,38 +682,51 @@ nolink "false"
 
 \series default
 .
- Exceptions shall not authorize deviation from mandatory security controls or incident reporting requirements.
-\end_layout
-
-\begin_layout Itemize
-
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
+ No exception shall suspend or modify CJIS Security Policy Section IR-6 reporting obligations,
+ NRS 603A.220 breach notification obligations,
+ or mandatory security controls.
+ Governance exceptions affecting decision rights,
+ chain of command,
+ or County commitments shall be processed in accordance with 
 \series bold
-\lang english
-Emergency Priority
-\series default
-:
- Emergency communications necessary to protect life,
- safety,
- or critical infrastructure may occur outside standard protocols but shall be documented in the designated system of record within 
-\series bold
-twenty-four (24) hours
-\series default
-.
-\end_layout
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
-\begin_layout Itemize
+\end_inset
 
-\series bold
-\lang english
-CJIS Override
+
 \series default
-:
- Exceptions and emergency conditions shall not delay CJIS incident reporting timelines.
- Suspected security incidents shall be reported immediately and shall not exceed 
+ §4.
+ Exceptions affecting the handling,
+ transmission,
+ or access of Criminal Justice Information (CJI) shall additionally require written co-approval by the LASO,
+ in coordination with the CJIS Systems Agency (CSA),
+ CJIS Systems Officer (CSO),
+ or other governing authority as required by applicable CJIS agreements and 
 \series bold
-one (1)
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
- hour after discovery.
+ §6.6.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -461,22 +736,13 @@ one (1)
  References
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\series bold
 \lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.03"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
+Cited References
+\series default
 :
- Standard Operating Ethos (Document as Standard)
 \end_layout
 
 \begin_layout Itemize
@@ -521,6 +787,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:2.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Acceptable Use of Information Technology Resources Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:3.03"
 plural "false"
 caps "false"
@@ -530,7 +814,43 @@ nolink "false"
 \end_inset
 
 :
- End-User Communication Standards
+ Service Communications Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
 \end_layout
 
 \begin_layout Itemize
@@ -548,25 +868,7 @@ nolink "false"
 \end_inset
 
 :
- Communication Protocols
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Incident Response Roles and Contact Directory
+ Communication Protocols and Partner Integration
 \end_layout
 
 \begin_layout Itemize
@@ -584,7 +886,47 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
 \end_layout
 
 \begin_layout Itemize
@@ -592,11 +934,15 @@ NRS 239 (Public Records)
 \end_layout
 
 \begin_layout Itemize
-NRS 241 (Nevada Open Meeting Law)
+NRS 239.125 (Local Government Records Management Program)
 \end_layout
 
 \begin_layout Itemize
-NRS 603A.220 (Disclosure of breach of security of system data)
+NRS 603A.220 (Disclosure of Breach of Security of System Data)
+\end_layout
+
+\begin_layout Itemize
+NAC 239.155 (Adoption of Records Retention Schedule)
 \end_layout
 
 \begin_layout Itemize
@@ -613,6 +959,22 @@ CJIS Security Policy v6.0:
 NIST SP 800-53 Rev.
  5:
  CA-3 (Information Exchange)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.RR-02 (Roles,
+ Responsibilities,
+ and Authorities)
 \end_layout
 
 \begin_layout Itemize
@@ -649,11 +1011,57 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy is the governance-level root for all Information Operations communications.
+ It establishes the formal versus informal communication boundary,
+ the strategic reporting cadence to County leadership,
+ the operational notification standards for service availability,
+ the One Voice Rule that governs incident communications,
+ and the Information Exchange Agreement framework that operationalizes CJIS Security Policy Section 5.1 (Information Exchange Agreements) and NIST SP 800-53 Rev.
+ 5:
+ CA-3 (Information Exchange).
+ Day-to-day service communications are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Communications Policy);
+ active cybersecurity incident communications are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration).
+ Both policies incorporate the governance framework established in this policy.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
 6.1 Formal vs.
- Informal Communication
+ Informal Communications
 \end_layout
 
 \begin_layout Standard
@@ -670,15 +1078,15 @@ To ensure accountability,
 Formal Communications (Binding)
 \series default
 :
- Any written or recorded communication that creates an official record,
- authorizes work,
- directs action,
- commits funds,
- establishes scope,
- or signifies a decision.
+ Written or recorded communications that create an official record,
+ authorize work,
+ direct action,
+ commit funds,
+ establish scope,
+ or signify a decision.
  Examples include emails,
- memos,
- tickets/work orders,
+ memoranda,
+ work orders,
  approved meeting minutes,
  status reports,
  and presentations.
@@ -693,28 +1101,68 @@ Informal Communications (Non-Binding)
 :
  Verbal conversations,
  hallway discussions,
- or non-recorded phone calls.
- Informal communications do not authorize work,
+ non-recorded phone calls,
+ text messages (SMS),
+ and transient instant-messaging exchanges (including chat platforms,
+ direct messages,
+ and ephemeral channels).
+ Informal communications shall not authorize work,
  financial commitments,
  security-impacting changes,
- or policy deviations unless confirmed in writing through formal channels;
- however,
- personnel shall comply with lawful supervisory direction and shall request written confirmation within 
+ or policy deviations.
+ Directives received through text messages or instant-messaging channels shall be treated as verbal communications for purposes of the Written Confirmation Rule and shall be subject to the same written confirmation,
+ presumption,
+ escalation,
+ and liability provisions established in this section.
+\end_layout
+
+\begin_layout Itemize
+
 \series bold
-one (1) business day
+\lang english
+Lawful Supervisory Direction
 \series default
- of receiving an instruction requiring confirmation.
- If the instruction involves directives,
+:
+ All Information Operations Personnel shall comply with lawful verbal direction from their chain of command and shall pursue written confirmation under the Written Confirmation Rule.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Written Confirmation Rule
+\series default
+:
+ Verbal communications involving directives,
  financial commitments,
  procurement direction,
  scope changes,
- or architectural decisions,
- written confirmation shall be provided within 
+ or architectural decisions shall be reduced to writing by the end of the business day on which the verbal communication occurred.
+ When the verbal communication occurs within the final two (2) hours of the business day,
+ written confirmation shall be completed no later than 10:00 AM on the following business day.
+ All other verbal communications requiring a record shall be reduced to writing within one (1) business day.
+\end_layout
+
+\begin_layout Itemize
+
 \series bold
-four (4) business hours
+\lang english
+Presumption
 \series default
- in accordance with the Written Confirmation Rule.
- The issuing authority shall provide written confirmation within the applicable timeframe or the matter shall be escalated through the chain of command in accordance with 
+:
+ Verbal directives not reduced to writing within the applicable Written Confirmation Rule window are presumptively void,
+ and the underlying communication shall be treated as non-binding.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Escalation
+\series default
+:
+ When the issuing authority fails to provide written confirmation within the applicable window,
+ the receiving personnel shall escalate the matter through the chain of command in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -736,32 +1184,15 @@ nolink "false"
 
 \series bold
 \lang english
-Written Confirmation Rule
-\series default
-:
- Verbal communications involving directives,
- financial commitments,
- procurement direction,
- scope changes,
- or architectural decisions shall be documented in writing within 
-\series bold
-four (4) business hours
-\series default
- of the verbal communication.
- Verbal directives not reduced to writing within this window are presumptively void.
- Until written confirmation exists,
- the communication shall be treated as non-binding.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
 Liability
 \series default
 :
- Personnel who act on verbal financial or procurement directives that lack written confirmation do so at personal and professional risk.
- Such actions may constitute a policy violation under Policy 
+ All Information Operations Personnel shall not execute financial,
+ procurement,
+ or scope-changing directives that have not been reduced to writing within the applicable Written Confirmation Rule window.
+ Action taken outside this control shall constitute non-compliance and may result in corrective action under 
+\series bold
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.01"
@@ -772,6 +1203,8 @@ nolink "false"
 
 \end_inset
 
+
+\series default
 .
 \end_layout
 
@@ -784,7 +1217,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The IT Director shall maintain a predictable reporting rhythm to ensure leadership visibility and alignment.
+The IT Director shall maintain a predictable reporting rhythm to ensure leadership visibility and alignment with County Management.
 \end_layout
 
 \begin_layout Itemize
@@ -794,8 +1227,8 @@ The IT Director shall maintain a predictable reporting rhythm to ensure leadersh
 Monthly Executive Report
 \series default
 :
- The IT Director shall provide a formal written report to the County Manager covering project status,
- service performance (KPIs),
+ The IT Director shall provide a formal written report to the County Manager each month covering project status,
+ service performance,
  budget variance,
  and emerging risks.
 \end_layout
@@ -807,7 +1240,7 @@ Monthly Executive Report
 Monthly Briefing
 \series default
 :
- The IT Director shall conduct an in-person status briefing with the County Manager to review the Monthly Executive Report and align priorities.
+ The IT Director shall conduct a live status briefing with the County Manager each month to review the Monthly Executive Report and align priorities.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -829,13 +1262,9 @@ Information Operations shall maintain a "No Surprise" standard regarding service
 Scheduled Maintenance
 \series default
 :
- Planned maintenance affecting other departments shall be communicated at least 
-\series bold
-forty-eight (48) hours
-\series default
- in advance whenever feasible.
- If forty-eight (48) hours is not feasible,
- notice shall be issued immediately upon scheduling and the exception shall be documented with justification.
+ The Assistant IT Director shall issue scheduled maintenance notifications no less than forty-eight (48) hours in advance of the maintenance window.
+ When forty-eight (48) hours advance notice is not operationally achievable,
+ the Assistant IT Director shall issue notice immediately upon scheduling and shall document the justification in the work order.
 \end_layout
 
 \begin_layout Itemize
@@ -845,79 +1274,82 @@ forty-eight (48) hours
 Unplanned Outages
 \series default
 :
- The Service Desk shall issue an initial stakeholder notification within 
-\series bold
-fifteen (15) minutes
-\series default
- of confirming a widespread outage.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Root Cause Analysis (RCA)
-\series default
-:
- Significant outages shall have a formal RCA provided to affected Department leadership within 
-\series bold
-five (5) business days
-\series default
- of resolution.
+ The Assistant IT Director or designated Information Operations Personnel shall issue an initial stakeholder notification within fifteen (15) minutes of confirming a widespread outage.
+ For purposes of this section,
+ a widespread outage is a service interruption that meets any of the following criteria:
+ affects two (2) or more County departments;
+ impairs a core enterprise service (including email,
+ telephony,
+ network connectivity,
+ directory services,
+ or financial and enterprise resource planning systems);
+ or affects a life-safety or public-safety system.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.4 Crisis and Incident Communication
+6.4 Incident,
+ Media,
+ and Public Communications
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-During a major cybersecurity incident or infrastructure crisis,
- strict information discipline is mandatory.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-One Voice Rule (Strategic/Public)
-\series default
-:
- The IT Director (or designated Incident Commander) shall serve as the sole authoritative source for strategic and public-facing messaging.
- Personnel shall not speculate in writing on cause,
- attribution,
- or scope until authorized.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Technical Coordination
-\series default
-:
- The One Voice Rule shall not prohibit technical staff from communicating operational details to vendors,
- service providers,
- or partners when necessary to resolve an incident,
- provided communications are limited to technical scope and follow data handling requirements.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Incident Communications
-\series default
-:
- Incident communications shall follow 
+This policy establishes the One Voice Rule for incident communications.
+ The execution of incident communications during active cybersecurity incident response is governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ which incorporates the One Voice Rule established here and operationalizes CJIS Security Policy Section IR-6 Part (b) external notifications,
+ NRS 603A.220 breach notification mechanics,
+ and legal review routing.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+One Voice Rule
+\series default
+:
+ The IT Director,
+ or the designated Incident Commander,
+ shall serve as the sole authoritative source for strategic and public-facing messaging during a cybersecurity incident or infrastructure crisis.
+ No Information Operations Personnel shall speculate in writing or verbally on incident cause,
+ attribution,
+ or scope until authorized by the IT Director or the Incident Commander.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Technical Coordination Carve-Out
+\series default
+:
+ The One Voice Rule shall not prohibit technical staff from communicating operational details to vendors,
+ service providers,
+ or partners when necessary to resolve an incident,
+ provided that such communications are limited to technical scope and comply with the data handling requirements established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
 plural "false"
 caps "false"
 noprefix "false"
@@ -928,20 +1360,9 @@ nolink "false"
 
 \series default
 .
- CJIS-related incidents shall follow CJIS reporting requirements and 
+ The operational guardrails for technical coordination during active incident response are defined in 
 \series bold
 Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-/
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
@@ -954,54 +1375,71 @@ nolink "false"
 
 
 \series default
- procedures,
- including the one (1) hour reporting requirement.
+ §6.7.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Public and Stakeholder Notification
+Media and Public Authorization (All Contexts)
 \series default
 :
- Notifications to the public and stakeholders regarding security breaches shall be executed in strict accordance with the 'most expedient time possible' standard mandated by 
+ Communications with the public or with media outlets shall occur only when expressly authorized by the IT Director,
+ the County Manager,
+ or another designated County authority.
+ During active cybersecurity incident response,
+ 
 \series bold
-NRS 603A.220
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
- and the reporting windows defined in CJIS Security Policy 5.3
+ §6.9 governs the execution of media and public communications and supersedes this bullet.
+ Responses to public records requests made under NRS 239 shall be routed through the County's legal review and records process.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-CJIS Reporting
+Emergency Communications
 \series default
 :
- Personnel shall report suspected or confirmed security incidents immediately,
- but not to exceed one (1) hour after discovery.
- If confirmed,
- the IT Director (LASO) shall notify the CSO,
- SIB Chief,
- or Interface Agency Official per CJIS IR-6(b).
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Legal Review
-\series default
-:
- When directed by County legal counsel,
- incident-related written communications shall be routed through the District Attorney’s Office to support legal review and appropriate handling.
+ Emergency communications necessary to protect life,
+ safety,
+ or critical infrastructure may occur outside standard protocols.
+ The originating personnel shall document the emergency communication in the designated System of Engagement within twenty-four (24) hours of the communication.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.5 Information Exchange Agreements (IEAs)
+6.5 Information Exchange Agreements
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Information Exchange Agreements (IEAs) are the governance instruments through which the County authorizes,
+ documents,
+ and constrains the exchange of Criminal Justice Information (CJI) and other restricted data with external parties.
+ This policy establishes the County standard for IEA content,
+ custody,
+ and retrievability,
+ consistent with CJIS Security Policy v6.0:
+ Section 5.1 (Information Exchange Agreements) and NIST SP 800-53 Rev.
+ 5:
+ CA-3 (Information Exchange).
 \end_layout
 
 \begin_layout Itemize
@@ -1013,52 +1451,70 @@ Requirement
 :
  Any arrangement that enables external access to,
  transmission of,
- or exchange of Criminal Justice Information (CJI) shall be supported by a written Information Exchange Agreement (IEA) or equivalent contract language,
- consistent with CJIS Policy Area 1 requirements.
+ or exchange of CJI shall be supported by a written Information Exchange Agreement or equivalent contract language.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Agreement Content
+Required Agreement Content
 \series default
 :
- Information exchange documentation shall define:
- (a) interface characteristics;
- (b) security controls implemented at each connection point;
- (c) authorized data elements;
- (d) restrictions on connections;
- and (e) terms/termination conditions,
- consistent with NIST CA-3.
+ Information exchange documentation shall define each of the following:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Interface characteristics.
+\end_layout
+
+\begin_layout Itemize
+Security controls implemented at each connection point.
+\end_layout
+
+\begin_layout Itemize
+Authorized data elements.
+\end_layout
+
+\begin_layout Itemize
+Restrictions on connections.
+\end_layout
+
+\begin_layout Itemize
+Terms and termination conditions.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-Custody
+Custody and Retrieval
 \series default
 :
- Executed Information Exchange Agreements shall be stored in the County’s designated contract repository with version control and shall be retrievable within one (1) business day upon request.
+ The IT Director shall ensure that executed Information Exchange Agreements are stored in the County's designated contract repository with version control,
+ and that any executed Information Exchange Agreement is retrievable within one (1) business day upon request.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.6 Stakeholder Contact Management
+6.6 Public Records Awareness
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Information Operations shall maintain and periodically validate an up-to-date contact list for key internal and external stakeholders required for operational escalation and incident coordination.
- This contact directory shall be maintained in accordance with 
+All Information Operations Personnel shall compose formal communications with the awareness that such records may be subject to disclosure under NRS 239 (Public Records),
+ unless protected by a specific statutory exemption or confidentiality requirement.
+ The Department's documentation discipline,
+ governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1068,7 +1524,97 @@ nolink "false"
 
 
 \series default
-.
+ §6.1,
+ shall be exercised with this awareness in mind.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Records generated under this policy shall be classified,
+ retained,
+ and disposed of in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ NRS 239.125 (Local Government Records Management Program),
+ NAC 239.155 (Adoption of Records Retention Schedule),
+ and the applicable Nevada Local Government Records Retention Schedule series.
+ Retention and disposition shall be suspended during litigation holds,
+ audit holds,
+ and public records preservation requirements.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Contractor and Vendor Communication Obligations
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Contractors and vendors are subject to communication and documentation obligations established by this policy as a condition of access to County information systems.
+ Contractors and vendors are not County employees,
+ and the obligations imposed under this policy do not modify their independent contractor status.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Acknowledgment
+\series default
+:
+ Contractors and vendors shall acknowledge the applicable provisions of this policy as a condition of access provisioning,
+ in coordination with the acceptable use acknowledgment process established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Acceptable Use of Information Technology Resources Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Communication Discipline
+\series default
+:
+ Contractors and vendors shall comply with the formal versus informal communication boundaries established in Section 6.1 and shall not act on verbal directives without written confirmation under the Written Confirmation Rule.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Boundary
+\series default
+:
+ The IT Director shall coordinate contractor and vendor communication obligations through the contract administrator and shall not direct or supervise contractor personnel as County employees.
 \end_layout
 
 \end_body
