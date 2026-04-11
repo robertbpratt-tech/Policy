@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.2
+ 2.5
 \end_layout
 
 \begin_layout Subsection*
@@ -502,7 +502,11 @@ Shall monitor SLA adherence in accordance with the intervals and procedures defi
 \begin_layout Itemize
 
 \lang english
-Shall prepare and distribute the reports defined in Section 6.4.
+Shall compile,
+ analyze,
+ and submit the reports defined in Section 6.4 from inputs provided by the Systems Administrator,
+ Network Administrator,
+ and Support Specialists.
 \end_layout
 
 \begin_layout Itemize
@@ -548,6 +552,82 @@ nolink "false"
 
 \series default
  reporting.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall prepare server,
+ endpoint,
+ and infrastructure domain data inputs to the Monthly Performance Summary Report defined in Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall submit the prepared inputs to the Assistant IT Director no later than the third (3rd) business day of the following month.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall prepare network availability,
+ vendor escalation,
+ and connectivity domain data inputs to the Monthly Performance Summary Report defined in Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall submit the prepared inputs to the Assistant IT Director no later than the third (3rd) business day of the following month.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Support Specialists
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall prepare front-line work order data inputs to the Monthly Performance Summary Report defined in Section 6.4,
+ including tickets opened and closed by severity,
+ triage timeliness,
+ and first-contact resolution data.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall submit the prepared inputs to the Assistant IT Director no later than the third (3rd) business day of the following month.
 \end_layout
 
 \end_deeper
@@ -828,6 +908,24 @@ nolink "false"
 
 :
  Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Problem Management Policy
 \end_layout
 
 \begin_layout Itemize
@@ -1268,6 +1366,38 @@ Escalation chain and vendor contact timestamps where applicable.
 
 \series bold
 \lang english
+Domain Data Preparation
+\series default
+:
+ The Systems Administrator,
+ Network Administrator,
+ and Support Specialists shall extract their respective domain inputs prepared under Section 3 from the work order system or from supplementary monitoring tools formally designated by the IT Director under this section.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Domain Input Verification
+\series default
+:
+ The Assistant IT Director shall verify completeness of all required domain inputs no later than the fourth (4th) business day of the following month.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Domain Input Escalation
+\series default
+:
+ The Assistant IT Director shall escalate any missing or incomplete domain inputs to the IT Director as a Section 3 compliance failure attributable to the responsible role.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
 Automated Monitoring Tools
 \series default
 :
@@ -1528,7 +1658,7 @@ nolink "false"
 
 \series default
  (Service Improvement and Continual Improvement Plan).
- The routing determination between 
+ The Assistant IT Director shall route deviations between 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1558,7 +1688,7 @@ nolink "false"
 
 
 \series default
- shall follow the criteria defined in 
+ using the criteria defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1612,7 +1742,10 @@ Weekly At-Risk and Open Ticket Summary
 Monthly Performance Summary Report
 \series default
 :
- The Assistant IT Director shall produce a formal Monthly Performance Summary Report and submit it to the IT Director no later than the fifth (5th) business day of the following month.
+ The Assistant IT Director shall compile and submit a formal Monthly Performance Summary Report to the IT Director no later than the seventh (7th) business day of the following month,
+ incorporating the domain inputs provided by the Systems Administrator,
+ Network Administrator,
+ and Support Specialists under Section 3.
  This report shall include,
  at minimum:
 \end_layout
