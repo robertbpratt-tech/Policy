@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -193,13 +193,10 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish the governance framework for the Elko County Information Operations Department's IT Asset Catalog and service level commitments.
- This policy defines the lifecycle status classifications governing IT support posture,
- the standards by which work orders are triaged and prioritized,
- and the response and resolution commitments the Department makes to County personnel and departments.
- It ensures that service delivery expectations are clearly defined,
- consistently applied,
- and auditably enforced across all asset types and support tiers.
+This policy establishes the IT Asset Catalog,
+ asset lifecycle status classifications,
+ work order triage and severity classification framework,
+ and service level commitments for the Elko County Information Operations Department.
 \end_layout
 
 \begin_layout Subsection*
@@ -215,12 +212,76 @@ The purpose of this policy is to establish the governance framework for the Elko
 This policy applies to all hardware models,
  software titles,
  and services within the operational purview of the Information Operations Department,
- regardless of asset support tier as defined in 
+ to all work orders submitted to the Department,
+ and to all Information Operations personnel involved in triage,
+ service delivery,
+ escalation,
+ or vendor coordination.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+IT Asset Catalog and asset lifecycle status classifications.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Work order triage and severity classification framework.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Service level commitments for response and resolution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+After-hours emergency response criteria.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor SLA requirements for IT-Supported and Vendor-Managed assets.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Work order lifecycle,
+ documentation,
+ and closure standards:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.12"
+reference "pol:3.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -231,48 +292,35 @@ nolink "false"
 
 \series default
 .
- It governs all work orders submitted to the Department by County personnel,
- departments,
- or internal IT staff,
- and all vendor contracts or service agreements for IT-Supported and Vendor-Managed assets.
- This policy applies to all Information Operations personnel involved in triage,
- service delivery,
- escalation,
- and vendor coordination.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-3.
- Roles and Responsibilities
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-IT Director
+Operational incident management:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Shall serve as the sole approving authority for the IT Asset Catalog and all lifecycle status classifications and reclassifications.
- Shall maintain the authoritative list of mission-critical systems eligible for after-hours on-call activation.
- Shall authorize extensions to Deprecated asset replacement deadlines in writing.
- Shall authorize continued remediation beyond the standard labor ceiling by written notation in the work order.
- Shall approve vendor SLA terms at contract execution.
+.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Assistant IT Director
-\series default
-:
- Shall ensure the IT Asset Catalog is maintained current in Redmine.
- Shall conduct lifecycle status classification reviews and prepare reclassification proposals for IT Director approval.
- Shall ensure triage is performed within required timeframes and that service level commitments are met across all active work orders.
- Shall monitor vendor SLA performance in accordance with 
+Performance monitoring and metrics reporting:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -288,27 +336,211 @@ nolink "false"
 
 \series default
 .
- Shall maintain after-hours contact procedures and on-call rotation schedules in Redmine.
- Shall identify and document vendor SLA gaps in existing contracts and present them to the IT Director no later than ninety (90) days prior to each applicable renewal opportunity.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Asset inventory,
+ procurement,
+ and disposal lifecycle:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-IT Department Personnel (All Tiers)
+IT Director
 \series default
 :
- Shall perform triage on assigned work orders within the required window,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the sole approving authority for the IT Asset Catalog and all lifecycle status classifications and reclassifications.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain the authoritative list of mission-critical systems eligible for after-hours on-call activation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize extensions to Deprecated asset replacement deadlines in writing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize continued remediation beyond the standard labor ceiling by written notation in the work order,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Request Fulfillment Policy),
+ Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve vendor SLA terms at contract execution.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall ensure the IT Asset Catalog is maintained current in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct lifecycle status classification reviews and prepare reclassification proposals for IT Director approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that the assigned technician or queue reviewer completes triage within the required timeframes defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that service level commitments are met across all active work orders.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall monitor vendor SLA performance in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Level Management and Metrics Reporting).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain after-hours contact procedures and on-call rotation schedules in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall identify and document vendor SLA gaps in existing contracts.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall present identified vendor SLA gaps to the IT Director no later than ninety (90) days prior to each applicable renewal opportunity.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall perform triage on assigned work orders within the required window,
  confirming or reclassifying severity based on verified operational impact.
- Shall document all reclassifications,
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document all reclassifications,
  remediation attempts,
  escalation rationale,
  and closure decisions in the work order.
- Shall adhere to response and resolution commitments as defined in this policy.
- Shall refer work orders for Unsupported assets to the IT Director for disposition without performing remediation.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Shall adhere to response and resolution commitments as defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall refer work orders for Unsupported assets to the IT Director for disposition without performing remediation.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -316,11 +548,28 @@ IT Department Personnel (All Tiers)
 County Personnel and Department Heads
 \series default
 :
- Shall submit service requests through the designated work order system.
- Shall provide sufficient information at the time of submission to enable triage.
- Shall respond to pending information requests from IT staff within five (5) consecutive business days to prevent work order closure.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall submit service requests through the designated work order system.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide sufficient information at the time of submission to enable triage.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall respond to pending information requests from IT staff within five (5) consecutive business days to prevent work order closure.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -331,7 +580,7 @@ County Personnel and Department Heads
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all Information Operations personnel involved in service delivery,
+Compliance with this policy is mandatory for all Information Operations personnel involved in service delivery,
  triage,
  escalation,
  or vendor coordination.
@@ -361,9 +610,9 @@ nolink "false"
 
 
 \series default
- and the annual policy review and maturity scoring process defined in
+ and the annual policy review and maturity scoring process defined in 
 \series bold
-Policy
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.07"
@@ -376,7 +625,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -388,7 +637,7 @@ Enforcement
 :
  Failure to meet triage,
  response,
- or resolution commitments without documented escalation or rationale shall be treated as non-compliance and may result in corrective actions under 
+ or resolution commitments without documented escalation or rationale shall be treated as non-compliance and may result in corrective action under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -403,7 +652,9 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
  Vendor non-compliance with contracted SLA terms shall be addressed through the vendor compliance framework established in 
 \series bold
 Policy 
@@ -419,7 +670,7 @@ nolink "false"
 
 
 \series default
-.
+ (Vendor Compliance and Third-Party Assurance).
 \end_layout
 
 \begin_layout Itemize
@@ -429,12 +680,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to the service level commitments defined in this policy shall be documented with justification and approved by the IT Director in accordance with 
+ Exceptions to the service level commitments defined in this policy shall be documented with written justification and approved in accordance with the exception management framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -444,8 +695,11 @@ nolink "false"
 
 
 \series default
-.
- Exceptions shall not be granted on an open-ended basis and shall specify a defined remediation timeline.
+,
+ Section 6.6.
+ Oral exceptions are not valid.
+ No exception shall be granted on an open-ended basis;
+ each exception shall specify a defined remediation timeline.
 \end_layout
 
 \begin_layout Subsection*
@@ -455,22 +709,13 @@ nolink "false"
  References
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\series bold
 \lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
+Cited References
+\series default
 :
- Delegation of Authority and Decision Rights
 \end_layout
 
 \begin_layout Itemize
@@ -489,24 +734,6 @@ nolink "false"
 
 :
  IT Asset Management Policy
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.13"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Supply Chain Risk Management (SCRM) and Vendor Governance
 \end_layout
 
 \begin_layout Itemize
@@ -596,7 +823,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -614,13 +843,13 @@ nolink "false"
 \end_inset
 
 :
- Vendor Compliance and Third-Party Assurance Policy
+ Vendor Compliance and Third-Party Assurance
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-ECIO Policy
+ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.07"
@@ -635,11 +864,13 @@ nolink "false"
  Annual Policy Review and Maturity Scoring
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\series bold
 \lang english
-NRS 332 (Purchasing:
- Local Governments)
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -732,7 +963,7 @@ ITIL v4:
 \begin_layout Standard
 
 \lang english
-Information Operations shall maintain a current IT Asset Catalog in the designated system of record (Redmine).
+The Assistant IT Director shall maintain a current IT Asset Catalog in the System of Engagement.
  The catalog shall enumerate all hardware models,
  software titles,
  and services that fall within the operational purview of the Information Operations Department,
@@ -749,12 +980,46 @@ nolink "false"
 
 \end_inset
 
-.
 
 \series default
+ (IT Asset Management Policy).
  The IT Asset Catalog is an internal operational reference document maintained for IT Department use and shall not be published to general County staff.
+ The IT Asset Catalog is a service-support governance register that maps support posture to each hardware model,
+ software title,
+ and service within the Department's operational purview.
+ The IT Asset Catalog shall not be construed as a substitute for the asset inventory maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ or the Configuration Item record maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Configuration Management (CMDB) Policy).
  The IT Director holds sole authority to establish and approve the catalog and its contents.
- The Assistant IT Director shall ensure the catalog is maintained current in Redmine and shall present the catalog for IT Director review and approval no less than annually and following any significant change to the County's technology environment,
+ The Assistant IT Director shall present the catalog for IT Director review and approval no less than annually and following any significant change to the County's technology environment,
  contract portfolio,
  or vendor relationships.
 \end_layout
@@ -772,6 +1037,23 @@ Every hardware model,
  software title,
  and service enumerated in the IT Asset Catalog shall carry one of the following three lifecycle status classifications.
  These classifications govern the IT Department's support commitment for each item and inform service level obligations as defined in Section 6.4 of this policy.
+ Support classification under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ determines ownership and escalation routing for each asset;
+ lifecycle status classification under this policy determines the level of support commitment the Department provides.
 \end_layout
 
 \begin_layout Itemize
@@ -780,10 +1062,11 @@ Every hardware model,
 \lang english
 Supported
 \series default
- status designates hardware,
+:
+ Designates hardware,
  software,
  or services that are fully endorsed and actively supported by the Information Operations Department.
- Assets carrying Supported status represent the standard authorized technology environment for Elko County.
+ Supported assets represent the standard authorized technology environment for Elko County.
  The IT Department shall fulfill its full service level commitments for Supported assets as defined in this policy.
 \end_layout
 
@@ -793,13 +1076,14 @@ Supported
 \lang english
 Deprecated
 \series default
- status designates hardware,
+:
+ Designates hardware,
  software,
  or services that remain operational but have been formally identified for replacement.
  At the time of Deprecated classification,
  the IT Director shall establish and document a mandatory replacement deadline in the IT Asset Catalog.
  Deprecated assets are no longer authorized for new deployments or expanded use.
- The IT Department shall provide best-effort support for Deprecated assets within the labor ceiling defined in 
+ The IT Department shall provide support for Deprecated assets within the labor ceiling framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -814,15 +1098,30 @@ nolink "false"
 
 
 \series default
- for the duration of the replacement window.
+,
+ Section 6.5 for the duration of the replacement window.
  Upon reaching the replacement deadline,
- the asset shall automatically transition to Unsupported status unless the IT Director has formally authorized an extension in writing,
+ the Assistant IT Director shall transition the asset to Unsupported status unless the IT Director has formally authorized an extension in writing,
  documented in the IT Asset Catalog with a new deadline and supporting rationale.
  No open-ended extensions shall be granted.
- The IT Director may,
- by written notation in the work order,
- authorize continued remediation beyond the standard labor ceiling.
- Such authorization constitutes a deliberate project-level commitment and supersedes the Deprecated asset replacement preference for the duration of the authorized effort.
+ The IT Director may authorize continued remediation beyond the standard labor ceiling by written notation in the work order,
+ in accordance with the disposition review process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.5.
 \end_layout
 
 \begin_layout Itemize
@@ -831,7 +1130,8 @@ nolink "false"
 \lang english
 Unsupported
 \series default
- status designates hardware,
+:
+ Designates hardware,
  software,
  or services that the Information Operations Department does not support and will not remediate.
  Unsupported assets represent an active operational and security risk and shall be prioritized for immediate replacement or decommissioning under 
@@ -850,7 +1150,7 @@ nolink "false"
 
 \series default
 .
- Work orders submitted for Unsupported assets shall be closed with a documented replacement referral.
+ The assigned technician or queue reviewer shall close work orders submitted for Unsupported assets with a documented replacement referral.
  The IT Department's obligation for Unsupported assets is limited to documenting the referral and initiating the replacement process.
 \end_layout
 
@@ -862,9 +1162,9 @@ The IT Director shall approve all lifecycle status classifications and reclassif
  a contract expires,
  a security risk materially changes,
  or a replacement technology is formally adopted.
- Reclassification proposals shall be prepared by the Assistant IT Director,
- documented with the proposed effective date and supporting rationale,
- and submitted to the IT Director for approval prior to implementation in the IT Asset Catalog.
+ The Assistant IT Director shall prepare reclassification proposals,
+ document the proposed effective date and supporting rationale,
+ and submit them to the IT Director for approval prior to implementation in the IT Asset Catalog.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -880,25 +1180,25 @@ All work orders submitted to the Information Operations Department shall undergo
  User-submitted severity levels represent the requester's assessment and shall be treated as an input to triage,
  not as a binding operational classification.
  The assigned technician or queue reviewer shall confirm or reclassify the severity level based on verified operational impact assessment prior to committing to a service level response.
- Any reclassification shall be documented in the work order with a brief rationale.
+ The assigned technician or queue reviewer shall document any reclassification in the work order with a brief rationale.
  The operative severity,
- as confirmed or reclassified by IT staff,
+ as confirmed or reclassified by the assigned technician or queue reviewer,
  governs all service level commitments defined in this policy.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The Assistant IT Director shall ensure that triage is attempted within one (1) business hour of work order submission.
- Triage is complete when IT staff have assessed the ticket,
+The Assistant IT Director shall ensure that the assigned technician or queue reviewer completes triage within one (1) business hour of work order submission.
+ Triage is complete when the assigned technician or queue reviewer has assessed the work order,
  confirmed or reclassified the severity,
  and initiated or queued the appropriate response.
  Where a submitted work order lacks sufficient information to complete triage,
- IT staff shall document the attempt,
+ the assigned technician or queue reviewer shall document the attempt,
  specify the information required,
  and notify the requester that more information is required.
  Service level clocks shall be paused for the duration of pending information status and shall resume upon receipt of the required information from the requester.
- Work orders that remain in pending information status without requester response for five (5) consecutive business days shall be closed by the assigned technician or queue reviewer,
+ The assigned technician or queue reviewer shall close work orders that remain in pending information status without requester response for five (5) consecutive business days,
  with closure rationale documented in the work order.
 \end_layout
 
@@ -948,14 +1248,13 @@ Response and resolution commitments by severity level are as follows:
 Critical severity
 \series default
 :
- 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Response within one (1) business hour of triage completion
+Response within one (1) business hour of triage completion.
 \end_layout
 
 \begin_layout Itemize
@@ -978,7 +1277,7 @@ Urgent severity
 \begin_layout Itemize
 
 \lang english
-Response within two (2) business hours of triage completion
+Response within two (2) business hours of triage completion.
 \end_layout
 
 \begin_layout Itemize
@@ -1001,7 +1300,7 @@ High severity
 \begin_layout Itemize
 
 \lang english
-Response within four (4) business hours of triage completion
+Response within four (4) business hours of triage completion.
 \end_layout
 
 \begin_layout Itemize
@@ -1018,14 +1317,13 @@ Resolution or formal escalation within five (5) business days of triage completi
 Normal severity
 \series default
 :
- 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Response within one (1) business day of triage completion
+Response within one (1) business day of triage completion.
 \end_layout
 
 \begin_layout Itemize
@@ -1042,27 +1340,25 @@ Resolution or formal escalation within ten (10) business days of triage completi
 Low severity
 \series default
 :
- 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Response within two (2) business days of triage completion
+Response within two (2) business days of triage completion.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 Resolution or formal escalation within twenty (20) business days of triage completion.
- 
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Where a Low severity ticket carries a specified due date at the time of submission,
+Where a Low severity work order carries a specified due date at the time of submission,
  that due date governs resolution in lieu of the default twenty (20) business day window.
 \end_layout
 
@@ -1093,7 +1389,30 @@ nolink "false"
  For Vendor-Managed assets,
  IT's commitment is limited to referral —
  the Information Operations Department shall route the request to the appropriate vendor contact within the response window defined above,
- and resolution execution shall be handled entirely by the vendor.
+ and the vendor shall handle resolution execution entirely.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Hard Fork jurisdictional transfer defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Operational Incident Management Policy),
+ Section 6.2 is the sole mechanism under which the SLA obligations defined in this section are suspended for a work order.
+ No other SLA suspension mechanism exists within the operational framework governed by this policy.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1107,17 +1426,42 @@ nolink "false"
 \lang english
 The Information Operations Department maintains an on-call capability for after-hours emergencies.
  Severity level alone does not constitute sufficient basis for after-hours on-call activation.
- A situation qualifies for after-hours on-call response only when a mission-critical system supporting public safety operations,
+ The IT Director or the on-call designee shall activate after-hours on-call response only when a mission-critical system supporting public safety operations,
  law enforcement functions,
- or a time-bound legal or financial obligation is completely non-functional and no reasonable operational workaround exists.
- Low and Normal severity tickets are explicitly excluded from after-hours on-call activation by definition.
+ or a time-bound legal or financial obligation is completely non-functional and no operational workaround exists.
+ Low and Normal severity work orders are explicitly excluded from after-hours on-call activation by definition.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The IT Director shall maintain and annually review the authoritative list of systems qualifying as mission-critical for purposes of after-hours on-call activation in the designated system of record.
- The Assistant IT Director shall maintain after-hours contact procedures and on-call rotation schedules in Redmine.
+Upon after-hours on-call activation,
+ the designated on-call technician shall acknowledge the activation within thirty (30) minutes and shall commence active troubleshooting within one (1) hour.
+ All after-hours timeframes are measured in continuous calendar hours from the time of activation.
+ The on-call technician shall create a work order in the System of Engagement in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.8 and shall document all actions taken during the after-hours response in the work order.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall maintain and annually review the authoritative list of systems qualifying as mission-critical for purposes of after-hours on-call activation in the System of Engagement.
+ The Assistant IT Director shall maintain after-hours contact procedures and on-call rotation schedules in the System of Engagement.
  These operational details are not enumerated in this policy.
 \end_layout
 
@@ -1130,10 +1474,10 @@ The IT Director shall maintain and annually review the authoritative list of sys
 \begin_layout Standard
 
 \lang english
-Any contract or service agreement governing an IT-Supported or Vendor-Managed asset entered into or renewed following the effective date of this policy shall include defined vendor response and resolution commitments as a condition of the engagement.
+The IT Director shall ensure that any contract or service agreement governing an IT-Supported or Vendor-Managed asset entered into or renewed following the effective date of this policy includes defined vendor response and resolution commitments as a condition of the engagement.
  The Assistant IT Director shall ensure that vendor SLA terms are documented at the time of contract execution and recorded in the IT Asset Catalog entry for the applicable system,
  subject to IT Director approval.
- Vendor SLA performance shall be monitored by the Assistant IT Director in accordance with 
+ The Assistant IT Director shall monitor vendor SLA performance in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1148,7 +1492,8 @@ nolink "false"
 
 
 \series default
- and evaluated under the vendor compliance framework established in 
+.
+ The Assistant IT Director shall evaluate vendor SLA performance under the vendor compliance framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
