@@ -35,7 +35,7 @@
 | 3.03 | Service Communication Policy | x |
 | 3.04 | Service Delivery Feedback and Grievance Policy | x |
 | 3.05 | Service Request Fulfillment Policy | x |
-| 3.06 | Operational Incident Management Policy | o |
+| 3.06 | Operational Incident Management Policy | x |
 | 3.07 | Problem Management Policy | o |
 | 3.08 | Service Configuration Management (CMDB) Policy | o |
 | 3.09 | Change Management Policy | o |

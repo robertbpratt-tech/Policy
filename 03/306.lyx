@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -193,40 +193,12 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to govern the detection,
+This policy governs the detection,
  intake,
  triage,
  resolution,
- and closure of operational incidents within the Elko County Information Operations Department.
- An operational incident is any unplanned interruption to,
- or degradation of,
- an IT service caused by a non-malicious technical failure.
- The objective of this policy is speed of restoration —
- returning County staff to full operational capability as rapidly as possible.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-This policy establishes the mandatory workflow for responding to operational incidents,
- defines the single command authority for incident management,
- codifies the conditions under which operational incidents transfer jurisdiction to Chapter 4 cybersecurity incident protocols,
- and defines the objective triggers by which closed incidents spawn formal Problem investigations under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ and closure of operational incidents within the Elko County Information Operations Department (ECIO),
+ and establishes the mandatory jurisdictional transfer procedure when an Indicator of Compromise (IoC) is discovered during an operational response.
 \end_layout
 
 \begin_layout Subsection*
@@ -243,37 +215,123 @@ This policy applies to all Information Operations Department personnel and gover
  regardless of the channel through which the incident was identified or reported.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-Operational incidents within the scope of this policy include,
- but are not limited to:
- hardware failures and component degradations,
- application crashes and service outages,
- network connectivity failures,
- ISP disruptions,
- failed or rollback-required software patches,
- account or access failures not involving unauthorized access,
- and any other unplanned event that interrupts or degrades normal IT service delivery.
+In Scope
+\series default
+:
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
-This policy does not govern malicious events,
- suspected or confirmed unauthorized access,
- ransomware or malicious code activity,
- data spillage involving Criminal Justice Information (CJI) or Personally Identifiable Information (PII),
- insider threats,
- or any other event involving an Indicator of Compromise (IoC) as defined in Chapter 4.
- Those events are governed exclusively by Chapter 4 (Incident Response).
- Section 6.2 of this policy defines the mandatory procedure for transferring jurisdiction to Chapter 4 when an IoC is discovered during an otherwise routine operational incident.
+Operational incident detection,
+ intake,
+ triage,
+ resolution,
+ and closure.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-This policy does not redefine the service level commitments or severity classification framework established in 
+Incident Commander authority and designation for operational incidents.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Hard Fork jurisdictional transfer to Chapter 4 upon IoC discovery.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+SLA obligations during operational incidents,
+ including Hard Fork suspension.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Parent-Child linkage and incident suppression during active Problem investigations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Problem Record spawn triggers at incident closure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Critical Incident Stakeholder Report deliverables for Critical severity operational incidents.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Cybersecurity incidents and Indicator of Compromise definitions:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Cybersecurity incident postmortem review:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Service level commitments and severity classification framework:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -288,8 +346,14 @@ nolink "false"
 
 
 \series default
-,
- the performance monitoring and reporting obligations established in 
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Performance monitoring and metrics reporting:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -304,8 +368,14 @@ nolink "false"
 
 
 \series default
-,
- the work order lifecycle requirements established in 
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Work order lifecycle and documentation standards:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -320,8 +390,14 @@ nolink "false"
 
 
 \series default
-,
- or the root cause analysis and Problem management obligations established in 
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Root cause investigation and Problem Management:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -337,26 +413,9 @@ nolink "false"
 
 \series default
 .
- All of those policies remain in full effect and are incorporated by reference where applicable.
- This policy does not perform root cause analysis;
- it restores service and routes root cause responsibility to 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- at incident closure.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -383,7 +442,7 @@ Shall serve as the Incident Commander by default for all operational incidents g
 \begin_layout Itemize
 
 \lang english
-May designate any IT Department staff member as Incident Commander for a specific incident,
+May designate any Information Operations staff member as Incident Commander for a specific incident,
  in accordance with the delegation authority established in 
 \series bold
 Policy 
@@ -399,8 +458,7 @@ nolink "false"
 
 
 \series default
-.
- Designation shall be documented in the relevant work order at the time it is made.
+ (Delegation of Authority and Decision Rights).
 \end_layout
 
 \begin_layout Itemize
@@ -414,7 +472,7 @@ Shall exercise final decision authority on incident prioritization,
 \begin_layout Itemize
 
 \lang english
-Shall review Problem records spawned under the triggers defined in Section 6.7 and shall fulfill the authorization obligations defined in 
+Shall review Problem records spawned under the triggers defined in Section 6.6 and shall fulfill the authorization obligations defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -429,7 +487,15 @@ nolink "false"
 
 
 \series default
-.
+ (Problem Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall fulfill stakeholder report review,
+ authorship,
+ and distribution obligations for Critical severity incidents as defined in Section 6.8.
 \end_layout
 
 \end_deeper
@@ -449,7 +515,7 @@ Assistant IT Director
 Shall ensure that work order intake,
  triage,
  documentation,
- and closure standards are consistently applied by all IT personnel in accordance with this policy,
+ and closure standards are consistently applied by all Information Operations personnel in accordance with this policy,
  
 \series bold
 Policy 
@@ -465,10 +531,8 @@ nolink "false"
 
 
 \series default
-,
- and 
-work order operational standards maintained in the System of Engagement
-.
+ (Service Request Fulfillment Policy),
+ and work order operational standards maintained in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
@@ -489,7 +553,7 @@ nolink "false"
 
 
 \series default
- and for recurring incident patterns that trigger Problem record requirements under Section 6.7.
+ (Service Catalog and SLA Policy) and for recurring incident patterns that trigger Problem record requirements under Section 6.6.
 \end_layout
 
 \begin_layout Itemize
@@ -501,7 +565,14 @@ Shall notify the IT Director when an incident is classified as Critical severity
 \begin_layout Itemize
 
 \lang english
-Shall notify the relevant technician when a recurring incident threshold under Section 6.7 has been crossed without a corresponding Problem record having been opened.
+Shall notify the relevant technician when a recurring incident threshold under Section 6.6 has been crossed without a corresponding Problem record having been opened.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall author stakeholder reports for Critical severity incidents when the IT Director served as Incident Commander,
+ in accordance with Section 6.8.
 \end_layout
 
 \end_deeper
@@ -509,7 +580,7 @@ Shall notify the relevant technician when a recurring incident threshold under S
 
 \series bold
 \lang english
-IT Department Personnel (All Tiers)
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -556,8 +627,8 @@ nolink "false"
 
 
 \series default
- for documented workarounds before escalating any incident,
- as required by Section 6.4.
+ (Knowledge Management Policy) for documented workarounds before escalating any incident,
+ as required by Section 6.3.
 \end_layout
 
 \begin_layout Itemize
@@ -581,7 +652,7 @@ nolink "false"
 
 
 \series default
-,
+ (Standard Operating Ethos),
  Section 6.4.
 \end_layout
 
@@ -589,58 +660,19 @@ nolink "false"
 
 \lang english
 Shall recognize and respond to Indicators of Compromise in accordance with the Hard Fork procedure defined in Section 6.2.
- Failure to initiate the Hard Fork upon discovery of an IoC constitutes a compliance failure under this policy.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall apply the Parent-Child linkage mechanic defined in Section 6.6 when receiving incidents that match an active Parent Problem investigation.
+Shall apply the Parent-Child linkage mechanic defined in Section 6.5 when receiving incidents that match an active Parent Problem investigation.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 Shall evaluate and act upon Problem record spawn triggers at incident closure,
- as defined in Section 6.7.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Incident Commander (when designated)
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall exercise full command authority over the operational response for the duration of the designated incident.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall coordinate technician assignments,
- escalation decisions,
- and external vendor engagement for the incident.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall direct the Hard Fork transfer to Chapter 4 jurisdiction upon confirmation of an IoC,
- and shall coordinate with Chapter 4 protocols as the incident record transitions.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall document all command-level decisions in the incident work order.
+ as defined in Section 6.6.
 \end_layout
 
 \end_deeper
@@ -654,7 +686,7 @@ Shall document all command-level decisions in the incident work order.
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all Information Operations personnel.
+Compliance with this policy is mandatory for all Information Operations personnel.
 \end_layout
 
 \begin_layout Itemize
@@ -671,6 +703,7 @@ Assessment
  Hard Fork recognition,
  Parent-Child linkage,
  Problem spawn trigger,
+ stakeholder reporting,
  and closure obligations shall be assessed through the service level reporting process defined in 
 \series bold
 Policy 
@@ -686,7 +719,7 @@ nolink "false"
 
 
 \series default
- and the annual policy review and maturity scoring process defined in 
+ (Service Level Management and Metrics Reporting) and the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -701,7 +734,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -714,7 +747,8 @@ Enforcement
  Failure to create required work orders,
  failure to initiate the Hard Fork procedure upon IoC discovery,
  failure to document actions within required timeframes,
- or failure to open mandated Problem records at incident closure,
+ failure to open mandated Problem records at incident closure,
+ or failure to complete stakeholder reporting obligations for Critical severity incidents,
  without documented justification,
  shall be treated as non-compliance and may result in corrective action under 
 \series bold
@@ -731,7 +765,9 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -741,12 +777,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with 
+ Exceptions to any requirement of this policy shall be documented with written justification and approved in accordance with the exception management framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -756,7 +792,9 @@ nolink "false"
 
 
 \series default
-.
+,
+ Section 6.6.
+ Oral exceptions are not valid.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline.
 \end_layout
@@ -766,6 +804,15 @@ nolink "false"
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -918,24 +965,6 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Incident Response Policy Overview
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "pol:4.02"
 plural "false"
 caps "false"
@@ -954,6 +983,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Postmortem Review and Lessons Learned
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.01"
 plural "false"
 caps "false"
@@ -963,7 +1010,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -984,44 +1033,68 @@ nolink "false"
  Annual Policy Review and Maturity Scoring
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section IR-4 (Incident Handling)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST CSF 2.0:
  RS.MA-01 (Incident Triage)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST CSF 2.0:
  RS.MA-02 (Incident Escalation)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  IR-4 (Incident Handling)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 COBIT 2019:
  DSS02 (Manage Service Requests and Incidents)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 ITIL v4:
  Incident Management Practice
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 ITIL v4:
  Monitoring and Event Management Practice
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 ITIL v4:
  Service Desk Practice
 \end_layout
@@ -1033,27 +1106,16 @@ ITIL v4:
  Policy Statement
 \end_layout
 
-\begin_layout Subsubsection*
-
-\lang english
-6.1 Operational Boundary and Scope
-\end_layout
-
 \begin_layout Standard
 
 \lang english
 The Information Operations Department responds to two fundamentally different categories of adverse IT events,
  governed by two different policy regimes with two different objectives.
-\end_layout
-
-\begin_layout Standard
-
+ 
 \series bold
-\lang english
 Policy 3.06
 \series default
- governs operational incidents —
- unplanned technical failures whose cause is non-malicious and whose resolution requires restoring service.
+ governs operational incidents — unplanned technical failures whose cause is non-malicious and whose resolution requires restoring service.
  The governing objective is speed:
  identify the failure,
  locate a workaround or fix,
@@ -1089,11 +1151,25 @@ Policy 3.06
 \begin_layout Standard
 
 \lang english
-Chapter 4 governs cybersecurity incidents —
- events involving malicious activity,
+Chapter 4 governs cybersecurity incidents — events involving malicious activity,
  unauthorized access,
  data compromise,
- or any Indicator of Compromise as defined in that chapter.
+ or any Indicator of Compromise as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures).
  The governing objective for Chapter 4 is containment and forensic integrity.
  A Chapter 4 response may deliberately extend an outage in order to stop the bleed,
  preserve evidence,
@@ -1119,8 +1195,89 @@ Policy 3.06
 \begin_layout Subsubsection*
 
 \lang english
-6.2 Hard Fork —
- Indicator of Compromise Discovery and Jurisdictional Transfer
+6.1 Incident Commander
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall serve as the Incident Commander for all operational incidents governed by this policy by default.
+ The IT Director may designate any Information Operations staff member as Incident Commander for a specific incident.
+ The IT Director shall document designations in the relevant work order at the time they are made,
+ specifying the scope and duration of the designation.
+ Designation authority and decision rights for this role align with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The title Incident Commander is singular.
+ No parallel title — Major Incident Manager or equivalent — exists within the ECIO framework.
+ This role applies uniformly to both 
+\series bold
+Policy 3.06
+\series default
+ operational incidents and Chapter 4 cybersecurity incidents.
+ There is no disambiguation of title between the two contexts.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Incident Commander shall:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Exercise full command authority over the operational response for the duration of the designated incident,
+ including technician assignments,
+ escalation decisions,
+ and communication with external vendors.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Direct the Hard Fork transfer to Chapter 4 jurisdiction upon confirmation of an IoC under Section 6.2,
+ and coordinate with Chapter 4 protocols as the incident record transitions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Determine when to return jurisdiction from Chapter 4 to 
+\series bold
+Policy 3.06
+\series default
+ operational recovery where applicable.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Document all command-level decisions in the incident work order.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Hard Fork — Indicator of Compromise Discovery and Jurisdictional Transfer
 \end_layout
 
 \begin_layout Standard
@@ -1182,8 +1339,7 @@ Preserve the system's current state.
  reboot,
  disconnect,
  or otherwise alter the affected system's physical or logical state,
- except to prevent immediate harm to persons or to prevent active data loss that cannot be addressed by other means —
- and only then with immediate notification to the Incident Commander of the action taken.
+ except to prevent immediate harm to persons or to prevent active data loss that cannot be addressed by other means — and only then with immediate notification to the Incident Commander of the action taken.
 \end_layout
 
 \begin_layout Enumerate
@@ -1269,81 +1425,21 @@ nolink "false"
 \begin_layout Subsubsection*
 
 \lang english
-6.3 Incident Commander
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The IT Director shall serve as the Incident Commander for all operational incidents governed by this policy by default.
- The IT Director may designate any IT Department staff member as Incident Commander for a specific incident.
- Designations shall be documented in the relevant work order at the time they are made and shall specify the scope and duration of the designation.
- Designation authority and decision rights for this role align with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The title Incident Commander is singular.
- No parallel title —
- Major Incident Manager or equivalent —
- exists within the ECIO framework.
- This role applies uniformly to both 
-\series bold
-Policy 3.06
-\series default
- operational incidents and Chapter 4 cybersecurity incidents.
- There is no disambiguation of title between the two contexts.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The Incident Commander shall exercise final authority over the incident response for the duration of their designation.
- This includes technician assignments,
- escalation decisions,
- communication with external vendors,
- the determination to invoke the Hard Fork under Section 6.2,
- and the decision to return jurisdiction from Chapter 4 to 
-\series bold
-Policy 3.06
-\series default
- operational recovery where applicable.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.4 Incident Lifecycle
+6.3 Incident Lifecycle
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
 \lang english
-Detection and Intake
+Detection and Intake:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Every operational incident shall be documented in a work order in the designated system of record (Redmine).
+Every operational incident shall be documented in a work order in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
@@ -1366,8 +1462,7 @@ nolink "false"
 
 \series default
  Section 6.2 apply:
- incidents identified through any channel —
- user report,
+ incidents identified through any channel — user report,
  helpdesk contact,
  direct technician observation,
  or automated monitoring alert from 
@@ -1385,8 +1480,7 @@ nolink "false"
 
 
 \series default
- —
- shall be recorded in a work order no later than one (1) business hour following detection or the initiation of any response activity,
+ (Monitoring and Event Management Policy) — shall be recorded in a work order no later than one (1) business hour following detection or the initiation of any response activity,
  whichever occurs first.
 \end_layout
 
@@ -1401,7 +1495,7 @@ No response activity shall proceed without an associated work order.
 
 \series bold
 \lang english
-Triage
+Triage:
 \end_layout
 
 \begin_deeper
@@ -1431,7 +1525,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Triage shall confirm or reclassify the severity level,
+The assigned technician or queue reviewer shall confirm or reclassify the severity level,
  validate the asset support classification,
  and assign the incident to the appropriate technician or escalation path.
 \end_layout
@@ -1439,7 +1533,7 @@ Triage shall confirm or reclassify the severity level,
 \begin_layout Itemize
 
 \lang english
-Triage shall be completed within the timeliness obligations defined in 
+The assigned technician or queue reviewer shall complete triage within the timeliness obligations defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1462,7 +1556,7 @@ nolink "false"
 
 \series bold
 \lang english
-Workaround Search (Mandatory Before Escalation)
+Workaround Search (Mandatory Before Escalation):
 \end_layout
 
 \begin_deeper
@@ -1505,24 +1599,23 @@ The Knowledge Base represents the Department's accumulated resolution intelligen
 
 \lang english
 If an applicable documented workaround exists,
- the technician shall attempt it and document the attempt and outcome in the work order notes.
+ the assigned technician shall attempt it and document the attempt and outcome in the work order notes.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The technician may proceed to escalation when:
+The assigned technician may proceed to escalation when:
  (a) no applicable workaround exists in the Knowledge Base;
  (b) an applicable workaround was attempted and did not resolve the condition;
  or (c) an applicable workaround partially restored service but did not meet the required service level.
- 
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 In all cases,
- the reason for escalation shall be documented in the work order before escalation occurs.
+ the assigned technician shall document the reason for escalation in the work order before escalation occurs.
 \end_layout
 
 \end_deeper
@@ -1530,7 +1623,7 @@ In all cases,
 
 \series bold
 \lang english
-Active Resolution
+Active Resolution:
 \end_layout
 
 \begin_deeper
@@ -1543,7 +1636,7 @@ The assigned technician or Incident Commander shall pursue the fastest path to s
 \begin_layout Itemize
 
 \lang english
-Technicians shall document all troubleshooting steps,
+The assigned technician shall document all troubleshooting steps,
  configuration changes,
  and outcomes in the work order notes in accordance with 
 \series bold
@@ -1567,20 +1660,20 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-All actions shall be entered into the work order system within twenty-four (24) hours of each action taken.
+The assigned technician shall enter all actions into the work order system within twenty-four (24) hours of each action taken.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Technicians shall remain alert throughout the resolution process for any condition that may constitute an Indicator of Compromise.
+The assigned technician shall remain alert throughout the resolution process for any condition that may constitute an Indicator of Compromise.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 If any such condition is discovered,
- the technician shall immediately invoke the Hard Fork procedure defined in Section 6.2.
+ the assigned technician shall immediately invoke the Hard Fork procedure defined in Section 6.2.
 \end_layout
 
 \end_deeper
@@ -1588,7 +1681,7 @@ If any such condition is discovered,
 
 \series bold
 \lang english
-Closure
+Closure:
 \end_layout
 
 \begin_deeper
@@ -1603,27 +1696,26 @@ Upon service restoration,
 
 \lang english
 If the user is unavailable to confirm resolution,
- the technician shall document the unresponsiveness in the work order notes before proceeding to closure.
+ the assigned technician shall document the unresponsiveness in the work order notes before proceeding to closure.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The technician shall update the work order status to the appropriate terminal status in accordance with work order operational standards maintained in the System of Engagement
- and shall document the resolution state in the work order notes.
+The assigned technician shall update the work order status to the appropriate terminal status in accordance with work order operational standards maintained in the System of Engagement and shall document the resolution state in the work order notes.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The technician shall then evaluate whether the incident meets either Problem record spawn trigger defined in Section 6.7 and shall act accordingly before the work order is sealed.
+The assigned technician shall then evaluate whether the incident meets either Problem record spawn trigger defined in Section 6.6 and shall act accordingly before the work order is sealed.
 \end_layout
 
 \end_deeper
 \begin_layout Subsubsection*
 
 \lang english
-6.5 SLA Obligations During Incidents
+6.4 SLA Obligations During Incidents
 \end_layout
 
 \begin_layout Standard
@@ -1666,36 +1758,25 @@ nolink "false"
 
 
 \series default
- require:
-\end_layout
-
-\begin_layout Itemize
-
+ shall be subject to the response and resolution timeframes defined in 
 \series bold
-\lang english
-Response
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Within one (1) business hour of triage completion.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Resolution or formal escalation
-\series default
-:
- Within one (1) business day of triage completion.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-For extended outages that cannot be resolved within the Critical resolution window,
+ for Critical severity work orders.
+ For extended outages that cannot be resolved within the Critical resolution window,
  the formal escalation pathway within the Critical SLA is the appropriate mechanism.
- The SLA clock shall be satisfied when formal escalation is documented in the work order —
- not when service is restored.
+ The SLA clock shall be satisfied when formal escalation is documented in the work order — not when service is restored.
  No additional carve-out or SLA pause is required for extended outages that are actively managed and escalated.
 \end_layout
 
@@ -1726,7 +1807,7 @@ nolink "false"
 \begin_layout Subsubsection*
 
 \lang english
-6.6 Parent-Child Linkage and Incident Suppression During Active Problem Investigations
+6.5 Parent-Child Linkage and Incident Suppression During Active Problem Investigations
 \end_layout
 
 \begin_layout Standard
@@ -1763,22 +1844,20 @@ If a technician receives a new incident work order whose symptoms match those of
 \begin_layout Enumerate
 
 \lang english
-Set the work order status to In Progress in accordance with work order operational standards maintained in the System of Engagement
-.
+Set the work order status to In Progress in accordance with work order operational standards maintained in the System of Engagement.
 \end_layout
 
 \begin_layout Enumerate
 
 \lang english
-Link the work order to the Parent Problem record via the Related Issues field in the System of Engagement
-.
+Link the work order to the Parent Problem record via the Related Issues field in the System of Engagement.
 \end_layout
 
 \begin_layout Enumerate
 
 \lang english
 Document in the work order notes that the incident has been identified as related to an active Problem investigation,
- identifying the Parent record by its Redmine issue number and providing a brief notation of the matching symptoms.
+ identifying the Parent record by its work order number in the System of Engagement and providing a brief notation of the matching symptoms.
 \end_layout
 
 \begin_layout Enumerate
@@ -1799,27 +1878,25 @@ The Related Issues link to the Parent Problem record is the required audit trail
 
 \lang english
 At the time the Parent Problem record is resolved,
- the assigned technician shall revisit each linked child work order and close it with the appropriate terminal status in accordance with work order operational standards maintained in the System of Engagement
-:
+ the assigned technician shall revisit each linked child work order and close it with the appropriate terminal status in accordance with work order operational standards maintained in the System of Engagement:
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Duplicate
+Duplicate:
 \series default
- if the Parent Problem resolution fully addressed the child work order's reported condition and no additional end-system work was required on the child work order's asset or user environment.
+ If the Parent Problem resolution fully addressed the child work order's reported condition and no additional end-system work was required on the child work order's asset or user environment.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Resolved
+Resolved:
 \series default
- if end-system work was required on the child work order's asset or user environment following or concurrent with the Problem resolution —
- for example,
+ If end-system work was required on the child work order's asset or user environment following or concurrent with the Problem resolution — for example,
  reinstalling software,
  restoring a user configuration,
  re-imaging a device,
@@ -1829,13 +1906,13 @@ Resolved
 \begin_layout Standard
 
 \lang english
-The closure rationale shall be documented in each child work order's notes at the time of closure.
+The assigned technician shall document the closure rationale in each child work order's notes at the time of closure.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.7 Problem Record Spawn Triggers
+6.6 Problem Record Spawn Triggers
 \end_layout
 
 \begin_layout Standard
@@ -1865,7 +1942,7 @@ nolink "false"
 
 \series bold
 \lang english
-Major Incident Trigger
+Major Incident Trigger:
 \end_layout
 
 \begin_deeper
@@ -1890,7 +1967,10 @@ nolink "false"
 ,
  without exception,
  shall generate a formal Problem record upon closure.
- The Problem record shall be opened no later than the close of business on the calendar day the incident work order is resolved.
+ The Problem record shall be opened no later than end of business (EOB) on the calendar day the incident work order is resolved.
+ If the incident is resolved on a non-business day,
+ or within two (2) hours of EOB on a business day,
+ the deadline extends to 10:00 AM on the next consecutive business day.
  This requirement is non-negotiable.
  Critical severity incidents represent the most significant service failures within the Department's operational environment.
  The causes of those failures shall be formally investigated regardless of whether a technician believes the cause to be self-evident.
@@ -1901,7 +1981,7 @@ nolink "false"
 
 \series bold
 \lang english
-Recurring Incident Trigger
+Recurring Incident Trigger:
 \end_layout
 
 \begin_deeper
@@ -1929,7 +2009,7 @@ The same-category requirement is essential.
  five or more within the same category indicates a specific,
  repeating failure pattern in that functional dimension.
  Tickets in different categories do not aggregate toward this trigger,
- even if the total exceeds five.
+ even if the total exceeds five (5).
 \end_layout
 
 \begin_layout Itemize
@@ -1951,7 +2031,9 @@ The Assistant IT Director shall monitor queue data to identify recurring inciden
 
 \series bold
 \lang english
-Relationship to Policy 
+Relationship to 
+\series default
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.05"
@@ -1962,7 +2044,9 @@ nolink "false"
 
 \end_inset
 
- Deprecated Asset Trigger
+
+\series bold
+ Deprecated Asset Trigger:
 \end_layout
 
 \begin_deeper
@@ -2018,8 +2102,7 @@ nolink "false"
 
 
 \series default
- trigger uses a thirty (30) calendar day window to ask whether something is actively wrong with an asset or service right now —
- a tighter window that reflects the need to investigate while evidence is fresh.
+ trigger uses a thirty (30) calendar day window to ask whether something is actively wrong with an asset or service right now — a tighter window that reflects the need to investigate while evidence is fresh.
 \end_layout
 
 \begin_layout Standard
@@ -2037,7 +2120,7 @@ Both triggers may fire simultaneously on the same asset.
 \begin_layout Subsubsection*
 
 \lang english
-6.8 Handoff to Policy 
+6.7 Handoff to Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.07"
@@ -2065,8 +2148,7 @@ Policy 3.06
  technician's job is complete when the County is back to work.
  This policy does not perform root cause analysis,
  and technicians shall not delay incident closure pending root cause identification.
- Holding an incident work order open to investigate the cause is the wrong tool —
- that work belongs to 
+ Holding an incident work order open to investigate the cause is the wrong tool — that work belongs to 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2087,7 +2169,31 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Where a Problem record spawn trigger has been met under Section 6.7,
+For Critical severity incidents,
+ the IT Director shall additionally ensure that the stakeholder reporting obligation defined in Section 6.8 is fulfilled.
+ The stakeholder report is an accountability deliverable for affected Department leadership;
+ it does not constitute root cause analysis and does not alter the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Problem investigation obligation.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Where a Problem record spawn trigger has been met under Section 6.6,
  the responsible technician shall open the Problem record under 
 \series bold
 Policy 
@@ -2104,8 +2210,7 @@ nolink "false"
 
 \series default
  before or concurrently with closing the incident work order.
- The Problem record shall reference the originating incident work order via the Related Issues field in the System of Engagement
-.
+ The Problem record shall reference the originating incident work order via the Related Issues field in the System of Engagement.
  From that point forward,
  root cause analysis,
  permanent remediation authorization,
@@ -2129,8 +2234,282 @@ nolink "false"
 \series bold
 Policy 3.06
 \series default
- work order is the evidentiary foundation for the investigation —
- it shall not be modified or extended once sealed.
+ work order is the evidentiary foundation for the investigation — it shall not be modified or extended once sealed.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Critical Incident Stakeholder Report
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This section establishes the formal stakeholder reporting obligation for operational incidents classified as Critical severity under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This obligation is distinct from the routine work order documentation required for all incidents under Section 6.3,
+ from the Problem investigation governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and from the cybersecurity incident postmortem process governed exclusively by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Postmortem Review and Lessons Learned).
+ The stakeholder report is an accountability deliverable summarizing what happened and how it was resolved.
+ It does not replace or subsume the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Problem investigation,
+ which remains the authoritative root cause analysis instrument for operational incidents.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Trigger:
+\series default
+ Every operational incident classified as Critical severity under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall receive a formal written stakeholder report upon closure.
+ There are no deferral provisions.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Separation of Duties:
+\series default
+ The person who commanded the incident response shall not author the stakeholder report for that incident.
+ This separation ensures that the report is prepared with independence from the operational decisions under examination.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+When the IT Director served as Incident Commander:
+\series default
+ The Assistant IT Director shall author the report.
+ The IT Director shall review and approve the completed report prior to distribution.
+ The IT Director retains final approval authority but shall not suppress factual findings.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+When a designated Incident Commander other than the IT Director served:
+\series default
+ The IT Director shall author the report.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Timeline:
+\series default
+ The report author shall complete the written stakeholder report within five (5) business days of incident closure.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Content:
+\series default
+ The stakeholder report shall include,
+ at minimum:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Incident summary,
+ including severity classification,
+ affected services,
+ duration,
+ and resolution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Chronology of the incident from detection through service restoration.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Preliminary cause assessment,
+ if available at the time of report preparation.
+ Where root cause has not yet been determined,
+ the report shall reference the spawned 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Problem record as the instrument governing formal root cause investigation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Corrective actions taken and any recommendations for preventive measures.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint:
+\series default
+ The stakeholder report is informational and managerial in purpose.
+ The report shall not declare root cause,
+ authorize permanent remediation,
+ or close corrective actions.
+ Root-cause determination,
+ Known Error declaration,
+ and permanent corrective measures are governed exclusively by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and cybersecurity lessons-learned reviews are governed exclusively by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Distribution:
+\series default
+ The IT Director shall distribute the completed stakeholder report to affected Department Heads and the County Manager within two (2) business days of report completion.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Documentation:
+\series default
+ The completed stakeholder report shall be attached to the originating incident work order in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Retention:
+\series default
+ The stakeholder report shall be retained for the duration of the originating work order's retention period as governed by work order operational standards maintained in the System of Engagement and applicable records retention schedules.
 \end_layout
 
 \end_body
