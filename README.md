@@ -31,7 +31,7 @@
 | 2.14 | Mobile Device and Remote Access Policy | o |
 | 2.15 | System Development and Secure Software Lifecycle Policy | o |
 | 3.01 | Service Catalog and SLA Policy | x |
-| 3.02 | Service Level Management and Metrics Reporting | o |
+| 3.02 | Service Level Management and Metrics Reporting | x |
 | 3.03 | Service Communication Policy | x |
 | 3.04 | Service Delivery Feedback and Grievance Policy | x |
 | 3.05 | Service Request Fulfillment Policy | x |
