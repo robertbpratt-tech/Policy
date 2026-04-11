@@ -183,7 +183,6 @@ Version:
  2.0
 \end_layout
 
-
 \begin_layout Subsection*
 
 \lang english
@@ -198,7 +197,6 @@ This policy establishes the authority,
  structure,
  and program framework governing the Elko County Information Operations Department's cybersecurity incident response capability.
 \end_layout
-
 
 \begin_layout Subsection*
 
@@ -271,13 +269,14 @@ Out of Scope
 \end_layout
 
 \begin_deeper
-
 \begin_layout Itemize
 
 \lang english
 Physical security and environmental controls:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:2.13"
 plural "false"
@@ -287,6 +286,7 @@ nolink "false"
 
 \end_inset
 
+
 \series default
 .
 \end_layout
@@ -295,8 +295,10 @@ nolink "false"
 
 \lang english
 Service level commitments and five-tier operational severity classification:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.01"
 plural "false"
@@ -306,6 +308,7 @@ nolink "false"
 
 \end_inset
 
+
 \series default
 .
 \end_layout
@@ -314,8 +317,10 @@ nolink "false"
 
 \lang english
 Operational incident response for non-security service disruptions:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -325,6 +330,7 @@ nolink "false"
 
 \end_inset
 
+
 \series default
 .
 \end_layout
@@ -333,8 +339,10 @@ nolink "false"
 
 \lang english
 Indicator of Compromise definition and incident identification procedures:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -344,6 +352,7 @@ nolink "false"
 
 \end_inset
 
+
 \series default
 .
 \end_layout
@@ -352,8 +361,10 @@ nolink "false"
 
 \lang english
 Containment strategy selection and playbook execution:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -363,6 +374,7 @@ nolink "false"
 
 \end_inset
 
+
 \series default
 .
 \end_layout
@@ -371,8 +383,10 @@ nolink "false"
 
 \lang english
 Eradication procedures and scenario-specific guidance:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.04"
 plural "false"
@@ -381,6 +395,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 
 \series default
 .
@@ -392,8 +407,10 @@ nolink "false"
 Recovery operations,
  restoration prioritization,
  and data and system classification for recovery:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -402,6 +419,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 
 \series default
 .
@@ -413,8 +431,10 @@ nolink "false"
 Incident communication,
  external partner integration,
  and IR contact directory governance:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -424,6 +444,7 @@ nolink "false"
 
 \end_inset
 
+
 \series default
 .
 \end_layout
@@ -432,8 +453,10 @@ nolink "false"
 
 \lang english
 Postmortem review and lessons learned procedures:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.07"
 plural "false"
@@ -442,6 +465,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 
 \series default
 .
@@ -453,8 +477,10 @@ nolink "false"
 Business continuity,
  RTO/RPO definitions,
  and contingency planning:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.15"
 plural "false"
@@ -464,13 +490,12 @@ nolink "false"
 
 \end_inset
 
+
 \series default
 .
 \end_layout
 
 \end_deeper
-
-
 \begin_layout Subsection*
 
 \lang english
@@ -563,7 +588,8 @@ nolink "false"
 \lang english
 Shall authorize formal exceptions to the obligations established in this policy in accordance with 
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.01"
 plural "false"
@@ -572,6 +598,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 
 \series default
  (Policy Implementation,
@@ -607,7 +634,8 @@ Shall serve as the primary operational coordinator for incident response activit
 \lang english
 Shall ensure the IR Roles and Contact Directory maintained under 
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -616,6 +644,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 
 \series default
  (Communication Protocols and Partner Integration) is current.
@@ -626,7 +655,8 @@ nolink "false"
 \lang english
 Shall verify that all Information Operations personnel complete the IR familiarization requirements defined in 
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:2.03"
 plural "false"
@@ -635,6 +665,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 
 \series default
  (Security Awareness and Training Policy) and are current on the IR lifecycle framework established in this policy.
@@ -664,7 +695,8 @@ Shall execute containment,
  eradication,
  and recovery technical actions under Incident Commander authority in accordance with 
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -674,9 +706,12 @@ nolink "false"
 
 \end_inset
 
-\series default,
- \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.04"
 plural "false"
@@ -686,9 +721,12 @@ nolink "false"
 
 \end_inset
 
-\series default,
- and \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -698,7 +736,7 @@ nolink "false"
 
 \end_inset
 
-\series default.
+
 \end_layout
 
 \end_deeper
@@ -725,7 +763,8 @@ Shall execute containment,
  eradication,
  and recovery technical actions under Incident Commander authority in accordance with 
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -735,9 +774,12 @@ nolink "false"
 
 \end_inset
 
-\series default,
- \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.04"
 plural "false"
@@ -747,9 +789,12 @@ nolink "false"
 
 \end_inset
 
-\series default,
- and \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -759,7 +804,7 @@ nolink "false"
 
 \end_inset
 
-\series default.
+
 \end_layout
 
 \end_deeper
@@ -784,7 +829,8 @@ Shall execute incident response activities as directed by the Incident Commander
 \lang english
 Shall initiate the Hard Fork procedure established in 
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -793,6 +839,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 
 \series default
  (Operational Incident Management Policy),
@@ -816,7 +863,8 @@ Shall not communicate incident scope,
 \lang english
 Shall maintain familiarity with the IoC list maintained in 
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -826,13 +874,12 @@ nolink "false"
 
 \end_inset
 
+
 \series default
  (Identification and Reporting Procedures) and the chapter roadmap established in Section 6.2 of this policy.
 \end_layout
 
 \end_deeper
-
-
 \begin_layout Subsection*
 
 \lang english
@@ -853,8 +900,10 @@ Adherence to this policy is mandatory for all Information Operations personnel.
 Assessment
 \series default
 :
- Compliance with the IR program obligations established in this policy shall be assessed through the annual policy review and maturity scoring process defined in \series bold
-Policy \begin_inset CommandInset ref
+ Compliance with the IR program obligations established in this policy shall be assessed through the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.07"
 plural "false"
@@ -864,9 +913,12 @@ nolink "false"
 
 \end_inset
 
+
 \series default
- (Annual Policy Review and Maturity Scoring) and the internal audit and self-assessment procedures defined in \series bold
-Policy \begin_inset CommandInset ref
+ (Annual Policy Review and Maturity Scoring) and the internal audit and self-assessment procedures defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.02"
 plural "false"
@@ -875,6 +927,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 
 \series default
  (Internal Audits,
@@ -894,8 +947,10 @@ Enforcement
  failure to document Incident Commander designations at the time they are made,
  or unauthorized external communication of incident information,
  without documented justification,
- shall be treated as non-compliance and may result in corrective action under \series bold
-Policy \begin_inset CommandInset ref
+ shall be treated as non-compliance and may result in corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.01"
 plural "false"
@@ -905,7 +960,7 @@ nolink "false"
 
 \end_inset
 
-\series default.
+
 \end_layout
 
 \begin_layout Itemize
@@ -915,8 +970,10 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with the exception framework established in \series bold
-Policy \begin_inset CommandInset ref
+ Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with the exception framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.01"
 plural "false"
@@ -926,9 +983,8 @@ nolink "false"
 
 \end_inset
 
-\series default.
- Delegation constraints defined in \series bold
-Policy \begin_inset CommandInset ref
+ Delegation constraints defined in Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.08"
 plural "false"
@@ -938,13 +994,13 @@ nolink "false"
 
 \end_inset
 
+
 \series default
  (Delegation of Authority and Decision Rights) apply.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline.
  Oral exceptions are not valid.
 \end_layout
-
 
 \begin_layout Subsection*
 
@@ -965,7 +1021,8 @@ Cited References
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.07"
 plural "false"
@@ -974,6 +1031,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Workforce Roles,
  Responsibilities,
@@ -983,7 +1041,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.08"
 plural "false"
@@ -992,6 +1051,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Delegation of Authority and Decision Rights
 \end_layout
@@ -999,7 +1059,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.09"
 plural "false"
@@ -1008,6 +1069,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Risk Management Policy
 \end_layout
@@ -1015,7 +1077,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:2.03"
 plural "false"
@@ -1024,6 +1087,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Security Awareness and Training Policy
 \end_layout
@@ -1031,7 +1095,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:2.13"
 plural "false"
@@ -1040,6 +1105,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Physical Security and Environmental Controls Policy
 \end_layout
@@ -1047,7 +1113,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.01"
 plural "false"
@@ -1056,6 +1123,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Service Catalog and SLA Policy
 \end_layout
@@ -1063,7 +1131,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -1072,6 +1141,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Operational Incident Management Policy
 \end_layout
@@ -1079,7 +1149,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.07"
 plural "false"
@@ -1088,6 +1159,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Problem Management Policy
 \end_layout
@@ -1095,7 +1167,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.08"
 plural "false"
@@ -1104,6 +1177,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Service Configuration Management (CMDB) Policy
 \end_layout
@@ -1111,7 +1185,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.09"
 plural "false"
@@ -1120,6 +1195,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Change Management Policy
 \end_layout
@@ -1127,7 +1203,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.15"
 plural "false"
@@ -1136,6 +1213,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Service Continuity and Contingency Planning Policy
 \end_layout
@@ -1143,7 +1221,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -1152,6 +1231,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Identification and Reporting Procedures
 \end_layout
@@ -1159,7 +1239,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -1168,6 +1249,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Containment Strategy and Playbooks
 \end_layout
@@ -1175,7 +1257,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.04"
 plural "false"
@@ -1184,6 +1267,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Eradication Procedures and Scenario Guides
 \end_layout
@@ -1191,7 +1275,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -1200,6 +1285,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Recovery Operations and Restoration Prioritization
 \end_layout
@@ -1207,7 +1293,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -1216,6 +1303,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Communication Protocols and Partner Integration
 \end_layout
@@ -1223,7 +1311,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.07"
 plural "false"
@@ -1232,6 +1321,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Postmortem Review and Lessons Learned
 \end_layout
@@ -1239,7 +1329,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.01"
 plural "false"
@@ -1248,6 +1339,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Policy Implementation,
  Enforcement,
@@ -1257,7 +1349,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.02"
 plural "false"
@@ -1266,6 +1359,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Internal Audits,
  Self-Assessment,
@@ -1275,7 +1369,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy \begin_inset CommandInset ref
+ECIO Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.07"
 plural "false"
@@ -1284,6 +1379,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
 :
  Annual Policy Review and Maturity Scoring
 \end_layout
@@ -1314,7 +1410,6 @@ NIST SP 800-61 Rev.
  3:
  Incident Response Recommendations and Considerations for Cyber Risk Management
 \end_layout
-
 
 \begin_layout Standard
 
@@ -1493,14 +1588,12 @@ ITIL v4:
  Service Continuity Management Practice
 \end_layout
 
-
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
 \end_layout
-
 
 \begin_layout Standard
 
@@ -1537,7 +1630,6 @@ Chapter 4 Subordination Principle
  Chapter 4 operates under those established definitions without restating or redefining them.
  This principle is established here once and governs the entire chapter.
 \end_layout
-
 
 \begin_layout Subsubsection*
 
@@ -1582,13 +1674,15 @@ Incident Commander
 \series default
 :
  The IT Director shall serve as Incident Commander for all cybersecurity incidents by default.
- The IT Director may designate any Information Operations staff member as Incident Commander for a specific incident;
+ The IT Director may designate any Information Operations Personnel as Incident Commander for a specific incident;
  designations shall be made at the time they become effective and documented in the incident record.
  The Incident Commander shall exercise final authority over all incident response activity for the duration of the incident.
  This title is singular within the ECIO framework —
  no parallel title exists.
- The Incident Commander role is established in \series bold
-Policy \begin_inset CommandInset ref
+ The Incident Commander role is established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -1598,7 +1692,8 @@ nolink "false"
 
 \end_inset
 
-\series default,
+
+\series default
  Section 6.3 and incorporated into Chapter 4 by reference without modification.
 \end_layout
 
@@ -1611,8 +1706,10 @@ Declaration Authority
 :
  Authority to declare a cybersecurity incident shall reside with the IT Director and the Assistant IT Director.
  A designated Tier L3+ technical lead may declare a cybersecurity incident only when the IT Director and the Assistant IT Director are both genuinely unavailable and the operational situation requires immediate action.
- The technical lead(s) authorized to exercise this authority shall be identified in writing by the IT Director in accordance with \series bold
-Policy \begin_inset CommandInset ref
+ The technical lead(s) authorized to exercise this authority shall be identified in writing by the IT Director in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.08"
 plural "false"
@@ -1622,7 +1719,9 @@ nolink "false"
 
 \end_inset
 
-\series default and reviewed at least annually.
+
+\series default
+and reviewed at least annually.
  Upon declaration,
  all operational authority shall transfer immediately and exclusively to the Incident Commander.
  Administrative stand-ins shall not intervene in,
@@ -1636,8 +1735,10 @@ nolink "false"
 \lang english
 The declaration authority structure,
  delegation constraints,
- and Incident Commander qualification criteria established in this section operate within the delegation framework defined in \series bold
-Policy \begin_inset CommandInset ref
+ and Incident Commander qualification criteria established in this section operate within the delegation framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.08"
 plural "false"
@@ -1647,7 +1748,6 @@ nolink "false"
 
 \end_inset
 
-\series default.
  This section incorporates and applies those provisions to the cybersecurity incident context;
  it does not establish independent delegation authority.
 \end_layout
@@ -1666,8 +1766,10 @@ Incident Severity Classification
  Urgent,
  High,
  Normal,
- Low) established in \series bold
-Policy \begin_inset CommandInset ref
+ Low) established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.01"
 plural "false"
@@ -1677,9 +1779,13 @@ nolink "false"
 
 \end_inset
 
-\series default for service level management.
- \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+for service level management.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.01"
 plural "false"
@@ -1689,8 +1795,12 @@ nolink "false"
 
 \end_inset
 
-\series default SLA obligations are suspended for the duration of any active Chapter 4 incident per the Hard Fork mechanics established in \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+SLA obligations are suspended for the duration of any active Chapter 4 incident per the Hard Fork mechanics established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -1700,7 +1810,8 @@ nolink "false"
 
 \end_inset
 
-\series default,
+
+\series default
  Section 6.2.
 \end_layout
 
@@ -1792,8 +1903,10 @@ Relationship to Operational Incident Management —
 \series default
 :
  The ECIO distinguishes between two categories of adverse IT events.
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -1803,14 +1916,18 @@ nolink "false"
 
 \end_inset
 
-\series default governs operational incidents —
+
+\series default
+governs operational incidents —
  unplanned technical failures whose resolution requires restoring service as quickly as possible.
  Chapter 4 governs cybersecurity incidents —
  events involving malicious activity,
  unauthorized access,
  data compromise,
- or any Indicator of Compromise as defined in \series bold
-Policy \begin_inset CommandInset ref
+ or any Indicator of Compromise as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -1820,7 +1937,6 @@ nolink "false"
 
 \end_inset
 
-\series default.
  These two regimes are not interchangeable and one shall not be substituted for the other.
  A Chapter 4 response may deliberately extend an outage to stop active compromise,
  preserve forensic evidence,
@@ -1831,8 +1947,10 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-When a technician working a \series bold
-Policy \begin_inset CommandInset ref
+When a technician working a 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -1842,9 +1960,13 @@ nolink "false"
 
 \end_inset
 
-\series default operational incident discovers any condition that constitutes an Indicator of Compromise,
- \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+operational incident discovers any condition that constitutes an Indicator of Compromise,
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -1854,11 +1976,15 @@ nolink "false"
 
 \end_inset
 
-\series default immediately and automatically subordinates to Chapter 4.
+
+\series default
+immediately and automatically subordinates to Chapter 4.
  This jurisdictional transfer is called the Hard Fork.
  It is not discretionary and does not require supervisor approval.
- The canonical IoC list that triggers the Hard Fork is maintained in \series bold
-Policy \begin_inset CommandInset ref
+ The canonical IoC list that triggers the Hard Fork is maintained in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -1868,9 +1994,8 @@ nolink "false"
 
 \end_inset
 
-\series default.
- The mechanics governing the Hard Fork procedure are established in \series bold
-Policy \begin_inset CommandInset ref
+ The mechanics governing the Hard Fork procedure are established in Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -1880,7 +2005,8 @@ nolink "false"
 
 \end_inset
 
-\series default,
+
+\series default
  Section 6.2 and incorporated into this chapter by reference.
 \end_layout
 
@@ -1910,8 +2036,10 @@ CJIS Incident Reporting
  including notification mechanics,
  documentation requirements,
  and escalation procedures —
- is governed by \series bold
-Policy \begin_inset CommandInset ref
+ is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -1921,8 +2049,12 @@ nolink "false"
 
 \end_inset
 
-\series default and \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -1932,7 +2064,7 @@ nolink "false"
 
 \end_inset
 
-\series default.
+
 \end_layout
 
 \begin_layout Standard
@@ -1945,8 +2077,10 @@ Breach Notification
  Public and stakeholder notification regarding security breaches affecting personal information shall be executed in strict accordance with NRS 603A.220,
  which requires notification in the most expedient time possible following discovery of a breach.
  This obligation is acknowledged here at the program level.
- Its operational execution is governed by \series bold
-Policy \begin_inset CommandInset ref
+ Its operational execution is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -1956,7 +2090,7 @@ nolink "false"
 
 \end_inset
 
-\series default.
+
 \end_layout
 
 \begin_layout Standard
@@ -1971,8 +2105,10 @@ External Partner Relationships
  incident coordination resources,
  and analytical support from the broader state and national cybersecurity community.
  The ECIO also maintains working relationships with the Federal Bureau of Investigation (FBI) and the Nevada Department of Public Safety (DPS) for purposes of incident coordination and law enforcement referral.
- The operational procedures governing engagement with these and other external partners are established in \series bold
-Policy \begin_inset CommandInset ref
+ The operational procedures governing engagement with these and other external partners are established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -1982,7 +2118,7 @@ nolink "false"
 
 \end_inset
 
-\series default.
+
 \end_layout
 
 \begin_layout Standard
@@ -1998,8 +2134,10 @@ Operational Handback
  eradicated,
  and the affected environment has been stabilized to a state suitable for operational recovery —
  the Incident Commander shall issue an explicit Operational Handback declaration.
- This declaration marks the transfer of recovery authority from Chapter 4 back to the operational continuity framework governed by \series bold
-Policy \begin_inset CommandInset ref
+ This declaration marks the transfer of recovery authority from Chapter 4 back to the operational continuity framework governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.15"
 plural "false"
@@ -2009,13 +2147,16 @@ nolink "false"
 
 \end_inset
 
+
 \series default
  (Service Continuity and Contingency Planning Policy).
  Operational Handback shall never be assumed;
  ambiguity is not permitted.
  An incident remains under Chapter 4 authority until the Incident Commander explicitly declares otherwise.
- The full mechanics governing Operational Handback initiation are established in \series bold
-Policy \begin_inset CommandInset ref
+ The full mechanics governing Operational Handback initiation are established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -2025,9 +2166,8 @@ nolink "false"
 
 \end_inset
 
-\series default.
- \series bold
-Policy \begin_inset CommandInset ref
+ Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.15"
 plural "false"
@@ -2037,7 +2177,9 @@ nolink "false"
 
 \end_inset
 
-\series default governs the receiving obligations on the continuity side of the transfer.
+
+\series default
+governs the receiving obligations on the continuity side of the transfer.
 \end_layout
 
 \begin_layout Standard
@@ -2056,8 +2198,10 @@ Record Retention
  and postmortem reports —
  shall be retained in accordance with the Nevada Local Government Records Retention Schedule and NRS 239.125.
  Specific retention obligations for each record type are established in the governing policy for that record type:
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -2067,9 +2211,13 @@ nolink "false"
 
 \end_inset
 
-\series default governs incident reports,
- \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+governs incident reports,
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -2079,9 +2227,13 @@ nolink "false"
 
 \end_inset
 
-\series default governs communication records,
- and \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+governs communication records,
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.07"
 plural "false"
@@ -2091,9 +2243,10 @@ nolink "false"
 
 \end_inset
 
-\series default governs postmortem reports.
-\end_layout
 
+\series default
+governs postmortem reports.
+\end_layout
 
 \begin_layout Subsubsection*
 
@@ -2115,7 +2268,8 @@ This section provides a navigational overview of the operational policies govern
 
 \series bold
 \lang english
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -2124,6 +2278,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
  —
  Identification and Reporting Procedures
 \end_layout
@@ -2137,8 +2292,10 @@ Lifecycle Phase:
 \end_layout
 
 \begin_layout Standard
+
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -2148,9 +2305,13 @@ nolink "false"
 
 \end_inset
 
-\series default is the first operational policy activated upon cybersecurity incident declaration.
- It maintains the canonical list of Indicators of Compromise (IoCs) that govern both the Hard Fork procedure under \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+is the first operational policy activated upon cybersecurity incident declaration.
+ It maintains the canonical list of Indicators of Compromise (IoCs) that govern both the Hard Fork procedure under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -2160,9 +2321,13 @@ nolink "false"
 
 \end_inset
 
-\series default and the initial identification of cybersecurity incidents under Chapter 4.
- \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+and the initial identification of cybersecurity incidents under Chapter 4.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -2172,12 +2337,16 @@ nolink "false"
 
 \end_inset
 
-\series default establishes the intake and triage procedures for newly declared incidents,
+
+\series default
+establishes the intake and triage procedures for newly declared incidents,
  the documentation requirements for the incident record from the moment of declaration forward,
  and the CJIS one-hour internal reporting mechanics and notification sequence required under CJIS Security Policy Section IR-6.
  It also governs incident record retention.
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -2187,8 +2356,12 @@ nolink "false"
 
 \end_inset
 
-\series default feeds directly into \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+feeds directly into 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -2198,14 +2371,17 @@ nolink "false"
 
 \end_inset
 
-\series default (Containment) upon completion of initial identification and triage.
+
+\series default
+(Containment) upon completion of initial identification and triage.
 \end_layout
 
 \begin_layout Standard
 
 \series bold
 \lang english
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -2214,6 +2390,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
  —
  Containment Strategy and Playbooks
 \end_layout
@@ -2227,8 +2404,10 @@ Lifecycle Phase:
 \end_layout
 
 \begin_layout Standard
+
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -2238,14 +2417,18 @@ nolink "false"
 
 \end_inset
 
-\series default governs the selection and execution of containment strategies following incident identification.
+
+\series default
+governs the selection and execution of containment strategies following incident identification.
  It establishes the decision framework the Incident Commander uses to select a containment approach —
  including considerations of operational impact,
  forensic preservation,
  and threat scope —
- and maintains the playbooks for specific incident scenarios that guide technical response staff through containment execution.
- \series bold
-Policy \begin_inset CommandInset ref
+ and maintains the playbooks for specific incident scenarios that guide technical response personnel through containment execution.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -2255,8 +2438,12 @@ nolink "false"
 
 \end_inset
 
-\series default operates in direct sequence following \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+operates in direct sequence following 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -2266,8 +2453,12 @@ nolink "false"
 
 \end_inset
 
-\series default and interfaces with \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+and interfaces with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.04"
 plural "false"
@@ -2277,10 +2468,14 @@ nolink "false"
 
 \end_inset
 
-\series default (Eradication),
+
+\series default
+(Eradication),
  as containment decisions affect the scope and sequencing of eradication activity.
- Technical configuration actions taken under \series bold
-Policy \begin_inset CommandInset ref
+ Technical configuration actions taken under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -2290,8 +2485,12 @@ nolink "false"
 
 \end_inset
 
-\series default trigger change authorization obligations governed by \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+trigger change authorization obligations governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.09"
 plural "false"
@@ -2301,6 +2500,7 @@ nolink "false"
 
 \end_inset
 
+
 \series default
  (Change Management Policy).
 \end_layout
@@ -2309,7 +2509,8 @@ nolink "false"
 
 \series bold
 \lang english
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.04"
 plural "false"
@@ -2318,6 +2519,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
  —
  Eradication Procedures and Scenario Guides
 \end_layout
@@ -2331,8 +2533,10 @@ Lifecycle Phase:
 \end_layout
 
 \begin_layout Standard
+
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.04"
 plural "false"
@@ -2342,13 +2546,17 @@ nolink "false"
 
 \end_inset
 
-\series default governs the removal of threat actors,
+
+\series default
+governs the removal of threat actors,
  malicious artifacts,
  and compromised configurations from the affected environment following containment.
  It establishes the eradication decision criteria used to confirm that the threat has been fully neutralized before the recovery phase begins,
  and maintains scenario-specific eradication guides for the incident types most likely to affect ECIO systems.
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.04"
 plural "false"
@@ -2358,8 +2566,12 @@ nolink "false"
 
 \end_inset
 
-\series default operates in sequence following \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+operates in sequence following 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
 plural "false"
@@ -2369,9 +2581,8 @@ nolink "false"
 
 \end_inset
 
-\series default.
- It interfaces with \series bold
-Policy \begin_inset CommandInset ref
+ It interfaces with Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -2381,10 +2592,14 @@ nolink "false"
 
 \end_inset
 
-\series default (Recovery),
+
+\series default
+(Recovery),
  as the eradication completion determination is the primary criterion for initiating the recovery phase.
- CI record update obligations triggered by eradication-driven changes are governed by \series bold
-Policy \begin_inset CommandInset ref
+ CI record update obligations triggered by eradication-driven changes are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.08"
 plural "false"
@@ -2394,6 +2609,7 @@ nolink "false"
 
 \end_inset
 
+
 \series default
  (Service Configuration Management (CMDB) Policy).
 \end_layout
@@ -2402,7 +2618,8 @@ nolink "false"
 
 \series bold
 \lang english
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -2411,6 +2628,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
  —
  Recovery Operations and Restoration Prioritization
 \end_layout
@@ -2424,8 +2642,10 @@ Lifecycle Phase:
 \end_layout
 
 \begin_layout Standard
+
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -2435,13 +2655,17 @@ nolink "false"
 
 \end_inset
 
-\series default governs two distinct functions under a single policy number.
+
+\series default
+governs two distinct functions under a single policy number.
  Sections 6.1 through 6.5 and Section 6.7 of that policy govern the operational recovery process —
  the restoration of IT systems,
  services,
  and infrastructure to normal operational status following the completion of eradication.
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -2451,10 +2675,14 @@ nolink "false"
 
 \end_inset
 
-\series default establishes the recovery sequencing framework,
+
+\series default
+establishes the recovery sequencing framework,
  the verification criteria required before any system is returned to production status,
- and the Operational Handback initiation mechanics by which the Incident Commander formally declares the security response phase complete and transfers recovery authority to \series bold
-Policy \begin_inset CommandInset ref
+ and the Operational Handback initiation mechanics by which the Incident Commander formally declares the security response phase complete and transfers recovery authority to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.15"
 plural "false"
@@ -2464,14 +2692,16 @@ nolink "false"
 
 \end_inset
 
-\series default.
+
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Section 6.2 of \series bold
-Policy \begin_inset CommandInset ref
+Section 6.2 of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -2481,10 +2711,14 @@ nolink "false"
 
 \end_inset
 
-\series default governs the data and system classification framework for recovery —
+
+\series default
+governs the data and system classification framework for recovery —
  support infrastructure that is maintained during the Preparation phase and consumed during the Recovery phase.
- That section maintains a recovery classification register that is a controlled derivative view of the Business Impact Analysis maintained under \series bold
-Policy \begin_inset CommandInset ref
+ That section maintains a recovery classification register that is a controlled derivative view of the Business Impact Analysis maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.15"
 plural "false"
@@ -2494,10 +2728,9 @@ nolink "false"
 
 \end_inset
 
-\series default;
  the BIA is the single authoritative source of truth for classification assignments.
- \series bold
-Policy \begin_inset CommandInset ref
+ Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -2507,9 +2740,13 @@ nolink "false"
 
 \end_inset
 
-\series default supplements the BIA with CJI status flags and security dependency mappings specific to the cybersecurity recovery context.
- \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+supplements the BIA with CJI status flags and security dependency mappings specific to the cybersecurity recovery context.
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.05"
 plural "false"
@@ -2519,8 +2756,12 @@ nolink "false"
 
 \end_inset
 
-\series default interfaces with \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+interfaces with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.15"
 plural "false"
@@ -2530,9 +2771,13 @@ nolink "false"
 
 \end_inset
 
-\series default (continuity receiving mechanics),
- \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+(continuity receiving mechanics),
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.04"
 plural "false"
@@ -2542,9 +2787,13 @@ nolink "false"
 
 \end_inset
 
-\series default (eradication-complete determination as recovery precondition),
- and \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+(eradication-complete determination as recovery precondition),
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -2554,14 +2803,17 @@ nolink "false"
 
 \end_inset
 
-\series default (recovery communication obligations).
+
+\series default
+(recovery communication obligations).
 \end_layout
 
 \begin_layout Standard
 
 \series bold
 \lang english
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -2570,6 +2822,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
  —
  Communication Protocols and Partner Integration
 \end_layout
@@ -2584,8 +2837,10 @@ Lifecycle Phase:
 \end_layout
 
 \begin_layout Standard
+
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -2595,7 +2850,9 @@ nolink "false"
 
 \end_inset
 
-\series default governs all internal and external communications produced during a cybersecurity incident,
+
+\series default
+governs all internal and external communications produced during a cybersecurity incident,
  the framework for external partner engagement,
  and the incident response contact directory.
  It establishes the One Voice Rule —
@@ -2603,8 +2860,10 @@ nolink "false"
  and defines the communication cadences,
  authorized audiences,
  and approval requirements for each communication type.
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -2614,8 +2873,12 @@ nolink "false"
 
 \end_inset
 
-\series default governs the operational execution of both the CJIS external notification obligation (acknowledged in this policy and initiated in \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+governs the operational execution of both the CJIS external notification obligation (acknowledged in this policy and initiated in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.02"
 plural "false"
@@ -2625,10 +2888,10 @@ nolink "false"
 
 \end_inset
 
-\series default) and the NRS 603A.220 breach notification obligation.
+and the NRS 603A.220 breach notification obligation.
  It applies from the moment of incident declaration through the conclusion of post-incident communications following Operational Handback.
- \series bold
-Policy \begin_inset CommandInset ref
+ Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -2638,14 +2901,17 @@ nolink "false"
 
 \end_inset
 
-\series default interfaces with every other Chapter 4 policy at the point where that policy triggers a communication obligation.
+
+\series default
+interfaces with every other Chapter 4 policy at the point where that policy triggers a communication obligation.
 \end_layout
 
 \begin_layout Standard
 
-\lang english
 \series bold
-Policy \begin_inset CommandInset ref
+\lang english
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.06"
 plural "false"
@@ -2655,14 +2921,18 @@ nolink "false"
 
 \end_inset
 
-\series default also maintains the IR Roles and Contact Directory —
+
+\series default
+also maintains the IR Roles and Contact Directory —
  the living reference document that identifies current personnel assigned to incident response roles,
  their contact information,
  and the escalation sequence to be followed during an active incident.
  This directory is support infrastructure consumed across all phases of the IR lifecycle.
  It does not establish role authority or delegation rights;
- those originate in \series bold
-Policy \begin_inset CommandInset ref
+ those originate in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.07"
 plural "false"
@@ -2672,11 +2942,14 @@ nolink "false"
 
 \end_inset
 
+
 \series default
  (Workforce Roles,
  Responsibilities,
- and Competency Framework) and \series bold
-Policy \begin_inset CommandInset ref
+ and Competency Framework) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.08"
 plural "false"
@@ -2686,9 +2959,13 @@ nolink "false"
 
 \end_inset
 
-\series default and are incorporated by reference.
- The Incident Commander designation records required under this policy and \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+and are incorporated by reference.
+ The Incident Commander designation records required under this policy and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
 plural "false"
@@ -2698,14 +2975,17 @@ nolink "false"
 
 \end_inset
 
-\series default are maintained separately from the directory in the incident record at the time of designation.
+
+\series default
+are maintained separately from the directory in the incident record at the time of designation.
 \end_layout
 
 \begin_layout Standard
 
 \series bold
 \lang english
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.07"
 plural "false"
@@ -2714,6 +2994,7 @@ noprefix "false"
 nolink "false"
 
 \end_inset
+
  —
  Postmortem Review and Lessons Learned
 \end_layout
@@ -2727,8 +3008,10 @@ Lifecycle Phase:
 \end_layout
 
 \begin_layout Standard
+
 \series bold
-Policy \begin_inset CommandInset ref
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.07"
 plural "false"
@@ -2738,15 +3021,19 @@ nolink "false"
 
 \end_inset
 
-\series default governs the postmortem review process conducted following the closure of a cybersecurity incident.
+
+\series default
+governs the postmortem review process conducted following the closure of a cybersecurity incident.
  It establishes the mandatory postmortem trigger conditions,
  the postmortem review structure,
  the timeline for completion,
  and the documentation requirements for findings and corrective actions.
  Postmortem findings that identify systemic failures in controls,
  configurations,
- or procedures shall be routed to the Risk Register maintained under \series bold
-Policy \begin_inset CommandInset ref
+ or procedures shall be routed to the Risk Register maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:1.09"
 plural "false"
@@ -2756,10 +3043,13 @@ nolink "false"
 
 \end_inset
 
+
 \series default
  (Risk Management Policy).
- \series bold
-Policy \begin_inset CommandInset ref
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.07"
 plural "false"
@@ -2769,8 +3059,12 @@ nolink "false"
 
 \end_inset
 
-\series default is distinct from the Problem Management postmortem process governed by \series bold
-Policy \begin_inset CommandInset ref
+
+\series default
+is distinct from the Problem Management postmortem process governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.07"
 plural "false"
@@ -2780,11 +3074,14 @@ nolink "false"
 
 \end_inset
 
+
 \series default
  (Problem Management Policy),
  which applies to operational incidents.
- Cybersecurity incident postmortems are exclusively governed by \series bold
-Policy \begin_inset CommandInset ref
+ Cybersecurity incident postmortems are exclusively governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.07"
 plural "false"
@@ -2794,10 +3091,8 @@ nolink "false"
 
 \end_inset
 
-\series default.
  Postmortem reports are subject to the retention obligations established in this policy.
 \end_layout
-
 
 \end_body
 \end_document
