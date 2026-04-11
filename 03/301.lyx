@@ -486,7 +486,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall maintain after-hours contact procedures and on-call rotation schedules in the System of Engagement.
+Shall approve changes to the on-call rotation schedule and after-hours contact procedures maintained by the Administrative Assistant.
 \end_layout
 
 \begin_layout Itemize
@@ -538,6 +538,29 @@ Shall adhere to response and resolution commitments as defined in this policy.
 
 \lang english
 Shall refer work orders for Unsupported assets to the IT Director for disposition without performing remediation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Administrative Assistant
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall maintain after-hours contact procedures and on-call rotation schedules in the System of Engagement under Assistant IT Director direction.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall update contact procedures and rotation schedules within one (1) business day of any personnel change affecting on-call assignments.
 \end_layout
 
 \end_deeper
@@ -1461,7 +1484,8 @@ nolink "false"
 
 \lang english
 The IT Director shall maintain and annually review the authoritative list of systems qualifying as mission-critical for purposes of after-hours on-call activation in the System of Engagement.
- The Assistant IT Director shall maintain after-hours contact procedures and on-call rotation schedules in the System of Engagement.
+ The Administrative Assistant shall maintain after-hours contact procedures and on-call rotation schedules in the System of Engagement under Assistant IT Director direction.
+ The Assistant IT Director shall approve changes to the rotation schedule before publication.
  These operational details are not enumerated in this policy.
 \end_layout
 
