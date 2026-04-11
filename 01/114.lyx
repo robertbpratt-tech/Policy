@@ -308,15 +308,35 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Operational incident Root Cause Analysis (RCA) cadence,
- ownership,
- and delivery:
+Critical Incident stakeholder reporting:
  
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Root cause investigation and Problem Management:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -833,6 +853,24 @@ nolink "false"
 
 :
  Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Problem Management Policy
 \end_layout
 
 \begin_layout Itemize
