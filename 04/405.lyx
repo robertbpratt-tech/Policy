@@ -179,7 +179,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -195,7 +195,11 @@ Version:
 This policy governs the recovery of IT systems,
  services,
  and infrastructure following cybersecurity incident eradication,
- the Operational Handback mechanism that transfers recovery authority from Chapter 4 to 
+ the 
+\series bold
+Operational Handback
+\series default
+ mechanism that transfers recovery authority from Chapter 4 to 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -308,6 +312,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -328,6 +334,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -348,12 +356,17 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Stakeholder communication and external notification execution:
+Stakeholder communication,
+ external notification execution,
+ IR roles,
+ and contact directory:
  
 \series bold
 Policy 
@@ -368,6 +381,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -388,26 +403,8 @@ nolink "false"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-IR roles and contact directory:
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -428,6 +425,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -448,6 +447,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -468,6 +469,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -491,6 +494,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -566,6 +571,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -586,6 +593,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -644,6 +653,106 @@ nolink "false"
 Shall approve all classification assignments and review outcomes under Section 6.2.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Shall initiate emergency procurement under County emergency procedures with after-the-fact ratification,
+ per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ when recovery requires emergency hardware,
+ replacement equipment,
+ or vendor engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall exercise Incident Commander authority as defined in this policy.
+ The IT Director may designate any Information Operations Personnel as Incident Commander for a specific incident per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+;
+ a designated Incident Commander exercises the operational recovery authorities expressly assigned to the Incident Commander under this policy for the duration of the designation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall retain personal authority over formal exception approval under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and classification register approval under Section 6.2 regardless of IC designation.
+ CCA review authority follows 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.2 and does not transfer through IC designation.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 
@@ -688,6 +797,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -735,6 +846,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -795,6 +908,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -814,6 +929,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -854,6 +971,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -873,6 +992,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -916,96 +1037,7 @@ Section 6.6.
 
 \series bold
 \lang english
-Incident Commander
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall exercise all IC authority incorporatively from 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-when designated by the IT Director or serving in the IT Director's absence.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall approve the recovery sequencing plan and authorize deviations from the standard BIA-driven recovery priority order.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall authorize system return to production following verification confirmation.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall make the Operational Handback determination.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall initiate emergency procurement under County emergency procedures with after-the-fact ratification,
- per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- when recovery requires emergency hardware,
- replacement equipment,
- or vendor engagement.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-IT Department Personnel
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -1143,13 +1175,15 @@ Return of a system to production status without documented completion of all app
 \begin_layout Itemize
 
 \lang english
-Execution of recovery configuration actions without IC authorization or without an associated Redmine work order.
+Execution of recovery configuration actions without IC authorization or without an associated work order in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Failure to create catch-up RFC documentation within the twenty-four (24) hour window established by Policy 
+Failure to create catch-up RFC documentation within the twenty-four (24) hour window established by 
+\series bold
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.09"
@@ -1160,26 +1194,27 @@ nolink "false"
 
 \end_inset
 
- 
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Declaration of Operational Handback without documented completion of all Handback preconditions established in Section 6.6
+Declaration of Operational Handback without documented completion of all Handback preconditions established in Section 6.6.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Failure to complete Handback close-out documentation within the twenty-four (24) hour window established in Section 6.6
+Failure to complete Handback close-out documentation within the twenty-four (24) hour window established in Section 6.6.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 Failure to maintain the classification register review cadence established in Section 6.2.
- 
 \end_layout
 
 \end_deeper
@@ -1539,24 +1574,6 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Incident Response Roles and Contact Directory
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "pol:5.01"
 plural "false"
 caps "false"
@@ -1612,13 +1629,6 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-CJIS Security Policy v6.0:
- Section IR-6 (Incident Reporting)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 NIST CSF 2.0:
  RC.RP-01 (Recovery Plan Execution)
 \end_layout
@@ -1626,39 +1636,9 @@ NIST CSF 2.0:
 \begin_layout Itemize
 
 \lang english
-NIST CSF 2.0:
- RC.RP-03 (Backup and Restoration Asset Integrity)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST CSF 2.0:
- RC.RP-05 (Restoration Verification)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
- CP-10 (System Recovery and Reconstitution)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
- IR-4 (Incident Handling)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 NIST SP 800-61 Rev.
  3:
- Incident Response Recommendations and Considerations for Cyber Risk Management
+ Incident Response Recommendations and Considerations for Cybersecurity Risk Management
 \end_layout
 
 \begin_layout Standard
@@ -1709,8 +1689,15 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NIST CSF 2.0:
- RC.CO-03 (Recovery Communications)
+ RC.CO-03 (Recovery Activities and Progress Communication)
 \end_layout
 
 \begin_layout Itemize
@@ -1724,7 +1711,21 @@ NIST CSF 2.0:
 
 \lang english
 NIST CSF 2.0:
+ RC.RP-03 (Backup and Restoration Asset Integrity)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
  RC.RP-04 (Post-Incident Operational Norms)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RC.RP-05 (Restoration Verification)
 \end_layout
 
 \begin_layout Itemize
@@ -1748,6 +1749,22 @@ NIST SP 800-53 Rev.
 NIST SP 800-53 Rev.
  5:
  CP-9 (System Backup)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CP-10 (System Recovery and Reconstitution)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IR-4 (Incident Handling)
 \end_layout
 
 \begin_layout Itemize
@@ -1812,7 +1829,22 @@ This policy governs two distinct functions under a single policy number.
  the phase-specific activities that occur during an active cybersecurity incident.
  Section 6.6 governs the data and system classification framework for recovery —
  support infrastructure that is maintained during the Preparation phase and consumed during the Recovery phase.
- The 4.01 Chapter 4 roadmap describes both functions and their lifecycle phase alignment.
+ The 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Chapter 4 roadmap describes both functions and their lifecycle phase alignment.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1892,7 +1924,7 @@ All eradication-phase documentation and change management obligations.
 
 \lang english
 The IC is in command.
- The Redmine work order and Chapter 4 checklist are active.
+ The work order in the System of Engagement and the Chapter 4 checklist are active.
  The following documentation package has been completed under 
 \series bold
 Policy 
@@ -1964,7 +1996,7 @@ Catch-up RFC documentation completed or within the twenty-four (24) hour documen
 \begin_layout Standard
 
 \lang english
-The CJIS IR-6 notification clock established in 
+The external notification clock established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2045,7 +2077,9 @@ nolink "false"
 
 \end_inset
 
-refer to this section.
+
+\series default
+" refer to this section.
 \end_layout
 
 \begin_layout Standard
@@ -2451,7 +2485,7 @@ The IC shall not authorize any system's return to production status following a 
 \begin_layout Standard
 
 \lang english
-The Recovery Verification Checklist shall be maintained as a governed Knowledge Base artifact in the System of Engagement (Redmine) per 
+The Recovery Verification Checklist shall be maintained as a governed Knowledge Base artifact in the System of Engagement per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2585,6 +2619,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2692,7 +2728,9 @@ For systems processing,
  storing,
  or transmitting CJI,
  the IC shall confirm and document that all CJIS-required security controls are in force before the system is returned to production.
- CJI systems shall not be returned to production with compensating controls in lieu of required CJIS controls unless the IT Director (as LASO) has obtained written authorization from the CSA/CSO or other CJIS governing authority required by governing agreements,
+ CJI systems shall not be returned to production with compensating controls in lieu of required CJIS controls unless the IT Director (as LASO) has obtained written authorization from the CJIS Systems Agency (CSA),
+ CJIS Systems Officer (CSO),
+ or other CJIS governing authority required by the applicable CJIS Security Addendum or interagency agreement,
  and the IT Director has documented that authorization in the work order.
 \end_layout
 
@@ -2782,7 +2820,7 @@ Three documentation obligations run concurrently from the moment of each recover
 
 \lang english
 The assigned technician (Network Administrator or Systems Administrator,
- depending on the affected system) shall create a standalone RFC record in Redmine within twenty-four (24) hours of implementation,
+ depending on the affected system) shall create a standalone RFC record in the System of Engagement within twenty-four (24) hours of implementation,
  or by noon on the next business day,
  whichever is later.
 \end_layout
@@ -2825,6 +2863,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -2864,14 +2904,14 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-If a recovery action meets any of the following triggers,
- the IC shall notify the County Manager no later than four (4) hours after the action begins,
- per 
+If a recovery action meets any County Manager consultation trigger defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2886,37 +2926,8 @@ nolink "false"
 
 
 \series default
-Section 6.6:
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Systems whose compromise could affect elections.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Planned downtime or degraded service visible to the public or other County departments for more than one (1) business day.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Decommission or replacement of operationally critical infrastructure.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Any action the IC determines carries political or notable operational implications.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The IC shall identify applicable triggers at the time of action and shall ensure notification is initiated within the four (4) hour window.
+ Section 6.6,
+ the IC shall notify the County Manager no later than four (4) hours after the action begins.
 \end_layout
 
 \begin_layout Standard
@@ -3101,8 +3112,7 @@ nolink "false"
 
 
 \series default
-(Postmortem Review and Lessons Learned),
- or the IC has documented the basis for deferral.
+(Postmortem Review and Lessons Learned).
 \end_layout
 
 \begin_layout Standard
@@ -3222,7 +3232,11 @@ If,
  conditions are discovered that indicate the eradication was incomplete —
  including but not limited to the reappearance of threat artifacts,
  the activation of previously unidentified persistence mechanisms,
- or the observation of new Indicators of Compromise as defined in 
+ or the observation of new 
+\series bold
+Indicators of Compromise
+\series default
+ as defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -3252,6 +3266,8 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Standard
