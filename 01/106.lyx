@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -193,14 +193,9 @@ Version:
 \begin_layout Standard
 
 \lang english
-This policy defines the structure and authority through which Information Technology (IT) governance is established,
- maintained,
- and executed within Elko County.
- It articulates the formal relationships,
+This policy defines the governance structure,
  decision rights,
- and operational responsibilities required to ensure effective oversight,
- strategic alignment,
- and accountability for Information Operations.
+ and oversight authority through which Elko County establishes and maintains Information Technology operations.
 \end_layout
 
 \begin_layout Subsection*
@@ -219,53 +214,25 @@ This policy applies to all Elko County departments,
  and employees who interact with,
  procure,
  or rely on Information Operations services.
- It governs the mechanisms by which IT decisions are made,
- funded,
- and overseen.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-3.
- Roles and Responsibilities
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Board of County Commissioners
+Out of Scope
 \series default
 :
- Shall provide strategic vision,
- ratify County-wide policy,
- and exercise final budgetary authority for IT capital investments.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
-\series bold
 \lang english
-County Manager
-\series default
-:
- Shall provide operational oversight of County administration,
- approve administrative policies,
- and arbitrate conflicts between the Information Operations Department and other County entities.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-IT Director
-\series default
-:
- Shall serve as the primary governance authority for technical standards,
- security controls,
- and infrastructure operations,
- consistent with the delegation framework defined in 
+Delegation mechanics,
+ standing delegations,
+ and separation of duties:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -285,20 +252,140 @@ nolink "false"
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Department Heads
+Operational conduct,
+ culture,
+ and behavioral expectations:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Shall define business requirements,
- participate in governance processes as requested,
- and comply with established IT standards and procedures.
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Decision-making authority for specific governance and operational actions shall follow the delegation framework defined in 
+Policy lifecycle management,
+ review cadence,
+ and change control:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Policy enforcement,
+ exception management,
+ and sanctions:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Board of County Commissioners
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall provide strategic vision for the County's Information Technology function.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ratify County-wide IT governance policy when required under NRS 244.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall exercise final budgetary authority for IT capital investments.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall provide operational oversight of County administration,
+ including the Information Operations Department.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve administrative policies affecting governance structure or budget authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall arbitrate conflicts between the Information Operations Department and other County entities in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -316,95 +403,29 @@ nolink "false"
  (Delegation of Authority and Decision Rights).
 \end_layout
 
-\begin_layout Subsection*
-
-\lang english
-4.
- Compliance and Exceptions
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Adherence to this policy is mandatory.
- Circumvention of IT governance (e.g.,
- "Shadow IT," unauthorized procurement,
- or unauthorized system changes) is a violation of this policy.
-\end_layout
-
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-Risk Recording
+IT Director
 \series default
 :
- Confirmed instances of Shadow IT or unauthorized procurement shall be documented as governance violations and evaluated under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
+\end_layout
 
-\end_inset
+\begin_deeper
+\begin_layout Itemize
 
-
-\series default
- (Risk Management Policy) in addition to being addressed through corrective actions as defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+\lang english
+Shall serve as the primary governance authority for technical standards,
+ security controls,
+ and infrastructure operations.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Enforcement
-\series default
-:
- Non-compliance may result in corrective actions defined under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Policy Implementation and Enforcement Framework).
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exceptions
-\series default
-:
- Exceptions regarding decision rights must be documented and approved by the County Manager in consultation with the IT Director in accordance with 
+Shall exercise decision rights consistent with the delegation framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -422,11 +443,192 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall define business requirements for technology services consumed by their departments.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall participate in governance processes when requested by the IT Director or County Manager.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall comply with established IT standards and procedures.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Elko County departments,
+ officials,
+ and personnel who interact with,
+ procure,
+ or rely on Information Operations services.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to the governance structure and decision rights defined in this policy shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and in accordance with the review schedule defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Non-compliance with this policy — including circumvention of IT governance through unauthorized procurement,
+ unauthorized system changes,
+ or deployment of unauthorized technology ("Shadow IT") — shall be addressed through the corrective action framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be processed through the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6.
+ Oral exceptions are not valid.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
+ Exceptions that alter decision rights,
+ governance structure,
+ or the delegation framework shall require County Manager approval,
+ regardless of the IT Director's general delegated authority under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -445,6 +647,24 @@ nolink "false"
 
 :
  Standard Operating Ethos
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Review and Update Procedures
 \end_layout
 
 \begin_layout Itemize
@@ -588,7 +808,27 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
 \end_layout
 
 \begin_layout Itemize
@@ -598,12 +838,27 @@ NRS 244 (Counties:
 
 \begin_layout Itemize
 CJIS Security Policy v6.0:
- Section 5.1 (Information Exchange Agreements)
+ Section 5.1.1.4 (Management Control Agreements)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ PM-2 (Information Security Program Leadership)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
 CJIS Security Policy v6.0:
- Section 5.1.1.4 (Management Control Agreements)
+ Section 5.1 (Information Exchange Agreements)
 \end_layout
 
 \begin_layout Itemize
@@ -640,6 +895,36 @@ COBIT 2019:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+Elko County requires a governance structure that connects strategic direction from County leadership to the technical execution of Information Operations.
+ This policy establishes the formal authority designations,
+ interdepartmental boundaries,
+ and escalation constructs that ensure IT decisions are made at the appropriate level,
+ funded through proper channels,
+ and overseen with accountability.
+ This policy defines the governance structure within which the delegation framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ operates;
+ it does not create or modify delegation records,
+ stand-in authority,
+ or exception approval mechanisms.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
@@ -650,8 +935,8 @@ COBIT 2019:
 
 \lang english
 Elko County hereby establishes a delegated governance model for IT oversight.
- While strategic direction and budget appropriation are established by the Board of County Commissioners,
- the execution of technical strategy is delegated to the Information Operations Department in accordance with the decision rights defined in 
+ Strategic direction and budget appropriation are established by the Board of County Commissioners under NRS 244.
+ The execution of technical strategy is delegated to the Information Operations Department in accordance with the decision rights defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -667,21 +952,22 @@ nolink "false"
 
 \series default
 .
- 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Program Leadership (NIST PM-2)
+Program Leadership
 \series default
 :
- The IT Director serves as the designated senior official with responsibility and authority to coordinate,
+ The IT Director shall serve as the designated senior official with responsibility and authority to coordinate,
  develop,
  implement,
  and maintain the County's information security program,
- consistent with NIST SP 800-53 PM-2.
+ consistent with NIST SP 800-53 Rev.
+ 5:
+ PM-2 (Information Security Program Leadership).
 \end_layout
 
 \begin_layout Itemize
@@ -703,8 +989,7 @@ Central Authority
 Operational Independence
 \series default
 :
- To ensure security and stability,
- the Information Operations Department shall operate with the autonomy required to enforce compliance standards,
+ The Information Operations Department shall operate with the autonomy required to enforce compliance standards,
  as defined in 
 \series bold
 Policy 
@@ -720,7 +1005,7 @@ nolink "false"
 
 
 \series default
-.
+ (Standard Operating Ethos).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -735,7 +1020,6 @@ nolink "false"
 The IT Director holds the delegated authority to develop IT policy,
  enforce technical standards,
  and manage operational decisions.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -757,15 +1041,12 @@ Binding Nature
 CJIS Management Control
 \series default
 :
- Consistent with 
-\series bold
-CJIS Security Policy Section 5.1.1.4
-\series default
- and applicable Management Control Agreements,
- the Criminal Justice Agency (CJA) retains management control over criminal justice functions and CJI.
+ Consistent with CJIS Security Policy v6.0:
+ Section 5.1.1.4 (Management Control Agreements) and applicable Management Control Agreements,
+ the Criminal Justice Agency (CJA) retains management control over criminal justice functions and Criminal Justice Information (CJI).
  Within that framework,
- the IT Director (or designated CJIS Information Security Officer),
- acting as the CJA’s technical agent,
+ the IT Director (as LASO),
+ acting as the CJA's technical agent,
  shall exercise exclusive administrative control over the configuration,
  security,
  and management of hardware,
@@ -783,8 +1064,7 @@ CJIS Security Policy Section 5.1.1.4
 \begin_layout Standard
 
 \lang english
-To maintain the integrity of the County network,
- specific decision rights are reserved exclusively for Information Operations leadership:
+The IT Director shall reserve the following decision rights exclusively for Information Operations leadership to maintain the integrity of the County network.
 \end_layout
 
 \begin_layout Itemize
@@ -794,12 +1074,12 @@ To maintain the integrity of the County network,
 Access Control
 \series default
 :
- The granting,
+ The IT Director shall retain operational authority over the granting,
  modification,
  and revocation of logical access privileges to County information systems and physical access to IT-controlled facilities (e.g.,
  data centers,
  server rooms,
- network closets) shall fall under the operational authority of the IT Director,
+ network closets),
  implemented in accordance with 
 \series bold
 Policy 
@@ -831,10 +1111,21 @@ nolink "false"
 
 \series default
  (Personnel Security and Background Screening Policy).
- For systems processing CJI,
- access decisions shall further comply with CJIS Security Policy and applicable Management Control Agreements.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
+ For systems processing CJI,
+ the IT Director shall ensure that access decisions comply with the CJIS Security Policy and applicable Management Control Agreements.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -842,9 +1133,10 @@ nolink "false"
 Change Control
 \series default
 :
- Changes affecting cross-departmental services,
+ The IT Director shall review and approve changes affecting cross-departmental services,
  core infrastructure,
- or security baselines must be reviewed and approved by the IT Director and processed in accordance with 
+ or security baselines.
+ All such changes shall be processed in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -860,7 +1152,18 @@ nolink "false"
 
 \series default
  (Change Management Policy).
- Significant changes affecting County-wide operations may require County Manager notification or approval in accordance with 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
+ The IT Director shall notify or obtain approval from the County Manager for significant changes affecting County-wide operations,
+ in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -878,6 +1181,7 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Subsubsection*
 
 \lang english
@@ -887,28 +1191,26 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Effective governance requires strict coordination between control functions.
- The following dependencies are mandatory:
+Effective governance requires structured coordination between the Information Operations Department and specific County control functions.
+ The following dependencies are mandatory.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Human Services
+Human Resources (HR)
 \series default
- (HR):
+:
  HR serves as the authoritative source for personnel status.
- HR shall provide notification to IT—
-through the designated HR information system or service desk process—
-regarding onboarding,
- termination,
- or role changes to ensure secure access control (See 
+ HR shall provide onboarding,
+ offboarding,
+ and role change notifications to the Information Operations Department in accordance with the notification timelines and procedures defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:2.02"
+reference "pol:1.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -918,7 +1220,7 @@ nolink "false"
 
 
 \series default
-).
+ §6.5.
 \end_layout
 
 \begin_layout Itemize
@@ -929,7 +1231,7 @@ Fiscal Affairs
 \series default
 :
  Fiscal Affairs governs financial processing for technology purchases.
- Fiscal Affairs shall collaborate with IT to ensure all technology procurement aligns with the governance standards defined in 
+ Fiscal Affairs shall collaborate with the Information Operations Department to ensure all technology procurement aligns with the governance standards defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -944,7 +1246,7 @@ nolink "false"
 
 
 \series default
- and supply chain risk criteria in 
+ (IT Financial Management and Procurement Policy) and supply chain risk criteria in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -959,8 +1261,245 @@ nolink "false"
 
 
 \series default
+ (Supply Chain Risk Management (SCRM) and Vendor Governance).
+ Fiscal Affairs shall reject non-compliant requisitions.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 Governance Violations
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following actions constitute governance violations under this policy.
+ The IT Director shall document confirmed instances in the Risk Register maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy) and shall initiate corrective action through the enforcement framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Shadow IT
+\series default
+:
+ Deployment of hardware,
+ software,
+ or cloud services on the County network or using County data without Information Operations Department authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Unauthorized Procurement
+\series default
+:
+ Purchase or acquisition of technology products,
+ services,
+ or subscriptions without Information Operations Department review and approval as required by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Unauthorized System Changes
+\series default
+:
+ Configuration changes,
+ installations,
+ or modifications to County information systems performed outside the change management process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Board Engagement and Governance Escalation
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The County Manager shall determine when governance matters require Board of County Commissioners engagement.
+ The following trigger criteria shall inform that determination.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Mandatory Board Engagement
+\series default
+:
+ The County Manager shall present the following matters to the Board of County Commissioners for approval or ratification.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Policy changes that require legal ratification under NRS 244.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+IT capital investments or budget appropriations that require Board of County Commissioners approval under applicable County purchasing authority or NRS 244.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Material changes to the County's IT governance structure that alter the reporting relationship or authority designation of the Information Operations Department.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Discretionary Board Engagement
+\series default
+:
+ The County Manager may present the following matters to the Board of County Commissioners when the County Manager determines that Board awareness or direction is warranted.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Annual Policy Review Report produced under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
 ,
- and shall reject non-compliant requisitions.
+ when findings indicate material governance risk,
+ sustained maturity regression,
+ or resource constraints that require Board-level resolution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Conflict resolution matters escalated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.4 that the County Manager determines exceed the County Manager's mediation authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Risk acceptance decisions that the County Manager determines carry County-wide liability implications,
+ as evaluated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+The IT Director shall provide the County Manager with the information and analysis necessary to support Board engagement determinations.
 \end_layout
 
 \end_body
