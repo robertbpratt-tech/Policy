@@ -143,7 +143,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.06 | IT Governance and Oversight Structure | D | — | 5 | #35, #36, +3 | |
 | 1.07 | Workforce Roles | T | v1.3 | 0 | — | Locked-adjacent; #220 explicitly excludes LASO from 1.07 |
 | 1.08 | Delegation of Authority | T | v1.3 | 0 | — | |
-| 1.09 | Risk Management | D | — | 5 | #45, #46, #47, #48, +1 | #46 has broken §4 reference |
+| 1.09 | Risk Management | T | v2.1 | 0 | — | |
 | 1.10 | IT Financial / Procurement | D | — | 3 | #50, #51, +1 | |
 | 1.11 | Data Governance and Classification | T | v2.2 | 0 | — | #220 root landed; IT Director holds LASO by policy mandate |
 | 1.12 | IT Asset Management | D | — | 5 | #53, #54, #55, #256, +1 | |
@@ -265,7 +265,7 @@ Sequencing principles, in priority order:
 
 **Goal:** Close the highest-defect Chapter 1 untightened policies. Foundational defects propagate further than operational ones, so closing them early reduces future ripple surface area.
 
-3. **1.09 (Risk Management)** — 5 open tickets including #46 (broken §4 reference). Feeds outputs into 5.07. Highest-impact Chapter 1 untightened.
+3. **~~1.09 (Risk Management)~~** — ✅ **Complete (v2.1, April 11, 2026).** POA&M→CAP conversion landed (#45). §4 restructured to 1.04 §6.6 template (#47). §5 Cited/Framework split with 3 hallucinated CSF parentheticals corrected (#48). GLOBAL-G role redistribution absorbed (#270). Temporary risk acceptance delegation removed (1.08 conflict). New §6.8 Risk Acceptance Governance consolidates all risk acceptance rules. Remediation timelines eliminated as dual-maintenance (2.09 authoritative). Two cross-validator rounds completed.
 4. **1.05 (Policy Review and Update Procedures)** — 3 open tickets. Defines the *Technical Directives* construct referenced manual-wide.
 5. **1.06 (IT Governance and Oversight Structure)** — 5 open tickets. Last foundational governance untightened.
 
