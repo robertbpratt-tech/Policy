@@ -140,7 +140,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — | |
 | 1.04 | Formatting Standards | L | — | 5 | #5, #30, #31, #32, #290 | All deferred to `1.04_Procedural_Cleanup` cluster |
 | 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — | Technical Directives construct; LRDA 20070057 verified |
-| 1.06 | IT Governance and Oversight Structure | D | — | 5 | #35, #36, +3 | |
+| 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — | Phase 2 complete; #300 filed against 5.07 |
 | 1.07 | Workforce Roles | T | v1.3 | 0 | — | Locked-adjacent; #220 explicitly excludes LASO from 1.07 |
 | 1.08 | Delegation of Authority | T | v1.3 | 0 | — | |
 | 1.09 | Risk Management | T | v2.1 | 0 | — | |
@@ -214,7 +214,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 5.04 | Performance Metrics | D | — | 1 | +1 | |
 | 5.05 | Security Control Assessment | D | — | 1 | +1 | |
 | 5.06 | Vendor Compliance | D | — | 2 | +2 | |
-| 5.07 | Annual Policy Review | D | — | 2 | +2 | Consumes outputs from 5.02, 5.04, 3.16, 5.03, 1.09, 5.01 |
+| 5.07 | Annual Policy Review | D | — | 3 | #300, +2 | Consumes outputs from 5.02, 5.04, 3.16, 5.03, 1.09, 5.01; #300 = Board reporting triggers from 1.06 |
 
 ### Chapter 6 — Appendices
 
@@ -267,7 +267,7 @@ Sequencing principles, in priority order:
 
 3. **~~1.09 (Risk Management)~~** — ✅ **Complete (v2.1, April 11, 2026).** POA&M→CAP conversion landed (#45). §4 restructured to 1.04 §6.6 template (#47). §5 Cited/Framework split with 3 hallucinated CSF parentheticals corrected (#48). GLOBAL-G role redistribution absorbed (#270). Temporary risk acceptance delegation removed (1.08 conflict). New §6.8 Risk Acceptance Governance consolidates all risk acceptance rules. Remediation timelines eliminated as dual-maintenance (2.09 authoritative). Two cross-validator rounds completed.
 4. **~~1.05 (Policy Review and Update Procedures)~~** — ✅ **Complete (v2.2, April 12, 2026).** #33 Purpose construction fixed. #34 §5 Cited/Framework split implemented. #223 5.01 title updated. "Policy Owners" construct eliminated — all review obligations assigned to IT Director. §4 Exceptions rerouted to 5.01 §6.6 (locked architecture). §4 governance-exception elevation added (County Manager approval for material governance exceptions). Technical Directives (§6.3) separated from Emergency Deviations (§4). LRDA 20070057 verified and cited for retention. Retention framework added (1.11, NRS 239.125, NAC 239.155). Emergency axiom verification tickets filed (#294–#299). Two cross-validator rounds completed.
-5. **1.06 (IT Governance and Oversight Structure)** — 5 open tickets. Last foundational governance untightened. 1.05 §6.3 Constraint references 1.06 for budget authority and governance roles (pending dependency).
+5. **~~1.06 (IT Governance and Oversight Structure)~~** — ✅ **Complete (v2.1, April 12, 2026).** §1 collapsed to one sentence. §2 Out of Scope routing pointers added. §3 restructured (one-directive sub-bullets). §4 rebuilt to 1.04 §6.6 template (Assessment/Enforcement/Exceptions). §5 Cited/Framework split. §6 preamble with 1.08 boundary clarifier. §6.2 LASO pattern applied. §6.4 HR→Human Resources; notification by-reference to 1.08 §6.5. §6.5 (new) Governance Violations. §6.6 (new) Board Engagement triggers. Closed #35, #36, #212, #224, #230. Filed #300 (5.07 Board reporting). Two cross-validator rounds completed.
 
 ---
 
