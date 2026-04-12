@@ -175,7 +175,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -427,28 +427,6 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-IR roles and contact directory —
- governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 CI record governance —
  governed by 
 \series bold
@@ -570,6 +548,28 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+Shall ensure that when a designated Incident Commander serves per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the designee exercises the same obligations listed under this role for the duration of the designation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 Shall approve the eradication strategy,
  including selection of applicable eradication procedures and authorization of destructive eradication actions.
 \end_layout
@@ -621,6 +621,31 @@ nolink "false"
 
 \series default
  (Change Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall initiate emergency procurement under County emergency procedures with after-the-fact ratification,
+ per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ when eradication requires emergency tooling,
+ replacement hardware,
+ or vendor engagement.
 \end_layout
 
 \begin_layout Itemize
@@ -852,97 +877,7 @@ nolink "false"
 
 \series bold
 \lang english
-Incident Commander (when not the IT Director)
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall exercise all IC authority incorporatively from 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall approve the eradication strategy and select the applicable eradication procedures.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall authorize destructive eradication actions after confirming the Forensic Preservation Gate defined in Section 6.3 has been satisfied.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall make the eradication-complete determination in accordance with Section 6.4 of this policy.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall initiate emergency procurement under County emergency procedures with after-the-fact ratification,
- per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- when eradication requires emergency tooling,
- replacement hardware,
- or vendor engagement.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-IT Department Personnel
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -1048,7 +983,7 @@ nolink "false"
 ;
  execution of destructive or irreversible eradication actions without prior IC authorization or without documented confirmation that forensic preservation requirements have been satisfied;
  execution of eradication actions that deviate from the IC-selected eradication procedures without documented IC authorization;
- execution of eradication actions without an associated Redmine work order;
+ execution of eradication actions without an associated work order in the System of Engagement;
  failure to create catch-up RFC documentation within the twenty-four (24) hour window established by 
 \series bold
 Policy 
@@ -1144,6 +1079,11 @@ nolink "false"
 .
  No open-ended exceptions are permitted.
  All approved exceptions shall be documented and time-bounded.
+ No exception shall authorize the destruction,
+ overwriting,
+ or untracked disposition of preserved evidence,
+ required audit records,
+ or mandatory incident-record documentation.
  Oral exceptions are not valid.
 \end_layout
 
@@ -1195,6 +1135,24 @@ nolink "false"
 
 :
  Delegation of Authority and Decision Rights
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Secure Configuration Baselines and Hardening Policy
 \end_layout
 
 \begin_layout Itemize
@@ -1472,7 +1430,7 @@ NIST CSF 2.0:
 \lang english
 NIST SP 800-61 Rev.
  3:
- Incident Response Recommendations and Considerations for Cyber Risk Management
+ Incident Response Recommendations and Considerations for Cybersecurity Risk Management
 \end_layout
 
 \begin_layout Standard
@@ -1616,7 +1574,7 @@ All containment-phase documentation and change management obligations.
 
 \lang english
 The IC is in command.
- The Redmine work order and Chapter 4 checklist are active.
+ The work order and Chapter 4 checklist are active.
  The following documentation package has been completed under 
 \series bold
 Policy 
@@ -1820,7 +1778,7 @@ Credential and Access Remediation:
  certificate revocation,
  API key rotation,
  and disabling compromised accounts.
- These actions are operationally reversible 
+ These actions are operationally reversible but may disrupt active authentication sessions for the affected accounts.
 \end_layout
 
 \begin_layout Itemize
@@ -1926,7 +1884,7 @@ Three documentation obligations run concurrently from the moment of each eradica
 
 \lang english
 The assigned technician (Network Administrator or Systems Administrator,
- depending on the affected system) shall create a standalone RFC record in Redmine within twenty-four (24) hours of implementation,
+ depending on the affected system) shall create a standalone RFC record in the System of Engagement within twenty-four (24) hours of implementation,
  or by noon on the next business day,
  whichever is later.
 \end_layout
@@ -2086,8 +2044,9 @@ nolink "false"
 \lang english
 When eradication requires action by an external vendor,
  cloud service provider,
- or partner organization  requesting an ISP-level block,
- or directing a cloud provider to terminate a compromised session:
+ or partner organization —
+ such as requesting an ISP-level block or directing a cloud provider to terminate a compromised session —
+ the IC shall document the following in the work order Notes:
 \end_layout
 
 \begin_layout Itemize
@@ -2388,8 +2347,8 @@ nolink "false"
 
 
 \series default
- Chapter 4 roadmap are the governed eradication procedures maintained in Redmine.
- Eradication procedures are maintained as Knowledge Base artifacts in the System of Engagement (Redmine) per 
+ Chapter 4 roadmap are the governed eradication procedures maintained in the System of Engagement.
+ Eradication procedures are maintained as Knowledge Base artifacts in the System of Engagement per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
