@@ -7,7 +7,7 @@
 | 1.02 | Code of Ethics and Professional Conduct | x |
 | 1.03 | Standard Operating Ethos | x |
 | 1.04 | Policy and Documentation Formatting Standards | o |
-| 1.05 | Policy Review and Update Procedures | o |
+| 1.05 | Policy Review and Update Procedures | x |
 | 1.06 | IT Governance and Oversight Structure | o |
 | 1.07 | Workforce Roles, Responsibilities, and Competency Framework | x |
 | 1.08 | Delegation of Authority and Decision Rights | x |
