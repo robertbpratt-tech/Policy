@@ -139,12 +139,12 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.02 | Code of Ethics | T | — | 0 | — | |
 | 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — | |
 | 1.04 | Formatting Standards | L | — | 5 | #5, #30, #31, #32, #290 | All deferred to `1.04_Procedural_Cleanup` cluster |
-| 1.05 | Policy Review and Update Procedures | D | — | 3 | #33, #34, +1 | Defines Technical Directives construct |
+| 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — | Technical Directives construct; LRDA 20070057 verified |
 | 1.06 | IT Governance and Oversight Structure | D | — | 5 | #35, #36, +3 | |
 | 1.07 | Workforce Roles | T | v1.3 | 0 | — | Locked-adjacent; #220 explicitly excludes LASO from 1.07 |
 | 1.08 | Delegation of Authority | T | v1.3 | 0 | — | |
 | 1.09 | Risk Management | T | v2.1 | 0 | — | |
-| 1.10 | IT Financial / Procurement | D | — | 3 | #50, #51, +1 | |
+| 1.10 | IT Financial / Procurement | D | — | 4 | #50, #51, #299, +1 | |
 | 1.11 | Data Governance and Classification | T | v2.2 | 0 | — | #220 root landed; IT Director holds LASO by policy mandate |
 | 1.12 | IT Asset Management | D | — | 5 | #53, #54, #55, #256, +1 | |
 | 1.13 | Supply Chain Risk Management | D | — | 2 | #56, +1 | |
@@ -182,12 +182,12 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.06 | Operational Incident Management | T | v2.2 | 0 | — | |
 | 3.07 | Problem Management | T | v2.2 | 0 | — | |
 | 3.08 | CMDB | D | — | 5 | #131, #132, #133, #134, +1 | Phase 3 feeder for 4.04 |
-| 3.09 | Change Management | D | — | 6 | #135, #136, #137, #263, +2 | #263 = bidirectional pipeline ripple from 3.07; Phase 3 feeder for 4.05 |
+| 3.09 | Change Management | D | — | 7 | #135, #136, #137, #263, #294, +2 | #263 = bidirectional pipeline ripple from 3.07; Phase 3 feeder for 4.05 |
 | 3.10 | Release and Deployment | D | — | 4 | #138, #139, #140, +1 | |
 | 3.11 | Capacity and Availability | D | — | 4 | #141, #142, #143, +1 | |
 | 3.12 | Monitoring and Event Management | D | — | 5 | #144, #145, #146, +2 | |
 | 3.13 | Knowledge Management | D | — | 4 | #147, #148, #149, +1 | Phase 3 feeder for 4.03 |
-| 3.14 | IT Project Management | D | — | 3 | #150, #151, #152 | |
+| 3.14 | IT Project Management | D | — | 4 | #150, #151, #152, #295 | |
 | 3.15 | Service Continuity | D | — | 3 | #153, #154, +1 | Feeds 4.05 continuity tier classification |
 | 3.16 | Service Improvement | D | — | 4 | #155, +3 | |
 | 3.17 | System Maintenance and Vendor Repairs | D | — | 2 | +2 | |
@@ -198,9 +198,9 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|---|
 | 4.01 | IR Policy Overview | T | v2.0 | 0 | — | |
 | 4.02 | Identification and Reporting | D | — | 1 | +1 | Carries #264 subtask (L3 stage 1 triage); standalone in Phase 3 |
-| 4.03 | Containment Strategy and Playbooks | D | — | 0 | — | Source of truth for §6.16 transcription |
-| 4.04 | Eradication | D | — | 1 | +1 | Phase 3 collector (3.08 → 4.04) |
-| 4.05 | Recovery and Restoration | D | — | 5 | #221, +4 | Phase 3 collector (3.09 → 4.05); **evaluate return-to-drafted candidacy** |
+| 4.03 | Containment Strategy and Playbooks | D | — | 1 | #296 | Source of truth for §6.16 transcription |
+| 4.04 | Eradication | D | — | 2 | #297, +1 | Phase 3 collector (3.08 → 4.04) |
+| 4.05 | Recovery and Restoration | D | — | 6 | #221, #298, +4 | Phase 3 collector (3.09 → 4.05); **evaluate return-to-drafted candidacy** |
 | 4.06 | Communication Protocols | T | v2.2 | 0 | — | #284 LASO dissolution + #268 Admin Asst directory landed April 11, 2026 |
 | 4.07 | Postmortem and Lessons Learned | D | — | 2 | #259, +1 | #259 = scope boundary with 3.06 §6.8; standalone in Phase 3 |
 
@@ -266,8 +266,8 @@ Sequencing principles, in priority order:
 **Goal:** Close the highest-defect Chapter 1 untightened policies. Foundational defects propagate further than operational ones, so closing them early reduces future ripple surface area.
 
 3. **~~1.09 (Risk Management)~~** — ✅ **Complete (v2.1, April 11, 2026).** POA&M→CAP conversion landed (#45). §4 restructured to 1.04 §6.6 template (#47). §5 Cited/Framework split with 3 hallucinated CSF parentheticals corrected (#48). GLOBAL-G role redistribution absorbed (#270). Temporary risk acceptance delegation removed (1.08 conflict). New §6.8 Risk Acceptance Governance consolidates all risk acceptance rules. Remediation timelines eliminated as dual-maintenance (2.09 authoritative). Two cross-validator rounds completed.
-4. **1.05 (Policy Review and Update Procedures)** — 3 open tickets. Defines the *Technical Directives* construct referenced manual-wide.
-5. **1.06 (IT Governance and Oversight Structure)** — 5 open tickets. Last foundational governance untightened.
+4. **~~1.05 (Policy Review and Update Procedures)~~** — ✅ **Complete (v2.2, April 12, 2026).** #33 Purpose construction fixed. #34 §5 Cited/Framework split implemented. #223 5.01 title updated. "Policy Owners" construct eliminated — all review obligations assigned to IT Director. §4 Exceptions rerouted to 5.01 §6.6 (locked architecture). §4 governance-exception elevation added (County Manager approval for material governance exceptions). Technical Directives (§6.3) separated from Emergency Deviations (§4). LRDA 20070057 verified and cited for retention. Retention framework added (1.11, NRS 239.125, NAC 239.155). Emergency axiom verification tickets filed (#294–#299). Two cross-validator rounds completed.
+5. **1.06 (IT Governance and Oversight Structure)** — 5 open tickets. Last foundational governance untightened. 1.05 §6.3 Constraint references 1.06 for budget authority and governance roles (pending dependency).
 
 ---
 
