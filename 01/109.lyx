@@ -147,7 +147,7 @@ End
 \tracking_changes false
 \output_changes false
 \change_bars false
-\postpone_fragile_content false
+\postpone_fragile_content true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -176,7 +176,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -185,18 +185,9 @@ Version:
 \end_layout
 
 \begin_layout Standard
-This policy establishes the formal governance structure,
+This policy establishes the governance structure,
  methodology,
  and responsibilities for managing information technology risk within Elko County.
- It mandates a lifecycle approach to identifying,
- assessing,
- responding to,
- and monitoring risks that threaten the confidentiality,
- integrity,
- and availability of County information systems.
- This policy serves as the authority for risk-based decision-making,
- resource prioritization,
- and the formal acceptance of operational risk.
 \end_layout
 
 \begin_layout Subsection*
@@ -209,11 +200,7 @@ This policy applies to all information systems,
  infrastructure,
  data,
  personnel,
- and third-party vendors managed by or on behalf of the Elko County Information Operations Department.
- It governs strategic,
- operational,
- compliance,
- and technical risk throughout the system development lifecycle (SDLC)
+ and third-party vendors managed by or on behalf of the Elko County Information Operations Department (ECIO).
 \end_layout
 
 \begin_layout Subsection*
@@ -227,34 +214,98 @@ This policy applies to all information systems,
 IT Director
 \series default
 :
- Shall serve as the 
-\series bold
-Chief Information Security Officer (CISO)
-\series default
- and the designated 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Shall serve as the designated 
 \series bold
 Authorizing Official (AO)
 \series default
  for Elko County,
- responsible for issuing risk-based authorization decisions for all County information systems.
- Shall define the County’s risk tolerance by reviewing and approving the 
+ with authority to issue risk-based authorization decisions for all County information systems.
+\end_layout
+
+\begin_layout Itemize
+Shall serve as the 
+\series bold
+Chief Information Security Officer (CISO)
+\series default
+ for the County.
+\end_layout
+
+\begin_layout Itemize
+Shall define the County's risk tolerance by reviewing and approving the 
 \series bold
 Risk Management Strategy
 \series default
- annually.
- Shall sign all 
+ at least annually.
+\end_layout
+
+\begin_layout Itemize
+Shall approve all 
 \series bold
 Risk Acceptance Memos
 \series default
+ in accordance with the governance requirements defined in Section 6.8.
+\end_layout
+
+\begin_layout Itemize
+Shall review and formally approve System Security Categorizations.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Shall serve as the 
+\series bold
+Risk Program Owner
+\series default
+ and coordinate Risk Management Framework (RMF) evidence across systems.
+\end_layout
+
+\begin_layout Itemize
+Shall ensure the accuracy and currency of the centralized 
+\series bold
+Risk Register
+\series default
 .
- In the Director's absence,
- the Assistant IT Director (Acting) may sign risk acceptances that are time-bounded (not to exceed 30 days) and shall be ratified in writing by the IT Director within five (5) business days of return.
- This temporary delegation is a specific limitation for risk acceptance decisions and does not expand delegation beyond the standing authority defined in 
+\end_layout
+
+\begin_layout Itemize
+Shall develop and maintain a documented Risk Management Strategy that defines risk appetite and tolerance,
+ prioritization criteria,
+ management decision rules for selecting risk responses,
+ scoring methodology,
+ reporting thresholds,
+ and review cadence (NIST SP 800-53 Rev.
+ 5:
+ PM-9 (Risk Management Strategy)).
+\end_layout
+
+\begin_layout Itemize
+Shall oversee the execution of risk assessments and vulnerability scans.
+\end_layout
+
+\begin_layout Itemize
+Shall validate that risk mitigation strategies and 
+\series bold
+Corrective Action Plans
+\series default
+ tracked under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.03"
 plural "false"
 caps "false"
 noprefix "false"
@@ -264,71 +315,56 @@ nolink "false"
 
 
 \series default
-.
- Shall review and formally approve System Security Categorizations.
+ (Compliance Monitoring and Corrective Action) are effective and updated.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
-Assistant IT Director
+Systems Administrators and Network Administrators
 \series default
 :
- Shall serve as the 
-\series bold
-Risk Program Owner
-\series default
- and coordinate RMF evidence across systems.
- Shall execute the Risk Management program and maintain the centralized 
-\series bold
-Risk Register
-\series default
-.
- Shall develop and maintain a formal,
- standalone Risk Management Strategy document that defines organizational risk tolerance,
- mitigation approaches,
- and review frequency (
-\series bold
-NIST PM-9
-\series default
-).
- Shall oversee the execution of risk assessments and vulnerability scans.
- Shall validate that risk mitigation strategies and Plans of Action and Milestones (POA&Ms) are effective and updated.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Shall conduct technical risk assessments and vulnerability scans within their operational domain.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-System Owners (Department Heads/Elected Officials)
-\series default
-:
- Shall be accountable for the security and privacy of the information systems they own.
- Shall support the categorization of their systems and participate in risk assessments.
- Shall concur with Risk Acceptance Memos for their systems,
- acknowledging the operational risk being accepted.
+Shall implement required risk mitigation controls and remediate vulnerabilities within mandated timelines.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-Administrators (Network & Systems)
-\series default
-:
- Shall conduct technical risk assessments and vulnerability scans.
- Shall implement required risk mitigation controls and remediate vulnerabilities within mandated timelines.
- Shall report changes in system architecture that may alter the risk profile to the Assistant IT Director immediately.
+Shall populate and update technical risk entries in the Risk Register — including Common Vulnerabilities and Exposures (CVE) data,
+ scan results,
+ vulnerability status,
+ and treatment progress — for controls within their operational domain.
 \end_layout
 
 \begin_layout Itemize
+Shall report changes in system architecture that may alter the risk profile to the Assistant IT Director within one (1) business day.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 
 \series bold
-All Department Personnel
+All Information Operations Personnel
 \series default
 :
- Shall submit identified vulnerabilities,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Shall submit identified vulnerabilities,
  control gaps,
  or potential threats to the Assistant IT Director for inclusion in the Risk Register.
- Shall report active threats,
+\end_layout
+
+\begin_layout Itemize
+Shall report active threats,
  anomalous system behavior,
  or suspected breaches immediately via the channels defined in 
 \series bold
@@ -346,50 +382,96 @@ nolink "false"
 
 \series default
  (Identification and Reporting Procedures).
- Shall adhere to risk mitigation procedures and security controls defined in this manual.
 \end_layout
 
+\begin_layout Itemize
+Shall adhere to risk mitigation procedures and security controls defined in this manual.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Department Heads and Elected Officials
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Shall support the categorization of information systems within their purview and participate in risk assessments when requested by the IT Director or Assistant IT Director.
+\end_layout
+
+\begin_layout Itemize
+Shall concur with Risk Acceptance Memos for systems within their purview,
+ acknowledging the operational risk being accepted,
+ in accordance with Section 6.8.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 4.
  Compliance and Exceptions
 \end_layout
 
+\begin_layout Standard
+Compliance with this policy is mandatory for all Information Operations personnel and County officials involved in risk management activities.
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
-Mandatory Compliance
+Assessment
 \series default
 :
- Adherence to this policy is mandatory.
+ Adherence to risk management requirements shall be assessed through the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and in accordance with the review schedule defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Enforcement
+\series default
+:
  Failure to identify,
  report,
- or remediate risks according to these standards constitutes a violation of County governance and may result in disciplinary action.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Acknowledgment
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-Personnel
-\series default
-:
- All Department personnel shall acknowledge receipt of this policy upon hire,
- upon substantive revision,
- and annually thereafter.
- Acknowledgment records shall be maintained in accordance with 
+ or remediate risks in accordance with this policy shall be treated as non-compliance.
+ The IT Director may initiate corrective action under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:2.03"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -399,21 +481,23 @@ nolink "false"
 
 
 \series default
- (Security Awareness and Training Policy).
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Vendors
+Exceptions
 \series default
 :
- Vendors and contractors shall acknowledge adherence through contractual agreements and the vendor governance process defined in 
+ Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.13"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -424,167 +508,19 @@ nolink "false"
 
 \series default
 .
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-Records Retention
-\series default
-:
- Risk Assessment Reports,
- Risk Acceptance Memos,
- and POA&Ms are County records.
- They shall be retained in accordance with 
-\series bold
-NRS 239.125
-\series default
- and 
-\series bold
-NAC 239.155
-\series default
- under the applicable 
-\series bold
-Nevada Local Government Records Retention Schedule
-\series default
- series,
- including:
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \series bold
-IT Security Evaluations
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-IT Security Plans
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-IT Security Reviews,
- Reports and Logs
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-Exceptions and Deviations
+Clarification
 \series default
 :
- Any deviation from this policy,
- including the decision to accept a "High" or "Critical" risk without mitigation,
- must be documented in a formal 
-\series bold
-Risk Acceptance Memo
-\series default
-,
- signed by the IT Director (or authorized Acting IT Director) and the System Owner,
- and logged in the Risk Register.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-Authorization Package
-\series default
-:
- Risk Acceptance Memos shall become part of the system's 
-\series bold
-Authorization Package
-\series default
- (along with the System Security Plan,
- Security Assessment Report,
- and POA&M).
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Template
-\series default
-:
- Exceptions shall be documented using the standard 
-\series bold
-Risk Acceptance Memo Template
-\series default
- located in.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Memo Requirements
-\series default
-:
- Risk Acceptance Memos must include,
- at a minimum:
- scope of the exception,
- business justification,
- compensating controls,
- expiration/review date,
- residual risk statement,
- and System Owner concurrence.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Decision Rights
-\series default
-:
- System Owner concurrence constitutes acknowledgement of operational/business impact and acceptance of residual operational risk.
- AO approval constitutes the authorization decision and acceptance of residual security risk on behalf of the County.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Automatic Expiration
-\series default
-:
- All risk acceptances shall automatically expire on the stated expiration date.
- Expired acceptances shall be treated as unauthorized deviations until renewed in writing.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Ongoing Monitoring
-\series default
-:
- Accepted risks shall remain documented in the applicable assessment records and shall be monitored for changes in likelihood,
- impact,
- or exposure until closed.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Prohibition
-\series default
-:
- Risk acceptance shall not authorize noncompliance with CJIS Security Policy requirements,
- statutory requirements,
- or other mandatory security controls.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Governance Boundary
-\series default
-:
- Risk Acceptance Memos document residual risk after required controls are implemented.
- Requests to deviate from decision rights or the chain of command are governance exceptions governed by 
+ Formal risk acceptance under Section 6.8 is not an exception to this policy.
+ Risk acceptance is a governed risk response strategy within the framework established by this policy.
+ Requests to deviate from the risk acceptance governance framework itself — including decision rights or the chain of approval — are governance exceptions governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -599,31 +535,7 @@ nolink "false"
 
 
 \series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Administrative Stand-ins
-\series default
-:
- Non-technical administrative stand-ins (as defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-) are prohibited from approving risk acceptance for mandatory security controls.
+ (Delegation of Authority and Decision Rights).
 \end_layout
 
 \end_deeper
@@ -632,20 +544,12 @@ nolink "false"
  References
 \end_layout
 
-\begin_layout Itemize
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
+\begin_layout Standard
 
-\end_inset
-
+\series bold
+Cited References
+\series default
 :
- Department Mission and Strategic Objectives
 \end_layout
 
 \begin_layout Itemize
@@ -700,22 +604,6 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:2.03"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Security Awareness and Training Policy
-\end_layout
-
-\begin_layout Itemize
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "pol:2.09"
 plural "false"
 caps "false"
@@ -748,6 +636,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.03"
 plural "false"
 caps "false"
@@ -757,7 +663,7 @@ nolink "false"
 \end_inset
 
 :
- Compliance Monitoring and Corrective Action Policy
+ Compliance Monitoring and Corrective Action
 \end_layout
 
 \begin_layout Itemize
@@ -777,26 +683,27 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
 NRS 239.125 (Local Government Records Management Program)
 \end_layout
 
 \begin_layout Itemize
 NAC 239.155 (Retention and Disposition of Local Government Records)
-\end_layout
-
-\begin_layout Itemize
-CJIS Security Policy v6.0:
- Section 5.1 (Information Exchange Agreements)
-\end_layout
-
-\begin_layout Itemize
-CJIS Security Policy v6.0:
- Section RA-1 (Risk Assessment Policy and Procedures)
-\end_layout
-
-\begin_layout Itemize
-CJIS Security Policy v6.0:
- Section RA-2 (Security Categorization)
 \end_layout
 
 \begin_layout Itemize
@@ -810,87 +717,14 @@ CJIS Security Policy v6.0:
 \end_layout
 
 \begin_layout Itemize
-CJIS Security Policy v6.0:
- Section RA-7 (Risk Response)
-\end_layout
-
-\begin_layout Itemize
-CJIS Security Policy v6.0:
- Section RA-9 (Supply Chain Risk Assessment)
-\end_layout
-
-\begin_layout Itemize
 NIST CSF 2.0:
- GV.RM-01 (Risk Management Strategy)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- GV.RM-02 (Risk Appetite)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- GV.RM-04 (Risk Register)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- GV.RM-06 (Risk Monitoring)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- ID.RA-01 (Vulnerability Management)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- ID.RA-02 (Threat Intelligence)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- ID.RA-03 (Internal/External Threats)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- ID.RA-04 (Risk Impacts)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- ID.RA-05 (Risk Threats)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- ID.RA-06 (Risk Responses)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-30 Rev.
- 1:
- (Guide for Conducting Risk Assessments)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-37 Rev.
- 2:
- (Risk Management Framework)
+ ID.RA-02 (Cyber Threat Intelligence)
 \end_layout
 
 \begin_layout Itemize
 NIST SP 800-53 Rev.
  5:
  PM-9 (Risk Management Strategy)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- RA-1 (Risk Assessment Policy and Procedures)
 \end_layout
 
 \begin_layout Itemize
@@ -920,12 +754,108 @@ NIST SP 800-53 Rev.
 \begin_layout Itemize
 NIST SP 800-53 Rev.
  5:
- RA-9 (Supply Chain Risk Assessment)
+ RA-9 (Criticality Analysis)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section 5.1 (Information Exchange Agreements)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section RA-1 (Risk Assessment Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section RA-2 (Security Categorization)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section RA-7 (Risk Response)
+\end_layout
+
+\begin_layout Itemize
+CJIS Security Policy v6.0:
+ Section RA-9 (Supply Chain Risk Assessment)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.RM-01 (Risk Management Objectives)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.RM-02 (Risk Appetite and Tolerance)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.RM-04 (Risk Response Direction)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ GV.RM-06 (Risk Calculation and Prioritization)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ ID.RA-01 (Vulnerability Identification)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ ID.RA-03 (Threat Identification)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ ID.RA-04 (Threat Impact and Likelihood)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ ID.RA-05 (Risk Response Prioritization)
+\end_layout
+
+\begin_layout Itemize
+NIST CSF 2.0:
+ ID.RA-06 (Risk Responses)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-30 Rev.
+ 1:
+ (Guide for Conducting Risk Assessments)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-37 Rev.
+ 2:
+ (Risk Management Framework for Information Systems and Organizations)
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-53 Rev.
+ 5:
+ RA-1 (Risk Assessment Policy and Procedures)
 \end_layout
 
 \begin_layout Itemize
 NIST SP 800-137:
- (Information Security Continuous Monitoring (ISCM))
+ (Information Security Continuous Monitoring)
 \end_layout
 
 \begin_layout Itemize
@@ -938,9 +868,45 @@ COBIT 2019:
  EDM03 (Ensure Risk Optimization)
 \end_layout
 
+\begin_layout Itemize
+ITIL v4:
+ Risk Management Practice
+\end_layout
+
 \begin_layout Subsection*
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Standard
+This policy mandates a lifecycle approach to identifying,
+ assessing,
+ responding to,
+ and monitoring risks that threaten the confidentiality,
+ integrity,
+ and availability of County information systems.
+ It serves as the authority for risk-based decision-making,
+ resource prioritization,
+ and the formal acceptance of operational risk.
+ The Authorize step of the RMF lifecycle is operationalized through 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Control Assessment and Authorization),
+ which consumes the risk ratings,
+ security categorizations,
+ and Corrective Action Plan status produced under this policy to render formal authorization decisions.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -949,7 +915,7 @@ COBIT 2019:
 
 \begin_layout Standard
 The Information Operations Department adopts the NIST Risk Management Framework (RMF) as the strategic methodology for managing system lifecycles.
- All County information systems shall move through the RMF stages:
+ The Assistant IT Director shall ensure that all County information systems move through the RMF stages:
  Prepare,
  Categorize,
  Select,
@@ -965,17 +931,15 @@ The Information Operations Department adopts the NIST Risk Management Framework 
 Risk Management Strategy
 \series default
 :
- The Assistant IT Director shall maintain a documented Risk Management Strategy that defines risk appetite/tolerance,
+ The Assistant IT Director shall maintain a documented Risk Management Strategy that defines risk appetite and tolerance,
  prioritization criteria,
  management decision rules for selecting risk responses,
  scoring methodology,
  reporting thresholds,
- and review cadence;
- the IT Director shall approve it at least annually (
-\series bold
-NIST PM-9
-\series default
-).
+ and review cadence.
+ The IT Director shall approve the Risk Management Strategy at least annually (NIST SP 800-53 Rev.
+ 5:
+ PM-9 (Risk Management Strategy)).
 \end_layout
 
 \begin_layout Itemize
@@ -984,9 +948,8 @@ NIST PM-9
 Continuous Monitoring
 \series default
 :
- Operational risk management shall align with the NIST Cybersecurity Framework (CSF) 2.0 functions.
- Risk monitoring shall be integrated into the Department's Continuous Monitoring program,
- and outputs shall be recorded as evidence in the Risk Register and/or control assessment records.
+ The Assistant IT Director shall align operational risk management with the NIST Cybersecurity Framework (CSF) 2.0 functions and shall integrate risk monitoring into the Department's Continuous Monitoring program.
+ The Assistant IT Director shall record outputs as evidence in the Risk Register and control assessment records.
  The program shall explicitly track:
 \end_layout
 
@@ -1023,11 +986,11 @@ Change
 
 \end_deeper
 \begin_layout Subsubsection*
-6.2 Security Categorization (FIPS 199)
+6.2 Security Categorization
 \end_layout
 
 \begin_layout Standard
-All County information systems must be categorized based on the potential impact of a loss of confidentiality,
+The Assistant IT Director shall categorize all County information systems based on the potential impact of a loss of confidentiality,
  integrity,
  or availability.
 \end_layout
@@ -1038,11 +1001,9 @@ All County information systems must be categorized based on the potential impact
 Authorizing Official Approval
 \series default
 :
- The IT Director (AO) shall review and formally approve the security categorization of all information systems (
-\series bold
-NIST RA-2
-\series default
-).
+ The IT Director (AO) shall review and formally approve the security categorization of all information systems (NIST SP 800-53 Rev.
+ 5:
+ RA-2 (Security Categorization)).
 \end_layout
 
 \begin_layout Itemize
@@ -1051,11 +1012,7 @@ NIST RA-2
 Documentation
 \series default
 :
- Security categorization results and rationale shall be documented in the 
-\series bold
-System Security Plan (SSP)
-\series default
- or equivalent system security documentation.
+ The Assistant IT Director shall document security categorization results and rationale in the System Security Plan (SSP) or equivalent system security documentation.
 \end_layout
 
 \begin_layout Itemize
@@ -1064,16 +1021,11 @@ System Security Plan (SSP)
 Criminal Justice Information (CJI)
 \series default
 :
- As a County baseline,
- all systems processing,
+ All systems processing,
  storing,
  or transmitting CJI shall be categorized,
  at a minimum,
- as 
-\series bold
-Moderate Impact
-\series default
- and shall implement CJIS-required controls and County controls commensurate with that impact level.
+ as Moderate Impact and shall implement CJIS-required controls and County controls commensurate with that impact level.
 \end_layout
 
 \begin_layout Itemize
@@ -1082,7 +1034,7 @@ Moderate Impact
 Categorization Review
 \series default
 :
- Security categorizations must be reviewed annually or following any significant system change.
+ The Assistant IT Director shall review security categorizations annually or following any significant system change.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1090,11 +1042,11 @@ Categorization Review
 \end_layout
 
 \begin_layout Standard
-Risk assessments must identify threats,
+The Assistant IT Director shall ensure that risk assessments identify threats,
  vulnerabilities,
  likelihood,
  and impact specific to the system environment.
- Assessments shall utilize the standardized scoring criteria.
+ Assessments shall utilize the standardized scoring criteria defined in the Risk Management Strategy.
  Assessments shall explicitly consider supply chain risks in accordance with 
 \series bold
 Policy 
@@ -1110,7 +1062,7 @@ nolink "false"
 
 
 \series default
-.
+ (Supply Chain Risk Management (SCRM) and Vendor Governance).
 \end_layout
 
 \begin_layout Itemize
@@ -1128,12 +1080,8 @@ Assessment Cadence
 Quarterly Review
 \series default
 :
- All risk assessments shall be reviewed at least 
-\series bold
-Quarterly
-\series default
-.
- "Review" is defined as risk register reconciliation,
+ The Assistant IT Director shall review all risk assessments at least quarterly.
+ Review consists of Risk Register reconciliation,
  status validation,
  and treatment progress confirmation.
 \end_layout
@@ -1144,28 +1092,17 @@ Quarterly
 Annual Update
 \series default
 :
- Formal risk assessment updates (re-scoring and threat refresh) shall be performed at least 
-\series bold
-Annually
-\series default
- for non-critical systems.
+ The Assistant IT Director shall perform formal risk assessment updates — including re-scoring and threat refresh — at least annually for non-critical systems.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-CJI/Critical Update
+CJI and Critical Systems Update
 \series default
 :
- Formal risk assessment updates shall be performed at least 
-\series bold
-Quarterly
-\series default
- for CJI and Critical Systems (
-\series bold
-CJIS RA-3
-\series default
-).
+ The Assistant IT Director shall perform formal risk assessment updates at least quarterly for CJI and Critical systems (CJIS Security Policy v6.0:
+ Section RA-3 (Risk Assessment)).
 \end_layout
 
 \end_deeper
@@ -1175,14 +1112,12 @@ CJIS RA-3
 Event-Driven Reviews
 \series default
 :
- A risk assessment update shall be initiated within five (5) business days following any security incident,
+ The Assistant IT Director shall initiate a risk assessment update within five (5) business days following any security incident,
  material system change,
  significant control failure,
- or confirmed vulnerability affecting County systems (
-\series bold
-NIST RA-3
-\series default
-).
+ or confirmed vulnerability affecting County systems (NIST SP 800-53 Rev.
+ 5:
+ RA-3 (Risk Assessment)).
 \end_layout
 
 \begin_layout Itemize
@@ -1206,7 +1141,9 @@ nolink "false"
 
 
 \series default
- and updated as necessary to reflect changes in the risk environment.
+ and updated when changes to the risk environment,
+ regulatory requirements,
+ or organizational structure warrant revision.
 \end_layout
 
 \begin_layout Itemize
@@ -1215,13 +1152,10 @@ nolink "false"
 Threat Intelligence
 \series default
 :
- The process shall incorporate cyber threat intelligence received from external information-sharing forums (e.g.,
+ The Assistant IT Director shall incorporate cyber threat intelligence received from external information-sharing forums (e.g.,
  MS-ISAC,
- FBI InfraGard) (
-\series bold
-NIST ID.RA-02
-\series default
-).
+ FBI InfraGard) into the risk assessment process (NIST CSF 2.0:
+ ID.RA-02 (Cyber Threat Intelligence)).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1230,7 +1164,9 @@ NIST ID.RA-02
 
 \begin_layout Standard
 The Department shall employ automated tools to scan for vulnerabilities in information systems and hosted applications.
- Operational patching procedures and specific tool configurations shall be maintained in accordance with 
+ Operational patching procedures,
+ specific tool configurations,
+ and authoritative remediation timelines are maintained in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1254,10 +1190,10 @@ nolink "false"
 Scope
 \series default
 :
- Scans shall cover internal assets,
+ The Systems Administrators and Network Administrators shall scan internal assets,
  external perimeter assets,
  and web applications.
- Privileged vulnerability scans shall require explicit authorization.
+ Privileged vulnerability scans shall require explicit authorization from the IT Director or Assistant IT Director.
 \end_layout
 
 \begin_layout Itemize
@@ -1266,22 +1202,33 @@ Scope
 Scanning Frequency
 \series default
 :
- Vulnerability scans shall be performed at least Monthly (County Baseline) and whenever new vulnerabilities potentially affecting the system are identified and reported,
- including following major configuration changes and critical exploit advisories (
-\series bold
-CJIS RA-5
-\series default
-).
+ The responsible Administrators shall perform vulnerability scans at least monthly (County Baseline) and whenever new vulnerabilities potentially affecting the system are identified and reported,
+ including following major configuration changes and critical exploit advisories (CJIS Security Policy v6.0:
+ Section RA-5 (Vulnerability Monitoring and Scanning)).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Remediation Timelines
+Remediation
 \series default
 :
- To manage technical risk,
- the Department shall adhere to the following strict remediation timelines.
+ The responsible Administrators shall remediate vulnerabilities within the timelines defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  Severity ratings shall be based on the County-approved scoring standard (e.g.,
  CVSS base score or vendor severity,
  whichever is higher),
@@ -1300,84 +1247,33 @@ nolink "false"
 
 
 \series default
- and 
-\series bold
-Appendix 
-\series default
 .
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-Critical Severity
-\series default
-:
- Remediate within 
-\series bold
-15 days
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-High Severity
-\series default
-:
- Remediate within 
-\series bold
-30 days
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Medium Severity
-\series default
-:
- Remediate within 
-\series bold
-60 days
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Low Severity
-\series default
-:
- Remediate within 
-\series bold
-90 days
-\series default
-.
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 Enforcement
 \series default
 :
- When remediation will exceed the timelines above,
- the Administrator shall document the item in a POA&M and submit a 
+ When remediation will exceed the timelines defined in 
 \series bold
-Risk Acceptance Memo
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
- before the remediation deadline expires.
- This memo must include 
-\series bold
-compensating controls
-\series default
- to mitigate risk during the exposure window and a defined expiration date.
+,
+ the responsible Administrator shall submit a Risk Acceptance Memo in accordance with Section 6.8 before the remediation deadline expires.
+ The memo shall include compensating controls to mitigate risk during the exposure window and a defined expiration date.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1386,11 +1282,9 @@ compensating controls
 
 \begin_layout Standard
 Upon identification of a risk,
- the Department must select one of the following response strategies (
-\series bold
-NIST RA-7
-\series default
-):
+ the Assistant IT Director shall select one of the following response strategies (NIST SP 800-53 Rev.
+ 5:
+ RA-7 (Risk Response)):
 \end_layout
 
 \begin_layout Itemize
@@ -1399,9 +1293,26 @@ NIST RA-7
 Mitigate
 \series default
 :
- Apply controls (patches,
+ The responsible Administrator shall apply controls (patches,
  configuration changes,
  and physical barriers) to reduce risk to an acceptable level.
+ When the mitigation response requires tracked remediation with milestones,
+ the Assistant IT Director shall route it to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for Corrective Action Plan development.
 \end_layout
 
 \begin_layout Itemize
@@ -1410,10 +1321,7 @@ Mitigate
 Accept
 \series default
 :
- Formally acknowledge the risk.
- Risk acceptance requires written justification,
- System Owner concurrence,
- and approval by the IT Director.
+ Formally acknowledge the risk in accordance with the Risk Acceptance Governance requirements defined in Section 6.8.
 \end_layout
 
 \begin_layout Itemize
@@ -1425,7 +1333,7 @@ Transfer
  Shift liability to a third party (e.g.,
  cyber insurance,
  managed service contracts).
- Vendor risk transfer shall be managed in accordance with 
+ The Assistant IT Director shall manage vendor risk transfer in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1449,7 +1357,7 @@ nolink "false"
 Avoid
 \series default
 :
- Discontinue the activity,
+ The IT Director shall authorize discontinuation of the activity,
  system,
  or vendor relationship causing the risk.
 \end_layout
@@ -1459,13 +1367,11 @@ Avoid
 \end_layout
 
 \begin_layout Standard
-The Department shall identify critical system components and functions by performing a criticality analysis at the planning,
+The Assistant IT Director shall identify critical system components and functions by performing a criticality analysis at the planning,
  design,
- and implementation stages (
-\series bold
-NIST RA-9
-\series default
-).
+ and implementation stages (NIST SP 800-53 Rev.
+ 5:
+ RA-9 (Criticality Analysis)).
 \end_layout
 
 \begin_layout Itemize
@@ -1474,15 +1380,8 @@ NIST RA-9
 High Value Assets (HVAs)
 \series default
 :
- Systems designated as "Critical" or "High Value" in the 
-\series bold
-Disaster Recovery Plan
-\series default
- or 
-\series bold
-System Security Plan (SSP)
-\series default
- shall be prioritized for advanced protection measures and continuity planning.
+ The IT Director shall designate systems as Critical or High Value in the Disaster Recovery Plan or System Security Plan (SSP).
+ The Assistant IT Director shall prioritize designated systems for advanced protection measures and continuity planning.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1501,10 +1400,9 @@ System of Record
 :
  The Risk Register shall be maintained in the Department's designated 
 \series bold
-System of Record
+System of Engagement
 \series default
- (e.g.,
- Redmine or secured GRC platform) with strict role-based access controls.
+ with strict role-based access controls.
 \end_layout
 
 \begin_layout Itemize
@@ -1513,9 +1411,8 @@ System of Record
 Sensitive Security Information
 \series default
 :
- The Risk Register and supporting evidence shall be treated as sensitive security documentation;
- access shall be restricted to authorized personnel on a need-to-know basis,
- and disclosures shall be managed in accordance with County policy and CJIS requirements.
+ The Risk Register and supporting evidence shall be treated as sensitive security documentation.
+ The Assistant IT Director shall restrict access to authorized personnel on a need-to-know basis and shall manage disclosures in accordance with County policy and CJIS requirements.
 \end_layout
 
 \begin_layout Itemize
@@ -1536,7 +1433,7 @@ Minimum Data Fields
  Inherent/Residual Score,
  Control Mapping,
  Treatment Strategy,
- POA&M Linkage,
+ CAP Linkage (when applicable),
  Status,
  Due Date,
  and Acceptance Authority.
@@ -1545,29 +1442,26 @@ Minimum Data Fields
 \begin_layout Itemize
 
 \series bold
-POA&M Updates
+CAP Updates
 \series default
 :
- Plans of Action and Milestones (POA&Ms) for unremediated risks shall be updated at least every 
+ Corrective Action Plans for unremediated risks shall follow the tracking and update cadence defined in 
 \series bold
-six (6) months
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
 .
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Risk-Based Frequency
-\series default
-:
- For CJI systems,
- Critical systems,
- and any risk rated "High" or "Critical," POA&Ms shall be reviewed and updated at least 
-\series bold
-Quarterly
-\series default
-.
+ The Assistant IT Director shall update the corresponding Risk Register entry when a CAP achieves closure or when a CAP milestone changes the residual risk posture.
 \end_layout
 
 \begin_layout Itemize
@@ -1576,9 +1470,147 @@ Quarterly
 Reporting
 \series default
 :
- A summary of the County’s risk posture,
- including all accepted "High" risks,
- shall be reported to the County Manager annually by the IT Director.
+ The IT Director shall report a summary of the County's risk posture — including all accepted High and Critical risks — to the County Manager annually.
+ Risk posture data shall also be provided as an input to the annual policy review and maturity scoring process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+6.8 Risk Acceptance Governance
+\end_layout
+
+\begin_layout Standard
+Risk acceptance is a formal risk response strategy that requires documented justification,
+ dual concurrence,
+ and IT Director approval.
+ This section defines the governance framework for risk acceptance decisions.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Risk Acceptance Memo
+\series default
+:
+ The Assistant IT Director shall document each risk acceptance in a Risk Acceptance Memo.
+ Each memo shall include,
+ at a minimum:
+ scope of the accepted risk,
+ business justification,
+ compensating controls,
+ expiration or review date,
+ residual risk statement,
+ and the concurrence of the Department Head or Elected Official responsible for the affected system.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Decision Rights
+\series default
+:
+ Department Head or Elected Official concurrence constitutes acknowledgment of operational and business impact and acceptance of residual operational risk.
+ IT Director (AO) approval constitutes the authorization decision and acceptance of residual security risk on behalf of the County.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Approval Authority
+\series default
+:
+ The IT Director shall approve all Risk Acceptance Memos.
+ Risk acceptance is non-delegable.
+ No other role may approve risk acceptance on the IT Director's behalf,
+ consistent with the non-delegable functions defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Automatic Expiration
+\series default
+:
+ All risk acceptances shall automatically expire on the stated expiration date.
+ The Assistant IT Director shall treat expired acceptances as unauthorized deviations until renewed in writing.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Ongoing Monitoring
+\series default
+:
+ The Assistant IT Director shall monitor accepted risks for changes in likelihood,
+ impact,
+ or exposure until the risk is closed or the acceptance expires.
+ Accepted risks shall remain documented in the Risk Register.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Prohibition
+\series default
+:
+ Risk acceptance shall not authorize non-compliance with CJIS Security Policy requirements,
+ statutory requirements,
+ or other mandatory security controls.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Authorization Package
+\series default
+:
+ Risk Acceptance Memos shall become part of the system's authorization package alongside the System Security Plan,
+ Security Assessment Report,
+ and any open Corrective Action Plans.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Record Retention
+\series default
+:
+ The Assistant IT Director shall retain Risk Acceptance Memos,
+ risk assessment reports,
+ and supporting evidence in accordance with NRS 239.125 and the applicable Nevada Local Government Records Retention Schedule under NAC 239.155,
+ including records classified under the IT Security Evaluations,
+ IT Security Plans,
+ and IT Security Reviews,
+ Reports and Logs series.
 \end_layout
 
 \end_body

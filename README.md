@@ -11,7 +11,7 @@
 | 1.06 | IT Governance and Oversight Structure | o |
 | 1.07 | Workforce Roles, Responsibilities, and Competency Framework | x |
 | 1.08 | Delegation of Authority and Decision Rights | x |
-| 1.09 | Risk Management Policy | o |
+| 1.09 | Risk Management Policy | x |
 | 1.10 | IT Financial Management and Procurement Policy | o |
 | 1.11 | Data Governance and Classification Policy | x |
 | 1.12 | IT Asset Management Policy | o |
