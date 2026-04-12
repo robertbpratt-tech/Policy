@@ -21,6 +21,13 @@ The Recommended Sequence (§6) is advisory. Robert makes final sequencing calls 
 
 **Recalculation markers.** This plan contains two ◆ RECALCULATE SEQUENCE HERE ◆ markers in §6. They are hard checkpoints, not advisory. When a recalc marker is reached, the next session shall begin by re-running the architectural roots check, refreshing per-policy ticket counts against the current GitHub state, and re-evaluating the remaining sequence before starting any new tightening work. Skipping the recalc is a process violation. The markers exist because the working set will have shifted enough by those points that any sequence drafted today will be partially stale by then.
 
+**Session-close checklist.** At the end of every tightening session, before declaring the session complete:
+
+1. **File all ripple issues immediately** — never defer a ripple as a session note. Ripples are filed to GitHub during the session for proper tracking.
+2. **Close resolved issues** — comment with resolution details, then close. Update parent sweep tickets (#208, #8, etc.) with per-policy resolution notes.
+3. **Update this plan** — update §5 (target policy state, version, open ticket count) and §6 (mark the completed entry with session summary). If new ripples were filed against other policies, update their §5 rows with the new ticket number and incremented count.
+4. **Verify synchronization** — the plan and the issue tracker shall agree. If a ticket was closed, §5 reflects it. If a ticket was filed, §5 reflects it.
+
 ---
 
 ## §2. Ticket Lifecycle Rules
