@@ -13,7 +13,7 @@
 | 1.08 | Delegation of Authority and Decision Rights | x |
 | 1.09 | Risk Management Policy | o |
 | 1.10 | IT Financial Management and Procurement Policy | o |
-| 1.11 | Data Governance and Classification Policy | o |
+| 1.11 | Data Governance and Classification Policy | x |
 | 1.12 | IT Asset Management Policy | o |
 | 1.13 | Supply Chain Risk Management (SCRM) and Vendor Governance | o |
 | 1.14 | Stakeholder Engagement and Communications Policy | x |
