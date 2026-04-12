@@ -148,7 +148,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.11 | Data Governance and Classification | T | v2.2 | 0 | — | #220 root landed; IT Director holds LASO by policy mandate |
 | 1.12 | IT Asset Management | D | — | 5 | #53, #54, #55, #256, +1 | |
 | 1.13 | Supply Chain Risk Management | D | — | 2 | #56, +1 | |
-| 1.14 | Stakeholder Engagement | T+ | v2.2 | 1 | LASO ripple | Phase 1 LASO cleanup batch target |
+| 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — | Phase 1 LASO cleanup batch complete (April 11, 2026) |
 
 ### Chapter 2 — Security
 
@@ -245,7 +245,7 @@ Sequencing principles, in priority order:
 1. **~~1.11 (Data Governance and Classification)~~** — ✅ **Complete (v2.2, April 11, 2026).** #220 LASO designation landed. #52 §5 split implemented. #231 §4 Assessment added. FIPS versions stripped per #291. TAC removed (department-level actors, not IO). Two cross-validator rounds completed. LASO appointment authority: IT Director; designee must be IO Department member; registered with Nevada DPS.
 2. **LASO downstream cleanup batch** — single coordinated session covering:
    - **~~4.06 v2.2~~** — ✅ **Complete (April 11, 2026).** #284 LASO §3 dissolution + #268 Admin Asst directory reassignment. Cross-validators: Gemini (no change), ChatGPT (5 findings, all declined).
-   - **1.14 v2.3** — LASO §3 cleanup (#285 open)
+   - **~~1.14 v2.3~~** — ✅ **Complete (April 11, 2026).** #285 LASO §3 dissolution — standalone LASO block dissolved, obligations folded into IT Director as LASO-capacity sub-bullets. §3 authority ordering corrected (County Manager before AID). §4 Exceptions "co-approval by LASO" replaced with IT Director LASO-capacity evaluation construct.
    - **~~#283 closed as `superseded`~~** ✅ (April 11, 2026)
 
 > ## ◆ RECALCULATE SEQUENCE HERE ◆
