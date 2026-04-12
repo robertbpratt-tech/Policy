@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -447,47 +447,27 @@ Shall define and enforce the County Data Classification Schema and mandatory saf
 \begin_layout Itemize
 
 \lang english
-Shall designate the Local Agency Security Officer (LASO) in writing and shall register the designation with the CJIS Systems Agency (currently Nevada Department of Public Safety).
+Shall hold the Local Agency Security Officer (LASO) designation,
+ serving as the County's primary information security liaison with the CJIS Systems Agency (CSA).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall serve as the Information Operations Records Custodian under Board delegation for Information Operations records and IT-managed data assets,
- including retention and disposition procedures.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall ensure required technical controls,
- handling standards,
- and exception decisions are implemented and enforced County-wide for County-managed systems.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Local Agency Security Officer (LASO)
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall serve as the County's primary information security liaison with the CJIS Systems Agency (CSA) and shall represent the County in all CJIS information security matters.
+Shall represent the County in all CJIS information security matters.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 Shall maintain CJIS security documentation,
- including system configuration data,
- and shall support CJIS compliance audits of hardware and procedures.
+ including system configuration data.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall support CJIS compliance audits of hardware and procedures.
 \end_layout
 
 \begin_layout Itemize
@@ -509,49 +489,19 @@ Shall authorize or deny requests to reclassify Restricted CJI downward,
  subject to any additional CJIS governing authority required by applicable agreements.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
-\series bold
 \lang english
-Constraint
-\series default
-:
- The LASO designation is appointed by the IT Director and shall be held by a member of the Information Operations Department.
- Designation transfer requires formal re-registration with the CSA.
- If no written designation is in effect,
- the IT Director shall hold the LASO designation until a new designation is made.
- LASO accountability for CJIS Security Policy obligations is non-delegable under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
+Shall serve as the Information Operations Records Custodian under Board delegation for Information Operations records and IT-managed data assets,
+ including retention and disposition procedures.
+\end_layout
 
-\end_inset
+\begin_layout Itemize
 
-
-\series default
- (Delegation of Authority and Decision Rights);
- execution of specific CJIS tasks may be delegated under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- Section 6.2.
+\lang english
+Shall ensure required technical controls,
+ handling standards,
+ and exception decisions are implemented and enforced County-wide for County-managed systems.
 \end_layout
 
 \end_deeper
@@ -1834,7 +1784,7 @@ CJI Data Sovereignty
 :
  As an Elko County standard for CJIS risk control and audit defensibility,
  the IT Director shall ensure CJI is stored and processed only within the physical boundaries of an APB-member country and under the legal authority of an APB-member agency,
- unless permitted by the CSA/CSO and approved in writing by the LASO,
+ unless permitted by the CSA/CSO and approved in writing by the IT Director (as LASO),
  with all required CJIS governing approvals documented.
 \end_layout
 
@@ -1913,13 +1863,13 @@ CJI Reclassification Constraint
 \begin_layout Itemize
 
 \lang english
-The LASO shall not authorize downward reclassification of Restricted CJI without written authorization from any additional CJIS authority required by governing agreements.
+The IT Director (as LASO) shall not authorize downward reclassification of Restricted CJI without written authorization from any additional CJIS authority required by governing agreements.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The LASO shall retain written authorization with the classification decision record.
+The IT Director (as LASO) shall retain written authorization with the classification decision record.
 \end_layout
 
 \end_deeper
@@ -2068,6 +2018,65 @@ The IT Director shall ensure security classification is not treated as an automa
  The IT Director shall ensure public records requests under NRS 239 are handled through the County's established legal review process.
  When classification controls appear to conflict with a public records obligation,
  the District Attorney's Office shall provide binding guidance.
+\end_layout
+
+\begin_layout Subsubsection*
+6.11 LASO Designation and Authority
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall hold the Local Agency Security Officer (LASO) designation by policy mandate.
+ The LASO designation shall be registered with the CJIS Systems Agency (currently Nevada Department of Public Safety).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall update the LASO registration with the CSA upon appointment of a new IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Clarification
+\series default
+:
+ LASO accountability for CJIS Security Policy obligations is non-delegable under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Execution of specific CJIS tasks (e.g.,
+ notifications) may be delegated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.2.
 \end_layout
 
 \end_body
