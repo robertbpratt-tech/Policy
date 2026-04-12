@@ -43,7 +43,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 
 | # | Title | Target | Status | Downstream |
 |---|---|---|---|---|
-| #220 | LASO Designation Disentanglement | 1.11 | Open, root | 4.06, 1.14, 2.01, 2.02, 2.04, 2.06, 2.11, 2.12, 2.13 |
+| #220 | LASO Designation Disentanglement | 1.11 | **Closed** (v2.1) | 4.06, 1.14, 2.01, 2.02, 2.04, 2.06, 2.11, 2.12, 2.13 |
 | #208 | Standardize "All IT Personnel" → "All Information Operations Personnel" | Manual-wide | Open, sweep | All policies with §3 group identifiers |
 | #211 | Verify "Supervisors" matches 1.07 §3 "Supervisors and Leads" | Manual-wide | Open, sweep | Any policy referencing Supervisors |
 | #235 | Prohibited language sweep per 1.04 §6.9 | 20 untightened policies | Open, absorbed-by-tightening | Listed in #235 body; resolved per-policy |
@@ -51,6 +51,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #264 | Role obligation redistribution (L3 prep, L1 clerical, L2 inputs, AID synthesis) | Manual-wide | Open, root | 4.02, 4.06, 5.01, plus untightened |
 | #283 | LASO is a designation, not a §3 role | Manual-wide | **Conflicts with #220** — auto-close as `superseded` when #220 lands | Same as #220 downstream |
 | #6, #7, #8, #10 | Product-name removal (Redmine, Office 365, Comodo/XCitium, HID DigitalPersona) | Manual-wide | Open, absorbed-by-tightening | Resolved per-policy |
+| #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | 1.11, 2.05, 2.07 | Open, sweep | #292 (2.05), #293 (2.07); 1.11 resolved in v2.1 |
 
 ### #220 — LASO Designation Disentanglement (detailed entry)
 
@@ -117,6 +118,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 7. **Stale section references to pre-tightening versions** — validators lack access to tightened source.
 8. **§6.8 topic-block "violation"** — §6.8 applies at the **atomic bullet level**, not at the topic-block level. A bold-label topic block (per §6.12) may contain multiple atomic bullets, each independently satisfying §6.8. Only blended bullets (multiple obligations welded with conjunctions inside one atomic item) are prohibited. Filed as #288 (Gemini 3.02 v2.4 round 2, findings G3/G4/G5), closed; clarification queued as #290.
 9. **CSF subcategory citation hallucinations** — verify against CSF 2.0 Appendix A before accepting (e.g., PR.AT-03 does not exist; ID.IM-04 was misdescribed).
+10. **Restore TAC as a §3 role in 1.11** — TACs are department-level CJIS designees at consuming agencies (Justice Court, Sheriff's Office, District Court), not IO personnel. ECIO has no authority to impose obligations on them. Declined twice across two validator rounds (April 11, 2026). IT Director confirmed operational reality.
 
 ---
 
@@ -143,7 +145,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.08 | Delegation of Authority | T | v1.3 | 0 | — | |
 | 1.09 | Risk Management | D | — | 5 | #45, #46, #47, #48, +1 | #46 has broken §4 reference |
 | 1.10 | IT Financial / Procurement | D | — | 3 | #50, #51, +1 | |
-| 1.11 | Data Governance and Classification | D | — | 3 | #52, #220, +1 | **Carries #220 root — Phase 1 priority** |
+| 1.11 | Data Governance and Classification | T | v2.1 | 0 | — | #220 root landed; LASO designation homed |
 | 1.12 | IT Asset Management | D | — | 5 | #53, #54, #55, #256, +1 | |
 | 1.13 | Supply Chain Risk Management | D | — | 2 | #56, +1 | |
 | 1.14 | Stakeholder Engagement | T+ | v2.2 | 1 | LASO ripple | Phase 1 LASO cleanup batch target |
@@ -156,9 +158,9 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 2.02 | Personnel Security | D | — | 2 | #64, +1 | LASO downstream |
 | 2.03 | Security Awareness | D | — | 4 | #66, #67, #68, +1 | |
 | 2.04 | Access Control | D | — | 2 | #69, #70 | LASO downstream |
-| 2.05 | Identification and Authentication | D | — | 3 | #71, #72, #73 | |
+| 2.05 | Identification and Authentication | D | — | 4 | #71, #72, #73, #292 | |
 | 2.06 | Privacy and Data Protection | D | — | 5 | #74, #75, #76, #77, +1 | LASO Pattern 2; #74 has DA approval logic issue |
-| 2.07 | System and Communications Protection | D | — | 3 | #78, #79, #80 | |
+| 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 | |
 | 2.08 | System Integrity / Malware | D | — | 3 | #81, #83, #84 | |
 | 2.09 | Vulnerability and Patch Management | D | — | 4 | #85, #86, #87, +1 | |
 | 2.10 | Secure Configuration Baselines | D | — | 4 | #88, #89, #90, +1 | Shadow IT routing fix needed |
@@ -240,7 +242,7 @@ Sequencing principles, in priority order:
 
 **Goal:** Land the LASO designation in 1.11 and clean up the immediate downstream ripples on already-tightened policies. Highest-impact phase by margin — clears one root and resolves nine downstream LASO targets in two sessions.
 
-1. **1.11 (Data Governance and Classification)** — tighten and land #220 LASO designation per the §3 structure spec in §3 of this plan. Standard five-step protocol. Expect ripples back into 4.06 §6.7 and §6.11 (data classification handling references) — flag as part of session, not as blockers.
+1. **~~1.11 (Data Governance and Classification)~~** — ✅ **Complete (v2.1, April 11, 2026).** #220 LASO designation landed. #52 §5 split implemented. #231 §4 Assessment added. FIPS versions stripped per #291. TAC removed (department-level actors, not IO). Two cross-validator rounds completed. LASO appointment authority: IT Director; designee must be IO Department member; registered with Nevada DPS.
 2. **LASO downstream cleanup batch** — single coordinated session covering:
    - **4.06 v2.2** — combined cut absorbing LASO §3 fix + #268 Admin Asst directory reassignment
    - **1.14 v2.3** — LASO §3 cleanup
@@ -356,4 +358,4 @@ Final validation pass, README status update, manual declared at v1.0, repo archi
 - **4.05 return-to-drafted candidacy** — 5 open tickets is a lot for a tightened policy; evaluate during Phase 3.
 - **#208/#211 sweep enforcement** — currently absorbed into per-policy tightening; consider whether a single dedicated sweep session would be faster.
 - **Phase 3 cross-chapter fatigue check** — the 3→4 pair structure interleaves chapters across sessions. If this proves mentally taxing during execution, consolidate Phase 3 into "all Chapter 3 feeders, then all Chapter 4 collectors."
-- **LASO registration process specifics (1.11 session prep)** — research the specific NRS/NAC/CJIS provision governing LASO registration with Nevada DPS, the formal process for designation transfer, and any defined interim authority during the registration gap. Capture findings in 1.11 §3 drafting.
+- **~~LASO registration process specifics (1.11 session prep)~~** — ✅ **Resolved (April 11, 2026).** CJIS v6.0 research confirmed: LASO maps to Section 3.2.9 (Organizational Personnel with Security Responsibilities). No CJIS-mandated qualifications beyond AT-3(d)(4) enhanced training. Registration with Nevada DPS is a state-level administrative requirement, not a CJIS v6.0 statutory mandate. IT Director confirmed: LASO is appointed by the IT Director, can be any IO Department member, was historically appointed informally ("Who is going to handle the audits?"). 1.11 v2.1 reflects this operational reality.
