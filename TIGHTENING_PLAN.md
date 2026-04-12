@@ -108,7 +108,7 @@ A constitutional revision of 1.04 mid-project would invalidate prior tightening 
 
 **Cluster source-of-truth rule:** Chapter 4 is the source of truth for playbook structure; the cluster transcribes Chapter 4's de facto patterns into 1.04 §6.16, not the other way around. Conflicts resolve in Chapter 4's favor.
 
-**Cluster members:** #5, #30, #31, #32, #290.
+**Cluster members:** #5, #31, #32, #290. (#30 closed April 12, 2026 — resolved by 6.01 Glossary draft.)
 
 **Cluster status:** Per Robert's April 11, 2026 ruling, this cluster is **not** a hard blocker on v1.0. Sequence by impact, not by dependency clearing. Chapter 4 does not need to be prioritized to "unblock" this cluster.
 
@@ -150,7 +150,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|---|
 | 1.02 | Code of Ethics | T | — | 0 | — | |
 | 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — | |
-| 1.04 | Formatting Standards | L | — | 5 | #5, #30, #31, #32, #290 | All deferred to `1.04_Procedural_Cleanup` cluster |
+| 1.04 | Formatting Standards | L | — | 4 | #5, #31, #32, #290 | All deferred to `1.04_Procedural_Cleanup` cluster; #30 closed (SoE/CMS glossary entry — resolved by 6.01 draft, April 12, 2026) |
 | 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — | Technical Directives construct; LRDA 20070057 verified |
 | 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — | Phase 2 complete; #300 filed against 5.07 |
 | 1.07 | Workforce Roles | T | v1.3 | 0 | — | Locked-adjacent; #220 explicitly excludes LASO from 1.07 |
@@ -225,14 +225,14 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 5.03 | Compliance Monitoring | D | — | 2 | +2 | |
 | 5.04 | Performance Metrics | D | — | 1 | +1 | |
 | 5.05 | Security Control Assessment | D | — | 1 | +1 | |
-| 5.06 | Vendor Compliance | D | — | 2 | +2 | |
+| 5.06 | Vendor Compliance | D | — | 1 | +1 | #189 closed (VCR glossary entry — resolved by 6.01 draft, April 12, 2026) |
 | 5.07 | Annual Policy Review | D | — | 3 | #300, +2 | Consumes outputs from 5.02, 5.04, 3.16, 5.03, 1.09, 5.01; #300 = Board reporting triggers from 1.06 |
 
 ### Chapter 6 — Appendices
 
 | # | Title | State | Ver | Open | Tickets | Notes |
 |---|---|---|---|---|---|---|
-| 6.01 | Glossary | A | — | 5 | +5 | Highest downstream impact |
+| 6.01 | Glossary | A | draft | 3 | #192, #193, #195 | Draft delivered April 12, 2026 (50 definitions + 13 acronym redirects). #242 (SoE entry) and #194 (VCR + SoE + dead CMS term) closed. #192/#193 commented — final harvest/de-dup deferred to Glossary tightening after all policies finalized. #195 (capitalization QC) untouched. |
 | 6.02 | Policy Matrix | A | — | 3 | +3 | |
 | 6.03 | Workforce Roles STAK Matrix | A | — | 3 | +3 | |
 | 6.04 | Revision History and Version Control | A | — | 1 | #205 | Title patched from `[6.05]` typo on April 11, 2026 |
@@ -346,13 +346,13 @@ Note: 2.10 has the Shadow IT routing fix (split between IoC routing through 4.02
 
 ### Phase 7 — Chapter 6 Appendices (provisional)
 
-6.01 (Glossary, highest downstream impact) → 6.02 → 6.03 → 6.04.
+6.01 (Glossary, highest downstream impact — **draft delivered April 12, 2026**; final tightening pass after all policies finalized) → 6.02 → 6.03 → 6.04.
 
 ---
 
 ### Phase 8 — `1.04_Procedural_Cleanup` Cluster
 
-Final pre-v1.0 work. Members: #5, #30, #31, #32, #290. Transcribes Chapter 4's de facto playbook patterns into 1.04 §6.15 and §6.16, lands the §6.8 atomic-level clarification, addresses procedural decoupling and LyX environment work.
+Final pre-v1.0 work. Members: #5, #31, #32, #290. (#30 closed — resolved by 6.01 Glossary draft, April 12, 2026.) Transcribes Chapter 4's de facto playbook patterns into 1.04 §6.15 and §6.16, lands the §6.8 atomic-level clarification, addresses procedural decoupling and LyX environment work.
 
 Per Robert's April 11, 2026 ruling: this cluster is **not** a hard blocker on v1.0 readiness.
 
