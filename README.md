@@ -1,3 +1,5 @@
+**For tightening sequence and architectural roadmap, see [TIGHTENING_PLAN.md](TIGHTENING_PLAN.md).**
+
 | Policy | Title | Status |
 | :--- | :--- | :---: |
 | 0.00 | Front | x |
