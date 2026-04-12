@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -193,18 +193,11 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish the governance and operational framework for the Department's Knowledge Base as the single authoritative repository of operational procedures,
- workarounds,
- Known Error entries,
- Standard change pre-authorization procedures,
- deployment procedures,
- tool configurations,
- runbooks,
- and reference documentation.
- This policy governs the creation,
+This policy governs the creation,
  maintenance,
  review,
- and retirement of all knowledge artifacts and serves as the authorization backbone for Standard change classification under 
+ and retirement of all knowledge artifacts within the Departmental Knowledge Base,
+ including the authorization function that qualifies change types as Standard under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -219,7 +212,7 @@ nolink "false"
 
 
 \series default
-.
+ (Change Management Policy).
 \end_layout
 
 \begin_layout Subsection*
@@ -232,35 +225,91 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-This policy applies to all Information Operations Department personnel and governs all knowledge artifacts created,
+This policy applies to all Information Operations Personnel and governs all knowledge artifacts created,
  maintained,
  or retired by the Department.
- In-scope artifact types include operational procedures,
- workaround and resolution documentation,
- Known Error entries,
- Standard change pre-authorization procedures,
- Standard deployment procedures,
- system and tool configurations,
- monitoring runbooks,
- escalation paths,
- service delivery workflows,
- and reference documentation.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The following are outside the scope of this policy:
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Policy documents
+In Scope
 \series default
- —
- governed by 
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Operational procedures.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Workaround and resolution documentation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Known Error entries.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Standard change pre-authorization procedures.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Standard deployment procedures.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+System and tool configurations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Monitoring runbooks.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Escalation paths and service delivery workflows.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Reference documentation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Policy documents:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -295,12 +344,9 @@ nolink "false"
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Work order records
-\series default
- —
- governed by 
+Work order records:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -320,12 +366,9 @@ nolink "false"
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Configuration Management Database (CMDB) records
-\series default
- —
- governed by 
+Configuration Management Database (CMDB) records:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -345,12 +388,9 @@ nolink "false"
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Security audit logs and SIEM data
-\series default
- —
- governed by 
+Security audit logs and SIEM data:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -370,12 +410,9 @@ nolink "false"
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Incident and Problem records
-\series default
- —
- governed by 
+Incident and Problem records:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -408,6 +445,7 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -456,7 +494,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall authorize any external distribution of KB content.
+Shall authorize any external distribution of KB content in writing.
 \end_layout
 
 \begin_layout Itemize
@@ -481,15 +519,11 @@ Assistant IT Director
 \begin_layout Itemize
 
 \lang english
-Shall serve as the primary operational owner of the Knowledge Base.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall ensure the KB is accessible,
- current,
- and organized to support the mandatory pre-escalation search obligation established in 
+Shall serve as the primary operational owner of the Knowledge Base as a system,
+ including platform accessibility,
+ organizational structure,
+ and category integrity,
+ in support of the mandatory pre-escalation search obligation established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -504,7 +538,7 @@ nolink "false"
 
 
 \series default
-.
+ (Operational Incident Management Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -525,42 +559,21 @@ nolink "false"
 
 
 \series default
-.
+ (Problem Management Policy).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall ensure that tool configuration and runbook entries required by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.12"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- are maintained current.
+Shall conduct or coordinate the annual KB review cycle and shall verify that all domain-level reviews are completed.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall conduct or coordinate the annual KB review cycle.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall ensure all KB entries associated with any modified system,
+Shall coordinate review of all KB entries associated with any modified system,
  service,
- or configuration are current following Significant or Emergency changes,
+ or configuration following Significant or Emergency changes,
  consistent with the obligations established in 
 \series bold
 Policy 
@@ -591,13 +604,15 @@ nolink "false"
 
 
 \series default
-.
+ (Monitoring and Event Management Policy).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall establish and maintain the operational standard governing KB procedure formatting conventions and templates.
+Shall establish and maintain the operational standard governing KB procedure formatting conventions,
+ templates,
+ and acceptable secondary accessible media.
 \end_layout
 
 \end_deeper
@@ -651,6 +666,18 @@ Shall author and maintain all Reference Documentation entries within the network
 Shall review assigned KB entries for accuracy no less than annually.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Shall approve new technical entries authored by Support Specialists within the network domain before publication.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall author Standard change pre-authorization procedures within the network domain and submit them for IT Director approval.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 
@@ -699,39 +726,16 @@ Shall author and maintain all Reference Documentation entries within the server 
 Shall review assigned KB entries for accuracy no less than annually.
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Administrators (general)
-\series default
-:
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall own and maintain all technical KB entries within their domain.
+Shall approve new technical entries authored by Support Specialists within the systems domain before publication.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall review assigned entries for accuracy no less than annually or following any change that affects the documented procedure or reference artifact.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall approve new technical entries authored by Support Specialists before publication.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall author Standard change pre-authorization procedures and submit for IT Director approval.
+Shall author Standard change pre-authorization procedures within the systems domain and submit them for IT Director approval.
 \end_layout
 
 \end_deeper
@@ -739,7 +743,7 @@ Shall author Standard change pre-authorization procedures and submit for IT Dire
 
 \series bold
 \lang english
-Support Specialists
+Support Specialist
 \series default
 :
 \end_layout
@@ -768,7 +772,7 @@ Shall reference applicable KB entries in all work orders.
 
 \series bold
 \lang english
-All IT Department Personnel
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -821,7 +825,7 @@ Shall reference applicable KB entries in work order documentation.
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all Information Operations personnel.
+Compliance with this policy is mandatory for all Information Operations Personnel.
 \end_layout
 
 \begin_layout Itemize
@@ -850,7 +854,9 @@ nolink "false"
 
 
 \series default
- and the annual policy review and maturity scoring process defined in 
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -865,7 +871,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -893,7 +899,9 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -903,12 +911,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with 
+ Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with the exception framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -921,6 +929,7 @@ nolink "false"
 .
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -928,6 +937,15 @@ nolink "false"
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -972,7 +990,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.02"
+reference "pol:2.11"
 plural "false"
 caps "false"
 noprefix "false"
@@ -981,7 +999,7 @@ nolink "false"
 \end_inset
 
 :
- Service Level Management and Metrics Reporting
+ Audit Logging and Monitoring Policy
 \end_layout
 
 \begin_layout Itemize
@@ -1098,24 +1116,6 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.11"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Capacity and Availability Management Policy
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "pol:3.12"
 plural "false"
 caps "false"
@@ -1143,7 +1143,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -1161,7 +1163,9 @@ nolink "false"
 \end_inset
 
 :
- Internal Audits and Self-Assessment Procedures
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Itemize
@@ -1195,6 +1199,15 @@ LRDA 20070057 (Departmental Regulations,
  Policies and Procedures)
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
 
 \lang english
@@ -1223,18 +1236,53 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+The Knowledge Base serves as both the authoritative repository for operational knowledge and the authorization mechanism that qualifies change types as Standard under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ This policy governs the KB content lifecycle;
+ upstream policies govern the triggers that mandate specific KB actions.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
-6.1 Knowledge Base as System of Record
+6.1 Knowledge Base as Authoritative Repository
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Redmine is the authoritative System of Record for all KB content.
- All KB articles shall be stored in Redmine as the primary repository.
- The Assistant IT Director shall maintain at least one secondary accessible medium synchronized no less than monthly.
+The Knowledge Base maintained in the System of Engagement is the authoritative repository for all operational knowledge artifacts governed by this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that all KB articles are stored in the System of Engagement as the primary repository.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall maintain at least one secondary accessible medium,
+ synchronized no less than monthly,
+ in accordance with the operational standard the Assistant IT Director establishes under Section 3.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1335,7 +1383,7 @@ nolink "false"
 
 
 \series default
-.
+ (Release and Deployment Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -1410,9 +1458,9 @@ Ownership and review obligations for each category shall follow the roles define
 \lang english
 All KB procedures shall document tasks as discrete,
  sequentially numbered steps.
- Procedures shall address known error conditions and their corresponding recovery actions as conditional branches within the step sequence.
- Procedures shall specify the expected end state upon successful completion.
- The formatting conventions and templates implementing this requirement are operational decisions established and maintained by the Assistant IT Director.
+ KB procedures shall address known error conditions and their corresponding recovery actions as conditional branches within the step sequence.
+ KB procedures shall specify the expected end state upon successful completion.
+ The Assistant IT Director shall establish and maintain the formatting conventions and templates implementing these requirements as an operational standard.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1424,10 +1472,25 @@ All KB procedures shall document tasks as discrete,
 \begin_layout Standard
 
 \lang english
-A KB procedure qualifies a change type as Standard only when it carries explicit IT Director approval.
- If no qualifying KB procedure exists,
- the change shall be classified as Significant.
- Retirement or material modification of any Standard change procedure shall require the same IT Director approval path as creation.
+A KB procedure qualifies a change type as Standard only when the procedure carries explicit IT Director approval.
+ If no qualifying KB procedure exists for a given change type,
+ the change type shall default to Significant classification under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The IT Director shall approve retirement or material modification of any Standard change procedure through the same approval path as creation.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1440,14 +1503,9 @@ A KB procedure qualifies a change type as Standard only when it carries explicit
 
 \lang english
 Known Error entries are a distinct KB record type.
- Upon Known Error declaration,
- the Assistant IT Director shall ensure publication within two (2) business days,
- including symptoms,
- workaround procedure,
- and Problem record reference.
- Upon permanent remediation and Problem closure,
- the entry shall be marked inactive within two (2) business days.
- The Known Error declaration and closure triggers are governed by 
+ The Known Error declaration and closure triggers,
+ including publication and inactivation timeframes,
+ are governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1466,6 +1524,53 @@ nolink "false"
  this policy governs the KB mechanics of the entry lifecycle.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Upon Known Error declaration,
+ the Assistant IT Director shall ensure publication within the timeframe established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ including symptoms,
+ workaround procedure,
+ and Problem record reference.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Upon permanent remediation and Problem closure,
+ the Assistant IT Director shall ensure the corresponding entry is marked inactive within the timeframe established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
@@ -1475,25 +1580,95 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Any task executed without a corresponding KB entry shall result in creation or revision of a KB article prior to work order closure.
+The assigned technician shall create or revise a KB article for any task executed without a corresponding KB entry prior to closing the associated work order.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Clarification
+\series default
+:
+ Updating an existing KB article to cover a new variant of a documented procedure satisfies this obligation;
+ a separate article is not required for every unique task instance.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.7 Review and Retirement
+6.7 Review,
+ Retirement,
+ and Retention
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-All KB entries shall be reviewed no less than annually or following any Significant or Emergency change affecting a documented procedure or reference artifact.
- Only the IT Director shall authorize formal retirement of any KB article.
- Retired articles shall be marked inactive and retained for a minimum of six (6) calendar years after supersession or official abandonment,
- in accordance with Nevada Local Government Records Retention Schedule LRDA 20070057.
- All KB content is operationally confidential;
- external distribution requires written IT Director authorization.
+The following review,
+ retirement,
+ and retention obligations govern the lifecycle of all KB entries.
 \end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Review
+\series default
+:
+ The content owner (Network Administrator or Systems Administrator as applicable) shall review each KB entry within their domain no less than annually or following any Significant or Emergency change affecting the documented procedure or reference artifact.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Retirement
+\series default
+:
+ Only the IT Director shall authorize the formal retirement of any KB article.
+ The Assistant IT Director shall mark retired articles as inactive upon IT Director authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Retention
+\series default
+:
+ The Assistant IT Director shall ensure that retired articles are retained in an inactive state for a minimum of six (6) calendar years after supersession or official abandonment,
+ in accordance with NRS 239.125 and Nevada Local Government Records Retention Schedule LRDA 20070057.
+ The IT Director shall not authorize disposition of any KB article subject to an active litigation hold,
+ audit hold,
+ or public records preservation requirement,
+ regardless of the retention period.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Confidentiality
+\series default
+:
+ All KB content shall be treated as operationally confidential.
+ No Information Operations Personnel shall distribute KB content externally without written IT Director authorization.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Clarification
+\series default
+:
+ This operational designation does not alter public records status or disclosure requirements under applicable law.
+\end_layout
+
+\end_deeper
 
 \end_body
 \end_document
