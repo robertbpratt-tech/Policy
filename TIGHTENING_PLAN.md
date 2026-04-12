@@ -43,7 +43,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 
 | # | Title | Target | Status | Downstream |
 |---|---|---|---|---|
-| #220 | LASO Designation Disentanglement | 1.11 | **Closed** (v2.1) | 4.06, 1.14, 2.01, 2.02, 2.04, 2.06, 2.11, 2.12, 2.13 |
+| #220 | LASO Designation Disentanglement | 1.11 | **Closed** (v2.2) | 4.06, 1.14, 2.01, 2.02, 2.04, 2.06, 2.11, 2.12, 2.13 |
 | #208 | Standardize "All IT Personnel" → "All Information Operations Personnel" | Manual-wide | Open, sweep | All policies with §3 group identifiers |
 | #211 | Verify "Supervisors" matches 1.07 §3 "Supervisors and Leads" | Manual-wide | Open, sweep | Any policy referencing Supervisors |
 | #235 | Prohibited language sweep per 1.04 §6.9 | 20 untightened policies | Open, absorbed-by-tightening | Listed in #235 body; resolved per-policy |
@@ -51,7 +51,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #264 | Role obligation redistribution (L3 prep, L1 clerical, L2 inputs, AID synthesis) | Manual-wide | Open, root | 4.02, 4.06, 5.01, plus untightened |
 | #283 | LASO is a designation, not a §3 role | Manual-wide | **Conflicts with #220** — auto-close as `superseded` when #220 lands | Same as #220 downstream |
 | #6, #7, #8, #10 | Product-name removal (Redmine, Office 365, Comodo/XCitium, HID DigitalPersona) | Manual-wide | Open, absorbed-by-tightening | Resolved per-policy |
-| #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | 1.11, 2.05, 2.07 | Open, sweep | #292 (2.05), #293 (2.07); 1.11 resolved in v2.1 |
+| #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | 1.11, 2.05, 2.07 | Open, sweep | #292 (2.05), #293 (2.07); 1.11 resolved in v2.2 |
 
 ### #220 — LASO Designation Disentanglement (detailed entry)
 
@@ -63,7 +63,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 
 **Why 1.11:** The LASO's core duty is CJI oversight. 1.11 is the CJI-touching policy. The designation belongs where the duty lives.
 
-**Required §3 structure in 1.11:** Split LASO out of any existing IT Director bullet. List LASO as its own distinct §3 role. State that the designation is held by default by the IT Director and may be reassigned in writing to another qualified individual meeting CJIS v6.0 LASO qualifications. Define appointment authority, qualifications, and reporting line to CSA/CSO.
+**Final §3 structure (v2.2):** IT Director holds the LASO designation by policy mandate. No standalone LASO §3 block. LASO obligations are IT Director sub-bullets. §6.11 (LASO Designation and Authority) establishes the policy mandate, DPS registration, and non-delegable accountability construct. Downstream policies use the "IT Director (as LASO)" parenthetical pattern.
 
 **Operational reality of the designation (per Robert, April 11, 2026):** The LASO is not a lightweight internal appointment. The designee is formally registered with the Nevada Department of Public Safety (DPS), which serves as the state-level CJIS Systems Agency intermediary between local agencies and the FBI. The registration chain is **County LASO → Nevada DPS → FBI**. This creates three drafting requirements that 1.11 §3 must address:
 
@@ -71,7 +71,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 - **Distinguish execution delegation from designation transfer.** The LASO authorizing a designee to execute a specific notification under Policy 1.08 (the existing pattern in 4.06 §6.4) is *execution delegation* — lightweight, internal, does not transfer accountability. A change in who *holds* the LASO designation is *designation transfer* — heavyweight, requires DPS re-registration. These are different mechanisms and 1.11 §3 must not conflate them.
 - **Gap-state interim posture.** When a LASO designee becomes unavailable suddenly (medical emergency, separation, etc.), there is a registration delay before a successor is fully recognized by DPS. 1.11 §3 must define who holds the LASO obligations during the gap — the previous designee remains accountable until formally relieved, or the IT Director assumes interim execution authority pending DPS registration of the successor.
 
-**Why this satisfies 1.04 §6.5:** Once 1.11 designates LASO with a defined membership boundary (the individual currently holding the written designation), LASO becomes "a defined group with a clear membership boundary" per the §6.5 Role Identity Requirement. Until then, downstream LASO §3 blocks (e.g., 4.06 v2.1) are forward-references to a designation whose home is pending — acceptable as an interim state.
+**Why this satisfies 1.04 §6.5:** Once 1.11 designates LASO with a defined membership boundary (the individual currently holding the written designation), LASO becomes "a defined group with a clear membership boundary" per the §6.5 Role Identity Requirement. Until then, downstream LASO §3 blocks (e.g., 4.06 v2.2) are forward-references to a designation whose home is pending — acceptable as an interim state.
 
 **Coordinated downstream cleanup batch (executes immediately after 1.11 lands):**
 
@@ -145,7 +145,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.08 | Delegation of Authority | T | v1.3 | 0 | — | |
 | 1.09 | Risk Management | D | — | 5 | #45, #46, #47, #48, +1 | #46 has broken §4 reference |
 | 1.10 | IT Financial / Procurement | D | — | 3 | #50, #51, +1 | |
-| 1.11 | Data Governance and Classification | T | v2.1 | 0 | — | #220 root landed; LASO designation homed |
+| 1.11 | Data Governance and Classification | T | v2.2 | 0 | — | #220 root landed; IT Director holds LASO by policy mandate |
 | 1.12 | IT Asset Management | D | — | 5 | #53, #54, #55, #256, +1 | |
 | 1.13 | Supply Chain Risk Management | D | — | 2 | #56, +1 | |
 | 1.14 | Stakeholder Engagement | T+ | v2.2 | 1 | LASO ripple | Phase 1 LASO cleanup batch target |
@@ -175,11 +175,11 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | # | Title | State | Ver | Open | Tickets | Notes |
 |---|---|---|---|---|---|---|
 | 3.01 | Service Catalog and SLA | T | v2.3 | 0 | — | |
-| 3.02 | Service Level Management | T | v2.1 | 0 | — | Source of #288 misreading; resolved |
+| 3.02 | Service Level Management | T | v2.2 | 0 | — | Source of #288 misreading; resolved |
 | 3.03 | Service Communication | T | v2.0 | 0 | — | |
-| 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — | |
-| 3.05 | Service Request Fulfillment | T | v2.1 | 0 | — | |
-| 3.06 | Operational Incident Management | T | v2.1 | 0 | — | |
+| 3.04 | Service Delivery Feedback | T | v2.2 | 0 | — | |
+| 3.05 | Service Request Fulfillment | T | v2.2 | 0 | — | |
+| 3.06 | Operational Incident Management | T | v2.2 | 0 | — | |
 | 3.07 | Problem Management | T | v2.2 | 0 | — | |
 | 3.08 | CMDB | D | — | 5 | #131, #132, #133, #134, +1 | Phase 3 feeder for 4.04 |
 | 3.09 | Change Management | D | — | 6 | #135, #136, #137, #263, +2 | #263 = bidirectional pipeline ripple from 3.07; Phase 3 feeder for 4.05 |
@@ -201,7 +201,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 4.03 | Containment Strategy and Playbooks | D | — | 0 | — | Source of truth for §6.16 transcription |
 | 4.04 | Eradication | D | — | 1 | +1 | Phase 3 collector (3.08 → 4.04) |
 | 4.05 | Recovery and Restoration | D | — | 5 | #221, +4 | Phase 3 collector (3.09 → 4.05); **evaluate return-to-drafted candidacy** |
-| 4.06 | Communication Protocols | T+ | v2.1 | 2 | #268, LASO ripple | Phase 1 LASO cleanup batch (combined v2.2 with #268) |
+| 4.06 | Communication Protocols | T+ | v2.2 | 2 | #268, LASO ripple | Phase 1 LASO cleanup batch (combined v2.2 with #268) |
 | 4.07 | Postmortem and Lessons Learned | D | — | 2 | #259, +1 | #259 = scope boundary with 3.06 §6.8; standalone in Phase 3 |
 
 ### Chapter 5 — Compliance
@@ -242,7 +242,7 @@ Sequencing principles, in priority order:
 
 **Goal:** Land the LASO designation in 1.11 and clean up the immediate downstream ripples on already-tightened policies. Highest-impact phase by margin — clears one root and resolves nine downstream LASO targets in two sessions.
 
-1. **~~1.11 (Data Governance and Classification)~~** — ✅ **Complete (v2.1, April 11, 2026).** #220 LASO designation landed. #52 §5 split implemented. #231 §4 Assessment added. FIPS versions stripped per #291. TAC removed (department-level actors, not IO). Two cross-validator rounds completed. LASO appointment authority: IT Director; designee must be IO Department member; registered with Nevada DPS.
+1. **~~1.11 (Data Governance and Classification)~~** — ✅ **Complete (v2.2, April 11, 2026).** #220 LASO designation landed. #52 §5 split implemented. #231 §4 Assessment added. FIPS versions stripped per #291. TAC removed (department-level actors, not IO). Two cross-validator rounds completed. LASO appointment authority: IT Director; designee must be IO Department member; registered with Nevada DPS.
 2. **LASO downstream cleanup batch** — single coordinated session covering:
    - **4.06 v2.2** — combined cut absorbing LASO §3 fix + #268 Admin Asst directory reassignment
    - **1.14 v2.3** — LASO §3 cleanup
@@ -358,4 +358,4 @@ Final validation pass, README status update, manual declared at v1.0, repo archi
 - **4.05 return-to-drafted candidacy** — 5 open tickets is a lot for a tightened policy; evaluate during Phase 3.
 - **#208/#211 sweep enforcement** — currently absorbed into per-policy tightening; consider whether a single dedicated sweep session would be faster.
 - **Phase 3 cross-chapter fatigue check** — the 3→4 pair structure interleaves chapters across sessions. If this proves mentally taxing during execution, consolidate Phase 3 into "all Chapter 3 feeders, then all Chapter 4 collectors."
-- **~~LASO registration process specifics (1.11 session prep)~~** — ✅ **Resolved (April 11, 2026).** CJIS v6.0 research confirmed: LASO maps to Section 3.2.9 (Organizational Personnel with Security Responsibilities). No CJIS-mandated qualifications beyond AT-3(d)(4) enhanced training. Registration with Nevada DPS is a state-level administrative requirement, not a CJIS v6.0 statutory mandate. IT Director confirmed: LASO is appointed by the IT Director, can be any IO Department member, was historically appointed informally ("Who is going to handle the audits?"). 1.11 v2.1 reflects this operational reality.
+- **~~LASO registration process specifics (1.11 session prep)~~** — ✅ **Resolved (April 11, 2026).** CJIS v6.0 research confirmed: LASO maps to Section 3.2.9 (Organizational Personnel with Security Responsibilities). No CJIS-mandated qualifications beyond AT-3(d)(4) enhanced training. Registration with Nevada DPS is a state-level administrative requirement, not a CJIS v6.0 statutory mandate. IT Director confirmed: LASO is appointed by the IT Director, can be any IO Department member, was historically appointed informally ("Who is going to handle the audits?"). 1.11 v2.2 reflects this operational reality.
