@@ -64,6 +64,12 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 
 **Required §3 structure in 1.11:** Split LASO out of any existing IT Director bullet. List LASO as its own distinct §3 role. State that the designation is held by default by the IT Director and may be reassigned in writing to another qualified individual meeting CJIS v6.0 LASO qualifications. Define appointment authority, qualifications, and reporting line to CSA/CSO.
 
+**Operational reality of the designation (per Robert, April 11, 2026):** The LASO is not a lightweight internal appointment. The designee is formally registered with the Nevada Department of Public Safety (DPS), which serves as the state-level CJIS Systems Agency intermediary between local agencies and the FBI. The registration chain is **County LASO → Nevada DPS → FBI**. This creates three drafting requirements that 1.11 §3 must address:
+
+- **Designation transfer is heavyweight, not lightweight.** A reassignment requires formal state re-registration with DPS, not just an internal memo. The §3 language must reflect that the designation is held until formally transferred, not rotated for vacation coverage or short-term absence.
+- **Distinguish execution delegation from designation transfer.** The LASO authorizing a designee to execute a specific notification under Policy 1.08 (the existing pattern in 4.06 §6.4) is *execution delegation* — lightweight, internal, does not transfer accountability. A change in who *holds* the LASO designation is *designation transfer* — heavyweight, requires DPS re-registration. These are different mechanisms and 1.11 §3 must not conflate them.
+- **Gap-state interim posture.** When a LASO designee becomes unavailable suddenly (medical emergency, separation, etc.), there is a registration delay before a successor is fully recognized by DPS. 1.11 §3 must define who holds the LASO obligations during the gap — the previous designee remains accountable until formally relieved, or the IT Director assumes interim execution authority pending DPS registration of the successor.
+
 **Why this satisfies 1.04 §6.5:** Once 1.11 designates LASO with a defined membership boundary (the individual currently holding the written designation), LASO becomes "a defined group with a clear membership boundary" per the §6.5 Role Identity Requirement. Until then, downstream LASO §3 blocks (e.g., 4.06 v2.1) are forward-references to a designation whose home is pending — acceptable as an interim state.
 
 **Coordinated downstream cleanup batch (executes immediately after 1.11 lands):**
@@ -350,3 +356,4 @@ Final validation pass, README status update, manual declared at v1.0, repo archi
 - **4.05 return-to-drafted candidacy** — 5 open tickets is a lot for a tightened policy; evaluate during Phase 3.
 - **#208/#211 sweep enforcement** — currently absorbed into per-policy tightening; consider whether a single dedicated sweep session would be faster.
 - **Phase 3 cross-chapter fatigue check** — the 3→4 pair structure interleaves chapters across sessions. If this proves mentally taxing during execution, consolidate Phase 3 into "all Chapter 3 feeders, then all Chapter 4 collectors."
+- **LASO registration process specifics (1.11 session prep)** — research the specific NRS/NAC/CJIS provision governing LASO registration with Nevada DPS, the formal process for designation transfer, and any defined interim authority during the registration gap. Capture findings in 1.11 §3 drafting.
