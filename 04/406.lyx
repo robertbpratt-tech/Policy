@@ -54,6 +54,7 @@ End
 
 # 4. STANDARDIZE "Subsection*" as "Policy Header"
 # Used for "1. Purpose", "2. Scope", etc.
+# Unnumbered in TOC, but visually bold.
 Style Subsection*
     Category "Policy Structure"
     LabelType Static
@@ -179,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -611,24 +612,24 @@ Shall make law enforcement referral decisions personally and shall not delegate 
 \begin_layout Itemize
 
 \lang english
-Shall ensure the incident response contact directory is validated annually in accordance with Section 6.12.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
+Shall,
+ as the designated Local Agency Security Officer (LASO) under 
 \series bold
-\lang english
-Local Agency Security Officer (LASO)
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall execute all CJIS Security Policy Section IR-6 Part (b) external notification obligations in accordance with Section 6.4 and the notification windows established in 
+ (Data Governance and Classification Policy) §6.11,
+ execute all CJIS Security Policy Section IR-6 Part (b) external notification obligations in accordance with Section 6.4 and the notification windows established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -643,36 +644,15 @@ nolink "false"
 
 
 \series default
- §6.6.
+ (Identification and Reporting Procedures) §6.6.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall authorize a designated delegate to execute CJIS Part (b) notifications when the LASO is unavailable,
- in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- Delegation of execution does not transfer LASO accountability for the notification obligation.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall execute CJIS denial notifications routed from 
+Shall,
+ as LASO,
+ execute CJIS denial notifications routed from 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -688,6 +668,12 @@ nolink "false"
 
 \series default
  (Security Control Assessment and Authorization) through the notification mechanics defined in Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure the incident response contact directory is validated annually in accordance with Section 6.12.
 \end_layout
 
 \end_deeper
@@ -707,6 +693,44 @@ Assistant IT Director
 Shall coordinate the preparation of draft communications for IC review and authorization.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Shall ensure that all communications issued under this policy are documented in the incident work order in accordance with Section 6.11.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare communication data for inclusion in the postmortem record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Postmortem Review and Lessons Learned) in accordance with Section 6.10.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Administrative Assistant
+\series default
+:
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \lang english
@@ -731,34 +755,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall ensure that all communications issued under this policy are documented in the incident work order in accordance with Section 6.11.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 Shall update the incident response contact directory within one (1) business day of any personnel change affecting an IR role assignment.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall prepare communication data for inclusion in the postmortem record under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Postmortem Review and Lessons Learned) in accordance with Section 6.10.
 \end_layout
 
 \end_deeper
@@ -1784,7 +1781,7 @@ CJIS IR-6 Part (b) External Notifications:
  the State Identification Bureau (SIB) Chief,
  or the Interface Agency Official.
  Authorized issuer:
- the LASO,
+ the IT Director (as LASO),
  or a delegate authorized under 
 \series bold
 Policy 
@@ -2031,7 +2028,7 @@ nolink "false"
 
 
 \series default
- (Identification and Reporting Procedures).
+.
  This section governs the operational execution of Part (b) — the external notification to the CSO,
  the SIB Chief,
  or the Interface Agency Official.
@@ -2116,10 +2113,10 @@ nolink "false"
 Execution:
 
 \series default
- The LASO shall execute the external notification by contacting the CSO,
+ The IT Director (as LASO) shall execute the external notification by contacting the CSO,
  the SIB Chief,
  or the Interface Agency Official using the contact information maintained in the incident response contact directory defined in Section 6.12.
- The LASO shall include in the notification,
+ The IT Director (as LASO) shall include in the notification,
  at minimum,
  the date and time of incident declaration,
  the nature of the incident as classified under 
@@ -2144,7 +2141,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The LASO may delegate execution of the notification to a designee authorized under 
+The IT Director (as LASO) may delegate execution of the notification to a designee authorized under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2170,7 +2167,7 @@ nolink "false"
 Documentation:
 
 \series default
- The LASO or designee shall document the following in the incident work order and the Chapter 4 checklist immediately upon completion of the notification:
+ The IT Director (as LASO) or designee shall document the following in the incident work order and the Chapter 4 checklist immediately upon completion of the notification:
  the date and time of the notification,
  the individual contacted,
  the method of contact,
@@ -2200,9 +2197,9 @@ nolink "false"
 
 
 \series default
- (Security Control Assessment and Authorization) that denial or revocation of authorization for a system processing CJI warrants partner notification,
- the LASO shall execute the notification through the same CJIS notification mechanics defined in this section.
- The LASO shall document the notification in the authorization decision record maintained under 
+ that denial or revocation of authorization for a system processing CJI warrants partner notification,
+ the IT Director (as LASO) shall execute the notification through the same CJIS notification mechanics defined in this section.
+ The IT Director (as LASO) shall document the notification in the authorization decision record maintained under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2477,7 +2474,7 @@ nolink "false"
 
 
 \series default
- (Data Governance and Classification Policy).
+.
 \end_layout
 
 \begin_layout Standard
@@ -2888,10 +2885,10 @@ CJIS Closure Notification:
 
 \series default
  If CJIS IR-6 Part (b) external notification was executed during the incident,
- the LASO shall notify the CSO,
+ the IT Director (as LASO) shall notify the CSO,
  SIB Chief,
  or Interface Agency Official of incident closure.
- The LASO shall include in the closure notification the date of Operational Handback and a summary of the incident outcome.
+ The IT Director (as LASO) shall include in the closure notification the date of Operational Handback and a summary of the incident outcome.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -3063,7 +3060,7 @@ The IT Director shall ensure that the Department maintains an incident response 
 Required Contact Categories:
 
 \series default
- The Assistant IT Director shall ensure that the contact directory includes,
+ The Administrative Assistant shall ensure that the contact directory includes,
  at minimum,
  the following categories:
 \end_layout
@@ -3149,7 +3146,7 @@ Media and public affairs contacts,
 Operational Maintenance:
 
 \series default
- The Assistant IT Director shall maintain the contact directory as a governed Knowledge Base artifact in the System of Engagement in accordance with 
+ The Administrative Assistant shall maintain the contact directory as a governed Knowledge Base artifact in the System of Engagement in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -3175,7 +3172,7 @@ nolink "false"
 Physical Copy Distribution:
 
 \series default
- The Assistant IT Director shall maintain current physical copies of the contact directory at distribution points designated by the IT Director,
+ The Administrative Assistant shall maintain current physical copies of the contact directory at distribution points designated by the IT Director,
  including at minimum the IT Department and locations accessible to the County Manager and County Emergency Manager when the System of Engagement is unavailable.
  The incident response contact directory is designated for physical distribution to ensure accessibility during an active incident when electronic systems may be compromised or unavailable.
  This requirement is established by this policy.
@@ -3188,10 +3185,11 @@ Physical Copy Distribution:
 Validation Cadence:
 
 \series default
- The Assistant IT Director shall validate the accuracy of the contact directory no less than annually.
- The Assistant IT Director shall confirm that all listed personnel remain in their assigned roles,
+ The Administrative Assistant shall prepare annual validation data for the contact directory,
+ confirming that all listed personnel remain in their assigned roles,
  that contact information is current,
  and that the escalation sequence reflects the current organizational structure.
+ The IT Director shall review the validation data and render the annual validation determination.
 \end_layout
 
 \begin_layout Standard
@@ -3201,7 +3199,7 @@ Validation Cadence:
 Immediate Update Obligation:
 
 \series default
- The Assistant IT Director shall update the contact directory within one (1) business day of any personnel change affecting an IR role assignment.
+ The Administrative Assistant shall update the contact directory within one (1) business day of any personnel change affecting an IR role assignment.
  Personnel changes include new hires,
  separations,
  role transfers,
