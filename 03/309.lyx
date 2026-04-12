@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -193,21 +193,16 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish the governance framework for all changes to production systems,
+This policy governs all changes to production systems,
  infrastructure,
  configurations,
- and software within the Elko County Information Operations Department.
- This policy defines three change categories —
- Standard, Significant,
- and Emergency —
- and prescribes the authorization,
+ and software within the Elko County Information Operations Department (ECIO),
+ including the classification,
+ authorization,
  documentation,
- review,
- and closure requirements for each.
- It establishes the Configuration Control Authority (CCA) function,
- the Request for Change (RFC) record structure,
- rollback obligations, Post-Implementation Review (PIR) requirements,
- and the conditions under which County Manager consultation is mandatory before a change may proceed.
+ and closure requirements for Standard,
+ Significant,
+ and Emergency changes.
 \end_layout
 
 \begin_layout Subsection*
@@ -220,18 +215,63 @@ The purpose of this policy is to establish the governance framework for all chan
 \begin_layout Standard
 
 \lang english
-This policy applies to all Information Operations Department personnel and governs all changes to production systems,
+This policy applies to all Information Operations Department personnel and governs all changes to production systems,
  infrastructure,
  configurations,
- and software within the County technology environment administered by the Information Operations Department.
+ and software within the County technology environment administered by the Information Operations Department.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
-The following are outside the scope of this policy:
- security baseline definitions and hardening requirements,
- which are governed by 
+Standard,
+ Significant,
+ and Emergency changes to production systems,
+ infrastructure,
+ configurations,
+ and software.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Configuration Control Authority (CCA) authorization and Request for Change (RFC) record governance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Rollback obligations,
+ Post-Implementation Review (PIR) requirements,
+ and change record closure.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Security baseline definitions and hardening requirements:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -246,9 +286,14 @@ nolink "false"
 
 
 \series default
-;
- CI record governance,
- which is governed by 
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CI record governance and minimum field set:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -263,11 +308,64 @@ nolink "false"
 
 
 \series default
-;
- and incident response actions taken under Chapter 4.
- The CI record update obligation and catch-up RFC documentation obligation apply following any emergency change,
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Release and deployment mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Incident response actions taken under Chapter 4:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+\lang english
+Clarification
+\series default
+:
+ The CI record update obligation and catch-up RFC documentation obligation apply following any Emergency change,
  regardless of whether the change originated from an incident response context,
- per 
+ per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -283,49 +381,6 @@ nolink "false"
 
 \series default
  and Section 6.7 of this policy.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Release and deployment mechanics are governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.10"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and are not restated here.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Standard change authorization is captured within the work order per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.05"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- mechanics. Significant and Emergency change records are standalone RFC records that exist alongside, but separately from,
- any associated work order.
 \end_layout
 
 \begin_layout Subsection*
@@ -354,14 +409,20 @@ Shall hold CCA authority for all Significant changes.
 \begin_layout Itemize
 
 \lang english
-Shall delegate CCA authority for specific Significant changes to the Assistant IT Director only by explicit written authorization documented at the time of delegation.
+Shall delegate CCA authority for specific Significant changes to the Assistant IT Director only by explicit written authorization documented at the time of delegation,
+ or through the standing delegation mechanism defined in Section 6.2.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall serve as the catch-up CCA reviewer for Emergency changes,
- completing review of the emergency change within twenty-four (24) hours,
+Shall serve as the catch-up CCA reviewer for all Emergency changes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall complete the catch-up CCA review of each Emergency change within twenty-four (24) hours,
  or by noon on the next business day,
  whichever is later.
 \end_layout
@@ -370,32 +431,32 @@ Shall serve as the catch-up CCA reviewer for Emergency changes,
 
 \lang english
 May countermand any Emergency change designation;
- the countermand shall be documented in the change record at the time it is issued.
+ the countermand shall be documented in the change record at the time it is issued.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall authorize any alternative resolution path adopted in lieu of rollback for a failed Significant change;
- that authorization shall be documented in the change record at the time it is issued,
+Shall authorize any alternative resolution path adopted in lieu of rollback for a failed Significant change;
+ that authorization shall be documented in the change record at the time it is issued,
  with rationale.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall consult with the County Manager prior to implementation of any Significant change meeting the triggers defined in Section 6.6.
+Shall consult with the County Manager prior to implementation of any Significant change meeting the triggers defined in Section 6.6.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall review and approve exceptions to this policy in accordance with 
+Shall approve exceptions to this policy through the exception process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -405,7 +466,33 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment),
+ §6.6.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall be consulted by the IT Director prior to implementation of Significant changes meeting the triggers defined in Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall be notified no later than four (4) hours following the initiation of implementation when Emergency changes meet the consultation triggers defined in Section 6.6.
 \end_layout
 
 \end_deeper
@@ -423,7 +510,7 @@ Assistant IT Director
 
 \lang english
 Shall hold CCA authority for all Standard changes,
- by reference to standing authority under 
+ by reference to standing authority under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -438,20 +525,21 @@ nolink "false"
 
 
 \series default
-.
+ (Delegation of Authority and Decision Rights).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall hold CCA authority for Significant changes only where explicitly delegated in writing by the IT Director.
+Shall hold CCA authority for Significant changes only where explicitly delegated in writing by the IT Director,
+ or where the standing delegation defined in Section 6.2 applies.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall ensure that all IT Department personnel comply with the change categorization,
- RFC documentation,
+Shall ensure that all Information Operations Personnel comply with the change categorization,
+ RFC documentation,
  rollback,
  PIR,
  and CI update obligations established in this policy.
@@ -460,21 +548,21 @@ Shall ensure that all IT Department personnel comply with the change categorizat
 \begin_layout Itemize
 
 \lang english
-Shall ensure that catch-up RFC documentation and CCA review for Emergency changes are completed within twenty-four (24) hours,
+Shall ensure that catch-up RFC documentation and CCA review for Emergency changes are completed within twenty-four (24) hours,
  or by noon on the next business day,
- whichever is later.
+ whichever is later.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall ensure that no change record is closed without a corresponding CI record update per Section 6.7.
+Shall ensure that no change record is closed without a corresponding CI record update per Section 6.7.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-May designate a change as Emergency in accordance with Section 6.3.
+May designate a change as Emergency in accordance with Section 6.2.
 \end_layout
 
 \end_deeper
@@ -482,7 +570,7 @@ May designate a change as Emergency in accordance with Section 6.3.
 
 \series bold
 \lang english
-IT Department Personnel
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -491,14 +579,14 @@ IT Department Personnel
 \begin_layout Itemize
 
 \lang english
-Shall classify all changes using the categories defined in Section 6.1 prior to initiating any change activity.
+Shall classify all changes using the categories defined in Section 6.1 prior to initiating any change activity.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 Shall document Standard change authorization within the associated work order,
- including the basis for Standard classification and a reference to the qualifying Knowledge Base procedure under 
+ including the basis for Standard classification and a reference to the qualifying Knowledge Base procedure under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -513,13 +601,13 @@ nolink "false"
 
 
 \series default
-.
+ (Knowledge Management Policy).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall submit a standalone RFC record in Redmine prior to implementation of any Significant change.
+Shall submit a standalone RFC record in the System of Engagement prior to implementation of any Significant change.
 \end_layout
 
 \begin_layout Itemize
@@ -527,21 +615,21 @@ Shall submit a standalone RFC record in Redmine prior to implementation of any 
 \lang english
 Shall structure Significant changes as discrete,
  incremental steps,
- each with a defined rollback point,
+ each with a defined rollback point,
  as required by Section 6.4.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall complete PIR documentation within the change record for all Significant and Emergency changes within five (5) business days of implementation,
+Shall complete PIR documentation within the change record for all Significant and Emergency changes within five (5) business days of implementation,
  per Section 6.5.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall update the CI record in Redmine to reflect the post-change configuration state before or concurrent with closing any change record,
+Shall update the CI record in the designated system of record to reflect the post-change configuration state before or concurrent with closing any change record,
  per Section 6.7 and 
 \series bold
 Policy 
@@ -557,14 +645,13 @@ nolink "false"
 
 
 \series default
-.
+ (Service Configuration Management (CMDB) Policy).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall create catch-up RFC documentation for Emergency changes.
- The catch-up RFC shall be completed within twenty-four (24) hours of implementation,
+Shall create catch-up RFC documentation for Emergency changes within twenty-four (24) hours of implementation,
  or by noon on the next business day,
  whichever is later.
 \end_layout
@@ -583,33 +670,8 @@ Incident Commander
 \begin_layout Itemize
 
 \lang english
-May designate a change as Emergency when operating under an active incident response action,
- in accordance with Section 6.3.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-County Manager
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall be consulted by the IT Director prior to implementation of Significant changes meeting the triggers defined in Section 6.6.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall be notified as soon as operationally practicable,
- but no later than four (4) hours following the initiation of implementation,
- when Emergency changes meet the consultation triggers defined in Section 6.6.
+May designate a change as Emergency when operating under an active incident response action,
+ in accordance with Section 6.2.
 \end_layout
 
 \end_deeper
@@ -623,7 +685,58 @@ Shall be notified as soon as operationally practicable,
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all Information Operations Department personnel. Deviations from mandatory requirements shall be managed through the formal exception process defined in 
+Compliance with this policy is mandatory for all Information Operations Department personnel engaged in change management activities.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to change management requirements shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and in accordance with the review schedule defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The conditions that constitute compliance failures under this policy are defined in Section 6.8.
+ Repeated or willful non-compliance may be escalated under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -639,7 +752,33 @@ nolink "false"
 
 \series default
 .
- Exceptions require IT Director approval in accordance with 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be requested and approved through the exception process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ §6.6.
+ Exceptions require IT Director approval in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -655,48 +794,7 @@ nolink "false"
 
 \series default
  and shall be documented prior to implementation.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The following each constitute compliance failures under this policy and shall be documented as exceptions subject to corrective action under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-:
- 
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Implementation of a Significant change without prior CCA authorization.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Failure to complete catch-up RFC documentation or CCA review of an Emergency change within twenty-four (24) hours,
- or by noon on the next business day,
- whichever is later.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Closure of a change record without a corresponding CI record update per Section 6.7.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -704,6 +802,33 @@ Closure of a change record without a corresponding CI record update per Section 
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Review and Update Procedures
 \end_layout
 
 \begin_layout Itemize
@@ -838,6 +963,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.01"
 plural "false"
 caps "false"
@@ -847,9 +990,37 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
 
 \begin_layout Itemize
 
@@ -869,7 +1040,10 @@ CJIS Security Policy v6.0:
 
 \lang english
 NIST CSF 2.0:
- ID.AM-04 (Inventories of services and systems are maintained)
+ ID.RA-07 (Changes and exceptions are managed,
+ assessed for risk impact,
+ recorded,
+ and tracked)
 \end_layout
 
 \begin_layout Itemize
@@ -931,6 +1105,35 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy establishes the Configuration Control Authority (CCA) function,
+ the Request for Change (RFC) record structure,
+ rollback obligations,
+ Post-Implementation Review (PIR) requirements,
+ and the conditions under which County Manager consultation is mandatory before a change may proceed.
+ Standard change authorization is captured within the work order per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Request Fulfillment Policy) mechanics.
+ Significant and Emergency change records are standalone RFC records that exist alongside,
+ but separately from,
+ any associated work order.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
@@ -943,11 +1146,32 @@ ITIL v4:
 All changes to production systems,
  infrastructure,
  configurations,
- and software within the Information Operations Department's technology environment shall be classified into one of three categories prior to initiation:
+ and software within the Information Operations Department's technology environment shall be classified into one of three categories prior to initiation:
  Standard,
  Significant,
  or Emergency.
- The responsible IT staff member shall determine the classification before any change activity begins.
+ All Information Operations Personnel shall determine the classification before initiating any change activity.
+ Changes entering the change management process from any source —
+ including remediations authorized under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Problem Management Policy) —
+ shall be classified and authorized under this policy.
+ The Problem management authorization confirms that the remediation addresses the identified root cause;
+ the change management authorization under this policy confirms that the change can be safely implemented in the production environment.
+ Both authorizations are required before implementation.
 \end_layout
 
 \begin_layout Itemize
@@ -958,7 +1182,7 @@ Standard Change
 \series default
 :
  A Standard change is a low-risk,
- pre-approved change type for which a documented procedure exists in the Knowledge Base under 
+ pre-approved change type for which a documented procedure exists in the Knowledge Base under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -974,29 +1198,14 @@ nolink "false"
 
 \series default
 .
- Standard changes shall not require a per-instance standalone RFC record;
- authorization shall be captured within the associated work order per Section 6.2.
- A change type qualifies as Standard only if a pre-approved procedure for that change type is documented in the Knowledge Base under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.13"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- If no qualifying Knowledge Base procedure exists for a given change type,
- the change shall be classified as Significant until such a procedure is established and documented.
+ A change type qualifies as Standard only if a pre-approved procedure for that change type is documented in the Knowledge Base;
+ if no qualifying procedure exists,
+ the change shall be classified as Significant until such a procedure is established and documented.
+ Standard changes shall not require a per-instance standalone RFC record;
+ authorization shall be captured within the associated work order per Section 6.2.
  Standard change examples include routine patching,
  password resets,
- and network printer additions.
+ and network printer additions.
 \end_layout
 
 \begin_layout Itemize
@@ -1006,7 +1215,8 @@ nolink "false"
 Significant Change
 \series default
 :
- A Significant change is any change that materially alters the County's operational technology environment and does not qualify as Standard or Emergency. Significant changes align with the "non-routine or significant IT-initiated tasks" category established in 
+ A Significant change is any change that materially alters the County's operational technology environment and does not qualify as Standard or Emergency.
+ Significant changes align with the "non-routine or significant IT-initiated tasks" category established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1023,7 +1233,7 @@ nolink "false"
 \series default
 ,
  Section 6.3.
- A standalone RFC record in Redmine shall be submitted and CCA authorization shall be obtained prior to implementation.
+ A standalone RFC record in the System of Engagement shall be submitted and CCA authorization shall be obtained prior to implementation.
 \end_layout
 
 \begin_layout Itemize
@@ -1033,11 +1243,11 @@ nolink "false"
 Emergency Change
 \series default
 :
- An Emergency change is an unplanned change that shall be implemented immediately to restore service or address a critical security threat,
- where the time required to complete standard RFC and CCA review before acting would materially extend the duration or severity of the impact.
- Emergency changes shall be designated in accordance with Section 6.2.
+ An Emergency change is an unplanned change that shall be implemented immediately to restore service or address a critical security threat,
+ where the time required to complete standard RFC and CCA review before acting would materially extend the duration or severity of the impact.
+ Emergency changes shall be designated in accordance with Section 6.2.
  Implementation may precede the formal RFC record;
- catch-up documentation obligations are defined in Section 6.3.
+ catch-up documentation obligations are defined in Section 6.3.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1062,7 +1272,7 @@ For
 Standard
 \series default
  changes,
- the Assistant IT Director holds CCA authority by reference to standing authority under 
+ the Assistant IT Director holds CCA authority by reference to standing authority under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1089,8 +1299,87 @@ Significant
 \series default
  changes,
  the IT Director holds CCA authority.
- The Assistant IT Director holds CCA authority for Significant changes only where the IT Director has explicitly delegated that authority in writing;
- the delegation shall be documented at the time it is issued and shall be specific to the change or class of change to which it applies.
+ The IT Director may delegate CCA authority for Significant changes to the Assistant IT Director through either of two mechanisms:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Per-instance delegation
+\series default
+:
+ The IT Director issues explicit written delegation for a specific change or class of changes,
+ documented at the time it is issued and specifying the scope to which it applies.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Standing delegation
+\series default
+:
+ The IT Director may establish standing CCA delegation to the Assistant IT Director for Significant changes that satisfy all of the following criteria:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The change affects only internal IT infrastructure with no cross-departmental service impact.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The change has no Criminal Justice Information (CJI) nexus.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The change does not meet any County Manager consultation trigger defined in Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The change does not involve decommission or replacement of a system designated as operationally critical infrastructure by the IT Director.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang english
+The standing delegation shall be documented in the standing Delegation of Authority Order reviewed annually under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The IT Director retains personal CCA authority for all changes involving CJI systems,
+ cross-departmental impact,
+ County Manager consultation triggers,
+ critical infrastructure decommission,
+ and any change the IT Director elects to review.
+ The IT Director may revoke or modify the standing delegation at any time.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Implementation of a Significant change without prior CCA authorization constitutes a compliance failure under Section 6.8.
 \end_layout
 
 \begin_layout Standard
@@ -1103,23 +1392,28 @@ Emergency
  changes,
  the IT Director,
  the Assistant IT Director,
- or the active Incident Commander may designate a change as Emergency.
- Emergency designation serves as a trigger for expedited change review and implementation;
+ or the active Incident Commander may designate a change as Emergency.
+ Emergency designation serves as a trigger for expedited change review and implementation;
  it does not itself constitute CCA authorization.
- The IT Director or Assistant IT Director shall hold provisional CCA authority to authorize immediate implementation of the designated Emergency change.
- Where the IT Director is the designating authority, that designation constitutes provisional CCA authorization.
- The IT Director may countermand any Emergency change designation;
- the countermand shall be documented in the change record at the time it is issued.
- Catch-up CCA review shall be completed by the IT Director within twenty-four (24) hours of the emergency change,
- or by noon on the next business day, whichever is later.
+ The IT Director or Assistant IT Director shall hold provisional CCA authority to authorize immediate implementation of the designated Emergency change.
+ Provisional CCA authority authorizes immediate implementation pending the catch-up CCA review defined below;
+ if the catch-up review countermands the change,
+ remediation obligations attach.
+ Where the IT Director is the designating authority,
+ that designation constitutes provisional CCA authorization.
+ The IT Director may countermand any Emergency change designation;
+ the countermand shall be documented in the change record at the time it is issued.
+ Catch-up CCA review shall be completed by the IT Director within twenty-four (24) hours of the emergency change,
+ or by noon on the next business day,
+ whichever is later.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The County Manager consultation obligations defined in Section 6.6 shall be satisfied prior to CCA authorization for Significant changes.
- For Emergency changes meeting Section 6.6 triggers,
- County Manager notification shall occur as soon as operationally practicable, but no later than four (4) hours following the initiation of implementation.
+The County Manager consultation obligations defined in Section 6.6 shall be satisfied prior to CCA authorization for Significant changes.
+ For Emergency changes meeting Section 6.6 triggers,
+ County Manager notification shall occur no later than four (4) hours following the initiation of implementation.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1136,8 +1430,8 @@ Standard Changes
 \series default
 :
  No standalone RFC record shall be required.
- Authorization shall be documented within the associated work order and shall include:
- the basis for Standard classification,
+ Authorization shall be documented within the associated work order and shall include:
+ the basis for Standard classification,
  and a reference to the Knowledge Base procedure under 
 \series bold
 Policy 
@@ -1153,7 +1447,7 @@ nolink "false"
 
 
 \series default
- that qualifies this change type as Standard.
+ that qualifies this change type as Standard.
 \end_layout
 
 \begin_layout Itemize
@@ -1163,14 +1457,15 @@ nolink "false"
 Significant Changes
 \series default
 :
- A standalone RFC record shall be created in Redmine prior to implementation.
+ A standalone RFC record shall be created in the System of Engagement prior to implementation.
  The RFC shall include at minimum:
- a description and scope of the change; a risk assessment;
+ a description and scope of the change;
+ a risk assessment;
  discrete,
- incremental implementation steps each with a defined rollback point;
+ incremental implementation steps each with a defined rollback point;
  a rollback plan;
  anticipated impact and affected systems;
- the CCA authorization record;
+ the CCA authorization record;
  and County Manager consultation status where applicable under Section 6.6.
 \end_layout
 
@@ -1182,10 +1477,10 @@ Emergency Changes
 \series default
 :
  Implementation may precede the RFC record.
- A standalone RFC record shall be created in Redmine within twenty-four (24) hours of the emergency change,
- or by noon on the next business day,
+ A standalone RFC record shall be created in the System of Engagement within twenty-four (24) hours of the emergency change,
+ or by noon on the next business day,
  whichever is later.
- This is the same clock as the CI record update obligation under 
+ This is the same clock as the CI record update obligation under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1200,12 +1495,13 @@ nolink "false"
 
 
 \series default
- and the catch-up CCA review obligation under Section 6.2;
+ and the catch-up CCA review obligation under Section 6.2;
  all three obligations run concurrently on the same clock.
- The catch-up RFC shall document:
- all actions taken prior to record creation with the most precise timestamps recoverable;
+ The catch-up RFC shall document:
+ all actions taken prior to record creation with the most precise timestamps recoverable;
  the conditions that justified Emergency designation;
- the CCA review outcome; and CI update confirmation per 
+ the CCA review outcome;
+ and CI update confirmation per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1221,6 +1517,7 @@ nolink "false"
 
 \series default
  and Section 6.7.
+ Failure to complete catch-up RFC documentation or CCA review within this window constitutes a compliance failure under Section 6.8.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1234,33 +1531,33 @@ nolink "false"
 \lang english
 Significant changes shall be structured as discrete,
  incremental steps,
- each with a defined rollback point.
+ each with a defined rollback point.
  A single monolithic implementation is not permitted.
- The incremental step structure required in the RFC is the mechanism that makes rollback to a stable state operationally feasible;
+ The incremental step structure required in the RFC is the mechanism that makes rollback to a stable state operationally feasible;
  it is a design requirement of the change,
- not a documentation preference.
+ not a documentation preference.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-A Significant change that fails mid-implementation shall be rolled back to the last stable incremental state immediately.
+A Significant change that fails mid-implementation shall be rolled back to the last stable incremental state immediately.
  Rollback shall not require additional authorization;
- it is the default response to implementation failure.
+ it is the default response to implementation failure.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
 The IT Director may authorize an alternative resolution path in lieu of rollback.
- That authorization shall be documented in the change record at the time it is issued,
- with rationale.
+ That authorization shall be documented in the change record at the time it is issued,
+ with rationale.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The change record owner shall evaluate a failed Significant change that required rollback against the Problem record spawn triggers defined in 
+The assigned technician shall evaluate a failed Significant change that required rollback against the Problem record spawn triggers defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1276,9 +1573,9 @@ nolink "false"
 
 \series default
 .
- If the failure condition meets those triggers,
- a Problem record shall be created independently of the change management process.
- The change management process and the problem management process are complementary and shall not be merged or held pending the other's conclusion.
+ If the failure condition meets those triggers,
+ a Problem record shall be created independently of the change management process.
+ The change management process and the problem management process are complementary and shall not be merged or held pending the other's conclusion.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1290,8 +1587,8 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-A PIR shall be required for all Significant and Emergency changes.
- The PIR shall be documented within the change record itself;
+The assigned technician shall complete a PIR for all Significant and Emergency changes.
+ The PIR shall be documented within the change record itself;
  no standalone record is required.
 \end_layout
 
@@ -1299,16 +1596,18 @@ A PIR shall be required for all Significant and Emergency changes.
 
 \lang english
 The PIR shall address at minimum:
- whether the change achieved its intended outcome; whether any unintended impacts occurred;
+ whether the change achieved its intended outcome;
+ whether any unintended impacts occurred;
  whether the rollback plan was invoked and,
- if so, why;
+ if so,
+ why;
  and any follow-on actions required.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-The PIR shall be completed and documented within five (5) business days of implementation.
+The assigned technician shall complete and document the PIR within five (5) business days of implementation.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1320,7 +1619,7 @@ The PIR shall be completed and documented within five (5) business days of imple
 \begin_layout Standard
 
 \lang english
-The following conditions require mandatory County Manager consultation prior to implementation of a Significant change:
+The following conditions require mandatory County Manager consultation prior to implementation of a Significant change:
 \end_layout
 
 \begin_layout Itemize
@@ -1331,15 +1630,27 @@ Changes to systems whose failure,
  or misconfiguration could directly affect the conduct,
  security,
  or publicly reported outcome of an election —
- such as voter registration systems,
+ such as voter registration systems,
  election night reporting systems,
- or network infrastructure dedicated to election administration.
- Routine support work for the Clerk's office, including workstation support,
+ or network infrastructure dedicated to election administration.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exclusion
+\series default
+:
+ Routine support work for the Clerk's office,
+ including workstation support,
  peripherals,
  and streaming setup,
  shall not qualify.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \lang english
@@ -1361,9 +1672,8 @@ Any change not meeting the above criteria that the IT Director determines carrie
 \begin_layout Standard
 
 \lang english
-County Manager consultation shall be documented in the RFC record prior to CCA authorization.
- Emergency changes meeting any of the above criteria shall notify the County Manager as soon as operationally practicable,
- but no later than four (4) hours following the initiation of implementation.
+County Manager consultation shall be documented in the RFC record prior to CCA authorization.
+ Emergency changes meeting any of the above criteria shall notify the County Manager no later than four (4) hours following the initiation of implementation.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1411,8 +1721,8 @@ nolink "false"
  direction
 \series default
 :
- No change record under this policy shall be closed without a corresponding CI record update confirming that the Redmine record reflects the post-change configuration state.
- A closed change record with an un-updated CI record constitutes a compliance failure under this policy.
+ No change record under this policy shall be closed without a corresponding CI record update confirming that the CI record in the designated system of record reflects the post-change configuration state.
+ Closure of a change record with an un-updated CI record constitutes a compliance failure under Section 6.8.
 \end_layout
 
 \begin_layout Itemize
@@ -1433,7 +1743,7 @@ nolink "false"
  → Policy 3.09 direction
 \series default
 :
- No CI record in Redmine shall be modified to reflect a configuration change without a corresponding authorized change record under this policy.
+ No CI record shall be modified to reflect a configuration change without a corresponding authorized change record under this policy.
  This obligation is established in 
 \series bold
 Policy 
@@ -1451,7 +1761,7 @@ nolink "false"
 \series default
 ,
  Section 6.6;
- this policy carries the reciprocal.
+ this policy carries the reciprocal.
 \end_layout
 
 \begin_layout Itemize
@@ -1461,12 +1771,60 @@ nolink "false"
 Emergency exception
 \series default
 :
- The CI record update obligation for Emergency changes is deferred, not waived.
- The CI record shall be updated within twenty-four (24) hours of the emergency change,
+ The CI record update obligation for Emergency changes is deferred,
+ not waived.
+ The assigned technician shall update the CI record within twenty-four (24) hours of the emergency change,
  or by noon on the next business day,
  whichever is later,
- concurrent with the catch-up RFC documentation obligation under Section 6.3.
- Both obligations run on the same clock.
+ concurrent with the catch-up RFC documentation obligation under Section 6.3.
+ Both obligations run on the same clock.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Compliance Failure Definitions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The following conditions each constitute a compliance failure under this policy and shall be subject to corrective action under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Implementation of a Significant change without prior CCA authorization (Section 6.2).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Failure to complete catch-up RFC documentation or CCA review of an Emergency change within twenty-four (24) hours,
+ or by noon on the next business day,
+ whichever is later (Section 6.3).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Closure of a change record without a corresponding CI record update per Section 6.7.
 \end_layout
 
 \end_body

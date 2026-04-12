@@ -40,7 +40,7 @@
 | 3.06 | Operational Incident Management Policy | x |
 | 3.07 | Problem Management Policy | x |
 | 3.08 | Service Configuration Management (CMDB) Policy | x |
-| 3.09 | Change Management Policy | o |
+| 3.09 | Change Management Policy | x |
 | 3.10 | Release and Deployment Policy | o |
 | 3.11 | Capacity and Availability Management Policy | o |
 | 3.12 | Monitoring and Event Management Policy | o |
