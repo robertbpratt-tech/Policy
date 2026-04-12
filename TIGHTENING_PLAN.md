@@ -146,7 +146,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.09 | Risk Management | T | v2.1 | 0 | — | |
 | 1.10 | IT Financial / Procurement | D | — | 4 | #50, #51, #299, +1 | |
 | 1.11 | Data Governance and Classification | T | v2.2 | 0 | — | #220 root landed; IT Director holds LASO by policy mandate |
-| 1.12 | IT Asset Management | D | — | 5 | #53, #54, #55, #256, +1 | |
+| 1.12 | IT Asset Management | D | — | 6 | #53, #54, #55, #256, #301, +1 | #301 = CI record retirement in §6.10 (ripple from 3.08) |
 | 1.13 | Supply Chain Risk Management | D | — | 2 | #56, +1 | |
 | 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — | Phase 1 LASO cleanup batch complete (April 11, 2026) |
 
@@ -181,7 +181,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.05 | Service Request Fulfillment | T | v2.2 | 0 | — | |
 | 3.06 | Operational Incident Management | T | v2.2 | 0 | — | |
 | 3.07 | Problem Management | T | v2.2 | 0 | — | |
-| 3.08 | CMDB | D | — | 5 | #131, #132, #133, #134, +1 | Phase 3 feeder for 4.04 |
+| 3.08 | CMDB | T | v2.1 | 0 | — | Phase 3 feeder for 4.04; completed April 12, 2026 |
 | 3.09 | Change Management | D | — | 7 | #135, #136, #137, #263, #294, +2 | #263 = bidirectional pipeline ripple from 3.07; Phase 3 feeder for 4.05 |
 | 3.10 | Release and Deployment | D | — | 4 | #138, #139, #140, +1 | |
 | 3.11 | Capacity and Availability | D | — | 4 | #141, #142, #143, +1 | |
@@ -275,7 +275,7 @@ Sequencing principles, in priority order:
 
 **Goal:** Tighten Chapter 3 feeder policies and their Chapter 4 collectors in adjacent sessions, so the feeder's constructs are fresh in context when the collector is read. Minimizes context-switching cost between dependent policies and catches inter-chapter ripples in-session rather than as deferred discoveries.
 
-6. **3.08 (CMDB)** — 5 open tickets. Source of CI records consumed by Chapter 4.
+6. **~~3.08 (CMDB)~~** — ✅ **Complete (v2.1, April 12, 2026).** §1 collapsed to one sentence. §2 restructured to In/Out of Scope. §3: #208 resolved; AID quarterly CI currency review with evidence artifact (#272); exception routing→5.01 §6.6. §4 rebuilt with oral exceptions clause. §5 Cited/Framework split; 1.08 removed (no body citation). §6: Redmine→System of Engagement; Comodo/XCitium→Endpoint Protection Platform; orphaned directives anchored; §6.4 "assigned technician" pattern (3.05 alignment); §6.4 reframed as supplemental closure condition. Closed #131-134, #272. Filed #301 (1.12 §6.10 CI retirement). Two cross-validator rounds.
 7. **4.04 (Eradication)** — 1 open ticket. Consumes 3.08 CI scope; references the umbrella RFC pattern that 3.09 owns.
 8. **3.09 (Change Management)** — 6 open tickets including #263 bidirectional pipeline ripple from 3.07. Owns RFC governance.
 9. **4.05 (Recovery)** — 5 open tickets. Consumes 3.09 RFC governance and 3.15 continuity tier classification. **High ticket count — evaluate for return-to-drafted candidacy during this session.**
