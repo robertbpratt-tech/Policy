@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -450,21 +450,26 @@ nolink "false"
  (Delegation of Authority and Decision Rights).
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 
+\lang english
+Shall retain LASO accountability for CJIS Security Policy Section IR-6 Part (b) external notification obligations,
+ as designated under 
 \series bold
-\lang english
-Local Agency Security Officer (LASO)
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall execute CJIS Security Policy Section IR-6 Part (b) external notification obligations during cybersecurity incidents in accordance with 
+ (Data Governance and Classification Policy) §6.11 and executed through 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -485,10 +490,29 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall approve in writing any exception to a communication or transmission requirement that affects Criminal Justice Information (CJI),
+Shall,
+ in LASO capacity,
+ approve in writing any exception to a communication or transmission requirement that affects Criminal Justice Information (CJI),
  in coordination with the CJIS Systems Agency (CSA),
  CJIS Systems Officer (CSO),
  or other governing authority required by applicable CJIS agreements.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall receive the Monthly Executive Report and Monthly Briefing from the IT Director in accordance with Section 6.2.
 \end_layout
 
 \end_deeper
@@ -512,23 +536,6 @@ Shall manage operational communication standards across the Department.
 
 \lang english
 Shall issue scheduled maintenance notifications and unplanned outage notifications in accordance with Section 6.3.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-County Manager
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall receive the Monthly Executive Report and Monthly Briefing from the IT Director in accordance with Section 6.2.
 \end_layout
 
 \end_deeper
@@ -727,8 +734,9 @@ nolink "false"
  §4.
  Exceptions affecting the handling,
  transmission,
- or access of Criminal Justice Information (CJI) shall additionally require written co-approval by the LASO,
- in coordination with the CJIS Systems Agency (CSA),
+ or access of Criminal Justice Information (CJI) shall additionally require the IT Director,
+ in LASO capacity,
+ to evaluate CJIS compliance implications and coordinate with the CJIS Systems Agency (CSA),
  CJIS Systems Officer (CSO),
  or other governing authority as required by applicable CJIS agreements and 
 \series bold
