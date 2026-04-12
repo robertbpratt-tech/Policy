@@ -49,7 +49,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #235 | Prohibited language sweep per 1.04 §6.9 | 20 untightened policies | Open, absorbed-by-tightening | Listed in #235 body; resolved per-policy |
 | #245 | Replace `business hours` time-unit with end-of-business-day convention | Manual-wide | Open, sweep | Per #245 body |
 | #264 | Role obligation redistribution (L3 prep, L1 clerical, L2 inputs, AID synthesis) | Manual-wide | Open, root | 4.02, 4.06, 5.01, plus untightened |
-| #283 | LASO is a designation, not a §3 role | Manual-wide | **Conflicts with #220** — auto-close as `superseded` when #220 lands | Same as #220 downstream |
+| #283 | LASO is a designation, not a §3 role | Manual-wide | **Closed** (`superseded`, April 11, 2026) — #220 landed in 1.11 v2.1/v2.2; LASO pinned to IT Director by mandate | Same as #220 downstream |
 | #6, #7, #8, #10 | Product-name removal (Redmine, Office 365, Comodo/XCitium, HID DigitalPersona) | Manual-wide | Open, absorbed-by-tightening | Resolved per-policy |
 | #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | 1.11, 2.05, 2.07 | Open, sweep | #292 (2.05), #293 (2.07); 1.11 resolved in v2.2 |
 
@@ -201,7 +201,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 4.03 | Containment Strategy and Playbooks | D | — | 0 | — | Source of truth for §6.16 transcription |
 | 4.04 | Eradication | D | — | 1 | +1 | Phase 3 collector (3.08 → 4.04) |
 | 4.05 | Recovery and Restoration | D | — | 5 | #221, +4 | Phase 3 collector (3.09 → 4.05); **evaluate return-to-drafted candidacy** |
-| 4.06 | Communication Protocols | T+ | v2.2 | 2 | #268, LASO ripple | Phase 1 LASO cleanup batch (combined v2.2 with #268) |
+| 4.06 | Communication Protocols | T | v2.2 | 0 | — | #284 LASO dissolution + #268 Admin Asst directory landed April 11, 2026 |
 | 4.07 | Postmortem and Lessons Learned | D | — | 2 | #259, +1 | #259 = scope boundary with 3.06 §6.8; standalone in Phase 3 |
 
 ### Chapter 5 — Compliance
@@ -244,9 +244,9 @@ Sequencing principles, in priority order:
 
 1. **~~1.11 (Data Governance and Classification)~~** — ✅ **Complete (v2.2, April 11, 2026).** #220 LASO designation landed. #52 §5 split implemented. #231 §4 Assessment added. FIPS versions stripped per #291. TAC removed (department-level actors, not IO). Two cross-validator rounds completed. LASO appointment authority: IT Director; designee must be IO Department member; registered with Nevada DPS.
 2. **LASO downstream cleanup batch** — single coordinated session covering:
-   - **4.06 v2.2** — combined cut absorbing LASO §3 fix + #268 Admin Asst directory reassignment
-   - **1.14 v2.3** — LASO §3 cleanup
-   - **Auto-close #283** as `superseded` when the batch commits
+   - **~~4.06 v2.2~~** — ✅ **Complete (April 11, 2026).** #284 LASO §3 dissolution + #268 Admin Asst directory reassignment. Cross-validators: Gemini (no change), ChatGPT (5 findings, all declined).
+   - **1.14 v2.3** — LASO §3 cleanup (#285 open)
+   - **~~#283 closed as `superseded`~~** ✅ (April 11, 2026)
 
 > ## ◆ RECALCULATE SEQUENCE HERE ◆
 >
