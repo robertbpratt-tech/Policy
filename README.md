@@ -55,7 +55,7 @@
 | 4.04 | Eradication Procedures and Scenario Guides | x |
 | 4.05 | Recovery Operations and Restoration Prioritization | x |
 | 4.06 | Communication Protocols and Partner Integration | x |
-| 4.07 | Postmortem Review and Lessons Learned | o |
+| 4.07 | Postmortem Review and Lessons Learned | x |
 | 5.01 | Policy Implementation, Enforcement, and Legal Alignment | x |
 | 5.02 | Internal Audits, Self-Assessment, and Control Testing | o |
 | 5.03 | Compliance Monitoring and Corrective Action | o |
