@@ -126,7 +126,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.08 | Delegation of Authority | T | v1.4 | 0 | — |
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
 | 1.10 | IT Financial / Procurement | D | — | 4 | #50, #51, #299, +1 |
-| 1.11 | Data Governance and Classification | T+ | v2.2 | 1 | #311 |
+| 1.11 | Data Governance and Classification | T | v2.2 | 0 | — |
 | 1.12 | IT Asset Management | D | — | 6 | #53, #54, #55, #256, #301, +1 |
 | 1.13 | Supply Chain Risk Management | D | — | 2 | #56, +1 |
 | 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
