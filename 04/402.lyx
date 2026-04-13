@@ -544,13 +544,13 @@ IT Director
 \begin_layout Itemize
 
 \lang english
-Shall serve as Incident Commander for all cybersecurity incidents by default,
- per 
+Shall serve as Incident Commander for all cybersecurity incidents by default;
+ the IT Director may designate any Information Operations Personnel member as Incident Commander for a specific incident per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.06"
+reference "pol:4.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -560,8 +560,11 @@ nolink "false"
 
 
 \series default
- (Operational Incident Management Policy),
- Section 6.3.
+ (Incident Response Policy Overview),
+ Section 6.1.
+ IC designation does not transfer declaration authority,
+ exception approval authority,
+ or incident classification authority.
 \end_layout
 
 \begin_layout Itemize
@@ -582,7 +585,7 @@ nolink "false"
 
 
 \series default
- (Incident Response Policy Overview),
+,
  Section 6.1 and 
 \series bold
 Policy 
@@ -611,7 +614,23 @@ Shall review Safety and Security work orders in the System of Engagement queue a
 \begin_layout Itemize
 
 \lang english
-Shall execute CJIS IR-6 Part (b) external notification obligations in the role of LASO,
+Shall execute CJIS IR-6 Part (b) external notification obligations in the capacity of Local Agency Security Officer (LASO),
+ a designation held by the IT Director under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy),
  within the notification windows established in Section 6.6 of this policy.
 \end_layout
 
@@ -624,7 +643,7 @@ Shall approve any structural change to Layer 1 IoC categories or definitions.
 \begin_layout Itemize
 
 \lang english
-Shall identify in writing the Tier L3+ technical leads authorized to declare incidents and serve as Incident Commander,
+Shall maintain the list of Tier L3+ technical leads authorized to exercise emergency declaration authority when the IT Director and the Assistant IT Director are both genuinely unavailable,
  per 
 \series bold
 Policy 
@@ -640,7 +659,23 @@ nolink "false"
 
 
 \series default
-.
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.1.
 \end_layout
 
 \begin_layout Itemize
@@ -888,7 +923,7 @@ nolink "false"
 
 
 \series default
-.
+ (Operational Incident Management Policy).
 \end_layout
 
 \end_deeper
@@ -949,7 +984,9 @@ nolink "false"
 
 
 \series default
- (Internal Audits and Self-Assessment Procedures) and the annual policy review and maturity scoring process defined in 
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1039,7 +1076,11 @@ nolink "false"
 .
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
- No exception may suspend or modify the CJIS notification obligations established in Section 6.6.
+ No exception may suspend or modify the CJIS notification obligations established in Section 6.6,
+ the mandatory work order creation requirement established in Section 6.2,
+ the evidence artifact retention obligations for CJI-involved incidents established in Section 6.7,
+ or the incident record documentation requirements established in Section 6.4.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -1092,6 +1133,24 @@ nolink "false"
 
 :
  Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
 \end_layout
 
 \begin_layout Itemize
@@ -1181,7 +1240,7 @@ nolink "false"
 \end_inset
 
 :
- End-User Communication Standards
+ Service Communications Policy
 \end_layout
 
 \begin_layout Itemize
@@ -1435,7 +1494,9 @@ nolink "false"
 \end_inset
 
 :
- Internal Audits and Self-Assessment Procedures
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Itemize
@@ -1536,7 +1597,7 @@ NIST CSF 2.0:
 
 \lang english
 NIST CSF 2.0:
- DE.AE-03 (Event Data Aggregation)
+ DE.AE-03 (Multi-Source Information Correlation)
 \end_layout
 
 \begin_layout Itemize
@@ -1544,6 +1605,13 @@ NIST CSF 2.0:
 \lang english
 NIST CSF 2.0:
  DE.AE-06 (Adverse Event Information Sharing)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ DE.AE-08 (Incident Declaration Criteria)
 \end_layout
 
 \begin_layout Itemize
@@ -1657,6 +1725,24 @@ This policy normalizes seven (7) distinct upstream intake paths into a single,
  consistent handling framework;
  maintains the canonical Indicator of Compromise (IoC) list that governs incident declaration throughout the manual;
  and establishes the CJIS-compliant reporting mechanics and incident record structure required for operational execution and audit accountability.
+ Within the Chapter 4 lifecycle framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ this policy governs the Identification phase —
+ the first operational stage following potential incident discovery.
  This policy is activated immediately upon potential cybersecurity incident discovery and governs all activity through declaration and handoff to the appropriate operational response policies.
 \end_layout
 
@@ -2007,7 +2093,7 @@ nolink "false"
 
 
 \series default
- (End-User Communication Standards) —
+ (Service Communications Policy) —
  shall enter through State 2.
 \end_layout
 
@@ -2558,7 +2644,7 @@ Part (b) —
 \series default
 
  Upon declaration,
- the IT Director acting in the role of LASO shall notify the CSO,
+ the IT Director (as LASO) shall notify the CSO,
  the SIB Chief,
  or the Interface Agency Official where CJI involvement is confirmed or cannot be ruled out at triage.
  
