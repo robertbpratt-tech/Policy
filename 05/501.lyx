@@ -544,6 +544,23 @@ nolink "false"
 
 \series bold
 \lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall approve operational exceptions within the parameters and notification requirements defined in Section 6.6.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
 Human Resources (HR)
 \series default
 :
@@ -965,6 +982,24 @@ nolink "false"
 
 :
  Security Awareness and Training Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Secure Configuration Baselines and Hardening Policy
 \end_layout
 
 \begin_layout Itemize
@@ -2250,6 +2285,97 @@ nolink "false"
 .
  Exceptions that exceed the IT Director's delegated authority shall be approved by the County Manager.
  Oral exceptions are not valid.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Operational Exception Tier
+\series default
+:
+ The Assistant IT Director may approve an operational exception without IT Director pre-approval when the exception meets all of the following criteria:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The exception duration does not exceed thirty (30) calendar days.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The exception does not affect Criminal Justice Information handling,
+ storage,
+ transmission,
+ or access.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The exception does not deviate from a security baseline defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Secure Configuration Baselines and Hardening Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The exception does not deviate from a mandatory CJIS Security Policy requirement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The exception does not alter decision rights,
+ chain of command,
+ or authority structure governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Operational Exception Controls
+\series default
+:
+ The Assistant IT Director shall document each approved operational exception in writing and notify the IT Director within one (1) business day of approval.
+ The IT Director may override any operational exception at any time.
+ The Assistant IT Director shall not renew an operational exception;
+ renewal requires IT Director approval.
+ All other requirements in this section apply to operational exceptions without modification.
 \end_layout
 
 \begin_layout Itemize
