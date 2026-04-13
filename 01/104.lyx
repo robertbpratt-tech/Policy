@@ -235,13 +235,13 @@ Policy documents within the Information Operations Policy Manual.
 \begin_layout Itemize
 
 \lang english
-Standard Operating Procedures (SOPs) maintained in the System of Engagement (Redmine).
+Standard Operating Procedures (SOPs) maintained in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Playbooks maintained as governed Knowledge Base artifacts in the System of Engagement (Redmine).
+Playbooks maintained as governed Knowledge Base artifacts in the System of Engagement.
 \end_layout
 
 \end_deeper
@@ -641,7 +641,7 @@ Public Records Status
 Operational Interface (System of Engagement)
 \series default
 :
- The Departmental Knowledge Base (Redmine) serves as the accessible operational interface for day-to-day reference.
+ The Departmental Knowledge Base serves as the accessible operational interface for day-to-day reference.
 \end_layout
 
 \begin_layout Itemize
@@ -650,7 +650,7 @@ Operational Interface (System of Engagement)
 Synchronization
 \series default
 :
- Content published in Redmine shall be sourced directly from the LyX master.
+ Content published in the System of Engagement shall be sourced directly from the LyX master.
  In the event of a discrepancy,
  the LyX master record (and its compiled PDF) takes precedence.
 \end_layout
@@ -2142,7 +2142,7 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-Standard Operating Procedures (SOPs) are distinct from policies and are maintained as tickets or wiki entries in the System of Engagement (Redmine).
+Standard Operating Procedures (SOPs) are distinct from policies and are maintained as tickets or wiki entries in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
@@ -2230,7 +2230,7 @@ Outputs
 \begin_layout Standard
 Playbooks are scenario-based operational artifacts that govern decision-making and technical execution during defined incident or operational scenarios.
  They are distinct from SOPs in that they present branching decision logic rather than linear procedural steps.
- Playbooks are maintained as governed Knowledge Base artifacts in the System of Engagement (Redmine).
+ Playbooks are maintained as governed Knowledge Base artifacts in the System of Engagement.
 \end_layout
 
 \begin_layout Standard
