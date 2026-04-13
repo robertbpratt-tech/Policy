@@ -321,3 +321,27 @@ Final validation pass, README status update, manual declared at v1.0, repo archi
 
 - **#264 partial completion tracking** — confirm which subtasks are actually closed in the repo vs. carried in memory only. May need a sweep to align.
 - **#208/#211 sweep enforcement** — currently absorbed into per-policy tightening; consider whether a single dedicated sweep session would be faster.
+
+---
+
+## §8. v1.0 Declaration Criteria
+
+The manual reaches v1.0 when it satisfies all three of the following criteria. These are gate conditions, not aspirational targets.
+
+**Criterion 1 — Internal Consistency.** The manual is internally consistent in both formatting and content. Every policy conforms to 1.04 structural and stylistic standards. Cross-references resolve. Terminology is uniform. No policy contradicts another.
+
+**Criterion 2 — Self-Feeding and Self-Growing.** The manual is a self-sustaining governance system with no isolated parts. Every policy's outputs feed at least one other policy's inputs. Every pipeline is bidirectional where the relationship warrants it. The appendices are both part of and separate from the manual — they support the system but are not dead-end artifacts.
+
+**Criterion 3 — Succession Completeness.** The manual is complete enough that if the entire department were eliminated — no people, no tools, no procedures — a competent reader with no institutional knowledge could pick it up and rebuild the department. The manual cannot and should not contain step-by-step operational procedures (those belong in the System of Engagement under 1.04 §6.15/§6.16), but it must contain enough specificity that procedures can be *derived* from the policy directives.
+
+**Phase 9 Validation Test:** For any directive in any policy, a reader with no institutional knowledge shall be able to determine:
+
+1. What needs to happen.
+2. Who is accountable.
+3. What triggers it.
+4. What it produces.
+5. Where that output goes next.
+
+If any of the five are missing for any directive, that is a v1.0 gap.
+
+**Residual work tolerance:** The `1.04_Procedural_Cleanup` cluster (§6 Phase 8) is not a hard blocker per the IT Director's April 11, 2026 ruling. Other residual items of comparable scope may be deferred to post-v1.0 maintenance at the IT Director's discretion, provided they do not violate Criteria 1–3.
