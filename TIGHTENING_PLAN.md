@@ -105,15 +105,15 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 
 ### Deferred Cluster: `1.04_Procedural_Cleanup`
 
-A constitutional revision of 1.04 mid-project would invalidate prior tightening work. The cluster collects 1.04 tickets that touch §6.15 (SOPs) and §6.16 (Playbooks) — procedural sections that don't affect policy formatting — plus the §6.8 atomic-level clarification (#290).
+A constitutional revision of 1.04 mid-project would invalidate prior tightening work. The cluster collects 1.04 tickets that touch §6.15 (SOPs) and §6.16 (Playbooks) — procedural sections that don't affect policy formatting.
 
 **Cluster source-of-truth rule:** Chapter 4 is the source of truth for playbook structure; the cluster transcribes Chapter 4's de facto patterns into 1.04 §6.16, not the other way around. Conflicts resolve in Chapter 4's favor.
 
-**Cluster members:** #5, #31, #32, #290. (#30 closed April 12, 2026 — resolved by 6.01 Glossary draft.)
+**Cluster members:** #31. (Closed April 12, 2026: #5 — §6.10 Redmine resolved; #30 — 6.01 Glossary draft; #32 — §5 ordering verified compliant; #290 — §6.8 atomic-level clarification executed as additive amendment.)
 
-**Cluster status:** Per Robert's April 11, 2026 ruling, this cluster is **not** a hard blocker on v1.0. Sequence by impact, not by dependency clearing. Chapter 4 does not need to be prioritized to "unblock" this cluster.
+**Cluster status:** Per Robert's April 11, 2026 ruling, this cluster is **not** a hard blocker on v1.0. Sequence by impact, not by dependency clearing. Only #31 (LyX environment names for §6.15/§6.16) remains.
 
-**Distinction from constitutional changes:** Changes to 1.04 §6.1–§6.14 are constitutional (require unlocking 1.04, ripple to all tightened policies). Changes to §6.15–§6.16 are procedural (safe to defer to cluster). #290 is an exception — it touches §6.8 but is purely additive text clarification with no rule change, so it's safe in the procedural cluster.
+**Distinction from constitutional changes:** Changes to 1.04 §6.1–§6.14 are constitutional (require unlocking 1.04, ripple to all tightened policies). Changes to §6.15–§6.16 are procedural (safe to defer to cluster).
 
 ---
 
@@ -152,7 +152,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|---|
 | 1.02 | Code of Ethics | T | — | 0 | — | |
 | 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — | |
-| 1.04 | Formatting Standards | L | — | 4 | #5, #31, #32, #290 | All deferred to `1.04_Procedural_Cleanup` cluster; #30 closed (SoE/CMS glossary entry — resolved by 6.01 draft, April 12, 2026) |
+| 1.04 | Formatting Standards | L | — | 1 | #31 | #31 deferred to `1.04_Procedural_Cleanup` cluster. Closed this session: #5 (§6.10 Redmine resolved), #32 (§5 ordering verified compliant), #290 (§6.8 atomic scope clarified). Also: #236 stale 5.01 title fixed, 6× Redmine removed (#6 partial). |
 | 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — | Technical Directives construct; LRDA 20070057 verified |
 | 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — | Phase 2 complete; #300 filed against 5.07 |
 | 1.07 | Workforce Roles | T | v1.3 | 0 | — | Locked-adjacent; #220 explicitly excludes LASO from 1.07 |
@@ -195,12 +195,12 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.05 | Service Request Fulfillment | T | v2.2 | 0 | — | |
 | 3.06 | Operational Incident Management | T | v2.2 | 0 | — | |
 | 3.07 | Problem Management | T | v2.2 | 0 | — | |
-| 3.08 | CMDB | T | v2.1 | 0 | — | Phase 3 feeder for 4.04; completed April 12, 2026 |
+| 3.08 | CMDB | T | v2.1 | 0 | — | Phase 3 feeder for 4.04; completed April 12, 2026. v2.1 committed to repo April 12, 2026 (was missing). #8 closed (Comodo/XCitium removed). |
 | 3.09 | Change Management | T | v2.1 | 0 | — | Phase 3 feeder for 4.05; completed April 12, 2026 |
 | 3.10 | Release and Deployment | D | — | 4 | #138, #139, #140, +1 | |
 | 3.11 | Capacity and Availability | D | — | 4 | #141, #142, #143, +1 | |
 | 3.12 | Monitoring and Event Management | D | — | 5 | #144, #145, #146, +2 | |
-| 3.13 | Knowledge Management | T+ | v2.1 | 1 | #305 | Phase 3 feeder for 4.03; completed April 12, 2026. #305 = add Incident Response Playbooks KB content category (ripple from 4.03 session) |
+| 3.13 | Knowledge Management | T | v2.1 | 0 | — | Phase 3 feeder for 4.03; completed April 12, 2026. #305 closed (Incident Response Playbooks added to §6.2 + 4.03 added to §5). |
 | 3.14 | IT Project Management | D | — | 4 | #150, #151, #152, #295 | |
 | 3.15 | Service Continuity | D | — | 3 | #153, #154, +1 | Feeds 4.05 continuity tier classification |
 | 3.16 | Service Improvement | D | — | 4 | #155, +3 | |
@@ -222,7 +222,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets | Notes |
 |---|---|---|---|---|---|---|
-| 5.01 | Implementation, Enforcement, Legal | T+ | v3 | 2 | +2 | Carries #264 subtask (tiered exception approval) |
+| 5.01 | Implementation, Enforcement, Legal | T | v3 | 0 | — | v3 committed April 12, 2026 with #269 AID Operational Exception Tier merged (§3 AID role + §6.6 two new bullets + §5 2.10 added). #207 closed (CBA review deferred to manual-wide legal review). |
 | 5.02 | Internal Audits | D | — | 5 | +5 | |
 | 5.03 | Compliance Monitoring | D | — | 2 | +2 | |
 | 5.04 | Performance Metrics | D | — | 1 | +1 | |
