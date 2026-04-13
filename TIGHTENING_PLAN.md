@@ -155,7 +155,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 3.01 | Service Catalog and SLA | T | v2.3 | 0 | — |
-| 3.02 | Service Level Management | T | v2.5 | 0 | — |
+| 3.02 | Service Level Management | T+ | v2.5 | 1 | #309 |
 | 3.03 | Service Communication | T | v2.0 | 0 | — |
 | 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
 | 3.05 | Service Request Fulfillment | T | v2.1 | 1 | #308 |
@@ -164,8 +164,8 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.08 | CMDB | T | v2.1 | 0 | — |
 | 3.09 | Change Management | T | v2.0 | 0 | — |
 | 3.10 | Release and Deployment | T | v2.0 | 0 | — |
-| 3.11 | Capacity and Availability | D | — | 4 | #141, #142, #143, +1 |
-| 3.12 | Monitoring and Event Management | D | — | 5 | #144, #145, #146, +2 |
+| 3.11 | Capacity and Availability | T | v2.0 | 0 | — |
+| 3.12 | Monitoring and Event Management | D | — | 6 | #144, #145, #146, #310, +2 |
 | 3.13 | Knowledge Management | T | v2.1 | 0 | — |
 | 3.14 | IT Project Management | D | — | 4 | #150, #151, #152, #295 |
 | 3.15 | Service Continuity | D | — | 3 | #153, #154, +1 |
@@ -257,7 +257,7 @@ Sequencing principles, in priority order:
 **Goal:** Close out the service management chapter. No tight Chapter 4 dependencies remaining after Phase 3.
 
 14. ~~3.10 (Release and Deployment)~~ — ✅ v2.0, April 13, 2026.
-15. **3.11 (Capacity and Availability)** — 4 tickets
+15. ~~3.11 (Capacity and Availability)~~ — ✅ v2.0, April 13, 2026. Ripples: #309 (3.02 data intake), #310 (3.12 threshold receipt).
 16. **3.12 (Monitoring and Event Management)** — 5 tickets
 17. **3.14 (IT Project Management)** — 4 tickets
 18. **3.15 (Service Continuity)** — 3 tickets. Verify against 4.05 ripples from Phase 3.
