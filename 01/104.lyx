@@ -1235,9 +1235,25 @@ Subsection Organization
 One Directive Per Item
 \series default
 :
- Each numbered or bulleted item within the Policy Statement shall contain exactly one (1) directive or requirement.
- Blended rules that combine multiple obligations in a single item are prohibited.
+ Each atomic bulleted or numbered item within the Policy Statement shall contain exactly one (1) directive or requirement.
+ Blended items that combine multiple obligations in a single atomic bullet using conjunctions are prohibited.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Clarification
+\series default
+:
+ This rule applies at the atomic item level — each individual Itemize bullet or Enumerate item.
+ A bold-label topic block (defined in Section 6.12) may contain multiple atomic bullets beneath it,
+ each independently satisfying the one-directive rule.
+ Grouping multiple single-directive bullets under a shared parent label is the intended structural pattern,
+ not a violation.
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsubsection*
 6.9 Compliance Language Standards
