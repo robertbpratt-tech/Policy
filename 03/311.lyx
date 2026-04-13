@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -193,67 +193,9 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish the proactive governance framework for capacity and availability management within the Elko County Information Operations Department.
- This policy governs how the Department baselines current capacity and availability,
- forecasts future needs,
- and ensures that infrastructure can meet the service level commitments defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- before those commitments are at risk.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-This policy is concerned with planning:
- establishing baselines,
- identifying trends,
- defining thresholds,
- and driving remediation before gaps become failures.
- Real-time monitoring and alerting against those thresholds is governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.12"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- The threshold values that 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.12"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- implements are defined under this policy.
+This policy governs the baselining,
+ forecasting,
+ and threshold management of capacity and availability for all IT services and infrastructure administered by the Elko County Information Operations Department.
 \end_layout
 
 \begin_layout Subsection*
@@ -266,47 +208,74 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-This policy applies to all Information Operations Department personnel and governs the baselining,
+This policy applies to all Information Operations personnel involved in the baselining,
  forecasting,
- and planning of capacity and availability for all IT services,
+ and planning of capacity and availability for IT services,
  infrastructure,
- endpoints,
  and applications administered by the Department.
- In-scope resource categories include storage capacity,
- compute resources,
- network bandwidth,
- and application performance as they relate to the Department's ability to meet service level commitments.
- All services with active SLA targets under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- are within scope for availability measurement.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The following are outside the scope of this policy:
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-SLA target-setting
+In Scope
 \series default
- is governed by 
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Capacity baseline establishment and maintenance across storage,
+ compute,
+ network bandwidth,
+ and application performance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Availability measurement for all services with active SLA commitments.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Capacity and availability threshold definition.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Forward-looking capacity and availability forecasting and planning.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Quarterly capacity and availability briefing.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+SLA target definitions,
+ severity classification,
+ and service catalog governance:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -322,19 +291,15 @@ nolink "false"
 
 \series default
 .
- This policy plans to meet those targets;
- it does not define them.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
 Real-time monitoring,
  alerting,
- and event response
-\series default
- are governed by 
+ and event response:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -350,12 +315,18 @@ nolink "false"
 
 \series default
 .
- Threshold values defined under this policy are provided to 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Service level performance reporting to stakeholders:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.12"
+reference "pol:3.02"
 plural "false"
 caps "false"
 noprefix "false"
@@ -365,17 +336,14 @@ nolink "false"
 
 
 \series default
- for implementation in monitoring configurations;
- the monitoring itself is not governed here.
+.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Service continuity and recovery planning
-\series default
- for major disruptions are governed by 
+Service continuity and recovery planning for major disruptions:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -391,74 +359,12 @@ nolink "false"
 
 \series default
 .
- This policy governs steady-state proactive capacity and availability management,
- not failure-scenario recovery planning.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Performance reporting to stakeholders
-\series default
- is governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- This policy generates the underlying capacity and availability data;
- reporting obligations are governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Change authorization
-\series default
- for capacity-driven infrastructure changes is governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- This policy identifies the need;
+Change authorization for capacity-driven infrastructure changes:
  
 \series bold
 Policy 
@@ -474,9 +380,10 @@ nolink "false"
 
 
 \series default
- authorizes the change.
+.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -491,43 +398,25 @@ nolink "false"
 IT Director
 \series default
 :
- 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall receive and review a quarterly capacity and availability briefing prepared by the Assistant IT Director.
- 
+Shall receive and review the quarterly capacity and availability briefing prepared by the Assistant IT Director.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall serve as the approving authority for any remediation plan that carries budget implications or requires infrastructure change before submission to the 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- change process.
- 
+Shall approve remediation plans that carry budget implications or require infrastructure change.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall authorize any formal deviation from the planning cadences or threshold documentation requirements established in this policy.
+Shall authorize deviations from the planning cadences or threshold documentation requirements established in this policy.
 \end_layout
 
 \end_deeper
@@ -538,124 +427,29 @@ Shall authorize any formal deviation from the planning cadences or threshold doc
 Assistant IT Director
 \series default
 :
- 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall maintain a current capacity baseline across all in-scope resource categories.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall measure availability actuals against 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- SLA targets no less than monthly and shall update availability records to reflect current actuals in advance of each quarterly briefing.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall define capacity and availability thresholds and provide those threshold values to the 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.12"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- monitoring function for implementation in automated monitoring configurations.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall review threshold values no less than annually,
- or whenever a Significant or Emergency change (as defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-) is executed against the service catalog or infrastructure.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall conduct forward-looking capacity and availability planning no less than annually,
- timed to inform the County budget cycle.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Where forecasting identifies a gap between projected capacity and committed service levels,
- the Assistant IT Director shall develop a remediation plan and present any plan requiring budget or infrastructure change to the IT Director for approval before submission to 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- 
+Shall serve as the operational owner of capacity baselining,
+ availability measurement,
+ threshold management,
+ forecasting,
+ and planning under Section 6.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 Shall prepare and present the quarterly capacity and availability briefing to the IT Director.
- 
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall ensure that capacity and availability data is made available to 
+Shall ensure that capacity and availability data is provided to the reporting processes governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -670,28 +464,7 @@ nolink "false"
 
 
 \series default
- reporting processes.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall ensure that relevant Knowledge Base entries under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.13"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- remain current where applicable.
+ (Service Level Management and Metrics Reporting).
 \end_layout
 
 \end_deeper
@@ -699,7 +472,53 @@ nolink "false"
 
 \series bold
 \lang english
-IT Department Personnel
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall collect and update storage and compute utilization data for capacity baseline maintenance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide domain-specific availability data for systems within their domain to the Assistant IT Director.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall collect and update network bandwidth utilization data for capacity baseline maintenance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide domain-specific availability data for network infrastructure to the Assistant IT Director.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -729,7 +548,7 @@ nolink "false"
 
 
 \series default
-.
+ (Service Request Fulfillment Policy).
 \end_layout
 
 \end_deeper
@@ -743,7 +562,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all Information Operations personnel within scope.
+Compliance with this policy is mandatory for all Information Operations personnel involved in capacity and availability management activities.
 \end_layout
 
 \begin_layout Itemize
@@ -771,7 +590,9 @@ nolink "false"
 
 
 \series default
- and the annual policy review and maturity scoring process defined in 
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -786,7 +607,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -814,7 +635,9 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -824,12 +647,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with 
+ Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved in accordance with the exception management framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -839,7 +662,9 @@ nolink "false"
 
 
 \series default
-.
+,
+ Section 6.6.
+ Oral exceptions are not valid.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
 \end_layout
@@ -849,6 +674,15 @@ nolink "false"
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -893,6 +727,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:3.09"
 plural "false"
 caps "false"
@@ -929,6 +781,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:3.15"
 plural "false"
 caps "false"
@@ -956,7 +826,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -974,7 +846,36 @@ nolink "false"
 \end_inset
 
 :
- Internal Audits and Self-Assessment Procedures
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -1005,6 +906,65 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy governs capacity and availability planning:
+ establishing baselines,
+ defining thresholds,
+ identifying trends,
+ and driving remediation before gaps become service failures.
+ The threshold values defined under this policy are provided to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Monitoring and Event Management Policy) for implementation in automated monitoring configurations;
+ real-time monitoring and alerting against those thresholds is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ not this policy.
+ The services under management are those with active SLA commitments under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Catalog and SLA Policy).
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
@@ -1014,16 +974,63 @@ ITIL v4:
 \begin_layout Standard
 
 \lang english
-The Department shall maintain a current capacity baseline across all in-scope resource categories:
+The Assistant IT Director shall maintain a current capacity baseline across all in-scope resource categories:
  storage,
  compute,
  network bandwidth,
  and application performance.
- The baseline shall be established from measured actuals and updated no less than quarterly.
- The baseline is the authoritative reference point against which forecasting,
- trend analysis,
- and threshold calibration are conducted.
- The Assistant IT Director shall ensure the accuracy of the capacity baseline through quarterly validation.
+ The Assistant IT Director shall establish the baseline from measured actuals,
+ shall update the baseline no less than quarterly,
+ and shall document the baseline in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Data Collection
+\series default
+:
+ The Systems Administrator shall collect and update storage and compute utilization data.
+ The Network Administrator shall collect and update network bandwidth utilization data.
+ The Systems Administrator and Network Administrator shall each submit updated utilization data to the Assistant IT Director no later than the fifth (5th) business day of each quarter.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Quarterly Validation
+\series default
+:
+ The Assistant IT Director shall validate the accuracy of the capacity baseline no less than quarterly by reconciling domain inputs against the documented baseline and correcting any discrepancies.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Knowledge Base Maintenance
+\series default
+:
+ The Assistant IT Director shall ensure that Knowledge Base entries maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Knowledge Management Policy) that document capacity baselines,
+ availability thresholds,
+ or planning procedures are reviewed and updated following each quarterly baseline validation.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1035,7 +1042,7 @@ The Department shall maintain a current capacity baseline across all in-scope re
 \begin_layout Standard
 
 \lang english
-Availability shall be measured for all services with active SLA targets under 
+The Assistant IT Director shall measure availability for all services with active SLA commitments under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1051,7 +1058,7 @@ nolink "false"
 
 \series default
 .
- Availability measurement shall distinguish planned downtime from unplanned downtime.
+ The Assistant IT Director shall distinguish planned downtime from unplanned downtime in all availability measurements.
  The Assistant IT Director shall measure availability actuals against 
 \series bold
 Policy 
@@ -1068,7 +1075,20 @@ nolink "false"
 
 \series default
  SLA targets no less than monthly and shall update availability records to reflect current actuals in advance of each quarterly briefing.
- Availability data shall be made available to 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Systems Administrator shall provide domain-specific availability data for systems within their domain.
+ The Network Administrator shall provide domain-specific availability data for network infrastructure.
+ The Systems Administrator and Network Administrator shall each submit availability data to the Assistant IT Director no later than the fifth (5th) business day of the following month.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall ensure that availability data is provided to the 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1083,7 +1103,7 @@ nolink "false"
 
 
 \series default
- reporting processes.
+ reporting processes for inclusion in service level performance reports.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1098,7 +1118,11 @@ nolink "false"
 The Assistant IT Director shall define capacity and availability thresholds that,
  when breached,
  indicate risk to service level commitments.
- Threshold values shall be documented and provided to the 
+ Each threshold entry shall include the resource category,
+ the metric being measured,
+ the threshold value,
+ and the associated service or configuration item.
+ The Assistant IT Director shall document threshold values in the System of Engagement and shall provide them to the 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1114,7 +1138,13 @@ nolink "false"
 
 \series default
  monitoring function for implementation in automated monitoring configurations.
- Threshold values shall be reviewed no less than annually or whenever a Significant or Emergency change (as defined in 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall review threshold values no less than annually or whenever a Significant or Emergency change,
+ as defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1129,7 +1159,8 @@ nolink "false"
 
 
 \series default
-) is executed against the service catalog or infrastructure.
+ (Change Management Policy),
+ is executed against the service catalog or infrastructure.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1141,13 +1172,18 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The Department shall conduct forward-looking capacity and availability planning no less than annually.
- Planning shall be timed to inform the County budget cycle and shall account for known service changes,
+The Assistant IT Director shall conduct forward-looking capacity and availability planning no less than annually.
+ The Assistant IT Director shall time planning to inform the County budget cycle and shall account for known service changes,
  projected growth,
  and aging infrastructure.
- Where forecasting identifies a gap between projected capacity and committed service levels,
- the Assistant IT Director shall develop a remediation plan.
- Remediation plans requiring budget or infrastructure change shall be presented to the IT Director for approval before submission to the 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Where forecasting identifies a gap between projected capacity and committed service levels,
+ the Assistant IT Director shall develop a remediation plan within thirty (30) calendar days of gap identification.
+ The Assistant IT Director shall present any remediation plan requiring budget allocation or infrastructure change to the IT Director for approval before submission to the 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1163,7 +1199,12 @@ nolink "false"
 
 \series default
  change process.
- Emergency capacity issues requiring immediate infrastructure change shall be routed through the 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall route emergency capacity issues requiring immediate infrastructure change through the 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1207,10 +1248,30 @@ nolink "false"
 \series default
  identifies a threshold breach,
  the Assistant IT Director shall investigate and determine whether the breach represents a transient condition or a structural capacity or availability gap.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Transient Conditions
+\series default
+:
  The Assistant IT Director shall document transient conditions,
  including duration and impact,
- within the designated System of Engagement (Redmine) prior to closing the event.
- Structural gaps shall be addressed through the forecasting and planning process defined in Section 6.4.
+ in the System of Engagement prior to closing the associated record.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Structural Gaps
+\series default
+:
+ The Assistant IT Director shall document structural gaps in the System of Engagement.
+ The Assistant IT Director shall escalate gaps that pose imminent risk to service level commitments to the remediation planning process defined in Section 6.4 immediately.
+ The Assistant IT Director shall incorporate gaps that do not pose imminent risk into the next annual planning cycle under Section 6.4.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1225,7 +1286,6 @@ nolink "false"
 The Assistant IT Director shall prepare and present a quarterly capacity and availability briefing to the IT Director.
  The briefing shall include,
  at minimum:
- 
 \end_layout
 
 \begin_layout Itemize
@@ -1252,7 +1312,29 @@ nolink "false"
 
 
 \series default
- SLA targets.
+ SLA targets,
+ distinguishing planned and unplanned downtime.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Threshold breaches recorded during the quarter and any threshold risk trends identified through monitoring under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1270,7 +1352,7 @@ Status of any active remediation plans.
 \begin_layout Standard
 
 \lang english
-The quarterly briefing cycle shall be timed to align with the County budget calendar.
+The Assistant IT Director shall schedule the quarterly briefing cycle to support County budget planning milestones.
 \end_layout
 
 \end_body
