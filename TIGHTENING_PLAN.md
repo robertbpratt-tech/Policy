@@ -27,8 +27,8 @@ The Recommended Sequence (§6) is advisory. Robert makes final sequencing calls 
 2. **Close resolved issues** — comment with resolution details, then close. Update parent sweep tickets (#208, #8, etc.) with per-policy resolution notes.
 3. **Update and push this plan** — update §5 (target policy state, version, open ticket count) and §6 (mark the completed entry). If new ripples were filed against other policies, update their §5 rows. Push to repo.
 4. **Ask Robert if we're done** — do not declare session complete unilaterally. IF confirmed done, then we continue on the checklist.
-5. **Commit tightened LyX via API** — push the final LyX file to the repo. Confirm the version number in the metadata line matches what §5 will record. Robert syncs local repo afterward.
-6. **Verify synchronization** — the plan, the issue tracker, and the repo LyX files shall agree.
+5. **Commit tightened LyX via API** — push the final LyX file to the repo and update the README.md to match. Confirm the version number in the metadata line matches what §5 will record. Robert syncs local repo afterward.
+6. **Verify synchronization** — the plan, the issue tracker, the repo LyX files, and the README.md shall agree.
 7. **Next session notice** — remind Robert of the next policy to tackle.
 
 ---
