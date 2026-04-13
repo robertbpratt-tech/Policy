@@ -26,8 +26,9 @@ The Recommended Sequence (§6) is advisory. Robert makes final sequencing calls 
 1. **File all ripple issues immediately** — never defer a ripple as a session note. Ripples are filed to GitHub during the session for proper tracking.
 2. **Close resolved issues** — comment with resolution details, then close. Update parent sweep tickets (#208, #8, etc.) with per-policy resolution notes.
 3. **Update this plan** — update §5 (target policy state, version, open ticket count) and §6 (mark the completed entry with session summary). If new ripples were filed against other policies, update their §5 rows with the new ticket number and incremented count.
-4. **Verify synchronization** — the plan and the issue tracker shall agree. If a ticket was closed, §5 reflects it. If a ticket was filed, §5 reflects it.
-5. **Next Session Notice** \xe2\x80\x9 Remind Robert of the next policy that we need to tackle at this point so it doesn't get lost in the conversation.
+4. **ASK TO UPDATE GITHUB** — Directly ask if I want to sync the final version to GitHub in the session. Assume yes unless I say otherwise.
+5. **Verify synchronization** — the plan and the issue tracker shall agree. If a ticket was closed, §5 reflects it. If a ticket was filed, §5 reflects it.
+6. **Next Session Notice** — Remind Robert of the next policy that we need to tackle at this point so it doesn't get lost in the conversation.
 
 ---
 
