@@ -121,7 +121,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — |
 | 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — |
 | 1.07 | Workforce Roles | T | v1.3 | 0 | — |
-| 1.08 | Delegation of Authority | T | v1.3 | 0 | — |
+| 1.08 | Delegation of Authority | T | v1.4 | 0 | — |
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
 | 1.10 | IT Financial / Procurement | D | — | 4 | #50, #51, #299, +1 |
 | 1.11 | Data Governance and Classification | T | v2.2 | 0 | — |
@@ -154,14 +154,14 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 3.01 | Service Catalog and SLA | T | v2.3 | 0 | — |
-| 3.02 | Service Level Management | T | v2.2 | 0 | — |
+| 3.02 | Service Level Management | T | v2.5 | 0 | — |
 | 3.03 | Service Communication | T | v2.0 | 0 | — |
-| 3.04 | Service Delivery Feedback | T | v2.2 | 0 | — |
-| 3.05 | Service Request Fulfillment | T | v2.2 | 0 | — |
-| 3.06 | Operational Incident Management | T | v2.2 | 0 | — |
+| 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
+| 3.05 | Service Request Fulfillment | T | v2.1 | 0 | — |
+| 3.06 | Operational Incident Management | T | v2.1 | 0 | — |
 | 3.07 | Problem Management | T | v2.2 | 0 | — |
 | 3.08 | CMDB | T | v2.1 | 0 | — |
-| 3.09 | Change Management | T | v2.1 | 0 | — |
+| 3.09 | Change Management | T | v2.0 | 0 | — |
 | 3.10 | Release and Deployment | D | — | 4 | #138, #139, #140, +1 |
 | 3.11 | Capacity and Availability | D | — | 4 | #141, #142, #143, +1 |
 | 3.12 | Monitoring and Event Management | D | — | 5 | #144, #145, #146, +2 |
@@ -177,17 +177,17 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|
 | 4.01 | IR Policy Overview | T | v2.0 | 0 | — |
 | 4.02 | Identification and Reporting | T | v2.1 | 0 | — |
-| 4.03 | Containment Strategy and Playbooks | T | v2.1 | 0 | — |
+| 4.03 | Containment Strategy and Playbooks | T | v2.0 | 0 | — |
 | 4.04 | Eradication | T | v2.2 | 0 | — |
 | 4.05 | Recovery and Restoration | T | v2.1 | 0 | — |
 | 4.06 | Communication Protocols | T | v2.2 | 0 | — |
-| 4.07 | Postmortem and Lessons Learned | T | v2.3 | 0 | — |
+| 4.07 | Postmortem and Lessons Learned | T | v1.0 | 0 | — |
 
 ### Chapter 5 — Compliance
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 5.01 | Implementation, Enforcement, Legal | T | v3 | 0 | — |
+| 5.01 | Implementation, Enforcement, Legal | T | v1.0 | 0 | — |
 | 5.02 | Internal Audits | D | — | 5 | +5 |
 | 5.03 | Compliance Monitoring | D | — | 2 | +2 |
 | 5.04 | Performance Metrics | D | — | 1 | +1 |
@@ -242,12 +242,12 @@ Sequencing principles, in priority order:
 
 6. ~~3.08 (CMDB)~~ — ✅ v2.1, April 12, 2026.
 7. ~~4.04 (Eradication)~~ — ✅ v2.2, April 12, 2026.
-8. ~~3.09 (Change Management)~~ — ✅ v2.1, April 12, 2026.
+8. ~~3.09 (Change Management)~~ — ✅ v2.0, April 12, 2026.
 9. ~~4.05 (Recovery)~~ — ✅ v2.1, April 12, 2026.
 10. ~~3.13 (Knowledge Management)~~ — ✅ v2.1, April 12, 2026.
-11. ~~4.03 (Containment)~~ — ✅ v2.1, April 12, 2026.
+11. ~~4.03 (Containment)~~ — ✅ v2.0, April 12, 2026.
 12. ~~4.02 (Identification and Reporting)~~ — ✅ v2.1, April 12, 2026.
-13. ~~4.07 (Postmortem)~~ — ✅ v2.3, April 13, 2026.
+13. ~~4.07 (Postmortem)~~ — ✅ v1.0, April 13, 2026.
 
 ---
 
