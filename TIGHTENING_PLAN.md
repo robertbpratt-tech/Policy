@@ -99,6 +99,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 10. **Restore TAC as a §3 role in 1.11** — TACs are department-level CJIS designees at consuming agencies, not IO personnel. ECIO has no authority to impose obligations on them.
 11. **ChatGPT: restore product names (e.g., Redmine) for cross-policy consistency** — 1.04 §6.10 prohibits product names; untightened policies will be cleaned during their sessions.
 12. **Accept dash Out of Scope convention as Ch4 standing pattern** — 1.04 §6.4 prescribes colon format. The dash pattern was a regression corrected in 4.04 v2.2.
+13. **ChatGPT: narrow 3.12 IC designation to pre-work-order scope or delete communications spokesperson** — IC is incorporated by reference from 3.06, not independent authority. Proposed narrowing is architecturally incoherent (IC commands response, not monitoring; "up to work order creation" would give IC zero authority since incidents require work orders). "Operational" qualifier + §6.3 Security Handoff + §2 Out of Scope already draw the jurisdictional boundary.
 
 ---
 
@@ -125,7 +126,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.08 | Delegation of Authority | T | v1.4 | 0 | — |
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
 | 1.10 | IT Financial / Procurement | D | — | 4 | #50, #51, #299, +1 |
-| 1.11 | Data Governance and Classification | T | v2.2 | 0 | — |
+| 1.11 | Data Governance and Classification | T+ | v2.2 | 1 | #311 |
 | 1.12 | IT Asset Management | D | — | 6 | #53, #54, #55, #256, #301, +1 |
 | 1.13 | Supply Chain Risk Management | D | — | 2 | #56, +1 |
 | 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
@@ -165,7 +166,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.09 | Change Management | T | v2.0 | 0 | — |
 | 3.10 | Release and Deployment | T | v2.0 | 0 | — |
 | 3.11 | Capacity and Availability | T | v2.0 | 0 | — |
-| 3.12 | Monitoring and Event Management | D | — | 6 | #144, #145, #146, #310, +2 |
+| 3.12 | Monitoring and Event Management | T | v2.0 | 0 | — |
 | 3.13 | Knowledge Management | T | v2.1 | 0 | — |
 | 3.14 | IT Project Management | D | — | 4 | #150, #151, #152, #295 |
 | 3.15 | Service Continuity | D | — | 3 | #153, #154, +1 |
@@ -258,7 +259,7 @@ Sequencing principles, in priority order:
 
 14. ~~3.10 (Release and Deployment)~~ — ✅ v2.0, April 13, 2026.
 15. ~~3.11 (Capacity and Availability)~~ — ✅ v2.0, April 13, 2026. Ripples: #309 (3.02 data intake), #310 (3.12 threshold receipt).
-16. **3.12 (Monitoring and Event Management)** — 5 tickets
+16. ~~3.12 (Monitoring and Event Management)~~ — ✅ v2.0, April 13, 2026. Ripple: #311 (1.11 LRDA title correction).
 17. **3.14 (IT Project Management)** — 4 tickets
 18. **3.15 (Service Continuity)** — 3 tickets. Verify against 4.05 ripples from Phase 3.
 19. **3.16 (Service Improvement)** — 4 tickets
