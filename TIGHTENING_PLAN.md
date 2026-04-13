@@ -158,12 +158,12 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.02 | Service Level Management | T | v2.5 | 0 | — |
 | 3.03 | Service Communication | T | v2.0 | 0 | — |
 | 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
-| 3.05 | Service Request Fulfillment | T | v2.1 | 0 | — |
+| 3.05 | Service Request Fulfillment | T | v2.1 | 1 | #308 |
 | 3.06 | Operational Incident Management | T | v2.1 | 0 | — |
 | 3.07 | Problem Management | T | v2.2 | 0 | — |
 | 3.08 | CMDB | T | v2.1 | 0 | — |
 | 3.09 | Change Management | T | v2.0 | 0 | — |
-| 3.10 | Release and Deployment | D | — | 4 | #138, #139, #140, +1 |
+| 3.10 | Release and Deployment | T | v2.0 | 0 | — |
 | 3.11 | Capacity and Availability | D | — | 4 | #141, #142, #143, +1 |
 | 3.12 | Monitoring and Event Management | D | — | 5 | #144, #145, #146, +2 |
 | 3.13 | Knowledge Management | T | v2.1 | 0 | — |
@@ -256,7 +256,7 @@ Sequencing principles, in priority order:
 
 **Goal:** Close out the service management chapter. No tight Chapter 4 dependencies remaining after Phase 3.
 
-14. **3.10 (Release and Deployment)** — 4 tickets
+14. ~~3.10 (Release and Deployment)~~ — ✅ v2.0, April 13, 2026.
 15. **3.11 (Capacity and Availability)** — 4 tickets
 16. **3.12 (Monitoring and Event Management)** — 5 tickets
 17. **3.14 (IT Project Management)** — 4 tickets
