@@ -43,7 +43,7 @@
 | 3.09 | Change Management Policy | x |
 | 3.10 | Release and Deployment Policy | x |
 | 3.11 | Capacity and Availability Management Policy | x |
-| 3.12 | Monitoring and Event Management Policy | o |
+| 3.12 | Monitoring and Event Management Policy | x |
 | 3.13 | Knowledge Management Policy | x |
 | 3.14 | IT Project Management Policy | o |
 | 3.15 | Service Continuity and Contingency Planning Policy | o |
