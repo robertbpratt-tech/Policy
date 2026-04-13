@@ -131,7 +131,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 9. **CSF subcategory citation hallucinations** — verify against CSF 2.0 Appendix A before accepting (e.g., PR.AT-03 does not exist; ID.IM-04 was misdescribed).
 11. **ChatGPT: restore product names (e.g., Redmine) for cross-policy consistency** — 1.04 §6.10 prohibits product names; untightened policies will be cleaned during their sessions. Declined three times across two rounds in 3.09 session (April 12, 2026).
 10. **Restore TAC as a §3 role in 1.11** — TACs are department-level CJIS designees at consuming agencies (Justice Court, Sheriff's Office, District Court), not IO personnel. ECIO has no authority to impose obligations on them. Declined twice across two validator rounds (April 11, 2026). IT Director confirmed operational reality.
-12. **Accept dash Out of Scope convention as Ch4 standing pattern** — 1.04 §6.4 prescribes "[Topic]: **Policy [X.XX]**." with a colon. The "[Topic] — governed by **Policy [X.XX]**." pattern used in 4.04/4.05 is a regression, not a precedent. 4.01 v2.0 uses the correct colon format. Decline any suggestion to treat the dash pattern as acceptable. Filed #306 as regression (April 12, 2026).
+12. **Accept dash Out of Scope convention as Ch4 standing pattern** — 1.04 §6.4 prescribes "[Topic]: **Policy [X.XX]**." with a colon. The "— governed by" pattern was a regression in 4.04 v2.1, corrected in v2.2. 4.05 verified clean. 4.01 v2.0 uses the correct colon format. Decline any suggestion to treat the dash pattern as acceptable.
 
 ---
 
@@ -212,8 +212,8 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 4.01 | IR Policy Overview | T | v2.0 | 0 | — | |
 | 4.02 | Identification and Reporting | D | — | 1 | +1 | Carries #264 subtask (L3 stage 1 triage); standalone in Phase 3 |
 | 4.03 | Containment Strategy and Playbooks | T | v2.1 | 0 | — | Phase 3 collector (3.13 → 4.03); completed April 12, 2026. Source of truth for §6.16 transcription. #296 closed (emergency axioms verified). |
-| 4.04 | Eradication | T+ | v2.1 | 4 | #302, #303, #306, #307 | Phase 3 collector (3.08 → 4.04); completed April 12, 2026. #302 = CM trigger by-reference (from 4.05 session); #303 = IC designee scope verification (from 4.05 session); #306 = §2 Out of Scope format regression (from 4.03 session); #307 = notification clock label + SP 800-61 title (from 4.03 session) |
-| 4.05 | Recovery and Restoration | T+ | v2.1 | 1 | #306 | Phase 3 collector (3.09 → 4.05); completed April 12, 2026. IC designee clarifier scoped to any IO Personnel member. County Manager triggers converted to by-reference. Postmortem deferral struck. #306 = §2 Out of Scope format regression (from 4.03 session, needs verification) |
+| 4.04 | Eradication | T | v2.2 | 0 | — | Phase 3 collector (3.08 → 4.04); v2.1 completed April 12, 2026. v2.2 patch pass (April 12, 2026): #302 CM triggers by-reference, #303 IC designee scope broadened + non-transfer, #306 §2 colon format, #307 notification clock + CJIS IR-6 → FA |
+| 4.05 | Recovery and Restoration | T | v2.1 | 0 | — | Phase 3 collector (3.09 → 4.05); completed April 12, 2026. IC designee clarifier scoped to any IO Personnel member. County Manager triggers converted to by-reference. Postmortem deferral struck. #306 §2 Out of Scope format verified clean (already uses colon format) |
 | 4.06 | Communication Protocols | T | v2.2 | 0 | — | #284 LASO dissolution + #268 Admin Asst directory landed April 11, 2026 |
 | 4.07 | Postmortem and Lessons Learned | D | — | 2 | #259, +1 | #259 = scope boundary with 3.06 §6.8; standalone in Phase 3 |
 
