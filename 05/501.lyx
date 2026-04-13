@@ -1304,7 +1304,11 @@ For purposes of this policy,
  references to the Department's system of record refer to the designated operational recordkeeping system for enforcement actions,
  acknowledgments,
  and exception records.
- This is distinct from the Authoritative System of Record maintained under 
+ This is distinct from the 
+\series bold
+Authoritative System of Record
+\series default
+ maintained under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
