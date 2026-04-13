@@ -651,12 +651,13 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall authorize formal exceptions to this policy in accordance with 
+Shall ensure that the Incident Commander for the reviewed incident —
+ the IT Director or designee as designated under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:4.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -666,7 +667,47 @@ nolink "false"
 
 
 \series default
- (Delegation of Authority and Decision Rights).
+ (Incident Response Policy Overview) §6.1 —
+ participates in the postmortem meeting as a mandatory attendee.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that the Incident Commander provides the Postmortem Lead with a written summary of key response decisions,
+ rationale,
+ and observations prior to or during the postmortem meeting.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall retain postmortem report approval,
+ exception authorization under Section 4,
+ and findings routing disposition under Section 6.6 as non-transferable IT Director functions that shall not pass to a designee serving as Incident Commander.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize formal exceptions to this policy in accordance with the exception management framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment) §6.6.
 \end_layout
 
 \end_deeper
@@ -739,7 +780,7 @@ Shall maintain postmortem records in the System of Engagement in accordance with
 
 \series bold
 \lang english
-Incident Commander (when not the IT Director or Assistant IT Director)
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -748,32 +789,7 @@ Incident Commander (when not the IT Director or Assistant IT Director)
 \begin_layout Itemize
 
 \lang english
-Shall participate in the postmortem meeting as a mandatory attendee.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall provide the Postmortem Lead with a written summary of key response decisions,
- rationale,
- and observations prior to or during the postmortem meeting.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-IT Department Personnel
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall attend the postmortem meeting when directed by the Postmortem Lead.
+Shall attend the postmortem meeting unless excused by the Postmortem Lead.
 \end_layout
 
 \begin_layout Itemize
@@ -851,13 +867,7 @@ nolink "false"
 Enforcement
 \series default
 :
- The following conditions constitute specific non-compliance with this policy:
- failure to initiate a postmortem review for a declared cybersecurity incident;
- failure to complete the internal postmortem report within the timeline established in Section 6.3;
- failure to preserve the Postmortem Lead's draft findings as required by Section 6.4;
- failure to prepare the external postmortem derivative within the timeline established in Section 6.5;
- failure to route actionable findings in accordance with Section 6.6;
- and failure to maintain postmortem records in accordance with Section 6.8.
+ The following conditions constitute specific non-compliance with this policy.
  Non-compliance may result in corrective action in accordance with 
 \series bold
 Policy 
@@ -873,11 +883,47 @@ nolink "false"
 
 
 \series default
- (Policy Implementation,
- Enforcement,
- and Legal Alignment).
+.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Failure to initiate a postmortem review for a declared cybersecurity incident.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Failure to complete the internal postmortem report within the timeline established in Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Failure to preserve the Postmortem Lead's draft findings as required by Section 6.4.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Failure to prepare the external postmortem derivative within the timeline established in Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Failure to route actionable findings in accordance with Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Failure to maintain postmortem records in accordance with Section 6.8.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -900,11 +946,29 @@ nolink "false"
 
 
 \series default
-.
+ §6.6.
  No open-ended exceptions are permitted.
  All approved exceptions shall be documented and time-bounded.
  Oral exceptions are not valid.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
+ The following obligations constitute a non-waivable floor and shall not be reduced or eliminated by any approved exception:
+ the mandatory postmortem trigger (Section 6.1),
+ the separation of duties requirement (Section 6.2),
+ the draft findings preservation requirement (Section 6.4),
+ and the retention obligations (Section 6.8).
+ No exception may permit the Incident Commander for an incident to serve as Postmortem Lead for that same incident.
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsection*
 
@@ -920,42 +984,6 @@ nolink "false"
 Cited References
 \series default
 :
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Policy and Documentation Formatting Standards
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Delegation of Authority and Decision Rights
 \end_layout
 
 \begin_layout Itemize
@@ -1000,6 +1028,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:3.07"
 plural "false"
 caps "false"
@@ -1010,6 +1056,42 @@ nolink "false"
 
 :
  Problem Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB) Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
 \end_layout
 
 \begin_layout Itemize
@@ -1229,13 +1311,6 @@ LRDA 20071728 (IT Security Audit Records)
 \begin_layout Itemize
 
 \lang english
-CJIS Security Policy v6.0:
- Section IR-4 (Incident Handling)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 NIST CSF 2.0:
  ID.IM-01 (Improvements Identified from Evaluations)
 \end_layout
@@ -1250,24 +1325,9 @@ NIST CSF 2.0:
 \begin_layout Itemize
 
 \lang english
-NIST CSF 2.0:
- RS.AN-03 (Incident Analysis and Root Cause)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 NIST SP 800-53 Rev.
  5:
  IR-4 (Incident Handling)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-61 Rev.
- 3:
- Incident Response Recommendations and Considerations for Cyber Risk Management
 \end_layout
 
 \begin_layout Standard
@@ -1290,7 +1350,21 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
+ Section IR-4 (Incident Handling)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
  Section IR-8 (Incident Response Plan)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ RS.AN-03 (Incident Analysis and Root Cause)
 \end_layout
 
 \begin_layout Itemize
@@ -1312,6 +1386,14 @@ NIST SP 800-53 Rev.
 \begin_layout Itemize
 
 \lang english
+NIST SP 800-61 Rev.
+ 3:
+ Incident Response Recommendations and Considerations for Cybersecurity Risk Management
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 COBIT 2019:
  DSS02 (Managed Service Requests and Incidents)
 \end_layout
@@ -1319,8 +1401,15 @@ COBIT 2019:
 \begin_layout Itemize
 
 \lang english
+COBIT 2019:
+ DSS03 (Managed Problems)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 ITIL v4:
- Incident Management Practice
+ Continual Improvement Practice
 \end_layout
 
 \begin_layout Itemize
@@ -1479,7 +1568,7 @@ When the Incident Commander was not the IT Director
 \begin_layout Standard
 
 \lang english
-The Postmortem Lead is responsible for scheduling the postmortem meeting,
+The Postmortem Lead shall schedule the postmortem meeting,
  conducting the structured review,
  preparing the internal postmortem report,
  and presenting findings and recommended routing dispositions to the IT Director for approval.
@@ -1537,7 +1626,7 @@ External Postmortem Derivative
 
 \lang english
 The internal postmortem report is the authoritative record of the Department's review of its response to a cybersecurity incident.
- The report shall be documented in the System of Engagement (Redmine) and shall include,
+ The report shall be documented in the System of Engagement and shall include,
  at minimum,
  the following content:
 \end_layout
@@ -1745,7 +1834,7 @@ Draft Findings Preservation
  This preservation requirement applies regardless of whether the IT Director modifies,
  supplements,
  or adds an addendum to the final report.
- The Redmine History provides the system-generated,
+ The System of Engagement revision history provides the system-generated,
  tamper-evident audit trail confirming the sequence of drafts and approvals.
 \end_layout
 
@@ -1762,7 +1851,7 @@ The external postmortem derivative is a controlled derivative of the internal po
  prepared for distribution to audiences outside the Department —
  including the County Manager,
  external partners,
- and oversight bodies as applicable.
+ and oversight bodies when the IT Director determines distribution is warranted.
  The external derivative is not an independent document;
  its factual content shall be consistent with the approved internal report.
 \end_layout
@@ -2230,7 +2319,7 @@ nolink "false"
 
 
 \series default
- Section 2.
+ Section 6.1.
  That determination is an IT Director governance decision;
  it is not a mechanical output of the postmortem process.
  This policy does not open 
@@ -2249,6 +2338,30 @@ nolink "false"
 
 \series default
  Problem records.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Operational Incident Management Policy) §6.8 establishes the Critical Incident Stakeholder Report as the formal reporting instrument for Critical severity operational incidents.
+ That instrument is distinct from this policy's cybersecurity postmortem and the two are not interchangeable.
+ The stakeholder report governs operational accountability reporting;
+ this policy governs cybersecurity incident lessons learned.
 \end_layout
 
 \begin_layout Subsubsection*
