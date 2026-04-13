@@ -175,7 +175,7 @@ Effective:
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -295,8 +295,8 @@ Out of Scope
 \begin_layout Itemize
 
 \lang english
-IoC evaluation and incident declaration —
- governed by 
+IoC evaluation and incident declaration:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -317,8 +317,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Containment strategy selection and execution —
- governed by 
+Containment strategy selection and execution:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -339,8 +339,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Recovery operations and Operational Handback —
- governed by 
+Recovery operations and Operational Handback:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -361,8 +361,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Data and system classification for recovery —
- governed by 
+Data and system classification for recovery:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -383,8 +383,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Stakeholder communication and external notification execution —
- governed by 
+Stakeholder communication and external notification execution:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -405,8 +405,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Postmortem review and lessons learned —
- governed by 
+Postmortem review and lessons learned:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -427,8 +427,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-CI record governance —
- governed by 
+CI record governance:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -449,8 +449,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Change categorization and RFC governance —
- governed by 
+Change categorization and RFC governance:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -471,8 +471,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Security baseline definitions —
- governed by 
+Security baseline definitions:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -548,7 +548,22 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall ensure that when a designated Incident Commander serves per 
+May designate any Information Operations Personnel member as Incident Commander for a specific incident per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -563,8 +578,17 @@ nolink "false"
 
 
 \series default
-,
- the designee exercises the same obligations listed under this role for the duration of the designation.
+;
+ the designee exercises all IC authority defined in this section for the duration of the designation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall retain personal responsibility for CCA review,
+ exception approval,
+ and incident classification decisions;
+ these obligations shall not transfer to a designee.
 \end_layout
 
 \begin_layout Itemize
@@ -1414,13 +1438,6 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-CJIS Security Policy v6.0:
- Section IR-6 (Incident Reporting)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 NIST CSF 2.0:
  RS.MI-02 (Incident Eradication)
 \end_layout
@@ -1457,6 +1474,13 @@ LRDA 20071728 (IT Security Audit Records)
 \lang english
 CJIS Security Policy v6.0:
  Section IR-4 (Incident Handling)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
 \end_layout
 
 \begin_layout Itemize
@@ -1625,7 +1649,7 @@ Outstanding catch-up RFC items with assigned owners and due dates.
 \begin_layout Standard
 
 \lang english
-The CJIS IR-6 notification clock established in 
+The external notification clock established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2119,9 +2143,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-If an eradication action meets any of the following triggers,
- the IC shall notify the County Manager no later than four (4) hours after the action begins,
- per 
+If an eradication action meets any County Manager consultation trigger defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2136,37 +2158,8 @@ nolink "false"
 
 
 \series default
- Section 6.6:
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Systems whose compromise could affect elections.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Planned downtime or degraded service visible to the public or other County departments for more than one (1) business day.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Decommission or replacement of operationally critical infrastructure.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Any action the IC determines carries political or notable operational implications.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The IC shall identify applicable triggers at the time of action and ensure notification is initiated within the four (4) hour window.
+ Section 6.6,
+ the IC shall notify the County Manager no later than four (4) hours after the action begins.
 \end_layout
 
 \begin_layout Subsubsection*
