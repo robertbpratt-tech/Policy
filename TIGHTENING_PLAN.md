@@ -21,14 +21,15 @@ The Recommended Sequence (§6) is advisory. Robert makes final sequencing calls 
 
 **Recalculation markers.** This plan contains ◆ RECALCULATE SEQUENCE HERE ◆ markers in §6. They are hard checkpoints, not advisory. When a recalc marker is reached, the next session shall begin by re-running the architectural roots check, refreshing per-policy ticket counts against the current GitHub state, and re-evaluating the remaining sequence before starting any new tightening work. Skipping the recalc is a process violation.
 
-**Session-close checklist.** At the end of every tightening session, before declaring the session complete:
+**Session-close checklist.** Claude shall run through these items in order. Claude does not declare the session complete — Robert does. After completing the checklist, Claude asks: "Anything else, or are we done?"
 
 1. **File all ripple issues immediately** — never defer a ripple as a session note.
 2. **Close resolved issues** — comment with resolution details, then close. Update parent sweep tickets (#208, #8, etc.) with per-policy resolution notes.
-3. **Update this plan** — update §5 (target policy state, version, open ticket count) and §6 (mark the completed entry with session summary). If new ripples were filed against other policies, update their §5 rows.
-4. **ASK TO UPDATE GITHUB** — Directly ask if I want to sync the final version of the LyX Policy to GitHub in the session. Assume yes unless I say otherwise.
-5. **Verify synchronization** — the plan and the issue tracker shall agree.
-6. **Next Session Notice** — Remind Robert of the next policy to tackle.
+3. **Commit tightened LyX via API** — push the final LyX file to the repo. Confirm the version number in the metadata line matches what §5 will record. Robert syncs local repo afterward.
+4. **Update and push this plan** — update §5 (target policy state, version, open ticket count) and §6 (mark the completed entry). If new ripples were filed against other policies, update their §5 rows. Push to repo.
+5. **Verify synchronization** — the plan, the issue tracker, and the repo LyX files shall agree.
+6. **Next session notice** — remind Robert of the next policy to tackle.
+7. **Ask Robert if we're done** — do not declare session complete unilaterally.
 
 ---
 
