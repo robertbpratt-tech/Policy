@@ -1134,6 +1134,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Containment Strategy and Playbooks
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.01"
 plural "false"
 caps "false"
@@ -1411,6 +1429,46 @@ nolink "false"
 
 \series default
 .
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident Response Playbooks
+\series default
+:
+ Scenario-based containment and response artifacts governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Containment Strategy and Playbooks) and formatted per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.16.
 \end_layout
 
 \begin_layout Itemize
