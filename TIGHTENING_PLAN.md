@@ -26,7 +26,7 @@ The Recommended Sequence (§6) is advisory. Robert makes final sequencing calls 
 1. **File all ripple issues immediately** — never defer a ripple as a session note.
 2. **Close resolved issues** — comment with resolution details, then close. Update parent sweep tickets (#208, #8, etc.) with per-policy resolution notes.
 3. **Update this plan** — update §5 (target policy state, version, open ticket count) and §6 (mark the completed entry with session summary). If new ripples were filed against other policies, update their §5 rows.
-4. **ASK TO UPDATE GITHUB** — Directly ask if I want to sync the final version to GitHub in the session. Assume yes unless I say otherwise.
+4. **ASK TO UPDATE GITHUB** — Directly ask if I want to sync the final version of the LyX Policy to GitHub in the session. Assume yes unless I say otherwise.
 5. **Verify synchronization** — the plan and the issue tracker shall agree.
 6. **Next Session Notice** — Remind Robert of the next policy to tackle.
 
