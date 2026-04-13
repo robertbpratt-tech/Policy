@@ -41,8 +41,8 @@
 | 3.07 | Problem Management Policy | x |
 | 3.08 | Service Configuration Management (CMDB) Policy | x |
 | 3.09 | Change Management Policy | x |
-| 3.10 | Release and Deployment Policy | o |
-| 3.11 | Capacity and Availability Management Policy | o |
+| 3.10 | Release and Deployment Policy | x |
+| 3.11 | Capacity and Availability Management Policy | x |
 | 3.12 | Monitoring and Event Management Policy | o |
 | 3.13 | Knowledge Management Policy | x |
 | 3.14 | IT Project Management Policy | o |
