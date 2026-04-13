@@ -54,9 +54,9 @@
 | 4.03 | Containment Strategy and Playbooks | x |
 | 4.04 | Eradication Procedures and Scenario Guides | x |
 | 4.05 | Recovery Operations and Restoration Prioritization | x |
-| 4.06 | Communication Protocols and Partner Integration | o |
+| 4.06 | Communication Protocols and Partner Integration | x |
 | 4.07 | Postmortem Review and Lessons Learned | o |
-| 5.01 | Policy Implementation, Enforcement, and Legal Alignment | o |
+| 5.01 | Policy Implementation, Enforcement, and Legal Alignment | x |
 | 5.02 | Internal Audits, Self-Assessment, and Control Testing | o |
 | 5.03 | Compliance Monitoring and Corrective Action | o |
 | 5.04 | Performance Metrics and Operational KPIs | o |
