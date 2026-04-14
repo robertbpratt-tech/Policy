@@ -161,16 +161,16 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
 | 3.05 | Service Request Fulfillment | T | v2.1 | 1 | #308 |
 | 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #313 |
-| 3.07 | Problem Management | T | v2.2 | 0 | — |
+| 3.07 | Problem Management | T+ | v2.2 | 1 | #316 |
 | 3.08 | CMDB | T | v2.1 | 0 | — |
 | 3.09 | Change Management | T | v2.0 | 0 | — |
 | 3.10 | Release and Deployment | T | v2.0 | 0 | — |
-| 3.11 | Capacity and Availability | T | v2.0 | 0 | — |
-| 3.12 | Monitoring and Event Management | T | v2.0 | 0 | — |
+| 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #317 |
+| 3.12 | Monitoring and Event Management | T+ | v2.0 | 1 | #318 |
 | 3.13 | Knowledge Management | T | v2.1 | 0 | — |
 | 3.14 | IT Project Management | T | v2.1 | 0 | — |
-| 3.15 | Service Continuity | T+ | v2.1 | 1 | #314 |
-| 3.16 | Service Improvement | D | — | 4 | #155, +3 |
+| 3.15 | Service Continuity | T+ | v2.1 | 2 | #314, #319 |
+| 3.16 | Service Improvement | T | v2.0 | 0 | — |
 | 3.17 | System Maintenance and Vendor Repairs | D | — | 2 | +2 |
 
 ### Chapter 4 — Incident Response
@@ -262,7 +262,7 @@ Sequencing principles, in priority order:
 16. ~~3.12 (Monitoring and Event Management)~~ — ✅ v2.0, April 13, 2026. Ripple: #311 (1.11 LRDA title correction).
 17. ~~3.14 (IT Project Management)~~ — ✅ v2.1, April 13, 2026. Ripple: #312 (4.07 reciprocal Out of Scope pointer).
 18. ~~3.15 (Service Continuity)~~ — ✅ v2.1, April 14, 2026. Ripples: #313 (3.06 bidirectional reference), #314 (LRDA series mapping).
-19. **3.16 (Service Improvement)** — 4 tickets
+19. ~~3.16 (Service Improvement)~~ — ✅ v2.0, April 14, 2026. Ripples: #316 (3.07 bidirectional SIR routing), #317 (3.11 remediation plan SIR routing), #318 (3.12 threshold breach SIR routing), #319 (3.15 tabletop findings SIR routing).
 20. **3.17 (System Maintenance and Vendor Repairs)** — 2 tickets
 
 > ## ◆ RECALCULATE SEQUENCE HERE ◆
