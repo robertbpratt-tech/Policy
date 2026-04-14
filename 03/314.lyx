@@ -456,7 +456,7 @@ nolink "false"
 
 \lang english
 Shall authorize emergency project designations and emergency waivers of project process components with documented rationale.
- Normal procedures shall resume upon completion of catch-up documentation required under Section 6.1.
+ Normal procedures shall resume no later than completion of catch-up documentation required under Section 6.1.
 \end_layout
 
 \begin_layout Itemize
@@ -1384,11 +1384,12 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The IT Director shall designate a Project Owner at charter for each internal project.
+The IT Director shall designate a Project Owner at charter for every formally designated project.
  Project Owner is a functional designation assigned per-project to an existing role holder —
  IT Director,
  Assistant IT Director,
- or Administrator.
+ Information Operations Systems Administrator,
+ or Information Operations Network Administrator.
  For vendor-led external projects,
  the assigned Information Operations Systems Administrator or Information Operations Network Administrator shall serve as Project Owner.
 \end_layout
