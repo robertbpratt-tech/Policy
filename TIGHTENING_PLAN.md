@@ -160,7 +160,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.03 | Service Communication | T | v2.0 | 0 | — |
 | 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
 | 3.05 | Service Request Fulfillment | T | v2.1 | 1 | #308 |
-| 3.06 | Operational Incident Management | T | v2.1 | 0 | — |
+| 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #313 |
 | 3.07 | Problem Management | T | v2.2 | 0 | — |
 | 3.08 | CMDB | T | v2.1 | 0 | — |
 | 3.09 | Change Management | T | v2.0 | 0 | — |
@@ -169,7 +169,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.12 | Monitoring and Event Management | T | v2.0 | 0 | — |
 | 3.13 | Knowledge Management | T | v2.1 | 0 | — |
 | 3.14 | IT Project Management | T | v2.1 | 0 | — |
-| 3.15 | Service Continuity | D | — | 3 | #153, #154, +1 |
+| 3.15 | Service Continuity | T+ | v2.1 | 1 | #314 |
 | 3.16 | Service Improvement | D | — | 4 | #155, +3 |
 | 3.17 | System Maintenance and Vendor Repairs | D | — | 2 | +2 |
 
@@ -261,7 +261,7 @@ Sequencing principles, in priority order:
 15. ~~3.11 (Capacity and Availability)~~ — ✅ v2.0, April 13, 2026. Ripples: #309 (3.02 data intake), #310 (3.12 threshold receipt).
 16. ~~3.12 (Monitoring and Event Management)~~ — ✅ v2.0, April 13, 2026. Ripple: #311 (1.11 LRDA title correction).
 17. ~~3.14 (IT Project Management)~~ — ✅ v2.1, April 13, 2026. Ripple: #312 (4.07 reciprocal Out of Scope pointer).
-18. **3.15 (Service Continuity)** — 3 tickets. Verify against 4.05 ripples from Phase 3.
+18. ~~3.15 (Service Continuity)~~ — ✅ v2.1, April 14, 2026. Ripples: #313 (3.06 bidirectional reference), #314 (LRDA series mapping).
 19. **3.16 (Service Improvement)** — 4 tickets
 20. **3.17 (System Maintenance and Vendor Repairs)** — 2 tickets
 
