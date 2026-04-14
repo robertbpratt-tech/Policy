@@ -183,7 +183,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 4.04 | Eradication | T | v2.2 | 0 | — |
 | 4.05 | Recovery and Restoration | T | v2.1 | 0 | — |
 | 4.06 | Communication Protocols | T | v2.2 | 0 | — |
-| 4.07 | Postmortem and Lessons Learned | T+ | v1.0 | 1 | #312 |
+| 4.07 | Postmortem and Lessons Learned | T | v1.0 | 0 | — |
 
 ### Chapter 5 — Compliance
 
