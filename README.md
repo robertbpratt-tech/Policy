@@ -46,7 +46,7 @@
 | 3.12 | Monitoring and Event Management Policy | x |
 | 3.13 | Knowledge Management Policy | x |
 | 3.14 | IT Project Management Policy | x |
-| 3.15 | Service Continuity and Contingency Planning Policy | o |
+| 3.15 | Service Continuity and Contingency Planning Policy | x |
 | 3.16 | Service Improvement and Continual Improvement Plan | o |
 | 3.17 | System Maintenance and Vendor Repairs | o |
 | 4.01 | Incident Response Policy Overview | x |
