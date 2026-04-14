@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -193,101 +193,10 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish the governance framework by which the Elko County Information Operations Department identifies,
- logs,
- triages,
- and routes IT service improvement opportunities.
- This policy defines the Service Improvement Register as the authoritative record of improvement intake and triage activity,
- and the Service Improvement Plan as the initiation document for improvement initiatives that qualify for formal project designation under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.14"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- It establishes the Assistant IT Director as the owner of the improvement intake function and defines the conditions under which improvement work routes to the standard work order system or to formal project management.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-This policy governs the intake funnel and the triage decision.
- Once a triage decision is made and the improvement is routed,
- execution is governed entirely by the receiving policy.
- Work order lifecycle,
- escalation,
- and closure are governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.05"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- Project execution is governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.14"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- Change authorization is governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+This policy governs the identification,
+ logging,
+ triage,
+ and routing of IT service improvement opportunities for the Elko County Information Operations Department (ECIO).
 \end_layout
 
 \begin_layout Subsection*
@@ -299,19 +208,24 @@ nolink "false"
 
 \begin_layout Standard
 
+\lang english
+This policy applies to all Information Operations personnel involved in the identification,
+ logging,
+ triage,
+ routing,
+ or governance tracking of service improvement initiatives.
+\end_layout
+
+\begin_layout Itemize
+
 \series bold
 \lang english
 In Scope
 \series default
 :
- This policy governs the identification,
- logging,
- triage,
- and routing of all IT service improvement initiatives for the Information Operations Department.
- In-scope activities include:
- 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
 \lang english
@@ -333,7 +247,7 @@ Intake from mandatory trigger sources.
 \begin_layout Itemize
 
 \lang english
-Triage decisions.
+Triage decisions and execution routing.
 \end_layout
 
 \begin_layout Itemize
@@ -342,7 +256,8 @@ Triage decisions.
 Annual improvement summary production.
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
 \series bold
 \lang english
@@ -351,11 +266,12 @@ Out of Scope
 :
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
 \lang english
-Work order lifecycle management —
- governed by 
+Work order lifecycle management:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -376,8 +292,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Operational incident response —
- governed by 
+Operational incident response:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -398,8 +314,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Root cause analysis and Problem investigation —
- governed by 
+Root cause analysis and Problem investigation:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -420,8 +336,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Technical execution of changes required to implement improvements —
- governed by 
+Technical execution of changes required to implement improvements:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -442,8 +358,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Project execution lifecycle —
- governed by 
+Project execution lifecycle:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -457,13 +373,15 @@ nolink "false"
 \end_inset
 
 
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Service continuity planning —
- governed by 
+Service continuity planning:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -484,8 +402,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Annual governance and framework maturity scoring —
- governed by 
+Annual governance and framework maturity scoring:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -506,8 +424,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-SLA target definition —
- governed by 
+SLA target definition:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -528,8 +446,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-KPI taxonomy and baseline definition —
- governed by 
+KPI taxonomy and baseline definition:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -550,8 +468,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Performance data collection and SLA adherence measurement —
- governed by 
+Performance data collection and SLA adherence measurement:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -569,6 +487,7 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -589,7 +508,13 @@ IT Director
 \begin_layout Itemize
 
 \lang english
-Shall serve as the approving authority for all Service Improvement Plans and the corresponding project charters initiated under 
+Shall serve as the approving authority for all Service Improvement Plans.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve Service Improvement Plans as charter approval under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -604,23 +529,7 @@ nolink "false"
 
 
 \series default
-.
- IT Director approval of a Service Improvement Plan constitutes charter approval under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.14"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ (IT Project Management Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -648,28 +557,7 @@ nolink "false"
 
 
 \series default
- review cycle.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall authorize any formal exception to the obligations established in this policy in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ (Annual Policy Review and Maturity Scoring) review cycle.
 \end_layout
 
 \end_deeper
@@ -686,7 +574,7 @@ Assistant IT Director
 \begin_layout Itemize
 
 \lang english
-Shall own and maintain the Service Improvement Register in Redmine.
+Shall own and maintain the Service Improvement Register in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
@@ -717,7 +605,7 @@ Shall record the linked work order or project record number in each Service Impr
 
 \lang english
 Shall confirm closure of each Service Improvement Register entry when its linked work order or project record closes,
- within two business days of that closure.
+ within two (2) business days of that closure.
 \end_layout
 
 \begin_layout Itemize
@@ -746,7 +634,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Staff
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -772,7 +660,7 @@ nolink "false"
 
 
 \series default
-.
+ (Service Delivery Feedback and Grievance Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -819,7 +707,9 @@ nolink "false"
 
 
 \series default
- and the annual policy review and maturity scoring process defined in 
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -861,7 +751,9 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -871,12 +763,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with 
+ Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with the exception management framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -886,7 +778,9 @@ nolink "false"
 
 
 \series default
-.
+,
+ Section 6.6.
+ Oral exceptions are not valid.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline.
 \end_layout
@@ -898,22 +792,13 @@ nolink "false"
  References
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\series bold
 \lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
+Cited References
+\series default
 :
- Delegation of Authority and Decision Rights
 \end_layout
 
 \begin_layout Itemize
@@ -1084,24 +969,6 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.13"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Knowledge Management Policy
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "pol:3.14"
 plural "false"
 caps "false"
@@ -1147,7 +1014,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -1165,7 +1034,9 @@ nolink "false"
 \end_inset
 
 :
- Internal Audits and Self-Assessment Procedures
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Itemize
@@ -1208,6 +1079,21 @@ nolink "false"
 
 \lang english
 NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071558 (Activity Reports)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -1277,6 +1163,81 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy governs the intake funnel and the triage decision for service improvement initiatives.
+ Once a triage decision is made and the improvement is routed,
+ execution is governed entirely by the receiving policy.
+ Work order lifecycle,
+ escalation,
+ and closure are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Request Fulfillment Policy).
+ Project execution is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Change authorization is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Change Management Policy).
+ This policy defines the Service Improvement Register as the authoritative record of improvement intake and triage activity,
+ and the Service Improvement Plan as the initiation document for improvement initiatives that qualify for formal project designation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
@@ -1287,7 +1248,7 @@ ITIL v4:
 
 \lang english
 The Service Improvement Register (SIR) is the authoritative record of the Department's improvement intake and triage activity.
- The Assistant IT Director shall maintain the SIR in Redmine.
+ The Assistant IT Director shall maintain the SIR in the System of Engagement.
  Each SIR entry shall record,
  at minimum:
  the improvement identified,
@@ -1306,13 +1267,13 @@ The SIR is a log.
  execution is governed entirely by the receiving policy.
  SIR entries shall remain linked to an active work order or project record from the time of routing through closure.
  Where a linked work order or project is cancelled,
- the SIR entry shall be formally closed with a cancellation notation and IT Director authorization documented in the entry.
+ the Assistant IT Director shall formally close the SIR entry with a cancellation notation and IT Director authorization documented in the entry.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-SIR records shall be retained for a minimum of two calendar years from the end of the calendar year in which the entry was created,
+SIR records shall be retained for a minimum of two (2) calendar years from the end of the calendar year in which the entry was created,
  in accordance with NRS 239.125 and the Nevada Local Government Records Retention Schedule:
  LRDA 20071558 (Activity Reports).
 \end_layout
@@ -1332,7 +1293,7 @@ The Assistant IT Director shall log a SIR entry upon identification of any of th
 \begin_layout Itemize
 
 \lang english
-An SLA deviation meeting the escalation threshold defined in 
+An SLA deviation routed to the Service Improvement Register by the Assistant IT Director under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1347,7 +1308,8 @@ nolink "false"
 
 
 \series default
-.
+ (Service Level Management and Metrics Reporting),
+ Section 6.3.
 \end_layout
 
 \begin_layout Itemize
@@ -1368,7 +1330,7 @@ nolink "false"
 
 
 \series default
-.
+ (Performance Metrics and Operational KPIs).
 \end_layout
 
 \begin_layout Itemize
@@ -1387,9 +1349,9 @@ nolink "false"
 
 \end_inset
 
- 
+
 \series default
-where the permanent remediation identifies a systemic improvement opportunity beyond the immediate fix.
+ (Problem Management Policy) where the permanent remediation identifies a systemic improvement opportunity beyond the immediate fix.
 \end_layout
 
 \begin_layout Itemize
@@ -1410,7 +1372,7 @@ nolink "false"
 
 
 \series default
- that does not immediately require a change record under 
+ (Capacity and Availability Management Policy) that does not immediately require a change record under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1446,7 +1408,7 @@ nolink "false"
 
 
 \series default
- that does not resolve through a single work order.
+ (Monitoring and Event Management Policy) that does not resolve through a single work order.
 \end_layout
 
 \begin_layout Itemize
@@ -1467,7 +1429,7 @@ nolink "false"
 
 
 \series default
-.
+ (Service Continuity and Contingency Planning Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -1508,7 +1470,7 @@ IT Director or Assistant IT Director discretionary entry —
 \begin_layout Standard
 
 \lang english
-Every SIR entry shall be triaged by the Assistant IT Director.
+The Assistant IT Director shall triage every SIR entry.
  The triage decision determines execution routing.
 \end_layout
 
@@ -1519,7 +1481,7 @@ Every SIR entry shall be triaged by the Assistant IT Director.
 Work order route
 \series default
 :
- Improvements that fall below the project designation threshold defined in 
+ The Assistant IT Director shall route improvements that fall below the project designation threshold defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1535,7 +1497,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.1 shall be routed to the standard work order system.
+ Section 6.1 to the standard work order system.
  The Assistant IT Director shall create a work order under 
 \series bold
 Policy 
@@ -1552,7 +1514,7 @@ nolink "false"
 
 \series default
 .
- The work order number shall be recorded in the SIR entry.
+ The Assistant IT Director shall record the work order number in the SIR entry.
  All work order lifecycle,
  escalation,
  and closure obligations are governed by 
@@ -1561,21 +1523,6 @@ Policy
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:3.05"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1595,7 +1542,7 @@ nolink "false"
 Project route
 \series default
 :
- Improvements that meet the project designation threshold defined in 
+ The Assistant IT Director shall route improvements that meet the project designation threshold defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1611,12 +1558,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.1 —
- requiring three or more discrete work orders to complete,
- and requiring advance resource planning,
- stakeholder coordination,
- or sequenced task dependencies that cannot be captured within a single work order record —
- shall be routed to formal project management.
+ Section 6.1 to formal project management.
  The Assistant IT Director shall prepare a Service Improvement Plan and present it to the IT Director for approval.
  IT Director approval of the Service Improvement Plan constitutes charter approval under 
 \series bold
@@ -1634,8 +1576,8 @@ nolink "false"
 
 \series default
 ,
- and the master work order shall be created in Redmine upon that approval.
- The project record number shall be recorded in the SIR entry.
+ and the Assistant IT Director shall create the master work order in the System of Engagement upon that approval.
+ The Assistant IT Director shall record the project record number in the SIR entry.
  All project execution obligations are governed by 
 \series bold
 Policy 
@@ -1745,6 +1687,25 @@ nolink "false"
 \series default
 .
  The SIP obligation arises only when the project route threshold is met or a discretionary project designation is made under Section 6.3.
+ The SIP shall include,
+ at minimum,
+ the content elements required for a project charter under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.10.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1756,8 +1717,9 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-A SIR entry closes when its linked work order or project record closes.
- The Assistant IT Director shall confirm closure of the SIR entry within two business days of the linked artifact's closure.
+A SIR entry closes when its linked work order or project record closes,
+ or when the IT Director authorizes cancellation.
+ The Assistant IT Director shall confirm closure of the SIR entry within two (2) business days of the closure event or the IT Director's cancellation authorization.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1775,7 +1737,7 @@ The Assistant IT Director shall produce an annual improvement summary documentin
  entries routed to projects,
  entries closed,
  and entries cancelled.
- The summary shall be submitted to the IT Director as part of the 
+ The Assistant IT Director shall submit the summary to the IT Director as part of the 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1790,7 +1752,7 @@ nolink "false"
 
 
 \series default
- annual maturity review cycle.
+ annual policy review and maturity scoring cycle.
  The summary is the evidentiary record that the improvement intake function is operating.
 \end_layout
 
