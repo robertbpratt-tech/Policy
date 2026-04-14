@@ -547,6 +547,28 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+IT project post-mortems:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 Annual policy review and maturity scoring:
  
 \series bold
@@ -1110,6 +1132,24 @@ nolink "false"
 
 :
  Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Project Management Policy
 \end_layout
 
 \begin_layout Itemize
