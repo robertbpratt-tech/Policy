@@ -171,7 +171,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.14 | IT Project Management | T | v2.1 | 0 | — |
 | 3.15 | Service Continuity | T+ | v2.1 | 2 | #314, #319 |
 | 3.16 | Service Improvement | T | v2.0 | 0 | — |
-| 3.17 | System Maintenance and Vendor Repairs | D | — | 2 | +2 |
+| 3.17 | System Maintenance and Vendor Repairs | T | v2.1 | 0 | — |
 
 ### Chapter 4 — Incident Response
 
@@ -263,7 +263,7 @@ Sequencing principles, in priority order:
 17. ~~3.14 (IT Project Management)~~ — ✅ v2.1, April 13, 2026. Ripple: #312 (4.07 reciprocal Out of Scope pointer).
 18. ~~3.15 (Service Continuity)~~ — ✅ v2.1, April 14, 2026. Ripples: #313 (3.06 bidirectional reference), #314 (LRDA series mapping).
 19. ~~3.16 (Service Improvement)~~ — ✅ v2.0, April 14, 2026. Ripples: #316 (3.07 bidirectional SIR routing), #317 (3.11 remediation plan SIR routing), #318 (3.12 threshold breach SIR routing), #319 (3.15 tabletop findings SIR routing).
-20. **3.17 (System Maintenance and Vendor Repairs)** — 2 tickets
+20. ~~3.17 (System Maintenance and Vendor Repairs)~~ — ✅ v2.1, April 14, 2026. No ripple issues. Closed #160, #161. Sweep notes on #208, #6, #235. Hallucinated CSF 2.0 PR.MA-02 replaced with verified PR.PS-02/PR.PS-03.
 
 > ## ◆ RECALCULATE SEQUENCE HERE ◆
 >
