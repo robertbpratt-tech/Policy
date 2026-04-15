@@ -155,6 +155,7 @@ End
 \docbook_mathml_prefix 1
 \end_header
 
+
 \begin_body
 
 \begin_layout Section
@@ -180,7 +181,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -197,10 +198,6 @@ This policy establishes the requirements for authorized,
  documented,
  supervised,
  and verified maintenance and repair work performed on County IT systems.
- It ensures that all maintenance events are formally authorized before work begins,
- that maintenance records contain the content required for audit reconstruction,
- that data-bearing components are sanitized before leaving County facilities,
- and that systems are verified as correctly and securely operational upon completion of maintenance activity.
 \end_layout
 
 \begin_layout Subsection*
@@ -212,35 +209,23 @@ This policy establishes the requirements for authorized,
 
 \begin_layout Standard
 
+\lang english
+This policy applies to all maintenance and repair work performed on County IT systems,
+ including work performed by Information Operations Personnel,
+ contractors,
+ and vendors.
+\end_layout
+
+\begin_layout Itemize
+
 \series bold
 \lang english
 In Scope
 \series default
 :
- This policy applies to all maintenance and repair work performed on County IT systems.
- Covered activity includes:
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-Maintenance or repair performed by IT Department personnel,
- contractors,
- or vendors.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Maintenance performed on-site or remotely.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Systems serviced in place and systems from which a component is removed.
-\end_layout
-
+\begin_deeper
 \begin_layout Itemize
 
 \lang english
@@ -250,13 +235,7 @@ Scheduled preventive maintenance.
 \begin_layout Itemize
 
 \lang english
-Reactive repairs.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Component replacements.
+Reactive repairs and component replacements.
 \end_layout
 
 \begin_layout Itemize
@@ -271,15 +250,18 @@ Warranty service calls.
 Remote diagnostic and repair sessions.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-All three asset support classifications —
- IT-Managed,
+On-site and off-site maintenance activity.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All asset support classifications — IT-Managed,
  IT-Supported,
- and Vendor-Managed —
- are within scope,
- with differentiated obligations for each classification as defined in 
+ and Vendor-Managed — with differentiated obligations for each classification as defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -298,23 +280,24 @@ nolink "false"
  Section 6.2.
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 
 \series bold
 \lang english
 Out of Scope
 \series default
 :
- 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
 \lang english
 Vendor relationship management,
  contracting,
- and access provisioning —
- governed by 
+ and access provisioning:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -335,8 +318,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Ongoing vendor compliance and third-party assurance —
- governed by 
+Ongoing vendor compliance and third-party assurance:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -357,8 +340,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Change authorization for maintenance-driven configuration changes —
- governed by 
+Change authorization for maintenance-driven configuration changes:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -379,8 +362,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Work order lifecycle management —
- governed by 
+Work order lifecycle management:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -401,8 +384,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-CI record updates following maintenance activity —
- governed by 
+CI record updates following maintenance activity:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -423,8 +406,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Media sanitization execution standards —
- governed by 
+Media sanitization execution standards:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -445,8 +428,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Physical access control and escort requirements —
- governed by 
+Physical access control and escort requirements:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -467,8 +450,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Remote session logging and audit trail obligations —
- governed by 
+Remote session logging and audit trail obligations:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -489,8 +472,8 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Service continuity and recovery planning —
- governed by 
+Service continuity and recovery planning:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -508,6 +491,7 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -542,7 +526,7 @@ Shall authorize the off-site removal of any County IT system component for maint
 \begin_layout Itemize
 
 \lang english
-Shall approve the authorized maintenance personnel list and the authorized maintenance tool list maintained in the Knowledge Base under 
+Shall approve the authorized maintenance personnel list — identifying both individuals and organizations authorized to perform maintenance — and the authorized maintenance tool list maintained in the Knowledge Base under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -557,26 +541,7 @@ nolink "false"
 
 
 \series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall authorize any formal exception to the obligations established in this policy in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-.
+ (Knowledge Management Policy).
 \end_layout
 
 \end_deeper
@@ -639,7 +604,7 @@ nolink "false"
 
 \lang english
 Shall directly observe,
- or designate IT Department personnel to directly observe,
+ or designate Information Operations Personnel to directly observe,
  all remote maintenance sessions for the duration of the session.
 \end_layout
 
@@ -648,7 +613,7 @@ Shall directly observe,
 
 \series bold
 \lang english
-IT Department Personnel
+All Information Operations Personnel
 \series default
 :
 \end_layout
@@ -678,11 +643,7 @@ nolink "false"
 
 
 \series default
-.
- When escorting personnel performing maintenance on systems that process,
- store,
- or transmit Criminal Justice Information (CJI),
- the designated escort shall be fully cleared and technically qualified to supervise the specific maintenance activity being performed.
+ (Physical Security and Environmental Controls Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -730,7 +691,13 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall directly observe remote maintenance sessions as designated by the Assistant IT Director.
+Shall directly observe remote maintenance sessions when designated by the Assistant IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall verify that remote maintenance sessions and all associated network connections are fully terminated upon completion of maintenance activity and shall document termination verification in the work order.
 \end_layout
 
 \end_deeper
@@ -738,7 +705,39 @@ Shall directly observe remote maintenance sessions as designated by the Assistan
 
 \series bold
 \lang english
-Network Administrator / Systems Administrator
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall ensure that remote maintenance sessions are conducted exclusively through County-approved secure remote access mechanisms in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Supply Chain Risk Management and Vendor Governance).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator
 \series default
 :
 \end_layout
@@ -765,12 +764,6 @@ nolink "false"
 .
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-Shall verify that the session and all associated network connections are fully terminated upon completion of remote maintenance activity.
-\end_layout
-
 \end_deeper
 \begin_layout Subsection*
 
@@ -782,7 +775,7 @@ Shall verify that the session and all associated network connections are fully t
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all Information Operations Department personnel and for all contractors and vendors performing maintenance or repair work on County IT systems.
+Compliance with this policy is mandatory for all Information Operations Personnel and for all contractors and vendors performing maintenance or repair work on County IT systems.
 \end_layout
 
 \begin_layout Itemize
@@ -807,9 +800,11 @@ nolink "false"
 
 
 \series default
- and the annual policy review and maturity scoring process defined in
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the annual policy review and maturity scoring process defined in 
 \series bold
-Policy
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.07"
@@ -822,23 +817,7 @@ nolink "false"
 
 
 \series default
-.
- This policy is subject to the universal applicability and enforcement framework established in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -865,7 +844,9 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -875,12 +856,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented with written justification and approved by the IT Director in accordance with 
+ Exceptions to any requirement of this policy shall be requested and processed in accordance with the exception framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -890,10 +871,11 @@ nolink "false"
 
 
 \series default
-.
- No exception shall be granted that would place County systems or CJI out of compliance with applicable CJIS Security Policy obligations.
+,
+ Section 6.6.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -901,6 +883,15 @@ nolink "false"
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -1116,7 +1107,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -1134,7 +1127,9 @@ nolink "false"
 \end_inset
 
 :
- Internal Audits and Self-Assessment Procedures
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Itemize
@@ -1152,13 +1147,13 @@ nolink "false"
 \end_inset
 
 :
- Vendor Compliance and Third-Party Assurance Policy
+ Vendor Compliance and Third-Party Assurance
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-ECIO Policy
+ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.07"
@@ -1177,6 +1172,27 @@ nolink "false"
 
 \lang english
 NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NAC 239.155 (Disposal of Local Government Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071715 (Work Orders)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -1218,7 +1234,14 @@ CJIS Security Policy v6.0:
 
 \lang english
 NIST CSF 2.0:
- PR.MA-02 (Remote Maintenance)
+ PR.PS-02 (Software Maintenance)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.PS-03 (Hardware Maintenance)
 \end_layout
 
 \begin_layout Itemize
@@ -1306,21 +1329,32 @@ nolink "false"
 
 
 \series default
-,
+ (IT Asset Management Policy),
  Section 6.2.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \series bold
 \lang english
 IT-Managed Assets
 \series default
 :
- No vendor,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall authorize all vendor,
  contractor,
- or non-IT Department personnel shall perform technical work on an IT-Managed asset without explicit written IT Director authorization.
- IT Department personnel initiating scheduled maintenance on IT-Managed assets shall obtain authorization in accordance with the IT-initiated work order requirements of 
+ or non-Information Operations personnel to perform technical work on an IT-Managed asset in writing before work begins.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Information Operations Personnel initiating maintenance on IT-Managed assets shall obtain authorization in accordance with the IT-initiated work order requirements of 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1335,7 +1369,7 @@ nolink "false"
 
 
 \series default
-,
+ (Service Request Fulfillment Policy),
  Section 6.3:
  routine maintenance tasks may be authorized by the assigned technician in accordance with their defined role authority under 
 \series bold
@@ -1352,34 +1386,69 @@ nolink "false"
 
 
 \series default
-;
- non-routine or significant maintenance tasks shall be authorized by the Assistant IT Director or IT Director prior to work commencement.
- When maintenance activity is performed on systems that process,
- store,
- or transmit CJI,
- the IT Department escort shall be fully cleared and technically qualified to supervise the specific maintenance activity being performed.
+ (Delegation of Authority and Decision Rights);
+ non-routine maintenance tasks or maintenance tasks requiring configuration changes shall be authorized by the Assistant IT Director or IT Director prior to work commencement.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+
+\lang english
+When maintenance activity is performed on systems that process,
+ store,
+ or transmit CJI,
+ the designated escort shall be fully cleared and technically qualified to supervise the specific maintenance activity being performed.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Information Operations Personnel assigned to the work order shall verify the identity of vendor or contractor personnel against the authorized maintenance personnel list before granting access to County systems or facilities for maintenance purposes.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 
 \series bold
 \lang english
 IT-Supported Assets
 \series default
 :
- Vendor involvement in maintenance on an IT-Supported asset that falls within the contracted support scope shall be authorized by the Assistant IT Director.
- Vendor involvement outside the contracted support scope shall require IT Director authorization.
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Vendor involvement in maintenance on an IT-Supported asset that falls within the contracted support scope shall be authorized by the Assistant IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor involvement outside the contracted support scope shall require IT Director authorization.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 
 \series bold
 \lang english
 Vendor-Managed Assets
 \series default
 :
- Vendor personnel performing maintenance within their exclusive support domain do not require ECIO authorization.
- The IT Department's obligations for Vendor-Managed maintenance events are limited to access facilitation in accordance with 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Vendor personnel performing maintenance within their exclusive support domain do not require Information Operations authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Information Operations Department's obligations for Vendor-Managed maintenance events are limited to access facilitation in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1429,6 +1498,8 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
+
 \begin_layout Standard
 
 \lang english
@@ -1461,12 +1532,44 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-All remote maintenance sessions on County IT systems shall be directly observed by the IT Department personnel assigned to the work order for the duration of the session.
- Unmonitored remote access —
- including desktop sharing,
+All remote maintenance sessions involving vendor,
+ contractor,
+ or other third-party personnel on County IT systems shall be directly observed by the Information Operations Personnel assigned to the work order for the duration of the session.
+ No vendor,
+ contractor,
+ or third-party personnel shall initiate or conduct unmonitored remote access — including desktop sharing,
  screen sharing,
- or any remote control session initiated by any party —
- is strictly prohibited regardless of asset classification.
+ or any remote control session — regardless of asset classification.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+
+\series bold
+Exclusion
+\series default
+:
+ Internal administrative remote access performed by authorized Information Operations Personnel using County-approved management protocols (e.g.,
+ SSH,
+ RDP,
+ remote management consoles) is not subject to the direct observation requirement.
+ Internal administrative access remains subject to the audit logging obligations governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -1503,15 +1606,15 @@ nolink "false"
 
 
 \series default
-.
+ (Audit Logging and Monitoring Policy).
 \end_layout
 
 \begin_layout Standard
 
 \lang english
 Upon completion of remote maintenance,
- the IT Department personnel observing the session shall verify that the session and all associated network connections have been fully terminated before the maintenance work order is closed.
- Termination verification shall be documented in the work order.
+ the Information Operations Personnel observing the session shall verify that the session and all associated network connections have been fully terminated before the maintenance work order is closed.
+ The assigned personnel shall document termination verification in the work order.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1523,11 +1626,9 @@ Upon completion of remote maintenance,
 \begin_layout Standard
 
 \lang english
-Any maintenance tool —
- hardware,
+Any maintenance tool — hardware,
  software,
- or firmware —
- brought onto County premises or connected remotely for maintenance purposes shall appear on the approved maintenance tool list maintained in the Knowledge Base under 
+ or firmware — brought onto County premises or connected remotely for maintenance purposes shall appear on the approved maintenance tool list maintained in the Knowledge Base under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1543,14 +1644,14 @@ nolink "false"
 
 \series default
 .
- No maintenance tool may be used on County systems unless it appears on that list.
+ The Information Operations Personnel assigned to the work order shall not permit any maintenance tool to be used on County systems unless it appears on that list.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Media containing diagnostic or test programs shall be inspected for malicious code before use on any County system.
- Maintenance tools brought by vendors or contractors shall be subject to the same inspection requirement as tools used by IT Department personnel.
+The Information Operations Personnel assigned to the work order shall inspect media containing diagnostic or test programs for malicious code before use on any County system.
+ Maintenance tools brought by vendors or contractors shall be subject to the same inspection requirement.
  Tool inspection procedures are maintained in the Knowledge Base under 
 \series bold
 Policy 
@@ -1573,7 +1674,7 @@ nolink "false"
 
 \lang english
 Prior to the removal of any vendor-supplied or contractor-supplied maintenance tool or diagnostic equipment from County facilities,
- the IT Department personnel assigned to the work order shall verify that the equipment contains no County data,
+ the Information Operations Personnel assigned to the work order shall verify that the equipment contains no County data,
  or shall ensure the equipment is sanitized before departure.
 \end_layout
 
@@ -1581,7 +1682,9 @@ Prior to the removal of any vendor-supplied or contractor-supplied maintenance t
 
 \lang english
 The IT Director shall approve the authorized maintenance tool list.
- The Assistant IT Director shall ensure the list is current.
+ The Assistant IT Director shall ensure the list is current and shall review the list no less than annually and upon any material change in vendor tooling,
+ support model,
+ or threat conditions.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1594,7 +1697,7 @@ The IT Director shall approve the authorized maintenance tool list.
 
 \lang english
 Upon completion of any maintenance or repair activity on an IT-Managed or IT-Supported asset,
- the IT Department personnel assigned to the work order shall verify that the system and all potentially affected controls are functioning correctly before the maintenance work order is closed.
+ the Information Operations Personnel assigned to the work order shall verify that the system and all potentially affected controls are functioning correctly before the maintenance work order is closed.
  Post-maintenance verification procedures are maintained in the Knowledge Base under 
 \series bold
 Policy 
@@ -1616,7 +1719,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Verification results shall be documented in the work order.
+The assigned personnel shall document verification results in the work order.
  A work order shall not be closed in the absence of a documented post-maintenance verification result.
 \end_layout
 
@@ -1653,38 +1756,38 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-The name and serial number of the component serviced
+The name and serial number of the component serviced.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The date and time of maintenance
+The date and time of maintenance.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-A description of the maintenance performed
+A description of the maintenance performed.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The name of the personnel performing the maintenance
+The name of the personnel performing the maintenance.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The name of the IT Department escort,
- where escort was required
+The name of the Information Operations escort,
+ where escort was required.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The post-maintenance verification result
+The post-maintenance verification result.
 \end_layout
 
 \begin_layout Standard
@@ -1705,9 +1808,7 @@ nolink "false"
 
 
 \series default
- and 
-work order operational standards maintained in the System of Engagement
-.
+ and work order operational standards maintained in the System of Engagement.
  Where this standard imposes additional requirements beyond those established in 
 \series bold
 Policy 
@@ -1746,7 +1847,7 @@ No County IT system component shall be removed from County facilities for off-si
 
 \lang english
 Prior to removal,
- the component shall be sanitized in accordance with 
+ the Information Operations Personnel assigned to the work order shall sanitize the component in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1761,10 +1862,10 @@ nolink "false"
 
 
 \series default
- to remove County data from all associated media.
- If sanitization is not technically feasible prior to removal,
+ (Media Protection and Sanitization Policy) to remove County data from all associated media.
+ If the component cannot be sanitized prior to removal due to a documented technical constraint,
  the IT Director shall authorize an alternative control,
- which shall be documented in the work order in lieu of the sanitization confirmation.
+ which the assigned personnel shall document in the work order in lieu of the sanitization confirmation.
 \end_layout
 
 \begin_layout Standard
@@ -1778,15 +1879,15 @@ The work order shall record the authorization,
 \begin_layout Subsubsection*
 
 \lang english
-6.7 Timely Maintenance for CJI-Processing Systems
+6.7 Maintenance Support Availability for CJI-Processing Systems
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Maintenance support and spare parts for system components that process,
+The IT Director shall ensure that maintenance support and spare parts for system components that process,
  store,
- or transmit Criminal Justice Information (CJI) shall be obtained within the recovery time objective (RTO) and recovery point objective (RPO) defined for those systems in 
+ or transmit Criminal Justice Information (CJI) are obtainable within the recovery time objective (RTO) and recovery point objective (RPO) defined for those systems in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1801,7 +1902,7 @@ nolink "false"
 
 
 \series default
-.
+ (Service Continuity and Contingency Planning Policy).
  This requirement ties maintenance support availability to the existing continuity planning framework established in 
 \series bold
 Policy 
@@ -1829,8 +1930,30 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Work orders documenting maintenance and repair activity under this policy shall be retained for a minimum of three (3) calendar years after the repair is completed,
- in accordance with NRS 239.125.
+Work orders documenting maintenance and repair activity under this policy are work orders governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and shall be retained in accordance with LRDA 20071715 (Work Orders) under NRS 239.125 and NAC 239.155.
+ Where multiple retention requirements apply to a single record,
+ the longest applicable retention period shall govern.
+ Retention,
+ disposition,
+ and destruction shall be suspended during any litigation hold,
+ audit hold,
+ public records preservation requirement,
+ or other legal hold event.
 \end_layout
 
 \end_body
