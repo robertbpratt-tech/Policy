@@ -48,7 +48,7 @@
 | 3.14 | IT Project Management Policy | x |
 | 3.15 | Service Continuity and Contingency Planning Policy | x |
 | 3.16 | Service Improvement and Continual Improvement Plan | x |
-| 3.17 | System Maintenance and Vendor Repairs | o |
+| 3.17 | System Maintenance and Vendor Repairs | x |
 | 4.01 | Incident Response Policy Overview | x |
 | 4.02 | Identification and Reporting Procedures | x |
 | 4.03 | Containment Strategy and Playbooks | x |
