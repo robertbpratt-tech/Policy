@@ -79,7 +79,7 @@ A constitutional revision of 1.04 mid-project would invalidate prior tightening 
 
 **Cluster members:** #31 (LyX environment names for §6.15/§6.16). Previously closed: #5, #30, #32, #290.
 
-**Status:** Per Robert's April 11, 2026 ruling, this cluster is **not** a hard blocker on v1.0.
+**Status:** Per Robert's April 11, 2026 ruling, this cluster is **not** a hard blocker on v1.0. Sequenced at Phase 8 after appendices. Whether #31 absorbs into the Phase 5 1.04 tightening session or remains deferred is an open question to be decided at session start.
 
 ---
 
@@ -107,6 +107,8 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
+**Last refreshed:** April 14, 2026 (◆ Phase 4→5 recalculation). All ticket counts verified against GitHub issue tracker — 104 open issues confirmed.
+
 ### Chapter 0 / Front Matter
 
 | # | Title | State | Ver | Open | Tickets |
@@ -125,30 +127,30 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.07 | Workforce Roles | T | v1.3 | 0 | — |
 | 1.08 | Delegation of Authority | T | v1.4 | 0 | — |
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
-| 1.10 | IT Financial / Procurement | D | — | 4 | #50, #51, #299, +1 |
+| 1.10 | IT Financial / Procurement | D | — | 4 | #50, #51, #225, #299 |
 | 1.11 | Data Governance and Classification | T | v2.2 | 0 | — |
-| 1.12 | IT Asset Management | D | — | 6 | #53, #54, #55, #256, #301, +1 |
-| 1.13 | Supply Chain Risk Management | D | — | 2 | #56, +1 |
+| 1.12 | IT Asset Management | D | — | 6 | #53, #54, #55, #256, #262, #301 |
+| 1.13 | Supply Chain Risk Management | D | — | 2 | #56, #232 |
 | 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
 
 ### Chapter 2 — Security
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 2.01 | Acceptable Use | D | — | 4 | #61, #62, #63, +1 |
-| 2.02 | Personnel Security | D | — | 2 | #64, +1 |
-| 2.03 | Security Awareness | D | — | 4 | #66, #67, #68, +1 |
+| 2.01 | Acceptable Use | D | — | 4 | #61, #62, #63, #286 |
+| 2.02 | Personnel Security | D | — | 2 | #64, #217 |
+| 2.03 | Security Awareness | D | — | 4 | #66, #67, #68, #213 |
 | 2.04 | Access Control | D | — | 2 | #69, #70 |
 | 2.05 | Identification and Authentication | D | — | 4 | #71, #72, #73, #292 |
-| 2.06 | Privacy and Data Protection | D | — | 5 | #74, #75, #76, #77, +1 |
+| 2.06 | Privacy and Data Protection | D | — | 5 | #74, #75, #76, #77, #287 |
 | 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 |
 | 2.08 | System Integrity / Malware | D | — | 3 | #81, #83, #84 |
-| 2.09 | Vulnerability and Patch Management | D | — | 4 | #85, #86, #87, +1 |
-| 2.10 | Secure Configuration Baselines | D | — | 4 | #88, #89, #90, +1 |
+| 2.09 | Vulnerability and Patch Management | D | — | 4 | #85, #86, #87, #271 |
+| 2.10 | Secure Configuration Baselines | D | — | 4 | #88, #89, #90, #226 |
 | 2.11 | Audit Logging and Monitoring | D | — | 2 | #91, #92 |
-| 2.12 | Media Protection and Sanitization | D | — | 3 | #94, #95, +1 |
+| 2.12 | Media Protection and Sanitization | D | — | 3 | #94, #95, #228 |
 | 2.13 | Physical Security | D | — | 3 | #96, #97, #98 |
-| 2.14 | Mobile and Remote Access | D | — | 4 | #99, #101, #102, +1 |
+| 2.14 | Mobile and Remote Access | D | — | 4 | #99, #101, #102, #229 |
 | 2.15 | Secure Software Lifecycle | D | — | 3 | #103, #104, #105 |
 
 ### Chapter 3 — Service Management
@@ -159,7 +161,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.02 | Service Level Management | T+ | v2.5 | 1 | #309 |
 | 3.03 | Service Communication | T | v2.0 | 0 | — |
 | 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
-| 3.05 | Service Request Fulfillment | T | v2.1 | 1 | #308 |
+| 3.05 | Service Request Fulfillment | T+ | v2.1 | 1 | #308 |
 | 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #313 |
 | 3.07 | Problem Management | T+ | v2.2 | 1 | #316 |
 | 3.08 | CMDB | T | v2.1 | 0 | — |
@@ -190,20 +192,20 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 5.01 | Implementation, Enforcement, Legal | T | v1.0 | 0 | — |
-| 5.02 | Internal Audits | D | — | 5 | +5 |
-| 5.03 | Compliance Monitoring | D | — | 2 | +2 |
-| 5.04 | Performance Metrics | D | — | 1 | +1 |
-| 5.05 | Security Control Assessment | D | — | 1 | +1 |
-| 5.06 | Vendor Compliance | D | — | 1 | +1 |
-| 5.07 | Annual Policy Review | D | — | 3 | #300, +2 |
+| 5.02 | Internal Audits | D | — | 5 | #183, #184, #185, #186, #278 |
+| 5.03 | Compliance Monitoring | D | — | 2 | #187, #279 |
+| 5.04 | Performance Metrics | D | — | 1 | #280 |
+| 5.05 | Security Control Assessment | D | — | 1 | #188 |
+| 5.06 | Vendor Compliance | D | — | 1 | #281 |
+| 5.07 | Annual Policy Review | D | — | 3 | #191, #282, #300 |
 
 ### Chapter 6 — Appendices
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 6.01 | Glossary | A | draft | 3 | #192, #193, #195 |
-| 6.02 | Policy Matrix | A | — | 3 | +3 |
-| 6.03 | Workforce Roles STAK Matrix | A | — | 3 | +3 |
+| 6.02 | Policy Matrix | A | — | 3 | #196, #197, #198 |
+| 6.03 | Workforce Roles STAK Matrix | A | — | 3 | #199, #200, #214 |
 | 6.04 | Revision History and Version Control | A | — | 1 | #205 |
 
 ---
@@ -253,7 +255,7 @@ Sequencing principles, in priority order:
 
 ---
 
-### Phase 4 — Remaining Chapter 3
+### Phase 4 — Remaining Chapter 3 ✅
 
 **Goal:** Close out the service management chapter. No tight Chapter 4 dependencies remaining after Phase 3.
 
@@ -265,43 +267,104 @@ Sequencing principles, in priority order:
 19. ~~3.16 (Service Improvement)~~ — ✅ v2.0, April 14, 2026. Ripples: #316 (3.07 bidirectional SIR routing), #317 (3.11 remediation plan SIR routing), #318 (3.12 threshold breach SIR routing), #319 (3.15 tabletop findings SIR routing).
 20. ~~3.17 (System Maintenance and Vendor Repairs)~~ — ✅ v2.1, April 14, 2026. No ripple issues. Closed #160, #161. Sweep notes on #208, #6, #235. Hallucinated CSF 2.0 PR.MA-02 replaced with verified PR.PS-02/PR.PS-03.
 
+> ~~◆ RECALCULATE SEQUENCE HERE ◆~~ — **Completed April 14, 2026.**
+>
+> **Recalculation results:**
+> - Architectural roots: all 7 active root clusters unchanged; no new roots from Phases 2–4
+> - Per-policy ticket counts: all 104 open issues verified against §5; all counts match; "+1" placeholders resolved to confirmed ticket numbers
+> - Chapter 2 LASO downstream queue: ordering confirmed (2.01 → 2.06 → 2.02 → 2.04 → 2.11 → 2.12 → 2.13)
+> - 5.07 pull-forward: declined — still depends on untightened 5.02–5.06 outputs; stays last in Ch5
+> - 1.04_Procedural_Cleanup: stays at Phase 8 after appendices; not a v1.0 blocker
+> - **Decision (Robert, April 14):** Tighten 1.04 first (Phase 5 entry 21) before proceeding to remaining Ch1/Ch2, so the constitutional standard is fully locked before the final wave of tightening sessions
+>
+> **Chapter 3 ripple tickets** (8 open: #308, #309, #313, #314, #316, #317, #318, #319): These are small targeted fixes against already-tightened Ch3 policies (bidirectional references, LRDA series mapping). Resolution approach TBD — may batch, defer to v1.0 validation, or absorb opportunistically.
+
+---
+
+### Phase 5 — Constitutional Lock + Remaining Ch1 + Chapter 2
+
+**Goal:** Lock the formatting standard, clear remaining governance policies, then tighten the entire security chapter. LASO downstream queue (from closed root #220) is prioritized within Ch2 to close out that cleanup batch.
+
+#### 5.0 — Constitutional Lock
+
+| Seq | Policy | Tickets | Rationale |
+|---|---|---|---|
+| 21 | 1.04 (Formatting Standards) | 1 (#31, deferred cluster — absorption TBD at session start) | Constitutional standard; must be fully tightened before Phase 5 bulk work so every subsequent session measures against a locked foundation |
+
+#### 5A — Remaining Chapter 1
+
+| Seq | Policy | Tickets | Rationale |
+|---|---|---|---|
+| 22 | 1.12 (Asset Management) | 6 | Highest Ch1 ticket count; feeds Ch2 asset references (2.10 config baselines, 2.12 media protection, 2.09 vuln management) |
+| 23 | 1.10 (Financial/Procurement) | 4 | Procurement governance feeds supply chain |
+| 24 | 1.13 (Supply Chain/SCRM) | 2 | Consumes 1.10; feeds 5.06 vendor governance |
+
+#### 5B — Chapter 2 LASO Priority Group
+
+Closes #220 downstream queue. All policies in this group require the "IT Director (as LASO)" pattern established in 1.11/4.06/1.14.
+
+| Seq | Policy | Tickets | Rationale |
+|---|---|---|---|
+| 25 | 2.01 (Acceptable Use) | 4 | Broadest user-facing policy; sets Ch2 tone |
+| 26 | 2.06 (Privacy/Data Protection) | 5 | Highest Ch2 ticket count; DA approval question (#74) |
+| 27 | 2.02 (Personnel Security) | 2 | Personnel security feeds access control |
+| 28 | 2.04 (Access Control) | 2 | Foundational — 2.05 I&A depends on it |
+| 29 | 2.11 (Audit Logging) | 2 | Consumed by many downstream policies |
+| 30 | 2.12 (Media Protection) | 3 | LASO + asset lifecycle tie to 1.12 |
+| 31 | 2.13 (Physical Security) | 3 | Completes LASO group |
+
+#### 5C — Chapter 2 Remainder
+
+| Seq | Policy | Tickets | Rationale |
+|---|---|---|---|
+| 32 | 2.03 (Training) | 4 | Training → access recertification tie (#66) with 2.04 |
+| 33 | 2.05 (I&A) | 4 | Depends on 2.04; FIPS fix (#292) |
+| 34 | 2.07 (Comms Protection) | 4 | FIPS fix (#293); pairs with 2.05 encryption |
+| 35 | 2.08 (Malware) | 3 | Feeds 4.02 (already tightened) |
+| 36 | 2.09 (Vuln/Patch) | 4 | Feeds 3.09 change management (already tightened) |
+| 37 | 2.10 (Config Baselines) | 4 | Shadow IT routing fix: split IoC → 4.02 vs. config-mgmt remediation → 3.09/2.10 |
+| 38 | 2.14 (Mobile/Remote) | 4 | Office 365 product name removal (#7/#99) |
+| 39 | 2.15 (Secure Software) | 3 | Lowest dependency; natural Ch2 closer |
+
 > ## ◆ RECALCULATE SEQUENCE HERE ◆
 >
-> **Stop. Before starting Phase 5:**
+> **Stop. Before starting Phase 6:**
 >
-> - Re-run the architectural roots check
-> - Refresh per-policy ticket counts — Phase 5+ orderings below are provisional and likely partially stale
-> - Re-evaluate Chapter 2 LASO downstream queue ordering against any ripples from Phases 2–4
-> - Check whether 5.07 should pull forward based on 1.09 ripples
-> - Decide whether `1.04_Procedural_Cleanup` should sequence before or after Chapter 6 appendices
+> - Re-run the architectural roots check — all sweep roots (#208, #211, #235, #245, #6/#7/#10) should be fully resolved or nearly so after Phase 5
+> - Refresh Ch3 ripple ticket status — determine if batch resolution is needed before Ch5 compliance work
+> - Refresh per-policy ticket counts for Ch5 and Ch6
+> - Verify 5.07 feeder chain: are 5.02–5.06 ready to sequence as planned?
+> - Evaluate whether any Phase 5 ripples affect Ch5/Ch6 ordering
 >
 > The remaining phases are **provisional**. Treat them as a starting point for re-planning, not a fixed schedule.
 
 ---
 
-### Phase 5 — Chapter 2 Security (provisional)
-
-**LASO downstream cleanup priority** (consume LASO ripples first while pattern is fresh):
-
-- 2.01 → 2.06 → 2.02 → 2.04 → 2.11 → 2.12 → 2.13
-
-**Remaining Chapter 2:**
-
-- 2.03 → 2.05 → 2.07 → 2.08 → 2.09 → 2.10 → 2.14 → 2.15
-
-Note: 2.10 has the Shadow IT routing fix (split between IoC routing through 4.02 and config-mgmt remediation through 3.09/2.10). Apply during 2.10's session.
-
----
-
 ### Phase 6 — Chapter 5 Compliance (provisional)
 
-5.02 → 5.03 → 5.04 → 5.05 → 5.06 → 5.07. 5.07 last because it consumes outputs from the other Chapter 5 policies.
+**Goal:** Tighten the audit, enforcement, and compliance monitoring layer. 5.07 last because it consumes outputs from every other Ch5 policy.
+
+| Seq | Policy | Tickets | Rationale |
+|---|---|---|---|
+| 40 | 5.02 (Internal Audits) | 5 | Produces audit findings that feed 5.03 CAPs |
+| 41 | 5.03 (Compliance Monitoring) | 2 | CAP lifecycle; consumes 5.02 findings |
+| 42 | 5.04 (Performance Metrics) | 1 | KPI data feeds 5.07 |
+| 43 | 5.05 (Security Control Assessment) | 1 | Control assessment results feed 5.07 |
+| 44 | 5.06 (Vendor Compliance) | 1 | Consumes 1.13 (tightened in Phase 5A); feeds 5.07 |
+| 45 | 5.07 (Annual Policy Review) | 3 | Capstone — consumes 5.02–5.06, 3.16, 1.09, 1.05 outputs |
 
 ---
 
 ### Phase 7 — Chapter 6 Appendices (provisional)
 
-6.01 (Glossary — draft delivered April 12, 2026; final tightening after all policies finalized) → 6.02 → 6.03 → 6.04.
+**Goal:** Finalize supporting appendices. Glossary first because Ch2/Ch5 tightening will have added terms.
+
+| Seq | Policy | Tickets | Rationale |
+|---|---|---|---|
+| 46 | 6.01 (Glossary) | 3 | Draft delivered April 12; needs term harvest from all tightened policies |
+| 47 | 6.02 (Policy Matrix) | 3 | Framework mapping + dependency matrix; currently empty |
+| 48 | 6.03 (STAK Matrix) | 3 | NICE/SFIA alignment verification against 1.07 tightened tiers |
+| 49 | 6.04 (Revision History) | 1 | Establish consistent entry format |
 
 ---
 
@@ -310,6 +373,8 @@ Note: 2.10 has the Shadow IT routing fix (split between IoC routing through 4.02
 Final pre-v1.0 work. Remaining member: #31 (LyX environment names for §6.15/§6.16). Transcribes Chapter 4's de facto playbook patterns into 1.04 §6.16.
 
 Per Robert's April 11, 2026 ruling: this cluster is **not** a hard blocker on v1.0 readiness.
+
+**Note:** If #31 is absorbed into the Phase 5.0 1.04 tightening session, Phase 8 is eliminated.
 
 ---
 
@@ -323,6 +388,8 @@ Final validation pass, README status update, manual declared at v1.0, repo archi
 
 - **#264 partial completion tracking** — confirm which subtasks are actually closed in the repo vs. carried in memory only. May need a sweep to align.
 - **#208/#211 sweep enforcement** — currently absorbed into per-policy tightening; consider whether a single dedicated sweep session would be faster.
+- **Ch3 ripple batch (8 tickets)** — batch session, defer to v1.0 validation, or absorb opportunistically? Decision pending.
+- **#31 absorption** — does 1.04 tightening in Phase 5.0 absorb #31 (closing the 1.04_Procedural_Cleanup cluster), or does #31 remain deferred to Phase 8? To be decided at 1.04 session start.
 
 ---
 
