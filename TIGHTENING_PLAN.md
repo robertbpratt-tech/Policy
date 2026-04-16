@@ -107,7 +107,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 14, 2026 (◆ Phase 4→5 recalculation). All ticket counts verified against GitHub issue tracker — 104 open issues confirmed.
+**Last refreshed:** April 16, 2026 (pre-1.04 session ripple cleanup — #320 and #321 closed). All ticket counts verified against GitHub issue tracker.
 
 ### Chapter 0 / Front Matter
 
@@ -183,7 +183,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 4.02 | Identification and Reporting | T | v2.1 | 0 | — |
 | 4.03 | Containment Strategy and Playbooks | T | v2.0 | 0 | — |
 | 4.04 | Eradication | T | v2.2 | 0 | — |
-| 4.05 | Recovery and Restoration | T | v2.1 | 0 | — |
+| 4.05 | Recovery and Restoration | T | v2.2 | 0 | — |
 | 4.06 | Communication Protocols | T | v2.2 | 0 | — |
 | 4.07 | Postmortem and Lessons Learned | T | v1.0 | 0 | — |
 
@@ -191,7 +191,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 5.01 | Implementation, Enforcement, Legal | T | v1.0 | 0 | — |
+| 5.01 | Implementation, Enforcement, Legal | T | v1.1 | 0 | — |
 | 5.02 | Internal Audits | D | — | 5 | #183, #184, #185, #186, #278 |
 | 5.03 | Compliance Monitoring | D | — | 2 | #187, #279 |
 | 5.04 | Performance Metrics | D | — | 1 | #280 |
