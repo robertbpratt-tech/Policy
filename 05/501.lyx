@@ -182,7 +182,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 1.1
 \end_layout
 
 \begin_layout Subsection*
@@ -1323,7 +1323,7 @@ nolink "false"
 
 
 \series default
-,
+ (Policy and Documentation Formatting Standards),
  which governs policy text.
 \end_layout
 
@@ -1378,7 +1378,7 @@ nolink "false"
 
 
 \series default
- (Policy and Documentation Formatting Standards);
+;
  the Knowledge Base publication constitutes the operational distribution mechanism.
 \end_layout
 
