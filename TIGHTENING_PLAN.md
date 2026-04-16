@@ -71,15 +71,11 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 
 **Sweep-style roots (#208, #211, #235, #245, #6/#7/#8/#10)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched.
 
-### Deferred Cluster: `1.04_Procedural_Cleanup`
+### Deferred Cluster: `1.04_Procedural_Cleanup` ✅ CLOSED
 
-A constitutional revision of 1.04 mid-project would invalidate prior tightening work. This cluster collects 1.04 tickets that touch §6.15 (SOPs) and §6.16 (Playbooks) — procedural sections that don't affect policy formatting rules.
+Closed April 16, 2026. Final member #31 was absorbed into the Phase 5.0 1.04 tightening session and resolved architecturally via the new §6.15 Type/Subtype taxonomy (Procedure → Troubleshooting / Playbook; Information → Reference / Context). The cluster is empty.
 
-**Cluster source-of-truth rule:** Chapter 4 is the source of truth for playbook structure; the cluster transcribes Chapter 4's de facto patterns into 1.04 §6.16, not the other way around.
-
-**Cluster members:** #31 (LyX environment names for §6.15/§6.16). Previously closed: #5, #30, #32, #290.
-
-**Status:** Per Robert's April 11, 2026 ruling, this cluster is **not** a hard blocker on v1.0. Sequenced at Phase 8 after appendices. Whether #31 absorbs into the Phase 5 1.04 tightening session or remains deferred is an open question to be decided at session start.
+**Historical members (all closed):** #5, #30, #31, #32, #290.
 
 ---
 
@@ -100,6 +96,8 @@ Cross-validator feedback matching these patterns is reflexively declined.
 11. **ChatGPT: restore product names (e.g., Redmine) for cross-policy consistency** — 1.04 §6.10 prohibits product names; untightened policies will be cleaned during their sessions.
 12. **Accept dash Out of Scope convention as Ch4 standing pattern** — 1.04 §6.4 prescribes colon format. The dash pattern was a regression corrected in 4.04 v2.2.
 13. **ChatGPT: narrow 3.12 IC designation to pre-work-order scope or delete communications spokesperson** — IC is incorporated by reference from 3.06, not independent authority. Proposed narrowing is architecturally incoherent (IC commands response, not monitoring; "up to work order creation" would give IC zero authority since incidents require work orders). "Operational" qualifier + §6.3 Security Handoff + §2 Out of Scope already draw the jurisdictional boundary.
+14. **Cross-validator reviews stale source on repeat findings** — ChatGPT has twice cited draft text that no longer exists in current source (1.04 Phase 5.0 session, rounds 2 and 3 both flagged "legally authoritative" after it was removed in v1.2). Sub-type of the general "stale section references" pattern. Reflexive decline; confirm via grep before engaging.
+15. **Cross-validator flags downstream-policy prohibited-language usage as reason to weaken 1.04 §6.9** — the correct response is to fix the downstream policy, not relax the constitutional prohibition. File ripple against the offending policy; decline the 1.04 change. Example: 1.04 Phase 5.0 round 3 — ChatGPT cited 2.12 "Where technically feasible" usage as rationale to narrow §6.9; ripple #324 filed against 2.12, §6.9 unchanged.
 
 ---
 
@@ -107,7 +105,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 16, 2026 (pre-1.04 session ripple cleanup — #320 and #321 closed). All ticket counts verified against GitHub issue tracker.
+**Last refreshed:** April 16, 2026 (Phase 5.0 Constitutional Lock complete — 1.04 v1.4 committed, #31 closed, ripples #322/#323/#324 filed).
 
 ### Chapter 0 / Front Matter
 
@@ -121,7 +119,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|
 | 1.02 | Code of Ethics | T | — | 0 | — |
 | 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — |
-| 1.04 | Formatting Standards | L | — | 1 | #31 (deferred to cluster) |
+| 1.04 | Formatting Standards | T | v1.4 | 0 | — |
 | 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — |
 | 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — |
 | 1.07 | Workforce Roles | T | v1.3 | 0 | — |
@@ -148,7 +146,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 2.09 | Vulnerability and Patch Management | D | — | 4 | #85, #86, #87, #271 |
 | 2.10 | Secure Configuration Baselines | D | — | 4 | #88, #89, #90, #226 |
 | 2.11 | Audit Logging and Monitoring | D | — | 2 | #91, #92 |
-| 2.12 | Media Protection and Sanitization | D | — | 3 | #94, #95, #228 |
+| 2.12 | Media Protection and Sanitization | D | — | 4 | #94, #95, #228, #324 |
 | 2.13 | Physical Security | D | — | 3 | #96, #97, #98 |
 | 2.14 | Mobile and Remote Access | D | — | 4 | #99, #101, #102, #229 |
 | 2.15 | Secure Software Lifecycle | D | — | 3 | #103, #104, #105 |
@@ -169,7 +167,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.10 | Release and Deployment | T | v2.0 | 0 | — |
 | 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #317 |
 | 3.12 | Monitoring and Event Management | T+ | v2.0 | 1 | #318 |
-| 3.13 | Knowledge Management | T | v2.1 | 0 | — |
+| 3.13 | Knowledge Management | T+ | v2.1 | 1 | #322 |
 | 3.14 | IT Project Management | T | v2.1 | 0 | — |
 | 3.15 | Service Continuity | T+ | v2.1 | 2 | #314, #319 |
 | 3.16 | Service Improvement | T | v2.0 | 0 | — |
@@ -181,7 +179,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|
 | 4.01 | IR Policy Overview | T | v2.0 | 0 | — |
 | 4.02 | Identification and Reporting | T | v2.1 | 0 | — |
-| 4.03 | Containment Strategy and Playbooks | T | v2.0 | 0 | — |
+| 4.03 | Containment Strategy and Playbooks | T+ | v2.0 | 1 | #323 |
 | 4.04 | Eradication | T | v2.2 | 0 | — |
 | 4.05 | Recovery and Restoration | T | v2.2 | 0 | — |
 | 4.06 | Communication Protocols | T | v2.2 | 0 | — |
@@ -285,11 +283,11 @@ Sequencing principles, in priority order:
 
 **Goal:** Lock the formatting standard, clear remaining governance policies, then tighten the entire security chapter. LASO downstream queue (from closed root #220) is prioritized within Ch2 to close out that cleanup batch.
 
-#### 5.0 — Constitutional Lock
+#### 5.0 — Constitutional Lock ✅
 
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
-| 21 | 1.04 (Formatting Standards) | 1 (#31, deferred cluster — absorption TBD at session start) | Constitutional standard; must be fully tightened before Phase 5 bulk work so every subsequent session measures against a locked foundation |
+| 21 | ~~1.04 (Formatting Standards)~~ — ✅ v1.4, April 16, 2026. #31 absorbed and closed; Phase 8 eliminated. Ripples filed: #322 (3.13), #323 (4.03), #324 (2.12). | 1 (#31, absorbed) | Constitutional standard; must be fully tightened before Phase 5 bulk work so every subsequent session measures against a locked foundation |
 
 #### 5A — Remaining Chapter 1
 
@@ -368,13 +366,9 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 ---
 
-### Phase 8 — `1.04_Procedural_Cleanup` Cluster
+### Phase 8 — `1.04_Procedural_Cleanup` Cluster ✅ ELIMINATED
 
-Final pre-v1.0 work. Remaining member: #31 (LyX environment names for §6.15/§6.16). Transcribes Chapter 4's de facto playbook patterns into 1.04 §6.16.
-
-Per Robert's April 11, 2026 ruling: this cluster is **not** a hard blocker on v1.0 readiness.
-
-**Note:** If #31 is absorbed into the Phase 5.0 1.04 tightening session, Phase 8 is eliminated.
+Phase 8 was eliminated on April 16, 2026. #31 (the last remaining cluster member) was absorbed into the Phase 5.0 1.04 tightening session and resolved architecturally via the new §6.15 Type/Subtype taxonomy. The cluster is empty and closed.
 
 ---
 
@@ -388,8 +382,7 @@ Final validation pass, README status update, manual declared at v1.0, repo archi
 
 - **#264 partial completion tracking** — confirm which subtasks are actually closed in the repo vs. carried in memory only. May need a sweep to align.
 - **#208/#211 sweep enforcement** — currently absorbed into per-policy tightening; consider whether a single dedicated sweep session would be faster.
-- **Ch3 ripple batch (8 tickets)** — batch session, defer to v1.0 validation, or absorb opportunistically? Decision pending.
-- **#31 absorption** — does 1.04 tightening in Phase 5.0 absorb #31 (closing the 1.04_Procedural_Cleanup cluster), or does #31 remain deferred to Phase 8? To be decided at 1.04 session start.
+- **Ch3 ripple batch (now 11 tickets: #308, #309, #313, #314, #316, #317, #318, #319, #322, plus #323 on 4.03)** — batch session, defer to v1.0 validation, or absorb opportunistically? Decision pending.
 
 ---
 
