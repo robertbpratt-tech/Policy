@@ -6,7 +6,7 @@
 | 1.01 | Department Mission and Strategic Objectives | x |
 | 1.02 | Code of Ethics and Professional Conduct | x |
 | 1.03 | Standard Operating Ethos | x |
-| 1.04 | Policy and Documentation Formatting Standards | o |
+| 1.04 | Policy and Documentation Formatting Standards | x |
 | 1.05 | Policy Review and Update Procedures | x |
 | 1.06 | IT Governance and Oversight Structure | x |
 | 1.07 | Workforce Roles, Responsibilities, and Competency Framework | x |
