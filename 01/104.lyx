@@ -174,13 +174,13 @@ name "pol:1.04"
 
 \lang english
 Effective:
- July 01,
+ April 16,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 1.4
 \end_layout
 
 \begin_layout Subsection*
@@ -210,10 +210,10 @@ This policy establishes the mandatory formatting,
 \begin_layout Standard
 
 \lang english
-This policy applies to all Information Operations personnel responsible for drafting,
- editing,
- approving,
- or maintaining any document that is part of the Information Operations Policy Manual or supporting procedural library.
+This policy applies to all Information Operations personnel assigned to draft,
+ edit,
+ approve,
+ or maintain any document that is part of the Information Operations Policy Manual or supporting procedural library.
 \end_layout
 
 \begin_layout Itemize
@@ -258,9 +258,73 @@ Out of Scope
 \begin_layout Itemize
 
 \lang english
-Informal working documents,
- drafts in progress,
- and internal correspondence not intended for publication in the Policy Manual or procedural library.
+Informal drafts and internal correspondence.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Work order records:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Request Fulfillment Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Configuration item records and CMDB entries:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Configuration Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Audit logs and operational telemetry:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Audit Logging and Monitoring Policy).
 \end_layout
 
 \end_deeper
@@ -386,7 +450,18 @@ Enforcement
  The IT Director shall return documents found to be non-compliant to the author for revision prior to publication.
  Repeated non-compliance may be escalated under 
 \series bold
-Policy 5.01
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
  (Policy Implementation,
  Enforcement,
@@ -456,6 +531,60 @@ nolink "false"
  Workforce Roles,
  Responsibilities,
  and Competency Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Audit Logging and Monitoring Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management Policy
 \end_layout
 
 \begin_layout Itemize
@@ -553,6 +682,24 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+ECIO Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Matrix
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NRS 239.010 (Applicability and Public Records)
 \end_layout
 
@@ -619,7 +766,7 @@ Authoritative System of Record
 Master Repository
 \series default
 :
- The LyX source file constitutes the legally authoritative master record.
+ The LyX source file constitutes the authoritative source for ECIO policy version control and publication control.
 \end_layout
 
 \begin_deeper
@@ -629,9 +776,7 @@ Master Repository
 Public Records Status
 \series default
 :
- Designation of an "authoritative" copy is for version control only and does not alter public records status,
- retention obligations,
- or disclosure requirements applicable to records in any medium under NRS 239.010.
+ Designation of an "authoritative" copy is for version control only and does not alter public records status or disclosure requirements applicable to records in any medium under NRS 239.010.
 \end_layout
 
 \end_deeper
@@ -812,15 +957,16 @@ Out of Scope
 \series default
 :
  Capitalized noun phrases identifying what the policy does not govern.
- Each item shall appear as a sub-bullet beneath the label,
- followed by a colon and the routing pointer to the governing policy.
- Format:
- "[Topic]:
+ Each item shall appear as a sub-bullet beneath the label.
+ When another policy governs the topic,
+ the item shall be followed by a colon and the routing pointer in the format "[Topic]:
  
 \series bold
 Policy [X.XX]
 \series default
 ."
+ When no policy governs the topic,
+ the item shall stand alone as a bare noun phrase with a terminal period.
 \end_layout
 
 \begin_layout Standard
@@ -1374,6 +1520,10 @@ reasonable
 
 \begin_layout Itemize
 "if necessary"
+\end_layout
+
+\begin_layout Itemize
+"when necessary"
 \end_layout
 
 \begin_layout Itemize
@@ -1979,7 +2129,9 @@ Manual Overrides
 Images and Diagrams
 \series default
 :
- Workflow diagrams may be included when necessary.
+ Workflow diagrams may be included when required to illustrate complex branching logic,
+ network topologies,
+ or sequence flows.
  They shall be inserted as standard LyX "Floats" with a caption and created in a format that renders clearly in grayscale (PDF).
 \end_layout
 
@@ -2154,171 +2306,18 @@ nolink "false"
 \end_layout
 
 \begin_layout Subsubsection*
-6.15 Procedural Document Formatting
+6.15 Procedural and Informational Documentation
 \end_layout
 
 \begin_layout Standard
-Standard Operating Procedures (SOPs) are distinct from policies and are maintained as tickets or wiki entries in the System of Engagement.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Taxonomy
-\series default
-:
- The Subject Line shall clearly identify the task.
- The Category field shall correspond to the ticket taxonomy.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Linkage
-\series default
-:
- The procedure shall link to at least one (1) work order or policy that triggered the documentation.
- Informational documentation is exempt from this requirement.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Ownership
-\series default
-:
- Each SOP shall identify the owning role that shall keep the procedure current.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Required Body Elements
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-Prerequisites
-\series default
-:
- Required roles,
- permissions,
- or system states.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Quick Guide
-\series default
-:
- A condensed summary for experienced technicians.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Step-by-Step
-\series default
-:
- A detailed,
- narrative walkthrough.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Outputs
-\series default
-:
- Artifacts or logs generated by the procedure.
-\end_layout
-
-\end_deeper
-\begin_layout Subsubsection*
-6.16 Playbook Formatting
-\end_layout
-
-\begin_layout Standard
-Playbooks are scenario-based operational artifacts that govern decision-making and technical execution during defined incident or operational scenarios.
- They are distinct from SOPs in that they present branching decision logic rather than linear procedural steps.
- Playbooks are maintained as governed Knowledge Base artifacts in the System of Engagement.
-\end_layout
-
-\begin_layout Standard
-Each playbook shall include the following structural elements:
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Subject Line
-\series default
-:
- Shall identify the scenario type and governing policy (e.g.,
- "Chapter 4 Playbook —
- Category B:
- Malicious Code Activity | Governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.03"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Containment Strategy and Playbooks)").
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Version and Effective Date
-\series default
-:
- Shall be maintained in the document header and updated upon each revision.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Governing Policy Reference
-\series default
-:
- Shall cite the policy that mandates the playbook's existence and defines its content requirements.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Owning Role
-\series default
-:
- Shall identify the role that shall maintain the playbook and initiate reviews.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Required Content Sections
-\series default
-:
- As defined by the governing policy for each playbook type.
-\end_layout
-
-\begin_layout Standard
-Review cadence and content requirements for each playbook class are defined in the governing policy.
- Playbook versioning and Knowledge Base artifact governance are subject to 
+Procedural and informational documentation is distinct from policies and is maintained as Knowledge Base artifacts in the System of Engagement.
+ All such documentation shall be classified under one of the two document types defined below.
+ Knowledge Base lifecycle obligations,
+ including category ownership,
+ review cadence,
+ retention,
+ and retirement,
+ are governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2334,6 +2333,436 @@ nolink "false"
 
 \series default
  (Knowledge Management Policy).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Document Types
+\series default
+:
+ The following two types are the closed set of document classes.
+ A new type shall not be introduced without IT Director approval and incorporation into this list.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Procedure
+\series default
+:
+ A document that directs the reader to perform a task.
+ Procedures contain steps,
+ decision points,
+ and an expected end state.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Information
+\series default
+:
+ A document that the reader consults for facts or context.
+ Information documents are not performed.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Document Subtypes
+\series default
+:
+ Each type has a closed set of subtypes.
+ A new subtype shall not be introduced without IT Director approval and incorporation into this list.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Procedure —
+ Troubleshooting
+\series default
+:
+ Resolves a problem or fulfills a defined task.
+ May be linear or branching.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Procedure —
+ Playbook
+\series default
+:
+ A scenario-based incident response artifact.
+ Playbook existence,
+ content,
+ and review cadence are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Containment Strategy and Playbooks) Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Information —
+ Reference
+\series default
+:
+ Catalogs the state of the environment.
+ Takes the form of lists,
+ tables,
+ diagrams,
+ schemas,
+ or inventories.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Information —
+ Context
+\series default
+:
+ Prose explanation of policy,
+ process,
+ or governance.
+ Provides background,
+ interpretation,
+ or rationale.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Shared Metadata Header
+\series default
+:
+ Every document,
+ regardless of type or subtype,
+ shall carry the following header fields.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subject
+\series default
+:
+ A short,
+ task-oriented title identifying the document.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Type
+\series default
+:
+ Procedure or Information.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subtype
+\series default
+:
+ Troubleshooting,
+ Playbook,
+ Reference,
+ or Context.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Category
+\series default
+:
+ The operational classification corresponding to the active Knowledge Base taxonomy maintained by the Assistant IT Director in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Owner
+\series default
+:
+ The role responsible for keeping the document current.
+ The Owner shall be a role,
+ not a named individual.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Version
+\series default
+:
+ Begins at 1.0 and increments on revision.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Effective Date
+\series default
+:
+ The date the current version takes effect.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Procedure —
+ Troubleshooting Body
+\series default
+:
+ A Troubleshooting document shall contain the following body sections.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Prerequisites
+\series default
+:
+ Required roles,
+ permissions,
+ tools,
+ or system states.
+ Required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Quick Guide
+\series default
+:
+ A condensed reference for experienced operators.
+ Optional.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Step-by-Step
+\series default
+:
+ Numbered steps.
+ Branches shall appear where the procedure contains decision points.
+ Formatting conventions for sequential steps,
+ conditional branches,
+ and expected end states are maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3.
+ Required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Expected End State
+\series default
+:
+ The condition that defines successful completion.
+ Required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Linked Work Orders
+\series default
+:
+ At least one (1) work order that triggered or used the procedure.
+ Required.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Procedure —
+ Playbook Body
+\series default
+:
+ Playbook body content requirements are defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5.
+ This policy does not restate those requirements.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Information —
+ Reference Body
+\series default
+:
+ A Reference document shall contain the following body sections.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Scope Statement
+\series default
+:
+ A single sentence identifying what the document catalogs.
+ Required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Last Verified Accurate
+\series default
+:
+ The date on which the cataloged content was last confirmed correct.
+ Required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Content
+\series default
+:
+ The cataloged material,
+ presented in whatever form best serves the content (list,
+ table,
+ diagram,
+ schema,
+ or inventory).
+ Required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Update Trigger
+\series default
+:
+ The event or cadence that requires re-verification of the cataloged content.
+ Required.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Information —
+ Context Body
+\series default
+:
+ A Context document shall contain the following body sections.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Scope Statement
+\series default
+:
+ A single sentence identifying what the document explains and to whom.
+ Required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Authority
+\series default
+:
+ The policy,
+ statute,
+ regulation,
+ or framework the explanation draws from.
+ Required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Body
+\series default
+:
+ The prose explanation.
+ No format mandate beyond readability.
+ Required.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Related Procedures
+\series default
+:
+ Links to Procedure documents that implement or operationalize the context.
+ Required when such procedures exist.
+\end_layout
+
+\begin_layout Standard
+This section establishes the mandatory minimum structure for procedural and informational documentation.
+ Field formatting,
+ template layout,
+ and implementation conventions within each required section shall be maintained by the Assistant IT Director under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.3 as an operational standard.
 \end_layout
 
 \end_body
