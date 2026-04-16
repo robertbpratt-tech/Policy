@@ -179,7 +179,7 @@ Effective:
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -2515,7 +2515,7 @@ nolink "false"
 
 
 \series default
-.
+ (Policy and Documentation Formatting Standards).
  The Assistant IT Director shall own checklist maintenance under standing authority.
  The Assistant IT Director shall review the checklist no less than annually,
  upon closure of any incident that invoked it,
