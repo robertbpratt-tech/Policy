@@ -98,6 +98,9 @@ Cross-validator feedback matching these patterns is reflexively declined.
 13. **ChatGPT: narrow 3.12 IC designation to pre-work-order scope or delete communications spokesperson** — IC is incorporated by reference from 3.06, not independent authority. Proposed narrowing is architecturally incoherent (IC commands response, not monitoring; "up to work order creation" would give IC zero authority since incidents require work orders). "Operational" qualifier + §6.3 Security Handoff + §2 Out of Scope already draw the jurisdictional boundary.
 14. **Cross-validator reviews stale source on repeat findings** — ChatGPT has twice cited draft text that no longer exists in current source (1.04 Phase 5.0 session, rounds 2 and 3 both flagged "legally authoritative" after it was removed in v1.2). Sub-type of the general "stale section references" pattern. Reflexive decline; confirm via grep before engaging.
 15. **Cross-validator flags downstream-policy prohibited-language usage as reason to weaken 1.04 §6.9** — the correct response is to fix the downstream policy, not relax the constitutional prohibition. File ripple against the offending policy; decline the 1.04 change. Example: 1.04 Phase 5.0 round 3 — ChatGPT cited 2.12 "Where technically feasible" usage as rationale to narrow §6.9; ripple #324 filed against 2.12, §6.9 unchanged.
+16. **Cross-validator misread LyX CommandInset refs as unresolved placeholders** — validators cannot render LyX source; raw text `Policy \begin_inset CommandInset ref` reads as "Policy ." or "Policy (...)" to naive text extraction. All cross-references using LyX insets render correctly in compiled PDF. Confirm via `grep -n "Policy [0-9]\.[0-9]"` against the current source before engaging; reflexive decline for "unresolved cross-references" findings when grep returns zero plain-text matches. (1.12 Round 2 Gap 2, ChatGPT.)
+17. **Grant-terms savings clause reintroducing Department Head or external authority over IT asset disposition** — architectural position locked: IT holds unitary authority over IT equipment regardless of funding source. Grant-terms compliance is grant-administration's problem, not a constraint on IT authority. Validators repeatedly propose "savings clauses" that carve out Department Head, Grant Authority, or donor-approval paths. Reflexive decline. (1.12 Rounds 2, 3, 4, ChatGPT. Round 4 instance also quoted pre-tightening source text — compound stale-source + architectural error.)
+18. **"Shall be" applied to definitional headers** — "shall" operates on directives, not descriptions. A classification definition (e.g., "IT-Managed: Assets that are...") describes a category; it is not an instruction anyone executes. Applying "shall" to definitional prose produces grammatical noise without governance effect. Obligations associated with each classification live in sub-bullets and are correctly "shall"-anchored. (1.12 Round 3 Gap 2, Gemini.)
 16. **Self-generated: option-sets that exclude the architecturally-compliant answer** — when Claude proposes a binary or narrow option-set under a locked architectural decision and omits the option compatible with that decision, the entire option-set is discarded. Do not treat the IT Director's selection from an incomplete menu as an "answer" to build the next step on, and do not flag downstream "tensions" that are artifacts of the flawed menu. Re-draft with the architectural frame stated first (per project instructions Option-Setting Discipline), and offer only frame-compatible options. If no frame-compatible option exists, say so and ask for direction. This is a Claude-side behavioral pattern, not validator feedback, but is captured here because the detection and decline mechanics are identical.
 
 ---
@@ -128,7 +131,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
 | 1.10 | IT Financial / Procurement | D | — | 4 | #50, #51, #225, #299 |
 | 1.11 | Data Governance and Classification | T | v2.2 | 0 | — |
-| 1.12 | IT Asset Management | D | — | 6 | #53, #54, #55, #256, #262, #301 |
+| 1.12 | IT Asset Management | T | v2.6 | 0 | — |
 | 1.13 | Supply Chain Risk Management | D | — | 2 | #56, #232 |
 | 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
 
@@ -294,7 +297,7 @@ Sequencing principles, in priority order:
 
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
-| 22 | 1.12 (Asset Management) | 6 | Highest Ch1 ticket count; feeds Ch2 asset references (2.10 config baselines, 2.12 media protection, 2.09 vuln management) |
+| 22 | ~~1.12 (Asset Management)~~ — ✅ v2.6, April 17, 2026. Tickets #53, #54, #55, #256, #262, #301 closed. Ripples filed: #325 (3.08 operational state alignment), #326 (2.09 software inventory field alignment), #327 (3.01 IT Asset Catalog reciprocal). | 6 | Highest Ch1 ticket count; feeds Ch2 asset references (2.10 config baselines, 2.12 media protection, 2.09 vuln management) |
 | 23 | 1.10 (Financial/Procurement) | 4 | Procurement governance feeds supply chain |
 | 24 | 1.13 (Supply Chain/SCRM) | 2 | Consumes 1.10; feeds 5.06 vendor governance |
 
