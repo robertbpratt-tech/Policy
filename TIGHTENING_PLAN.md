@@ -109,7 +109,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 16, 2026 (Phase 5.0 Constitutional Lock complete — 1.04 v1.4 committed, #31 closed, ripples #322/#323/#324 filed).
+**Last refreshed:** April 17, 2026 (1.10 Phase 5A session complete — v2.2 committed, #50/#51/#225/#299 closed, ripples #328/#329 filed).
 
 ### Chapter 0 / Front Matter
 
@@ -129,9 +129,9 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.07 | Workforce Roles | T | v1.3 | 0 | — |
 | 1.08 | Delegation of Authority | T | v1.4 | 0 | — |
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
-| 1.10 | IT Financial / Procurement | D | — | 4 | #50, #51, #225, #299 |
+| 1.10 | IT Financial / Procurement | T | v2.2 | 0 | — |
 | 1.11 | Data Governance and Classification | T | v2.2 | 0 | — |
-| 1.12 | IT Asset Management | T | v2.6 | 0 | — |
+| 1.12 | IT Asset Management | T+ | v2.6 | 1 | #329 |
 | 1.13 | Supply Chain Risk Management | D | — | 2 | #56, #232 |
 | 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
 
@@ -205,7 +205,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 6.01 | Glossary | A | draft | 3 | #192, #193, #195 |
+| 6.01 | Glossary | A | draft | 4 | #192, #193, #195, #328 |
 | 6.02 | Policy Matrix | A | — | 3 | #196, #197, #198 |
 | 6.03 | Workforce Roles STAK Matrix | A | — | 3 | #199, #200, #214 |
 | 6.04 | Revision History and Version Control | A | — | 1 | #205 |
@@ -298,7 +298,7 @@ Sequencing principles, in priority order:
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
 | 22 | ~~1.12 (Asset Management)~~ — ✅ v2.6, April 17, 2026. Tickets #53, #54, #55, #256, #262, #301 closed. Ripples filed: #325 (3.08 operational state alignment), #326 (2.09 software inventory field alignment), #327 (3.01 IT Asset Catalog reciprocal). | 6 | Highest Ch1 ticket count; feeds Ch2 asset references (2.10 config baselines, 2.12 media protection, 2.09 vuln management) |
-| 23 | 1.10 (Financial/Procurement) | 4 | Procurement governance feeds supply chain |
+| 23 | ~~1.10 (Financial/Procurement)~~ — ✅ v2.2, April 17, 2026. Tickets #50, #51, #225, #299 closed. Ripples filed: #328 (6.01 Glossary terms — Technical Authority, Financial Authority, Technical Approval, Emergency Technical Approval, No Tag/No Registration No Pay), #329 (1.12 NRS 239.125 / NAC 239.155 retention citation consistency). Architectural landing: Emergency Procurement construct renamed to Emergency Technical Approval to preserve Technical/Financial Authority separation; invocation narrowed to IT Director / AID / 1.08-delegated technical approver (within delegation scope only); CJIS citation corrected from legacy 5.1.1.5 to v6.0 SA-9 + Appendix H; CJIS compliance duties anchored to IT Director (as LASO); §6.4 Asset Intake consolidated to by-reference pointer at 1.12 §6.1 (eliminates dual-maintenance liability). | 4 | Procurement governance feeds supply chain |
 | 24 | 1.13 (Supply Chain/SCRM) | 2 | Consumes 1.10; feeds 5.06 vendor governance |
 
 #### 5B — Chapter 2 LASO Priority Group
@@ -387,6 +387,7 @@ Final validation pass, README status update, manual declared at v1.0, repo archi
 - **#264 partial completion tracking** — confirm which subtasks are actually closed in the repo vs. carried in memory only. May need a sweep to align.
 - **#208/#211 sweep enforcement** — currently absorbed into per-policy tightening; consider whether a single dedicated sweep session would be faster.
 - **Ch3 ripple batch (now 11 tickets: #308, #309, #313, #314, #316, #317, #318, #319, #322, plus #323 on 4.03)** — batch session, defer to v1.0 validation, or absorb opportunistically? Decision pending.
+- **Ch1 ripples from 1.10 session** — #329 (1.12 NRS 239.125/NAC 239.155 consistency) — small Ch1 ripple; absorb when 1.12 touches next, or file as scheduled cleanup. #328 routes to 6.01 Glossary and absorbs into the 6.01 tightening session.
 
 ---
 
