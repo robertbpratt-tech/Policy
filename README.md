@@ -15,7 +15,7 @@
 | 1.10 | IT Financial Management and Procurement Policy | x |
 | 1.11 | Data Governance and Classification Policy | x |
 | 1.12 | IT Asset Management Policy | x |
-| 1.13 | Supply Chain Risk Management (SCRM) and Vendor Governance | o |
+| 1.13 | Supply Chain Risk Management (SCRM) and Vendor Governance | x |
 | 1.14 | Stakeholder Engagement and Communications Policy | x |
 | 2.01 | Acceptable Use of Information Technology Resources Policy | o |
 | 2.02 | Personnel Security and Background Screening Policy | o |
