@@ -109,7 +109,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 17, 2026 (1.10 Phase 5A session complete — v2.2 committed, #50/#51/#225/#299 closed, ripples #328/#329 filed).
+**Last refreshed:** April 17, 2026 (1.13 Phase 5A session complete — v2.0 committed, #56/#232 closed, #235 annotated (1.13 out of sweep scope), ripples #330/#331/#332/#333 filed).
 
 ### Chapter 0 / Front Matter
 
@@ -132,7 +132,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.10 | IT Financial / Procurement | T | v2.2 | 0 | — |
 | 1.11 | Data Governance and Classification | T | v2.2 | 0 | — |
 | 1.12 | IT Asset Management | T+ | v2.6 | 1 | #329 |
-| 1.13 | Supply Chain Risk Management | D | — | 2 | #56, #232 |
+| 1.13 | Supply Chain Risk Management | T | v2.0 | 0 | — |
 | 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
 
 ### Chapter 2 — Security
@@ -299,7 +299,7 @@ Sequencing principles, in priority order:
 |---|---|---|---|
 | 22 | ~~1.12 (Asset Management)~~ — ✅ v2.6, April 17, 2026. Tickets #53, #54, #55, #256, #262, #301 closed. Ripples filed: #325 (3.08 operational state alignment), #326 (2.09 software inventory field alignment), #327 (3.01 IT Asset Catalog reciprocal). | 6 | Highest Ch1 ticket count; feeds Ch2 asset references (2.10 config baselines, 2.12 media protection, 2.09 vuln management) |
 | 23 | ~~1.10 (Financial/Procurement)~~ — ✅ v2.2, April 17, 2026. Tickets #50, #51, #225, #299 closed. Ripples filed: #328 (6.01 Glossary terms — Technical Authority, Financial Authority, Technical Approval, Emergency Technical Approval, No Tag/No Registration No Pay), #329 (1.12 NRS 239.125 / NAC 239.155 retention citation consistency). Architectural landing: Emergency Procurement construct renamed to Emergency Technical Approval to preserve Technical/Financial Authority separation; invocation narrowed to IT Director / AID / 1.08-delegated technical approver (within delegation scope only); CJIS citation corrected from legacy 5.1.1.5 to v6.0 SA-9 + Appendix H; CJIS compliance duties anchored to IT Director (as LASO); §6.4 Asset Intake consolidated to by-reference pointer at 1.12 §6.1 (eliminates dual-maintenance liability). | 4 | Procurement governance feeds supply chain |
-| 24 | 1.13 (Supply Chain/SCRM) | 2 | Consumes 1.10; feeds 5.06 vendor governance |
+| 24 | ~~1.13 (Supply Chain/SCRM)~~ — ✅ v2.0, April 17, 2026. Tickets #56, #232 closed. #235 annotated (1.13 removed from sweep scope — zero prohibited-language hits). Ripples filed: #330 (2.12 carry SP 800-88 + sanitization authority), #331 (5.06 §6.1 "where applicable" cleanup), #332 (2.14 remote-access reciprocal), #333 (2.05 named-accounts reciprocal). Architectural landings: §4 exception routing corrected from 1.08 to 5.01 §6.6; CJIS legacy sections converted to v6.0 anchors (IR-6, PS-3, SA-9, Appendix H) matching 1.10 v2.2 pattern; §6.4 collapsed to by-reference pointer at 1.12 (eliminates GREEN-tag / IT-Managed dual-maintenance); Unauthorized Commitments relocated from §4 to new §6.9; AID role added for day-to-day vendor governance; vendor incident notification split into CJI 1-hour (CJIS IR-6(a)) and non-CJI 24-calendar-hour branches. | 2 (#56, #232) | Consumes 1.10; feeds 5.06 vendor governance |
 
 #### 5B — Chapter 2 LASO Priority Group
 
