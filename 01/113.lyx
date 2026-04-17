@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.0
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -511,7 +511,7 @@ Shall ensure contracts include County-required indemnification and procurement c
 \begin_layout Itemize
 
 \lang english
-Shall verify CJIS contract requirements are applied when Criminal Justice Information (CJI) may be accessed.
+Shall not finalize procurement processing for vendor engagements involving Criminal Justice Information (CJI) until the IT Director (as LASO) provides written confirmation that required CJIS contract language has been incorporated.
 \end_layout
 
 \end_deeper
@@ -774,6 +774,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Stakeholder Engagement and Communications Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:2.04"
 plural "false"
 caps "false"
@@ -973,6 +991,30 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NAC 239.155 (Adoption of Records Retention Schedule)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20070378 (Vendor Files)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20070474 (Contracts and Agreements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  IR-6 (Incident Reporting)
 \end_layout
@@ -1075,6 +1117,14 @@ NIST SP 800-53 Rev.
 NIST SP 800-53 Rev.
  5:
  SR-1 (Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SR-3 (Supply Chain Controls and Processes)
 \end_layout
 
 \begin_layout Itemize
@@ -1203,11 +1253,16 @@ The IT Director shall not procure,
 \end_layout
 
 \begin_layout Itemize
-The IT Director shall identify discovered covered equipment.
+The IT Director shall document discovered covered equipment within five (5) business days of discovery.
 \end_layout
 
 \begin_layout Itemize
-The IT Director shall require segregation and replacement planning for discovered covered equipment based on risk and lifecycle constraints.
+The IT Director shall ensure network-level segregation of documented covered equipment within ten (10) business days of documentation.
+\end_layout
+
+\begin_layout Itemize
+The IT Director shall file a replacement plan for documented covered equipment within thirty (30) calendar days of documentation,
+ based on risk and lifecycle constraints.
 \end_layout
 
 \end_deeper
@@ -1217,10 +1272,31 @@ The IT Director shall require segregation and replacement planning for discovere
 Enhanced Due Diligence
 \series default
 :
- The IT Director may require independent attestations (e.g.,
- Service Organization Control (SOC) reports),
- security questionnaires,
- or other evidence of control effectiveness for high-impact vendors.
+ For vendors with logical access to Confidential or Restricted data (per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+) or to CJI,
+ the IT Director shall require at least one independent assurance artifact prior to contract execution,
+ such as a Service Organization Control (SOC) 2 Type II report,
+ an ISO/IEC 27001 certification,
+ an independent security assessment report,
+ a qualified third-party penetration-test summary,
+ or equivalent independent third-party attestation.
+ Vendor-authored questionnaires may supplement but shall not substitute for independent assurance.
+ For other vendors,
+ the IT Director may require such evidence based on risk.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1288,6 +1364,32 @@ CJIS Contractor Certifications
 \begin_layout Itemize
 
 \series bold
+Information Exchange Agreement
+\series default
+:
+ The IT Director (as LASO) shall ensure that any vendor arrangement enabling external access to,
+ transmission of,
+ or exchange of CJI is supported by a written Information Exchange Agreement (IEA) or equivalent contract language in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 CJIS External Provider Oversight
 \series default
 :
@@ -1308,6 +1410,39 @@ Fingerprint-Based Record Check
  The IT Director (as LASO) shall ensure that,
  prior to any grant of logical access or unescorted physical access to CJI,
  all vendor personnel undergo a state of residency and national fingerprint-based record check adjudicated by the CSA or the State Identification Bureau (SIB) in accordance with CJIS Security Policy v6.0 PS-3 (Personnel Screening).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Vendor Personnel Notification
+\series default
+:
+ The IT Director shall ensure vendor agreements require vendor notification to the IT Director or designee within one (1) business day of any transfer or termination of vendor personnel holding County credentials,
+ badges,
+ or system privileges,
+ and prior to separation where planned.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subcontractor Flow-Down
+\series default
+:
+ The IT Director shall ensure vendor agreements prohibit the vendor from engaging subcontractors or sub-processors with access to County data,
+ network connectivity,
+ or CJI exposure without prior affirmative written approval from the IT Director.
+ Absence of an affirmative written response from the IT Director shall not constitute approval.
+ Vendor agreements shall require contractual flow-down of all applicable County obligations —
+ including security controls,
+ incident notification,
+ audit rights,
+ personnel screening,
+ data handling,
+ and destruction requirements —
+ to any approved subcontractor.
+ The prime vendor shall remain fully liable for subcontractor compliance.
 \end_layout
 
 \begin_layout Itemize
@@ -1349,9 +1484,13 @@ Non-CJI Branch
 Monitoring and Service Oversight
 \series default
 :
- The IT Director shall ensure vendor contracts provide County monitoring and review access,
- and sufficient visibility into security aspects of the provided services,
- consistent with CJIS monitoring expectations where CJI is involved.
+ The IT Director shall ensure vendor contracts provide County monitoring and review access to security operational information through one or more of the following:
+ automated access to vendor audit logs,
+ annual third-party assurance reports (e.g.,
+ SOC 2 Type II),
+ or integration with County-designated security monitoring infrastructure.
+ For vendors handling CJI,
+ contracts shall also incorporate CJIS monitoring requirements consistent with CJIS Security Policy v6.0 SA-9 (External System Services).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1489,13 +1628,46 @@ Contractor-Owned Device Support
  or install software on contractor-owned devices.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Clarification
+\series default
+:
+ The Information Operations Department may provide County-approved secure access software (e.g.,
+ VPN clients,
+ MFA agents) as artifacts to the contractor,
+ may provide written configuration guidance,
+ and shall configure County-side network routing and infrastructure necessary to enable authorized connections.
+ Hands-on work on the contractor-owned device remains prohibited.
+\end_layout
+
+\end_deeper
+
 \begin_layout Itemize
 
 \series bold
 Network Admission Enforcement
 \series default
 :
- The IT Director may deny network connectivity to contractor devices that do not meet County security requirements.
+ The IT Director shall deny network connectivity to contractor devices that do not meet County security requirements.
+ Exceptions to this prohibition shall be documented and approved in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1854,6 +2026,81 @@ Remediation Funding
  The Requesting Department shall fund remediation,
  replacement,
  and incident-response costs resulting from unauthorized technology or vendor commitments.
+\end_layout
+
+\begin_layout Subsubsection*
+6.10 Vendor Records Retention
+\end_layout
+
+\begin_layout Standard
+The IT Director shall ensure vendor records are retained in the County-designated contract repository,
+ with a corresponding entry in the System of Engagement linking each record to the applicable vendor engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Contract-Class Records
+\series default
+:
+ Executed vendor contracts,
+ CJIS Security Addenda,
+ CJIS Security Addendum Certifications,
+ and Information Exchange Agreements shall be retained for six (6) fiscal years from termination or completion of the contract in accordance with NRS 239.125,
+ NAC 239.155,
+ and LRDA 20070474 (Contracts and Agreements).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Vendor-File-Class Records
+\series default
+:
+ Vendor risk assessments,
+ security questionnaires,
+ independent attestations,
+ fingerprint-based record check documentation,
+ and vendor performance evidence shall be retained for three (3) fiscal years from the fiscal year to which they pertain in accordance with NRS 239.125,
+ NAC 239.155,
+ and LRDA 20070378 (Vendor Files).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Retrievability
+\series default
+:
+ The IT Director shall ensure that executed contracts,
+ addenda,
+ and Information Exchange Agreements are retrievable within one (1) business day of request,
+ consistent with the retrieval standard in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Legal Hold
+\series default
+:
+ Retention schedules shall be suspended on any record subject to a legal hold.
+ Records shall not be destroyed while a legal hold is in effect.
 \end_layout
 
 \end_body
