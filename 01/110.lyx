@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -193,23 +193,7 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish mandatory governance and internal controls for the financial stewardship and procurement of Elko County technology resources.
- This policy enforces a strict separation between 
-\series bold
-Technical Authority
-\series default
- (validation of need,
- compatibility,
- lifecycle impact,
- inventory integration,
- and security) and 
-\series bold
-Financial Authority
-\series default
- (budget verification and lawful purchasing execution).
- This separation is required to prevent unauthorized technology acquisition (“Shadow IT”),
- ensure value realization,
- and maintain full auditability of public funds in accordance with Nevada Revised Statutes.
+This policy establishes mandatory internal controls over the financial stewardship and procurement of County technology resources.
 \end_layout
 
 \begin_layout Subsection*
@@ -226,14 +210,22 @@ This policy applies to all technology-related financial transactions conducted b
  department,
  or elected office,
  regardless of funding source or purchasing mechanism.
- This includes,
- but is not limited to:
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Hardware,
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Technology hardware,
  software,
  and infrastructure procurement.
 \end_layout
@@ -241,9 +233,9 @@ Hardware,
 \begin_layout Itemize
 
 \lang english
-Cloud services (SaaS,
- IaaS,
- PaaS),
+Cloud services (Software-as-a-Service (SaaS),
+ Infrastructure-as-a-Service (IaaS),
+ Platform-as-a-Service (PaaS)),
  subscriptions,
  renewals,
  and auto-renewals.
@@ -260,8 +252,8 @@ Consulting,
 \begin_layout Itemize
 
 \lang english
-Technology purchases made via Departmental Purchase Cards (P-Cards),
- regardless of the funding source.
+Technology purchases made via departmental Purchase Cards (P-Cards),
+ regardless of funding source.
 \end_layout
 
 \begin_layout Itemize
@@ -270,6 +262,127 @@ Technology purchases made via Departmental Purchase Cards (P-Cards),
 Grant-funded technology acquisitions and renewals.
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Technical review of system design and implementation changes:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Post-award vendor compliance monitoring:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Asset lifecycle controls after receipt:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Supply chain risk due diligence and vendor onboarding review:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Non-technology procurement conducted by County departments.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -282,43 +395,39 @@ Grant-funded technology acquisitions and renewals.
 \series bold
 \lang english
 IT Director
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\series bold
 \lang english
-Technical Approval
-\series default
-:
- Shall act as technical authority and shall approve technical specifications,
- security requirements,
- and lifecycle/architecture impact for all technology purchases prior to the obligation of funds,
- execution of purchasing actions,
- or acceptance of contract terms.
+Shall serve as the Technical Authority for all County technology procurement.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Vendor Governance
-\series default
-:
- Shall serve as the primary owner for County IT vendor technical standards,
+Shall approve technical specifications,
  security requirements,
- and technical dispute escalation activities delegated to the Information Operations Department.
+ and lifecycle and architectural impact for all technology procurement prior to the obligation of funds,
+ the execution of purchasing actions,
+ or the acceptance of contract terms.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Delegation
-\series default
-:
- Shall designate technical approvers only through 
+Shall own County IT vendor technical standards,
+ security requirements,
+ and technical dispute escalation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall designate technical approvers only through 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -333,7 +442,13 @@ nolink "false"
 
 
 \series default
- (Delegation of Authority) and shall ensure such delegations are documented.
+ (Delegation of Authority and Decision Rights).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document each technical-approver designation.
 \end_layout
 
 \end_deeper
@@ -342,35 +457,48 @@ nolink "false"
 \series bold
 \lang english
 Assistant IT Director
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\series bold
 \lang english
-Workflow Execution
+Shall maintain procurement tracking artifacts required for audit and reconciliation,
+ including the linkage of purchases to requisitions,
+ receiving records,
+ work orders,
+ project codes,
+ inventory entries,
+ and Configuration Management Database (CMDB) entries maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Shall execute day-to-day procurement workflow tasks (e.g.,
- requisitions,
- tracking,
- receiving coordination) as directed by the IT Director.
+ (Service Configuration Management (CMDB) Policy).
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Audit Readiness
-\series default
-:
- Shall maintain procurement tracking artifacts required for audit and reconciliation,
- including the linkage of purchases to requisitions,
- receiving records,
- work orders/tickets,
- project codes,
- and inventory/CMDB entries.
+Shall provide oversight of procurement workflow execution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall resolve workflow exceptions that exceed Administrative Assistant authority.
 \end_layout
 
 \end_deeper
@@ -378,28 +506,49 @@ Audit Readiness
 
 \series bold
 \lang english
-Fiscal Affairs (Financial Authority)
+Administrative Assistant
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\series bold
 \lang english
-Verification
-\series default
-:
- Shall verify budget availability and execute purchasing and payment activities in accordance with applicable County procurement rules and NRS 332.
+Shall execute day-to-day procurement workflow tasks —
+ including requisition preparation,
+ purchase order tracking,
+ and receiving coordination —
+ as directed by the Assistant IT Director.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-Gatekeeper Function
+Office of Fiscal Affairs
 \series default
 :
- Shall not process technology invoices,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall verify budget availability for all technology procurement prior to commitment of funds.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall execute purchasing and payment activities in accordance with applicable County procurement rules and NRS 332.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not process technology invoices,
  reimbursements,
  or payment requests that lack documented Technical Approval from the IT Director or a formally delegated technical approver.
 \end_layout
@@ -409,35 +558,47 @@ Gatekeeper Function
 
 \series bold
 \lang english
-Department Heads / Elected Offices
+Department Heads
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\series bold
 \lang english
-Requirement Definition
-\series default
-:
- Shall define business requirements and coordinate with the Information Operations Department for technology needs.
+Shall define business requirements for departmental technology needs.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Restriction
-\series default
-:
- Shall not negotiate with technology vendors,
- authorize technology procurement,
- or accept/execute technology contract terms (including click-through terms,
- EULAs,
- MSAs,
- SOWs,
+Shall coordinate with the Information Operations Department to validate technology requirements prior to initiating procurement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not negotiate technology vendor agreements without Information Operations Department review and documented Technical Approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not authorize technology procurement without Information Operations Department review and documented Technical Approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not accept or execute technology contract terms —
+ including click-through terms,
+ End User License Agreements (EULAs),
+ Master Service Agreements (MSAs),
+ Statements of Work (SOWs),
  renewals,
- or auto-renewals) without Information Operations Department review and documented Technical Approval.
+ and auto-renewals —
+ without Information Operations Department review and documented Technical Approval.
 \end_layout
 
 \end_deeper
@@ -451,7 +612,7 @@ Restriction
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory for all County technology procurement and technology-related financial activity.
+Compliance with this policy is mandatory for all County personnel engaged in technology procurement or technology-related financial activity.
 \end_layout
 
 \begin_layout Itemize
@@ -463,9 +624,9 @@ Assessment
 :
  Compliance shall be assessed through procurement review activities,
  audit support activities,
- and the annual policy review process defined in
+ and the annual policy review process defined in 
 \series bold
-Policy
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.07"
@@ -478,7 +639,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -503,42 +664,23 @@ nolink "false"
 
 
 \series default
- (Policy Implementation and Enforcement Framework).
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Exceptions
+Emergency Deviations
 \series default
 :
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Emergency Procurement
-\series default
-:
- Purchases immediately necessary to protect life,
+ When immediate technology procurement is necessary to protect life,
  safety,
- or critical infrastructure may proceed without prior Technical Approval only when delay would materially increase harm.
- Such procurements shall be reported to the IT Director and Fiscal Affairs within twenty-four (24) hours and shall undergo post-incident technical review,
- inventory/CMDB capture,
- and documentation for audit.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Standing Exceptions
-\series default
-:
- Standing or permanent exceptions to this policy shall be documented with justification and approved in accordance with 
+ or critical infrastructure and delay would materially increase harm,
+ the IT Director or the Assistant IT Director may authorize Emergency Technical Approval.
+ A technical approver formally delegated under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -553,15 +695,139 @@ nolink "false"
 
 
 \series default
+ may issue Emergency Technical Approval only within the scope of that written delegation.
+ Emergency Technical Approval does not constitute purchasing authority,
+ contract execution authority,
+ or payment authorization;
+ these remain subject to the Office of Fiscal Affairs and applicable emergency-contract requirements under NRS 332.112.
+ Emergency Technical Approval shall satisfy the following constraints:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The invoking authority shall document a written emergency basis establishing the threat to life,
+ safety,
+ or critical infrastructure and the time constraints that preclude the standard Technical Approval process.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The invoking authority shall notify the Office of Fiscal Affairs within twenty-four (24) hours of authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+When Emergency Technical Approval is issued by a technical approver delegated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the delegated approver shall notify the IT Director within twenty-four (24) hours of authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The invoking authority shall submit complete post-incident documentation —
+ including the written emergency basis,
+ the Emergency Technical Approval record,
+ inventory capture,
+ and asset or CMDB entry —
+ within ten (10) business days of the emergency action.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Emergency Technical Approval authority does not extend beyond the specific transaction required to address the immediate harm;
+ subsequent related procurements shall follow the standard Technical-Fiscal Handshake.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall review all Emergency Technical Approval authorizations on a quarterly basis.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall report the inventory of emergency invocations,
+ their written bases,
+ and their post-incident documentation status as part of the annual policy review under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
 .
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Standing exceptions to this policy shall be documented with justification and approved in writing in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6 (Exception Management).
+ Oral exceptions are not valid.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -580,24 +846,6 @@ nolink "false"
 
 :
  Code of Ethics and Professional Conduct
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- IT Governance and Oversight Structure
 \end_layout
 
 \begin_layout Itemize
@@ -660,6 +908,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:2.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ System Development and Secure Software Lifecycle Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:3.08"
 plural "false"
 caps "false"
@@ -678,6 +944,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.01"
 plural "false"
 caps "false"
@@ -687,7 +971,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -711,7 +997,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-ECIO Policy
+ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:5.07"
@@ -729,22 +1015,70 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-NRS 332 (Purchasing:
- Local Governments)
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 332.063 (Procurement thresholds:
+ Contracts over $50,000 but not more than $100,000)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 332.065 (Procurement thresholds:
+ Contracts over $100,000 —
+ advertising and award)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 332.112 (Emergency contracts)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NAC 239.155 (Adoption of Records Retention Schedule)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20070074 (Requisitions and Purchase Orders)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071310 (Procurement and Credit Card Records)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section 5.1.1.5 (Private Contractor User Agreements)
+ SA-9 (External System Services —
+ Security Addendum requirements for private contractors)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section Appendix H (CJIS Security Addendum / Certification)
+ Appendix H (CJIS Security Addendum and Certification)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -805,7 +1139,28 @@ NIST SP 800-53 Rev.
 
 \lang english
 COBIT 2019:
- APO06.01 (Manage Finance and Accounting)
+ APO06 (Managed Budget and Costs)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ APO10 (Managed Vendors)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Service Financial Management
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Supplier Management
 \end_layout
 
 \begin_layout Subsection*
@@ -815,45 +1170,56 @@ COBIT 2019:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+Elko County shall separate 
+\series bold
+Technical Authority
+\series default
+ (validation of technology need,
+ compatibility,
+ lifecycle and architectural impact,
+ inventory integration,
+ and security) from 
+\series bold
+Financial Authority
+\series default
+ (budget verification and lawful purchasing execution).
+ This separation exists to prevent unauthorized technology acquisition,
+ ensure value realization,
+ and maintain auditability of public funds consistent with Nevada Revised Statutes.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
-6.1 The Technical–Fiscal Handshake
+6.1 The Technical-Fiscal Handshake
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Elko County shall employ a mandatory two-step validation for all technology spending:
+All technology spending shall pass through a mandatory two-step validation:
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Technical Approval (Information Operations Department)
+Technical Approval
 \series default
 :
- Validation that the request meets County standards.
- Technical Approval shall be valid only when recorded as a distinct approval status within the Department's designated System of Record (CMDB/Service Desk).
- Email correspondence or verbal assent shall not constitute Technical Approval.
+ The IT Director shall record Technical Approval as a distinct approval status on the procurement work order in the System of Engagement,
+ including approver identity and timestamp.
+ Email correspondence and verbal assent shall not constitute Technical Approval.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Financial Approval (Fiscal Affairs)
-\series default
-:
- Validates budget availability and ensures purchasing actions comply with applicable procurement requirements (including competitive bidding thresholds and required documentation).
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Restrictions
+Financial Approval
 \series default
 :
 \end_layout
@@ -862,13 +1228,39 @@ Restrictions
 \begin_layout Itemize
 
 \lang english
-A budget line item does not constitute authorization to procure.
+The Office of Fiscal Affairs shall validate budget availability prior to authorizing payment.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Fiscal Affairs shall not process payment without documented Technical Approval.
+The Office of Fiscal Affairs shall verify that purchasing actions comply with applicable procurement requirements,
+ including competitive bidding thresholds and required documentation under NRS 332.
+\end_layout
+
+\end_deeper
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Handshake Restrictions
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Office of Fiscal Affairs shall not treat a budget line item as authorization to procure;
+ Technical Approval is required.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Office of Fiscal Affairs shall not process payment without documented Technical Approval.
 \end_layout
 
 \begin_layout Itemize
@@ -876,14 +1268,14 @@ Fiscal Affairs shall not process payment without documented Technical Approval.
 \lang english
 The Information Operations Department shall not integrate,
  support,
- or onboard technology resources that were acquired without documented Technical Approval.
+ or onboard technology resources acquired without documented Technical Approval.
 \end_layout
 
 \end_deeper
 \begin_layout Subsubsection*
 
 \lang english
-6.2 Procurement Controls and “Shadow IT” Prohibition
+6.2 Procurement Controls and Shadow IT Prohibition
 \end_layout
 
 \begin_layout Itemize
@@ -893,12 +1285,12 @@ The Information Operations Department shall not integrate,
 Centralized Procurement
 \series default
 :
- All County software,
+ All County personnel shall route County software,
  hardware,
- and cloud subscriptions shall be procured through the Information Operations Department to ensure security review,
+ and cloud subscription procurement through the Information Operations Department to ensure security review,
  asset tagging,
  license compliance,
- and inventory/CMDB integration.
+ and CMDB and inventory integration.
 \end_layout
 
 \begin_layout Itemize
@@ -908,10 +1300,10 @@ Centralized Procurement
 P-Card Restrictions
 \series default
 :
- The use of departmental P-Cards for technology hardware,
+ County personnel shall not use departmental P-Cards for technology hardware,
  software,
- or subscriptions is prohibited without written pre-authorization by the IT Director (or formally delegated technical approver).
- Fiscal Affairs shall flag suspected technology P-Card transactions for review and audit.
+ or subscriptions without written pre-authorization by the IT Director or a formally delegated technical approver.
+ The Office of Fiscal Affairs shall flag suspected technology P-Card transactions for review and audit.
 \end_layout
 
 \begin_layout Itemize
@@ -921,12 +1313,12 @@ P-Card Restrictions
 Grant-Funded Technology
 \series default
 :
- Grant-funded technology is subject to the same standards as County-funded assets,
+ Grant-funded technology shall be subject to the same standards as County-funded assets,
  including security requirements,
- inventory/CMDB entry,
+ inventory and CMDB entry,
  supportability,
  and lifecycle cost planning.
- Departments shall engage the Information Operations Department during grant application development to validate feasibility and total cost of ownership.
+ Department Heads shall engage the Information Operations Department during grant application development to validate technical feasibility and total cost of ownership.
 \end_layout
 
 \begin_layout Itemize
@@ -936,10 +1328,9 @@ Grant-Funded Technology
 Auto-Renewal Controls
 \series default
 :
- Technology subscriptions shall not auto-renew without Technical Approval.
- Where feasible,
- auto-renewal shall be disabled,
- and renewals shall be reviewed in advance to prevent unmanaged commitments.
+ The IT Director shall disable auto-renewal on technology subscriptions when vendor contract terms permit.
+ When auto-renewal cannot be disabled due to vendor contract terms,
+ the Assistant IT Director shall initiate renewal review not less than sixty (60) calendar days before each renewal date to prevent unmanaged commitments.
 \end_layout
 
 \begin_layout Itemize
@@ -949,13 +1340,13 @@ Auto-Renewal Controls
 Bid Splitting
 \series default
 :
- Splitting a single requirement into multiple smaller transactions to evade competitive bidding thresholds (NRS 332) is strictly prohibited.
+ County personnel shall not split a single technology procurement requirement into multiple smaller transactions to evade competitive bidding thresholds established by NRS 332.063 and NRS 332.065.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.3 Budgeting and Security Allocation
+6.3 Budgeting and Security Resource Allocation
 \end_layout
 
 \begin_layout Itemize
@@ -965,10 +1356,9 @@ Bid Splitting
 Security Resourcing
 \series default
 :
- The Information Operations Department shall plan,
+ The IT Director shall plan,
  request,
- and maintain discrete funding necessary to implement required security controls and compliance obligations (NIST PM-3,
- SA-2).
+ and maintain discrete funding necessary to implement required security controls and compliance obligations.
 \end_layout
 
 \begin_layout Itemize
@@ -978,48 +1368,27 @@ Security Resourcing
 Lifecycle Forecasting
 \series default
 :
- Budget submissions shall include Total Cost of Ownership (TCO) considerations,
+ The IT Director shall include Total Cost of Ownership (TCO) considerations in technology budget submissions,
  including licensing,
  maintenance,
  support,
  required security controls,
- power/cooling (as applicable),
- and disposal.
+ power and cooling (as applicable),
+ and end-of-life disposal.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.4 Asset Integration Controls
+6.4 Asset Intake Handshake
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-To preserve inventory integrity and ensure auditability of technology assets and services:
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Receiving Control
-\series default
-:
- Technology shipments shall be directed to the Information Operations Department (or a designated receiving process approved by the IT Director) for inspection and inventory capture.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-No Tag,
- No Pay
-\series default
-:
- Hardware invoices shall not be approved for payment until assets are received,
- inspected,
- tagged in accordance with 
+The Office of Fiscal Affairs shall not approve payment for technology hardware,
+ software,
+ or Software-as-a-Service invoices without the asset intake confirmations required under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1034,55 +1403,18 @@ nolink "false"
 
 
 \series default
-,
- and entered into the CMDB and/or asset inventory per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-No Registration,
- No Pay
-\series default
-:
- Software and SaaS invoices shall not be approved for payment until the subscription/license is recorded in the designated license management process and the vendor/service has completed required supply chain review steps per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.13"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ (IT Asset Management Policy),
+ §6.1 (Asset Stewardship and Acquisition).
+ Receiving,
+ inspection,
+ tagging,
+ and inventory or CMDB entry shall follow the Hardware Receiving Gatekeeping and Software and SaaS Gatekeeping requirements established in that policy.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.5 Vendor Integrity and Security Addendums
+6.5 Vendor Integrity and Contract Security Requirements
 \end_layout
 
 \begin_layout Itemize
@@ -1092,7 +1424,7 @@ nolink "false"
 Conflict of Interest and Gifts
 \series default
 :
- Personnel participating in procurement decisions shall comply with 
+ All County personnel participating in technology procurement decisions shall comply with the Zero-Gift Policy and Vendor Interaction requirements established under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1107,9 +1439,9 @@ nolink "false"
 
 
 \series default
-.
- Conflicts of interest shall be disclosed and managed.
- Gifts or gratuities from vendors are prohibited where County ethics rules apply.
+ (Code of Ethics and Professional Conduct),
+ §6.3 (Integrity and Conflict of Interest).
+ Personnel shall disclose any actual or potential conflict of interest in writing to the IT Director prior to participating in a procurement decision.
 \end_layout
 
 \begin_layout Itemize
@@ -1119,64 +1451,61 @@ nolink "false"
 Contract Security Requirements
 \series default
 :
- Contracts involving County data exchange,
+ The IT Director shall ensure that contracts involving County data exchange,
  hosting,
- or access to County systems shall include required security and data protection terms as defined by Information Operations standards and applicable County contract requirements.
+ or access to County systems incorporate the security and data protection terms established under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Vendor Compliance and Third-Party Assurance Policy).
+ Department Heads shall not execute technology contracts that omit these required terms.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-CJIS Requirement (Contractors)
+CJIS Contractor Requirements
 \series default
 :
- When a vendor/contractor may have logical or physical access to Criminal Justice Information (CJI):
+ When a vendor or contractor may have logical or physical access to Criminal Justice Information (CJI):
 \end_layout
 
 \begin_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \lang english
-The contract shall incorporate the 
-\series bold
-CJIS Security Addendum
-\series default
-.
+The IT Director (as LASO) shall require incorporation of the CJIS Security Addendum into the contract consistent with CJIS Security Policy v6.0 SA-9 (External System Services) and Appendix H.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \lang english
-The contracting agency shall ensure each contractor employee with CJI access is provided a copy of the 
-\series bold
-CJIS Security Addendum
-\series default
- and the 
-\series bold
-CJIS Security Policy
-\series default
-,
- and executes the 
-\series bold
-Security Addendum Certification
-\series default
- acknowledging receipt and agreement to comply,
- consistent with 
-\series bold
-CJIS Security Policy 5.1.1.5
-\series default
- and 
-\series bold
-Appendix H
-\series default
-.
+The IT Director (as LASO) shall ensure that each contractor employee with CJI access is provided a copy of the CJIS Security Addendum and the CJIS Security Policy,
+ and that an executed Security Addendum Certification is obtained acknowledging receipt and agreement to comply.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 
 \lang english
-The contracting agency shall retain executed certifications/acknowledgments and ensure they remain available for audit purposes.
+The Assistant IT Director shall retain executed certifications and acknowledgments in the department's records retention system.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that executed certifications and acknowledgments remain available for audit.
 \end_layout
 
 \end_deeper
@@ -1189,16 +1518,20 @@ The contracting agency shall retain executed certifications/acknowledgments and 
 \begin_layout Standard
 
 \lang english
-Procurement and procurement-related records shall be retained in accordance with the 
-\series bold
-Nevada Local Government Records Retention Schedule
-\series default
- and applicable County retention requirements.
- At a minimum,
- procurement records shall be retained for the period required to support audits,
- claims,
- litigation holds,
- and statutory retention obligations.
+The Assistant IT Director shall retain Information Operations procurement artifacts and tracking records —
+ including Technical Approval records,
+ procurement work order linkages,
+ receiving confirmations,
+ and inventory and CMDB reconciliation data —
+ in accordance with LRDA 20070074 (Requisitions and Purchase Orders),
+ LRDA 20071310 (Procurement and Credit Card Records),
+ NRS 239.125 (Local Government Records Management Program),
+ and NAC 239.155 (Adoption of Records Retention Schedule).
+ Official purchasing and payment records —
+ including purchase orders,
+ invoices,
+ and payment vouchers —
+ shall be retained by the Office of Fiscal Affairs or the authoritative County custodian under the applicable retention schedule.
 \end_layout
 
 \end_body
