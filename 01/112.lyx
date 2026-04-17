@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.6
 \end_layout
 
 \begin_layout Subsection*
@@ -193,22 +193,9 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish the mandatory governance framework for the lifecycle management of Information Technology (IT) assets within Elko County.
- It ensures that technology resources—
-hardware,
- software,
- and infrastructure—
-are acquired,
- tracked,
- supported,
- optimized,
- and disposed of in a secure,
- fiscally responsible,
- and auditable manner.
- This policy serves as the authoritative basis for asset accountability,
- the prevention of waste,
- the reduction of security risk from lost or unauthorized equipment,
- and the maintenance of audit-ready records aligned with County procurement controls and system inventory requirements.
+This policy establishes the governance framework for the lifecycle management of Information Technology (IT) assets owned,
+ leased,
+ or operated by Elko County.
 \end_layout
 
 \begin_layout Subsection*
@@ -221,24 +208,20 @@ are acquired,
 \begin_layout Standard
 
 \lang english
-This policy applies to all IT assets purchased,
+This policy applies to all IT assets acquired,
  leased,
  managed,
  deployed,
  connected,
  or supported by Elko County,
- regardless of the funding source (including General Fund,
- Enterprise Funds,
- Grants,
- Donations,
- or Asset Forfeiture).
+ regardless of funding source.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Covered Asset Classes
+In Scope
 \series default
 :
 \end_layout
@@ -267,22 +250,7 @@ Mobile Computing
 :
  Smartphones,
  cellular hotspots,
- and portable storage media (handling and sanitization of portable media is further governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.12"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-).
+ and portable storage media.
 \end_layout
 
 \begin_layout Itemize
@@ -298,7 +266,7 @@ Infrastructure
  routers,
  firewalls,
  wireless access points,
- and UPS units.
+ and uninterruptible power supply (UPS) units.
 \end_layout
 
 \begin_layout Itemize
@@ -308,7 +276,7 @@ Infrastructure
 Peripherals
 \series default
 :
- Network-connected printers/MFPs,
+ Network-connected printers and multifunction devices,
  scanners,
  and specialized interface devices.
 \end_layout
@@ -320,17 +288,17 @@ Peripherals
 Communications
 \series default
 :
- VoIP endpoints and conferencing hardware.
+ Voice over Internet Protocol (VoIP) endpoints and conferencing hardware.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Physical Security
+Physical Security Systems
 \series default
 :
- IP cameras,
+ Internet Protocol (IP) cameras,
  Network Video Recorders (NVRs),
  and access control panels.
 \end_layout
@@ -339,13 +307,13 @@ Physical Security
 
 \series bold
 \lang english
-Software
+Software and Subscriptions
 \series default
 :
  Licensed software,
  operating systems,
  subscriptions,
- and SaaS entitlements.
+ and Software as a Service (SaaS) entitlements.
 \end_layout
 
 \end_deeper
@@ -353,7 +321,7 @@ Software
 
 \series bold
 \lang english
-Exclusions
+Out of Scope
 \series default
 :
 \end_layout
@@ -363,25 +331,25 @@ Exclusions
 
 \series bold
 \lang english
-Consumables
+Media Sanitization and Handling Procedures
 \series default
 :
- (e.g.,
- toner,
- paper).
-\end_layout
-
-\begin_layout Itemize
-
+ 
 \series bold
-\lang english
-Passive peripherals
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- (e.g.,
- keyboards,
- mice,
- standard cables) unless specifically designated for tracking by the IT Director.
+ (Media Protection and Sanitization Policy).
 \end_layout
 
 \end_deeper
@@ -399,109 +367,41 @@ Passive peripherals
 IT Director
 \series default
 :
- Shall serve as the County’s Asset Steward and final approving authority for lifecycle standards,
- exceptions,
- and decommissioning determinations.
- Shall ensure the System Inventory is maintained as a mandatory security control (NIST CM-8,
- PM-5) and shall ensure annual reconciliation reporting is provided to Fiscal Affairs.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Information Operations Personnel
-\series default
-:
- Shall execute asset management tasks,
- including receiving,
- tagging,
- CMDB/asset record maintenance,
- deployment,
- transfer processing,
- and secure decommissioning.
- Shall enforce the "No Tag,
- No Support" rule and shall deny onboarding for assets not registered in accordance with this policy.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Department Heads (Asset Custodians)
-\series default
-:
- Shall act as Asset Custodians for assets assigned to their department.
- Shall maintain physical security of assets and ensure appropriate use.
- Shall ensure that no asset is transferred,
- relocated,
- or disposed of without processing through the Information Operations Department.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-All County Personnel
-\series default
-:
- Shall protect assigned assets from theft or damage and shall promptly report loss,
- theft,
- or suspected compromise.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-4.
- Compliance and Exceptions
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Mandatory Compliance
-\series default
-:
- Adherence to this policy is mandatory.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\series bold
 \lang english
-No Tag,
- No Support
-\series default
-:
- Any asset that lacks a valid County IT asset tag (where applicable) or is not recorded in the designated Asset Inventory/CMDB shall be denied network connectivity and technical support.
+Shall maintain IT asset property and equipment records and inventory controls pursuant to NRS 354.625.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Unauthorized Acquisition
-\series default
-:
- Technology acquired without documented Technical Approval as defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.10"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
+Shall serve as the final approving authority for lifecycle standards,
+ replacement determinations,
+ and decommissioning actions.
+\end_layout
 
-\end_inset
+\begin_layout Itemize
 
+\lang english
+Shall approve all retire,
+ transfer,
+ and disposition decisions for County IT assets.
+\end_layout
 
-\series default
- shall be treated as "Shadow IT" and may be denied integration and support.
+\begin_layout Itemize
+
+\lang english
+Shall ensure that asset records in the System of Engagement are maintained current and complete.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide an annual asset reconciliation report to the Office of Fiscal Affairs.
 \end_layout
 
 \end_deeper
@@ -509,10 +409,146 @@ nolink "false"
 
 \series bold
 \lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall maintain the At-Risk asset list as a continuously updated view in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct the annual physical inventory audit and reconciliation cycle defined in Section 6.7.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute asset receiving,
+ tagging,
+ asset record creation,
+ and deployment tasks in accordance with this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall process all asset transfers,
+ relocations,
+ and reassignments through the work order system.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall execute secure decommissioning and sanitization actions under Section 6.10.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall deny network connectivity and technical support to any asset that lacks a valid County IT asset tag or that is not recorded in the System of Engagement.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall ensure that department personnel do not remove,
+ transfer,
+ relocate,
+ or dispose of any County IT asset without processing the action through the Information Operations Department.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report loss,
+ theft,
+ damage,
+ or suspected compromise of assigned IT assets to the Information Operations Department immediately upon discovery,
+ and in no event later than one (1) hour following discovery.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall protect assigned County IT assets from theft,
+ damage,
+ and unauthorized access.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report loss,
+ theft,
+ or suspected compromise of any assigned IT asset to the Information Operations Department immediately upon discovery,
+ and in no event later than one (1) hour following discovery.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all Information Operations Personnel,
+ Department Heads,
+ and All County Personnel in the handling of County IT assets.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
 Assessment
 \series default
 :
- Asset inventory accuracy and lifecycle compliance shall be assessed via annual physical inventory audits and the annual maturity scoring process defined in 
+ Asset inventory accuracy and lifecycle compliance shall be assessed through the annual physical inventory audit defined in Section 6.7 and the annual maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -527,7 +563,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -537,7 +573,7 @@ nolink "false"
 Enforcement
 \series default
 :
- Unauthorized disposal or loss of assets due to negligence may result in corrective actions defined under 
+ Non-compliance with this policy may result in corrective action under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -552,7 +588,9 @@ nolink "false"
 
 
 \series default
- (Policy Implementation and Enforcement Framework).
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -562,12 +600,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to lifecycle or replacement standards shall be documented and approved by the IT Director in accordance with 
+ Exceptions to this policy shall be documented in writing and approved in accordance with the exception management framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -577,7 +615,8 @@ nolink "false"
 
 
 \series default
- (Delegation of Authority and Decision Rights).
+ Section 6.6.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -587,13 +626,22 @@ nolink "false"
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
 
 \lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:1.09"
 plural "false"
 caps "false"
 noprefix "false"
@@ -602,7 +650,7 @@ nolink "false"
 \end_inset
 
 :
- Delegation of Authority and Decision Rights
+ Risk Management Policy
 \end_layout
 
 \begin_layout Itemize
@@ -665,6 +713,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:2.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Acceptable Use of Information Technology Resources Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:2.12"
 plural "false"
 caps "false"
@@ -683,6 +749,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:2.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Mobile Device and Remote Access Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:3.01"
 plural "false"
 caps "false"
@@ -693,6 +777,24 @@ nolink "false"
 
 :
  Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Request Fulfillment Policy
 \end_layout
 
 \begin_layout Itemize
@@ -737,6 +839,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols and Partner Integration
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.01"
 plural "false"
 caps "false"
@@ -746,7 +866,9 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
@@ -770,50 +892,30 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-CJIS Security Policy v6.0:
- Section IR-6 (Incident Reporting)
+NRS 354.625 (Records Relating to Property and Equipment;
+ Control of Inventory)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20070440 (Fixed Assets and Inventories)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section MP (Media Protection)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
- Section PE-3 (Physical Access Control)
+ Section 5.9.1 (Physically Secure Location)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 NIST CSF 2.0:
- ID.AM-05 (Asset Prioritization)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST CSF 2.0:
- ID.AM-07 (Data Inventories and Metadata)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST CSF 2.0:
- PR.DS-01 (Data-at-Rest Protection)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST CSF 2.0:
- PR.DS-02 (Data-in-Transit Protection)
+ ID.AM-02 (Software,
+ Services,
+ and Systems Inventories)
 \end_layout
 
 \begin_layout Itemize
@@ -844,22 +946,51 @@ NIST SP 800-53 Rev.
 
 \lang english
 NIST SP 800-88 Rev.
- 1:
- (Guidelines for Media Sanitization)
+ 1 (Guidelines for Media Sanitization)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.AM-01 (Hardware Inventories)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.AM-05 (Asset Prioritization)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.AM-08 (Asset Lifecycle Management)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 COBIT 2019:
- BAI09 (Manage Assets)
+ BAI09 (Managed Assets)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 COBIT 2019:
- BAI10 (Manage Configuration)
+ BAI10 (Managed Configuration)
 \end_layout
 
 \begin_layout Subsection*
@@ -870,21 +1001,20 @@ COBIT 2019:
 \end_layout
 
 \begin_layout Subsubsection*
-
-\lang english
 6.1 Asset Stewardship and Acquisition
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-Elko County shall manage IT assets under a centralized technical authority to ensure security and interoperability.
+Elko County shall manage IT assets under centralized technical authority to ensure security,
+ interoperability,
+ and fiscal accountability.
+ All technology assets and services placed under County custody or connected to the County network are subject to the lifecycle controls defined in this policy,
+ regardless of funding source.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
 Centralized Technical Approval
 \series default
 :
@@ -909,57 +1039,33 @@ nolink "false"
 \begin_layout Itemize
 
 \series bold
-\lang english
-Receiving and Gatekeeping
+Unauthorized Acquisition
 \series default
 :
- Hardware invoices shall not be approved for payment until assets are received,
- inspected,
- tagged in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.12"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- and entered into the CMDB and/or asset inventory per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- This supports "No Tag,
- No Pay" and "No Registration,
- No Pay" financial controls.
+ Technology acquired without documented Technical Approval shall be treated as unauthorized and may be denied integration,
+ support,
+ and network connectivity by the Information Operations Department.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
+Hardware Receiving Gatekeeping
+\series default
+:
+ Hardware invoices shall not be approved for payment by the Office of Fiscal Affairs until the assets are received,
+ inspected,
+ tagged under Section 6.3,
+ and entered into the asset inventory under Section 6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 Software and SaaS Gatekeeping
 \series default
 :
- Software and SaaS invoices shall not be approved for payment until the license/subscription is recorded in the designated inventory/license management process and the vendor/service has completed required review steps per 
+ Software and SaaS invoices shall not be approved for payment until the license or subscription is recorded in the designated software inventory and any vendor review required under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -974,277 +1080,68 @@ nolink "false"
 
 
 \series default
-.
+ (Supply Chain Risk Management (SCRM) and Vendor Governance) is complete.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
 County Property
 \series default
 :
- All technology assets are the property of Elko County,
- regardless of the specific funding source (e.g.,
- Grants,
+ Technology assets owned by Elko County —
+ regardless of funding source (General Fund,
  Enterprise Funds,
+ Grants,
  Donations,
- Asset Forfeiture),
- and are subject to the lifecycle controls defined in this manual.
+ or Asset Forfeiture) —
+ are County property and are subject to all controls defined in this manual.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
-County Custody and Governance
+County Custody and Network Governance
 \series default
 :
- All technology assets purchased,
- leased,
- or otherwise placed under County custody or network governance are subject to the lifecycle controls defined in this manual.
+ Leased,
+ hosted,
+ or vendor-owned technology assets placed under County custody or connected to County network infrastructure are subject to the operational,
+ support,
+ and security controls defined in this manual,
+ regardless of ownership.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tracking Threshold
+\series default
+:
+ Consumables (including toner,
+ cables,
+ paper,
+ and similar low-value supplies) are below the individual asset-tracking threshold of this policy and are not assigned asset records.
+ The IT Director may designate specific passive peripheral classes for individual tracking under Section 6.3.
 \end_layout
 
 \begin_layout Subsubsection*
-
-\lang english
 6.2 Asset Support Classification
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-All IT assets and systems operating within or connected to the Elko County network shall be assigned one of the following three support classifications.
- This classification is the authoritative basis for determining support ownership,
- work order routing,
- and service level obligations as defined in Policy 3.01 and throughout Chapter 3 of this manual.
- The IT Director shall ensure that each asset's support classification is recorded in the CMDB and maintained current as contracts,
- procurement arrangements,
- and operational responsibilities change.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-IT-Managed
-\series default
-:
- Assets and systems that are wholly procured,
- configured,
- maintained,
- and supported by the Information Operations Department for the full duration of the asset's operational lifespan.
- The IT Department retains exclusive authority over all technical work performed on IT-Managed assets;
- no vendor,
- contractor,
- or department personnel shall perform technical work on these assets without explicit written authorization from the IT Director.
- All requests for service shall be submitted through the work order system.
- Examples include end-user computers,
- servers,
- network infrastructure,
- and any other technology that the IT Department has accepted full responsibility for.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-IT-Supported
-\series default
-:
- Assets and systems that are supported under a vendor contract or lease agreement,
- but for which the Information Operations Department provides first-line support for minor issues,
- with the option to escalate to the vendor when issues exceed local resolution capability or when the nature of the contract directs vendor involvement.
- The IT Department shall be the first point of contact for service requests on IT-Supported assets;
- however,
- direct contact with the vendor is permissible when the contract explicitly provides for it or when the issue is clearly outside the IT Department's scope of support.
- All service activity,
- whether performed by IT staff or escalated to the vendor,
- shall be documented in the work order system.
- Examples include court recording systems,
- public safety software applications,
- multifunction copiers under maintenance contracts,
- and similar systems under third-party agreements that permit local support participation.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Vendor-Managed:
-
-\series default
- Assets and systems for which the vendor retains exclusive support responsibility and over which the Information Operations Department exercises no technical authority.
- IT Department personnel shall not perform any technical work on Vendor-Managed systems beyond the minimum required to provide vendor access,
- such as assigning network addresses or granting physical facility access.
- All service requests for Vendor-Managed assets shall be referred directly to the vendor.
- The IT Department's responsibility is limited to facilitating vendor access and documenting any coordination activity in the work order system for tracking purposes.
- Examples include hosted government platform services and systems installed and maintained under exclusive vendor agreements with no local support provision.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.3 Asset Identification and Tagging
+All IT assets and systems operating within or connected to the Elko County network shall carry one of three support classifications.
+ This classification determines support ownership and escalation routing for each asset.
+ The IT Director shall approve the support classification for each asset and shall ensure the classification is recorded on the asset record in the System of Engagement and updated when contractual or operational conditions change.
 \end_layout
 
 \begin_layout Standard
 
-\lang english
-To ensure clear visibility into asset ownership and support levels,
- Information Operations shall employ a visual tagging system:
-\end_layout
-
-\begin_layout Itemize
-
 \series bold
-\lang english
-GREEN Tags (IT-Managed)
+Interaction with Lifecycle Status
 \series default
 :
- Assets procured (purchased or leased),
- configured,
- and supported by the Information Operations Department.
- These assets represent the standard authorized computing environment.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-YELLOW Tags (Grant-Funded/Restricted)
-\series default
-:
- Assets purchased with specific grant funds.
- Information Operations provides standard support but shall not retire or transfer these assets without written authorization from the Grant Authority or Department Head.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-BLUE Tags (Fiscal Inventory)
-\series default
-:
- General County inventory tags administered by Fiscal Affairs.
- Information Operations tracks these for reconciliation but relies on GREEN tags for technical management.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.4 Lifecycle Standards
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Information Operations shall maintain lifecycle standards to reduce outage risk and ensure supportability.
- The IT Director shall publish standard replacement cycles.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Standard Replacement Lifecycle
-\series default
-:
- The following timelines represent the standard useful life for County assets,
- subject to budget appropriation:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Mobile Devices (Smartphones)
-\series default
-:
- 3 years
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-End-User Computing (Laptops/Desktops/Tablets)
-\series default
-:
- 4 years
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Printers and Multifunction Devices (MFPs)
-\series default
-:
- 4 years
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-UPS Batteries
-\series default
-:
- 3–5 years (or per vendor specification)
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Servers and Storage
-\series default
-:
- 6 years
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Peripherals (Monitors/Scanners)
-\series default
-:
- 8 years
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Infrastructure (Switches/Cabling/Cameras)
-\series default
-:
- 10 years
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-At-Risk Assets
-\series default
-:
- Assets remaining in production beyond the standard lifecycle shall be designated "
-\series bold
-At Risk
-\series default
-" and prioritized for replacement.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-The 'At Risk' designation applies to individual physical assets and is distinct from lifecycle status classifications maintained in the IT Asset Catalog under 
+ Support classification under this policy and asset lifecycle status classification under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1259,31 +1156,365 @@ nolink "false"
 
 
 \series default
-."
-\end_layout
-
-\end_deeper
-\begin_layout Subsubsection*
-
-\lang english
-6.5 Inventory and Tracking
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Information Operations shall maintain a System Inventory that meets County governance and NIST CM-8 requirements.
+ (Service Catalog and SLA Policy) are independent dimensions.
+ Support classification determines ownership and escalation routing;
+ lifecycle status classification determines the level of support commitment the Information Operations Department provides.
+ Each asset carries one value from each dimension simultaneously.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
+IT-Managed
+\series default
+:
+ Assets and systems wholly procured,
+ configured,
+ maintained,
+ and supported by the Information Operations Department for the duration of the operational lifespan.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The Information Operations Department shall retain exclusive authority over all technical work performed on IT-Managed assets.
+\end_layout
+
+\begin_layout Itemize
+No vendor,
+ contractor,
+ or department personnel shall perform technical work on IT-Managed assets without prior written authorization from the IT Director.
+\end_layout
+
+\begin_layout Itemize
+All service activity on IT-Managed assets shall be documented in the work order system governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Request Fulfillment Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+IT-Supported
+\series default
+:
+ Assets and systems supported under a vendor contract or lease agreement for which the Information Operations Department provides first-line support and escalates to the vendor when issues exceed local resolution capability or when the contract directs vendor involvement.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The Information Operations Department shall be the first point of contact for service requests on IT-Supported assets.
+\end_layout
+
+\begin_layout Itemize
+Direct contact with the vendor is permissible when the contract explicitly provides for it or when the issue is outside the Information Operations Department's scope of support.
+\end_layout
+
+\begin_layout Itemize
+All service activity,
+ whether performed locally or escalated to the vendor,
+ shall be documented in the work order system.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Vendor-Managed
+\series default
+:
+ Assets and systems for which the vendor retains exclusive support responsibility and over which the Information Operations Department exercises no technical authority.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Information Operations Personnel shall not perform technical work on Vendor-Managed assets beyond the minimum required to provide vendor access,
+ such as assigning network addresses or granting physical facility access.
+\end_layout
+
+\begin_layout Itemize
+All service requests for Vendor-Managed assets shall be referred directly to the vendor.
+\end_layout
+
+\begin_layout Itemize
+The Information Operations Department shall document coordination activity on Vendor-Managed assets in the work order system for tracking purposes.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+6.3 Asset Identification and Tagging
+\end_layout
+
+\begin_layout Standard
+The Information Operations Department shall apply a visual tagging system to provide immediate visibility into asset ownership and funding source.
+ Tags are applied at the point of deployment and shall be recorded on the asset record in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+GREEN Tags (IT-Managed)
+\series default
+:
+ Applied to assets procured (purchased or leased),
+ configured,
+ and supported by the Information Operations Department.
+ GREEN-tagged assets represent the standard authorized computing environment.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+YELLOW Tags (Grant-Funded)
+\series default
+:
+ Applied to assets purchased with grant funds.
+ The YELLOW tag is informational,
+ identifying the grant source on the asset record for reporting purposes;
+ it does not alter the IT Director's authority over retire,
+ transfer,
+ or disposition decisions.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+BLUE Tags (Fiscal Inventory)
+\series default
+:
+ Applied to assets meeting the Office of Fiscal Affairs capitalization threshold and carrying a County fiscal inventory tag.
+ The Information Operations Department shall track BLUE-tagged assets for reconciliation against Fiscal Affairs records.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Passive Peripherals
+\series default
+:
+ Keyboards,
+ pointing devices,
+ standard cables,
+ and other passive peripherals are not individually tagged or tracked unless the IT Director designates a specific class for tracking based on a formal risk assessment conducted under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The IT Director shall document any such designation and the supporting risk assessment in the System of Engagement.
+\end_layout
+
+\begin_layout Subsubsection*
+6.4 Lifecycle Standards
+\end_layout
+
+\begin_layout Standard
+The Information Operations Department shall maintain lifecycle standards to reduce outage risk and ensure supportability.
+ The IT Director shall publish standard replacement cycles in the System of Engagement and shall apply them as the default planning horizon for each asset class,
+ subject to budget appropriation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Standard Replacement Lifecycle
+\series default
+:
+ The following timelines represent the standard useful life for County assets:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Mobile Devices (Smartphones)
+\series default
+:
+ three (3) years.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+End-User Computing (Laptops,
+ Desktops,
+ Tablets)
+\series default
+:
+ four (4) years.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Printers and Multifunction Devices
+\series default
+:
+ four (4) years.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+UPS Batteries
+\series default
+:
+ three (3) to five (5) years.
+ The IT Director shall apply the manufacturer-specified replacement interval when it falls within this range.
+ Manufacturer-specified intervals outside this range shall be documented on the asset record and approved by the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Servers and Storage
+\series default
+:
+ six (6) years.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Peripherals (Monitors,
+ Scanners)
+\series default
+:
+ eight (8) years.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Infrastructure (Switches,
+ Cabling,
+ Cameras)
+\series default
+:
+ ten (10) years.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+At-Risk Designation
+\series default
+:
+ Any asset remaining in production beyond its standard replacement cycle shall be designated 
+\series bold
+At Risk
+\series default
+ on the asset record in the System of Engagement.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The Assistant IT Director shall maintain the At-Risk list as a continuously updated view in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+The IT Director shall use the At-Risk list as standing input to procurement planning and replacement prioritization.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Clarification
+\series default
+:
+ The At-Risk designation applies to individual physical assets and is distinct from the lifecycle status classifications (Supported,
+ Deprecated,
+ Unsupported) maintained in the IT Asset Catalog under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Unfunded Replacement
+\series default
+:
+ Assets operating beyond their standard replacement cycle shall be referred to the risk management framework under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy) for formal risk acceptance if replacement cannot be funded within the current or subsequent budget cycle.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+6.5 Inventory and Tracking
+\end_layout
+
+\begin_layout Standard
+The Information Operations Department shall maintain a System Inventory consistent with the statutory property and equipment records requirement in NRS 354.625 and the system component inventory control 
+\series bold
+NIST SP 800-53 Rev.
+ 5:
+ CM-8 (System Component Inventory)
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 System of Record
 \series default
 :
- The Configuration Management Database (CMDB),
- governed under 
+ The asset record,
+ maintained in the System of Engagement,
+ shall serve as the authoritative record for IT asset inventory under this policy.
+ Asset records and Configuration Item records governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1298,96 +1529,199 @@ nolink "false"
 
 
 \series default
-,
- shall serve as the authoritative system of record.
+ are distinct instruments that serve different governance purposes;
+ each deployed physical asset shall carry both records,
+ cross-referenced via the Related Issues field in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
-Required Record Elements
+Ownership Indication
 \series default
 :
- At a minimum,
- asset records shall include:
+ Every asset record shall indicate the legal ownership status of the asset (County-owned,
+ leased,
+ hosted,
+ or vendor-owned) in accordance with NRS 354.625(2).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Unauthorized Presence
+\series default
+:
+ Unauthorized technology shall not be connected to,
+ installed on,
+ or operated within the County IT environment.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \series bold
-\lang english
+Hardware Authorization
+\series default
+:
+ Hardware is authorized when it has been acquired through the Information Operations Department,
+ recorded as an asset record in the System of Engagement,
+ and tagged under Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Software and SaaS Authorization
+\series default
+:
+ Software and SaaS entitlements are authorized when they have been acquired through the Information Operations Department,
+ enumerated in the IT Asset Catalog maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and recorded in the software inventory under Section 6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Enforcement
+\series default
+:
+ All Information Operations Personnel shall deny network connectivity and technical support to any asset lacking the required authorization markers and shall remove unauthorized hardware,
+ software,
+ or SaaS from the County IT environment upon discovery.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Required Record Elements
+\series default
+:
+ Each asset record shall,
+ at a minimum,
+ contain the following fields:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
 Unique Asset Identifier
 \series default
- (Tag ID)
+ (Tag ID).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
-Lifecycle Status
+Make,
+ Model,
+ and Serial Number
 \series default
- (e.g.,
- Stored,
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Support Classification
+\series default
+ (IT-Managed,
+ IT-Supported,
+ or Vendor-Managed per Section 6.2).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Operational State
+\series default
+ (Stored,
  Deployed,
- Decommissioned)
+ or Decommissioned).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
 Physical Location
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
 Assigned Custodian
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
-Make
-\series default
-,
- 
-\series bold
-Model
-\series default
-,
- and 
-\series bold
-Serial Number
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
 Network Identity
 \series default
-:
- Hostname,
- MAC Address,
- and IP address (as applicable)
+ (hostname,
+ Media Access Control (MAC) address,
+ and Internet Protocol (IP) address,
+ as applicable).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
+Component Type
+\series default
+ (hardware category;
+ for example,
+ laptop,
+ server,
+ switch,
+ firewall).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Date Received
+\series default
+ (date the asset was received by the Information Operations Department and placed into inventory).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Supplier Information
+\series default
+ (vendor or reseller from which the asset was acquired).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 Procurement Identifiers
 \series default
-:
- Purchase Order (PO) Number and/or Lease/Contract Identifier,
- Invoice Number (if applicable),
- and Cost/Payment Terms (to support 
+ (Purchase Order number or lease/contract identifier,
+ invoice number where applicable,
+ and original cost,
+ to support 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1402,143 +1736,55 @@ nolink "false"
 
 
 \series default
- auditability)
+ auditability).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
 Data Classification Relevance
 \series default
- (if storing Confidential/Restricted data)
+ (applicable classification level per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) where the asset stores or accesses Confidential or Restricted data).
 \end_layout
 
 \end_deeper
 \begin_layout Subsubsection*
-
-\lang english
 6.6 Software and License Management
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-Information Operations shall manage software assets to ensure license compliance and security.
+The Information Operations Department shall manage software assets to ensure license compliance and security.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
 Software Inventory
 \series default
 :
  Software,
  subscriptions,
- and SaaS entitlements shall be inventoried consistent with NIST CSF ID.AM-02.
-\end_layout
-
-\begin_layout Itemize
-
+ and SaaS entitlements shall be inventoried consistent with 
 \series bold
-\lang english
-License Compliance
-\series default
-:
- The IT Director shall ensure license allocation is reconciled annually to prevent over-deployment (liability) or under-utilization (waste).
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Unapproved Software
-\series default
-:
- Installation of software or cloud services not recorded in the inventory is prohibited and subject to corrective action.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.7 Inventory Auditing and Reconciliation
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Information Operations shall conduct inventory audits to validate record accuracy.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Annual Audit
-\series default
-:
- A physical and logical inventory validation shall be completed at least annually.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Reconciliation
-\series default
-:
- Discrepancies between the physical audit and the CMDB shall be investigated and reconciled within thirty (30) calendar days of discovery.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Fiscal Reporting
-\series default
-:
- Information Operations shall provide an annual asset reconciliation report to Fiscal Affairs to support County financial reporting.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.8 Movement and Transfer
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-To preserve inventory integrity,
- assets shall not be transferred between users,
- relocated between facilities,
- or reassigned without an approved Service Request and corresponding CMDB update.
- Unauthorized relocation of assets by custodians is prohibited.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.9 Secure Storage and Loss Reporting
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Custodians shall ensure assets are stored securely.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Physical Security
-\series default
-:
- Storage practices for assets capable of accessing or storing Criminal Justice Information (CJI) shall align with 
-\series bold
-CJIS Security Policy Section 5.9.1
+NIST CSF 2.0:
+ ID.AM-02 (Software,
+ Services,
+ and Systems Inventories)
 \series default
 .
 \end_layout
@@ -1546,53 +1792,303 @@ CJIS Security Policy Section 5.9.1
 \begin_layout Itemize
 
 \series bold
-\lang english
-Incident Reporting
+Required Software Inventory Elements
 \series default
 :
- Lost,
- stolen,
- or potentially compromised assets shall be reported to Information Operations immediately.
+ Each software inventory record shall,
+ at a minimum,
+ contain the following fields:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Software Name
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
-CJIS Reporting Requirement
+Publisher
+\series default
+ (software vendor or manufacturer).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Version
+\series default
+ (installed or subscribed version).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+License Type
+\series default
+ (for example,
+ perpetual,
+ subscription,
+ concurrent-user,
+ or site license).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+License Count
+\series default
+ (number of seats,
+ installations,
+ or entitlements authorized).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Software Owner
+\series default
+ (County role or department accountable for the software's authorized use).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Assigned Deployments
+\series default
+ (users,
+ devices,
+ or systems on which the software is installed or for which access is provisioned).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Renewal or Expiration Date
+\series default
+ (for subscriptions,
+ SaaS entitlements,
+ and term-limited licenses).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+License Compliance
 \series default
 :
- If a lost or stolen device contains or has access to CJI,
- the incident shall be reported to the IT Director (LASO) immediately,
- and no later than one (1) hour after discovery,
- and additional incident details shall be provided as soon as possible.
- If the incident is confirmed,
- the IT Director (LASO) shall ensure required CJIS notifications are made to the CSO,
- SIB Chief,
- or Interface Agency Official,
- as applicable.
+ The IT Director shall reconcile license allocation annually to prevent over-deployment and under-utilization.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Unapproved Software
+\series default
+:
+ Installation of software or cloud services not recorded in the inventory is prohibited.
+ All Information Operations Personnel shall remove unapproved software upon discovery and document the removal in the work order system.
 \end_layout
 
 \begin_layout Subsubsection*
+6.7 Inventory Auditing and Reconciliation
+\end_layout
 
-\lang english
+\begin_layout Standard
+The Information Operations Department shall conduct inventory audits to validate record accuracy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Annual Audit
+\series default
+:
+ The Assistant IT Director shall complete a physical and logical inventory validation at least annually.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reconciliation
+\series default
+:
+ The Assistant IT Director shall investigate and reconcile discrepancies between the physical audit and the asset records in the System of Engagement within thirty (30) calendar days of discovery.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Fiscal Reporting
+\series default
+:
+ The IT Director shall provide an annual IT asset reconciliation report to the Office of Fiscal Affairs to support County financial reporting and the Office of Fiscal Affairs' statutory property and equipment reporting obligations under NRS 354.625.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Records Retention
+\series default
+:
+ Reconciliation records and supporting inventory documentation shall be retained in accordance with 
+\series bold
+LRDA 20070440 (Fixed Assets and Inventories)
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+6.8 Movement and Transfer
+\end_layout
+
+\begin_layout Standard
+To preserve inventory integrity,
+ County IT assets shall not be transferred between users,
+ relocated between facilities,
+ or reassigned without an approved work order under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and a corresponding asset record update.
+ Information Operations Personnel shall update the asset record to reflect the new assignment or location before closing the work order.
+ Unauthorized relocation of County IT assets by custodians is prohibited.
+\end_layout
+
+\begin_layout Subsubsection*
+6.9 Secure Storage and Loss Reporting
+\end_layout
+
+\begin_layout Standard
+Custodians shall ensure County IT assets are stored securely to prevent theft,
+ damage,
+ or unauthorized access.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Physical Security
+\series default
+:
+ Storage practices for assets capable of accessing or storing Criminal Justice Information (CJI) shall align with the physically secure location requirements of 
+\series bold
+CJIS Security Policy v6.0 Section 5.9.1
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Immediate Reporting
+\series default
+:
+ All County Personnel shall report loss,
+ theft,
+ or suspected compromise of any County IT asset to the Information Operations Department immediately upon discovery,
+ and in no event later than one (1) hour following discovery.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Chapter 4 Intake
+\series default
+:
+ Information Operations Personnel shall create a Safety and Security category work order upon receipt of any device loss or theft report.
+ This discharges the Chapter 4 intake obligation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+CJIS Notification
+\series default
+:
+ Where the lost or stolen asset contains or has access to CJI,
+ the Criminal Justice Information Services (CJIS) determination and the CJIS Security Policy Section IR-6 Part (a) internal one-hour reporting clock are governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.6.
+ CJIS Security Policy Section IR-6 Part (b) external notification execution is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration).
+ This policy owns the asset-loss reporting intake;
+ incident declaration and CJIS notification execution are not within the scope of this policy.
+\end_layout
+
+\begin_layout Subsubsection*
 6.10 Secure Disposal and Decommissioning
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-Information Operations shall control decommissioning to prevent data exposure and ensure auditable disposal.
+The Information Operations Department shall control decommissioning to prevent data exposure and ensure auditable disposal.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
 Sanitization Standard
 \series default
 :
- All digital media shall be sanitized prior to disposal,
+ All Information Operations Personnel shall sanitize digital media prior to disposal,
  release,
  or reuse using methods (Clear,
  Purge,
@@ -1622,22 +2118,35 @@ nolink "false"
 \begin_layout Itemize
 
 \series bold
-\lang english
 Method Selection
 \series default
 :
- The IT Director shall approve the sanitization method based on the classification of data stored on the device.
+ The IT Director shall approve the sanitization method based on the classification of data stored on the device under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
 Documentation
 \series default
 :
- Sanitization and disposal actions shall be documented,
- including the date,
+ All Information Operations Personnel shall document each sanitization and disposal action,
+ recording the date,
  method used,
  and the personnel performing the validation.
 \end_layout
@@ -1645,29 +2154,47 @@ Documentation
 \begin_layout Itemize
 
 \series bold
-\lang english
+CI Record Retirement
+\series default
+:
+ All Information Operations Personnel shall retire the associated Configuration Item record in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ as a required step of the decommissioning workflow.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 E-Waste
 \series default
 :
- Electronic waste shall be transferred only through approved recycling vendors that provide certificates of destruction/recycling.
+ The IT Director shall transfer electronic waste only through approved recycling vendors that provide certificates of destruction or recycling.
 \end_layout
 
 \begin_layout Subsubsection*
-
-\lang english
 6.11 Offsite and Home Use
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 County IT assets are intended for County business use.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
 Authorized Offsite Use
 \series default
 :
@@ -1679,24 +2206,68 @@ Authorized Offsite Use
 \begin_layout Itemize
 
 \series bold
-\lang english
 Prohibited Removal
 \series default
 :
  Infrastructure,
  desktop computers,
  printers,
- and monitors shall not be removed from County premises for home use without written exception approval from the IT Director.
+ and monitors shall not be removed from County premises for offsite or home use.
+ Exceptions to this provision shall be processed under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.6 and shall require the express written approval of the IT Director prior to asset removal.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
-Liability
+Governing Obligations
 \series default
 :
- Assets used offsite are subject to the same acceptable use and security policies as onsite equipment.
+ County IT assets used offsite are subject to the acceptable use controls in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the mobile and remote access controls in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Mobile Device and Remote Access Policy).
 \end_layout
 
 \end_body
