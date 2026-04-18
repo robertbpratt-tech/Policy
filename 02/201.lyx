@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -194,13 +194,6 @@ Version:
 
 \lang english
 This policy establishes mandatory rules of behavior governing the acceptable use of Elko County Information Technology (IT) resources.
- It defines authorized and prohibited user activities to protect County operations,
- information,
- personnel,
- and the public from security,
- legal,
- operational,
- and reputational risk.
 \end_layout
 
 \begin_layout Subsection*
@@ -219,7 +212,7 @@ This policy applies to all users granted access to County IT resources,
  contractors,
  vendors,
  interns,
- and volunteers .
+ and volunteers.
  County IT resources include County-owned,
  County-managed,
  and County-provisioned systems and services,
@@ -231,6 +224,166 @@ This policy applies to all users granted access to County IT resources,
  and County data.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+User rules of behavior governing the use of County IT resources.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+User-facing prohibitions on unauthorized activity.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+User acknowledgment requirements as a prerequisite to access.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+User reporting obligations for security incidents and lost or stolen County IT resources.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Access provisioning,
+ authorization,
+ and system use notification banner content:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Security awareness training delivery and workforce training obligations:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Privacy controls,
+ Personally Identifiable Information (PII) handling,
+ and data subject rights:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Mobile device and remote access specific controls:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Incident response procedures following intake:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -242,44 +395,242 @@ This policy applies to all users granted access to County IT resources,
 
 \series bold
 \lang english
-IT Director (LASO):
-
+IT Director
 \series default
- Shall maintain this policy and serve as the final authority on acceptable-use determinations and exception approvals.
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the final authority on acceptable-use determinations under this policy.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Human Resources (HR):
+Shall,
+ as Local Agency Security Officer (LASO) per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
 
 \series default
- Shall ensure user acknowledgments are executed prior to initial access and retained for a minimum of seven (7) years following separation of employment or contract termination in accordance with the Nevada Local Government Records Retention Schedule .
+ (Data Governance and Classification Policy),
+ execute CJIS-specific notification obligations that attach to acceptable-use violations involving Criminal Justice Information (CJI).
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Department Heads:
+Shall suspend privileged access upon discovery of any lapse in the prerequisites defined in Section 6.7 of this policy,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
 
 \series default
- Shall ensure all personnel under their supervision execute required acknowledgments prior to access provisioning and report security incidents or lost CJI-capable devices within one (1) hour of discovery.
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework) §6.3.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-All Users:
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall approve operational exceptions to this policy within the criteria and notification requirements defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
 
 \series default
- Shall comply with this policy as a condition of access to County IT resources and shall protect County assets from unauthorized access,
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment) §6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate the annual acknowledgment refresh cycle defined in Section 6.6 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the authoritative custodian of executed acknowledgments,
+ retaining them in accordance with LRDA 20071725 (IT Employee Access Control and Security Awareness Files) for a minimum of three (3) calendar years from the end of the calendar year in which the acknowledgment was modified or the user's access rights were terminated.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain system-level evidence of acknowledgment completion sufficient for access-control determinations and audit.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall execute disposition of acknowledgment records upon expiration of the applicable retention period in accordance with the disposition instructions established in the referenced schedule.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain the text of the Acceptable Use Policy Acknowledgment in the System of Engagement in alignment with this policy.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Human Resources
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall verify that users have executed the Acceptable Use Policy Acknowledgment prior to access provisioning as part of the onboarding process.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall notify Information Operations of user separations and status changes that affect acknowledgment retention obligations or trigger access revocation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall ensure all personnel under their supervision execute the required acknowledgment prior to being granted access to County IT resources.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall notify Information Operations immediately upon becoming aware of lost,
+ stolen,
+ or compromised County IT resources assigned to personnel under their supervision.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall intake user-reported incidents and lost asset reports under this policy through the mechanisms defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures) §6.2.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Users of County IT Resources
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall comply with this policy as a condition of access to County IT resources.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall protect County IT resources from unauthorized access,
  loss,
  or misuse.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Shall execute the Acceptable Use Policy Acknowledgment prior to initial access and upon each annual refresh.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -287,32 +638,77 @@ All Users:
  Compliance and Exceptions
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
-\series bold
 \lang english
-Compliance:
-
-\series default
- Adherence to this policy is mandatory.
- Violations may result in access revocation,
- disciplinary action up to and including termination,
- contract remedies,
- and referral for civil or criminal enforcement under 
-\series bold
-NRS 205
-\series default
-.
+Compliance with this policy is mandatory for all users of County IT resources.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to this policy shall be assessed through the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and the acknowledgment-completion tracking maintained by Human Resources and Information Operations.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ Non-compliance may result in access revocation,
+ disciplinary action up to and including termination,
+ contract remedies,
+ and referral for civil or criminal enforcement under NRS 205.4765 (Unlawful acts regarding computers).
+ Enforcement actions shall be executed under the corrective action framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
 Universal Applicability
 \series default
 :
- The standards defined herein apply to the use of County IT resources at all times and in all locations,
- including but not limited to County facilities,
+ The standards defined in this policy apply to the use of County IT resources at all times and in all locations,
+ including County facilities,
  remote work locations,
  and during official travel.
 \end_layout
@@ -321,14 +717,29 @@ Universal Applicability
 
 \series bold
 \lang english
-Exceptions:
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be requested,
+ documented,
+ approved,
+ and retained in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
 
 \series default
- Exceptions shall be documented,
- risk-assessed,
- time-bound (not to exceed 12 months),
- and approved in writing by the IT Director.
- Exceptions involving CJI shall not reduce CJIS-mandated requirements.
+ §6.6.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -336,6 +747,35 @@ Exceptions:
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
 \end_layout
 
 \begin_layout Itemize
@@ -380,7 +820,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.14"
+reference "pol:2.03"
 plural "false"
 caps "false"
 noprefix "false"
@@ -389,7 +829,7 @@ nolink "false"
 \end_inset
 
 :
- Stakeholder Engagement and Communications Policy
+ Security Awareness and Training Policy
 \end_layout
 
 \begin_layout Itemize
@@ -416,6 +856,42 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:2.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Privacy and Data Protection Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Mobile Device and Remote Access Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:4.02"
 plural "false"
 caps "false"
@@ -431,14 +907,51 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NRS 205.4765 (Unlawful acts regarding computers)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-CJIS Security Policy v6.0:
- Section CM-11 (User-Installed Software)
+LRDA 20071725 (IT Employee Access Control and Security Awareness Files)
 \end_layout
 
 \begin_layout Itemize
@@ -446,6 +959,30 @@ CJIS Security Policy v6.0:
 \lang english
 CJIS Security Policy v6.0:
  Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ AC-8 (System Use Notification)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section CM-11 (User-Installed Software)
 \end_layout
 
 \begin_layout Itemize
@@ -466,7 +1003,16 @@ CJIS Security Policy v6.0:
 
 \lang english
 NIST CSF 2.0:
- PR.AT-01 (Awareness and Training)
+ GV.PO-01 (Policy for managing cybersecurity risks is established,
+ communicated,
+ and enforced)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.RR-04 (Cybersecurity is included in human resources practices)
 \end_layout
 
 \begin_layout Itemize
@@ -500,27 +1046,6 @@ COBIT 2019:
  APO01.02 (Manage ethical and professional behavior)
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-COBIT 2019:
- DSS05.01 (Protect against malicious software)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-COBIT 2019:
- DSS05.03 (Manage endpoint security)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ITIL v4:
- Incident Management Practice
-\end_layout
-
 \begin_layout Subsection*
 
 \lang english
@@ -531,8 +1056,7 @@ ITIL v4:
 \begin_layout Subsubsection*
 
 \lang english
-6.1.
- Ownership and Consent to Monitoring
+6.1 Ownership and Consent to Monitoring
 \end_layout
 
 \begin_layout Itemize
@@ -542,13 +1066,29 @@ ITIL v4:
 County Property
 \series default
 :
- All Information Technology resources,
+ All County IT resources,
  including hardware,
  software,
  and data created,
  stored,
  or transmitted upon them,
- remain the sole property of Elko County regardless of the physical location of the asset.
+ are the sole property of Elko County regardless of physical location or funding source,
+ as defined and classified under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Asset Management Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -558,8 +1098,17 @@ County Property
 No Expectation of Privacy
 \series default
 :
- Users shall have no reasonable expectation of privacy when using County IT resources.
- Use constitutes consent to monitoring,
+ Users shall have no expectation of privacy in County IT resources.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Consent to Monitoring
+\series default
+:
+ Use of County IT resources constitutes consent to monitoring,
  logging,
  and disclosure for operational,
  security,
@@ -571,14 +1120,11 @@ No Expectation of Privacy
 
 \series bold
 \lang english
-System Notification
+System Use Notification
 \series default
 :
- System use notification banners implementing 
-\series bold
-NIST SP 800-53 AC-8
-\series default
- shall be displayed on County systems as specified in 
+ The system use notification banner implementing NIST SP 800-53 Rev.
+ 5 AC-8 shall be displayed on County systems as specified in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -593,14 +1139,13 @@ nolink "false"
 
 
 \series default
- to provide continuous notice of monitoring consent.
+ (Access Control Policy) §6.5 to provide continuous notice of monitoring and consent.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.2.
- Identity and Credentials
+6.2 Identity and Credentials
 \end_layout
 
 \begin_layout Itemize
@@ -613,7 +1158,16 @@ Credential Protection
  Users shall not share passwords,
  tokens,
  or access badges.
- Account sharing is strictly prohibited.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Account Sharing
+\series default
+:
+ Users shall not use another user's account or allow another person to use their account.
 \end_layout
 
 \begin_layout Itemize
@@ -623,15 +1177,13 @@ Credential Protection
 Workstation Security
 \series default
 :
- Users shall lock devices (Win+L) whenever left unattended,
- even for brief periods.
+ Users shall lock their workstation or device whenever it is left unattended.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.3.
- Acceptable Use Standards
+6.3 Acceptable Use Standards
 \end_layout
 
 \begin_layout Itemize
@@ -651,56 +1203,112 @@ Official Use
 Incidental Personal Use
 \series default
 :
- Limited personal use is permissible only if it is brief,
- occurs during non-work time (breaks/lunch),
+ Users may engage in limited personal use of County IT resources only during break and lunch periods,
+ provided such use complies with the prohibitions defined in Section 6.4 of this policy,
  incurs no cost to the County,
- and does not interfere with productivity or violate any other County policy.
+ and does not delay or prevent the completion of assigned tasks.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.4.
- Prohibited Activities Users shall not:
+6.4 Prohibited Activities
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Install unauthorized software,
- disable security controls,
- or use anonymization tools to bypass network filters.
+Unauthorized Software
+\series default
+:
+ Users shall not install unauthorized software on County IT resources.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Input Confidential or Restricted County data (per Policy 1.11) into external Generative AI or public Large Language Models (LLMs).
+Security Control Bypass
+\series default
+:
+ Users shall not disable,
+ circumvent,
+ or tamper with security controls,
+ including but not limited to endpoint protection software,
+ firewalls,
+ and logging mechanisms.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Use County IT resources for political campaigning,
+Network Filter Evasion
+\series default
+:
+ Users shall not use anonymization tools,
+ proxies,
+ or any other mechanism to bypass County network filters or monitoring.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+External AI Data Exposure
+\series default
+:
+ Users shall not input Confidential or Restricted County data,
+ as classified under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy),
+ into any Generative Artificial Intelligence (GenAI) system or Large Language Model (LLM) that is not a County-managed service.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Political and Commercial Use
+\series default
+:
+ Users shall not use County IT resources for political campaigning,
  lobbying,
  or personal commercial ventures.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Access,
+Prohibited Content
+\series default
+:
+ Users shall not access,
  store,
  or distribute harassing,
  discriminatory,
- or sexually explicit content.
+ or sexually explicit content using County IT resources.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.5.
- Reporting Requirements
+6.5 Reporting Requirements
 \end_layout
 
 \begin_layout Itemize
@@ -710,42 +1318,95 @@ Access,
 Security Incidents
 \series default
 :
- Users shall report suspected security incidents to Information Operations immediately.
+ Users shall report suspected security incidents to Information Operations immediately upon discovery,
+ and no later than one (1) hour after discovery.
+ Intake handling is governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.2.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Lost CJI Assets
+Lost or Stolen CJI-Capable Devices
 \series default
 :
- Lost or stolen devices capable of accessing Criminal Justice Information (CJI) must be reported to the IT Director (LASO) no later than 
+ Users shall report any device capable of accessing Criminal Justice Information (CJI) that is lost,
+ stolen,
+ or otherwise unaccounted for to Information Operations no later than one (1) hour after discovery.
+ This window supports the CJIS Security Policy v6.0 Section IR-6 Part (a) internal reporting clock operationalized in 
 \series bold
-one (1) hour
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
- after discovery.
+ §6.6.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-General Assets
+Lost or Stolen General Assets
 \series default
 :
- All other lost or stolen County devices shall be reported within 
+ Users shall report all other lost or stolen County IT resources to Information Operations no later than the end of the next business day after discovery.
+ Losses of resources known or suspected to contain Confidential or Restricted County data shall be reported under the Security Incidents provision above.
+\end_layout
+
+\begin_layout Itemize
+
 \series bold
-one (1) business day
+\lang english
+Exclusion
 \series default
- of discovery.
+:
+ Routine violations of this policy that do not involve a suspected security incident or Indicator of Compromise as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall be handled through the enforcement pathway established in Section 4 of this policy,
+ and shall not be routed as Chapter 4 incidents solely on the basis of policy non-compliance.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.6.
- Acknowledgment Requirement
+6.6 Acknowledgment Requirement
 \end_layout
 
 \begin_layout Itemize
@@ -755,17 +1416,19 @@ one (1) business day
 Prerequisite
 \series default
 :
- All users shall execute the Acceptable Use Policy Acknowledgment (maintained in the System of Engagement (Redmine)) prior to being granted access to County IT resources.
+ Users shall execute the Acceptable Use Policy Acknowledgment,
+ maintained in the System of Engagement,
+ prior to being granted access to County IT resources.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Refreshes
+Annual Refresh
 \series default
 :
- This acknowledgment shall be refreshed annually or upon significant updates to this policy.
+ Users shall re-execute the acknowledgment within three hundred sixty-five (365) calendar days of the previous execution and upon any revision to this policy that alters user obligations under Section 6.
 \end_layout
 
 \begin_layout Itemize
@@ -775,22 +1438,127 @@ Refreshes
 Refusal
 \series default
 :
- Refusal to sign shall result in the immediate denial or revocation of access to all IT resources.
+ Upon refusal by a user to execute the acknowledgment,
+ Information Operations shall immediately deny or revoke the user's access to all County IT resources.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Retention
+\series default
+:
+ Executed acknowledgments shall be retained by Information Operations in accordance with LRDA 20071725 (IT Employee Access Control and Security Awareness Files).
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.7.
- Additional Requirements for Privileged Users
+6.7 Additional Requirements for Privileged Users
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-Users with elevated privileges (Tier L3 and above) shall use privileged accounts only for tasks requiring elevated access;
- routine activities shall be performed using standard accounts.
- Privileged access is contingent on maintaining required background screening and role-based training specified in Policy 1.07 and Policy 2.03 .
+Privileged Account Use
+\series default
+:
+ Users assigned to Tier L3 (Administrator) or above,
+ as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ shall use privileged accounts only for tasks requiring elevated access.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Standard Account Use
+\series default
+:
+ Privileged users shall perform routine activities using standard (non-privileged) accounts.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Prerequisites
+\series default
+:
+ Privileged users shall maintain the background screening and role-based training requirements specified in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Awareness and Training Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Suspension on Lapse
+\series default
+:
+ The IT Director shall suspend privileged access upon discovery of any lapse in the prerequisites defined in this section,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_body
