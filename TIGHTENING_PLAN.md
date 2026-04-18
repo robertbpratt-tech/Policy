@@ -105,6 +105,8 @@ Cross-validator feedback matching these patterns is reflexively declined.
 20. **ChatGPT: inline 5.01 §6.6 exception-management language into individual policy §4 sections** — violates the locked by-reference architecture used across the tightened manual (1.05, 1.06, 1.10, 1.11, 1.12, 1.14, 4.03, 1.13, and others all route exceptions to 5.01 §6.6 via short-form reference). When cross-validators propose strengthening exception discipline (time-bounding, remediation timelines, CJIS backstops, open-ended-exception bars) inside a downstream policy's §4, the correct response is to file a ripple against 5.01, not to inline the language downstream. Doing so would create dual-maintenance across ~15 policies and break the pattern 1.10 v2.2 established. Reflexive decline; file ripple against 5.01. (1.13 Rounds 2 and 3, ChatGPT — same proposal re-pushed after Round 2 decline; ripple #334 filed.)
 21. **Elevated: pattern #2 citation-order-vs-authority-hierarchy confusion** — original pattern #2 captures that 1.04 §6.11 citation ordering is intentionally distinct from the authority hierarchy. The 1.13 session saw four instances across three rounds from both validators (Gemini R1 Gap 1, Gemini R2 Gap 2, ChatGPT R1 Gap 1, ChatGPT R3 Gap 2), reinforcing that validators consistently misread the Cited/Framework split in 1.04 §6.7 as a flat legal-hierarchy list. When three or more validator rounds reinforce the same "finding" against the same architectural choice, treat that as evidence of validator-level confusion about the source, not a source defect. Reflexive decline on sight; cite pattern #2 without further engagement.
 22. **Cross-validator "absence-of-evidence from incomplete retrieval" pattern** — Validator discloses it could not retrieve an authoritative source, then flags the citation as unverified. This is not a finding against the draft; it is the validator's confidence disclosure. When the verification was already performed during drafting against the authoritative source (e.g., CJIS v6.0 PDF, NIST CSF 2.0 CSWP.29, NIST SP 800-53 R5 PDF, Nevada retention schedule), with page numbers or line references cited, the validator claim is moot. Reflexive decline with a pointer back to the original verification. (1.13 Round 3 Gap 3, ChatGPT — LRDA 20070378 and 20070474 verified during v2.1 drafting against 07_Nevada_Log_Retention.pdf pages 8 and 341; ChatGPT could not retrieve and self-rated confidence Low.)
+23. **Surface-framing rotation on locked architectural decisions** — Validators repeatedly target the same architectural choice across sequential rounds, rotating the surface rationale each round while the underlying recommendation is identical. Detected when three or more rounds produce "new findings" that resolve to the same architectural change. Reflexive decline on sight once the pattern is confirmed; cite the original standing decline without re-engaging the surface framing. (2.01 Rounds 1–4, ChatGPT — inline 5.01 §6.6 exception-management language targeted four times with four rationales: final-approver ambiguity → CJI non-waiver → IT Director/AID split → 12-month cap restoration. Also 2.01 Rounds 2–4, ChatGPT — LRDA 20071725 verification requested three times with "Low confidence" disclosure each round. All variants fall under decline patterns #20 and #22 respectively; pattern #23 is the meta-pattern identifying that the same target is being re-attempted across rounds.)
+24. **Validator misread of §4 optional governed labels as exhaustive mandatory set** — When a policy's §4 uses one of the five governed optional labels (Constructive Notice, Emergency Deviations, Sanctions, Universal Applicability, Mandatory Compliance) from 1.04 §6.6, validators sometimes flag the label as non-canonical, apparently treating the three mandatory labels (Assessment, Enforcement, Exceptions) as the complete governed set. 1.04 §6.6 explicitly permits the five optional labels in addition to the three mandatory ones. Reflexive decline; cite 1.04 §6.6 optional governed set. (2.01 Round 3 Gap 1, ChatGPT — "Universal Applicability" flagged as substantive content that should move to §6, when in fact it is on the 1.04 §6.6 optional governed set and fits the exact use case defined: "For policies that apply regardless of location or work status.")
 
 ---
 
@@ -112,7 +114,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 17, 2026 (1.13 Phase 5A session complete — v2.2 committed (supersedes premature v2.0), #56/#232 closed, #235 annotated (1.13 out of sweep scope), ripples #330/#331/#332/#333/#334 filed, three new standing-decline patterns added to §4).
+**Last refreshed:** April 18, 2026 (2.01 Phase 5B session complete — v2.4 committed, #61/#62/#63/#286 closed, sweep-root absorption notes posted on #208/#235/#245/#6/#264, ripples #345 (5.01 §6.8 unsupported 7-year retention)/#346 (2.03 LRDA title harmonization) filed, two new standing-decline patterns captured from Round 3–4 validator behavior).
 
 ### Chapter 0 / Front Matter
 
@@ -142,7 +144,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 2.01 | Acceptable Use | D | — | 4 | #61, #62, #63, #286 |
+| 2.01 | Acceptable Use | T | v2.4 | 0 | — |
 | 2.02 | Personnel Security | D | — | 2 | #64, #217 |
 | 2.03 | Security Awareness | D | — | 4 | #66, #67, #68, #213 |
 | 2.04 | Access Control | D | — | 2 | #69, #70 |
@@ -196,7 +198,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 5.01 | Implementation, Enforcement, Legal | T | v1.1 | 0 | — |
+| 5.01 | Implementation, Enforcement, Legal | T+ | v1.1 | 1 | #345 |
 | 5.02 | Internal Audits | D | — | 5 | #183, #184, #185, #186, #278 |
 | 5.03 | Compliance Monitoring | D | — | 2 | #187, #279 |
 | 5.04 | Performance Metrics | D | — | 1 | #280 |
@@ -310,7 +312,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
-| 25 | 2.01 (Acceptable Use) | 4 | Broadest user-facing policy; sets Ch2 tone |
+| 25 | ~~2.01 (Acceptable Use)~~ — ✅ v2.4, April 18, 2026. Tickets #61, #62, #63, #286 closed. Ripples filed: #345 (5.01 §6.8 unsupported 7-year acknowledgment retention — anchor to LRDA by-reference), #346 (2.03 LRDA 20071725 title and trigger harmonization at tightening). Sweep notes on #208, #235, #245, #6, #264. Architectural landings: §3 restructured to 6 roles in descending authority with LASO in sub-bullet (closes #286); §4 rebuilt to Assessment / Enforcement / Exceptions labels with optional Universal Applicability; §5 Cited/Framework split with verified CSF 2.0 subcategories (GV.PO-01, GV.RR-04) replacing misattributed PR.AT-01; NRS 205.4765 cited specifically in body + §5; LRDA 20071725 3-year retention authoritative custody assigned to Assistant IT Director; §6.1 three-bullet legal chain (status → consent → notice) with "Users shall have no expectation of privacy" per Q4 decision; §6.4 prohibitions split to one-directive-per-bullet with AI clause scoped to "not a County-managed service" closing public/private/paid loophole; §6.5 four-bullet reporting with 1-hour user-level clock matching CJIS IR-6(a), sensitive-data routing from general assets to Security Incidents, and Exclusion tag carving routine AUP violations out of Chapter 4 intake. 5.01 §6.6 exception routing preserved by-reference. Four cross-validator rounds; standing declines #1, #20, #22 held repeatedly; ChatGPT exception-authority target rotated four framings (final-approver → CJI non-waiver → IT/AID split → 12-month cap) all declined. | 4 (#61, #62, #63, #286) | Broadest user-facing policy; sets Ch2 tone |
 | 26 | 2.06 (Privacy/Data Protection) | 5 | Highest Ch2 ticket count; DA approval question (#74) |
 | 27 | 2.02 (Personnel Security) | 2 | Personnel security feeds access control |
 | 28 | 2.04 (Access Control) | 2 | Foundational — 2.05 I&A depends on it |
