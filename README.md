@@ -17,7 +17,7 @@
 | 1.12 | IT Asset Management Policy | x |
 | 1.13 | Supply Chain Risk Management (SCRM) and Vendor Governance | x |
 | 1.14 | Stakeholder Engagement and Communications Policy | x |
-| 2.01 | Acceptable Use of Information Technology Resources Policy | o |
+| 2.01 | Acceptable Use of Information Technology Resources Policy | x |
 | 2.02 | Personnel Security and Background Screening Policy | o |
 | 2.03 | Security Awareness and Training Policy | o |
 | 2.04 | Access Control Policy | o |
