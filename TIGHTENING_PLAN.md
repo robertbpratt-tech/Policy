@@ -119,7 +119,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 19, 2026 (2.02 Phase 5B entry 27 ✅ complete — v2.4 committed after 3 validator rounds + IT Director §3 label challenge; ripples filed #354 (1.07 remove 5-year CJI rescreening, Path A), #355 (manual-wide LRDA verification sweep), #356 (2.01 §3 label normalization); #64 and #217 closed as resolved; sweep absorption notes on #208/#235/#245/#264/#6/#7/#8/#10; new standing decline #29 added (cross-validator pushback on locked operational-reality decisions via cross-policy dependency citation, third-recurrence rule).
+**Last refreshed:** April 19, 2026 (Bucket 1 ripple sweep ✅ complete — 3.13 v2.2 (commit e34fd5192ac6) and 4.03 v2.1 (commit 9f932b13dd4f) landed as mechanical Section 6.16 → 6.15 ref fixes from 1.04 v1.4 §6.15 unification; #322 and #323 closed; both policies return to T state. Preceded by 2.02 Phase 5B entry 27 ✅ complete — v2.4 committed after 3 validator rounds + IT Director §3 label challenge; ripples filed #354 (1.07 remove 5-year CJI rescreening, Path A), #355 (manual-wide LRDA verification sweep), #356 (2.01 §3 label normalization); #64 and #217 closed as resolved; sweep absorption notes on #208/#235/#245/#264/#6/#7/#8/#10; new standing decline #29 added (cross-validator pushback on locked operational-reality decisions via cross-policy dependency citation, third-recurrence rule).
 
 ### Chapter 0 / Front Matter
 
@@ -181,7 +181,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.10 | Release and Deployment | T | v2.0 | 0 | — |
 | 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #317 |
 | 3.12 | Monitoring and Event Management | T+ | v2.0 | 1 | #318 |
-| 3.13 | Knowledge Management | T+ | v2.1 | 1 | #322 |
+| 3.13 | Knowledge Management | T | v2.2 | 0 | — |
 | 3.14 | IT Project Management | T | v2.2 | 0 | — |
 | 3.15 | Service Continuity | T+ | v2.1 | 2 | #314, #319 |
 | 3.16 | Service Improvement | T | v2.0 | 0 | — |
@@ -193,7 +193,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|
 | 4.01 | IR Policy Overview | T | v2.0 | 0 | — |
 | 4.02 | Identification and Reporting | T | v2.1 | 0 | — |
-| 4.03 | Containment Strategy and Playbooks | T+ | v2.0 | 1 | #323 |
+| 4.03 | Containment Strategy and Playbooks | T | v2.1 | 0 | — |
 | 4.04 | Eradication | T | v2.2 | 0 | — |
 | 4.05 | Recovery and Restoration | T | v2.2 | 0 | — |
 | 4.06 | Communication Protocols | T | v2.2 | 0 | — |
