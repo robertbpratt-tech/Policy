@@ -174,13 +174,13 @@ name "pol:1.08"
 
 \lang english
 Effective:
- July 01,
+ April 18,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.4
+ 1.5
 \end_layout
 
 \begin_layout Subsection*
@@ -1003,6 +1003,12 @@ Law enforcement referral authority.
 
 \lang english
 Media and public communication authority during cybersecurity incidents.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Privacy Impact Assessment (PIA) approval.
 \end_layout
 
 \begin_layout Itemize
