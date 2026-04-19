@@ -174,13 +174,13 @@ name "pol:1.11"
 
 \lang english
 Effective:
- July 01,
+ April 18,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -1786,6 +1786,53 @@ CJI Data Sovereignty
  the IT Director shall ensure CJI is stored and processed only within the physical boundaries of an APB-member country and under the legal authority of an APB-member agency,
  unless permitted by the CSA/CSO and approved in writing by the IT Director (as LASO),
  with all required CJIS governing approvals documented.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Non-CJI Restricted Data Residency
+\series default
+:
+ All Information Operations Personnel shall store Restricted data that is not CJI within the physical borders of the United States.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Confidential Data Residency
+\series default
+:
+ All Information Operations Personnel should store Confidential data within the physical borders of the United States.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exception
+\series default
+:
+ When storage of Confidential data outside U.S.
+ borders is proposed,
+ the IT Director shall document the justification,
+ the compensating controls,
+ and the residual risk accepted,
+ and shall review such authorizations annually.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Internal and Public Data Residency
+\series default
+:
+ Internal and Public data have no residency requirement under this policy.
 \end_layout
 
 \end_deeper
