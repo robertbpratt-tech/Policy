@@ -174,13 +174,13 @@ name "pol:2.06"
 
 \lang english
 Effective:
- July 01,
+ April 18,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.6
 \end_layout
 
 \begin_layout Subsection*
@@ -193,17 +193,569 @@ Version:
 \begin_layout Standard
 
 \lang english
-This policy establishes mandatory requirements for the protection of privacy and data,
- including Criminal Justice Information (CJIS),
+This policy establishes mandatory requirements for the protection of Criminal Justice Information (CJI),
  Personally Identifiable Information (PII),
- and Protected Health Information (PHI),
- to ensure the confidentiality,
- integrity,
- and availability of Elko County information assets.
- This policy ensures compliance with applicable federal and state laws,
- regulations,
- and standards,
- with adherence verified through the audit process defined in 
+ and Protected Health Information (PHI,
+ where applicable) processed,
+ stored,
+ or transmitted by or on behalf of Elko County.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+2.
+ Scope
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy applies to all County Personnel — including employees,
+ elected officials,
+ contractors,
+ vendors,
+ interns,
+ and volunteers — who access,
+ use,
+ collect,
+ store,
+ process,
+ or transmit CJI,
+ PII,
+ or PHI.
+ This policy applies regardless of location,
+ medium,
+ or funding source,
+ and regardless of whether the data is held in County-owned,
+ County-managed,
+ or County-provisioned systems and services.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Privacy Impact Assessments (PIAs) for defined trigger events.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data minimization at collection.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Privacy-specific handling obligations for CJI,
+ PII,
+ and PHI.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Privacy incident reporting triggers and breach determination.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Privacy training obligations for personnel handling CJI,
+ PII,
+ or PHI.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Data classification schema,
+ labeling,
+ storage authorization,
+ residency,
+ retention,
+ and reclassification:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Access control mechanics,
+ recertification cadence,
+ and revocation timelines:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+General security awareness and training delivery:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Media sanitization and physical destruction standards:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Incident intake,
+ triage,
+ declaration,
+ and CJIS notification execution:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+External breach notification under NRS 603A.220:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the final authority on privacy and data protection determinations under this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve Privacy Impact Assessments (PIAs) under Section 6.1 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall,
+ as Local Agency Security Officer (LASO) per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) §6.11,
+ execute CJIS Security Policy obligations that attach to privacy incidents involving CJI.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall render the NRS 603A.220 breach determination as governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration) §6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain a register of applicable federal and state privacy laws in the System of Engagement.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall approve operational exceptions to this policy within the criteria and notification requirements defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment) §6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare each Privacy Impact Assessment (PIA) required under Section 6.1 of this policy,
+ in consultation with the applicable Department Head.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure each PIA addresses the content requirements of Section 6.1 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall serve as the authoritative custodian of PIA records and supporting artifacts.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate privacy-specific training content with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Awareness and Training Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Human Resources
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall notify Information Operations of personnel separations and role changes affecting access to CJI,
+ PII,
+ or PHI.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall determine the necessity of data collection under Section 6.2 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure personnel under their supervision comply with the privacy handling obligations of this policy and the classification handling rules of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall notify the Assistant IT Director upon becoming aware of any event meeting a Privacy Impact Assessment (PIA) trigger defined in Section 6.1 that arises within their department.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide departmental information required for PIA preparation,
+ including business purpose,
+ data categories handled,
+ operational context,
+ and access population.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall acknowledge in writing the residual risk disposition documented in each approved PIA covering data under their department's purview.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall implement the technical controls required to enforce the privacy handling obligations of this policy,
+ including encryption,
+ access enforcement,
+ logging,
+ and sanitization handoffs.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall support PIA preparation by providing system architecture,
+ data flow,
+ and technical control information required by the Assistant IT Director.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall comply with the privacy handling obligations of this policy for CJI,
+ PII,
+ or PHI they access,
+ use,
+ collect,
+ store,
+ process,
+ or transmit.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall complete required privacy training in accordance with Section 6.7 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report suspected or confirmed privacy incidents and data breaches in accordance with Section 6.8 of this policy.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all County Personnel who access,
+ use,
+ collect,
+ store,
+ process,
+ or transmit CJI,
+ PII,
+ or PHI.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to this policy shall be assessed through the audit process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -218,104 +770,68 @@ nolink "false"
 
 
 \series default
-.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-2.
- Scope
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-This policy applies to all Elko County Information Operations personnel,
- including all employees,
- elected officials,
- contractors,
- vendors,
- interns,
- and volunteers,
- who access,
- use,
- store,
- process,
- or transmit County information assets.
- This policy governs all systems,
- applications,
- and projects that process,
- store,
- or transmit County data,
- regardless of location or media.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-3.
- Roles and Responsibilities
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Board of County Commissioners
+Enforcement
 \series default
 :
- Shall approve the annual data governance plan submitted by the IT Director and review quarterly compliance reports on data protection incidents and remediation.
-\end_layout
-
-\begin_layout Itemize
-
+ Non-compliance shall be addressed under 
 \series bold
-\lang english
-IT Director (LASO)
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Serves as the County’s primary authority for data security and privacy.
- Shall conduct quarterly compliance audits of data handling practices and ensure incident response capabilities meet statutory timelines.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Data Owners
-\series default
-:
- Shall classify data in accordance with this policy and review access privileges semi-annually.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-All Personnel
-\series default
-:
- Shall strictly adhere to data handling procedures and report all suspected incidents immediately.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-4.
- Compliance and Exceptions
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Failure to comply with this policy may result in disciplinary action,
- up to and including termination of employment,
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+ Violations may result in disciplinary action up to and including termination of employment,
  termination of contract,
  and civil or criminal prosecution.
- Exceptions to this policy must be documented in writing,
- formally approved by the IT Director and the District Attorney’s Office,
- and reviewed annually.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be requested,
+ documented,
+ approved,
+ and retained in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -325,13 +841,22 @@ Failure to comply with this policy may result in disciplinary action,
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
 
 \lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.10"
+reference "pol:1.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -340,7 +865,25 @@ nolink "false"
 \end_inset
 
 :
- IT Financial Management and Procurement Policy
+ Policy Review and Update Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Delegation of Authority and Decision Rights
 \end_layout
 
 \begin_layout Itemize
@@ -385,6 +928,60 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Access Control Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Media Protection and Sanitization Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Project Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:4.02"
 plural "false"
 caps "false"
@@ -403,6 +1000,44 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols and Partner Integration
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.02"
 plural "false"
 caps "false"
@@ -412,26 +1047,28 @@ nolink "false"
 \end_inset
 
 :
- Internal Audits and Self-Assessment Procedures
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 239.010 (Public Records)
+NRS 603A (Security and Privacy of Personal Information)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 603A.220 (Disclosure of breach of security of system data)
+NRS 603A.220 (Disclosure of Breach of Security of System Data)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section IR (Incident Response)
+ Section 4 (Criminal Justice Information and Personally Identifiable Information)
 \end_layout
 
 \begin_layout Itemize
@@ -441,18 +1078,34 @@ CJIS Security Policy v6.0:
  Section IR-6 (Incident Reporting)
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section SC (System and Communications Protection and Information Integrity)
+ Section SC-13 (Cryptographic Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SC-28 (Protection of Information at Rest)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 NIST CSF 2.0:
- GV.PO-01 (Policy Establishment)
+ GV.PO-01 (Organizational Cybersecurity Policy)
 \end_layout
 
 \begin_layout Itemize
@@ -467,22 +1120,6 @@ NIST CSF 2.0:
 \lang english
 NIST CSF 2.0:
  PR.DS-02 (Data-in-Transit Protection)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
- AR-1 (Governance and Privacy Program)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
- AR-2 (Privacy Impact and Risk Assessment)
 \end_layout
 
 \begin_layout Itemize
@@ -507,6 +1144,46 @@ NIST SP 800-53 Rev.
 NIST SP 800-53 Rev.
  5:
  IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-18 (Privacy Program Plan)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PM-19 (Privacy Program Leadership Role)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PT-1 (Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PT-3 (Personally Identifiable Information Processing Purposes)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ RA-8 (Privacy Impact Assessments)
 \end_layout
 
 \begin_layout Itemize
@@ -561,168 +1238,69 @@ ITIL v4:
  Policy Statement
 \end_layout
 
-\begin_layout Subsubsection*
-
-\lang english
-6.1.
- Privacy by Design
-\end_layout
-
 \begin_layout Standard
 
 \lang english
-New systems and major modifications to existing systems shall incorporate privacy protections into the system architecture during the initial design phase.
- Projects shall not proceed to development until a Privacy Impact Assessment (PIA) is approved by the IT Director.
+This policy governs the County's privacy-specific controls and the Privacy Impact Assessment (PIA) process.
+ General data classification,
+ storage,
+ retention,
+ access mechanics,
+ media sanitization,
+ and incident execution remain governed by their respective policies cross-referenced throughout this policy.
 \end_layout
 
 \begin_layout Subsubsection*
-
-\lang english
-6.2.
- Data Collection and Minimization
+6.1 Privacy Impact Assessments
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-Only data strictly necessary for the performance of defined County business functions shall be collected.
- Determining the necessity of data collection shall be the responsibility of the designated Data Owner.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.3.
- Access Control
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Access to non-public data shall be granted on a "Need-to-Know" and "Least Privilege" basis.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Access rights shall be reviewed in accordance with the recertification cadence defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Access shall be revoked upon termination of employment or contract in accordance with the timelines defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.4.
- Encryption and Data Residency
+The Privacy Impact Assessment (PIA) is the County's authoritative instrument for identifying and disposing of privacy risk before data is collected,
+ processed,
+ or shared.
+ A PIA is not exclusive to formally designated projects;
+ it applies to any change in the County's privacy posture that meets the trigger conditions below.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-\lang english
-Data at Rest
+Trigger Events
 \series default
 :
- All PII,
- PHI,
- and CJIS data stored on mobile devices,
- laptops,
- or removable media must be encrypted.
+ The IT Director shall approve a PIA before any of the following events proceed:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A new system that will process,
+ store,
+ or transmit CJI,
+ PII,
+ or PHI.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-\lang english
-Data in Transit
-\series default
-:
- All sensitive data transmitted over public networks must be encrypted using TLS 1.2 or higher.
+A modification to an existing system processing CJI,
+ PII,
+ or PHI that introduces a new data category,
+ a new storage location,
+ an expanded access population,
+ or a new data recipient.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-\lang english
-Cryptographic Standards
-\series default
-:
- Encryption shall use FIPS 140-3 validated modules.
- Legacy FIPS 140-2 validated modules are permitted only until September 21,
- 2026,
- after which they must be replaced.
+A new data collection that introduces a category of personal information the County did not previously collect.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-\lang english
-Data Residency
-\series default
-:
- All County data must be stored within the physical borders of the United States.
+A new data-sharing arrangement under which CJI,
+ PII,
+ or PHI is shared with an external party.
 \end_layout
 
-\begin_layout Subsubsection*
-
-\lang english
-6.5.
- Regulatory Alignment
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Elko County shall comply with NRS Chapter 603A and applicable federal privacy requirements.
- The IT Director shall maintain a register of applicable federal and state privacy laws and shall update this policy within 90 days of any new law taking effect.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.6.
- Data Retention
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Data shall be retained and disposed of in accordance with 
+\begin_layout Itemize
+Reclassification of data upward under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -737,56 +1315,542 @@ nolink "false"
 
 
 \series default
- and the applicable Nevada Local Government Records Retention Schedules.
- Destruction of digital media must render the data irretrievable in accordance with NIST SP 800-88 Guidelines for Media Sanitization.
+ §6.7 when the new classification is Confidential or Restricted.
+\end_layout
+
+\begin_layout Itemize
+A change in processing purpose for personal information already collected that exceeds or contradicts the legal authority under which the data was originally collected,
+ expands data use into a category not previously authorized,
+ or is inconsistent with any public notice of collection provided to data subjects.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+PIA Content
+\series default
+:
+ The Assistant IT Director shall ensure each PIA addresses the following items at minimum:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Data categories involved (CJI,
+ PII,
+ PHI),
+ approximate record count or estimated data volume,
+ and sources.
+\end_layout
+
+\begin_layout Itemize
+Legal authority for collection,
+ processing,
+ use,
+ or disclosure,
+ including the specific statute,
+ regulation,
+ ordinance,
+ court order,
+ agreement,
+ grant condition,
+ or documented County business function under which the data is authorized.
+\end_layout
+
+\begin_layout Itemize
+Processing purpose and consistency with the purpose of original collection.
+\end_layout
+
+\begin_layout Itemize
+Data flow,
+ storage locations,
+ and transmission paths.
+\end_layout
+
+\begin_layout Itemize
+Access control posture and role eligibility.
+\end_layout
+
+\begin_layout Itemize
+Retention disposition aligned with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.9.
+\end_layout
+
+\begin_layout Itemize
+Sharing arrangements and recipient controls.
+\end_layout
+
+\begin_layout Itemize
+Privacy risks identified,
+ compensating controls applied,
+ and residual risk accepted.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Approval Authority
+\series default
+:
+ The IT Director shall approve all PIAs.
+ PIA approval authority is not subject to Directed Deputization under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights) §6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Invoking Policies
+\series default
+:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Project Management Policy) §6.3 invokes PIA as a charter-approval package requirement when the project data-handling trigger fires.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Retention
+\series default
+:
+ The Assistant IT Director shall retain approved PIAs and supporting artifacts as the authoritative custodian,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) §6.9.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Re-Review
+\series default
+:
+ The Assistant IT Director shall prepare a fresh PIA when a subsequent trigger event fires against the same data,
+ system,
+ or processing purpose.
+ PIAs are not reviewed on a fixed calendar cadence.
 \end_layout
 
 \begin_layout Subsubsection*
-
-\lang english
-6.7.
- Data Classification Review
+6.2 Data Collection and Minimization
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-Data Owners shall review data classification annually and document the results in writing to the IT Director.
- Data Owners shall update classification within 30 days when sensitivity changes and shall notify Information Operations Personnel in writing within 5 business days to implement updated safeguards.
+Department Heads shall ensure that only data necessary for defined County business functions is collected.
+ Department Heads shall not authorize collection of CJI,
+ PII,
+ or PHI beyond the data elements required to execute the specific legal authority under which the data is collected (statute,
+ regulation,
+ ordinance,
+ court order,
+ agreement,
+ grant condition,
+ or documented County business function authorized by law).
 \end_layout
 
 \begin_layout Subsubsection*
-
-\lang english
-6.8.
- Data Security and Privacy Training
+6.3 Access Control
 \end_layout
 
 \begin_layout Standard
+All Information Operations Personnel shall enforce access to CJI,
+ PII,
+ and PHI on a need-to-know and least-privilege basis,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
-\lang english
-All personnel shall complete initial and annual security awareness and privacy training.
- Personnel must complete remedial training within 30 days of a major security event or policy violation.
+\end_inset
+
+
+\series default
+ (Access Control Policy) and the data classification rules of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6.
 \end_layout
 
 \begin_layout Subsubsection*
+6.4 Encryption
+\end_layout
 
-\lang english
-6.9.
- Incident Reporting
+\begin_layout Itemize
+
+\series bold
+Data at Rest
+\series default
+:
+ All Information Operations Personnel shall encrypt CJI,
+ PII,
+ and PHI at rest in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.4 (Confidential data) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5 (Restricted data).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Data in Transit
+\series default
+:
+ All Information Operations Personnel shall encrypt CJI,
+ PII,
+ and PHI in transit in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.4 (Confidential data) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5 (Restricted data).
+\end_layout
+
+\begin_layout Subsubsection*
+6.5 Regulatory Alignment
 \end_layout
 
 \begin_layout Standard
+The IT Director shall maintain a register of applicable federal and state privacy laws in the System of Engagement,
+ including at minimum NRS 603A (Security and Privacy of Personal Information) and CJIS Security Policy v6.0 Section 4 (Criminal Justice Information and Personally Identifiable Information).
+ The IT Director shall initiate updates to this policy triggered by new or amended law through the ad hoc review process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
-\lang english
-Suspected or confirmed data breaches,
- privacy incidents,
- or security events shall be reported to the IT Director (LASO) immediately upon discovery,
- not to exceed 1 hour,
- regardless of the time of day,
- day of week,
- or holiday status.
- This strict timeline is mandatory to comply with FBI CJIS reporting requirements and NRS breach notification statutes.
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures) §6.1.
+\end_layout
+
+\begin_layout Subsubsection*
+6.6 Data Classification,
+ Retention,
+ and Residency
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Classification and Handling
+\series default
+:
+ All Information Operations Personnel shall apply 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) to classification assignment,
+ labeling,
+ reclassification,
+ authorized storage locations,
+ data residency,
+ retention,
+ and disposition of CJI,
+ PII,
+ and PHI.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Media Destruction
+\series default
+:
+ All Information Operations Personnel shall apply 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Media Protection and Sanitization Policy) to destruction of digital media containing CJI,
+ PII,
+ or PHI.
+\end_layout
+
+\begin_layout Subsubsection*
+6.7 Privacy Training
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Initial and Annual Training
+\series default
+:
+ All County Personnel shall complete initial and annual privacy training as part of the training program defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Awareness and Training Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Role-Based Training
+\series default
+:
+ Personnel handling CJI,
+ PII,
+ or PHI shall complete role-based privacy training addressing the specific obligations of this policy applicable to their role.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Remedial Training
+\series default
+:
+ All County Personnel shall complete remedial privacy training within thirty (30) calendar days of any privacy incident or policy violation attributable to them.
+\end_layout
+
+\begin_layout Subsubsection*
+6.8 Incident and Breach Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Internal Reporting
+\series default
+:
+ All County Personnel shall report suspected or confirmed privacy incidents and data breaches in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures) §6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reporting Mechanics
+\series default
+:
+ The one (1) hour internal reporting clock and associated CJIS IR-6 mechanics are defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Breach Determination
+\series default
+:
+ The IT Director shall render the NRS 603A.220 breach determination.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+External Notification
+\series default
+:
+ The IT Director shall execute external breach notification in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration) §6.5.
 \end_layout
 
 \end_body
