@@ -369,14 +369,14 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 ### Phase 7 — Chapter 6 Appendices (provisional)
 
-**Goal:** Finalize supporting appendices. Glossary first because Ch2/Ch5 tightening will have added terms.
+**Goal:** Complete 6.01 Glossary at content level. Establish skeleton-only scaffolding for 6.02, 6.03, and 6.04 — the content for these three appendices is populated in Phase 9 (6.02, 6.03 from matrix outputs) or Phase 10 (6.04 from declaration). Completing 6.02/6.03 content at Phase 7 is prohibited; the N-wise analysis required to populate them correctly runs only in Phase 9.
 
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
-| 46 | 6.01 (Glossary) | 3 | Draft delivered April 12; needs term harvest from all tightened policies |
-| 47 | 6.02 (Policy Matrix) | 3 | Framework mapping + dependency matrix; currently empty |
-| 48 | 6.03 (STAK Matrix) | 3 | NICE/SFIA alignment verification against 1.07 tightened tiers |
-| 49 | 6.04 (Revision History) | 1 | Establish consistent entry format |
+| 46 | 6.01 (Glossary) | 3 | Content-complete at Phase 7. Term harvest from all tightened policies. |
+| 47 | 6.02 (Policy Matrix) | 3 | **Skeleton only at Phase 7.** LyX scaffolding, headers, cross-reference machinery. Content populated in Phase 9 from aggregate-audit outputs. |
+| 48 | 6.03 (STAK Matrix) | 3 | **Skeleton only at Phase 7.** LyX scaffolding only. NICE/SFIA alignment against 1.07 tightened tiers verified in Phase 9; content populated from Phase 9 role and construct outputs. |
+| 49 | 6.04 (Revision History) | 1 | **Skeleton only at Phase 7.** Entry format established. First entry ("v1.0 — Initial publication — July 01, 2026") written at Phase 10. |
 
 ---
 
@@ -386,9 +386,117 @@ Phase 8 was eliminated on April 16, 2026. #31 (the last remaining cluster member
 
 ---
 
-### Phase 9 — v1.0 Declaration and Repo Retirement
+### Phase 9 — Final Integration Pass
 
-Final validation pass, README status update, manual declared at v1.0, repo archived. Ongoing maintenance moves to LyX revision history and System of Engagement.
+**Goal:** Run N-wise audits that the session-by-session tightening protocol is structurally blind to. Individual tightening sessions can only see a target policy and its direct dependencies. Phase 9 holds the complete manual in view at once and catches transitive loops, terminology drift at distance, citation-chain decay, role-obligation collisions, and framework-footprint contradictions that never become visible pairwise.
+
+**Entry criteria.** Phase 9 is strictly terminal. Do not start until:
+
+1. Every policy is at state T (no D remaining in §5).
+2. Phase 7 appendix skeletons complete — 6.01 content-complete; 6.02/6.03/6.04 scaffolding in place.
+3. Open ripple tickets either resolved or explicitly relabeled `phase-9-intake` with documented scope.
+
+Entry 49 (6.04 skeleton) completion is the trigger. "Same level" means the whole manual at T before any N-wise work begins.
+
+**Freeze discipline.** Phase 9 findings fall into two classes.
+
+- **Phase 9 fix.** Finding changes only citation accuracy, label consistency, construct naming, or editorial quality. Minor version bump on the affected policy (e.g., v2.6 → v2.7). Tracked as a Phase 9 ticket. Tightening protocol does not re-run.
+- **Phase 9 substantive.** Finding changes what a directive actually *does* — construct behavior, role authority, pipeline closure logic. Pauses Phase 9 on the affected policy, triggers a one-off tightening session, resumes Phase 9 after.
+
+Test: "does this change what a directive *does*, or only how it's *cited / named / worded*?" First case = fix. Second case = re-tightening.
+
+**No cross-validators inside Phase 9.** Validator feedback is reserved for Phase 10. Phase 9 work is between the IT Director and Claude.
+
+**Deliverable discipline.** Nothing produced inside Phase 9 survives the repo except as content in LyX. Matrix artifacts are scratch paper — they serve the audit and die with the scaffolding. Every Phase 9 finding carries a standing question: "does this conclusion land in LyX body text or appendix content, or does it die with the matrix?" Conclusions that cannot land in LyX do not persist; this is correct for audits that confirm the system works (the corrective change persists; the confirmation does not need to).
+
+**Sub-phase ordering.** Three waves. Accuracy before consistency; content stable before role/pipeline/topology audits; succession walkthrough before editorial.
+
+#### Wave 1 — Content Accuracy
+
+| Sub-phase | Scope | Done-criterion |
+|---|---|---|
+| 9A Citation Accuracy | Verify every LRDA, CJIS, NIST SP, NIST CSF, NRS, NAC, COBIT, and ITIL citation against its authoritative source. One pass per authority type. | Every cited authority verified; findings resolved. |
+| 9C Construct / Terminology Consistency | Every named construct (IC, Hard Fork, Known Error, Technical Directive, Directed Deputization, CAP, Vendor Compliance Record, Annual Policy Review Report, SLA Suspension, Parent-Child Linkage, Formal Closure Declaration, Problem Record Spawn Triggers, others enumerated during the pass) has one canonical name, one canonical definition location, and matching invocations manual-wide. | Construct registry complete; every invocation matches canonical name and form. |
+
+9A and 9C are mutually independent. Interleave by session.
+
+**Gate: Wave 1 complete before Wave 2 opens.**
+
+#### Wave 2 — Aggregate Audits
+
+All Wave 2 sub-phases depend on Wave 1's frozen-accurate baseline. Mutually independent among themselves.
+
+| Sub-phase | Scope | Done-criterion |
+|---|---|---|
+| 9B Citation Consistency | Every obligation, record class, or control invoked by more than one policy cites the same authority across all invocations. Absorbs former #355 verification/consistency scope. | Zero instances of same obligation cited to different authorities across policies. |
+| 9D Role Obligation Accumulation | Enumerate total obligations per major role (IT Director, Assistant IT Director, L1/L2/L3 technicians, Systems Administrator, HR, County Manager, Department Heads, Board of County Commissioners). Audit for achievability and SoD collisions against 1.08 and the SoD Matrix. | Per-role obligation matrix complete; no role operationally impossible; no SoD collision against 1.08. |
+| 9E Pipeline Chain Closure | Traverse every named pipeline end-to-end: Known Error lifecycle, CAP lifecycle, Annual Policy Review feedback, Parent-Child Linkage closure, Problem Record Spawn triggers, Hard Fork, Exception Routing, Vendor Compliance Record build, plus others enumerated during the pass. | Every named pipeline traversed; closure confirmed for each. |
+| 9F Framework Coverage Topology | Aggregate CSF subcategory / SP control / CJIS section footprint mapped and cross-checked. Flag any framework element invoked with contradictory directives across policies. | Framework footprint matches 6.02 claims; no contradictory control invocations. |
+
+**Gate: Wave 2 complete. Appendices 6.02 and 6.03 populated from Phase 9 matrix outputs.**
+
+#### Wave 3 — Holistic Read
+
+| Sub-phase | Scope | Done-criterion |
+|---|---|---|
+| 9G Succession Walkthrough | §8 Criterion 3 five-question test, directive-by-directive, cover-to-cover. Single-threaded. | Every directive yields complete answers to the five §8 questions; identified gaps closed. |
+| 9H Editorial Pass | Grammar, voice consistency, typography, compiled-PDF render, TOC accuracy, LyX cross-reference inset integrity. Runs last — editorial against still-changing content is wasted effort. | Compiled PDF renders clean; TOC accurate; all LyX insets resolve; no prohibited-language hits per 1.04 §6.9. |
+
+**Phase 9 complete when:** all sub-phases resolved; 6.02 and 6.03 populated; compiled PDF renders clean.
+
+**Scaffolding artifacts produced during Phase 9 (die with repo):**
+
+- Phase 9 finding tickets (labels `phase-9a` through `phase-9h`).
+- `Phase9/` folder in repo root: citation consistency matrix, construct registry, role obligation matrices, framework coverage matrices, pipeline traversal reports, succession walkthrough gap report, editorial findings log.
+
+**Persistent outputs (live in LyX / compiled manual):**
+
+- Policy body text corrections.
+- 6.02 Policy Matrix populated content.
+- 6.03 STAK Matrix populated content.
+- Glossary additions (6.01) from construct registry.
+
+**v1.0 Criteria mapping.**
+
+- Criterion 1 (Internal Consistency) — satisfied by 9A, 9B, 9C, 9F, 9H.
+- Criterion 2 (Self-Feeding and Self-Growing) — satisfied by 9D, 9E, 9F.
+- Criterion 3 (Succession Completeness) — satisfied by 9G directly.
+
+---
+
+### Phase 10 — Declaration Pass
+
+**Goal:** External adversarial review of the complete manual; digest findings; normalize metadata; declare v1.0; archive scaffolding.
+
+**Entry criteria.** Phase 9 complete; compiled PDF renders clean.
+
+**Steps, in order.**
+
+1. **External adversarial review.** Complete manual (compiled PDF + LyX source) handed to Gemini, ChatGPT, and Grok with instruction: "Aggressively tear this apart." Broad-overview sweeps. No session protocol, no structured finding format — raw output. This is the only role validators play in the final two phases.
+2. **Joint digest.** IT Director and Claude review all three validator outputs together. Each finding lands in LyX before declaration OR is explicitly declined with rationale captured in the session record. No deferrals to post-v1.0. Scaffolding dies with the repo; nothing gets carried forward as "follow-up."
+3. **Header normalization (#353).** Every policy metadata header set to a uniform string: `Effective: July 01, 2026 | Version: 1.0`. No policy carries its development version number into v1.0. This is the mechanical embodiment of the "fully formed from Zeus' head" posture — the manual reads as given, not as developed.
+4. **6.04 Revision History initialization.** Single entry: "v1.0 — Initial publication — July 01, 2026." No back-entries for tightening history. Development archaeology does not exist in the published manual.
+5. **Final compilation.** Compile master LyX to PDF. Verify clean render, clean TOC, clean cross-references.
+6. **v1.0 declaration.** IT Director marks the manual at v1.0.
+7. **Publication handoff.** LyX source and compiled PDF migrate to the System of Engagement as authoritative reference per 1.04 §6.1.
+8. **Repo retirement.** GitHub repo archived. `TIGHTENING_PLAN.md`, issue tracker, `Phase9/` matrix folder, all session archives retire with the repo.
+
+**What survives v1.0:**
+
+- LyX master source.
+- Compiled PDF.
+- 6.04 Revision History (initialized with the single v1.0 entry).
+
+**What does not survive v1.0:**
+
+- GitHub repository.
+- `TIGHTENING_PLAN.md`.
+- Issue tracker and all tickets (open, closed, superseded).
+- `Phase9/` matrix artifacts.
+- Session archives, adjudication rounds, standing decline rationales.
+- Cross-validator transcripts.
+
+**Post-v1.0 maintenance model.** Future revisions respond to specific events — statutory amendments, framework revisions, organizational changes, operational challenges to policy language. Each change is a LyX edit, recorded as a new 6.04 entry. The development baseline does not reopen. v1.0 is the floor.
 
 ---
 
@@ -398,7 +506,7 @@ Final validation pass, README status update, manual declared at v1.0, repo archi
 - **#208/#211 sweep enforcement** — currently absorbed into per-policy tightening; consider whether a single dedicated sweep session would be faster.
 - **Ch3 ripple batch (now 11 tickets: #308, #309, #313, #314, #316, #317, #318, #319, #322, plus #323 on 4.03)** — batch session, defer to v1.0 validation, or absorb opportunistically? Decision pending.
 - **Ch1 ripples from 1.10 session** — #329 (1.12 NRS 239.125/NAC 239.155 consistency) — small Ch1 ripple; absorb when 1.12 touches next, or file as scheduled cleanup. #328 routes to 6.01 Glossary and absorbs into the 6.01 tightening session.
-- **Manual-wide LRDA verification sweep (#355)** — filed April 19, 2026. Scope: verify LRDA numbers, titles, retention periods, and companion NRS 239.125/NAC 239.155 citations across all tightened policies (1.05, 1.11, 1.13, 2.01, 2.02). Confirmed inconsistency: 1.13 v2.2 includes companion authority; 2.01 v2.4 does not. Decision pending on whether to resolve as single dedicated sweep or absorb into individual-policy touches.
+- **Manual-wide LRDA verification sweep (#355)** — filed April 19, 2026. Scoped for Phase 9 under the April 19 scoping discussion: verification half (LRDA numbers, titles, retention periods) absorbs into sub-phase 9A; companion authority consistency (NRS 239.125 / NAC 239.155 presence across policies that create retained records) absorbs into sub-phase 9B. Action: split #355 into `phase-9a-intake` and `phase-9b-intake` child tickets at Phase 9 entry (or earlier if convenient). Both sit dormant until Phase 9 opens.
 
 ---
 
@@ -422,4 +530,4 @@ The manual reaches v1.0 when it satisfies all three of the following criteria. T
 
 If any of the five are missing for any directive, that is a v1.0 gap.
 
-**Residual work tolerance:** The `1.04_Procedural_Cleanup` cluster (§6 Phase 8) is not a hard blocker per the IT Director's April 11, 2026 ruling. Other residual items of comparable scope may be deferred to post-v1.0 maintenance at the IT Director's discretion, provided they do not violate Criteria 1–3.
+**Residual work tolerance (revised April 19, 2026):** Under the April 19 scoping decision — v1.0 is fully formed from Zeus' head, no history, no baggage — there is no deferral bucket for development-era items. Every Phase 9 or Phase 10 finding either lands in LyX before declaration or is explicitly declined with rationale captured in the session record. The `1.04_Procedural_Cleanup` cluster is closed (§6 Phase 8 eliminated, April 16, 2026). Post-v1.0 maintenance exists only for genuinely forward-looking operational drivers — statutory amendments, framework revisions, organizational changes, operational challenges — not for deferred tightening work.
