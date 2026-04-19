@@ -174,13 +174,13 @@ name "pol:2.02"
 
 \lang english
 Effective:
- July 01,
+ April 19,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -196,7 +196,6 @@ Version:
 This policy establishes mandatory personnel security and background screening requirements for individuals granted logical or physical access to Elko County information systems,
  facilities containing IT assets,
  or County data.
- The policy minimizes insider risk and enforces compliance with federal Criminal Justice Information (CJI) personnel security requirements.
 \end_layout
 
 \begin_layout Subsection*
@@ -215,39 +214,180 @@ This policy applies to all employees,
  vendors,
  interns,
  and volunteers requiring logical or physical access to County IT resources.
- Standards apply across these classifications:
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-General Access
+In Scope
 \series default
 :
- Access to systems or data not designated as CJI.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Personnel screening and background investigation requirements.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Privileged Access
-\series default
-:
- Elevated permissions (Role Tiers L3–L5) capable of altering system configurations or security controls.
+Criminal Justice Information (CJI) adjudication standards.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-CJI Access
-\series default
-:
- Any role with potential unescorted access to unencrypted Criminal Justice Information (CJI).
+Access gating and provisioning prerequisites.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Continued access review upon self-reported arrest,
+ charge,
+ or restraining order.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Access revocation and modification timelines upon personnel action.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Exit requirements and asset recovery coordination.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Access provisioning mechanics and identity lifecycle:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Access Control Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJI classification and handling:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor and contractor onboarding and governance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Supply Chain Risk Management and Vendor Governance).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+IT asset recovery at separation:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Asset Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Facility access credentials (badges,
+ keys,
+ entry fobs):
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Physical Security and Environmental Controls Policy).
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -259,7 +399,7 @@ CJI Access
 
 \series bold
 \lang english
-Human Resources (HR)
+County Manager
 \series default
 :
 \end_layout
@@ -268,20 +408,12 @@ Human Resources (HR)
 \begin_layout Itemize
 
 \lang english
-Shall serve as the authoritative source for personnel status (hire,
- transfer,
- termination).
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall notify Information Operations of personnel changes via the service desk or designated HRIS in accordance with the timelines defined in 
+Shall approve formal exceptions to this policy that exceed the IT Director's delegated authority under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -291,13 +423,9 @@ nolink "false"
 
 
 \series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall retain screening documentation for seven (7) years post-separation per Nevada local government retention schedules.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment) §6.6.
 \end_layout
 
 \end_deeper
@@ -314,14 +442,86 @@ IT Director
 \begin_layout Itemize
 
 \lang english
-Shall define positions requiring Privileged or CJI Access screening.
+Shall define the positions within Information Operations that require Privileged or CJI Access screening.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall serve as the final gatekeeper;
- access shall not be provisioned until HR confirms screening adjudication is "Cleared."
+Shall serve as the final gatekeeper for access provisioning.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not authorize access to County IT resources until Human Resources confirms screening adjudication status is "Cleared" for the applicable classification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate,
+ acting as Local Agency Security Officer (LASO),
+ CJI adjudication activities with the CJIS Systems Agency (CSA) and CJIS Systems Officer (CSO) in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.11 and Criminal Justice Information Services (CJIS) Security Policy v6.0:
+ PS-3 (Personnel Screening).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall notify the CSO,
+ acting as LASO,
+ of any suspected violation of CJIS Security Policy and any denial of CJI access,
+ consistent with the LASO duties established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.11.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall document and maintain records of day-to-day access-gating decisions,
+ screening status verifications,
+ and exit processing workflows between Human Resources and Information Operations.
 \end_layout
 
 \end_deeper
@@ -338,13 +538,29 @@ Department Heads
 \begin_layout Itemize
 
 \lang english
-Shall identify roles requiring enhanced screening prior to recruitment.
+Shall identify positions within their departments that require enhanced or CJI Access screening prior to recruitment.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall ensure third-party personnel do not begin work until screening is adjudicated and access is formally approved.
+Shall not permit third-party personnel to begin work until screening adjudication is complete per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and CJIS Security Policy v6.0 PS-7 (External Personnel Security),
+ and access is formally approved by the IT Director.
 \end_layout
 
 \end_deeper
@@ -352,7 +568,75 @@ Shall ensure third-party personnel do not begin work until screening is adjudica
 
 \series bold
 \lang english
-All Personnel
+Human Resources
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the authoritative originator of personnel status actions (hire,
+ transfer,
+ termination).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall notify Information Operations of personnel changes in accordance with the timelines defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights) §6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate the submission of state-of-residency and national fingerprint-based record checks through an FBI-approved authority for personnel requiring CJI Access,
+ consistent with CJIS Security Policy v6.0 PS-3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall handle Criminal History Record Information (CHRI) returned from screening checks in accordance with NRS 179A (Records of Criminal History).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall retain personnel screening documentation for County employees and appointed personnel in the Master Personnel File for a minimum of ten (10) calendar years from the end of the calendar year in which the individual separated from service,
+ per NRS 239.125,
+ NAC 239.155,
+ and LRDA 20070321.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall notify the IT Director of any court or law-enforcement action reported under Section 3 that may affect an individual's fitness for continued access to County IT resources or involvement in CJI Access.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel
 \series default
 :
 \end_layout
@@ -367,9 +651,10 @@ Shall truthfully disclose legal history during screening.
 \begin_layout Itemize
 
 \lang english
-Shall report any personal arrest,
- criminal charge,
- or restraining order to HR within twenty-four (24) hours.
+Shall report to Human Resources any court or law-enforcement action that may affect their fitness for continued access to County IT resources,
+ workplace safety,
+ or continued status as a trusted representative of the County,
+ within twenty-four (24) hours of the action.
 \end_layout
 
 \end_deeper
@@ -380,17 +665,122 @@ Shall report any personal arrest,
  Compliance and Exceptions
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all individuals granted logical or physical access to County information systems,
+ facilities containing IT assets,
+ or County data.
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
 \lang english
-No Clearance,
- No Access
+Assessment
 \series default
 :
- Access shall not be granted until screening and adjudication are complete for the applicable classification.
+ Compliance with screening,
+ adjudication,
+ and access-gating requirements shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the security control assessment process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Control Assessment and Authorization).
+ CJI screening and adjudication records shall additionally be assessed as part of the CJIS triennial audit conducted by the CSA.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The IT Director shall enforce this policy.
+ Provisioning actions that bypass screening or adjudication requirements constitute violations subject to the enforcement framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be processed in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
+ Exceptions to CJI Access screening and adjudication requirements are prohibited under CJIS Security Policy v6.0 PS-3 and shall not be approved.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -398,7 +788,7 @@ No Clearance,
 Universal Applicability
 \series default
 :
- These standards apply to the use of County IT resources at all times and in all locations,
+ These standards apply to all access to County IT resources regardless of location or work arrangement,
  including remote work and official travel.
 \end_layout
 
@@ -410,23 +800,8 @@ Sanctions
 \series default
 :
  Violations may result in access revocation,
- disciplinary action,
- and referral for civil or criminal enforcement under NRS 205.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exceptions
-\series default
-:
- Prohibited for CJI roles.
- For non-CJI roles,
- temporary exceptions require documented risk assessment,
- compensating controls (e.g.,
- constant physical escort),
- and written approval by the IT Director.
+ disciplinary action consistent with County Human Resources policy,
+ and referral for civil or criminal enforcement under NRS 205.4765 (Unlawful acts regarding computers).
 \end_layout
 
 \begin_layout Subsection*
@@ -436,7 +811,18 @@ Exceptions
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
+
+\lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -455,6 +841,8 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -471,6 +859,44 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -487,6 +913,8 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -503,69 +931,242 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Physical Security and Environmental Controls Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Security Control Assessment and Authorization
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NRS 179A (Records of Criminal History)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+NRS 205.4765 (Unlawful acts regarding computers)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NRS 239B (Disclosure of Personal Information)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+NAC 239.155 (Adoption of Records Retention Schedule)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20070321 (Master Personnel File)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
- Section 5.12 (Personnel Security)
+ AC-2(13) (Disable Accounts for High-Risk Individuals)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
- Section AC-2(13) (Disable Accounts for High-Risk Individuals)
+ PS-3 (Personnel Screening)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ PS-4 (Personnel Termination)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ PS-5 (Personnel Transfer)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ PS-7 (External Personnel Security)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NIST CSF 2.0:
- PR.AA-01 (Identities and Credentials)
+ GV.RR-04 (Cybersecurity Included in Human Resources Practices)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST CSF 2.0:
- PR.AA-05 (Access Permissions and Authorizations)
+ PR.AA-01 (Identities and Credentials Management)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.AA-05 (Access Permissions,
+ Entitlements,
+ and Authorizations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-2 (Account Management)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  PS-2 (Position Risk Designation)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  PS-3 (Personnel Screening)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  PS-4 (Personnel Termination)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  PS-5 (Personnel Transfer)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PS-7 (External Personnel Security)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 COBIT 2019:
  APO07.01 (Maintain Adequate and Appropriate Staffing)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 ITIL v4:
  Workforce and Talent Management Practice
 \end_layout
@@ -577,17 +1178,41 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+Personnel security is the County's first defensive layer against insider risk and unauthorized disclosure of sensitive information.
+ This policy implements federal personnel security requirements for Criminal Justice Information (CJI) access while establishing County-wide screening standards for all access to County IT resources.
+ Per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.11,
+ the IT Director holds the Local Agency Security Officer (LASO) designation by policy mandate.
+ This policy cites the IT Director (as LASO) when the CJIS liaison function is specifically invoked.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
-6.1.
- Position Risk and Access Classification
+6.1 Position Risk and Access Classification
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The IT Director shall assign each role an access classification (General,
+The IT Director shall assign each position an access classification (General,
  Privileged,
  or CJI).
 \end_layout
@@ -596,7 +1221,7 @@ The IT Director shall assign each role an access classification (General,
 
 \series bold
 \lang english
-Access classification mapping
+Access Classification Definitions
 \series default
 :
 \end_layout
@@ -609,8 +1234,7 @@ Access classification mapping
 General
 \series default
 :
- Expected user behavior;
- non-CJIS access.
+ Standard user access to County IT resources that are not designated as CJI.
 \end_layout
 
 \begin_layout Itemize
@@ -620,25 +1244,53 @@ General
 Privileged
 \series default
 :
- IT Role Tiers L3–L5.
+ Elevated permissions capable of altering system configurations or security controls,
+ corresponding to Role Tiers L3 through L5 as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework) §6.1.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-CJI Access
+CJI
 \series default
 :
- Any tier with potential unescorted access to unencrypted CJI.
+ Any position with potential unescorted access to unencrypted CJI.
 \end_layout
 
 \end_deeper
 \begin_layout Subsubsection*
 
 \lang english
-6.2.
- Screening Requirements
+6.2 Screening Requirements
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+No Clearance,
+ No Access
+\series default
+:
+ The IT Director shall not provision access until screening and adjudication are complete for the applicable classification.
 \end_layout
 
 \begin_layout Itemize
@@ -648,7 +1300,7 @@ CJI Access
 General Access
 \series default
 :
- Personnel shall complete County-required identity verification and background screening prior to access provisioning.
+ Human Resources shall complete County-required identity verification and background screening prior to the IT Director provisioning access.
 \end_layout
 
 \begin_layout Itemize
@@ -658,19 +1310,26 @@ General Access
 CJI Access
 \series default
 :
- Personnel shall complete CJIS-required state of residency and national fingerprint-based record checks conducted through an FBI-approved authority 
-\series bold
-prior
-\series default
- to access provisioning.
- No "pending" or temporary access is permitted for CJI environments.
+ Human Resources shall coordinate the submission of state-of-residency and national fingerprint-based record checks through an FBI-approved authority prior to the IT Director provisioning access.
+ Final adjudication of CJI Access eligibility shall follow CJIS Security Policy v6.0 PS-3 as applied in Section 6.3.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
+ "Pending" or temporary access to CJI environments is prohibited.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection*
 
 \lang english
-6.3.
- CJI Adjudication Standards
+6.3 CJI Adjudication Standards
 \end_layout
 
 \begin_layout Itemize
@@ -681,11 +1340,9 @@ Felony Convictions
 \series default
 :
  If a felony conviction of any kind exists,
- the individual 
-\series bold
-shall be denied
-\series default
- access to CJI.
+ the IT Director shall deny CJI access.
+ The requesting agency may request a review by the CSO in extenuating circumstances where the severity of the offense and the time that has passed would support a possible variance,
+ per CJIS Security Policy v6.0 PS-3(a)(3)(a).
 \end_layout
 
 \begin_layout Itemize
@@ -695,56 +1352,134 @@ shall be denied
 Misdemeanors
 \series default
 :
- Access may be granted only if the LASO determines the nature of the offense does not warrant disqualification.
+ Where the CSO has formally delegated misdemeanor adjudication authority to the IT Director per CJIS Security Policy v6.0 PS-3(a)(3)(b),
+ the IT Director may grant CJI access if the offense does not meet the disqualification criteria established by the CSO.
+ Absent formal written delegation,
+ the IT Director shall refer the matter to the CSO for determination.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Fugitive Status
+Fugitive Status or Unresolved Arrest
 \series default
 :
- Access shall be denied to any individual with an active warrant.
+ The IT Director shall deny CJI access to any individual with an active warrant.
+ For individuals with an arrest history without conviction,
+ where the CSO has formally delegated review authority to the IT Director per CJIS Security Policy v6.0 PS-3(a)(4),
+ the IT Director may grant or continue access based on the review outcome.
+ Absent formal written delegation,
+ the IT Director shall refer the matter to the CSO for determination.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Authorized CJI Access List
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall maintain a current record of all personnel authorized for unescorted access to unencrypted CJI,
+ per CJIS Security Policy v6.0 PS-3(a)(7).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall provide the record to the CSO or the CSO's designee upon request.
+\end_layout
+
+\end_deeper
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CSO Notification
+\series default
+:
+ The IT Director (as LASO) shall notify the CSO in writing of any denial of CJI access,
+ any suspected violation of CJIS Security Policy,
+ and any continued-access determination arising under Section 6.4.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.4.
- Continuous Vetting
+6.4 Continued Access Review
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Re-screening
+Notification Trigger
 \series default
 :
- Personnel with CJI Access shall undergo a full re-investigation (including fingerprints) every 
-\series bold
-five (5) years
-\series default
-.
+ Upon receipt from Human Resources of a notification of a court or law-enforcement action that may affect an individual's fitness for continued CJI access,
+ the IT Director shall review continued CJI access in accordance with CJIS Security Policy v6.0 PS-3(a)(5).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Self-Reporting
+Self-Reporting Non-Compliance
 \series default
 :
- Failure to self-report arrests or charges within 24 hours is grounds for immediate access revocation.
+ The IT Director shall suspend access within thirty (30) minutes of determining that an individual failed to self-report a court or law-enforcement action within the twenty-four (24) hour window established in Section 3.
+ For CJI Access,
+ final access determination shall follow the adjudication process defined in Section 6.3.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.5.
- Transfers and Termination Upon HR notification,
- Information Operations shall revoke or adjust access:
+6.5 Transfers and Termination
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Upon receipt of personnel-change notification — from Human Resources per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5 for County personnel,
+ or from vendors per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.3 for contractor and vendor personnel holding County credentials — the IT Director shall revoke or adjust access in accordance with the following timelines.
 \end_layout
 
 \begin_layout Itemize
@@ -754,7 +1489,8 @@ Self-Reporting
 High-Risk Individuals
 \series default
 :
- Accounts disabled within thirty (30) minutes.
+ The IT Director shall disable accounts within thirty (30) minutes of notification,
+ consistent with CJIS Security Policy v6.0 AC-2(13) (Disable Accounts for High-Risk Individuals).
 \end_layout
 
 \begin_layout Itemize
@@ -764,7 +1500,7 @@ High-Risk Individuals
 Involuntary Termination
 \series default
 :
- Accounts disabled within thirty (30) minutes.
+ The IT Director shall disable accounts within thirty (30) minutes of notification.
 \end_layout
 
 \begin_layout Itemize
@@ -774,7 +1510,8 @@ Involuntary Termination
 Standard Termination
 \series default
 :
- Accounts disabled within twenty-four (24) hours.
+ The IT Director shall disable accounts within twenty-four (24) hours of notification,
+ consistent with CJIS Security Policy v6.0 PS-4 (Personnel Termination).
 \end_layout
 
 \begin_layout Itemize
@@ -784,68 +1521,201 @@ Standard Termination
 Transfers
 \series default
 :
- Access authorizations shall be modified within twenty-four (24) hours to align with the "Least Privilege" principle.
+ The IT Director shall modify access authorizations within twenty-four (24) hours of notification to conform with the Least Privilege and Need-to-Know principles defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ consistent with CJIS Security Policy v6.0 PS-5 (Personnel Transfer).
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.6.
- Exit Requirements
+6.6 Exit Requirements
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Upon termination,
- HR or the Department Head shall conduct an exit interview covering non-disclosure obligations (NDA) regarding CJI and PII.
+Exit Interview — County Employees and Appointed Personnel
+\series default
+:
+ Human Resources shall conduct an exit interview covering non-disclosure obligations for Criminal Justice Information (CJI) and Personally Identifiable Information (PII) under NRS 239B for every separating County employee or appointed official who held logical or physical access to County IT resources.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exception
+\series default
+:
+ Where the separating individual is unavailable (e.g.,
+ job abandonment,
+ sudden incapacitation,
+ or refusal to participate),
+ Human Resources shall execute alternate separation handling consisting of documented reason for the missed interview and a written non-disclosure reminder delivered to the individual's last known address.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-All County-issued assets (badges,
+Constraint
+\series default
+:
+ Credential recovery and asset recovery obligations under this section shall remain in force regardless of whether an exit interview is conducted.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Separation Processing — Contractors and Vendors
+\series default
+:
+ Separation processing for contractors and vendors who held County IT access shall follow the vendor offboarding requirements in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Separation Processing — Interns,
+ Volunteers,
+ and Elected Officials
+\series default
+:
+ The sponsoring department or appointing authority shall conduct equivalent separation processing,
+ including non-disclosure reminder for CJI and PII where applicable,
+ for separating interns,
+ volunteers,
+ and outgoing elected officials who held logical or physical access to County IT resources.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Asset Recovery
+\series default
+:
+ Information Operations shall recover County-issued IT assets (tokens,
+ endpoint devices,
+ mobile equipment) prior to final departure per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Facility Asset Recovery
+\series default
+:
+ Facility access credentials (badges,
  keys,
- tokens,
- devices) must be recovered prior to final departure.
+ entry fobs) shall be recovered by the issuing department in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.7.
- High-Risk Individual Definition
+6.7 High-Risk Individual Definition
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-A "High-Risk Individual" includes anyone with:
- 
+The following conditions qualify an individual as a High-Risk Individual for purposes of Section 6.5:
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Involuntary/hostile termination
+The individual has been involuntarily or hostilely terminated from County employment or service.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Credible threat of misuse or retaliation
+The individual has been identified by Human Resources,
+ the IT Director,
+ the County Manager,
+ or the District Attorney's Office as posing a credible threat of misuse or retaliation.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Formal notice of investigation
+The individual has received formal written notice of investigation from law enforcement,
+ the District Attorney's Office,
+ or a federal agency.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Discovery of direct threat to CJI confidentiality or integrity.
+The individual has been identified by the IT Director (as LASO) or the CSO as a direct threat to CJI confidentiality or integrity.
 \end_layout
 
 \end_body
