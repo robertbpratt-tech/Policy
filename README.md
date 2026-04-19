@@ -22,7 +22,7 @@
 | 2.03 | Security Awareness and Training Policy | o |
 | 2.04 | Access Control Policy | o |
 | 2.05 | Identification and Authentication Policy | o |
-| 2.06 | Privacy and Data Protection Policy | o |
+| 2.06 | Privacy and Data Protection Policy | x |
 | 2.07 | System and Communications Protection Policy | o |
 | 2.08 | System Integrity and Malware Protection Policy | o |
 | 2.09 | Vulnerability and Patch Management Policy | o |
