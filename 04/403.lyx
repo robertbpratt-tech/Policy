@@ -181,7 +181,7 @@ Effective:
 \end_inset
 
 Version:
- 2.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -2706,7 +2706,7 @@ nolink "false"
 
 
 \series default
- (Policy and Documentation Formatting Standards) Section 6.16.
+ (Policy and Documentation Formatting Standards) Section 6.15.
  All six category playbooks shall be in force at v1.0 of this policy.
 \end_layout
 
