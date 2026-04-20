@@ -468,8 +468,7 @@ nolink "false"
 \series default
  (Policy Implementation,
  Enforcement,
- and Legal Alignment),
- §6.6.
+ and Legal Alignment).
 \end_layout
 
 \end_deeper
@@ -776,8 +775,7 @@ nolink "false"
 
 
 \series default
-,
- §6.6.
+.
  Exceptions require IT Director approval in accordance with 
 \series bold
 Policy 
@@ -1231,8 +1229,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.3.
+.
  A standalone RFC record in the System of Engagement shall be submitted and CCA authorization shall be obtained prior to implementation.
 \end_layout
 
@@ -1495,7 +1492,7 @@ nolink "false"
 
 
 \series default
- and the catch-up CCA review obligation under Section 6.2;
+ and the catch-up CCA review obligation;
  all three obligations run concurrently on the same clock.
  The catch-up RFC shall document:
  all actions taken prior to record creation with the most precise timestamps recoverable;
@@ -1516,7 +1513,7 @@ nolink "false"
 
 
 \series default
- and Section 6.7.
+.
  Failure to complete catch-up RFC documentation or CCA review within this window constitutes a compliance failure under Section 6.8.
 \end_layout
 
@@ -1759,8 +1756,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6;
+;
  this policy carries the reciprocal.
 \end_layout
 
