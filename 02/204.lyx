@@ -302,7 +302,7 @@ nolink "false"
 
 
 \series default
- (Physical Security and Environmental Controls Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -325,7 +325,7 @@ nolink "false"
 
 
 \series default
- (Identification and Authentication Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -349,7 +349,7 @@ nolink "false"
 
 
 \series default
- (System and Communications Protection Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -371,7 +371,7 @@ nolink "false"
 
 
 \series default
- (Secure Configuration Baselines and Hardening Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -393,7 +393,7 @@ nolink "false"
 
 
 \series default
- (Audit Logging and Monitoring Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -415,7 +415,7 @@ nolink "false"
 
 
 \series default
- (Personnel Security and Background Screening Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -437,7 +437,7 @@ nolink "false"
 
 
 \series default
- (Mobile Device and Remote Access Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -459,9 +459,7 @@ nolink "false"
 
 
 \series default
- (Policy Implementation,
- Enforcement,
- and Legal Alignment) §6.6.
+.
 \end_layout
 
 \end_deeper
@@ -506,7 +504,7 @@ nolink "false"
 
 
 \series default
- (Data Governance and Classification Policy) §6.11 for access decisions involving Criminal Justice Information (CJI).
+ (Data Governance and Classification Policy) for access decisions involving Criminal Justice Information (CJI).
 \end_layout
 
 \begin_layout Itemize
@@ -549,7 +547,7 @@ nolink "false"
 
 
 \series default
- §6.7.
+.
 \end_layout
 
 \end_deeper
@@ -581,7 +579,7 @@ nolink "false"
 
 
 \series default
- §6.6.
+.
 \end_layout
 
 \end_deeper
@@ -635,7 +633,7 @@ nolink "false"
 
 
 \series default
- §6.6.
+.
 \end_layout
 
 \end_deeper
@@ -710,7 +708,7 @@ nolink "false"
 
 
 \series default
- §6.5.
+.
 \end_layout
 
 \end_deeper
@@ -843,7 +841,7 @@ nolink "false"
 
 
 \series default
- §6.6.
+.
 \end_layout
 
 \begin_deeper
@@ -871,7 +869,7 @@ nolink "false"
 
 
 \series default
- §6.6,
+,
  which require written approval of the IT Director (as LASO) and,
  where applicable,
  written approval by the CJIS Systems Agency (CSA) or CJIS Systems Officer (CSO).
@@ -1609,7 +1607,7 @@ nolink "false"
 
 
 \series default
- §6.5.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1634,7 +1632,7 @@ nolink "false"
 
 
 \series default
- §6.5,
+,
  consistent with CJIS Security Policy v6.0:
  Section PS-4 (Personnel Termination).
 \end_layout
@@ -1661,7 +1659,7 @@ nolink "false"
 
 
 \series default
- §6.5 for individuals meeting the High-Risk Individual definition in 
+ for individuals meeting the High-Risk Individual definition in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1676,7 +1674,7 @@ nolink "false"
 
 
 \series default
- §6.7,
+,
  or within thirty (30) minutes of independent discovery by the IT Director (as LASO),
  consistent with CJIS Security Policy v6.0:
  Section AC-2(13) (Disable Accounts for High-Risk Individuals).
@@ -1735,7 +1733,7 @@ nolink "false"
 
 
 \series default
- §6.5 and CJIS Security Policy v6.0:
+ and CJIS Security Policy v6.0:
  Section PS-5 (Personnel Transfer).
 \end_layout
 
@@ -1753,7 +1751,6 @@ Clarification
 \end_layout
 
 \end_deeper
-
 \begin_layout Itemize
 
 \lang english
@@ -1794,7 +1791,7 @@ nolink "false"
 
 
 \series default
- §6.6.
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1821,7 +1818,7 @@ nolink "false"
 
 
 \series default
- (Delegation of Authority and Decision Rights) §6.6,
+ (Delegation of Authority and Decision Rights),
  including the separation of access approval from access provisioning,
  the separation of security administration from audit logging,
  the Separation of Duties Matrix,
@@ -2070,7 +2067,7 @@ nolink "false"
 
 
 \series default
- §6.5.
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2153,7 +2150,7 @@ nolink "false"
 
 
 \series default
- §6.5 shall be recertified at least quarterly.
+ shall be recertified at least quarterly.
  This cadence aligns with the quarterly risk assessment review cycle for CJI and Critical systems defined in 
 \series bold
 Policy 
@@ -2169,7 +2166,7 @@ nolink "false"
 
 
 \series default
- (Risk Management Policy) §6.5.
+ (Risk Management Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -2194,7 +2191,7 @@ nolink "false"
 
 
 \series default
- §6.4 shall be recertified at least semi-annually.
+ shall be recertified at least semi-annually.
 \end_layout
 
 \begin_layout Itemize
@@ -2219,7 +2216,7 @@ nolink "false"
 
 
 \series default
- §6.2 and §6.3 shall be recertified at least annually,
+ and shall be recertified at least annually,
  consistent with CJIS Security Policy v6.0:
  Section AC-6(7) (Review of User Privileges).
 \end_layout
@@ -2250,7 +2247,7 @@ nolink "false"
 \series default
  (Workforce Roles,
  Responsibilities,
- and Competency Framework) §6.1.
+ and Competency Framework).
 \end_layout
 
 \begin_layout Itemize
@@ -2312,10 +2309,9 @@ nolink "false"
 
 
 \series default
- §6.9.
+.
 \end_layout
 
 \end_deeper
-
 \end_body
 \end_document

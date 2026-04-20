@@ -170,5 +170,460 @@ name "app:6.04"
 
 \end_layout
 
+\begin_layout Policy Metadata
+
+\lang english
+Effective:
+ July 01,
+ 2026
+\begin_inset space \hfill{}
+\end_inset
+
+Version:
+ 1.0
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This appendix is the authoritative revision log of the Elko County Information Operations Policy Manual and defines the governance rules that produce its entries.
+ Lifecycle and version control obligations that drive entries into this appendix are defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures).
+ Records retention timing for archived versions is governed by LRDA 20070057 (Departmental Regulations,
+ Policies and Procedures).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Version numbers and effective dates recorded during pre-publication drafting do not constitute published versions and shall not appear in this appendix.
+ The manual's recorded history begins with the genesis entry dated July 1,
+ 2026,
+ at which point every policy in the manual took effect at Version 1.0.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+Entry Schema
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Every entry in the revision history shall consist of five (5) fields,
+ recorded in the following order:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Date
+\series default
+:
+ The date the change takes effect,
+ recorded in ISO 8601 format (YYYY-MM-DD).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Scope
+\series default
+:
+ The policy number (e.g.,
+ 1.04),
+ the appendix number (e.g.,
+ 6.01),
+ or "ALL" when the entry applies to the entire manual.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Version
+\series default
+:
+ The version number assigned to the affected policy,
+ appendix,
+ or manual as a result of the change,
+ following the increment rules defined below.
+ RETIRE entries shall record the Version field as an em-dash ("—"),
+ indicating that no forward version exists.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Type
+\series default
+:
+ One of the four (4) controlled values defined in the Entry Types subsection below.
+ No other values shall be used.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Note
+\series default
+:
+ A concise description of the change.
+ Cross-references to policies,
+ appendices,
+ or external authorities within the Note field shall follow the formatting conventions defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy and Documentation Formatting Standards).
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+Entry Types
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Type field shall use exactly one (1) of the following controlled values.
+ This list is the closed set of entry types;
+ no additional values shall be introduced without approval by the IT Director and incorporation into this appendix.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CREATE
+\series default
+:
+ The manual's entry into force.
+ This value applies only to the genesis entry.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+AMEND
+\series default
+:
+ A minor version increment that does not supersede a prior published version.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+SUPERSEDE
+\series default
+:
+ A major version increment that replaces a prior published version.
+ The superseded source file shall be archived in accordance with the conventions defined in the Archive and Marking Conventions subsection below.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+RETIRE
+\series default
+:
+ Permanent removal of a policy or appendix from active circulation.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+Version Increment Rules
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall determine whether a change warrants a major or minor version increment based on the substantive impact of the change,
+ in accordance with the following rules.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Major Version Increment (X.0)
+\series default
+:
+ Structural changes to a policy or appendix,
+ section additions or deletions,
+ directive changes that alter compliance obligations,
+ or role reassignments that change accountability.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Minor Version Increment (x.Y)
+\series default
+:
+ Tightening of existing directives without substantive change,
+ clarification of ambiguous language,
+ correction of cross-references,
+ typographical corrections,
+ or stylistic alignment with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Clarification
+\series default
+:
+ Every published change shall receive a version increment.
+ The IT Director shall not apply an unlogged change to a published policy or appendix.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+Archive and Marking Conventions
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Obsolete Marking
+\series default
+:
+ When a policy or appendix is superseded,
+ the IT Director shall append a 
+\begin_inset Quotes eld
+\end_inset
+
+Status:
+ Obsolete
+\begin_inset Quotes erd
+\end_inset
+
+ notation to the Policy Metadata header of the archived copy.
+ The live,
+ in-force copy of the manual shall reflect only the current version.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Supersession Archive
+\series default
+:
+ The IT Director shall archive the superseded source file under the path "/archive/[identifier]_v[major.minor].lyx" (e.g.,
+ "/archive/108_v1.3.lyx" for a superseded Policy 1.08 Version 1.3).
+ Retention shall conform to LRDA 20070057.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Retirement Archive
+\series default
+:
+ The IT Director shall archive retired policies or appendices under the path "/archive/retired/[identifier]_v[major.minor].lyx",
+ where the recorded version is the final published version prior to retirement.
+ Retention shall conform to LRDA 20070057.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+Revision History
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features islongtable="true" longtabularalignment="left">
+<column alignment="center" valignment="top" width="0.9in">
+<column alignment="center" valignment="top" width="0.6in">
+<column alignment="center" valignment="top" width="0.7in">
+<column alignment="center" valignment="top" width="0.9in">
+<column alignment="left" valignment="top" width="2.8in">
+<row endhead="true">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\lang english
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\lang english
+Scope
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\lang english
+Version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\lang english
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\lang english
+Note
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+2026-07-01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+ALL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+CREATE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Policy manual Version 1.0 in effect.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
