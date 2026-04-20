@@ -20,7 +20,7 @@
 | 2.01 | Acceptable Use of Information Technology Resources Policy | x |
 | 2.02 | Personnel Security and Background Screening Policy | x |
 | 2.03 | Security Awareness and Training Policy | o |
-| 2.04 | Access Control Policy | o |
+| 2.04 | Access Control Policy | x |
 | 2.05 | Identification and Authentication Policy | o |
 | 2.06 | Privacy and Data Protection Policy | x |
 | 2.07 | System and Communications Protection Policy | o |
