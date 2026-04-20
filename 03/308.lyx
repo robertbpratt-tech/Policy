@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -1081,7 +1081,7 @@ nolink "false"
  asset record answers whether a physical asset exists,
  who owns it,
  where it is,
- and what its lifecycle status is.
+ and what its operational state is.
  A Policy 3.08 CI record answers what that asset's current configuration identity is,
  what its operational relationships are,
  and whether its record is complete and current.
@@ -1204,7 +1204,7 @@ System of Engagement (CI Identity and Inventory)
  The System of Engagement is the designated system of record for CI identity and inventory.
  It holds configuration identity,
  physical location,
- lifecycle status,
+ operational state,
  funding source,
  assigned user,
  network identifiers,
