@@ -483,14 +483,27 @@ All Wave 2 sub-phases depend on Wave 1's frozen-accurate baseline. Mutually inde
 
 **Steps, in order.**
 
-1. **External adversarial review.** Complete manual (compiled PDF + LyX source) handed to Gemini, ChatGPT, and Grok with instruction: "Aggressively tear this apart." Broad-overview sweeps. No session protocol, no structured finding format — raw output. This is the only role validators play in the final two phases.
-2. **Joint digest.** IT Director and Claude review all three validator outputs together. Each finding lands in LyX before declaration OR is explicitly declined with rationale captured in the session record. No deferrals to post-v1.0. Scaffolding dies with the repo; nothing gets carried forward as "follow-up."
-3. **Header normalization (#353).** Every policy metadata header set to a uniform string: `Effective: July 01, 2026 | Version: 1.0`. No policy carries its development version number into v1.0. This is the mechanical embodiment of the "fully formed from Zeus' head" posture — the manual reads as given, not as developed.
-4. **6.04 Revision History initialization.** Single entry: "v1.0 — Initial publication — July 01, 2026." No back-entries for tightening history. Development archaeology does not exist in the published manual.
-5. **Final compilation.** Compile master LyX to PDF. Verify clean render, clean TOC, clean cross-references.
-6. **v1.0 declaration.** IT Director marks the manual at v1.0.
-7. **Publication handoff.** LyX source and compiled PDF migrate to the System of Engagement as authoritative reference per 1.04 §6.1.
-8. **Repo retirement.** GitHub repo archived. `TIGHTENING_PLAN.md`, issue tracker, `Phase9/` matrix folder, all session archives retire with the repo.
+1. **Internal drift audit.** For every policy in the manual, pull the pre-tightening LyX source (first commit on the file) and the tightened LyX source (final commit before Phase 10) from git. Run a substantive diff — not a formatting diff — against each pair. For every substantive delta, trace to an authorizing source: (a) a GitHub issue filed during the tightening session, (b) an explicit decision captured in the session record, or (c) a ruling captured in this plan (§3 roots, §4 declines, or per-policy §5 notes). Deltas that cannot be traced to one of those three sources are drift candidates and are surfaced to the IT Director for review before external adversarial review begins.
+
+    The audit reads for four drift categories specifically, in addition to any general deltas:
+
+    - **Scope collapse** — two or more separately-scoped directives merged into one, eliminating a distinction the original draft maintained. (The 2.04 §6.6 device-lock / VPN-conveyance incident is the canonical example: lock-out period and VPN session exemption were distinct controls addressing distinct exposures; merging them eliminated the screen-exposure control while preserving session continuity.)
+    - **Anchor shift** — a directive's role anchor changed without an authorizing ruling (e.g., "Systems Administrator shall" rewritten as "Assistant IT Director shall" when the original assignment was intentional).
+    - **Threshold drift** — a numerical value, cadence, or time window that moved without authorization. Includes both permissive drift (loosening) and strict drift (tightening beyond what was authorized).
+    - **Boundary erosion** — a carve-out, exemption, or exception that expanded beyond the original, OR a constraint that narrowed. Carve-outs that happen to match framework-permitted baselines (CJIS NOTE carve-outs, NIST SP conditional exceptions) receive special scrutiny, because this is the class of drift that passes framework-checking review while failing the stricter ECIO standard.
+
+    Drift candidates are not automatically reverted. The IT Director rules on each: either the drift is ratified (the tightened version is correct, original was defective), or the original is restored, or a third formulation is authored. All rulings are captured in the session record for the audit.
+
+    **Why this step exists, and why it runs first.** The tightening process layers stricter-than-baseline decisions on top of framework compliance across every policy. Those stricter-than-baseline decisions are currently preserved only by the IT Director's memory and the session record — no automated control catches permissive drift back toward the framework baseline, because framework-checking validators and 1.04 compliance sweeps are both blind to it by construction. Phase 10 step 1 is the mechanical catch: git holds the original, git holds the final, the diff is deterministic, and the authorization trace runs against artifacts that also live in git. External adversarial review (step 2) cannot perform this check because validators lack the session record and the plan's rulings. If drift runs into external review unchecked, adversarial validators will see the drifted manual as given and calibrate their findings against it, compounding the problem.
+
+2. **External adversarial review.** Complete manual (compiled PDF + LyX source) handed to Gemini, ChatGPT, and Grok with instruction: "Aggressively tear this apart." Broad-overview sweeps. No session protocol, no structured finding format — raw output. This is the only role validators play in the final two phases.
+3. **Joint digest.** IT Director and Claude review all three validator outputs together. Each finding lands in LyX before declaration OR is explicitly declined with rationale captured in the session record. No deferrals to post-v1.0. Scaffolding dies with the repo; nothing gets carried forward as "follow-up."
+4. **Header normalization (#353).** Every policy metadata header set to a uniform string: `Effective: July 01, 2026 | Version: 1.0`. No policy carries its development version number into v1.0. This is the mechanical embodiment of the "fully formed from Zeus' head" posture — the manual reads as given, not as developed.
+5. **6.04 Revision History initialization.** Single entry: "v1.0 — Initial publication — July 01, 2026." No back-entries for tightening history. Development archaeology does not exist in the published manual.
+6. **Final compilation.** Compile master LyX to PDF. Verify clean render, clean TOC, clean cross-references.
+7. **v1.0 declaration.** IT Director marks the manual at v1.0.
+8. **Publication handoff.** LyX source and compiled PDF migrate to the System of Engagement as authoritative reference per 1.04 §6.1.
+9. **Repo retirement.** GitHub repo archived. `TIGHTENING_PLAN.md`, issue tracker, `Phase9/` matrix folder, all session archives retire with the repo.
 
 **What survives v1.0:**
 
