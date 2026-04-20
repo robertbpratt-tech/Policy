@@ -810,7 +810,7 @@ nolink "false"
 
 
 \series default
- §6.6 (Exception Management).
+.
  Oral exceptions are not valid.
 \end_layout
 
@@ -1403,8 +1403,7 @@ nolink "false"
 
 
 \series default
- (IT Asset Management Policy),
- §6.1 (Asset Stewardship and Acquisition).
+ (IT Asset Management Policy).
  Receiving,
  inspection,
  tagging,
@@ -1439,8 +1438,7 @@ nolink "false"
 
 
 \series default
- (Code of Ethics and Professional Conduct),
- §6.3 (Integrity and Conflict of Interest).
+ (Code of Ethics and Professional Conduct).
  Personnel shall disclose any actual or potential conflict of interest in writing to the IT Director prior to participating in a procurement decision.
 \end_layout
 
