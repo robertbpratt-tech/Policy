@@ -119,7 +119,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 19, 2026 (Bucket 1 ripple sweep ✅ complete — 3.13 v2.2 (commit e34fd5192ac6) and 4.03 v2.1 (commit 9f932b13dd4f) landed as mechanical Section 6.16 → 6.15 ref fixes from 1.04 v1.4 §6.15 unification; #322 and #323 closed; both policies return to T state. Preceded by 2.02 Phase 5B entry 27 ✅ complete — v2.4 committed after 3 validator rounds + IT Director §3 label challenge; ripples filed #354 (1.07 remove 5-year CJI rescreening, Path A), #355 (manual-wide LRDA verification sweep), #356 (2.01 §3 label normalization); #64 and #217 closed as resolved; sweep absorption notes on #208/#235/#245/#264/#6/#7/#8/#10; new standing decline #29 added (cross-validator pushback on locked operational-reality decisions via cross-policy dependency citation, third-recurrence rule).
+**Last refreshed:** April 19, 2026 (Bucket 1 ripple sweep expanded ✅ — ground-truth API pull against GitHub surfaced three plan §5 undercounts (3.01 carried undiscovered #327, 3.08 carried undiscovered #325, 5.01 carried undiscovered #334). Mechanical-class undiscovered ripples resolved this session: 3.08 v2.2 (commit ccd18af9f6c4, #325 closed with expanded scope covering both L1084 and L1207 Lifecycle Status → Operational State instances per 1.12 v2.6 §6.5 field rename); 3.01 v2.4 (commit 490fdbab41a2, #327 closed via new §6.1 reciprocal paragraph establishing IT Asset Catalog as the authoritative software authorization register for 1.12 Unauthorized Presence enforcement). Preceded by 3.13 v2.2 (commit e34fd5192ac6) and 4.03 v2.1 (commit 9f932b13dd4f) mechanical Section 6.16 → 6.15 ref fixes; #322 and #323 closed. Plan §5 now reconciled with GitHub truth on these four rows. Residual undiscovered T+ ripple: #334 against 5.01 (substantive §6.6 exception management tightening — stays for Bucket 4 session). Preceded by 2.02 Phase 5B entry 27 ✅ complete — v2.4 committed after 3 validator rounds + IT Director §3 label challenge; ripples filed #354 (1.07 remove 5-year CJI rescreening, Path A), #355 (manual-wide LRDA verification sweep), #356 (2.01 §3 label normalization); #64 and #217 closed as resolved; sweep absorption notes on #208/#235/#245/#264/#6/#7/#8/#10; new standing decline #29 added (cross-validator pushback on locked operational-reality decisions via cross-policy dependency citation, third-recurrence rule).
 
 ### Chapter 0 / Front Matter
 
@@ -169,14 +169,14 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 3.01 | Service Catalog and SLA | T | v2.3 | 0 | — |
+| 3.01 | Service Catalog and SLA | T | v2.4 | 0 | — |
 | 3.02 | Service Level Management | T+ | v2.5 | 1 | #309 |
 | 3.03 | Service Communication | T | v2.0 | 0 | — |
 | 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
 | 3.05 | Service Request Fulfillment | T+ | v2.1 | 1 | #308 |
 | 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #313 |
 | 3.07 | Problem Management | T+ | v2.2 | 1 | #316 |
-| 3.08 | CMDB | T | v2.1 | 0 | — |
+| 3.08 | CMDB | T | v2.2 | 0 | — |
 | 3.09 | Change Management | T | v2.0 | 0 | — |
 | 3.10 | Release and Deployment | T | v2.0 | 0 | — |
 | 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #317 |
