@@ -62,7 +62,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #6 | Product-name removal (Redmine) | 1.04, 1.08, 1.14, 3.01–3.17 | Open, absorbed-by-tightening | Multi-policy Redmine sweep. #7 (Office 365) and #10 (HID DigitalPersona) closed April 19 as duplicates of per-policy children #99 and #71 respectively; #8 closed previously. |
 | #353 | Set Header Date and Version to uniform `Effective: July 01, 2026 \| Version: 1.0` | Manual-wide | Open, phase-10-deferred | All policies; mechanical normalization at v1.0 declaration per Phase 10 step 3. Dormant until Phase 10 entry. |
 | #355 | Manual-wide LRDA citation verification sweep (numbers, titles, retention periods, NRS 239.125/NAC 239.155 companion citations) | Manual-wide | Open, phase-9-deferred | Scoped in §7 Open Questions for Phase 9: verification half → sub-phase 9A; companion-authority consistency → sub-phase 9B. Split into `phase-9a-intake` and `phase-9b-intake` child tickets at Phase 9 entry. Dormant until then. |
-| #360–#372, #374 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references | Manual-wide | Open, sweep | 13 child tickets against tightened peers (1.03, 1.06, 1.10, 1.13, 1.14, 2.01, 2.02, 2.06, 3.09, 3.10, 3.14, 4.06, 4.07) + #374 against 1.04 v1.4 §2 Out of Scope parentheticals. Absorbed at next per-policy touch except #374 (1.04 locked — absorbs at Phase 9 or earlier if required). Rule confirmed April 20, 2026 during 2.04 session: no section-specific cross-references in body prose; readers can read the full page. |
+| #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references | Manual-wide | Open, active-root | **First wave absorbed April 20, 2026 evening:** 13 child tickets (#360–#372) resolved against tightened peers (1.03, 1.06, 1.10, 1.13, 1.14, 2.01, 2.02, 2.06, 3.09, 3.10, 3.14, 4.06, 4.07). #374 (1.04 v1.4 §2 Out of Scope parentheticals) closed — resolved in commit `57cace1b70` prior to ripple filing. **Second wave pending:** #375 (1.04 v1.4 §6.15 — 4 cross-policy hits, deferred to dedicated 1.04 session per architectural-lock discipline) plus ~80 additional hits identified by scanner v5 across 11 untouched tightened policies (3.01, 3.02, 3.05, 3.06, 3.07, 3.11, 3.12, 3.13, 3.15, 3.16, 3.17). Second-wave remediation pivoted to **PDF-driven visual scan** per IT Director ruling April 20, 2026 — scanner-based filing retired due to regex-gap reliability. Rule #1 in §4 is the authoritative statement of the underlying rule. |
 
 ### Closed Roots
 
@@ -122,6 +122,8 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 **Rule #1 — No section-specific cross-references in body prose.** Cross-references to other ECIO policies in the body of any policy use `Policy X.XX (Policy Title)` on first use within that policy and `Policy X.XX` thereafter. Section-specific depth (e.g., `§6.X`, `Section 6.X`, `§6.11`) shall NOT appear appended to cross-policy references. Rationale: readers can read the full referenced policy. Self-references within the same policy (`Section 6.X`) are NOT in scope — navigation within the current document is permitted. Confirmed by IT Director April 20, 2026. Ripples filed #360–#372 against tightened peers carrying the defect.
 
+**Rule #1 execution status (April 20, 2026 evening):** First batch of 13 ripples (#360–#372) absorbed and closed. Remaining ~80 cross-policy §6.X hits identified by scanner v5 across 11 additional tightened policies (3.01, 3.02, 3.05, 3.06, 3.07, 3.11, 3.12, 3.13, 3.15, 3.16, 3.17). These were missed by the auto-filer that generated #360–#372 due to regex-gap in the filer's pattern. **Remediation method pivoted to PDF-driven visual scan**: IT Director will compile a fresh PDF from current source, visually identify rendered `Section 6.X` / `§6.X` occurrences attached to cross-policy references, file a ripple per hit against the owning policy, and absorb. Scanner-based ripple filing retired for this sweep category due to regex-gap reliability concerns. The `of this policy` qualifier pattern (#378) may be applied opportunistically during the PDF pass or filed as a separate disambiguation ripple.
+
 **Rule #2 — §2 Out of Scope routing pointers end at `Policy [X.XX].`** No parenthetical title, no section depth. Per 1.04 §6.4 format spec and §6.11 exception clause. Confirmed April 20, 2026. 1.04 v1.4 §2 itself carries the defect and requires cleanup — ripple to file against 1.04 when touched.
 
 ---
@@ -130,7 +132,19 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 20, 2026 post-correction (Phase 5B entry 28 complete — 2.04 v2.4 committed. Full session arc: v2.3 committed after 3 validator rounds; IT Director rejected two defects in v2.3 — (1) §6.6 Exception scope expansion beyond original operational reality (Claude imported full CJIS AC-11 NOTE scope rather than narrow certificate-auth CJ-conveyance exemption), and (2) declined-in-error Gemini Round 1/Round 3 §2 parenthetical-strip finding. v2.4 correction: §6.6 Exception restored to narrow scope (cert-auth remote sessions in CJ conveyances, VPN inactivity timeout only, officer safety rationale), attached to session-termination directive rather than device-lock directive. Tickets #69, #70 closed. Standing decline #30 RETRACTED (was wrong). Universal Manual Rules captured in §4: Rule #1 (no section-specific cross-references in body prose) and Rule #2 (§2 routing pointers end at `Policy [X.XX].` with no parenthetical). Ripples filed: #358 (2.02 §4 Sanctions civil/criminal overstatement), #360–#372 (13 §6.X-strip ripples against tightened peers 1.03/1.06/1.10/1.13/1.14/2.01/2.02/2.06/3.09/3.10/3.14/4.06/4.07), #374 (1.04 v1.4 §2 parenthetical-strip — locked policy, absorbs at Phase 9 or earlier). Plan §3 updated with §6.X-strip sweep root. Sweep absorption notes on #208, #235, #245, #264, #291, #6. Claude-side lesson captured: treating authoritative framework NOTE text as import-mandatory rather than permissive upper bound is an operational-scope-assertion error; and treating tightened-peer patterns as universal conventions when the tightened peers themselves carry defects propagates the defect. Phase 5B LASO queue: entries 29 (2.11), 30 (2.12), 31 (2.13) remain.) Preceded by: Phase 5B entry 27 complete (2.02 v2.4, April 19).
+**Last refreshed:** April 20, 2026 post-§6.X-strip-batch (Phase 5B mid-session ripple absorption pass — 13 §6.X-strip ripples absorbed across previously-tightened peers). Preceded by: Phase 5B entry 28 complete (2.04 v2.4, April 20).
+
+**Session log — April 20, 2026 evening (§6.X Strip Batch Absorption):**
+This session was cross-cutting maintenance, not a new tightening session. Applied Universal Manual Rule #1 (no section-specific cross-references in body prose) to 13 previously-tightened policies. Per-file ripple absorption, diff-reviewed and pushed:
+
+- **Absorbed and closed:** #360 (1.03 `d2b6c2db96`), #361 (1.06 `b323c4af8f`), #362 (1.10 `0c8ce22aa4`), #363 (1.13 `d852d950ea`), #364 (1.14 `770f985d22`), #365 (2.01 `0cdf25fc40`), #366 (2.02 `d2402716a1`), #367 (2.06 `3f74871a0b`), #368 (3.09 `df41300b71`), #369 (3.10 `5d94459a4a`), #370 (3.14 `b6ca977e64`), #371 (4.06 `c4424b71f6`), #372 (4.07 `4246b41707`). All 13 files no version-bumped (IT Director ruling: mechanical fix below version-increment threshold).
+- **Pre-batch housekeeping:** #6 (GLOBAL-D Redmine) closed — 0 hits manual-wide; #374 (1.04 v1.4 §2 parenthetical-title strip) closed — resolved in commit `57cace1b70` (April 20 12:06Z "Fixed 1.04 Scope") which landed 31 minutes before the ripple auto-filed.
+- **Ripples filed during session:** #375 (1.04 v1.4 §6.15 §6.X strip — 4 cross-policy hits against 3.13 and 4.03; deferred to dedicated 1.04 session per architectural-lock discipline), #376 (2.02 missing first-use parentheticals at L470 for 1.11 and L552 for 1.13), #377 (3.10 missing first-use parenthetical at L451 for 3.09), #378 (4.06 intra-policy self-reference disambiguation — 4 bare `Section 6.X` forms without `of this policy` qualifier).
+- **Architectural landings:** 2.06 §6.3 at-rest/in-transit encryption blocks restructured to collapse dual `Policy 1.11 §6.4 (Confidential)` + `Policy 1.11 §6.5 (Restricted)` references into single `Policy 1.11` ref with in-prose "Confidential and Restricted data requirements defined in" clarifier (IT Director ruling during session). Opportunistic strip of wrong-placement parentheticals on subsequent uses applied where encountered (2.06 L1475 1.11 subsequent, 2.06 L1853 4.06 subsequent).
+- **Scanner development:** v5 scanner iteration — v2 missed § glyph (caught in 1.03 session after only finding "Section" word-form); v3 matched auto-filer counts but over-attributed multi-ref lines; v4 added sentence-boundary filter but lost "of this policy" filter (caught in 3.09 L383 false positive); v5 restored "of this policy" filter and validated against all 8 previously-pushed files (all clean).
+- **Scope discovery:** v5 scanner identified ~80 additional §6.X cross-policy hits across 11 untouched policies (3.01, 3.02, 3.05, 3.06, 3.07, 3.11, 3.12, 3.13, 3.15, 3.16, 3.17). These files were missed by the auto-filer that generated #360–#372 (same regex-gap pattern as my v2 scanner). IT Director direction: remaining §6.X cleanup shall proceed via PDF-driven visual scan rather than scanner-driven ripple filing — anything that renders visibly in the compiled PDF as a section-specific cross-reference gets a ripple and a fix. Scanner-based approach retired for this sweep category due to regex-gap reliability concerns.
+
+**Phase 5B LASO queue status:** Entries 29 (2.11), 30 (2.12), 31 (2.13) remain. Recalc marker after entry 39 (end of 5C).
 
 ### Chapter 0 / Front Matter
 
@@ -143,29 +157,29 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 1.02 | Code of Ethics | T | — | 0 | — |
-| 1.03 | Standard Operating Ethos | T+ | v2.0 | 1 | #360 |
-| 1.04 | Formatting Standards | T | v1.4 | 0 | — |
+| 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — |
+| 1.04 | Formatting Standards | T+ | v1.4 | 1 | #375 |
 | 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — |
-| 1.06 | IT Governance and Oversight Structure | T+ | v2.1 | 1 | #361 |
+| 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — |
 | 1.07 | Workforce Roles | T+ | v1.3 | 1 | #354 |
 | 1.08 | Delegation of Authority | T | v1.5 | 0 | — |
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
-| 1.10 | IT Financial / Procurement | T+ | v2.2 | 1 | #362 |
+| 1.10 | IT Financial / Procurement | T | v2.2 | 0 | — |
 | 1.11 | Data Governance and Classification | T | v2.3 | 0 | — |
 | 1.12 | IT Asset Management | T+ | v2.6 | 1 | #329 |
-| 1.13 | Supply Chain Risk Management | T+ | v2.2 | 1 | #363 |
-| 1.14 | Stakeholder Engagement | T+ | v2.3 | 1 | #364 |
+| 1.13 | Supply Chain Risk Management | T | v2.2 | 0 | — |
+| 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
 
 ### Chapter 2 — Security
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 2.01 | Acceptable Use | T+ | v2.4 | 2 | #356, #365 |
-| 2.02 | Personnel Security | T+ | v2.4, April 19 | 2 | #358, #366 |
+| 2.01 | Acceptable Use | T+ | v2.4 | 1 | #356 |
+| 2.02 | Personnel Security | T+ | v2.4, April 19 | 2 | #358, #376 |
 | 2.03 | Security Awareness | D | — | 6 | #66, #67, #68, #213, #346, #351 |
 | 2.04 | Access Control | T | v2.4, April 20 | 0 | — |
 | 2.05 | Identification and Authentication | D | — | 5 | #71, #72, #73, #292, #333 |
-| 2.06 | Privacy and Data Protection | T+ | v2.6, April 18 | 1 | #367 |
+| 2.06 | Privacy and Data Protection | T | v2.6, April 18 | 0 | — |
 | 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 |
 | 2.08 | System Integrity / Malware | D | — | 3 | #81, #83, #84 |
 | 2.09 | Vulnerability and Patch Management | D | — | 5 | #85, #86, #87, #271, #326 |
@@ -188,12 +202,12 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #313 |
 | 3.07 | Problem Management | T+ | v2.2 | 1 | #316 |
 | 3.08 | CMDB | T | v2.2 | 0 | — |
-| 3.09 | Change Management | T+ | v2.0 | 1 | #368 |
-| 3.10 | Release and Deployment | T+ | v2.0 | 1 | #369 |
+| 3.09 | Change Management | T | v2.0 | 0 | — |
+| 3.10 | Release and Deployment | T+ | v2.0 | 1 | #377 |
 | 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #317 |
 | 3.12 | Monitoring and Event Management | T+ | v2.0 | 1 | #318 |
 | 3.13 | Knowledge Management | T | v2.2 | 0 | — |
-| 3.14 | IT Project Management | T+ | v2.2 | 1 | #370 |
+| 3.14 | IT Project Management | T | v2.2 | 0 | — |
 | 3.15 | Service Continuity | T+ | v2.1 | 2 | #314, #319 |
 | 3.16 | Service Improvement | T | v2.0 | 0 | — |
 | 3.17 | System Maintenance and Vendor Repairs | T | v2.1 | 0 | — |
@@ -207,8 +221,8 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 4.03 | Containment Strategy and Playbooks | T | v2.1 | 0 | — |
 | 4.04 | Eradication | T | v2.2 | 0 | — |
 | 4.05 | Recovery and Restoration | T | v2.2 | 0 | — |
-| 4.06 | Communication Protocols | T+ | v2.2 | 1 | #371 |
-| 4.07 | Postmortem and Lessons Learned | T+ | v1.0 | 1 | #372 |
+| 4.06 | Communication Protocols | T+ | v2.2 | 1 | #378 |
+| 4.07 | Postmortem and Lessons Learned | T | v1.0 | 0 | — |
 
 ### Chapter 5 — Compliance
 
