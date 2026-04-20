@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -1962,20 +1962,6 @@ Rationale
  This threshold exceeds the CJIS Security Policy v6.0 Section AC-11 (Device Lock) maximum of thirty (30) minutes and is adopted as a stricter Elko County internal control.
 \end_layout
 
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exception
-\series default
-:
- Devices meeting the exemption conditions defined in CJIS Security Policy v6.0:
- Section AC-11 (Device Lock) NOTE are exempt from the fifteen (15)-minute device lock requirement.
- The exemption applies to devices that are part of a Criminal Justice Conveyance,
- devices used to perform dispatch functions within a physically secure location,
- and receive-only terminals used within physically secure location facilities that remain staffed when in operation.
-\end_layout
-
 \end_deeper
 \begin_layout Itemize
 
@@ -1998,6 +1984,19 @@ The Assistant IT Director shall ensure that information systems automatically te
  consistent with CJIS Security Policy v6.0:
  Section AC-12 (Session Termination) and Section IA-11 (Re-Authentication).
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exception
+\series default
+:
+ Certificate-authenticated remote access sessions on devices located within a criminal justice conveyance are exempt from the fifteen (15)-minute inactivity timeout for officer safety.
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsubsection*
 
