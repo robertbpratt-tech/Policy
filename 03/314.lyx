@@ -1297,7 +1297,7 @@ nolink "false"
 
 \series default
  (Change Management Policy),
- or the CMDB and Knowledge Base closure gates in Section 6.6.
+ or the CMDB and Knowledge Base closure gates.
 \end_layout
 
 \end_deeper
@@ -1489,7 +1489,7 @@ nolink "false"
 
 
 \series default
- (Privacy and Data Protection Policy) §6.1.
+ (Privacy and Data Protection Policy).
 \end_layout
 
 \begin_layout Standard
