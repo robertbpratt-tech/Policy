@@ -62,6 +62,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #6 | Product-name removal (Redmine) | 1.04, 1.08, 1.14, 3.01–3.17 | Open, absorbed-by-tightening | Multi-policy Redmine sweep. #7 (Office 365) and #10 (HID DigitalPersona) closed April 19 as duplicates of per-policy children #99 and #71 respectively; #8 closed previously. |
 | #353 | Set Header Date and Version to uniform `Effective: July 01, 2026 \| Version: 1.0` | Manual-wide | Open, phase-10-deferred | All policies; mechanical normalization at v1.0 declaration per Phase 10 step 3. Dormant until Phase 10 entry. |
 | #355 | Manual-wide LRDA citation verification sweep (numbers, titles, retention periods, NRS 239.125/NAC 239.155 companion citations) | Manual-wide | Open, phase-9-deferred | Scoped in §7 Open Questions for Phase 9: verification half → sub-phase 9A; companion-authority consistency → sub-phase 9B. Split into `phase-9a-intake` and `phase-9b-intake` child tickets at Phase 9 entry. Dormant until then. |
+| #360–#372, #374 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references | Manual-wide | Open, sweep | 13 child tickets against tightened peers (1.03, 1.06, 1.10, 1.13, 1.14, 2.01, 2.02, 2.06, 3.09, 3.10, 3.14, 4.06, 4.07) + #374 against 1.04 v1.4 §2 Out of Scope parentheticals. Absorbed at next per-policy touch except #374 (1.04 locked — absorbs at Phase 9 or earlier if required). Rule confirmed April 20, 2026 during 2.04 session: no section-specific cross-references in body prose; readers can read the full page. |
 
 ### Closed Roots
 
@@ -115,7 +116,13 @@ Cross-validator feedback matching these patterns is reflexively declined.
 28. **Gemini: specific numeric volume tiers for record counts in PIAs (<500, 500-5,000/10,000, >5,000/10,000)** — no Elko County benchmark exists for these tier boundaries; tier values shift between rounds (5,000 in Round 4, 10,000 in Round 5) demonstrating arbitrary selection. Gemini himself caveats in Round 4: "If thresholds are not currently established, state: 'Confidence low; requires manual verification.'" The current "approximate record count or estimated data volume" language is audit-testable without imposing arbitrary structure. (2.06 Phase 5B entry 26, Rounds 4/5, Gemini — two rounds, same recommendation with different tier values. Both declined.)
 29. **Cross-validator pushback on locked operational-reality decisions via cross-policy dependency citation** — When a validator cites a downstream dependency in a tightened policy as reason to reverse a locked IT Director decision, the correct resolution is to file a ripple against the dependency to align with the operational decision, not to reverse the decision. Distinct from decline #14 (stale source) and #22 (absence-of-evidence): pattern #29 applies when the validator cites *accurate* source with a genuine dependency, but the locked decision renders that dependency obsolete rather than the decision wrong. The ripple flows *toward* operational truth, not *away* from it. Third-recurrence rule: when three or more rounds re-push the same target citing the same dependency, reflexive decline on sight with pointer back to the original adjudication and to the filed ripple that resolves the dependency. (2.02 Phase 5B entry 27, Rounds 1/2/3, ChatGPT — all three rounds cited 1.07 v1.3 §6.1 L1031 5-year CJI rescreening requirement as reason to reverse 2.02's event-triggered model. IT Director ruling Round 1 Path A: file ripple #354 against 1.07 to align with 2.02. Rounds 2 and 3 re-pushed identical finding with identical rationale; both declined under Pattern #29.)
 
-30. **Surface-framing rotation on §2 parenthetical-title prohibition** — Validators periodically claim that parenthetical titles in §2 Out of Scope routing pointers (e.g., `Policy 2.13 (Physical Security and Environmental Controls Policy)`) violate 1.04 §6.4 and must be stripped. The premise is false: 1.04 v1.4 §2 itself uses parentheticals in its Out of Scope bullets (`Work order records: Policy 3.05 (Service Request Fulfillment Policy).`). 1.04 §6.4 specifies the minimum routing-pointer format ending at "Policy [X.XX]"; §6.11 says the first-use-parenthetical convention "does not apply to Scope section routing pointers" — meaning Scope use does not *satisfy* the first-use obligation elsewhere, not that Scope *prohibits* parentheticals. The constitution is the controlling authority; its own example demonstrates permissive use. Reflexive decline on sight; cite 1.04 v1.4 §2 as evidence. (2.04 Phase 5B entry 28, Rounds 1 and 3, Gemini — Round 1 raised as Gap 3 declined with rationale; Round 3 re-raised as Gap 1 with expanded framing claiming §6.4 + §6.11 combined produces a prohibition, plus Gap 2 derivative claim that §3/§6 prose now needs first-use parentheticals as compensation. Gap 2 collapses on Gap 1 premise. Both declined.)
+30. **~~Surface-framing rotation on §2 parenthetical-title prohibition~~** [**RETRACTED April 20, 2026 — WAS WRONG**] — Originally filed as a standing decline during 2.04 Phase 5B entry 28 claiming Gemini was incorrect to flag §2 parenthetical titles. **Retraction reason:** The original decline was based on a misread of 1.04 §6.4 which specifies the routing pointer format ending at `Policy [X.XX].`; §6.11's "does not apply to Scope section routing pointers" is prohibitive, not permissive. 1.04 v1.4 §2 itself contains the same defect and requires ripple cleanup. Do NOT use this as a standing decline going forward; Gemini's finding was correct. **Related ruling captured below as Rule #1.**
+
+### Universal Manual Rules (Confirmed April 20, 2026)
+
+**Rule #1 — No section-specific cross-references in body prose.** Cross-references to other ECIO policies in the body of any policy use `Policy X.XX (Policy Title)` on first use within that policy and `Policy X.XX` thereafter. Section-specific depth (e.g., `§6.X`, `Section 6.X`, `§6.11`) shall NOT appear appended to cross-policy references. Rationale: readers can read the full referenced policy. Self-references within the same policy (`Section 6.X`) are NOT in scope — navigation within the current document is permitted. Confirmed by IT Director April 20, 2026. Ripples filed #360–#372 against tightened peers carrying the defect.
+
+**Rule #2 — §2 Out of Scope routing pointers end at `Policy [X.XX].`** No parenthetical title, no section depth. Per 1.04 §6.4 format spec and §6.11 exception clause. Confirmed April 20, 2026. 1.04 v1.4 §2 itself carries the defect and requires cleanup — ripple to file against 1.04 when touched.
 
 ---
 
@@ -123,7 +130,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 20, 2026 (Phase 5B entry 28 complete — 2.04 v2.3 committed after 3 validator rounds. Tickets #69, #70 closed. Ripple filed: #358 (2.02 §4 Sanctions civil/criminal overstatement; 2.02 moves T→T+, v2.4 → v2.5 expected). Sweep absorption notes on #208, #235, #245, #264, #291, #6. New standing decline #30 added (surface-framing rotation on §2 parenthetical-title prohibition — Gemini Round 1 + Round 3 recurrence, 1.04 v1.4 §2 permissive-use constitutional-source check held). Cross-validator Round 3 produced three simultaneous ChatGPT stale-source findings (pattern #7 triple-hit — Issues 1/2/3 claiming structural defects that were corrected in v2.0 handoff; all declined). Round 2 ChatGPT Gap 4 produced the single biggest substantive win of the session — transfer/termination conflation in §6.1 corrected to CJIS PS-4/PS-5-aligned structure with explicit "transfer shall not trigger automatic account disablement" Clarification tag. Phase 5B LASO queue: entries 29 (2.11), 30 (2.12), 31 (2.13) remain.) Preceded by: Phase 5B entry 27 complete (2.02 v2.4, April 19).
+**Last refreshed:** April 20, 2026 post-correction (Phase 5B entry 28 complete — 2.04 v2.4 committed. Full session arc: v2.3 committed after 3 validator rounds; IT Director rejected two defects in v2.3 — (1) §6.6 Exception scope expansion beyond original operational reality (Claude imported full CJIS AC-11 NOTE scope rather than narrow certificate-auth CJ-conveyance exemption), and (2) declined-in-error Gemini Round 1/Round 3 §2 parenthetical-strip finding. v2.4 correction: §6.6 Exception restored to narrow scope (cert-auth remote sessions in CJ conveyances, VPN inactivity timeout only, officer safety rationale), attached to session-termination directive rather than device-lock directive. Tickets #69, #70 closed. Standing decline #30 RETRACTED (was wrong). Universal Manual Rules captured in §4: Rule #1 (no section-specific cross-references in body prose) and Rule #2 (§2 routing pointers end at `Policy [X.XX].` with no parenthetical). Ripples filed: #358 (2.02 §4 Sanctions civil/criminal overstatement), #360–#372 (13 §6.X-strip ripples against tightened peers 1.03/1.06/1.10/1.13/1.14/2.01/2.02/2.06/3.09/3.10/3.14/4.06/4.07), #374 (1.04 v1.4 §2 parenthetical-strip — locked policy, absorbs at Phase 9 or earlier). Plan §3 updated with §6.X-strip sweep root. Sweep absorption notes on #208, #235, #245, #264, #291, #6. Claude-side lesson captured: treating authoritative framework NOTE text as import-mandatory rather than permissive upper bound is an operational-scope-assertion error; and treating tightened-peer patterns as universal conventions when the tightened peers themselves carry defects propagates the defect. Phase 5B LASO queue: entries 29 (2.11), 30 (2.12), 31 (2.13) remain.) Preceded by: Phase 5B entry 27 complete (2.02 v2.4, April 19).
 
 ### Chapter 0 / Front Matter
 
@@ -136,29 +143,29 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 1.02 | Code of Ethics | T | — | 0 | — |
-| 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — |
+| 1.03 | Standard Operating Ethos | T+ | v2.0 | 1 | #360 |
 | 1.04 | Formatting Standards | T | v1.4 | 0 | — |
 | 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — |
-| 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — |
+| 1.06 | IT Governance and Oversight Structure | T+ | v2.1 | 1 | #361 |
 | 1.07 | Workforce Roles | T+ | v1.3 | 1 | #354 |
 | 1.08 | Delegation of Authority | T | v1.5 | 0 | — |
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
-| 1.10 | IT Financial / Procurement | T | v2.2 | 0 | — |
+| 1.10 | IT Financial / Procurement | T+ | v2.2 | 1 | #362 |
 | 1.11 | Data Governance and Classification | T | v2.3 | 0 | — |
 | 1.12 | IT Asset Management | T+ | v2.6 | 1 | #329 |
-| 1.13 | Supply Chain Risk Management | T | v2.2 | 0 | — |
-| 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
+| 1.13 | Supply Chain Risk Management | T+ | v2.2 | 1 | #363 |
+| 1.14 | Stakeholder Engagement | T+ | v2.3 | 1 | #364 |
 
 ### Chapter 2 — Security
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 2.01 | Acceptable Use | T+ | v2.4 | 1 | #356 |
-| 2.02 | Personnel Security | T+ | v2.4, April 19 | 1 | #358 |
+| 2.01 | Acceptable Use | T+ | v2.4 | 2 | #356, #365 |
+| 2.02 | Personnel Security | T+ | v2.4, April 19 | 2 | #358, #366 |
 | 2.03 | Security Awareness | D | — | 6 | #66, #67, #68, #213, #346, #351 |
-| 2.04 | Access Control | T | v2.3 | 0 | — |
+| 2.04 | Access Control | T | v2.4, April 20 | 0 | — |
 | 2.05 | Identification and Authentication | D | — | 5 | #71, #72, #73, #292, #333 |
-| 2.06 | Privacy and Data Protection | T | v2.6, April 18 | 0 | — |
+| 2.06 | Privacy and Data Protection | T+ | v2.6, April 18 | 1 | #367 |
 | 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 |
 | 2.08 | System Integrity / Malware | D | — | 3 | #81, #83, #84 |
 | 2.09 | Vulnerability and Patch Management | D | — | 5 | #85, #86, #87, #271, #326 |
@@ -181,12 +188,12 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #313 |
 | 3.07 | Problem Management | T+ | v2.2 | 1 | #316 |
 | 3.08 | CMDB | T | v2.2 | 0 | — |
-| 3.09 | Change Management | T | v2.0 | 0 | — |
-| 3.10 | Release and Deployment | T | v2.0 | 0 | — |
+| 3.09 | Change Management | T+ | v2.0 | 1 | #368 |
+| 3.10 | Release and Deployment | T+ | v2.0 | 1 | #369 |
 | 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #317 |
 | 3.12 | Monitoring and Event Management | T+ | v2.0 | 1 | #318 |
 | 3.13 | Knowledge Management | T | v2.2 | 0 | — |
-| 3.14 | IT Project Management | T | v2.2 | 0 | — |
+| 3.14 | IT Project Management | T+ | v2.2 | 1 | #370 |
 | 3.15 | Service Continuity | T+ | v2.1 | 2 | #314, #319 |
 | 3.16 | Service Improvement | T | v2.0 | 0 | — |
 | 3.17 | System Maintenance and Vendor Repairs | T | v2.1 | 0 | — |
@@ -200,8 +207,8 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 4.03 | Containment Strategy and Playbooks | T | v2.1 | 0 | — |
 | 4.04 | Eradication | T | v2.2 | 0 | — |
 | 4.05 | Recovery and Restoration | T | v2.2 | 0 | — |
-| 4.06 | Communication Protocols | T | v2.2 | 0 | — |
-| 4.07 | Postmortem and Lessons Learned | T | v1.0 | 0 | — |
+| 4.06 | Communication Protocols | T+ | v2.2 | 1 | #371 |
+| 4.07 | Postmortem and Lessons Learned | T+ | v1.0 | 1 | #372 |
 
 ### Chapter 5 — Compliance
 
