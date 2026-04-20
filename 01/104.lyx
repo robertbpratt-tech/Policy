@@ -280,7 +280,7 @@ nolink "false"
 
 
 \series default
- (Service Request Fulfillment Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -302,7 +302,7 @@ nolink "false"
 
 
 \series default
- (Service Configuration Management Policy).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -324,7 +324,7 @@ nolink "false"
 
 
 \series default
- (Audit Logging and Monitoring Policy).
+.
 \end_layout
 
 \end_deeper
@@ -964,8 +964,7 @@ Out of Scope
 \series bold
 Policy [X.XX]
 \series default
-."
- When no policy governs the topic,
+." When no policy governs the topic,
  the item shall stand alone as a bare noun phrase with a terminal period.
 \end_layout
 
@@ -1392,7 +1391,8 @@ One Directive Per Item
 Clarification
 \series default
 :
- This rule applies at the atomic item level — each individual Itemize bullet or Enumerate item.
+ This rule applies at the atomic item level —
+ each individual Itemize bullet or Enumerate item.
  A bold-label topic block (defined in Section 6.12) may contain multiple atomic bullets beneath it,
  each independently satisfying the one-directive rule.
  Grouping multiple single-directive bullets under a shared parent label is the intended structural pattern,
@@ -1400,7 +1400,6 @@ Clarification
 \end_layout
 
 \end_deeper
-
 \begin_layout Subsubsection*
 6.9 Compliance Language Standards
 \end_layout
