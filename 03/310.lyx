@@ -674,8 +674,8 @@ nolink "false"
 
 
 \series default
-,
- §6.6 shall authorize deployment from any source other than the Software Repository.
+
+ shall authorize deployment from any source other than the Software Repository.
 \end_layout
 
 \begin_layout Itemize
@@ -702,8 +702,7 @@ nolink "false"
 
 
 \series default
-,
- §6.6.
+.
  Exceptions require IT Director approval in accordance with 
 \series bold
 Policy 
@@ -1159,8 +1158,8 @@ nolink "false"
 
 
 \series default
-,
- Section 6.2 is the intake authorization gate for repository eligibility.
+
+ is the intake authorization gate for repository eligibility.
  The Assistant IT Director shall prepare classification proposals and submit them to the IT Director for approval.
  No separate intake approval process is required under this policy.
 \end_layout
