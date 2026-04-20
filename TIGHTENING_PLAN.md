@@ -59,7 +59,9 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #245 | Replace `business hours` time-unit with end-of-business-day convention | Manual-wide | Open, sweep | Per #245 body |
 | #264 | Role obligation redistribution (L3 prep, L1 clerical, L2 inputs, AID synthesis) | Manual-wide | Open, root | Remaining subtasks absorb into tightening |
 | #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | 1.11, 2.05, 2.07 | Open, sweep | #292 (2.05), #293 (2.07); 1.11 resolved in v2.2 |
-| #6, #7, #8, #10 | Product-name removal (Redmine, Office 365, Comodo/XCitium, HID DigitalPersona) | Manual-wide | Open, absorbed-by-tightening | Resolved per-policy |
+| #6 | Product-name removal (Redmine) | 1.04, 1.08, 1.14, 3.01–3.17 | Open, absorbed-by-tightening | Multi-policy Redmine sweep. #7 (Office 365) and #10 (HID DigitalPersona) closed April 19 as duplicates of per-policy children #99 and #71 respectively; #8 closed previously. |
+| #353 | Set Header Date and Version to uniform `Effective: July 01, 2026 \| Version: 1.0` | Manual-wide | Open, phase-10-deferred | All policies; mechanical normalization at v1.0 declaration per Phase 10 step 3. Dormant until Phase 10 entry. |
+| #355 | Manual-wide LRDA citation verification sweep (numbers, titles, retention periods, NRS 239.125/NAC 239.155 companion citations) | Manual-wide | Open, phase-9-deferred | Scoped in §7 Open Questions for Phase 9: verification half → sub-phase 9A; companion-authority consistency → sub-phase 9B. Split into `phase-9a-intake` and `phase-9b-intake` child tickets at Phase 9 entry. Dormant until then. |
 
 ### Closed Roots
 
@@ -69,7 +71,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #283 | LASO is a designation, not a §3 role | April 11 | Superseded by #220 landing. |
 | #304 | Chapter 4 external self-containment quality gate | April 12 | All Ch4 policies tightened (4.01–4.07). |
 
-**Sweep-style roots (#208, #211, #235, #245, #6/#7/#8/#10)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched.
+**Sweep-style roots (#208, #211, #235, #245, #264, #291, #6)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched. **Phase-deferred roots (#353, #355)** are dormant and entered at their scheduled phase (Phase 10 and Phase 9 respectively); they are not absorbed into per-policy tightening.
 
 ### Deferred Cluster: `1.04_Procedural_Cleanup` ✅ CLOSED
 
@@ -119,7 +121,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 19, 2026 (Bucket 1 ripple sweep expanded ✅ — ground-truth API pull against GitHub surfaced three plan §5 undercounts (3.01 carried undiscovered #327, 3.08 carried undiscovered #325, 5.01 carried undiscovered #334). Mechanical-class undiscovered ripples resolved this session: 3.08 v2.2 (commit ccd18af9f6c4, #325 closed with expanded scope covering both L1084 and L1207 Lifecycle Status → Operational State instances per 1.12 v2.6 §6.5 field rename); 3.01 v2.4 (commit 490fdbab41a2, #327 closed via new §6.1 reciprocal paragraph establishing IT Asset Catalog as the authoritative software authorization register for 1.12 Unauthorized Presence enforcement). Preceded by 3.13 v2.2 (commit e34fd5192ac6) and 4.03 v2.1 (commit 9f932b13dd4f) mechanical Section 6.16 → 6.15 ref fixes; #322 and #323 closed. Plan §5 now reconciled with GitHub truth on these four rows. Residual undiscovered T+ ripple: #334 against 5.01 (substantive §6.6 exception management tightening — stays for Bucket 4 session). Preceded by 2.02 Phase 5B entry 27 ✅ complete — v2.4 committed after 3 validator rounds + IT Director §3 label challenge; ripples filed #354 (1.07 remove 5-year CJI rescreening, Path A), #355 (manual-wide LRDA verification sweep), #356 (2.01 §3 label normalization); #64 and #217 closed as resolved; sweep absorption notes on #208/#235/#245/#264/#6/#7/#8/#10; new standing decline #29 added (cross-validator pushback on locked operational-reality decisions via cross-policy dependency citation, third-recurrence rule).
+**Last refreshed:** April 19, 2026 (Full plan-vs-GitHub reconciliation ✅ — API-driven ground-truth audit against 97 open issues surfaced drift across 10 §5 rows and 2 untracked globals. All drift was undercount (no phantom closed tickets). Corrections applied: 8 §5 rows gained missing tickets (2.03 +#346/+#351, 2.05 +#333, 2.09 +#326, 2.12 +#330, 2.14 +#332, 5.01 +#334, 5.06 +#331, 6.01 +#352); duplicate closure of #7 (dup of #99) and #10 (dup of #71) eliminated historical parent/child double-tracking on single-target GLOBAL-D work; #353 (Phase 10 header normalization) and #355 (Phase 9 LRDA sweep) added to §3 Architectural Roots as phase-deferred entries. Post-reconciliation coverage: 95 open tickets = 86 in §5 per-policy rows + 9 §3 roots. Convention normalized: all single-target GLOBAL-D children counted in §5 (previous inconsistency where #292/#293/#271 were counted but #7/#10 parents were not now resolved by closing the duplicates). Preceded by Bucket 1 ripple sweep expanded: 3.13 v2.2 (#322), 4.03 v2.1 (#323), 3.08 v2.2 (#325 with expanded scope), 3.01 v2.4 (#327). Preceded by 2.02 Phase 5B entry 27 ✅ complete — v2.4 committed after 3 validator rounds + IT Director §3 label challenge; ripples filed #354 (1.07 remove 5-year CJI rescreening, Path A), #355 (manual-wide LRDA verification sweep), #356 (2.01 §3 label normalization); sweep absorption notes on #208/#235/#245/#264/#6/#7/#8/#10; new standing decline #29 added (cross-validator pushback on locked operational-reality decisions via cross-policy dependency citation, third-recurrence rule).
 
 ### Chapter 0 / Front Matter
 
@@ -151,18 +153,18 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|
 | 2.01 | Acceptable Use | T+ | v2.4 | 1 | #356 |
 | 2.02 | Personnel Security | T | v2.4, April 19 | 0 | — |
-| 2.03 | Security Awareness | D | — | 4 | #66, #67, #68, #213 |
+| 2.03 | Security Awareness | D | — | 6 | #66, #67, #68, #213, #346, #351 |
 | 2.04 | Access Control | D | — | 2 | #69, #70 |
-| 2.05 | Identification and Authentication | D | — | 4 | #71, #72, #73, #292 |
+| 2.05 | Identification and Authentication | D | — | 5 | #71, #72, #73, #292, #333 |
 | 2.06 | Privacy and Data Protection | T | v2.6, April 18 | 0 | — |
 | 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 |
 | 2.08 | System Integrity / Malware | D | — | 3 | #81, #83, #84 |
-| 2.09 | Vulnerability and Patch Management | D | — | 4 | #85, #86, #87, #271 |
+| 2.09 | Vulnerability and Patch Management | D | — | 5 | #85, #86, #87, #271, #326 |
 | 2.10 | Secure Configuration Baselines | D | — | 4 | #88, #89, #90, #226 |
 | 2.11 | Audit Logging and Monitoring | D | — | 2 | #91, #92 |
-| 2.12 | Media Protection and Sanitization | D | — | 4 | #94, #95, #228, #324 |
+| 2.12 | Media Protection and Sanitization | D | — | 5 | #94, #95, #228, #324, #330 |
 | 2.13 | Physical Security | D | — | 3 | #96, #97, #98 |
-| 2.14 | Mobile and Remote Access | D | — | 4 | #99, #101, #102, #229 |
+| 2.14 | Mobile and Remote Access | D | — | 5 | #99, #101, #102, #229, #332 |
 | 2.15 | Secure Software Lifecycle | D | — | 3 | #103, #104, #105 |
 
 ### Chapter 3 — Service Management
@@ -203,19 +205,19 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 5.01 | Implementation, Enforcement, Legal | T+ | v1.1 | 1 | #345 |
+| 5.01 | Implementation, Enforcement, Legal | T+ | v1.1 | 2 | #334, #345 |
 | 5.02 | Internal Audits | D | — | 5 | #183, #184, #185, #186, #278 |
 | 5.03 | Compliance Monitoring | D | — | 2 | #187, #279 |
 | 5.04 | Performance Metrics | D | — | 1 | #280 |
 | 5.05 | Security Control Assessment | D | — | 1 | #188 |
-| 5.06 | Vendor Compliance | D | — | 1 | #281 |
+| 5.06 | Vendor Compliance | D | — | 2 | #281, #331 |
 | 5.07 | Annual Policy Review | D | — | 3 | #191, #282, #300 |
 
 ### Chapter 6 — Appendices
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 6.01 | Glossary | A | draft | 4 | #192, #193, #195, #328 |
+| 6.01 | Glossary | A | draft | 5 | #192, #193, #195, #328, #352 |
 | 6.02 | Policy Matrix | A | — | 3 | #196, #197, #198 |
 | 6.03 | Workforce Roles STAK Matrix | A | — | 3 | #199, #200, #214 |
 | 6.04 | Revision History and Version Control | A | — | 1 | #205 |
