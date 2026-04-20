@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -193,10 +193,9 @@ Version:
 \begin_layout Standard
 
 \lang english
-This policy establishes mandatory requirements for managing logical access to Elko County Information Technology (IT) resources.
- It implements the principles of "Least Privilege" and "Need-to-Know" to protect the confidentiality,
- integrity,
- and availability of County information.
+This policy establishes mandatory requirements for managing logical access to Elko County information systems,
+ networks,
+ and data.
 \end_layout
 
 \begin_layout Subsection*
@@ -209,128 +208,68 @@ This policy establishes mandatory requirements for managing logical access to El
 \begin_layout Standard
 
 \lang english
-This policy shall apply to all individuals—
-including employees,
- elected officials,
- contractors,
- and third-party vendors—
-who require logical access to Elko County information systems,
+This policy applies to all individuals with logical access to Elko County information systems,
  networks,
- or data.
- This scope encompasses all systems used to process,
- store,
- or transmit CJI and sensitive County assets.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-3.
- Roles and Responsibilities
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-\lang english
-IT Director
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall serve as the Access Control Authority;
- validates identity management architectures and adjudicates all policy exceptions.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall ensure all access controls for CJI-processing systems meet federal mandates.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-\lang english
-IT Administrators
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall provision,
- modify,
- and disable accounts strictly upon receipt of authorized triggers from Human Resources or Data Owners.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-\lang english
-Human Resources (HR)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall act as the Authoritative Source for identity verification and shall provide immediate notification of personnel status changes to the IT Department.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-\lang english
-Department Heads / Data Owners
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall define the specific "need-to-know" for staff and verify that access requests are commensurate with assigned job duties.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall complete periodic access recertification reviews for systems under their data ownership within the cadence defined in Section 6.9 and shall promptly notify the IT Department of any access that is no longer justified.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-4.
- Compliance and Exceptions
+ or data,
+ including employees,
+ elected officials,
+ appointed officials,
+ interns,
+ volunteers,
+ contractors,
+ and third-party vendors.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Mandatory Compliance
+In Scope
 \series default
 :
- Compliance is mandatory.
- Prohibited actions include 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Credential sharing
+Logical account lifecycle management,
+ including creation,
+ modification,
+ disablement,
+ and removal.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Unauthorized elevation of privileges
+Access authorization and enforcement for County information systems.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Bypassing access controls
+Least privilege and separation of duties enforcement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Remote and wireless access authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Session management,
+ device lock,
+ and unsuccessful-logon handling.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Periodic access recertification.
 \end_layout
 
 \end_deeper
@@ -338,11 +277,548 @@ Bypassing access controls
 
 \series bold
 \lang english
-Sanctions
+Out of Scope
 \series default
 :
- Violations shall result in immediate revocation of access and disciplinary action up to and including discharge,
- consistent with NRS 205.4765.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Physical access controls:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Physical Security and Environmental Controls Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Identifier and authenticator mechanics,
+ including password complexity and multi-factor authenticator lifecycle:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Authentication Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Network,
+ boundary,
+ and communications protection:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (System and Communications Protection Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Secure configuration of systems providing access control:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Secure Configuration Baselines and Hardening Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Audit logging and monitoring of access events:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Audit Logging and Monitoring Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Personnel screening and background adjudication governing access eligibility:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Personnel Security and Background Screening Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Mobile device management and teleworking operations:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Mobile Device and Remote Access Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Exception management:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment) §6.6.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall hold final authority for logical access decisions affecting County information systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall exercise the Local Agency Security Officer (LASO) designation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) §6.11 for access decisions involving Criminal Justice Information (CJI).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall authorize each type of remote access and wireless access prior to permitting connections.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve shared,
+ group,
+ and emergency accounts based on documented operational necessity.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review shared,
+ group,
+ and emergency account approvals at least annually.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall adjudicate access decisions for High-Risk Individuals as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.7.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+County Manager
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall approve access control policy exceptions that exceed the IT Director's delegated authority per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall maintain the account-type registry and the access control matrix required under this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall operate the periodic access recertification program defined in Section 6.9.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that information systems implement the technical access controls required by this policy,
+ including account disablement automation,
+ device lock,
+ session termination,
+ and unsuccessful-logon handling.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+May approve operational access exceptions within the Operational Exception Tier defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall validate the specific need-to-know for personnel under their authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure access requests are commensurate with assigned job duties.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall complete periodic access recertification reviews for systems under their data ownership within the cadence defined in Section 6.9.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall notify the IT Director within one (1) business day of identifying access that is no longer justified.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Human Resources
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the Authoritative Source for personnel status changes affecting logical access.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall notify the IT Director of terminations,
+ transfers,
+ and High-Risk Individual determinations in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall not share credentials,
+ authentication tokens,
+ or access devices with any other person.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not elevate privileges beyond those authorized for their assigned role by any means,
+ direct or indirect.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not bypass,
+ disable,
+ or circumvent access control mechanisms.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report known or suspected credential compromise to the IT Director within one (1) hour of discovery,
+ consistent with CJIS Security Policy v6.0:
+ Section IR-6(a) (Incident Reporting).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all individuals with logical access to Elko County information systems.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to this policy shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and through the periodic access recertification reviews defined in Section 6.9.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The IT Director shall enforce this policy through immediate access revocation for violations,
+ referral to Human Resources for disciplinary review,
+ and escalation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for persistent or willful non-compliance.
 \end_layout
 
 \begin_layout Itemize
@@ -352,8 +828,77 @@ Sanctions
 Exceptions
 \series default
 :
- Any deviation from this policy shall be documented as a formal Risk Acceptance with identified compensating controls and an expiration date not exceeding 12 months.
- Exceptions affecting CJI systems require written approval from the CSO.
+ Exceptions to this policy shall be processed in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
+ Exceptions affecting access to systems that process,
+ store,
+ or transmit CJI shall route through the CJI Exceptions provisions of 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.6,
+ which require written approval of the IT Director (as LASO) and,
+ where applicable,
+ written approval by the CJIS Systems Agency (CSA) or CJIS Systems Officer (CSO).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Universal Applicability
+\series default
+:
+ These standards apply to all access to County information systems regardless of location or work arrangement,
+ including remote work and official travel.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Sanctions
+\series default
+:
+ Violations may result in access revocation,
+ disciplinary action consistent with County Human Resources policy,
+ and referral for criminal investigation or prosecution under NRS 205.4765 (Unlawful acts regarding computers).
 \end_layout
 
 \begin_layout Subsection*
@@ -363,11 +908,22 @@ Exceptions
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
+
+\lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.06"
+reference "pol:1.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -376,10 +932,14 @@ nolink "false"
 \end_inset
 
 :
- IT Governance and Oversight Structure
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -396,6 +956,44 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -412,6 +1010,8 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -428,178 +1028,439 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ System and Communications Protection Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Secure Configuration Baselines and Hardening Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Audit Logging and Monitoring Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Physical Security and Environmental Controls Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Mobile Device and Remote Access Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NRS 205.4765 (Unlawful acts regarding computers)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-2 (Account Management)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-2(3) (Disable Accounts)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-2(13) (Disable Accounts for High-Risk Individuals)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-3 (Access Enforcement)
 \end_layout
 
 \begin_layout Itemize
-CJIS Security Policy v6.0:
- Section AC-5 (Separation of Duties)
-\end_layout
 
-\begin_layout Itemize
+\lang english
 CJIS Security Policy v6.0:
  Section AC-6 (Least Privilege)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-6(7) (Review of User Privileges)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-7 (Unsuccessful Logon Attempts)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-8 (System Use Notification)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-11 (Device Lock)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section AC-12 (Session Termination)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-17 (Remote Access)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section AC-18 (Wireless Access)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IA-2(1) (Multi-Factor Authentication to Privileged Accounts)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IA-2(2) (Multi-Factor Authentication to Non-Privileged Accounts)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section IA-4 (Identifier Management)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
- Section IA-5(2)(c) (Re-authentication Requirements)
+ Section IA-11 (Re-Authentication)
 \end_layout
 
 \begin_layout Itemize
-NIST CSF 2.0:
- PR.AA-01 (Identities and Credentials)
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6(a) (Incident Reporting)
 \end_layout
 
 \begin_layout Itemize
-NIST CSF 2.0:
- PR.AA-03 (Authentication)
+
+\lang english
+CJIS Security Policy v6.0:
+ Section PS-4 (Personnel Termination)
 \end_layout
 
 \begin_layout Itemize
-NIST CSF 2.0:
- PR.AA-05 (Access Permissions and Authorizations)
+
+\lang english
+CJIS Security Policy v6.0:
+ Section PS-5 (Personnel Transfer)
 \end_layout
 
 \begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- AC-1 (Access Control Policy and Procedures)
-\end_layout
 
-\begin_layout Itemize
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-2 (Account Management)
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section AC-5 (Separation of Duties)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.AA-01 (Identities and Credentials Managed)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.AA-03 (Authentication)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.AA-05 (Access Permissions and Authorizations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ AC-1 (Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-3 (Access Enforcement)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-5 (Separation of Duties)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-6 (Least Privilege)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-6(7) (Review of User Privileges)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-7 (Unsuccessful Logon Attempts)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-8 (System Use Notification)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-11 (Device Lock)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-12 (Session Termination)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-17 (Remote Access)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  AC-18 (Wireless Access)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IA-2 (Identification and Authentication)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  IA-4 (Identifier Management)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IA-11 (Re-Authentication)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 COBIT 2019:
  DSS05.04 (Manage User Identity and Logical Access)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
 ITIL v4:
  Access Management Practice
 \end_layout
@@ -611,75 +1472,118 @@ ITIL v4:
  Policy Statement
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+This policy implements the principles of least privilege and need-to-know to protect the confidentiality,
+ integrity,
+ and availability of County information.
+ Access control is the primary technical boundary between authorized use and unauthorized disclosure;
+ the directives in this section define the auditable controls that sustain that boundary.
+ This policy is the foundational access-control layer of the Information Operations Policy Manual:
+ identifier and authenticator mechanics build on it under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and mobile and teleworking implementations build on it under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
-6.1.
- Account Management
+6.1 Account Management
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The IT Department shall define and manage account types for each system,
- including at minimum:
- 
+The Assistant IT Director shall maintain a registry of account types authorized for use on County information systems.
+ The registry shall include at minimum the following types:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-individual
+Individual.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-privileged
+Privileged.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-shared/group (restricted)
+Shared or group (restricted).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-service
+Service.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-system
+System.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-guest (restricted)
+Guest (restricted).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-temporary
+Temporary.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-emergency.
+Emergency.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 
 \lang english
-The IT Department shall disable information system accounts within the following maximum timeframes upon notification of a trigger:
+The Assistant IT Director shall ensure that information systems disable accounts within the following maximum timeframes upon notification of a qualifying trigger,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-2 (Account Management) and Section AC-2(3) (Disable Accounts):
 \end_layout
 
 \begin_deeper
@@ -687,10 +1591,52 @@ The IT Department shall disable information system accounts within the following
 
 \series bold
 \lang english
-Termination or Transfer
+Involuntary Termination
 \series default
 :
- Within 24 hours of notification from Human Resources.
+ Within thirty (30) minutes of notification from Human Resources per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Standard Termination
+\series default
+:
+ Within twenty-four (24) hours of notification from Human Resources per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5,
+ consistent with CJIS Security Policy v6.0:
+ Section PS-4 (Personnel Termination).
 \end_layout
 
 \begin_layout Itemize
@@ -700,7 +1646,40 @@ Termination or Transfer
 High-Risk Individuals
 \series default
 :
- Within 30 minutes of discovery for individuals posing a direct threat to CJI.
+ Within thirty (30) minutes of notification from Human Resources per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5 for individuals meeting the High-Risk Individual definition in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.7,
+ or within thirty (30) minutes of independent discovery by the IT Director (as LASO),
+ consistent with CJIS Security Policy v6.0:
+ Section AC-2(13) (Disable Accounts for High-Risk Individuals).
 \end_layout
 
 \begin_layout Itemize
@@ -720,136 +1699,210 @@ Expired or Unauthorized Accounts
 Inactivity
 \series default
 :
- The information system shall automatically disable accounts after 30 calendar days of inactivity.
- This standard exceeds the CJIS minimum of 90 days and is adopted as a stricter Elko County internal control.
+ After thirty (30) calendar days of inactivity.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Rationale
+\series default
+:
+ This threshold exceeds the CJIS Security Policy v6.0 Section AC-2(3) minimum of ninety (90) days and is adopted as a stricter Elko County internal control.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 
 \lang english
-Information Operations shall manage identifiers (usernames) such that identifiers shall not be reused for a minimum of one (1) year following the disablement or removal of the previous account.
+Upon notification of a personnel transfer,
+ the Assistant IT Director shall modify access authorizations within twenty-four (24) hours to conform with the least privilege and need-to-know principles defined in Section 6.3 and the recertification obligations defined in Section 6.9,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5 and CJIS Security Policy v6.0:
+ Section PS-5 (Personnel Transfer).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Clarification
+\series default
+:
+ Transfer shall not trigger automatic account disablement.
+ The control objective is to align authorizations with the new role,
+ not to terminate the identity.
+\end_layout
+
+\end_deeper
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall manage user identifiers such that identifiers are not reused for a minimum of one (1) year following disablement or removal of the previous account,
+ consistent with CJIS Security Policy v6.0:
+ Section IA-4 (Identifier Management).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shared and group accounts are prohibited unless a documented operational necessity is approved by the IT Director.
- 
+All County Personnel shall not use shared or group accounts except where the IT Director has approved a documented operational necessity in writing.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-When shared or group account membership changes,
- the associated authenticators (passwords) shall be changed within 24 hours.
+The Assistant IT Director shall ensure that the associated authenticator is changed within twenty-four (24) hours whenever shared or group account membership changes.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 
 \lang english
-Temporary and emergency accounts shall be automatically removed or disabled within 72 hours of creation unless a longer window is approved as an exception.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.2.
- Separation of Duties
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-The IT Department shall separate duties to reduce the risk of fraud or malevolent activity without collusion.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Personnel administering access controls shall not be the same individuals administering the audit functions for those systems.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Where staffing constraints prevent technical separation,
- compensating controls—
-such as independent administrative review—
-shall be documented and approved by the IT Director.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.3.
- Least Privilege
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Access shall be restricted to the minimum privileges required for assigned job duties.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Privileged accounts shall be used strictly for administrative functions and shall not be used for routine activities such as email or general web browsing
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-The information system shall prevent non-privileged users from executing privileged functions,
- including the disablement or circumvention of security safeguards.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.4.
- Unsuccessful Logon Attempts
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-To prevent brute-force attacks,
- the information system shall enforce a limit of 
+The Assistant IT Director shall ensure that temporary and emergency accounts are automatically removed or disabled within seventy-two (72) hours of creation unless a longer duration is approved as an exception under 
 \series bold
-five (5)
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
- consecutive invalid logon attempts within a 15-minute period.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-For systems processing CJI,
- accounts shall remain locked until released by an authorized administrator.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Automatic unlock is prohibited for CJI systems unless approved by the CSO for a documented operational mission need.
+ §6.6.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.5.
- System Use Notification
+6.2 Separation of Duties
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Separation of duties requirements applicable to access control are governed under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Delegation of Authority and Decision Rights) §6.6,
+ including the separation of access approval from access provisioning,
+ the separation of security administration from audit logging,
+ the Separation of Duties Matrix,
+ and the compensating controls pattern for situations where staffing constraints prevent technical separation.
+ This policy does not restate those requirements.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Least Privilege
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Before granting access,
- the information system shall display a notification banner stating:
+The Assistant IT Director shall ensure that access is restricted to the minimum privileges required for assigned job duties,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-6 (Least Privilege).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All County Personnel holding privileged accounts shall use such accounts strictly for administrative functions and shall not use them for routine activities such as email or general web browsing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that information systems prevent non-privileged users from executing privileged functions,
+ including the disablement or circumvention of security safeguards,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-3 (Access Enforcement).
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Unsuccessful Logon Attempts
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that information systems enforce a limit of five (5) consecutive invalid logon attempts within a fifteen (15)-minute period,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-7 (Unsuccessful Logon Attempts).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that accounts on systems processing CJI remain locked until released by the IT Director (as LASO) or by administrative personnel acting under the IT Director's direction.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that CJI systems do not perform automatic unlock except where the CJIS Systems Officer (CSO) has approved a documented operational mission need in writing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director (as LASO) shall retain any CSO-approved automatic-unlock authorization for audit.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.5 System Use Notification
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that information systems display a notification banner before granting access,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-8 (System Use Notification).
+ The banner shall state each of the following:
 \end_layout
 
 \begin_deeper
@@ -870,13 +1923,14 @@ System usage may be monitored,
 \begin_layout Itemize
 
 \lang english
-Unauthorized use is prohibited and subject to criminal/civil penalties.
+Unauthorized use is prohibited and subject to criminal and civil penalties.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Use of the system indicates consent to monitoring with no expectation of privacy.
+Use of the system indicates consent to monitoring and recording,
+ and users shall have no expectation of privacy.
 \end_layout
 
 \end_deeper
@@ -889,115 +1943,119 @@ The banner shall remain on screen until the user takes an explicit action to ack
 \begin_layout Subsubsection*
 
 \lang english
-6.6.
- Device Lock and Session Management
+6.6 Device Lock and Session Management
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The information system shall automatically initiate a device lock after 15 minutes of inactivity.
+The Assistant IT Director shall ensure that information systems automatically initiate a device lock after fifteen (15) minutes of inactivity,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-11 (Device Lock).
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
+\series bold
 \lang english
-The lock shall conceal previously visible information with a pattern-hiding display.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Remote access sessions that authenticate via password shall automatically terminate or require re-authentication after twelve (12) hours of duration or 15 minutes of inactivity.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Remote access sessions that authenticate via certificate (mobile data terminals) are exempt from VPN inactivity timeouts for officer safety.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Remote access sessions utilizing certificate-based authentication on devices located within a secure Criminal Justice Conveyance (e.g.,
- patrol vehicles) are exempt from the 15-minute VPN inactivity timeout to ensure officer safety.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.7.
- Remote Access
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-All remote access to Elko County information systems shall be authorized,
- monitored,
- and routed through a County-managed access control point (VPN).
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Multi-Factor Authentication (MFA),
- compliant with CJIS Advanced Authentication standards,
- is mandatory for all remote access and all privileged access.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Remote access communications shall be protected using FIPS 140-validated cryptographic modules.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.8.
- Wireless Access
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Wireless access to the internal network must be explicitly authorized and shall use WPA2/3 Enterprise authentication and encryption.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Guest wireless networks shall be logically and/or physically separated from any environment processing CJI or sensitive County data.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.9.
- Periodic Access Recertification
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-To ensure access privileges remain commensurate with assigned duties and current business need,
- the IT Department shall conduct periodic access recertification reviews.
- Data Owners shall validate that personnel under their authority retain a legitimate need-to-know for the access granted.
- IT Administrators shall disable or modify accounts where the Data Owner cannot confirm continued business need.
+Rationale
+\series default
+:
+ This threshold exceeds the CJIS Security Policy v6.0 Section AC-11 (Device Lock) maximum of thirty (30) minutes and is adopted as a stricter Elko County internal control.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Restricted Systems (Level 4)
+Exception
 \series default
 :
- Access to systems processing,
- storing,
- or transmitting Criminal Justice Information (CJI) or other Restricted data (as defined in 
+ Devices meeting the exemption conditions defined in CJIS Security Policy v6.0:
+ Section AC-11 (Device Lock) NOTE are exempt from the fifteen (15)-minute device lock requirement.
+ The exemption applies to devices that are part of a Criminal Justice Conveyance,
+ devices used to perform dispatch functions within a physically secure location,
+ and receive-only terminals used within physically secure location facilities that remain staffed when in operation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that the device lock conceals previously visible information with a pattern-hiding display.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that the device lock remains engaged until the user re-authenticates.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that information systems automatically terminate remote access sessions authenticating via password,
+ or require re-authentication,
+ after twelve (12) hours of duration or fifteen (15) minutes of inactivity,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-12 (Session Termination) and Section IA-11 (Re-Authentication).
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Remote Access
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall authorize each type of remote access to County information systems prior to allowing such connections,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-17 (Remote Access).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that all remote access is routed through a County-managed access control point.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall monitor all remote access connections.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director (as LASO) shall require Multi-Factor Authentication (MFA) for all remote access and all privileged access,
+ consistent with CJIS Security Policy v6.0:
+ Section IA-2(1) (Multi-Factor Authentication to Privileged Accounts) and Section IA-2(2) (Multi-Factor Authentication to Non-Privileged Accounts).
+ Authenticator mechanics are governed under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that remote access communications are protected using cryptographic modules meeting the validation requirements defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1012,8 +2070,106 @@ nolink "false"
 
 
 \series default
-) shall be recertified at least quarterly.
- This cadence aligns with the quarterly risk assessment review cycle for CJI and Critical systems defined in Policy 1.09.
+ §6.5.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.8 Wireless Access
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall authorize each type of wireless access prior to allowing such connections,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-18 (Wireless Access).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that authorized wireless access to the internal network uses WPA2 or WPA3 Enterprise authentication and encryption.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure that guest wireless networks are logically or physically separated from any environment processing CJI or any other data classified as Confidential or Restricted under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.9 Periodic Access Recertification
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+To ensure access privileges remain commensurate with assigned duties and current business need,
+ the Assistant IT Director shall operate a periodic access recertification program.
+ Department Heads shall validate that personnel under their authority retain a legitimate need-to-know for the access granted.
+ The Assistant IT Director shall disable or modify accounts where the Department Head cannot confirm continued business need.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Restricted Systems (Level 4)
+\series default
+:
+ Access to systems processing,
+ storing,
+ or transmitting Criminal Justice Information (CJI) or other Restricted data as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.5 shall be recertified at least quarterly.
+ This cadence aligns with the quarterly risk assessment review cycle for CJI and Critical systems defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy) §6.5.
 \end_layout
 
 \begin_layout Itemize
@@ -1023,7 +2179,22 @@ nolink "false"
 Confidential Systems (Level 3)
 \series default
 :
- Access to systems storing or processing Confidential data shall be recertified at least semi-annually.
+ Access to systems storing or processing Confidential data as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.4 shall be recertified at least semi-annually.
 \end_layout
 
 \begin_layout Itemize
@@ -1033,9 +2204,24 @@ Confidential Systems (Level 3)
 Internal Use and Public Systems (Levels 1–2)
 \series default
 :
- Access shall be recertified at least annually,
+ Access to systems classified at Internal Use or Public under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ §6.2 and §6.3 shall be recertified at least annually,
  consistent with CJIS Security Policy v6.0:
- Section AC-6(7).
+ Section AC-6(7) (Review of User Privileges).
 \end_layout
 
 \begin_layout Itemize
@@ -1047,7 +2233,7 @@ Privileged Accounts
 :
  All privileged access (Tier L3 and above) shall be recertified at least semi-annually,
  regardless of system classification,
- to validate continued operational need and compliance with 
+ to validate continued operational need and compliance with the competency maintenance requirements defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1062,7 +2248,9 @@ nolink "false"
 
 
 \series default
- competency maintenance requirements.
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework) §6.1.
 \end_layout
 
 \begin_layout Itemize
@@ -1073,13 +2261,14 @@ Recertification Triggers
 \series default
 :
  In addition to the scheduled cadence,
- an access recertification review shall be initiated within five (5) business days following a significant organizational change (e.g.,
- departmental reorganization,
+ the Assistant IT Director shall initiate a recertification review within five (5) business days following a significant organizational change,
+ including departmental reorganization,
  system migration,
- or material change to a Data Owner's scope),
+ or material change to a Department Head's scope,
  consistent with NIST SP 800-53 Rev.
  5:
- AC-2.
+ AC-2 (Account Management) and CJIS Security Policy v6.0:
+ Section AC-2 (Account Management).
 \end_layout
 
 \begin_layout Itemize
@@ -1089,9 +2278,26 @@ Recertification Triggers
 Documentation
 \series default
 :
- Recertification results shall be documented in the Department's designated system of record.
- Accounts not recertified within the required timeframe shall be suspended until the review is completed.
- Recertification records shall be retained in accordance with 
+ The Assistant IT Director shall maintain the documentation of access recertification results as follows.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall document recertification results in the Department's system of record.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall suspend accounts not recertified within the required timeframe until the review is completed.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall retain recertification records in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1106,8 +2312,10 @@ nolink "false"
 
 
 \series default
- and applicable Nevada retention schedules.
+ §6.9.
 \end_layout
+
+\end_deeper
 
 \end_body
 \end_document
