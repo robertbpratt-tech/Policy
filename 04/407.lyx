@@ -689,7 +689,7 @@ nolink "false"
 
 
 \series default
- (Incident Response Policy Overview) §6.1 —
+ (Incident Response Policy Overview) —
  participates in the postmortem meeting as a mandatory attendee.
 \end_layout
 
@@ -729,7 +729,7 @@ nolink "false"
 \series default
  (Policy Implementation,
  Enforcement,
- and Legal Alignment) §6.6.
+ and Legal Alignment).
 \end_layout
 
 \end_deeper
@@ -768,7 +768,7 @@ nolink "false"
 
 
 \series default
- (Communication Protocols and Partner Integration) Section 6.10 and shall ensure its inclusion in the internal postmortem report.
+ (Communication Protocols and Partner Integration) and shall ensure its inclusion in the internal postmortem report.
 \end_layout
 
 \begin_layout Itemize
@@ -968,7 +968,7 @@ nolink "false"
 
 
 \series default
- §6.6.
+.
  No open-ended exceptions are permitted.
  All approved exceptions shall be documented and time-bounded.
  Oral exceptions are not valid.
@@ -1561,7 +1561,7 @@ nolink "false"
 
 
 \series default
- (Recovery Operations and Restoration Prioritization) Section 6.6.
+ (Recovery Operations and Restoration Prioritization).
  The trigger shall be documented in the incident work order Notes and the Chapter 4 checklist at the time it is made.
 \end_layout
 
@@ -1739,7 +1739,7 @@ nolink "false"
 
 
 \series default
- Section 6.10,
+,
  including internal status updates,
  external notifications,
  partner engagement records,
@@ -1965,7 +1965,7 @@ nolink "false"
 
 
 \series default
- Section 6.11.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2021,7 +2021,7 @@ nolink "false"
 
 
 \series default
- Section 6.8 prior to distribution.
+ prior to distribution.
  Distribution of the external derivative constitutes a Post-Incident and Post-Handback Communication as defined in 
 \series bold
 Policy 
@@ -2037,7 +2037,7 @@ nolink "false"
 
 
 \series default
- Section 6.2 and shall be documented in the incident work order.
+ and shall be documented in the incident work order.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2204,7 +2204,7 @@ nolink "false"
 
 
 \series default
- (Identification and Reporting Procedures) Section 6.1.
+ (Identification and Reporting Procedures).
 \end_layout
 
 \begin_layout Itemize
@@ -2359,7 +2359,7 @@ nolink "false"
 
 
 \series default
- Section 6.1.
+.
  That determination is an IT Director governance decision;
  it is not a mechanical output of the postmortem process.
  This policy does not open 
@@ -2398,7 +2398,7 @@ nolink "false"
 
 
 \series default
- (Operational Incident Management Policy) §6.8 establishes the Critical Incident Stakeholder Report as the formal reporting instrument for Critical severity operational incidents.
+ (Operational Incident Management Policy) establishes the Critical Incident Stakeholder Report as the formal reporting instrument for Critical severity operational incidents.
  That instrument is distinct from this policy's cybersecurity postmortem and the two are not interchangeable.
  The stakeholder report governs operational accountability reporting;
  this policy governs cybersecurity incident lessons learned.
