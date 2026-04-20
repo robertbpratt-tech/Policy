@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -1045,6 +1045,28 @@ nolink "false"
  The Assistant IT Director shall present the catalog for IT Director review and approval no less than annually and following any significant change to the County's technology environment,
  contract portfolio,
  or vendor relationships.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Asset Catalog is the authoritative software authorization register for the Elko County IT environment.
+ Software titles and SaaS entitlements not enumerated in the IT Asset Catalog are subject to the Unauthorized Presence enforcement defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ Section 6.5.
 \end_layout
 
 \begin_layout Subsubsection*
