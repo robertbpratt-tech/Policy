@@ -478,7 +478,7 @@ nolink "false"
 
 
 \series default
- (Data Governance and Classification Policy) §6.11,
+ (Data Governance and Classification Policy),
  execute CJIS Security Policy obligations that attach to privacy incidents involving CJI.
 \end_layout
 
@@ -500,7 +500,7 @@ nolink "false"
 
 
 \series default
- (Communication Protocols and Partner Integration) §6.5.
+ (Communication Protocols and Partner Integration).
 \end_layout
 
 \begin_layout Itemize
@@ -540,7 +540,7 @@ nolink "false"
 \series default
  (Policy Implementation,
  Enforcement,
- and Legal Alignment) §6.6.
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -830,7 +830,7 @@ nolink "false"
 
 
 \series default
- §6.6.
+.
  Oral exceptions are not valid.
 \end_layout
 
@@ -1315,7 +1315,7 @@ nolink "false"
 
 
 \series default
- §6.7 when the new classification is Confidential or Restricted.
+ when the new classification is Confidential or Restricted.
 \end_layout
 
 \begin_layout Itemize
@@ -1387,7 +1387,7 @@ nolink "false"
 
 
 \series default
- §6.9.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1423,7 +1423,7 @@ nolink "false"
 
 
 \series default
- (Delegation of Authority and Decision Rights) §6.2.
+ (Delegation of Authority and Decision Rights).
 \end_layout
 
 \begin_layout Itemize
@@ -1447,7 +1447,7 @@ nolink "false"
 
 
 \series default
- (IT Project Management Policy) §6.3 invokes PIA as a charter-approval package requirement when the project data-handling trigger fires.
+ (IT Project Management Policy) invokes PIA as a charter-approval package requirement when the project data-handling trigger fires.
 \end_layout
 
 \begin_layout Itemize
@@ -1472,7 +1472,7 @@ nolink "false"
 
 
 \series default
- (Data Governance and Classification Policy) §6.9.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1542,7 +1542,7 @@ nolink "false"
 
 
 \series default
- §6.6.
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1557,7 +1557,7 @@ Data at Rest
 :
  All Information Operations Personnel shall encrypt CJI,
  PII,
- and PHI at rest in accordance with 
+ and PHI at rest in accordance with the Confidential and Restricted data requirements defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1572,22 +1572,7 @@ nolink "false"
 
 
 \series default
- §6.4 (Confidential data) and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.11"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- §6.5 (Restricted data).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1598,7 +1583,7 @@ Data in Transit
 :
  All Information Operations Personnel shall encrypt CJI,
  PII,
- and PHI in transit in accordance with 
+ and PHI in transit in accordance with the Confidential and Restricted data requirements defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1613,22 +1598,7 @@ nolink "false"
 
 
 \series default
- §6.4 (Confidential data) and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.11"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- §6.5 (Restricted data).
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1653,7 +1623,7 @@ nolink "false"
 
 
 \series default
- (Policy Review and Update Procedures) §6.1.
+ (Policy Review and Update Procedures).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1793,7 +1763,7 @@ nolink "false"
 
 
 \series default
- (Identification and Reporting Procedures) §6.2.
+ (Identification and Reporting Procedures).
 \end_layout
 
 \begin_layout Itemize
@@ -1817,7 +1787,7 @@ nolink "false"
 
 
 \series default
- §6.6.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1850,7 +1820,7 @@ nolink "false"
 
 
 \series default
- (Communication Protocols and Partner Integration) §6.5.
+.
 \end_layout
 
 \end_body
