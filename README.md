@@ -64,6 +64,6 @@
 | 5.06 | Vendor Compliance and Third-Party Assurance | o |
 | 5.07 | Annual Policy Review and Maturity Scoring | o |
 | 6.01 | Glossary and Definitions | o |
-| 6.02 | Policy Matrix | - |
+| 6.02 | Policy Matrix | o |
 | 6.03 | Workforce Roles STAK Matrix | o |
-| 6.04 | Revision History and Version Control | - |
+| 6.04 | Revision History and Version Control | x |

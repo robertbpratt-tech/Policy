@@ -265,7 +265,8 @@ Version
  appendix,
  or manual as a result of the change,
  following the increment rules defined below.
- RETIRE entries shall record the Version field as an em-dash ("—"),
+ RETIRE entries shall record the Version field as an em-dash ("—
+"),
  indicating that no forward version exists.
 \end_layout
 
@@ -381,7 +382,7 @@ The IT Director shall determine whether a change warrants a major or minor versi
 
 \series bold
 \lang english
-Major Version Increment (X.0)
+Major Version Increment (X.00)
 \series default
 :
  Structural changes to a policy or appendix,
@@ -394,7 +395,7 @@ Major Version Increment (X.0)
 
 \series bold
 \lang english
-Minor Version Increment (x.Y)
+Minor Version Increment (x.YY)
 \series default
 :
  Tightening of existing directives without substantive change,
