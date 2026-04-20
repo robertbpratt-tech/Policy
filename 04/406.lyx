@@ -628,7 +628,7 @@ nolink "false"
 
 
 \series default
- (Data Governance and Classification Policy) §6.11,
+ (Data Governance and Classification Policy),
  execute all CJIS Security Policy Section IR-6 Part (b) external notification obligations in accordance with Section 6.4 and the notification windows established in 
 \series bold
 Policy 
@@ -644,7 +644,7 @@ nolink "false"
 
 
 \series default
- (Identification and Reporting Procedures) §6.6.
+ (Identification and Reporting Procedures).
 \end_layout
 
 \begin_layout Itemize
@@ -717,7 +717,7 @@ nolink "false"
 
 
 \series default
- (Postmortem Review and Lessons Learned) in accordance with Section 6.10.
+ (Postmortem Review and Lessons Learned).
 \end_layout
 
 \end_deeper
@@ -963,7 +963,7 @@ nolink "false"
 
 
 \series default
- §6.6,
+,
  within the delegation constraints of 
 \series bold
 Policy 
@@ -1651,7 +1651,7 @@ nolink "false"
 
 
 \series default
- Section 6.4 and is restated here in operational terms for personnel and external reviewers who may not have access to the full ECIO Policy Manual.
+ and is restated here in operational terms for personnel and external reviewers who may not have access to the full ECIO Policy Manual.
 \end_layout
 
 \begin_layout Standard
@@ -2099,7 +2099,7 @@ nolink "false"
 
 
 \series default
- Section 6.6 govern the maximum time permitted from declaration to external notification execution.
+ govern the maximum time permitted from declaration to external notification execution.
  Those windows are consumed by this policy without modification.
  All notification windows are measured in continuous calendar hours.
  No business-hours qualification applies,
@@ -2333,7 +2333,7 @@ nolink "false"
 
 
 \series default
- §6.2.
+.
 \end_layout
 
 \begin_layout Standard
@@ -2697,7 +2697,7 @@ nolink "false"
 
 
 \series default
- §6.6.
+.
 \end_layout
 
 \begin_layout Standard
@@ -2978,7 +2978,7 @@ nolink "false"
 
 
 \series default
- Section 6.1 apply to incident work order documentation under this policy.
+ apply to incident work order documentation under this policy.
  Information Operations personnel shall use Private Notes only for the authorized purposes defined in that section.
 \end_layout
 
@@ -3036,7 +3036,7 @@ nolink "false"
 
 
 \series default
- §6.6 and is restated here for external readers.
+ and is restated here for external readers.
 \end_layout
 
 \begin_layout Subsubsection*
