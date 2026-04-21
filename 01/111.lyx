@@ -692,7 +692,7 @@ nolink "false"
 
 
 \series default
- Section 6.6,
+,
  within delegated authority under 
 \series bold
 Policy 
@@ -735,7 +735,7 @@ nolink "false"
 
 
 \series default
- Section 6.6.
+.
 \end_layout
 
 \end_deeper
@@ -2123,7 +2123,7 @@ nolink "false"
 
 
 \series default
- Section 6.2.
+.
 \end_layout
 
 \end_body
