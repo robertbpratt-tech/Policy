@@ -628,7 +628,7 @@ nolink "false"
 
 \series default
  (Knowledge Management Policy) for documented workarounds before escalating any incident,
- as required by Section 6.3.
+ as required by Section 6.3 of this policy.
 \end_layout
 
 \begin_layout Itemize
@@ -652,8 +652,7 @@ nolink "false"
 
 
 \series default
- (Standard Operating Ethos),
- Section 6.4.
+ (Standard Operating Ethos).
 \end_layout
 
 \begin_layout Itemize
@@ -792,8 +791,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6.
+.
  Oral exceptions are not valid.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline.
@@ -1461,7 +1459,7 @@ nolink "false"
 ,
 
 \series default
- Section 6.2 apply:
+ apply:
  incidents identified through any channel — user report,
  helpdesk contact,
  direct technician observation,
@@ -1518,8 +1516,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.3.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1653,8 +1650,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.4.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2068,8 +2064,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.5.
+.
  These are related but distinct mechanisms.
  The 
 \series bold
