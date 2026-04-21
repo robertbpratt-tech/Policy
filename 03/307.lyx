@@ -306,8 +306,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -341,7 +340,7 @@ nolink "false"
 
 
 \series default
- (Knowledge Management Policy) where required by Section 6.5.
+ (Knowledge Management Policy) where required by Section 6.5 of this policy.
 \end_layout
 
 \end_deeper
@@ -374,7 +373,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.6 and shall notify the IT Director when a Problem record is opened.
+ and shall notify the IT Director when a Problem record is opened.
 \end_layout
 
 \begin_layout Itemize
@@ -454,7 +453,6 @@ nolink "false"
 
 \series default
  (Standard Operating Ethos),
- Section 6.4,
  within twenty-four (24) hours of each investigative action taken.
 \end_layout
 
@@ -593,8 +591,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6.
+.
  Oral exceptions are not valid.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline.
@@ -956,8 +953,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6.
+.
  The spawn trigger criteria and deadline are defined in 
 \series bold
 Policy 
@@ -974,7 +970,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.6 and shall not be restated here.
+ and shall not be restated here.
 \end_layout
 
 \begin_layout Itemize
@@ -999,8 +995,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6.
+.
  The pattern threshold,
  category matching rules,
  and rolling window are defined in 
@@ -1019,7 +1014,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.6 and shall not be restated here.
+ and shall not be restated here.
 \end_layout
 
 \begin_layout Itemize
@@ -1111,7 +1106,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.6 and the Deprecated Asset labor ceiling trigger defined in 
+ and the Deprecated Asset labor ceiling trigger defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1127,7 +1122,7 @@ nolink "false"
 
 \series default
  (Service Request Fulfillment Policy),
- Section 6.5 are related but distinct mechanisms.
+ are related but distinct mechanisms.
  The spawn trigger asks whether something is actively wrong with an asset or service.
  The Deprecated Asset trigger asks whether a Deprecated asset is failing with sufficient frequency to warrant accelerated replacement.
 \end_layout
@@ -1195,8 +1190,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.4.
+.
  Documentation shall be specific and sufficient to reconstruct the investigation by a subsequent reviewer who was not present.
  At minimum,
  the Problem record shall contain:
@@ -1566,8 +1560,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.3.
+.
  Unpublished workarounds are inaccessible to technicians during incident response.
 \end_layout
 
@@ -1700,8 +1693,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.5.
+.
  Upon the IT Director's closure of the Problem record,
  the Assistant IT Director shall notify all technicians with linked child work orders that the Parent Problem record has been closed and that child work orders are to be dispositioned in accordance with 
 \series bold
@@ -1719,7 +1711,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.5 — as either Duplicate or Resolved depending on whether end-system work was required.
+ — as either Duplicate or Resolved depending on whether end-system work was required.
  This notification shall occur no later than end of business on the day the Formal Closure Declaration is issued.
  Child work order dispositions shall be completed within two (2) business days of notification.
 \end_layout
@@ -1794,8 +1786,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.7.
+.
 \end_layout
 
 \begin_layout Itemize
