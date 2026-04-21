@@ -410,8 +410,7 @@ nolink "false"
 
 
 \series default
- (Service Catalog and SLA Policy),
- Section 6.2.
+ (Service Catalog and SLA Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -658,8 +657,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6.
+.
  Oral exceptions are not valid.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline.
@@ -1032,8 +1030,7 @@ nolink "false"
 
 
 \series default
- (Service Communications Policy),
- Section 6.1.
+ (Service Communications Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -1199,8 +1196,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.3.
+.
  Triage confirms or reclassifies the severity level,
  validates scope,
  identifies the applicable asset support classification,
@@ -1250,8 +1246,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.2.
+.
  No remediation shall be performed on Unsupported assets.
  The assigned technician or queue reviewer shall confirm the lifecycle status of Deprecated assets during triage and shall initiate the labor ceiling monitoring obligations defined in Section 6.5.
 \end_layout
@@ -1431,8 +1426,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.2.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1581,8 +1575,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.1.
+.
 \end_layout
 
 \begin_layout Standard
@@ -1695,8 +1688,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.7.
+.
 \end_layout
 
 \begin_layout Standard
@@ -1718,7 +1710,6 @@ nolink "false"
 
 \series default
 ,
- Section 6.1,
  and work order operational standards maintained in the System of Engagement.
  Private Notes are not a substitute for standard documentation and shall not be used to conceal routine work activity from the record.
  The assigned technician shall maintain subtasks,
@@ -1837,7 +1828,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.3 and Section 6.4 of this policy.
+ and Section 6.4 of this policy.
 \end_layout
 
 \begin_layout Subsubsection*
