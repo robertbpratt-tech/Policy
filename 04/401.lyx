@@ -843,7 +843,7 @@ nolink "false"
 
 \series default
  (Operational Incident Management Policy),
- Section 6.2 upon discovery of any Indicator of Compromise,
+ upon discovery of any Indicator of Compromise,
  without exception.
 \end_layout
 
@@ -1694,7 +1694,7 @@ nolink "false"
 
 
 \series default
- Section 6.3 and incorporated into Chapter 4 by reference without modification.
+ and incorporated into Chapter 4 by reference without modification.
 \end_layout
 
 \begin_layout Standard
@@ -1812,7 +1812,7 @@ nolink "false"
 
 
 \series default
- Section 6.2.
+.
 \end_layout
 
 \begin_layout Standard
@@ -2007,7 +2007,7 @@ nolink "false"
 
 
 \series default
- Section 6.2 and incorporated into this chapter by reference.
+ and incorporated into this chapter by reference.
 \end_layout
 
 \begin_layout Standard
