@@ -417,8 +417,7 @@ nolink "false"
 
 
 \series default
- (Service Request Fulfillment Policy),
- Section 6.5.
+ (Service Request Fulfillment Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -718,8 +717,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6.
+.
  Oral exceptions are not valid.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline.
@@ -1066,7 +1064,7 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1144,7 +1142,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.5 for the duration of the replacement window.
+ for the duration of the replacement window.
  Upon reaching the replacement deadline,
  the Assistant IT Director shall transition the asset to Unsupported status unless the IT Director has formally authorized an extension in writing,
  documented in the IT Asset Catalog with a new deadline and supporting rationale.
@@ -1165,8 +1163,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.5.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1456,7 +1453,7 @@ nolink "false"
 
 \series default
  (Operational Incident Management Policy),
- Section 6.2 is the sole mechanism under which the SLA obligations defined in this section are suspended for a work order.
+ is the sole mechanism under which the SLA obligations defined in this section are suspended for a work order.
  No other SLA suspension mechanism exists within the operational framework governed by this policy.
 \end_layout
 
@@ -1499,7 +1496,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.8 and shall document all actions taken during the after-hours response in the work order.
+ and shall document all actions taken during the after-hours response in the work order.
 \end_layout
 
 \begin_layout Standard
