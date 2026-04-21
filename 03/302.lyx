@@ -797,8 +797,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6.
+.
  Oral exceptions are not valid.
  No exception shall be granted on an open-ended basis;
  each exception shall specify a defined remediation timeline and any compensating measures in effect during the exception period.
@@ -1162,7 +1161,6 @@ nolink "false"
 
 \series default
  (Service Catalog and SLA Policy),
- Section 6.4,
  govern all timeframe calculations in this policy.
  Work order creation,
  documentation,
@@ -1703,8 +1701,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.6.
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1894,7 +1891,6 @@ nolink "false"
 
 \series default
 ,
- Section 6.6,
  the Information Operations Department shall maintain active monitoring of vendor adherence to those terms.
 \end_layout
 
@@ -1974,7 +1970,6 @@ nolink "false"
 
 \series default
 ,
- Section 6.9,
  and shall make them available to the IT Director and,
  where applicable,
  to the vendor compliance review process under 
@@ -2046,7 +2041,6 @@ nolink "false"
 
 \series default
 ,
- Section 6.6,
  the Assistant IT Director shall document vendor response and resolution performance by extracting and analyzing all available vendor communication timestamps,
  ticket histories,
  and resolution logs currently held within the work order system.
@@ -2095,8 +2089,7 @@ nolink "false"
 
 
 \series default
- (Operational Incident Management Policy),
- Section 6.6.
+ (Operational Incident Management Policy).
  The Recurring Ticket identifies user-centric recurrence patterns within a ninety (90) calendar day window for reporting purposes.
  The Recurring Incident Trigger identifies asset-centric failure patterns within a thirty (30) calendar day window for Problem investigation under 
 \series bold
@@ -2153,7 +2146,7 @@ nolink "false"
 
 \series default
 :
- The monthly and quarterly reports produced under Section 6.4 constitute the primary data feed from this policy into the organizational performance management function governed by 
+ The monthly and quarterly reports produced under Section 6.4 of this policy constitute the primary data feed from this policy into the organizational performance management function governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
