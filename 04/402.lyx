@@ -560,8 +560,7 @@ nolink "false"
 
 
 \series default
- (Incident Response Policy Overview),
- Section 6.1.
+ (Incident Response Policy Overview).
  IC designation does not transfer declaration authority,
  exception approval authority,
  or incident classification authority.
@@ -586,7 +585,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.1 and 
+ and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -674,8 +673,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.1.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -731,8 +729,7 @@ nolink "false"
 
 
 \series default
-,
- Section 6.1.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2273,7 +2270,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.1 and 
+ and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2583,7 +2580,7 @@ nolink "false"
 
 \series default
 ,
- Section 6.1 —
+ —
  High,
  Medium,
  or Low —
