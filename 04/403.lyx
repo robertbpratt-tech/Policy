@@ -334,7 +334,7 @@ nolink "false"
 
 
 \series default
- Section 6.2.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -951,7 +951,7 @@ nolink "false"
 
 
 \series default
- (Identification and Reporting Procedures) Section 6.4.
+ (Identification and Reporting Procedures).
 \end_layout
 
 \begin_layout Itemize
@@ -1059,7 +1059,7 @@ nolink "false"
 
 
 \series default
- Section 6.3.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1141,7 +1141,7 @@ nolink "false"
 
 
 \series default
- Section 6.6 and 
+ and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1783,7 +1783,7 @@ nolink "false"
 
 
 \series default
- Section 6.6.
+.
 \end_layout
 
 \begin_layout Standard
@@ -1932,7 +1932,7 @@ nolink "false"
 
 
 \series default
- Section 6.1.
+.
 \end_layout
 
 \begin_layout Standard
@@ -1960,7 +1960,7 @@ nolink "false"
 
 
 \series default
- Section 6.1.
+.
 \end_layout
 
 \begin_layout Standard
@@ -2141,7 +2141,7 @@ nolink "false"
 
 
 \series default
- Section 6.6) shall result in logical isolation within four (4) hours of detection if not remediated.
+) shall result in logical isolation within four (4) hours of detection if not remediated.
  When a mandatory isolation trigger applies,
  the IC shall document the triggering condition and the isolation action taken in the work order Notes.
 \end_layout
@@ -2180,7 +2180,7 @@ nolink "false"
 
 
 \series default
- Section 6.2.
+.
 \end_layout
 
 \begin_layout Standard
@@ -2201,7 +2201,7 @@ nolink "false"
 
 
 \series default
- Section 6.2 —
+ —
  which requires a technician who discovers an IoC to cease troubleshooting,
  preserve current system state,
  and await direction —
@@ -2231,7 +2231,7 @@ nolink "false"
 
 
 \series default
- (Audit Logging and Monitoring Policy) Section 6.7 is a standing constraint that applies to all personnel,
+ (Audit Logging and Monitoring Policy) is a standing constraint that applies to all personnel,
  including the Incident Commander,
  throughout the containment phase.
  No containment action shall destroy,
@@ -2290,7 +2290,7 @@ nolink "false"
 
 
 \series default
- Section 6.5,
+,
  restoring logging capability is a containment prerequisite.
  Containment perimeter integrity cannot be confirmed without functioning audit logs.
  The IC shall direct restoration of audit logging before declaring long-term containment stable.
@@ -2344,7 +2344,7 @@ nolink "false"
 
 
 \series default
- Section 6.2.
+.
  This authority requires no prior approval and shall be exercised at the time of action.
 \end_layout
 
@@ -2449,7 +2449,7 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
 \end_layout
 
 \begin_layout Standard
@@ -2470,7 +2470,7 @@ nolink "false"
 
 
 \series default
- Section 6.6,
+,
  the IC shall ensure the County Manager is notified no later than four (4) hours after implementation begins.
 \end_layout
 
@@ -2589,7 +2589,7 @@ nolink "false"
 
 
 \series default
- Section 6.6 continues running during containment.
+ continues running during containment.
  Containment activities do not pause or satisfy external notification obligations.
  The notification windows defined in 
 \series bold
@@ -2606,7 +2606,7 @@ nolink "false"
 
 
 \series default
- Section 6.6 are not affected by the duration of the containment phase.
+ are not affected by the duration of the containment phase.
  External notification execution is governed by 
 \series bold
 Policy 
@@ -2644,7 +2644,7 @@ nolink "false"
 
 
 \series default
- Section 6.1 governs indicator review.
+ governs indicator review.
  The IC shall direct reversal of all containment actions taken,
  including rollback of isolated systems to operational status,
  restoration of disabled accounts,
@@ -2706,7 +2706,7 @@ nolink "false"
 
 
 \series default
- (Policy and Documentation Formatting Standards) Section 6.15.
+ (Policy and Documentation Formatting Standards).
  All six category playbooks shall be in force at v1.0 of this policy.
 \end_layout
 
@@ -2755,7 +2755,7 @@ nolink "false"
 
 
 \series default
- Section 6.1) modulates urgency and escalation thresholds within each category playbook.
+) modulates urgency and escalation thresholds within each category playbook.
  It does not alter the fundamental playbook structure.
  Each playbook's structure is consistent across severity tiers;
  the severity tier determines execution tempo and escalation trigger points.
