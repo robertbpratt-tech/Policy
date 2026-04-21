@@ -62,7 +62,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #6 | Product-name removal (Redmine) | 1.04, 1.08, 1.14, 3.01–3.17 | Open, absorbed-by-tightening | Multi-policy Redmine sweep. #7 (Office 365) and #10 (HID DigitalPersona) closed April 19 as duplicates of per-policy children #99 and #71 respectively; #8 closed previously. |
 | #353 | Set Header Date and Version to uniform `Effective: July 01, 2026 \| Version: 1.0` | Manual-wide | Open, phase-10-deferred | All policies; mechanical normalization at v1.0 declaration per Phase 10 step 3. Dormant until Phase 10 entry. |
 | #355 | Manual-wide LRDA citation verification sweep (numbers, titles, retention periods, NRS 239.125/NAC 239.155 companion citations) | Manual-wide | Open, phase-9-deferred | Scoped in §7 Open Questions for Phase 9: verification half → sub-phase 9A; companion-authority consistency → sub-phase 9B. Split into `phase-9a-intake` and `phase-9b-intake` child tickets at Phase 9 entry. Dormant until then. |
-| #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references | Manual-wide | Open, active-root | **First wave absorbed April 20, 2026 evening:** 13 child tickets (#360–#372) resolved against tightened peers (1.03, 1.06, 1.10, 1.13, 1.14, 2.01, 2.02, 2.06, 3.09, 3.10, 3.14, 4.06, 4.07). #374 (1.04 v1.4 §2 Out of Scope parentheticals) closed — resolved in commit `57cace1b70` prior to ripple filing. **Second wave pending:** #375 (1.04 v1.4 §6.15 — 4 cross-policy hits, deferred to dedicated 1.04 session per architectural-lock discipline) plus ~80 additional hits identified by scanner v5 across 11 untouched tightened policies (3.01, 3.02, 3.05, 3.06, 3.07, 3.11, 3.12, 3.13, 3.15, 3.16, 3.17). Second-wave remediation pivoted to **PDF-driven visual scan** per IT Director ruling April 20, 2026 — scanner-based filing retired due to regex-gap reliability. Rule #1 in §4 is the authoritative statement of the underlying rule. |
+| #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references | Manual-wide | Open, active-root | **First wave absorbed April 20, 2026 evening:** 13 child tickets (#360–#372) resolved against tightened peers (1.03, 1.06, 1.10, 1.13, 1.14, 2.01, 2.02, 2.06, 3.09, 3.10, 3.14, 4.06, 4.07). #374 (1.04 v1.4 §2 Out of Scope parentheticals) closed — resolved in commit `57cace1b70` prior to ripple filing. **Second wave filed April 20, 2026 (late evening):** PDF-driven visual scan surfaced 130 additional §6.X cross-policy hits across 21 tightened policies. 21 child tickets filed (#402–#422) — one per affected policy. #375 itself continues tracking 1.04 v1.4 §6.15 (4 hits, deferred to dedicated 1.04 session per architectural-lock discipline). Plus #423 (1.12) and #424 (3.02) filed as intra-policy disambiguation siblings to #378 (false-positives surfaced by scan; same pattern as 4.06). Untightened (D-state) policies 5.03/5.04/5.06/5.07 (34 hits combined) and Appendix 6.01 (30 hits) absorb into respective tightening/Phase 7 sessions — no new tickets for those. Scanner-based filing retired per IT Director ruling April 20, 2026 due to regex-gap reliability; PDF-driven scan is now the authoritative second-wave methodology. Rule #1 in §4 is the authoritative statement of the underlying rule. |
 
 ### Closed Roots
 
@@ -156,17 +156,17 @@ This session was cross-cutting maintenance, not a new tightening session. Applie
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 1.02 | Code of Ethics | T | — | 0 | — |
+| 1.02 | Code of Ethics | T+ | — | 1 | #402 |
 | 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — |
 | 1.04 | Formatting Standards | T+ | v1.4 | 1 | #375 |
-| 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — |
+| 1.05 | Policy Review and Update Procedures | T+ | v2.2 | 1 | #403 |
 | 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — |
 | 1.07 | Workforce Roles | T+ | v1.3 | 1 | #354 |
 | 1.08 | Delegation of Authority | T | v1.5 | 0 | — |
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
 | 1.10 | IT Financial / Procurement | T | v2.2 | 0 | — |
-| 1.11 | Data Governance and Classification | T | v2.3 | 0 | — |
-| 1.12 | IT Asset Management | T+ | v2.6 | 1 | #329 |
+| 1.11 | Data Governance and Classification | T+ | v2.3 | 1 | #404 |
+| 1.12 | IT Asset Management | T+ | v2.6 | 3 | #329, #405, #423 |
 | 1.13 | Supply Chain Risk Management | T | v2.2 | 0 | — |
 | 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
 
@@ -194,33 +194,33 @@ This session was cross-cutting maintenance, not a new tightening session. Applie
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 3.01 | Service Catalog and SLA | T | v2.4 | 0 | — |
-| 3.02 | Service Level Management | T+ | v2.5 | 1 | #309 |
+| 3.01 | Service Catalog and SLA | T+ | v2.4 | 1 | #406 |
+| 3.02 | Service Level Management | T+ | v2.5 | 3 | #309, #407, #424 |
 | 3.03 | Service Communication | T | v2.0 | 0 | — |
 | 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
-| 3.05 | Service Request Fulfillment | T+ | v2.1 | 1 | #308 |
-| 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #313 |
-| 3.07 | Problem Management | T+ | v2.2 | 1 | #316 |
-| 3.08 | CMDB | T | v2.2 | 0 | — |
+| 3.05 | Service Request Fulfillment | T+ | v2.1 | 2 | #308, #408 |
+| 3.06 | Operational Incident Management | T+ | v2.1 | 2 | #313, #409 |
+| 3.07 | Problem Management | T+ | v2.2 | 2 | #316, #410 |
+| 3.08 | CMDB | T+ | v2.2 | 1 | #411 |
 | 3.09 | Change Management | T | v2.0 | 0 | — |
 | 3.10 | Release and Deployment | T+ | v2.0 | 1 | #377 |
-| 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #317 |
-| 3.12 | Monitoring and Event Management | T+ | v2.0 | 1 | #318 |
-| 3.13 | Knowledge Management | T | v2.2 | 0 | — |
+| 3.11 | Capacity and Availability | T+ | v2.0 | 2 | #317, #412 |
+| 3.12 | Monitoring and Event Management | T+ | v2.0 | 2 | #318, #413 |
+| 3.13 | Knowledge Management | T+ | v2.2 | 1 | #414 |
 | 3.14 | IT Project Management | T | v2.2 | 0 | — |
-| 3.15 | Service Continuity | T+ | v2.1 | 2 | #314, #319 |
-| 3.16 | Service Improvement | T | v2.0 | 0 | — |
-| 3.17 | System Maintenance and Vendor Repairs | T | v2.1 | 0 | — |
+| 3.15 | Service Continuity | T+ | v2.1 | 3 | #314, #319, #415 |
+| 3.16 | Service Improvement | T+ | v2.0 | 1 | #416 |
+| 3.17 | System Maintenance and Vendor Repairs | T+ | v2.1 | 1 | #417 |
 
 ### Chapter 4 — Incident Response
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 4.01 | IR Policy Overview | T | v2.0 | 0 | — |
-| 4.02 | Identification and Reporting | T | v2.1 | 0 | — |
-| 4.03 | Containment Strategy and Playbooks | T | v2.1 | 0 | — |
-| 4.04 | Eradication | T | v2.2 | 0 | — |
-| 4.05 | Recovery and Restoration | T | v2.2 | 0 | — |
+| 4.01 | IR Policy Overview | T+ | v2.0 | 1 | #418 |
+| 4.02 | Identification and Reporting | T+ | v2.1 | 1 | #419 |
+| 4.03 | Containment Strategy and Playbooks | T+ | v2.1 | 1 | #420 |
+| 4.04 | Eradication | T+ | v2.2 | 1 | #421 |
+| 4.05 | Recovery and Restoration | T+ | v2.2 | 1 | #422 |
 | 4.06 | Communication Protocols | T+ | v2.2 | 1 | #378 |
 | 4.07 | Postmortem and Lessons Learned | T | v1.0 | 0 | — |
 
