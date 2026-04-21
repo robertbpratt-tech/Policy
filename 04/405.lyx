@@ -750,7 +750,7 @@ nolink "false"
 
 
 \series default
- Section 6.2 and does not transfer through IC designation.
+ and does not transfer through IC designation.
 \end_layout
 
 \end_deeper
@@ -1029,7 +1029,7 @@ nolink "false"
 
 
 \series default
-Section 6.6.
+.
 \end_layout
 
 \end_deeper
@@ -1940,7 +1940,7 @@ nolink "false"
 
 
 \series default
-Section 6.4 and is available in the work order Notes and Chapter 4 checklist:
+ and is available in the work order Notes and Chapter 4 checklist:
 \end_layout
 
 \begin_layout Itemize
@@ -2011,7 +2011,7 @@ nolink "false"
 
 
 \series default
-(Identification and Reporting Procedures) Section 6.6 continues running during recovery.
+(Identification and Reporting Procedures) continues running during recovery.
  Recovery activities do not pause or satisfy external notification obligations.
  External notification execution is governed by 
 \series bold
@@ -2049,7 +2049,7 @@ nolink "false"
 
 
 \series default
-Section 6.4.
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2099,7 +2099,7 @@ nolink "false"
 
 
 \series default
-(Service Continuity and Contingency Planning Policy) Section 6.4 establishes the authoritative asset criticality classification taxonomy used across the ECIO for continuity and recovery planning.
+(Service Continuity and Contingency Planning Policy) establishes the authoritative asset criticality classification taxonomy used across the ECIO for continuity and recovery planning.
  That taxonomy defines four classification classes:
  Tier 1 (Mission Critical),
  Tier 2 (Operationally Important),
@@ -2120,7 +2120,7 @@ nolink "false"
 
 
 \series default
-Section 6.2 produces the classification assignments,
+ produces the classification assignments,
  Recovery Time Objectives (RTOs),
  Recovery Point Objectives (RPOs),
  and recovery sequence priority order for each in-scope system.
@@ -2263,7 +2263,7 @@ nolink "false"
 
 
 \series default
-Section 6.2,
+,
  and following any Significant or Emergency Change as defined in 
 \series bold
 Policy 
@@ -2338,7 +2338,7 @@ nolink "false"
 
 
 \series default
-Section 6.4.
+.
 \end_layout
 
 \begin_layout Standard
@@ -2359,7 +2359,7 @@ nolink "false"
 
 
 \series default
-Section 6.4 three-state rule for Security Infrastructure sequencing applies to all Chapter 4 recovery operations.
+ three-state rule for Security Infrastructure sequencing applies to all Chapter 4 recovery operations.
  Under Chapter 4 authority,
  every incident is a known or suspected security event by definition.
  Security Infrastructure shall therefore recover concurrently with Tier 1 systems.
@@ -2701,7 +2701,7 @@ nolink "false"
 
 
 \series default
-Section 6.5.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2776,7 +2776,7 @@ nolink "false"
 
 
 \series default
-Section 6.2.
+.
  The concurrent documentation clock established in 
 \series bold
 Policy 
@@ -2792,7 +2792,7 @@ nolink "false"
 
 
 \series default
-(Containment Strategy and Playbooks) Section 6.3 and carried forward through 
+(Containment Strategy and Playbooks) and carried forward through 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2807,7 +2807,7 @@ nolink "false"
 
 
 \series default
-Section 6.3 applies to recovery actions without modification.
+ applies to recovery actions without modification.
 \end_layout
 
 \begin_layout Standard
@@ -2926,7 +2926,7 @@ nolink "false"
 
 
 \series default
- Section 6.6,
+,
  the IC shall notify the County Manager no later than four (4) hours after the action begins.
 \end_layout
 
@@ -3001,7 +3001,7 @@ nolink "false"
 
 
 \series default
-Section 6.7 governs the receiving obligations.
+ governs the receiving obligations.
 \end_layout
 
 \begin_layout Standard
@@ -3036,7 +3036,7 @@ nolink "false"
 
 
 \series default
-Section 6.4.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -3091,7 +3091,7 @@ nolink "false"
 
 
 \series default
-Section 6.7.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -3311,7 +3311,7 @@ nolink "false"
 
 
 \series default
-Section 6.4.
+.
 \end_layout
 
 \begin_layout Standard
