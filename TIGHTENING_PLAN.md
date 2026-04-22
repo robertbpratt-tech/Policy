@@ -30,6 +30,12 @@ The Recommended Sequence (§6) is advisory. Robert makes final sequencing calls 
 5. **Commit tightened LyX via API** — push the final LyX file to the repo and update the README.md to match. Confirm the version number in the metadata line matches what §5 will record. Robert syncs local repo afterward.
 6. **Verify synchronization** — the plan, the issue tracker, the repo LyX files, and the README.md shall agree.
 7. **Next session notice** — remind Robert of the next policy to tackle.
+8. **Compiled Manual**  — Rob needs to do the following on his computer, please remind him exactly:
+cd ~/Downloads/Policy && git pull
+lyx --export pdf Policy_Manual.lyx
+git add .
+git commit -m "Added compiled Policy Manual"
+git push
 
 ---
 
