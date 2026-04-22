@@ -117,12 +117,13 @@ Do not declare the session complete. Run the checklist, then ask: "Anything else
 
 1. File all ripple issues immediately. Never defer as a session note.
 2. Close resolved issues. Comment with resolution details. Update parent sweep tickets (#208, etc.) with per-policy notes.
-3. Update this plan: §5 (target state, version, ticket count) and §6 (mark completed entry). Update §5 rows for any policies receiving ripples. Push.
-4. Ask IT Director if the session is done. Continue only on confirmation.
-5. Commit tightened LyX via API. Update `README.md` to match. Verify version in the metadata line matches what §5 records. IT Director syncs local repo after.
-6. Verify synchronization: plan, issue tracker, repo LyX files, `README.md` — all agree.
-7. Remind IT Director of the next policy to tackle.
-8. Remind IT Director to compile the manual on his machine:
+3. File session archive. Title `[Archive] YYYY-MM-DD — Policy X.YY vZ.Z` (or descriptor for cross-cutting work). Label `session-archive`. Close as `not_planned`. Body: metadata (policy, version, tickets closed, ripples filed, declines promoted or held) + full narrative (architectural landings, validator rounds, rulings, standing-decline recurrences). Capture the issue number for step 4.
+4. Update this plan. §5: target state, version, ticket count; ripple impacts on other policies' rows. §6: mark completed entry with compressed summary ending `[Archive: #NNN]`. Push.
+5. Ask IT Director if the session is done. Continue only on confirmation.
+6. Commit tightened LyX via API. Update `README.md` to match. Verify version in the metadata line matches what §5 records. IT Director syncs local repo after.
+7. Verify synchronization: plan, issue tracker, repo LyX files, `README.md` — all agree.
+8. Remind IT Director of the next policy to tackle.
+9. Remind IT Director to compile the manual on his machine:
    ```
    cd ~/Downloads/Policy && git pull
    lyx --export pdf Policy_Manual.lyx
