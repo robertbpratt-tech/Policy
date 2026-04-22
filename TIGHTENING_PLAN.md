@@ -684,3 +684,33 @@ The manual reaches v1.0 when it satisfies all three of the following criteria. T
 If any of the five are missing for any directive, that is a v1.0 gap.
 
 **Residual work tolerance (revised April 19, 2026):** Under the April 19 scoping decision — v1.0 is fully formed from Zeus' head, no history, no baggage — there is no deferral bucket for development-era items. Every Phase 9 or Phase 10 finding either lands in LyX before declaration or is explicitly declined with rationale captured in the session record. The `1.04_Procedural_Cleanup` cluster is closed (§6 Phase 8 eliminated, April 16, 2026). Post-v1.0 maintenance exists only for genuinely forward-looking operational drivers — statutory amendments, framework revisions, organizational changes, operational challenges — not for deferred tightening work.
+
+---
+
+## §9. Named Constructs and Architectural Positions
+
+Cross-policy definitions Claude needs to preserve during tightening. Modifying a definition here without downstream audit breaks a pipeline.
+
+### §9.1 Core Architectural Positions
+
+- **Unitary IT Authority over IT Assets.** IT manages IT equipment, personnel, and decisions. Departments have no concurrent authority over IT assets regardless of funding source (including grant-funded equipment), department preference, or historical convention. Grant compliance is a constraint IT verifies against, not a departmental authority. Locked — do not propose mediating framings carving out departmental verification, approval, or custody roles.
+- **Policy 4.08 absorbed into 4.06.** 4.08 does not exist. Route all Communication Protocols references to 4.06.
+- **Exception Routing.** All policy exceptions route to 5.01 §6.6, regardless of the policy being deviated from. Policy 1.08 is a delegation ceiling constraint, not an exception path. Locked — do not propose re-routing exceptions through 1.08.
+- **LASO Designation.** Per 1.11 §6.11, the IT Director holds LASO by policy mandate. In body text of other policies, cite as "IT Director (as LASO)" when the CJIS liaison function is specifically invoked.
+
+### §9.2 Named Constructs
+
+Selection rule: include only constructs that cross multiple policies in non-obvious ways, where the row saves actual session work. Constructs cleanly defined in one policy without cross-policy complexity are not listed — fetch the defining policy when they come up.
+
+| Construct | Primary Definition | Cross-policy pattern / load-bearing notes |
+|---|---|---|
+| **IC Designation vs. Declaration Authority** | 4.01 §6.1 | Declaration Authority (who calls an incident) is narrow, defined by incident type. Designation Authority (who can be named IC) is broad — any Information Operations Personnel. Do not conflate. |
+| **IC Designee Clarifier + Non-Transfer Pattern** | 4.03 / 4.04 / 4.07 | Where a policy invokes IC responsibilities, cite as "IT Director or designee per 4.01 §6.1" with explicit non-transfer sub-bullet stating declaration authority does not transfer to designees. |
+| **Known Error Lifecycle** | 3.07 §6.5 → 3.13 → 3.06 §6.4 | Closed loop: Known Error declared and workaround documented (3.07) → Knowledge Base publication within 2 business days (3.13) → mandatory workaround search before escalation (3.06). |
+| **Deprecated Asset Labor Ceiling Trigger** | 3.05 §6.5 | 90-day window to evaluate accelerated replacement. Distinct from 30-day Recurring Incident trigger (3.06 / 3.07). Both may fire on the same asset simultaneously. |
+| **Directed Deputization** | 1.08 §6.2 | IT Director assigns specific authorities to named personnel for defined durations. Non-delegable list: policy exceptions, risk acceptance, IC declaration, self-access approval, SoD Matrix functions. 10-day lapse remediation window. HR notification via authoritative originator with emergency fallback. |
+| **Corrective Action Plan (CAP) Lifecycle** | 5.03 | Governs all remediation tracking manual-wide regardless of originating label. Intakes: 5.02 audit deficiencies, 3.02 sustained SLA non-compliance, 1.09 risk response remediation, 5.03 §6.5 compliance monitoring findings. |
+| **Annual Policy Review Report** | 5.07 | Capstone report. Consumes: 5.02 audit summary, 5.04 KPI data, 3.16 improvement summary, 5.03 open CAPs, 1.09 risk register, 5.01 enforcement records. Produces maturity tier assignments. Routes findings back through 5.03, 1.05, 3.16, 1.09. |
+| **SLA Suspension** | 3.01 | Only condition under which 3.01 SLA obligations suspend is Hard Fork transfer to Ch4 jurisdiction. No other suspension mechanism exists for routine 3.06 incidents. |
+
+Constructs added during tightening: append to §9.2 only if the row saves session work per the selection rule above. Construct definition changes: file a ripple against the defining policy; do not silently edit §9.2 ahead of the LyX change.
