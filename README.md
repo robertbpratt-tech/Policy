@@ -27,7 +27,7 @@
 | 2.08 | System Integrity and Malware Protection Policy | o |
 | 2.09 | Vulnerability and Patch Management Policy | o |
 | 2.10 | Secure Configuration Baselines and Hardening Policy | o |
-| 2.11 | Audit Logging and Monitoring Policy | o |
+| 2.11 | Audit Logging and Monitoring Policy | x |
 | 2.12 | Media Protection and Sanitization Policy | o |
 | 2.13 | Physical Security and Environmental Controls Policy | o |
 | 2.14 | Mobile Device and Remote Access Policy | o |
