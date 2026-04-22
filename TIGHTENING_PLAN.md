@@ -9,33 +9,127 @@ This plan is operational scaffolding for the tightening project. It is not a per
 
 ---
 
-## §1. How to Use This Plan
+## §1. Session Protocol
 
-At the start of every tightening session, fetch this file and check three things in order:
+### §1.1 Session Start
 
-1. **Architectural Roots** (§3) — has anything changed that affects what's safe to execute?
-2. **Standing Decline Patterns** (§4) — what cross-validator feedback should be reflexively declined?
-3. **Per-Policy Defect Inventory** (§5) — what's the current ticket list against the target policy?
+1. Fetch `TIGHTENING_PLAN.md`, `README.md`, and `01/104.lyx` from the repo.
+2. Check §3 (Architectural Roots). Anything changed that affects what's safe to execute?
+3. Check §4 (Standing Decline Patterns). Which validator findings get reflexive decline?
+4. Check §5 (Per-Policy Defect Inventory). What's the current ticket list against the target?
+5. Confirm the target policy. §6 (Recommended Sequence) names the next one; ask if that's the target or a different one.
+6. Fetch the target policy's LyX source. Read it in full before proposing anything.
+7. Inventory cross-references in §§1–4 and §6, and citations in §5, of the target policy.
+8. For each cross-reference that invokes a specific mechanism, threshold, trigger, or obligation — fetch the referenced policy's LyX source.
+9. For load-bearing external framework citations — fetch the authoritative source from `Reference/` if not already verified.
+10. Search GitHub for open tickets against the target. Use `state=open&per_page=100` across all pages; filter client-side by title tag. The search API is unreliable for policy-number string matches.
+11. Produce the Dependency Manifest (§1.4.1). Begin Tightening Pass (§1.2) after.
 
-The Recommended Sequence (§6) is advisory. Robert makes final sequencing calls per session.
+**Recalc markers.** §6 contains ◆ RECALCULATE SEQUENCE HERE ◆ markers. At a marker: re-run steps 2–4, refresh ticket counts against live GitHub, re-evaluate remaining sequence before starting new tightening work. Skipping is a process violation.
 
-**Recalculation markers.** This plan contains ◆ RECALCULATE SEQUENCE HERE ◆ markers in §6. They are hard checkpoints, not advisory. When a recalc marker is reached, the next session shall begin by re-running the architectural roots check, refreshing per-policy ticket counts against the current GitHub state, and re-evaluating the remaining sequence before starting any new tightening work. Skipping the recalc is a process violation.
+### §1.2 Tightening Pass
 
-**Session-close checklist.** Claude shall run through these items in order. Claude does not declare the session complete — Robert does. After completing the checklist, Claude asks: "Anything else, or are we done?"
+Run the five steps in order against the target policy. Every finding notes location, current text or condition, issue, and proposed fix. Cite GitHub ticket numbers for tracked defects.
 
-1. **File all ripple issues immediately** — never defer a ripple as a session note.
-2. **Close resolved issues** — comment with resolution details, then close. Update parent sweep tickets (#208, #8, etc.) with per-policy resolution notes.
-3. **Update and push this plan** — update §5 (target policy state, version, open ticket count) and §6 (mark the completed entry). If new ripples were filed against other policies, update their §5 rows. Push to repo.
-4. **Ask Robert if we're done** — do not declare session complete unilaterally. IF confirmed done, then we continue on the checklist.
-5. **Commit tightened LyX via API** — push the final LyX file to the repo and update the README.md to match. Confirm the version number in the metadata line matches what §5 will record. Robert syncs local repo afterward.
-6. **Verify synchronization** — the plan, the issue tracker, the repo LyX files, and the README.md shall agree.
-7. **Next session notice** — remind Robert of the next policy to tackle.
-8. **Compiled Manual**  — Rob needs to do the following on his computer, please remind him exactly:
-cd ~/Downloads/Policy && git pull
-lyx --export pdf Policy_Manual.lyx
-git add .
-git commit -m "Added compiled Policy Manual"
-git push
+#### §1.2.1 Structural Compliance (per Policy 1.04)
+
+- Six-section structure present and correctly ordered.
+- §1 Purpose follows template: 1–2 sentences, correct opening, no rationale, no filler.
+- §2 Scope uses In/Out Scope routing pointers in colon format (per 1.04 §6.4). No directives or enforcement language in §2.
+- §3 roles use defined positions from 1.07 or established institutional titles, descending authority order. Each obligation opens "Shall" + one directive.
+- §4 uses flat bolded-bullet-label structure. Assessment, Enforcement, Exceptions mandatory. Optional labels from the 1.04 §6.6 governed set only.
+- §5 split into Cited References and Framework Alignment per 1.04 §6.7. Categorical ordering per 1.04 §6.11. COBIT and ITIL default to Framework Alignment unless body-cited by identifier.
+- §6 uses decimal subsection notation (6.1, 6.2). No nesting beyond two levels.
+- List items end with terminal periods except §5 line items.
+- Bold labels followed by colons, not periods.
+
+#### §1.2.2 Language Audit
+
+- Scan §6 for prohibited terms per 1.04 §6.9.
+- Flag orphaned directives (no capitalized role anchor).
+- Flag passive voice that obscures responsibility. Propose active voice with role anchor.
+- Flag vague timeframes. Propose objective thresholds.
+- Verify time/quantity syntax (word + digit in parentheses) per 1.04 §6.10.
+- Audit-test every directive: "How would an auditor verify this?" If no answer, flag it.
+
+#### §1.2.3 Cross-Reference Integrity
+
+- Every policy or appendix cited by number in §§1–4 or §6 appears in §5 Cited References.
+- Nothing in Cited References is absent from body text.
+- Nothing in Framework Alignment is body-cited by identifier. If it is, promote to Cited.
+- First-use parenthetical titles on internal cross-references. Subsequent: short form only.
+- Cross-references use LyX `CommandInset ref` insets, not hard-coded plain text.
+- In-body cross-references (§§1–4, §6) are bolded (`\series bold`). §5 cross-references are not bolded.
+- Load-bearing external framework citations verified against the authoritative source in `Reference/`. No citation from memory.
+
+#### §1.2.4 Pipeline Coherence
+
+- Every invoked mechanism, threshold, trigger, or obligation from another policy verified against that policy's current LyX source.
+- One-way references that should be bidirectional — flag.
+- Content restated in both target and dependency (vs. defined once and incorporated by reference) — flag as dual-maintenance.
+- Stub-policy references (empty skeleton) — note as pending dependency. Don't try to resolve.
+
+#### §1.2.5 Substantive Tightening
+
+- Directive precision, scope clarity, enforceability.
+- Governance loops that can stall (circular approvals, missing escalation, undefined tiebreakers) — flag.
+- Obligations without defined non-compliance consequence or escalation path — flag.
+- Timeframes or thresholds inconsistent with the same item elsewhere in the manual — flag.
+- Role assignments conflicting with 1.07 scope or 1.08 delegation — flag.
+- Every proposed change justified by compliance gap, ambiguity, broken pipeline, or structural non-conformance. Style preference alone is insufficient.
+
+### §1.3 Cross-Validator Adjudication
+
+Validators do not have access to tightened source or this plan. Feedback is often stale or pre-tightening. Validator agreement is not evidence of correctness.
+
+For each validator finding:
+
+1. Verify the claim against current LyX source. Fetch fresh; in-context copies may be stale after prior same-session edits.
+2. Check §4 (Standing Decline Patterns). Reflexive decline if matched.
+3. Accept, decline, or modify with specific rationale. "Contradicts 1.04 §6.7" — yes. "Disagree" — no.
+4. New reflex pattern worth capturing? Surface for addition to §4 before session close.
+
+### §1.4 Output Format
+
+#### §1.4.1 Dependency Manifest
+
+List of LyX source files being fetched with a one-line reason per file. Delivered as fetch begins, before Tightening Pass.
+
+#### §1.4.2 Findings Summary
+
+Organized by the five Tightening Pass steps. Per finding: location (section + subsection), current text or condition, issue, proposed fix. Ticket numbers for tracked defects.
+
+#### §1.4.3 Ripple List
+
+Changes that would require updates in other policies. Per ripple: target policy, section, change required. Filed as GitHub issues before session close.
+
+#### §1.4.4 Clean Revised Draft
+
+Complete revised LyX source incorporating accepted changes. Produced only after findings review. IT Director may accept, reject, or modify findings before requesting the draft.
+
+#### §1.4.5 Next Session Recommendation
+
+1–3 policy candidates based on Ripple List and dependency connections surfaced this session. State reason per candidate. IT Director decides. Defer to any §6 recalc marker.
+
+### §1.5 Session Close
+
+Do not declare the session complete. Run the checklist, then ask: "Anything else, or are we done?"
+
+1. File all ripple issues immediately. Never defer as a session note.
+2. Close resolved issues. Comment with resolution details. Update parent sweep tickets (#208, etc.) with per-policy notes.
+3. Update this plan: §5 (target state, version, ticket count) and §6 (mark completed entry). Update §5 rows for any policies receiving ripples. Push.
+4. Ask IT Director if the session is done. Continue only on confirmation.
+5. Commit tightened LyX via API. Update `README.md` to match. Verify version in the metadata line matches what §5 records. IT Director syncs local repo after.
+6. Verify synchronization: plan, issue tracker, repo LyX files, `README.md` — all agree.
+7. Remind IT Director of the next policy to tackle.
+8. Remind IT Director to compile the manual on his machine:
+   ```
+   cd ~/Downloads/Policy && git pull
+   lyx --export pdf Policy_Manual.lyx
+   git add .
+   git commit -m "Added compiled Policy Manual"
+   git push
+   ```
 
 ---
 
