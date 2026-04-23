@@ -216,6 +216,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 28. **Gemini: specific numeric volume tiers for record counts in PIAs** — no Elko County benchmark exists; tier values shift between rounds. Current "approximate record count" is audit-testable without arbitrary structure. (origin: #432)
 29. **Cross-validator pushback on locked operational-reality decisions via cross-policy dependency citation** — file a ripple toward operational truth, don't reverse the decision. Distinct from #14 (stale source) and #22 (absence-of-evidence). 3+ rounds re-pushing = reflexive decline. (origin: #433)
 30. ~~**Surface-framing rotation on §2 parenthetical-title prohibition**~~ — **RETRACTED April 20, 2026.** Original decline misread 1.04 §6.11 exception clause as permissive; it is prohibitive. Gemini's finding was correct. Not a standing decline. (origin: #434)
+31. **ChatGPT: restore hardcoded FIPS 140-2/140-3 transition dates citing "other tightened policies" as precedent** — violates root #291 (CMVP by-reference). Claim that tightened peers carry FIPS transition language is stale source (pattern #14); grep-verify. Authoritative pattern is 1.11 v2.3 §6.5. (origin: 2.12 v2.3 session, pending archive)
 
 ---
 
@@ -223,9 +224,9 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 22, 2026 post-Phase 5B entry 29 (archive #435). Prior session archives: #427–#436 covering entries 21–29 plus the April 20 §6.X strip batch.
+**Last refreshed:** April 23, 2026 post-Phase 5B entry 30 (archive pending). Prior session archives: #427–#436 covering entries 21–29 plus the April 20 §6.X strip batch.
 
-**Phase 5B LASO queue status:** Entry 29 (2.11) complete. Entries 30 (2.12), 31 (2.13) remain. Recalc marker after entry 39 (end of 5C). **Next session: entry 30 — 2.12 (Media Protection and Sanitization).** 2.12 receives ripple #426 (1.12 log custody transfer) as intake and ripple #330 from 1.13 (SP 800-88 + sanitization authority). 2.12 open tickets: #94, #95, #228, #324, #330 (5 tickets).
+**Phase 5B LASO queue status:** Entries 29 (2.11), 30 (2.12) complete. Entry 31 (2.13) remains. Recalc marker after entry 39 (end of 5C). **Next session: entry 31 — 2.13 (Physical Security and Environmental Controls).** 2.13 open tickets: #96, #97, #98 (3 tickets).
 
 ### Chapter 0 / Front Matter
 
@@ -266,10 +267,12 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 2.09 | Vulnerability and Patch Management | D | — | 5 | #85, #86, #87, #271, #326 |
 | 2.10 | Secure Configuration Baselines | D | — | 4 | #88, #89, #90, #226 |
 | 2.11 | Audit Logging and Monitoring | T | v2.3, April 22 | 0 | — |
-| 2.12 | Media Protection and Sanitization | D | — | 5 | #94, #95, #228, #324, #330 |
+| 2.12 | Media Protection and Sanitization | T | v2.3, April 23 | 0 | — |
 | 2.13 | Physical Security | D | — | 3 | #96, #97, #98 |
 | 2.14 | Mobile and Remote Access | D | — | 5 | #99, #101, #102, #229, #332 |
 | 2.15 | Secure Software Lifecycle | D | — | 3 | #103, #104, #105 |
+
+**CSO-exception Constraint strip — pending #425 reframe (5.01 §6.6 clarifier):** Six untightened Chapter 2 policies carry blanket "CJI-involving exceptions require CSO approval" language in their §4 Exceptions blocks: **2.05, 2.07, 2.08, 2.09, 2.10, 2.14.** Ruling during 2.12 v2.3 session (April 23, 2026) established this pattern reflects CJIS-adjacent formality rather than operational workflow. Strip the blanket Constraint sub-bullet during each policy's tightening session; standard 5.01 §6.6 exception framework governs. Does NOT touch genuine CJIS-control-specific CSO clauses (CJIS IR-6 Part (b), PS-3 delegation, AC-7 authorization) in 1.11, 1.13, 1.14, 2.02, 2.04, 4.01, 4.02, 4.05, 4.06, 5.01.
 
 ### Chapter 3 — Service Management
 
@@ -426,7 +429,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 | 27 | ~~2.02 (Personnel Security)~~ — ✅ v2.4, April 19, 2026. Closed: #64, #217. Ripples: #354 (1.07 5-yr rescreening removal), #355 (manual-wide LRDA sweep), #356 (2.01 group label). Standing decline #29 promoted to §4. [Archive: #433] | 2 (#64, #217) | Personnel security feeds access control |
 | 28 | ~~2.04 (Access Control)~~ — ✅ v2.3, April 20, 2026. Closed: #69, #70. Ripple: #358 (2.02 Sanctions NRS overstatement). Standing decline #30 promoted then retracted April 20. [Archive: #434] | 2 (#69, #70) | Foundational — 2.05 I&A depends on it |
 | 29 | ~~2.11 (Audit Logging)~~ — ✅ v2.3, April 22, 2026. Closed: #91, #92. Ripples: #425 (5.01 §6.6 CJI-exception CSO-approval Constraint), #426 (1.12 §6.10 Log Custody Transfer). [Archive: #435] | 2 (#91, #92) | Consumed by many downstream policies |
-| 30 | 2.12 (Media Protection) | 3 | LASO + asset lifecycle tie to 1.12 |
+| 30 | ~~2.12 (Media Protection)~~ — ✅ v2.3, April 23, 2026. Closed: #94, #95, #228, #324, #330. Ripples: #425 reframed (5.01 §6.6 CJI-exception clarifier), #437 (1.04 §6.4 internal ref §6.9→§6.11). Standing decline #31 promoted (ChatGPT FIPS transition-date re-push). Pattern #21 meta-threshold triggered on §5 flat-list (3 validator rounds). 2.10 rewrite note landed via architectural ruling (drive-retention default). [Archive: pending] | 5 (#94, #95, #228, #324, #330) | LASO + asset lifecycle tie to 1.12 |
 | 31 | 2.13 (Physical Security) | 3 | Completes LASO group |
 
 #### 5C — Chapter 2 Remainder
