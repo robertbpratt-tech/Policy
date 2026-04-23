@@ -50,7 +50,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `01/101.lyx` | Department Mission and Strategic Objectives | T | — |  |
 | `01/102.lyx` | Code of Ethics and Professional Conduct | T | — |  |
 | `01/103.lyx` | Standard Operating Ethos | T | v2.0 |  |
-| `01/104.lyx` | Policy and Documentation Formatting Standards | T | v1.4 |  |
+| `01/104.lyx` | Policy and Documentation Formatting Standards | T+ | v1.4 | #437 |
 | `01/105.lyx` | Policy Review and Update Procedures | T | v2.2 |  |
 | `01/106.lyx` | IT Governance and Oversight Structure | T | v2.1 |  |
 | `01/107.lyx` | Workforce Roles, Responsibilities, and Competency Framework | T+ | v1.3 | #354 |
@@ -77,7 +77,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/209.lyx` | Vulnerability and Patch Management Policy | D | — | #85, #86, #87, #271, #326 |
 | `02/210.lyx` | Secure Configuration Baselines and Hardening Policy | D | — | #88, #89, #90, #226 |
 | `02/211.lyx` | Audit Logging and Monitoring Policy | T | v2.3 |  |
-| `02/212.lyx` | Media Protection and Sanitization Policy | D | — | #94, #95, #228, #324, #330 |
+| `02/212.lyx` | Media Protection and Sanitization Policy | T | v2.3 |  |
 | `02/213.lyx` | Physical Security and Environmental Controls Policy | D | — | #96, #97, #98 |
 | `02/214.lyx` | Mobile Device and Remote Access Policy | D | — | #99, #101, #102, #229, #332 |
 | `02/215.lyx` | System Development and Secure Software Lifecycle Policy | D | — | #103, #104, #105 |
