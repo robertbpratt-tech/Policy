@@ -151,8 +151,6 @@ End
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\docbook_table_output 0
-\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -193,14 +191,10 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish the mandatory security controls for the protection,
+This policy governs the protection,
  access,
  transport,
  and verifiable sanitization of all physical and digital media storing Elko County information.
- This policy prevents the unauthorized disclosure of Confidential and Restricted data,
- including Criminal Justice Information (CJI),
- by enforcing strict lifecycle constraints from media provisioning through destruction,
- consistent with FBI CJIS Security Policy Version 6.0 and NIST SP 800-88 Revision 1.
 \end_layout
 
 \begin_layout Subsection*
@@ -220,19 +214,182 @@ This policy applies to all Elko County Information Operations personnel,
  transport,
  store,
  or sanitize County media.
- Covered media includes,
- but is not limited to,
- portable storage devices (e.g.,
- USB drives,
- external hard drives),
- optical media,
- magnetic tapes,
- solid-state drives,
- internal hard drives within multifunction printers/copiers (MFPs),
- networking equipment NVRAM,
- and physical/printed media containing County data.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Portable Storage Devices.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Optical Media.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Magnetic Tapes.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Solid-State Drives and Internal Hard Drives.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Networking Equipment Non-Volatile Memory.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Internal Storage Media within Multifunction Printers and Copiers.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Physical and Printed Media containing County Data.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Logical Access Controls Governing Access to Media Contents:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data Classification Level Assignment:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Asset Procurement and Lifecycle Governance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Configuration Management Database Record Maintenance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Incident Reporting Intake and CJIS Notification Mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -247,46 +404,145 @@ This policy applies to all Elko County Information Operations personnel,
 IT Director
 \series default
 :
- Shall serve as the Technical Authority governing media sanitization standards.
- Shall act as the Local Agency Security Officer (LASO) and approve all sanitization methods and exceptions involving Criminal Justice Information (CJI).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the Local Agency Security Officer (LASO) for CJIS media protection matters.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Information Operations Personnel (Administrators and Support Specialists)
-\series default
-:
- Shall execute required media sanitization procedures prior to the disposal,
- transfer,
- or reuse of IT assets.
- Shall verify sanitization effectiveness and maintain the Configuration Management Database (CMDB) and logging records for all sanitized media.
+Shall direct the data disposition at vendor contract termination in accordance with Section 6.10.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-Department Heads (Data Owners)
+Systems Administrators and Network Administrators
 \series default
 :
- Shall enforce physical media protection and ensure physical documents generated within their departments are destroyed in accordance with this policy and assigned data classification levels.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall execute media sanitization prior to disposal,
+ release,
+ external transfer,
+ lease return,
+ or internal reuse.
 \end_layout
 
 \begin_layout Itemize
 
+\lang english
+Shall perform post-sanitization verification as a secondary,
+ independent reviewer for media that stores or has stored Criminal Justice Information (CJI).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document each sanitization action in the Configuration Management Database (CMDB) in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Configuration Management (CMDB) Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
 \series bold
 \lang english
-All Personnel
+Department Heads
 \series default
 :
- Shall physically protect County media in their custody from unauthorized access,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall enforce destruction of physical documents generated within their departments in accordance with the classification level assigned under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall physically protect County media in their custody from unauthorized access,
  loss,
- or theft,
- and shall report any loss or suspected compromise of media immediately.
+ or theft.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Shall report the loss,
+ theft,
+ or suspected compromise of County media in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures).
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -297,7 +553,47 @@ All Personnel
 \begin_layout Standard
 
 \lang english
-Adherence to this policy is mandatory.
+Compliance with this policy is mandatory for all Information Operations personnel and all County Personnel handling County media.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to this policy shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and in accordance with the review schedule defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures).
 \end_layout
 
 \begin_layout Itemize
@@ -307,9 +603,135 @@ Adherence to this policy is mandatory.
 Enforcement
 \series default
 :
- The unauthorized disposal of media or the use of unsanctioned portable storage devices shall result in immediate asset confiscation,
- access revocation,
- and corrective action defined under 
+ The IT Director shall enforce compliance with this policy.
+ Repeated non-compliance may be escalated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be documented in writing with a business justification,
+ compensating controls,
+ and proposed duration,
+ and shall be approved in accordance with the exception management framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Sanctions
+\series default
+:
+ The following acts constitute severe security violations of this policy.
+ Upon confirmed occurrence of any such act,
+ the consequences defined in this bullet apply.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Prohibited Act — Unauthorized Disposal
+\series default
+:
+ Disposal,
+ release,
+ transfer,
+ or reuse of County media without executing the sanitization procedures defined in Section 6.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Prohibited Act — Unsanctioned Removable Media
+\series default
+:
+ Use of personally owned removable media or other unsanctioned portable storage devices on Elko County information systems.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Immediate Asset Confiscation
+\series default
+:
+ The IT Director shall direct the immediate confiscation of implicated media and any system containing unsanctioned removable media.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Immediate Access Revocation
+\series default
+:
+ The IT Director shall direct the immediate revocation of the violating account's access in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Access Control Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Disciplinary Execution
+\series default
+:
+ Disciplinary action shall be executed through the enforcement framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -327,37 +749,17 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-CJIS Reporting Requirement
+Universal Applicability
 \series default
 :
- Personnel shall report the loss or theft of any media containing CJI to the IT Director (LASO) immediately,
- and no later than one (1) hour after discovery.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Records Retention
-\series default
-:
- Information Operations shall retain Certificates of Destruction and sanitization logs in accordance with the applicable Nevada Local Government Records Retention Schedules.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exceptions
-\series default
-:
- Exceptions shall be documented within a formal Risk Acceptance Memo signed by the IT Director,
- containing specified compensating controls and a defined expiration date.
- Exceptions involving CJI shall require explicit written approval from the CJIS Systems Officer (CSO) prior to implementation.
+ This policy applies to all County media regardless of physical location,
+ operational schedule,
+ or lease ownership status.
 \end_layout
 
 \begin_layout Subsection*
@@ -365,6 +767,33 @@ Exceptions
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Review and Update Procedures
 \end_layout
 
 \begin_layout Itemize
@@ -427,6 +856,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management and Vendor Governance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:2.04"
 plural "false"
 caps "false"
@@ -437,6 +884,24 @@ nolink "false"
 
 :
  Access Control Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Audit Logging and Monitoring Policy
 \end_layout
 
 \begin_layout Itemize
@@ -463,6 +928,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.01"
 plural "false"
 caps "false"
@@ -472,114 +955,188 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NRS 239.125 (Local Government Records Management Program)
 \end_layout
 
 \begin_layout Itemize
-NRS 603A.210 (Security measures for personal information)
+
+\lang english
+NRS 603A.210 (Security Measures for Personal Information)
 \end_layout
 
 \begin_layout Itemize
-CJIS Security Policy v6.0:
- Section MP-1 (Media Protection Policy and Procedures)
+
+\lang english
+LRDA 20070440 (Fixed Assets and Inventories)
 \end_layout
 
 \begin_layout Itemize
-CJIS Security Policy v6.0:
- Section MP-2 (Media Access)
-\end_layout
 
-\begin_layout Itemize
-CJIS Security Policy v6.0:
- Section MP-3 (Media Marking)
-\end_layout
-
-\begin_layout Itemize
-CJIS Security Policy v6.0:
- Section MP-4 (Media Storage)
-\end_layout
-
-\begin_layout Itemize
-CJIS Security Policy v6.0:
- Section MP-5 (Media Transport)
-\end_layout
-
-\begin_layout Itemize
-CJIS Security Policy v6.0:
- Section MP-6 (Media Sanitization)
-\end_layout
-
-\begin_layout Itemize
-CJIS Security Policy v6.0:
- Section MP-7 (Media Use)
-\end_layout
-
-\begin_layout Itemize
-NIST CSF 2.0:
- PR.DS-01 (Data-at-Rest Protection)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- MP-1 (Media Protection Policy and Procedures)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- MP-2 (Media Access)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- MP-3 (Media Marking)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- MP-4 (Media Storage)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- MP-5 (Media Transport)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- MP-6 (Media Sanitization)
-\end_layout
-
-\begin_layout Itemize
+\lang english
 NIST SP 800-53 Rev.
  5:
  MP-6(7) (Dual Authorization)
 \end_layout
 
 \begin_layout Itemize
+
+\lang english
+NIST SP 800-88 Rev.
+ 1 (Guidelines for Media Sanitization)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ MP-1 (Media Protection Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ MP-2 (Media Access)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ MP-3 (Media Marking)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ MP-4 (Media Storage)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ MP-5 (Media Transport)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ MP-6 (Media Sanitization)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ MP-7 (Media Use)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.DS-01 (Data-at-Rest Protection)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ MP-1 (Media Protection Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ MP-2 (Media Access)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ MP-3 (Media Marking)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ MP-4 (Media Storage)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ MP-5 (Media Transport)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ MP-6 (Media Sanitization)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
  MP-7 (Media Use)
 \end_layout
 
 \begin_layout Itemize
-NIST SP 800-88 Rev.
- 1:
- (Guidelines for Media Sanitization)
-\end_layout
 
-\begin_layout Itemize
+\lang english
 COBIT 2019:
- DSS05.06 (Manage sensitive documents and output devices)
+ DSS05.06 (Manage Sensitive Documents and Output Devices)
 \end_layout
 
 \begin_layout Subsection*
@@ -587,6 +1144,16 @@ COBIT 2019:
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+This policy prevents the unauthorized disclosure of Confidential and Restricted data,
+ including Criminal Justice Information (CJI),
+ by enforcing strict lifecycle constraints from media provisioning through destruction,
+ consistent with FBI CJIS Security Policy v6.0 and NIST SP 800-88 Rev.
+ 1.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -598,11 +1165,9 @@ COBIT 2019:
 \begin_layout Standard
 
 \lang english
-Personnel shall store physical and digital media containing Confidential or Restricted information (including CJI) within physically secure locations or locked containers when not in active use.
+All County Personnel shall store physical and digital media containing Confidential or Restricted information (including CJI) within physically secure locations or locked containers when not in active use.
  Media shall only be accessible to authorized personnel with a validated business need-to-know.
- Removable digital media shall be encrypted using FIPS-validated cryptographic modules (FIPS 140-3,
- or FIPS 140-2 until September 21,
- 2026) prior to storing any Level 3 (Confidential) or Level 4 (Restricted) data.
+ Removable digital media shall be encrypted using cryptographic modules validated under the NIST Cryptographic Module Validation Program (CMVP) prior to storing any Level 3 (Confidential) or Level 4 (Restricted) data.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -614,10 +1179,20 @@ Personnel shall store physical and digital media containing Confidential or Rest
 \begin_layout Standard
 
 \lang english
-Where technically feasible,
- personnel shall mark or label physical media and removable digital media containing Confidential or Restricted data with the assigned classification level.
- This control ensures personnel remain aware of the required handling and disclosure constraints.
+All County Personnel shall mark or label physical media and removable digital media containing Confidential or Restricted data with the assigned classification level.
  Labels shall omit system-specific or operational details that could increase the risk of targeted theft.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exception
+\series default
+:
+ Media that cannot physically accept a label (e.g.,
+ micro-form factor storage,
+ firmware-embedded media) shall be marked via the associated container or inventory record.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -629,13 +1204,11 @@ Where technically feasible,
 \begin_layout Standard
 
 \lang english
-Personnel shall transport media containing Confidential or Restricted data using continuous chain-of-custody controls.
- Digital media in transit must employ FIPS-validated cryptographic modules (FIPS 140-3,
- or FIPS 140-2 until September 21,
- 2026).
+All County Personnel shall transport media containing Confidential or Restricted data using continuous chain-of-custody controls.
+ Digital media in transit shall employ cryptographic modules validated under the NIST Cryptographic Module Validation Program (CMVP).
  If physical media containing Restricted data (e.g.,
  printed CJI) must be transported outside of a physically secure location,
- it shall remain under the direct,
+ the media shall remain under the direct,
  continuous physical control of authorized personnel or be shipped via a tracked courier service utilizing signature verification upon delivery.
 \end_layout
 
@@ -648,49 +1221,68 @@ Personnel shall transport media containing Confidential or Restricted data using
 \begin_layout Standard
 
 \lang english
-Information Operations personnel shall sanitize all digital media prior to disposal,
- release,
- external transfer,
- lease return,
- or internal reuse.
- Sanitization must execute methods (Clear,
- Purge,
- or Destroy) strictly consistent with NIST SP 800-88 Rev.
- 1 guidelines,
- subject to the stricter CJIS requirements defined herein.
+Elko County retains drives at the end of their operational use rather than releasing them to external parties.
+ Digital media removed from systems shall be retained for internal reuse subject to the classification constraints defined in this section,
+ or physically destroyed.
+ External release of digital media is prohibited except under the narrow fallback defined in this section.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Prior to sanitization of media from systems scheduled for decommissioning,
+ Systems Administrators and Network Administrators shall confirm that audit log custody transfer under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Audit Logging and Monitoring Policy) has been completed.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Clear
+CJI Media — Destruction Only
 \series default
 :
- Acceptable only for the internal reuse of media that solely stored Level 1 (Public) or Level 2 (Internal Use) data.
+ Media that stores or has stored Criminal Justice Information (CJI) shall be physically destroyed.
+ CJI media shall not enter the internal reuse pool and shall not be released to external parties under any circumstance.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Purge
+Internal Reuse — Clear
 \series default
 :
- Mandatory for the internal reuse of media that previously stored Level 3 (Confidential) or Level 4 (Restricted) non-CJI data.
- Cryptographic Erase (CE) constitutes an acceptable purge method for non-CJI data if the storage device natively supports it and utilizes FIPS-validated encryption.
+ Systems Administrators and Network Administrators may execute Clear on media that solely stored Level 1 (Public) or Level 2 (Internal Use) data when the media will be reused at the same or lower classification level.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-CJIS Overwrite Requirement
+Internal Reuse — Purge
 \series default
 :
- Media that stores or has stored Criminal Justice Information (CJI) shall be overwritten at least three (3) times or degaussed prior to disposal or release to unauthorized individuals.
- CE shall not be used for CJI media unless explicit,
- written approval is obtained from the CJIS Systems Officer (CSO).
+ Systems Administrators and Network Administrators shall execute Purge on media that previously stored Level 3 (Confidential) or Level 4 (Restricted) non-CJI data prior to internal reuse.
+ The Purge method shall be appropriate to the media architecture per NIST SP 800-88 Rev.
+ 1 (e.g.,
+ Cryptographic Erase or firmware Block Erase for solid-state media;
+ manufacturer-specified overwrite for magnetic media).
+ Cryptographic Erase constitutes an acceptable Purge method only where the storage device natively supports it and employs cryptographic modules validated under the NIST Cryptographic Module Validation Program (CMVP).
 \end_layout
 
 \begin_layout Itemize
@@ -700,8 +1292,23 @@ CJIS Overwrite Requirement
 Destroy
 \series default
 :
- Mandatory for End-of-Life (EOL) digital media or any media that cannot be successfully purged or overwritten.
+ Mandatory for End-of-Life (EOL) digital media and for any media that cannot be successfully purged.
  Destruction shall render the data permanently irretrievable and the media physically unusable.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Fallback — External Release Without Drive Retention
+\series default
+:
+ Where operational circumstances preclude drive retention (e.g.,
+ pre-existing vendor leases lacking a "Keep Your Drive" provision under Section 6.8),
+ Systems Administrators and Network Administrators shall execute Purge on-site using a vendor-provided factory overwrite utility or equivalent method appropriate to the media architecture per NIST SP 800-88 Rev.
+ 1 before the drive leaves County custody.
+ This fallback shall not apply to CJI media;
+ CJI drives shall be removed and destroyed prior to asset return regardless of any contractual provision.
 \end_layout
 
 \begin_layout Itemize
@@ -711,7 +1318,7 @@ Destroy
 Networking Equipment
 \series default
 :
- Networking equipment NVRAM shall be sanitized utilizing vendor-approved factory-reset commands or physical destruction.
+ Network Administrators shall sanitize networking equipment non-volatile memory using vendor-approved factory-reset commands or physical destruction.
 \end_layout
 
 \begin_layout Itemize
@@ -721,7 +1328,36 @@ Networking Equipment
 Equipment Testing
 \series default
 :
- Information Operations personnel shall test sanitization equipment and procedures annually to verify that the intended sanitization is achieved.
+ Systems Administrators and Network Administrators shall test sanitization equipment and procedures annually to verify that the intended sanitization is achieved.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exception — Legal Hold
+\series default
+:
+ Assets subject to an active legal hold,
+ public records preservation requirement,
+ audit,
+ or incident investigation shall not proceed to sanitization until the hold is formally released,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -733,12 +1369,12 @@ Equipment Testing
 \begin_layout Standard
 
 \lang english
-Personnel shall destroy physical media (e.g.,
+All County Personnel shall destroy physical media (e.g.,
  paper documents) containing Confidential or Restricted data when no longer required,
  executing a method that renders the information unrecoverable (e.g.,
  cross-cut shredding or incineration).
- The destruction of physical media containing Personally Identifiable Information (PII) shall strictly comply with the destruction standards mandated by NRS 603A.210.
- Personnel shall not place intact physical media containing sensitive data into standard waste or recycling receptacles.
+ The destruction of physical media containing Personally Identifiable Information (PII) shall comply with the destruction standards mandated by NRS 603A.210.
+ All County Personnel shall not place intact physical media containing sensitive data into standard waste or recycling receptacles.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -752,18 +1388,41 @@ Personnel shall destroy physical media (e.g.,
 \begin_layout Standard
 
 \lang english
-Information Operations shall comprehensively document and verify all sanitization and disposal actions for IT-managed assets.
+Systems Administrators and Network Administrators shall comprehensively document and verify all sanitization and disposal actions for IT-managed assets.
  Required documentation shall include the date of sanitization,
  the unique Asset Identifier (Tag ID),
  the specific sanitization method utilized,
  the final disposition of the media,
  the identity of the personnel executing the sanitization,
  and the identity of the personnel performing the post-sanitization verification.
- For media that stores or has stored Criminal Justice Information (CJI),
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For media that stores or has stored Criminal Justice Information (CJI),
  the post-sanitization verification shall be performed by a secondary,
- independent Information Operations staff member who did not execute the initial sanitization (Dual Authorization).
+ independent Systems Administrator or Network Administrator who did not execute the initial sanitization,
+ consistent with NIST SP 800-53 Rev.
+ 5:
+ MP-6(7) (Dual Authorization).
  Verification shall consist of a documented test read or visual inspection to confirm the sanitization was effective.
- Electronic waste (E-Waste) transferred to approved third-party recycling vendors shall mandate an official Certificate of Destruction.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Electronic waste (E-Waste) transferred to approved third-party recycling vendors shall be accompanied by a vendor-issued Certificate of Destruction.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Retention
+\series default
+:
+ Information Operations shall retain Certificates of Destruction and sanitization logs in accordance with LRDA 20070440 (Fixed Assets and Inventories).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -775,11 +1434,26 @@ Information Operations shall comprehensively document and verify all sanitizatio
 \begin_layout Standard
 
 \lang english
-The use of personally owned removable media (e.g.,
+All County Personnel shall not connect or operate personally owned removable media (e.g.,
  personal USB flash drives,
- external hard drives) on Elko County information systems is strictly prohibited.
- Only County-procured,
- encrypted portable storage devices that are actively cataloged within the CMDB shall be authorized for use.
+ external hard drives) on Elko County information systems.
+ All County Personnel shall use only County-procured,
+ encrypted portable storage devices that are cataloged as Configuration Items under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Configuration Management (CMDB) Policy).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -792,8 +1466,23 @@ The use of personally owned removable media (e.g.,
 
 \lang english
 Elko County utilizes MFPs with internal storage drives capable of caching Confidential and Restricted data.
- The terminal disposition of these assets is subject to strict chain-of-custody and sanitization controls.
- Specific MFP models and their corresponding configuration limitations shall be documented within the CMDB and supporting Standard Operating Procedures (SOPs).
+ The terminal disposition of these assets is subject to chain-of-custody and sanitization controls.
+ Systems Administrators shall document MFP models and their configuration limitations in the Configuration Management Database (CMDB) per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and in supporting Standard Operating Procedures (SOPs).
 \end_layout
 
 \begin_layout Itemize
@@ -803,10 +1492,10 @@ Elko County utilizes MFPs with internal storage drives capable of caching Confid
 Automated Data Removal Limitations
 \series default
 :
- Information Operations personnel shall configure MFPs to execute automated job data removal no less than weekly and shall implement automated alerting for job data removal failures.
+ Systems Administrators shall configure MFPs to execute automated job data removal no less than weekly and shall implement automated alerting for job data removal failures.
  In the event of an automated job data removal failure,
- Information Operations personnel shall execute a manual clearing within twenty-four (24) hours of the alert.
- Personnel must acknowledge that automated job data removal operates solely as a defense-in-depth risk mitigation and does not constitute terminal sanitization for CJI media.
+ Systems Administrators shall execute a manual clearing within twenty-four (24) hours of the alert.
+ Automated job data removal operates solely as a defense-in-depth risk mitigation and does not constitute terminal sanitization for CJI media.
 \end_layout
 
 \begin_layout Itemize
@@ -816,9 +1505,9 @@ Automated Data Removal Limitations
 Contractual "Keep Your Drive" Requirement
 \series default
 :
- All MFP lease or purchase agreements executed after the effective date of this policy shall incorporate a "Keep Your Drive" provision.
+ The IT Director shall require a "Keep Your Drive" provision in all MFP lease or purchase agreements executed after the effective date of this policy.
  At lease expiration or hardware replacement,
- Elko County shall remove and retain the internal storage media for physical destruction in accordance with Section 6.5.
+ Systems Administrators shall remove and retain the internal storage media for destruction in accordance with the Destroy method defined in Section 6.4.
 \end_layout
 
 \begin_layout Itemize
@@ -829,8 +1518,11 @@ On-Site Vendor Sanitization
 \series default
 :
  For pre-existing lease agreements executed prior to the effective date of this policy that lack a "Keep Your Drive" provision,
- the vendor shall not remove the asset from Elko County facilities until a CJIS-compliant three-pass overwrite or degauss has been executed on-site.
- Information Operations personnel shall visually verify the overwrite or degauss and obtain a Certificate of Sanitization prior to the hardware's departure.
+ Systems Administrators shall execute the External Release Without Drive Retention fallback defined in Section 6.4 on-site before removing the asset from Elko County facilities.
+ Systems Administrators shall visually verify the sanitization action and obtain a Certificate of Sanitization prior to the hardware's departure.
+ Where the MFP stored or may have stored CJI,
+ Systems Administrators shall remove and destroy the drive per Section 6.4 regardless of the lease terms,
+ and the asset shall be returned to the vendor without the drive.
 \end_layout
 
 \begin_layout Itemize
@@ -840,9 +1532,130 @@ On-Site Vendor Sanitization
 Inoperable Media (Break/Fix)
 \series default
 :
- Vendor technicians shall not remove inoperable MFP drives that cannot be logically overwritten.
+ Systems Administrators shall not release inoperable MFP drives that cannot be logically overwritten to vendor technicians.
  Elko County shall classify these drives as physical media for destruction and shall retain them regardless of warranty or lease return requirements.
- The IT Director shall proactively notify vendors of this requirement in writing prior to any service event to ensure compliance at the time of a break/fix call.
+ The IT Director shall notify vendors of this requirement in writing prior to any service event to ensure compliance at the time of a break/fix call.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.9 Media Loss Reporting
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+All County Personnel shall report the loss,
+ theft,
+ or suspected compromise of County media immediately upon discovery.
+ Reports shall be initiated through the incident identification and reporting channels established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures),
+ which governs the internal reporting clock and CJIS notification mechanics for media-involved incidents.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Media
+\series default
+:
+ The loss,
+ theft,
+ or suspected compromise of any County media containing Criminal Justice Information (CJI) shall be reported no later than one (1) hour after discovery,
+ consistent with CJIS Security Policy v6.0 IR-6 Part (a) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.10 Vendor Data Return
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+At vendor contract termination or project completion initiated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Supply Chain Risk Management and Vendor Governance),
+ the IT Director shall direct one of the following dispositions for County data held by the vendor.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Certified Return
+\series default
+:
+ The vendor shall return all County data to the Information Operations Department on County-approved media,
+ accompanied by written certification that no copies have been retained.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Secure Destruction
+\series default
+:
+ The vendor shall destroy all County data using methods consistent with Section 6.4 and shall provide a written Certificate of Destruction identifying the data destroyed,
+ the method used,
+ the date of destruction,
+ and the responsible individual.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Verification
+\series default
+:
+ The IT Director shall verify receipt of the returned media or the Certificate of Destruction and shall record the verification in the vendor contract file.
 \end_layout
 
 \end_body
