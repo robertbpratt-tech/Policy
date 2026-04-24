@@ -174,13 +174,13 @@ name "pol:2.02"
 
 \lang english
 Effective:
- April 19,
+ April 24,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.5
+ 2.6
 \end_layout
 
 \begin_layout Subsection*
@@ -477,7 +477,7 @@ nolink "false"
 
 
 \series default
- and Criminal Justice Information Services (CJIS) Security Policy v6.0:
+ (Data Governance and Classification Policy) and Criminal Justice Information Services (CJIS) Security Policy v6.0:
  PS-3 (Personnel Screening).
 \end_layout
 
@@ -559,7 +559,7 @@ nolink "false"
 
 
 \series default
- and CJIS Security Policy v6.0 PS-7 (External Personnel Security),
+ (Supply Chain Risk Management (SCRM) and Vendor Governance) and CJIS Security Policy v6.0 PS-7 (External Personnel Security),
  and access is formally approved by the IT Director.
 \end_layout
 
@@ -792,18 +792,6 @@ Universal Applicability
  including remote work and official travel.
 \end_layout
 
-\begin_layout Itemize
-
-\series bold
-\lang english
-Sanctions
-\series default
-:
- Violations may result in access revocation,
- disciplinary action consistent with County Human Resources policy,
- and referral for civil or criminal enforcement under NRS 205.4765 (Unlawful acts regarding computers).
-\end_layout
-
 \begin_layout Subsection*
 
 \lang english
@@ -1010,12 +998,6 @@ nolink "false"
 
 \lang english
 NRS 179A (Records of Criminal History)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NRS 205.4765 (Unlawful acts regarding computers)
 \end_layout
 
 \begin_layout Itemize
