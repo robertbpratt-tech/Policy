@@ -59,7 +59,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `01/110.lyx` | IT Financial Management and Procurement Policy | T | v2.2 |  |
 | `01/111.lyx` | Data Governance and Classification Policy | T | v2.3 |  |
 | `01/112.lyx` | IT Asset Management Policy | T+ | v2.6 | #329, #426 |
-| `01/113.lyx` | Supply Chain Risk Management and Vendor Governance | T | v2.2 |  |
+| `01/113.lyx` | Supply Chain Risk Management and Vendor Governance | T+ | v2.2 | #440 |
 | `01/114.lyx` | Stakeholder Engagement and Communications Policy | T | v2.3 |  |
 
 ## Chapter 2 — Security
@@ -67,7 +67,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
 | `02/201.lyx` | Acceptable Use of Information Technology Resources Policy | T+ | v2.4 | #356 |
-| `02/202.lyx` | Personnel Security and Background Screening Policy | T+ | v2.4 | #358, #376 |
+| `02/202.lyx` | Personnel Security and Background Screening Policy | T+ | v2.4 | #358, #376, #441 |
 | `02/203.lyx` | Security Awareness and Training Policy | D | — | #66, #67, #68, #213, #346, #351 |
 | `02/204.lyx` | Access Control Policy | T | v2.3 |  |
 | `02/205.lyx` | Identification and Authentication Policy | D | — | #71, #72, #73, #292, #333 |
@@ -76,9 +76,9 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/208.lyx` | System Integrity and Malware Protection Policy | D | — | #81, #83, #84 |
 | `02/209.lyx` | Vulnerability and Patch Management Policy | D | — | #85, #86, #87, #271, #326 |
 | `02/210.lyx` | Secure Configuration Baselines and Hardening Policy | D | — | #88, #89, #90, #226 |
-| `02/211.lyx` | Audit Logging and Monitoring Policy | T | v2.3 |  |
-| `02/212.lyx` | Media Protection and Sanitization Policy | T | v2.3 |  |
-| `02/213.lyx` | Physical Security and Environmental Controls Policy | D | — | #96, #97, #98 |
+| `02/211.lyx` | Audit Logging and Monitoring Policy | T+ | v2.3 | #442 |
+| `02/212.lyx` | Media Protection and Sanitization Policy | T+ | v2.3 | #443 |
+| `02/213.lyx` | Physical Security and Environmental Controls Policy | T | v2.3 |  |
 | `02/214.lyx` | Mobile Device and Remote Access Policy | D | — | #99, #101, #102, #229, #332 |
 | `02/215.lyx` | System Development and Secure Software Lifecycle Policy | D | — | #103, #104, #105 |
 
