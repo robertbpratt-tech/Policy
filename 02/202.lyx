@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.4
+ 2.5
 \end_layout
 
 \begin_layout Subsection*
@@ -1046,35 +1046,35 @@ LRDA 20070321 (Master Personnel File)
 
 \lang english
 CJIS Security Policy v6.0:
- AC-2(13) (Disable Accounts for High-Risk Individuals)
+ Section AC-2(13) (Disable Accounts for High-Risk Individuals)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- PS-3 (Personnel Screening)
+ Section PS-3 (Personnel Screening)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- PS-4 (Personnel Termination)
+ Section PS-4 (Personnel Termination)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- PS-5 (Personnel Transfer)
+ Section PS-5 (Personnel Transfer)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- PS-7 (External Personnel Security)
+ Section PS-7 (External Personnel Security)
 \end_layout
 
 \begin_layout Standard

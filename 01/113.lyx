@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -1016,21 +1016,21 @@ LRDA 20070474 (Contracts and Agreements)
 
 \lang english
 CJIS Security Policy v6.0:
- IR-6 (Incident Reporting)
+ Section IR-6 (Incident Reporting)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- PS-3 (Personnel Screening)
+ Section PS-3 (Personnel Screening)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- SA-9 (External System Services)
+ Section SA-9 (External System Services)
 \end_layout
 
 \begin_layout Itemize

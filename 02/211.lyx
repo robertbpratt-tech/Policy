@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -1385,35 +1385,35 @@ NRS 205.4765 (Unlawful acts regarding computers)
 
 \lang english
 CJIS Security Policy v6.0:
- AU-2 (Event Logging)
+ Section AU-2 (Event Logging)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- AU-3 (Content of Audit Records)
+ Section AU-3 (Content of Audit Records)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- AU-4 (Audit Log Storage Capacity)
+ Section AU-4 (Audit Log Storage Capacity)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- AU-5 (Response to Audit Logging Process Failures)
+ Section AU-5 (Response to Audit Logging Process Failures)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- AU-6 (Audit Record Review,
+ Section AU-6 (Audit Record Review,
  Analysis,
  and Reporting)
 \end_layout
@@ -1422,35 +1422,35 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
- AU-7 (Audit Record Reduction and Report Generation)
+ Section AU-7 (Audit Record Reduction and Report Generation)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- AU-8 (Time Stamps)
+ Section AU-8 (Time Stamps)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- AU-9 (Protection of Audit Information)
+ Section AU-9 (Protection of Audit Information)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- AU-11 (Audit Record Retention)
+ Section AU-11 (Audit Record Retention)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- AU-12 (Audit Record Generation)
+ Section AU-12 (Audit Record Generation)
 \end_layout
 
 \begin_layout Itemize
