@@ -163,7 +163,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #6 | Product-name removal (Redmine) | 1.04, 1.08, 1.14, 3.01–3.17 | Open, absorbed-by-tightening | Multi-policy Redmine sweep. #7 (Office 365) and #10 (HID DigitalPersona) closed April 19 as duplicates of per-policy children #99 and #71 respectively; #8 closed previously. |
 | #353 | Set Header Date and Version to uniform `Effective: July 01, 2026 \| Version: 1.0` | Manual-wide | Open, phase-10-deferred | All policies; mechanical normalization at v1.0 declaration per Phase 10 step 3. Dormant until Phase 10 entry. |
 | #355 | Manual-wide LRDA citation verification sweep (numbers, titles, retention periods, NRS 239.125/NAC 239.155 companion citations) | Manual-wide | Open, phase-9-deferred | Scoped in §7 Open Questions for Phase 9: verification half → sub-phase 9A; companion-authority consistency → sub-phase 9B. Split into `phase-9a-intake` and `phase-9b-intake` child tickets at Phase 9 entry. Dormant until then. |
-| #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references | Manual-wide | Open, active-root | Two absorption waves completed April 20–21: first wave #360–#372 (13 tickets against tightened Ch1/Ch2/Ch3/Ch4 peers), second wave #402–#424 (23 tickets covering strips + intra-policy disambiguation). 19 of the second wave closed in-session. #413 (3.12) and #418 (4.01) remain open tracking `of that policy` prose-rewrite cases (mechanical strips applied; prose rewrite pending — reopened April 22 post-audit). 1.04 v1.4 §6.15 residual (4 hits) deferred to dedicated 1.04 session per architectural-lock discipline. Untightened D-state policies (5.03/5.04/5.06/5.07) and Appendix 6.01 absorb into respective tightening/Phase 7 sessions. Scanner-based filing retired April 20 (regex-gap reliability); PDF-driven visual scan + LyX-source classifier is authoritative. Rule #1 in §4 is the underlying rule statement. [Archive: #436] |
+| #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references | Manual-wide | Open, active-root | Two absorption waves completed April 20–21: first wave #360–#372 (13 tickets against tightened Ch1/Ch2/Ch3/Ch4 peers), second wave #402–#424 (23 tickets covering strips + intra-policy disambiguation). 19 of the second wave closed in-session. #413 (3.12) and #418 (4.01) remain open tracking `of that policy` prose-rewrite cases (mechanical strips applied; prose rewrite pending — reopened April 22 post-audit). 1.04 v1.4 §6.15 residual (4 hits) resolved in 1.04 v1.5 via #439 (April 23, 2026). Untightened D-state policies (5.03/5.04/5.06/5.07) and Appendix 6.01 absorb into respective tightening/Phase 7 sessions. Scanner-based filing retired April 20 (regex-gap reliability); PDF-driven visual scan + LyX-source classifier is authoritative. Rule #1 in §4 is the underlying rule statement. [Archive: #436] |
 ### Closed Roots
 
 | # | Title | Resolved | Notes |
@@ -240,7 +240,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|
 | 1.02 | Code of Ethics | T | — | 0 | — |
 | 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — |
-| 1.04 | Formatting Standards | T+ | v1.4 | 1 | #375 |
+| 1.04 | Formatting Standards | T | v1.5 | 0 | — |
 | 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — |
 | 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — |
 | 1.07 | Workforce Roles | T+ | v1.3 | 1 | #354 |
