@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -193,14 +193,9 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish mandatory physical and environmental safeguards to protect Elko County personnel,
- hardware,
- software,
- networks,
- and data (including Criminal Justice Information [CJI]) from physical damage,
- unauthorized access,
- environmental hazards,
- and interruption of operations.
+This policy establishes physical and environmental safeguards for Elko County facilities,
+ information systems,
+ and Criminal Justice Information (CJI).
 \end_layout
 
 \begin_layout Subsection*
@@ -213,15 +208,199 @@ The purpose of this policy is to establish mandatory physical and environmental 
 \begin_layout Standard
 
 \lang english
-This policy shall apply to all Elko County physical facilities,
+This policy applies to all Elko County physical facilities,
  data centers,
  network closets,
- and terminal areas where Elko County information systems reside or where CJI is accessed,
+ and terminal areas where County information systems reside or where Criminal Justice Information (CJI) is accessed,
  processed,
  transmitted,
- or stored.
+ or stored,
+ and to all Information Operations personnel,
+ Buildings and Grounds personnel,
+ and all County Personnel who access or work within those locations.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Physically secure locations housing County information systems or Criminal Justice Information (CJI).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Perimeter physical access controls,
+ signage,
+ and structural separation of secure locations from non-secure locations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Physical access authorization,
+ visitor escort,
+ and visitor record-keeping.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Physical access audit logs and security camera surveillance systems protecting County information assets.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Environmental controls including fire protection,
+ temperature and humidity regulation,
+ and water damage protection.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Power equipment,
+ emergency shutoff,
+ emergency lighting,
+ and uninterruptible power supply (UPS) serving critical information technology infrastructure.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Logical access to information systems:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Security audit record generation,
+ aggregation,
+ and retention for system-level events:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Protection and sanitization of digital and physical media:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Personnel screening,
+ credential issuance,
+ and separation processing:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Incident response procedures following a physical security event:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -233,38 +412,361 @@ This policy shall apply to all Elko County physical facilities,
 
 \series bold
 \lang english
-IT Director
+IT Director (as LASO)
 \series default
 :
- Shall approve all physical access control lists and environmental control baselines.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the final approving authority for physical access control lists for County information technology facilities.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Physical Security / Facilities Management
-\series default
-:
- Shall implement,
- test,
- and maintain environmental safeguards (e.g.,
- fire suppression,
- climate control) and physical access mechanisms (e.g.,
- locks,
- cameras).
+Shall approve environmental control baselines for critical information technology facilities.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Elko County Personnel
+Shall approve exceptions to this policy in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Must escort unauthenticated visitors at all times within physically secure locations and challenge any unescorted or unbadged individual.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Shall retain non-delegable accountability for Local Agency Security Officer (LASO) obligations to the CJIS Systems Agency in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) for physical security matters affecting Criminal Justice Information (CJI).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall direct changes to combinations,
+ keys,
+ and access cards in accordance with Section 6.1.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall oversee maintenance of physical access audit logs and security camera recordings for County information technology facilities.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review visitor access records no less than quarterly,
+ evidenced by a documented review record in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review physical access logs no less than quarterly,
+ and following any physical,
+ environmental,
+ or security-related incident involving Criminal Justice Information (CJI) or systems used to process,
+ store,
+ or transmit CJI.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate physical security findings and investigation outcomes with the incident response capability in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Incident Response Policy Overview) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall export camera footage segments capturing incidents,
+ breaches,
+ or legal events in accordance with Section 6.3.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+System and Network Administrators
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall configure security cameras in server rooms and network closets in accordance with Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain physical access audit logs for all physically secure information technology locations in accordance with Section 6.1.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall respond to physical access motion alerts and generate work orders in accordance with Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain uninterruptible power supply (UPS) units serving County information technology infrastructure in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Asset Management Policy) lifecycle standards.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall deactivate and reissue physical access credentials in accordance with Section 6.1 and the personnel separation and transfer timelines established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Personnel Security and Background Screening Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Buildings and Grounds
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall install physical access control hardware (locks,
+ card readers,
+ and equivalent mechanisms) at physically secure locations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure perimeter signage is posted at the entry points of physically secure locations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall install security cameras at locations designated by the Information Operations Department.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain fire suppression and fire detection systems serving facilities containing critical information technology infrastructure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure fire suppression and fire detection systems are inspected no less than annually.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain automated temperature and humidity controls for primary server rooms.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain master shutoff valves,
+ emergency power shutoff devices,
+ and emergency lighting serving facilities containing critical information technology infrastructure.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall coordinate visitor access requests for their personnel with the Information Operations Department.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure separating personnel return physical access credentials at separation in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall escort unauthenticated visitors at all times within physically secure locations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall challenge any unescorted or unbadged individual encountered within a physically secure location.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report suspected physical security anomalies,
+ tampering,
+ or unauthorized access attempts to the Information Operations Department.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not duplicate,
+ share,
+ or transfer physical access credentials issued to them.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -275,10 +777,167 @@ Elko County Personnel
 \begin_layout Standard
 
 \lang english
-Any deviation from the controls defined in this policy must be documented via a formal risk acceptance exception,
- justified by objective operational constraints,
- and explicitly approved in writing by the IT Director.
- Violations of this policy shall result in disciplinary action up to and including termination.
+Compliance with this policy is mandatory for all Information Operations personnel,
+ Buildings and Grounds personnel,
+ and all County Personnel who access or work within physically secure County facilities.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Adherence to this policy shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and in accordance with the review schedule defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Review and Update Procedures).
+ Quarterly visitor record reviews,
+ quarterly physical access log reviews,
+ and annual fire system inspections provide ongoing compliance evidence.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The IT Director shall enforce compliance with this policy.
+ Repeated non-compliance may be escalated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be documented in writing with business justification,
+ compensating controls,
+ and proposed duration,
+ and shall be approved in accordance with the exception management framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
+ No exception approved under this policy shall authorize the destruction or modification of physical access audit logs,
+ visitor control logs,
+ or security camera recordings outside the retention framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ nor the suspension of legal hold preservation obligations.
+\end_layout
+
+\end_deeper
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Sanctions
+\series default
+:
+ Violations of this policy,
+ including tailgating into physically secure locations,
+ unauthorized duplication or sharing of physical access credentials,
+ and disabling of environmental or physical security controls,
+ may result in disciplinary action up to and including termination through the enforcement framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsection*
@@ -286,6 +945,15 @@ Any deviation from the controls defined in this policy must be documented via a 
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -304,6 +972,24 @@ nolink "false"
 
 :
  Policy Review and Update Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
 \end_layout
 
 \begin_layout Itemize
@@ -366,6 +1052,42 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Audit Logging and Monitoring Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Media Protection and Sanitization Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:4.01"
 plural "false"
 caps "false"
@@ -399,26 +1121,53 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-NRS 239C (Homeland Security)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-LRDA 20071279 (Property Management - Security Records)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-LRDA 20071749 (Property Management - Security Camera Recordings)
+LRDA 20071749 (Property Management:
+ Security Records)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-CJIS Security Policy v6.0:
- Section 5.9 (Physically Secure Location)
+LRDA 20200003 (Property Management:
+ Security Camera Recordings)
 \end_layout
 
 \begin_layout Itemize
@@ -502,7 +1251,7 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
- Section PE-13(1) (Detection Systems - Automatic Activation and Notification)
+ Section PE-13(1) (Detection Systems — Automatic Activation and Notification)
 \end_layout
 
 \begin_layout Itemize
@@ -517,13 +1266,6 @@ CJIS Security Policy v6.0:
 \lang english
 CJIS Security Policy v6.0:
  Section PE-15 (Water Damage Protection)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST CSF 2.0:
- PR.PS-01 (Platform Security)
 \end_layout
 
 \begin_layout Itemize
@@ -611,7 +1353,7 @@ NIST SP 800-53 Rev.
 \lang english
 NIST SP 800-53 Rev.
  5:
- PE-13(1) (Detection Systems - Automatic Activation and Notification)
+ PE-13(1) (Detection Systems — Automatic Activation and Notification)
 \end_layout
 
 \begin_layout Itemize
@@ -630,12 +1372,38 @@ NIST SP 800-53 Rev.
  PE-15 (Water Damage Protection)
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.AA-06 (Physical access to assets is managed,
+ monitored,
+ and enforced)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ PR.IR-02 (The organization's technology assets are protected from environmental threats)
+\end_layout
+
 \begin_layout Itemize
 
 \lang english
 COBIT 2019:
  DSS01 (Manage Operations)
 \end_layout
+
 
 \begin_layout Subsection*
 
@@ -644,63 +1412,99 @@ COBIT 2019:
  Policy Statement
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Standard
 
 \lang english
-6.1 Physically Secure Locations & Perimeters
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-The perimeter of any physically secure location containing critical IT infrastructure or processing CJI shall be prominently posted and structurally separated from non-secure locations by physical controls (e.g.,
- locked doors,
- card readers).
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Information system devices shall be positioned to prevent unauthorized individuals from accessing or visually observing CJI or sensitive administrative sessions.
+Physical and environmental controls prevent unauthorized physical access,
+ environmental damage,
+ and interruption of operations for County information systems and the Criminal Justice Information (CJI) they process.
+ This policy defines the requirements governing perimeter,
+ monitoring,
+ environmental,
+ and power infrastructure safeguards required to satisfy the physical security mandates of the FBI CJIS Security Policy,
+ and establishes the routing by which physical security findings enter the incident response and compliance monitoring processes of the Information Operations Policy Manual.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.1.1 Physical Access Control Procedures
+6.1 Physically Secure Locations and Perimeter Controls
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Elko County shall maintain physical access audit logs for all physically secure IT locations.
- Audit logs shall record all access events and shall be retained in accordance with applicable Nevada retention schedules.
+Buildings and Grounds shall ensure the perimeter of any physically secure location housing critical information technology infrastructure or processing Criminal Justice Information (CJI) is structurally separated from non-secure locations by physical controls (locked doors,
+ card readers,
+ or equivalent) and is clearly signed at entry points to designate restricted access.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Keys,
- key fobs,
- access cards,
- and combination codes shall be stored securely when not in use and shall not be shared among personnel.
+System and Network Administrators shall position information system devices to prevent unauthorized individuals from accessing or visually observing Criminal Justice Information (CJI) or sensitive administrative sessions.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Combinations and keys shall be changed,
- and access cards shall be deactivated and reissued,
- whenever:
- 
+Access Control Procedures
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-(a) a key is lost or a combination is believed to have been compromised;
- or 
+System and Network Administrators shall maintain physical access audit logs for all physically secure information technology locations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+System and Network Administrators shall ensure physical access audit logs record all access events.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+System and Network Administrators shall retain physical access audit logs in accordance with Nevada LRDA 20071749 (Property Management:
+ Security Records).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All County Personnel issued physical access credentials shall not leave keys,
+ key fobs,
+ access cards,
+ or combination codes unattended in locations accessible to unauthorized individuals.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All County Personnel issued physical access credentials shall not share keys,
+ key fobs,
+ access cards,
+ or combination codes among personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall direct that combinations and keys are changed,
+ and access cards deactivated and reissued,
+ whenever:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+(a) a key is lost or a combination is believed to have been compromised.
 \end_layout
 
 \begin_layout Itemize
@@ -712,27 +1516,37 @@ Combinations and keys shall be changed,
 \end_layout
 
 \end_deeper
+\end_deeper
 \begin_layout Subsubsection*
 
 \lang english
-6.2 Physical Access Authorizations & Visitor Control
+6.2 Physical Access Authorizations and Visitor Control
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Elko County shall develop,
- approve,
- and maintain an access list of authorized individuals permitted to access physically secure IT locations.
- This list shall be reviewed and updated at least annually.
+The IT Director shall approve the access list of individuals authorized to enter physically secure information technology locations.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Physical access credential issuance,
+System and Network Administrators shall maintain the access list in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall review and update the access list no less than annually.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+System and Network Administrators shall execute physical access credential issuance,
  modification,
- and revocation for all secure IT facilities shall follow the personnel onboarding and offboarding procedures defined in 
+ and revocation for all secure information technology facilities in accordance with the personnel onboarding and offboarding framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -748,47 +1562,93 @@ nolink "false"
 
 \series default
 .
- Upon notification of personnel separation or role change,
- physical access credentials (including keycards,
- key fobs,
- and combination codes) shall be revoked on the same timelines established for logical access revocation.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The County must maintain a visitor control log detailing the names,
+Upon notification of personnel separation or role change,
+ System and Network Administrators shall revoke physical access credentials (keycards,
+ key fobs,
+ and combination codes) on the Involuntary Termination and Standard Termination timelines established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+System and Network Administrators shall maintain a visitor control log recording the names,
  organizations,
  dates,
- entry/exit times,
+ entry and exit times,
  and forms of identification used to authenticate every visitor accessing a physically secure location.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Visitors must be escorted by authorized personnel at all times within secure areas.
+All County Personnel shall escort visitors at all times within secure areas.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Constraint
+\series default
+:
  When the escort involves vendor or contractor personnel performing maintenance on systems that process,
  store,
  or transmit Criminal Justice Information (CJI),
- the designated escort shall be fully cleared and technically qualified to supervise the specific maintenance activity being performed.
+ the Information Operations Department shall designate an escort who meets the personnel security clearance requirements for Criminal Justice Information (CJI) access established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and who is technically qualified to supervise the specific maintenance activity being performed.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall conduct a review of visitor access records no less than quarterly to assess whether access authorizations remain current for County operational needs.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Visitor access records shall be reviewed at least quarterly.
- Reviews shall assess whether access authorizations remain current and appropriate for organizational mission and business functions.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Anomalies identified during visitor access record reviews —
- including unauthorized access patterns,
+The Assistant IT Director shall report anomalies identified during visitor access record reviews — including unauthorized access patterns,
  missing records,
- or entries outside of authorized access periods —
- shall be reported to personnel with physical and environmental protection responsibilities and to personnel with information security responsibilities.
+ or entries outside authorized access periods — to the IT Director,
+ and,
+ for anomalies involving facilities processing Criminal Justice Information (CJI),
+ to the IT Director (as LASO) for CJIS Systems Agency notification assessment.
 \end_layout
 
 \begin_layout Itemize
@@ -798,38 +1658,73 @@ Anomalies identified during visitor access record reviews —
 Retention Mandate
 \series default
 :
- The visitor control log must be retained for a minimum period of three (3) calendar years from the end of the calendar year to which the log pertains,
- in strict compliance with Nevada LRDA 20071279.
+ System and Network Administrators shall retain the visitor control log for a minimum period of three (3) calendar years from the end of the calendar year to which the log pertains,
+ in accordance with Nevada LRDA 20071749 (Property Management:
+ Security Records).
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.3 Monitoring Physical Access & Camera Surveillance
+6.3 Monitoring Physical Access and Camera Surveillance
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Elko County shall monitor physical access to facilities where information systems reside to detect and respond to physical security incidents.
+The Assistant IT Director shall ensure physical access to facilities where information systems reside is monitored to detect and respond to physical security incidents.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Security cameras in server rooms and network closets shall be configured with motion detection.
- Upon detection of motion,
- the system shall automatically notify designated IT personnel via email during normal business hours.
- Motion events occurring outside of business hours shall generate a work order for IT staff follow-up on the next business day.
- Camera-based motion alerting satisfies the physical intrusion alarm requirement under CJIS PE-6(1).
+Motion Detection Configuration
+\series default
+:
+ System and Network Administrators shall configure security cameras in server rooms and network closets with motion detection.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Physical access logs shall be reviewed at least quarterly and following any physical,
+Alert Routing
+\series default
+:
+ System and Network Administrators shall configure the monitoring system to notify the Information Operations Department via email on motion detection.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out-of-Hours Follow-Up
+\series default
+:
+ System and Network Administrators shall configure the monitoring system to generate a work order on any motion event occurring outside Information Operations Department hours of operation,
+ to be actioned by end of the next business day.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Rationale
+\series default
+:
+ Camera-based motion alerting satisfies the physical intrusion alarm requirement under CJIS Security Policy v6.0 Section PE-6(1).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall review physical access logs no less than quarterly,
+ and following any physical,
  environmental,
- or security-related incident involving CJI or systems used to process,
+ or security-related incident involving Criminal Justice Information (CJI) or systems used to process,
  store,
  or transmit CJI.
 \end_layout
@@ -837,7 +1732,7 @@ Physical access logs shall be reviewed at least quarterly and following any phys
 \begin_layout Itemize
 
 \lang english
-The results of physical access log reviews and any physical security investigations shall be coordinated with the County's incident response capability in accordance with 
+The Assistant IT Director shall coordinate the results of physical access log reviews and any physical security investigations with the County's incident response capability in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -852,26 +1747,49 @@ nolink "false"
 
 
 \series default
- (Incident Response Policy Overview).
+.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Retention Mandate:
- Security camera recordings strictly monitoring physical access shall be retained for a minimum of seven (7) days or for the period needed to review the recordings,
+Retention Mandate
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+System and Network Administrators shall retain security camera recordings that monitor physical access for a minimum of seven (7) calendar days or for the period needed to review the recordings,
  whichever is longer,
- in strict compliance with Nevada LRDA 20071749.
+ in accordance with Nevada LRDA 20200003 (Property Management:
+ Security Camera Recordings).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-If camera footage captures an incident,
+The Assistant IT Director shall determine any extension beyond seven (7) calendar days required to complete review.
+\end_layout
+
+\end_deeper
+
+\begin_layout Itemize
+
+\lang english
+When camera footage captures an incident,
  breach,
  or legal event,
- the relevant segment of footage shall immediately be exported,
- reported in accordance with 
+ the Assistant IT Director shall export the relevant segment of footage within twenty-four (24) hours of discovery.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall report the event in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -886,8 +1804,34 @@ nolink "false"
 
 
 \series default
- (Identification and Reporting Procedures),
- reclassified as an "Incident Report" or "Investigation Record," and retained according to the applicable Nevada retention schedules governing active investigations.
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall reclassify the exported footage segment as an incident record.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall retain the reclassified incident record in accordance with the evidence artifact retention framework established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -903,10 +1847,28 @@ nolink "false"
 Fire Protection
 \series default
 :
- Facilities containing critical IT infrastructure must employ automatic fire suppression and/or detection systems.
- These systems shall be maintained and inspected annually.
- Fire detection systems shall be configured to automatically activate upon detection of fire conditions and to simultaneously notify designated organizational incident response personnel and local emergency responders without requiring manual intervention.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall ensure facilities containing critical information technology infrastructure employ automatic fire suppression and fire detection systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall ensure fire suppression and fire detection systems are inspected no less than annually.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall configure fire detection systems to activate automatically upon detection of fire conditions and to simultaneously notify organizational incident response personnel and local emergency responders without requiring manual intervention.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -915,8 +1877,7 @@ Fire Protection
 Temperature and Humidity Controls
 \series default
 :
- Critical IT hardware facilities (e.g.,
- primary server rooms) shall maintain automated temperature and humidity controls to prevent environmental degradation of systems.
+ Buildings and Grounds shall maintain automated temperature and humidity controls for primary server rooms to prevent environmental degradation of information systems.
 \end_layout
 
 \begin_layout Itemize
@@ -926,9 +1887,22 @@ Temperature and Humidity Controls
 Water Damage Protection
 \series default
 :
- Master shutoff valves shall be identified and accessible.
- IT equipment shall be positioned or elevated to minimize risk from water damage.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall ensure master shutoff valves are identified and accessible.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Information Operations Department shall position or elevate information technology equipment to minimize risk from water damage.
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsubsection*
 
@@ -945,11 +1919,24 @@ Water Damage Protection
 Power Equipment and Cabling
 \series default
 :
- Power equipment and power cabling serving critical IT infrastructure shall be protected from physical damage and destruction.
- Cabling paths shall be identified,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall protect power equipment and power cabling serving critical information technology infrastructure from physical damage and destruction.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall ensure cabling paths are identified,
  documented,
  and physically secured within locked conduits or restricted-access routing pathways.
 \end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -958,10 +1945,28 @@ Power Equipment and Cabling
 Emergency Shutoff
 \series default
 :
- Facilities housing critical IT infrastructure shall provide the capability to shut off power to all information systems in emergency situations.
- Emergency shutoff switches or devices shall be placed in locations readily accessible to authorized personnel.
- Emergency shutoff capability shall be protected from unauthorized or accidental activation.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall ensure facilities housing critical information technology infrastructure provide the capability to shut off power to all information systems in emergency situations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall place emergency shutoff switches or devices in locations readily accessible to authorized personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall protect emergency shutoff capability from unauthorized or accidental activation.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -970,8 +1975,19 @@ Emergency Shutoff
 Emergency Power
 \series default
 :
- Critical IT facilities shall be equipped with an uninterruptible power supply (UPS) to provide near-instantaneous protection from power interruptions and to facilitate orderly system shutdown or transition to an alternate power source upon loss of primary power.
- UPS units shall be maintained in accordance with 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+System and Network Administrators shall ensure critical information technology facilities are equipped with an uninterruptible power supply (UPS) providing near-instantaneous protection from power interruptions and facilitating orderly system shutdown or transition to an alternate power source upon loss of primary power.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+System and Network Administrators shall maintain UPS units in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -989,6 +2005,8 @@ nolink "false"
  lifecycle standards.
 \end_layout
 
+\end_deeper
+
 \begin_layout Itemize
 
 \series bold
@@ -996,9 +2014,22 @@ nolink "false"
 Emergency Lighting
 \series default
 :
- Critical IT facilities shall employ and maintain automatic emergency lighting that activates upon power outage or disruption.
- Emergency lighting shall cover emergency exits and evacuation routes within the facility.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall maintain automatic emergency lighting that activates upon power outage or disruption.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Buildings and Grounds shall ensure emergency lighting covers emergency exits and evacuation routes within the facility.
+\end_layout
+
+\end_deeper
 
 \end_body
 \end_document
