@@ -50,7 +50,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `01/101.lyx` | Department Mission and Strategic Objectives | T | — |  |
 | `01/102.lyx` | Code of Ethics and Professional Conduct | T | — |  |
 | `01/103.lyx` | Standard Operating Ethos | T | v2.0 |  |
-| `01/104.lyx` | Policy and Documentation Formatting Standards | T+ | v1.4 | #437 |
+| `01/104.lyx` | Policy and Documentation Formatting Standards | T | v1.5 |  |
 | `01/105.lyx` | Policy Review and Update Procedures | T | v2.2 |  |
 | `01/106.lyx` | IT Governance and Oversight Structure | T | v2.1 |  |
 | `01/107.lyx` | Workforce Roles, Responsibilities, and Competency Framework | T+ | v1.3 | #354 |
