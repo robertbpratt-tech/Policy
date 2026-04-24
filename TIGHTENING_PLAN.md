@@ -224,7 +224,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 24, 2026 post-Phase 5B entry 31 (archive #444). Phase 5B LASO Priority Group complete (entries 25–31). Prior session archives: #427–#438 covering entries 21–30 plus the April 20 §6.X strip batch.
+**Last refreshed:** April 24, 2026 post-2.02 v2.6 ripple-resolution session (commit `1a3e737d`; closed #358, #376; filed #445–#449). Phase 5B LASO Priority Group complete (entries 25–31); prior archives #427–#438 plus #444 cover entries 21–31 and the April 20 §6.X strip batch.
 
 **Phase 5B complete.** All seven LASO Priority Group entries closed (2.01 → 2.06 → 2.02 → 2.04 → 2.11 → 2.12 → 2.13). #220 LASO disentanglement queue absorbed. Recalc marker after entry 39 (end of 5C). **Next session: entry 32 — 2.03 (Security Awareness and Training), opens Phase 5C.** 2.03 open tickets: #66, #67, #68, #213, #346, #351 (6 tickets).
 
@@ -247,7 +247,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.08 | Delegation of Authority | T | v1.5 | 0 | — |
 | 1.09 | Risk Management | T | v2.1 | 0 | — |
 | 1.10 | IT Financial / Procurement | T | v2.2 | 0 | — |
-| 1.11 | Data Governance and Classification | T | v2.3 | 0 | — |
+| 1.11 | Data Governance and Classification | T+ | v2.3 | 1 | #445 |
 | 1.12 | IT Asset Management | T+ | v2.6 | 2 | #329, #426 |
 | 1.13 | Supply Chain Risk Management | T | v2.2 | 0 | — |
 | 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
@@ -256,18 +256,18 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 2.01 | Acceptable Use | T+ | v2.4 | 1 | #356 |
-| 2.02 | Personnel Security | T+ | v2.4, April 19 | 2 | #358, #376 |
+| 2.01 | Acceptable Use | T+ | v2.4 | 2 | #356, #446 |
+| 2.02 | Personnel Security | T | v2.6, April 24 | 0 | — |
 | 2.03 | Security Awareness | D | — | 6 | #66, #67, #68, #213, #346, #351 |
-| 2.04 | Access Control | T | v2.4, April 20 | 0 | — |
+| 2.04 | Access Control | T+ | v2.4, April 20 | 1 | #447 |
 | 2.05 | Identification and Authentication | D | — | 5 | #71, #72, #73, #292, #333 |
-| 2.06 | Privacy and Data Protection | T | v2.6, April 18 | 0 | — |
+| 2.06 | Privacy and Data Protection | T+ | v2.6, April 18 | 1 | #448 |
 | 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 |
 | 2.08 | System Integrity / Malware | D | — | 3 | #81, #83, #84 |
 | 2.09 | Vulnerability and Patch Management | D | — | 5 | #85, #86, #87, #271, #326 |
 | 2.10 | Secure Configuration Baselines | D | — | 4 | #88, #89, #90, #226 |
 | 2.11 | Audit Logging and Monitoring | T | v2.3, April 22 | 0 | — |
-| 2.12 | Media Protection and Sanitization | T | v2.3, April 23 | 0 | — |
+| 2.12 | Media Protection and Sanitization | T+ | v2.3, April 23 | 1 | #449 |
 | 2.13 | Physical Security | T | v2.3, April 24 | 0 | — |
 | 2.14 | Mobile and Remote Access | D | — | 5 | #99, #101, #102, #229, #332 |
 | 2.15 | Secure Software Lifecycle | D | — | 3 | #103, #104, #105 |
