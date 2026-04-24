@@ -174,13 +174,13 @@ name "pol:1.04"
 
 \lang english
 Effective:
- April 16,
+ April 23,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.4
+ 1.5
 \end_layout
 
 \begin_layout Subsection*
@@ -979,7 +979,7 @@ Not every policy requires both In Scope and Out of Scope subsections.
 
 \begin_layout Standard
 Cross-references within the Scope section shall use the routing pointer format prescribed above.
- The first-use parenthetical title convention defined in Section 6.9 applies to prose references in Sections 3,
+ The first-use parenthetical title convention defined in Section 6.11 applies to prose references in Sections 3,
  4,
  and 6;
  it does not apply to Scope section routing pointers.
@@ -2412,7 +2412,7 @@ nolink "false"
 
 
 \series default
- (Containment Strategy and Playbooks) Section 6.5.
+ (Containment Strategy and Playbooks).
 \end_layout
 
 \begin_layout Itemize
@@ -2583,7 +2583,7 @@ nolink "false"
 
 
 \series default
- Section 6.3.
+.
  Required.
 \end_layout
 
@@ -2629,7 +2629,7 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
  This policy does not restate those requirements.
 \end_layout
 
@@ -2761,7 +2761,7 @@ nolink "false"
 
 
 \series default
- Section 6.3 as an operational standard.
+ as an operational standard.
 \end_layout
 
 \end_body
