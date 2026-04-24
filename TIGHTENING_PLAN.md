@@ -224,9 +224,9 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 23, 2026 post-Phase 5B entry 30 (archive #438). Prior session archives: #427–#436 covering entries 21–29 plus the April 20 §6.X strip batch.
+**Last refreshed:** April 24, 2026 post-Phase 5B entry 31 (archive #444). Phase 5B LASO Priority Group complete (entries 25–31). Prior session archives: #427–#438 covering entries 21–30 plus the April 20 §6.X strip batch.
 
-**Phase 5B LASO queue status:** Entries 29 (2.11), 30 (2.12) complete. Entry 31 (2.13) remains. Recalc marker after entry 39 (end of 5C). **Next session: entry 31 — 2.13 (Physical Security and Environmental Controls).** 2.13 open tickets: #96, #97, #98 (3 tickets).
+**Phase 5B complete.** All seven LASO Priority Group entries closed (2.01 → 2.06 → 2.02 → 2.04 → 2.11 → 2.12 → 2.13). #220 LASO disentanglement queue absorbed. Recalc marker after entry 39 (end of 5C). **Next session: entry 32 — 2.03 (Security Awareness and Training), opens Phase 5C.** 2.03 open tickets: #66, #67, #68, #213, #346, #351 (6 tickets).
 
 ### Chapter 0 / Front Matter
 
@@ -268,7 +268,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 2.10 | Secure Configuration Baselines | D | — | 4 | #88, #89, #90, #226 |
 | 2.11 | Audit Logging and Monitoring | T | v2.3, April 22 | 0 | — |
 | 2.12 | Media Protection and Sanitization | T | v2.3, April 23 | 0 | — |
-| 2.13 | Physical Security | D | — | 3 | #96, #97, #98 |
+| 2.13 | Physical Security | T | v2.3, April 24 | 0 | — |
 | 2.14 | Mobile and Remote Access | D | — | 5 | #99, #101, #102, #229, #332 |
 | 2.15 | Secure Software Lifecycle | D | — | 3 | #103, #104, #105 |
 
@@ -430,7 +430,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 | 28 | ~~2.04 (Access Control)~~ — ✅ v2.3, April 20, 2026. Closed: #69, #70. Ripple: #358 (2.02 Sanctions NRS overstatement). Standing decline #30 promoted then retracted April 20. [Archive: #434] | 2 (#69, #70) | Foundational — 2.05 I&A depends on it |
 | 29 | ~~2.11 (Audit Logging)~~ — ✅ v2.3, April 22, 2026. Closed: #91, #92. Ripples: #425 (5.01 §6.6 CJI-exception CSO-approval Constraint), #426 (1.12 §6.10 Log Custody Transfer). [Archive: #435] | 2 (#91, #92) | Consumed by many downstream policies |
 | 30 | ~~2.12 (Media Protection)~~ — ✅ v2.3, April 23, 2026. Closed: #94, #95, #228, #324, #330. Ripples: #425 reframed (5.01 §6.6 CJI-exception clarifier), #437 (1.04 §6.4 internal ref §6.9→§6.11). Standing decline #31 promoted (ChatGPT FIPS transition-date re-push). Pattern #21 meta-threshold triggered on §5 flat-list (3 validator rounds). 2.10 rewrite note landed via architectural ruling (drive-retention default). [Archive: #438] | 5 (#94, #95, #228, #324, #330) | LASO + asset lifecycle tie to 1.12 |
-| 31 | 2.13 (Physical Security) | 3 | Completes LASO group |
+| 31 | ~~2.13 (Physical Security)~~ — ✅ v2.3, April 24, 2026. Closed: #96, #97, #98. Ripples: #440 (1.13), #441 (2.02), #442 (2.11), #443 (2.12) — CJIS "Section" prefix drift regression. [Archive: #444] | 3 (#96, #97, #98) | Completes LASO group; Phase 5B closed |
 
 #### 5C — Chapter 2 Remainder
 
