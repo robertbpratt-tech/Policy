@@ -665,7 +665,7 @@ Cross-policy definitions Claude needs to preserve during tightening. Modifying a
 - **Exception Routing.** All policy exceptions route to 5.01 §6.6, regardless of the policy being deviated from. Policy 1.08 is a delegation ceiling constraint, not an exception path. Locked — do not propose re-routing exceptions through 1.08.
 - **LASO Designation.** Per 1.11 §6.11, the IT Director holds LASO by policy mandate. In body text of other policies, cite as "IT Director (as LASO)" when the CJIS liaison function is specifically invoked.
 - **No section-specific cross-references in body prose (Rule #1, April 20, 2026).** Cross-references to other ECIO policies in the body of any policy use `Policy X.XX (Policy Title)` on first use within that policy and `Policy X.XX` thereafter. Section-specific depth (`§6.X`, `Section 6.X`, `§6.11`) shall not appear appended to cross-policy references. Self-references within the same policy are permitted — navigation within the current document is in-scope.
-- **§2 Out of Scope routing pointer format (Rule #2, April 20, 2026).** Out of Scope routing pointers end at `Policy [X.XX].` — no parenthetical title, no section depth. Per 1.04 §6.4 format spec and §6.11 exception clause. 1.04 v1.4 §2 itself carries the defect; ripple to file against 1.04 when touched.
+- **§2 Out of Scope routing pointer format (Rule #2, April 20, 2026).** Out of Scope routing pointers end at `Policy [X.XX].` — no parenthetical title, no section depth. Per 1.04 §6.4 format spec and §6.11 exception clause.
 
 ### §9.2 Named Constructs
 
