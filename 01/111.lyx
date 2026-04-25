@@ -174,13 +174,13 @@ name "pol:1.11"
 
 \lang english
 Effective:
- April 18,
+ April 24,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -645,12 +645,7 @@ nolink "false"
 Enforcement
 \series default
 :
- Unauthorized disclosure or mishandling of Confidential or Restricted information may result in corrective action,
- disciplinary action up to and including termination,
- referral for investigation,
- and criminal prosecution under applicable law,
- including NRS 205.
- The IT Director shall enforce compliance with this policy in accordance with 
+ The IT Director shall enforce this policy. Unauthorized disclosure or mishandling of Confidential or Restricted information constitutes a violation subject to the enforcement framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
