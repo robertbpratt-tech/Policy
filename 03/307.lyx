@@ -174,13 +174,13 @@ name "pol:3.07"
 
 \lang english
 Effective:
- July 01,
+ April 25,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -1714,6 +1714,32 @@ nolink "false"
  — as either Duplicate or Resolved depending on whether end-system work was required.
  This notification shall occur no later than end of business on the day the Formal Closure Declaration is issued.
  Child work order dispositions shall be completed within two (2) business days of notification.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Trigger for Significant Incident Report Intake
+\series default
+:
+ Where the permanent remediation identifies a systemic improvement opportunity beyond the immediate fix,
+ the Assistant IT Director shall route the matter to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Improvement and Continual Improvement Plan) for SIR intake under that policy's Section 6.2.
 \end_layout
 
 \begin_layout Subsubsection*
