@@ -173,13 +173,13 @@ name "pol:3.15"
 
 \lang english
 Effective:
- July 01,
+ April 25,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -1779,6 +1779,22 @@ The Assistant IT Director shall coordinate an annual tabletop exercise covering 
  scenarios tested,
  and findings,
  which the IT Director shall receive.
+ Findings warranting tracked improvement shall be routed to 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.16"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Improvement and Continual Improvement Plan) for SIR intake under that policy's Section 6.2.
 \end_layout
 
 \begin_layout Standard
