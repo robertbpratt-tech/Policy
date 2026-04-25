@@ -224,7 +224,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 25, 2026 post-sanctions-restatement sweep (1.11 v2.4, 2.01 v2.5, 2.04 v2.5, 2.06 v2.7; commits `c0a97705`/`1bd53696`/`620e1849`/`8951f3a5`; closed #445–#448). Prior session (April 24): 2.02 v2.6 architectural ruling (commit `1a3e737d`; closed #358, #376; filed #445–#449). Phase 5B LASO Priority Group complete (entries 25–31); prior archives #427–#438 plus #444 cover entries 21–31 and the April 20 §6.X strip batch.
+**Last refreshed:** April 25, 2026 post-3.16 SIR bidirectional sweep — 3.07 v2.3, 3.15 v2.2 (commits `e61dd755`, `124f11b2`; closed #316, #319). Three originally-clustered tickets retired as misframed and re-filed with substantive scope: #313 → #450 (3.06 missing continuity-activation branch), #317 → #451 (3.11 missing third remediation-plan branch), #318 → #452 (3.16/3.12 contradiction). Prior session (April 25 morning): sanctions-restatement sweep — 1.11 v2.4, 2.01 v2.5, 2.04 v2.5, 2.06 v2.7 (commits `c0a97705`/`1bd53696`/`620e1849`/`8951f3a5`; closed #445–#448). April 24: 2.02 v2.6 architectural ruling (commit `1a3e737d`; closed #358, #376; filed #445–#449). Phase 5B LASO Priority Group complete (entries 25–31); prior archives #427–#438 plus #444 cover entries 21–31 and the April 20 §6.X strip batch.
 
 **Phase 5B complete.** All seven LASO Priority Group entries closed (2.01 → 2.06 → 2.02 → 2.04 → 2.11 → 2.12 → 2.13). #220 LASO disentanglement queue absorbed. Recalc marker after entry 39 (end of 5C). **Next session: entry 32 — 2.03 (Security Awareness and Training), opens Phase 5C.** 2.03 open tickets: #66, #67, #68, #213, #346, #351 (6 tickets).
 
@@ -283,17 +283,17 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.03 | Service Communication | T | v2.0 | 0 | — |
 | 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
 | 3.05 | Service Request Fulfillment | T+ | v2.1 | 1 | #308 |
-| 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #313 |
-| 3.07 | Problem Management | T+ | v2.2 | 1 | #316 |
+| 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #450 |
+| 3.07 | Problem Management | T | v2.3 | 0 | — |
 | 3.08 | CMDB | T | v2.2 | 0 | — |
 | 3.09 | Change Management | T | v2.0 | 0 | — |
 | 3.10 | Release and Deployment | T+ | v2.0 | 1 | #377 |
-| 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #317 |
-| 3.12 | Monitoring and Event Management | T+ | v2.0 | 2 | #318, #413 |
+| 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #451 |
+| 3.12 | Monitoring and Event Management | T+ | v2.0 | 1 | #413 |
 | 3.13 | Knowledge Management | T | v2.2 | 0 | — |
 | 3.14 | IT Project Management | T | v2.2 | 0 | — |
-| 3.15 | Service Continuity | T+ | v2.1 | 2 | #314, #319 |
-| 3.16 | Service Improvement | T | v2.0 | 0 | — |
+| 3.15 | Service Continuity | T+ | v2.2 | 1 | #314 |
+| 3.16 | Service Improvement | T+ | v2.0 | 1 | #452 |
 | 3.17 | System Maintenance and Vendor Repairs | T | v2.1 | 0 | — |
 
 ### Chapter 4 — Incident Response
