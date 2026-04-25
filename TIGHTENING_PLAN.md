@@ -539,6 +539,7 @@ All Wave 2 sub-phases depend on Wave 1's frozen-accurate baseline. Mutually inde
 | 9D Role Obligation Accumulation | Enumerate total obligations per major role (IT Director, Assistant IT Director, L1/L2/L3 technicians, Systems Administrator, HR, County Manager, Department Heads, Board of County Commissioners). Audit for achievability and SoD collisions against 1.08 and the SoD Matrix. | Per-role obligation matrix complete; no role operationally impossible; no SoD collision against 1.08. |
 | 9E Pipeline Chain Closure | Traverse every named pipeline end-to-end: Known Error lifecycle, CAP lifecycle, Annual Policy Review feedback, Parent-Child Linkage closure, Problem Record Spawn triggers, Hard Fork, Exception Routing, Vendor Compliance Record build, plus others enumerated during the pass. | Every named pipeline traversed; closure confirmed for each. |
 | 9F Framework Coverage Topology | Aggregate CSF subcategory / SP control / CJIS section footprint mapped and cross-checked. Flag any framework element invoked with contradictory directives across policies. | Framework footprint matches 6.02 claims; no contradictory control invocations. |
+| 9I Architectural Function Ownership | For each load-bearing governance function (sanctions framework, exception routing, sanitization authority, LRDA retention chain, LASO function, risk acceptance authority, delegation/non-delegation authority, and others enumerated during the pass), confirm exactly one policy is the canonical owner and every other invocation is a clean by-reference. Catches the framework-restatement defect class — directives surviving the per-policy tightening pass that duplicate consequences, authorities, or processes another policy already governs. | One canonical owner identified per function; every other invocation routes by reference with no inline restatement of consequences, authorities, or process steps. |
 
 **Gate: Wave 2 complete. Appendices 6.02 and 6.03 populated from Phase 9 matrix outputs.**
 
@@ -553,7 +554,7 @@ All Wave 2 sub-phases depend on Wave 1's frozen-accurate baseline. Mutually inde
 
 **Scaffolding artifacts produced during Phase 9 (die with repo):**
 
-- Phase 9 finding tickets (labels `phase-9a` through `phase-9h`).
+- Phase 9 finding tickets (labels `phase-9a` through `phase-9i`).
 - `Phase9/` folder in repo root: citation consistency matrix, construct registry, role obligation matrices, framework coverage matrices, pipeline traversal reports, succession walkthrough gap report, editorial findings log.
 
 **Persistent outputs (live in LyX / compiled manual):**
@@ -565,7 +566,7 @@ All Wave 2 sub-phases depend on Wave 1's frozen-accurate baseline. Mutually inde
 
 **v1.0 Criteria mapping.**
 
-- Criterion 1 (Internal Consistency) — satisfied by 9A, 9B, 9C, 9F, 9H.
+- Criterion 1 (Internal Consistency) — satisfied by 9A, 9B, 9C, 9F, 9H, 9I.
 - Criterion 2 (Self-Feeding and Self-Growing) — satisfied by 9D, 9E, 9F.
 - Criterion 3 (Succession Completeness) — satisfied by 9G directly.
 
