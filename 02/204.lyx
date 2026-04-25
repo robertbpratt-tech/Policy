@@ -174,13 +174,13 @@ name "pol:2.04"
 
 \lang english
 Effective:
- July 01,
+ April 24,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.4
+ 2.5
 \end_layout
 
 \begin_layout Subsection*
@@ -579,7 +579,9 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \end_deeper
@@ -799,9 +801,7 @@ nolink "false"
 Enforcement
 \series default
 :
- The IT Director shall enforce this policy through immediate access revocation for violations,
- referral to Human Resources for disciplinary review,
- and escalation under 
+ The IT Director shall enforce this policy. Violations constitute non-compliance subject to the enforcement framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -816,7 +816,7 @@ nolink "false"
 
 
 \series default
- for persistent or willful non-compliance.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -885,18 +885,6 @@ Universal Applicability
 :
  These standards apply to all access to County information systems regardless of location or work arrangement,
  including remote work and official travel.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Sanctions
-\series default
-:
- Violations may result in access revocation,
- disciplinary action consistent with County Human Resources policy,
- and referral for criminal investigation or prosecution under NRS 205.4765 (Unlawful acts regarding computers).
 \end_layout
 
 \begin_layout Subsection*
@@ -1151,12 +1139,6 @@ nolink "false"
 
 :
  Annual Policy Review and Maturity Scoring
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NRS 205.4765 (Unlawful acts regarding computers)
 \end_layout
 
 \begin_layout Itemize
