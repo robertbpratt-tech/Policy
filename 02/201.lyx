@@ -174,13 +174,13 @@ name "pol:2.01"
 
 \lang english
 Effective:
- July 01,
+ April 24,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.4
+ 2.5
 \end_layout
 
 \begin_layout Subsection*
@@ -676,11 +676,7 @@ nolink "false"
 Enforcement
 \series default
 :
- Non-compliance may result in access revocation,
- disciplinary action up to and including termination,
- contract remedies,
- and referral for civil or criminal enforcement under NRS 205.4765 (Unlawful acts regarding computers).
- Enforcement actions shall be executed under the corrective action framework defined in 
+ The IT Director shall enforce this policy. Violations constitute non-compliance subject to the enforcement framework defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -695,9 +691,7 @@ nolink "false"
 
 
 \series default
- (Policy Implementation,
- Enforcement,
- and Legal Alignment).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -940,12 +934,6 @@ nolink "false"
 
 :
  Annual Policy Review and Maturity Scoring
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NRS 205.4765 (Unlawful acts regarding computers)
 \end_layout
 
 \begin_layout Itemize
