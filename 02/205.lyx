@@ -174,13 +174,13 @@ name "pol:2.05"
 
 \lang english
 Effective:
- July 01,
+ April 26,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -196,10 +196,6 @@ Version:
 This policy establishes mandatory requirements for uniquely identifying and authenticating all users,
  devices,
  and services prior to granting access to Elko County information systems and data.
- This policy ensures that all access is attributable to a verified identity,
- resistant to credential compromise,
- and compliant with FBI Criminal Justice Information Services (CJIS) Security Policy v6.0 and NIST SP 800-53 Rev.
- 5.
 \end_layout
 
 \begin_layout Subsection*
@@ -217,19 +213,148 @@ This policy applies to all Elko County Information Operations (ECIO) personnel,
  elected officials,
  contractors,
  vendors,
- and any other entities accessing County IT resources.
- It governs all authenticators,
+ and any other individuals or services accessing County information systems.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Authenticators,
  including passwords,
  cryptographic tokens,
  smart cards,
  biometrics,
  device certificates,
- and service credentials used for local,
+ and service credentials.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Authentication for local,
  network,
  remote,
  and application/API access.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Identifier management and lifecycle controls for user,
+ device,
+ and service identities.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Logical access decisions and account lifecycle:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Personnel security and adjudication:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data classification:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor access governance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -242,20 +367,65 @@ This policy applies to all Elko County Information Operations (ECIO) personnel,
 \series bold
 \lang english
 IT Director
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall serve as the final Authentication Authority for enterprise standards.
- 
+Shall hold final authority for County authentication architecture decisions.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall approve all County authentication architectures and enterprise MFA technology selections.
+Shall hold final authority for enterprise multi-factor authentication (MFA) technology selections.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall exercise the Local Agency Security Officer (LASO) designation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) for authentication decisions involving Criminal Justice Information (CJI).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve any exception to authentication requirements in writing per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \end_deeper
@@ -263,14 +433,31 @@ Shall approve all County authentication architectures and enterprise MFA technol
 
 \series bold
 \lang english
-Human Resources (HR)
+County Manager
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall serve as the Authoritative Source for workforce identity proofing and shall manage the lifecycle of physical County identity credentials.
+Shall approve authentication policy exceptions that exceed the IT Director's delegated authority per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -278,16 +465,28 @@ Shall serve as the Authoritative Source for workforce identity proofing and shal
 
 \series bold
 \lang english
-Information Operations (Administrators)
+Assistant IT Director
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall configure and manage the Identity and Access Management (IAM) infrastructure,
- bind authenticators to verified identities,
- and execute credential revocation within required timeframes.
+Shall maintain the Identity and Access Management (IAM) infrastructure required under this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall implement compensating controls for approved authentication exceptions.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure information systems implement the technical authentication controls required by this policy.
 \end_layout
 
 \end_deeper
@@ -295,14 +494,28 @@ Shall configure and manage the Identity and Access Management (IAM) infrastructu
 
 \series bold
 \lang english
-System and Data Owners
+Systems Administrator
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall determine required authentication strength based on data classification and shall coordinate implementation with ECIO.
+Shall configure authentication mechanisms in accordance with the requirements established in Section 6.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall bind authenticators to verified identities.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall execute credential revocation within the timeframes defined in Section 6.3.
 \end_layout
 
 \end_deeper
@@ -310,14 +523,93 @@ Shall determine required authentication strength based on data classification an
 
 \series bold
 \lang english
-All Users
+Department Heads
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall protect County-issued authenticators from unauthorized use
+Shall identify the classification level of data under their ownership per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ which determines the authentication strength applied under this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall request authentication policy exceptions for systems under their data ownership per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Human Resources
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the Authoritative Source for workforce identity proofing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall manage the lifecycle of physical County identity credentials.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall protect County-issued authenticators from unauthorized use.
 \end_layout
 
 \begin_layout Itemize
@@ -336,56 +628,25 @@ Shall report suspected compromise,
  Compliance and Exceptions
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
-\series bold
 \lang english
-Mandatory Enforcement
-\series default
-:
- Personnel who refuse to utilize County-required authentication mechanisms shall be denied access to County information systems.
+Compliance with this policy is mandatory for all individuals authenticating to County information systems.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Sanctions
+Assessment
 \series default
 :
- Attempting to bypass authentication controls or sharing credentials constitutes a severe security violation subject to disciplinary action up to and including termination and criminal referral under NRS 205.4765.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-CJIS Floor
-\series default
-:
- Exceptions shall not authorize non-compliance with CJIS Security Policy requirements.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exception Process
-\series default
-:
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Deviations must be documented in a Risk Acceptance Memo (per 
+ Compliance with authentication and identifier management requirements shall be assessed through the internal audit process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.09"
+reference "pol:5.02"
 plural "false"
 caps "false"
 noprefix "false"
@@ -395,17 +656,89 @@ nolink "false"
 
 
 \series default
-) that includes compensating controls and an expiration date not exceeding twelve (12) months.
- 
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) and the security control assessment process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Control Assessment and Authorization).
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Exceptions involving CJI shall require written approval by the CJIS Systems Officer (CSO).
+Enforcement
+\series default
+:
+ The IT Director shall enforce this policy.
+ Violations constitute non-compliance subject to the enforcement framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be processed in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Universal Applicability
+\series default
+:
+ These standards apply to all authentication to County information systems regardless of location or work arrangement,
+ including remote work and official travel.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
@@ -413,42 +746,13 @@ Exceptions involving CJI shall require written approval by the CJIS Systems Offi
  References
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\series bold
 \lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
+Cited References
+\series default
 :
- Workforce Roles,
- Responsibilities,
- and Competency Framework
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Risk Management Policy
 \end_layout
 
 \begin_layout Itemize
@@ -467,6 +771,24 @@ nolink "false"
 
 :
  Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management and Vendor Governance
 \end_layout
 
 \begin_layout Itemize
@@ -508,14 +830,105 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-NRS 205.4765 (Unlawful acts regarding computers)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Audit Logging and Monitoring Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Security Control Assessment and Authorization
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section IA-2 (Identification and Authentication)
+ Section 5.20.7.2 (Advanced Authentication)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section 5.20.7.2.1 (Compensating Controls)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section 5.20.7.3 (Device Certificates)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IA-2 (Identification and Authentication (Organizational Users))
 \end_layout
 
 \begin_layout Itemize
@@ -550,6 +963,20 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
+ Section IA-5(1) (Authenticator Management | Authenticator Types)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IA-5(2) (Authenticator Management | Public Key-Based Authentication)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
  Section IA-6 (Authentication Feedback)
 \end_layout
 
@@ -564,7 +991,30 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
+ Section IA-8 (Identification and Authentication (Non-Organizational Users))
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IA-12 (Identity Proofing)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
  Section SC-13 (Cryptographic Protection)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -591,9 +1041,34 @@ NIST CSF 2.0:
 \begin_layout Itemize
 
 \lang english
+NIST CSF 2.0:
+ PR.AA-04 (Identity Assertions Protected,
+ Conveyed,
+ and Verified)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NIST SP 800-53 Rev.
  5:
- IA-2 (Identification and Authentication)
+ IA-2 (Identification and Authentication (Organizational Users))
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IA-3 (Device Identification and Authentication)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IA-4 (Identifier Management)
 \end_layout
 
 \begin_layout Itemize
@@ -609,6 +1084,14 @@ NIST SP 800-53 Rev.
 \lang english
 NIST SP 800-53 Rev.
  5:
+ IA-5(1) (Password-Based Authentication)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
  IA-5(2) (Public Key-Based Authentication)
 \end_layout
 
@@ -617,7 +1100,23 @@ NIST SP 800-53 Rev.
 \lang english
 NIST SP 800-53 Rev.
  5:
- IA-8 (Identification and Authentication-Non-Organizational Users)
+ IA-6 (Authentication Feedback)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IA-8 (Identification and Authentication (Non-Organizational Users))
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ IA-12 (Identity Proofing)
 \end_layout
 
 \begin_layout Itemize
@@ -654,10 +1153,22 @@ ITIL v4:
 Unique Identification
 \series default
 :
- County systems shall uniquely identify each user.
- Assigning a single identifier to multiple individuals is prohibited.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall configure County systems to uniquely identify each user.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall not assign a single identifier to multiple individuals.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -665,9 +1176,9 @@ Unique Identification
 Shared/Generic Accounts
 \series default
 :
- Shared,
+ The Systems Administrator shall not provision shared,
  generic,
- or group accounts are prohibited unless a Risk Acceptance Memo is approved in accordance with Section 4.
+ or group accounts except where the IT Director has approved a documented operational necessity in writing.
 \end_layout
 
 \begin_layout Itemize
@@ -677,8 +1188,10 @@ Shared/Generic Accounts
 Identifier Reuse Floor
 \series default
 :
- Identifiers (e.g.,
- usernames) shall not be reused for a minimum of one (1) year following account deactivation per CJIS IA-4(d).
+ The Systems Administrator shall not reuse identifiers (e.g.,
+ usernames) for a minimum of one (1) year following account deactivation,
+ consistent with CJIS Security Policy v6.0:
+ Section IA-4 (Identifier Management).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -694,11 +1207,27 @@ Identifier Reuse Floor
 MFA Required for Restricted (Level 4)
 \series default
 :
- Multi-factor authentication (MFA) shall be required for access to Restricted data systems (CJI,
- PII,
+ The Systems Administrator shall require multi-factor authentication (MFA) for access to Restricted (Level 4) data systems (CJI,
  PHI),
  Restricted repositories,
- and administrative functions.
+ and administrative functions,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and CJIS Security Policy v6.0:
+ Section IA-2 (Identification and Authentication (Organizational Users)).
 \end_layout
 
 \begin_layout Itemize
@@ -708,7 +1237,7 @@ MFA Required for Restricted (Level 4)
 MFA Required for Remote and Privileged Access
 \series default
 :
- MFA shall be mandatory for all remote access and for privileged accounts consistent with 
+ The Systems Administrator shall require MFA for all remote access and for privileged accounts consistent with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -723,18 +1252,19 @@ nolink "false"
 
 
 \series default
- access control baselines.
+ (Access Control Policy) access control baselines.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Replay-Resistant Requirement (CJI/AAL2)
+Replay-Resistant Requirement (CJI)
 \series default
 :
- For access to CJI and workflows requiring replay resistance,
- at least one factor shall be replay-resistant.
+ The Systems Administrator shall implement at least one (1) replay-resistant factor for access to CJI and workflows requiring replay resistance,
+ consistent with CJIS Security Policy v6.0:
+ Section IA-2(8) (Replay Resistant).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -750,7 +1280,9 @@ Replay-Resistant Requirement (CJI/AAL2)
 Identity Proofing
 \series default
 :
- HR shall conduct in-person identity verification prior to issuance of County credentials.
+ Human Resources shall conduct in-person identity verification prior to issuance of County credentials,
+ consistent with CJIS Security Policy v6.0:
+ Section IA-12 (Identity Proofing).
 \end_layout
 
 \begin_layout Itemize
@@ -760,7 +1292,15 @@ Identity Proofing
 Revocation Timeframes
 \series default
 :
- ECIO shall disable accounts within twenty-four (24) hours for standard termination and within thirty (30) minutes for High-Risk Individuals as defined by 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+For standard termination,
+ the Systems Administrator shall disable accounts within twenty-four (24) hours,
+ consistent with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -775,9 +1315,32 @@ nolink "false"
 
 
 \series default
-.
+ (Personnel Security and Background Screening Policy).
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+For High-Risk Individuals as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the Systems Administrator shall disable accounts within thirty (30) minutes.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -785,13 +1348,25 @@ nolink "false"
 Compromise/Loss Reporting
 \series default
 :
- Users shall report suspected authenticator compromise,
- loss,
- or theft immediately.
- If the authenticator or device provides access to CJI,
- reporting shall occur immediately and shall not exceed one (1) hour from discovery.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+All County Personnel shall report suspected authenticator compromise,
+ loss,
+ or theft immediately.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+For authenticators or devices providing access to CJI,
+ All County Personnel shall report within one (1) hour of discovery.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -799,8 +1374,10 @@ Compromise/Loss Reporting
 Temporary Authenticators
 \series default
 :
- Temporary authenticators (e.g.,
- initial passwords) shall require an immediate change to a user-defined secret upon first use.
+ The Systems Administrator shall require an immediate change to a user-defined secret upon first use of any temporary authenticator (e.g.,
+ initial passwords),
+ consistent with CJIS Security Policy v6.0:
+ Section IA-5 (Authenticator Management).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -816,7 +1393,7 @@ Temporary Authenticators
 Unsuccessful Logon Attempts
 \series default
 :
- Systems shall enforce unsuccessful logon attempt limits consistent with 
+ The Systems Administrator shall enforce unsuccessful logon attempt limits consistent with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -832,7 +1409,7 @@ nolink "false"
 
 \series default
  requirements:
- five (5) invalid attempts within a 15-minute period,
+ five (5) invalid attempts within fifteen (15) minutes,
  resulting in a lockout until released by an administrator for CJI-connected systems.
 \end_layout
 
@@ -849,8 +1426,9 @@ nolink "false"
 Minimum Length
 \series default
 :
- Standard accounts shall require a minimum of twelve (12) characters.
- Privileged accounts (Tier L3+) shall require a minimum of fourteen (14) characters.
+ The Systems Administrator shall require a minimum of twelve (12) characters for standard accounts and a minimum of fourteen (14) characters for privileged accounts (Tier L3 and above),
+ consistent with CJIS Security Policy v6.0:
+ Section IA-5(1) (Authenticator Management | Authenticator Types).
 \end_layout
 
 \begin_layout Itemize
@@ -860,7 +1438,7 @@ Minimum Length
 Password History
 \series default
 :
- Systems shall prevent reuse of the last ten (10) passwords (County-defined standard).
+ The Systems Administrator shall prevent reuse of the last ten (10) passwords.
 \end_layout
 
 \begin_layout Itemize
@@ -870,9 +1448,30 @@ Password History
 Blocklist Screening
 \series default
 :
- Systems shall implement checks against commonly used and compromised passwords and shall update the reference data at least quarterly.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall implement screening against an IT Director-approved reference list of commonly-used,
+ expected,
+ or compromised passwords.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall update the password screening reference data at least quarterly.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall compare current memorized-secret authenticators against the approved reference list at least quarterly and upon suspected compromise.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -880,7 +1479,62 @@ Blocklist Screening
 Compromise-Triggered Change
 \series default
 :
- Systems shall require password change upon evidence of compromise and shall not mandate periodic password changes as a primary control.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall require a password change upon evidence of compromise.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall not mandate periodic password changes as a primary control.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Account Recovery
+\series default
+:
+ The Systems Administrator shall require immediate selection of a new memorized secret upon account recovery.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+No Truncation
+\series default
+:
+ The Systems Administrator shall not configure verifiers to truncate memorized secrets during authentication or storage.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Hint Prohibition
+\series default
+:
+ The Systems Administrator shall not configure systems to permit storage of memorized-secret hints accessible to unauthenticated claimants.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Knowledge-Based Authentication Prohibition
+\series default
+:
+ The Systems Administrator shall not prompt users to use knowledge-based information (e.g.,
+ security questions) when selecting memorized secrets,
+ either during initial selection or account recovery.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -896,7 +1550,7 @@ Compromise-Triggered Change
 Interactive Logon Prohibited
 \series default
 :
- Service accounts shall not be used by personnel for administrative work or interactive logon.
+ The Systems Administrator shall not permit personnel to use service accounts for administrative work or interactive logon.
 \end_layout
 
 \begin_layout Itemize
@@ -906,28 +1560,69 @@ Interactive Logon Prohibited
 Legacy Exception Controls
 \series default
 :
- If an application requires interactive use of a service account,
- the System Owner shall obtain a Risk Acceptance Memo that mandates:
- 
+ Where an application requires interactive use of a service account:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Interactive enablement limited to maintenance windows
+Department Heads shall request an exception per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-MFA for the interactive session
+The IT Director shall approve the exception in writing.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Full event logging
+The Assistant IT Director shall enable interactive use only during scheduled maintenance windows.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall require MFA for any interactive service-account session.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall configure full event logging for any interactive service-account session,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Audit Logging and Monitoring Policy).
 \end_layout
 
 \end_deeper
@@ -938,9 +1633,30 @@ Full event logging
 Secrets Management
 \series default
 :
- Service credentials and API keys shall be stored in an ECIO-approved secrets management solution and rotated upon suspected compromise or owner departure.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall store service credentials and API keys in an ECIO-approved secrets management solution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall rotate service credentials and API keys upon events that may compromise authenticator integrity,
+ including but not limited to:
+ suspected compromise,
+ owner departure,
+ privilege change,
+ vendor contract termination,
+ administrator role change,
+ application ownership transfer,
+ and system decommissioning.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection*
 
 \lang english
@@ -954,10 +1670,45 @@ Secrets Management
 Non-Organizational Users
 \series default
 :
- Contractors and vendors shall be uniquely identified and authenticated.
- Access shall be time-bounded and re-verified at least annually.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall uniquely identify and authenticate contractors and vendors,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Supply Chain Risk Management and Vendor Governance) and CJIS Security Policy v6.0:
+ Section IA-8 (Identification and Authentication (Non-Organizational Users)).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure non-organizational user access is time-bounded with a defined termination date specified at the time of authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall re-verify non-organizational user access at least annually.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -965,10 +1716,24 @@ Non-Organizational Users
 Device Identification
 \series default
 :
- County-managed devices shall be uniquely identified prior to network connection.
- Device authentication shall not substitute for user authentication or user MFA requirements.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall uniquely identify County-managed devices prior to network connection,
+ consistent with CJIS Security Policy v6.0:
+ Section IA-3 (Device Identification and Authentication).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall not substitute device authentication for user authentication or user MFA requirements.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection*
 
 \lang english
@@ -982,7 +1747,9 @@ Device Identification
 Obscuration
 \series default
 :
- Systems shall mask characters during entry to protect against shoulder surfing.
+ The Systems Administrator shall mask characters during entry to protect against shoulder surfing,
+ consistent with CJIS Security Policy v6.0:
+ Section IA-6 (Authentication Feedback).
 \end_layout
 
 \begin_layout Itemize
@@ -992,9 +1759,22 @@ Obscuration
 Generic Error Messages
 \series default
 :
- Authentication error messages shall be generic and shall not disclose which element of the credentials (username or password) was incorrect.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall configure authentication error messages to be generic.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall not configure error messages that disclose which element of the credentials (username or password) was incorrect.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection*
 
 \lang english
@@ -1008,41 +1788,153 @@ Generic Error Messages
 Requirement
 \series default
 :
- Mobile devices accessing CJI shall use advanced authentication (MFA) per 
-\series bold
-CJIS Section 5.20.7.2
-\series default
-.
+ The Systems Administrator shall require advanced authentication (MFA) for mobile devices accessing CJI,
+ consistent with CJIS Security Policy v6.0:
+ Section 5.20.7.2 (Advanced Authentication).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Compensating Controls
+Eligible Device Class
 \series default
 :
- Any mobile advanced-authentication exception shall require:
- 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-County MDM enrollment
+The IT Director shall approve advanced-authentication compensating-control exceptions only for agency-issued smartphones and tablets with limited-feature operating systems,
+ consistent with CJIS Security Policy v6.0:
+ Section 5.20.7.2.1 (Compensating Controls).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Written CSO approval
+The IT Director shall not approve advanced-authentication compensating-control exceptions for unmanaged,
+ personally owned,
+ or full-featured operating system endpoints.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exception Process
+\series default
+:
+ Where a mobile device requires an exception to the advanced authentication requirement:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Department Heads shall request the exception per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-A documented expiration date
+The IT Director shall approve the exception in writing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall enroll the device in the County mobile device management (MDM) platform prior to CJIS Systems Officer (CSO) consideration,
+ consistent with CJIS Security Policy v6.0:
+ Section 5.20.7.2.1 (Compensating Controls).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall not allow the exception to take effect until written approval is obtained from the CSO.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Compensating Control Criteria
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure compensating controls meet the intent of the CJIS advanced-authentication requirement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure compensating controls provide a similar level of protection as the original advanced-authentication requirement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure compensating controls do not rely upon the existing advanced-authentication requirement as the compensating control.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall ensure compensating controls expire on the CSO-approved date or upon implementation of a compliant advanced-authentication solution.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Mandatory Compensating Controls
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall implement possession and registration of an agency-issued smartphone or tablet as proof of authorized user.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall implement device certificates consistent with CJIS Security Policy v6.0:
+ Section 5.20.7.3 (Device Certificates).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall implement CJIS-compliant standard authenticator protection on the secure storage location where CJI resides.
 \end_layout
 
 \end_deeper
@@ -1059,8 +1951,7 @@ A documented expiration date
 Private Key Protection
 \series default
 :
- Systems implementing public key-based authentication (e.g.,
- HID DigitalPersona) shall enforce protection of the private key and prevent unauthorized use.
+ The Systems Administrator shall enforce protection of the private key in systems implementing public key-based authentication and shall prevent unauthorized use.
 \end_layout
 
 \begin_layout Itemize
@@ -1070,8 +1961,7 @@ Private Key Protection
 Identity Mapping
 \series default
 :
- The authenticated identity shall be mapped to the unique individual account in the authoritative identity repository (e.g.,
- Active Directory).
+ The Systems Administrator shall map the authenticated identity to the unique individual account in the County's authoritative identity repository.
 \end_layout
 
 \begin_layout Itemize
@@ -1081,10 +1971,25 @@ Identity Mapping
 Certificate Validation and Revocation
 \series default
 :
- Systems shall validate certificates to a trusted root and maintain revocation information (e.g.,
- CRL/OCSP) to support validation during network unavailability.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall validate certificates to a trusted root.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall maintain revocation information (e.g.,
+ CRL/OCSP) to support validation during network unavailability,
+ consistent with CJIS Security Policy v6.0:
+ Section IA-5(2) (Authenticator Management | Public Key-Based Authentication).
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection*
 
 \lang english
@@ -1098,10 +2003,22 @@ Certificate Validation and Revocation
 FIPS Validation
 \series default
 :
- Cryptographic modules used to protect Restricted data shall be FIPS validated.
- FIPS 140-2 is acceptable until September 21,
- 2026,
- after which FIPS 140-3 validation is mandatory.
+ The Systems Administrator shall use cryptographic modules validated under the NIST Cryptographic Module Validation Program (CMVP) to protect Restricted data,
+ consistent with CJIS Security Policy v6.0:
+ Section IA-7 (Cryptographic Module Authentication) and Section SC-13 (Cryptographic Protection).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Validation Evidence
+\series default
+:
+ The Systems Administrator shall retain the CMVP validation certificate number,
+ validated module name,
+ validated module version,
+ and implementation context for each cryptographic module relied upon to satisfy this policy.
 \end_layout
 
 \end_body
