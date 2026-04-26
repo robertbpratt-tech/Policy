@@ -218,6 +218,8 @@ Cross-validator feedback matching these patterns is reflexively declined.
 30. ~~**Surface-framing rotation on §2 parenthetical-title prohibition**~~ — **RETRACTED April 20, 2026.** Original decline misread 1.04 §6.11 exception clause as permissive; it is prohibitive. Gemini's finding was correct. Not a standing decline. (origin: #434)
 31. **ChatGPT: restore hardcoded FIPS 140-2/140-3 transition dates citing "other tightened policies" as precedent** — violates root #291 (CMVP by-reference). Claim that tightened peers carry FIPS transition language is stale source (pattern #14); grep-verify. Authoritative pattern is 1.11 v2.3 §6.5. (origin: #438)
 32. **Cross-validator: substitute alternate label for the catch-all "All County Personnel" universal personnel role anchor** — manual-wide convention is "All County Personnel" per 1.04 §6.5 explicit example, used in 2.01 v2.5, 2.04 v2.5, 2.06 v2.7, 2.13 v2.3. Operational scope (including non-employees, contractors, vendors, physical-access holders) is established by §2 enumerated triggers; the §3/§4/§6 catch-all label is convention. Surface framings observed across rounds: "All In-Scope Personnel and Authorized Non-Employees" (R1), "All In-Scope Personnel" (R2 + R3 identical), "All County Personnel and authorized non-employees shall..." (Gem3-2). 3+ rounds re-pushing under rotated framing — pattern #23 trigger; reflexive decline. (origin: 2.03 v2.0 commit `97a451e`)
+33. **ChatGPT/validator: restore NRS 205.4765 sanctions language or restore Sanctions §4 bullet citing NRS 205 series** — locked architecture has 5.01 §6.5 owning the sanctions framework manual-wide. April 25 sanctions-restatement sweep (#445–#448) closed this pattern across 1.11/2.01/2.04/2.06. Subsequent rounds confirmed 3+ rotations: 2.05 v2.0 R1 smaller edit #4, 2.05 v2.1 R2 Gap 1. Surface forms rotate ("severe security violation," "legal audit trail," "enforcement actions," "Nevada statutory support"). Reflexive decline; cite #20 architecture + #29 trigger. (origin: #454 / 2.05 v2.2 R2)
+34. **Validator hallucinates CJIS v6.0 framework reorganization to delete retained sections** — Gemini round 2 claimed §5.20.7.2/§5.20.7.2.1/§5.20.7.3 belong to obsolete v5.9 because v6.0 transitioned to NIST control-family numbering. Verifiable false: CJIS v6.0 PDF (`Reference/01_CJIS_6.0.pdf`) retains §5.20 mobile policy section structure (TOC p.273 + body text). Distinct from #14 (stale source) — this is positive hallucination of framework reorganization. Decline with PDF page citation. (origin: 2.05 v2.2 R2)
 
 ---
 
@@ -225,9 +227,9 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 25, 2026 post-2.03 v2.0 commit (entry 32, opens Phase 5C). 2.03 D → T (commit `97a451e`; closed #66, #67, #68, #213, #346, #351; filed #453 reciprocal ripple to 2.04 §6.9). Standing decline #31 promoted: catch-all "All County Personnel" label is manual-wide convention; alternate-label substitution proposals are reflexive declines. Three validator rounds, pattern #23 fired in rounds 2 and 3. Prior session (April 25 PM): 3.16 SIR bidirectional sweep — 3.07 v2.3, 3.15 v2.2 (commits `e61dd755`, `124f11b2`; closed #316, #319). Three originally-clustered tickets retired as misframed and re-filed with substantive scope: #313 → #450 (3.06 missing continuity-activation branch), #317 → #451 (3.11 missing third remediation-plan branch), #318 → #452 (3.16/3.12 contradiction). April 25 morning: sanctions-restatement sweep — 1.11 v2.4, 2.01 v2.5, 2.04 v2.5, 2.06 v2.7 (commits `c0a97705`/`1bd53696`/`620e1849`/`8951f3a5`; closed #445–#448). April 24: 2.02 v2.6 architectural ruling (commit `1a3e737d`; closed #358, #376; filed #445–#449). Phase 5B LASO Priority Group complete (entries 25–31); prior archives #427–#438 plus #444 cover entries 21–31 and the April 20 §6.X strip batch.
+**Last refreshed:** April 26, 2026 post-2.05 v2.2 commit (entry 33 — Phase 5C). 2.05 D v1.0 → T v2.2 (commit `fcf6b095`; closed #71, #72, #73, #292, #333). Two validator rounds; standing declines #33 (sanctions-restatement push) and #34 (CJIS v6.0 §5.20.x hallucination) promoted to §4. Manual-wide oral-exceptions sweep spawned and closed mid-session: #454 patched 2.02 v2.7 (commit `81f522c4`), 2.03 v2.1 (`ee0644ca`), 2.04 v2.6 (`d4308d94`) to restore 1.04 §6.6 strict-reading compliance ("Oral exceptions are not valid" sentence). All 47 tightened policies now carry the sentence. Phase 5B LASO Priority Group complete (entries 25–31); prior archives #427–#438 plus #444 cover entries 21–31 and the April 20 §6.X strip batch.
 
-**Phase 5C in progress.** Phase 5B closed (LASO Priority Group entries 25–31); Phase 5C opened with entry 32 (2.03 v2.0). Recalc marker after entry 39 (end of 5C). **Next session: entry 33 — 2.05 (Identification and Authentication).** 2.05 open tickets: #71, #72, #73, #292, #333 (5 tickets); depends on tightened 2.04; carries the FIPS 140-2/140-3 fix (#292).
+**Phase 5C in progress.** Phase 5B closed (LASO Priority Group entries 25–31); Phase 5C entries 32–33 complete (2.03 v2.0, 2.05 v2.2). Recalc marker after entry 39 (end of 5C). **Next session: entry 34 — 2.07 (System and Communications Protection).** 2.07 open tickets: #78, #79, #80, #293 (4 tickets); pairs with 2.05 encryption posture; carries FIPS fix (#293) closing root #291 manual-wide.
 
 ### Chapter 0 / Front Matter
 
@@ -261,7 +263,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 2.02 | Personnel Security | T | v2.7, April 26 | 0 | — |
 | 2.03 | Security Awareness | T | v2.1, April 26 | 0 | — |
 | 2.04 | Access Control | T+ | v2.6, April 26 | 1 | #453 |
-| 2.05 | Identification and Authentication | D | — | 5 | #71, #72, #73, #292, #333 |
+| 2.05 | Identification and Authentication | T | v2.2, April 26 | 0 | — |
 | 2.06 | Privacy and Data Protection | T | v2.7, April 24 | 0 | — |
 | 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 |
 | 2.08 | System Integrity / Malware | D | — | 3 | #81, #83, #84 |
@@ -438,7 +440,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
 | 32 | ~~2.03 (Training)~~ — ✅ v2.0, April 25, 2026. Closed: #66, #67, #68, #213, #346, #351. Ripples: #453 (2.04 §6.9 reciprocal training-lapse trigger). Standing decline #31 promoted (catch-all "All County Personnel" label substitution). | 6 (#66, #67, #68, #213, #346, #351) | Training → access recertification tie (#66) with 2.04 |
-| 33 | 2.05 (I&A) | 5 | Depends on 2.04; FIPS fix (#292) |
+| 33 | ~~2.05 (I&A)~~ — ✅ v2.2, April 26, 2026. Closed: #71, #72, #73, #292, #333. Standing declines #33 (sanctions-restatement push), #34 (CJIS v6.0 §5.20.x hallucination) promoted. Manual-wide oral-exceptions sweep #454 spawned and closed mid-session (2.02 v2.7, 2.03 v2.1, 2.04 v2.6). [Archive: #455] | 5 (#71, #72, #73, #292, #333) | Depends on 2.04; FIPS fix (#292) |
 | 34 | 2.07 (Comms Protection) | 4 | FIPS fix (#293); pairs with 2.05 encryption |
 | 35 | 2.08 (Malware) | 3 | Feeds 4.02 (already tightened) |
 | 36 | 2.09 (Vuln/Patch) | 4 | Feeds 3.09 change management (already tightened) |
