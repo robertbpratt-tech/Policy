@@ -70,7 +70,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/202.lyx` | Personnel Security and Background Screening Policy | T | v2.7 |  |
 | `02/203.lyx` | Security Awareness and Training Policy | T | v2.1 | — |
 | `02/204.lyx` | Access Control Policy | T+ | v2.6 | #453 |
-| `02/205.lyx` | Identification and Authentication Policy | D | v1.0 | #71, #72, #73, #292, #333 |
+| `02/205.lyx` | Identification and Authentication Policy | T | v2.2 |  |
 | `02/206.lyx` | Privacy and Data Protection Policy | T | v2.7 |  |
 | `02/207.lyx` | System and Communications Protection Policy | D | v1.0 | #78, #79, #80, #293 |
 | `02/208.lyx` | System Integrity and Malware Protection Policy | D | v1.0 | #81, #83, #84 |
