@@ -67,7 +67,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
 | `02/201.lyx` | Acceptable Use of Information Technology Resources Policy | T+ | v2.5 | #356 |
-| `02/202.lyx` | Personnel Security and Background Screening Policy | T+ | v2.6 | #358, #376 |
+| `02/202.lyx` | Personnel Security and Background Screening Policy | T | v2.6 |  |
 | `02/203.lyx` | Security Awareness and Training Policy | D | v1.0 | #66, #67, #68, #213, #346, #351 |
 | `02/204.lyx` | Access Control Policy | T | v2.5 |  |
 | `02/205.lyx` | Identification and Authentication Policy | D | v1.0 | #71, #72, #73, #292, #333 |
@@ -77,7 +77,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/209.lyx` | Vulnerability and Patch Management Policy | D | v1.0 | #85, #86, #87, #271, #326 |
 | `02/210.lyx` | Secure Configuration Baselines and Hardening Policy | D | v1.0 | #88, #89, #90, #226 |
 | `02/211.lyx` | Audit Logging and Monitoring Policy | T | v2.4 |  |
-| `02/212.lyx` | Media Protection and Sanitization Policy | T | v2.4 |  |
+| `02/212.lyx` | Media Protection and Sanitization Policy | T+ | v2.4 | #449 |
 | `02/213.lyx` | Physical Security and Environmental Controls Policy | T | v2.3 |  |
 | `02/214.lyx` | Mobile Device and Remote Access Policy | D | v1.0 | #99, #101, #102, #229, #332 |
 | `02/215.lyx` | System Development and Secure Software Lifecycle Policy | D | v1.0 | #103, #104, #105 |
@@ -90,18 +90,18 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `03/302.lyx` | Service Level Management and Metrics Reporting | T+ | v2.5 | #309 |
 | `03/303.lyx` | Service Communications Policy | T | v2.0 |  |
 | `03/304.lyx` | Service Delivery Feedback and Grievance Policy | T | v2.1 |  |
-| `03/305.lyx` | Service Request Fulfillment Policy | T+ | v2.1 | #308 |
-| `03/306.lyx` | Operational Incident Management Policy | T+ | v2.1 | #313 |
-| `03/307.lyx` | Problem Management Policy | T+ | v2.3 | #316 |
+| `03/305.lyx` | Service Request Fulfillment Policy | T | v2.1 |  |
+| `03/306.lyx` | Operational Incident Management Policy | T+ | v2.1 | #450 |
+| `03/307.lyx` | Problem Management Policy | T | v2.3 |  |
 | `03/308.lyx` | Service Configuration Management (CMDB) Policy | T | v2.2 |  |
 | `03/309.lyx` | Change Management Policy | T | v2.0 |  |
 | `03/310.lyx` | Release and Deployment Policy | T+ | v2.0 | #377 |
-| `03/311.lyx` | Capacity and Availability Management Policy | T+ | v2.0 | #317 |
-| `03/312.lyx` | Monitoring and Event Management Policy | T+ | v2.0 | #318, #413 |
+| `03/311.lyx` | Capacity and Availability Management Policy | T+ | v2.0 | #451 |
+| `03/312.lyx` | Monitoring and Event Management Policy | T+ | v2.0 | #413 |
 | `03/313.lyx` | Knowledge Management Policy | T | v2.2 |  |
 | `03/314.lyx` | IT Project Management Policy | T | v2.2 |  |
-| `03/315.lyx` | Service Continuity and Contingency Planning Policy | T+ | v2.2 | #314, #319 |
-| `03/316.lyx` | Service Improvement and Continual Improvement Plan | T | v2.0 |  |
+| `03/315.lyx` | Service Continuity and Contingency Planning Policy | T+ | v2.2 | #314 |
+| `03/316.lyx` | Service Improvement and Continual Improvement Plan | T+ | v2.0 | #452 |
 | `03/317.lyx` | System Maintenance and Vendor Repairs | T | v2.1 |  |
 
 ## Chapter 4 — Incident Response
@@ -135,7 +135,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `06/601.lyx` | Glossary and Definitions | A | draft | #192, #193, #195, #328, #352 |
 | `06/602.lyx` | Policy Matrix | A | — | #196, #197, #198 |
 | `06/603.lyx` | Workforce Roles STAK Matrix | A | — | #199, #200, #214 |
-| `06/604.lyx` | Revision History and Version Control | A | v1.0 | #205 |
+| `06/604.lyx` | Revision History and Version Control | A | v1.0 |  |
 
 ## Reference Materials
 
