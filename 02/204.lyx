@@ -174,13 +174,13 @@ name "pol:2.04"
 
 \lang english
 Effective:
- April 24,
+ April 26,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.5
+ 2.6
 \end_layout
 
 \begin_layout Subsection*
@@ -842,6 +842,7 @@ nolink "false"
 
 \series default
 .
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_deeper
