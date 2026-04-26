@@ -217,6 +217,7 @@ Cross-validator feedback matching these patterns is reflexively declined.
 29. **Cross-validator pushback on locked operational-reality decisions via cross-policy dependency citation** — file a ripple toward operational truth, don't reverse the decision. Distinct from #14 (stale source) and #22 (absence-of-evidence). 3+ rounds re-pushing = reflexive decline. (origin: #433)
 30. ~~**Surface-framing rotation on §2 parenthetical-title prohibition**~~ — **RETRACTED April 20, 2026.** Original decline misread 1.04 §6.11 exception clause as permissive; it is prohibitive. Gemini's finding was correct. Not a standing decline. (origin: #434)
 31. **ChatGPT: restore hardcoded FIPS 140-2/140-3 transition dates citing "other tightened policies" as precedent** — violates root #291 (CMVP by-reference). Claim that tightened peers carry FIPS transition language is stale source (pattern #14); grep-verify. Authoritative pattern is 1.11 v2.3 §6.5. (origin: #438)
+32. **Cross-validator: substitute alternate label for the catch-all "All County Personnel" universal personnel role anchor** — manual-wide convention is "All County Personnel" per 1.04 §6.5 explicit example, used in 2.01 v2.5, 2.04 v2.5, 2.06 v2.7, 2.13 v2.3. Operational scope (including non-employees, contractors, vendors, physical-access holders) is established by §2 enumerated triggers; the §3/§4/§6 catch-all label is convention. Surface framings observed across rounds: "All In-Scope Personnel and Authorized Non-Employees" (R1), "All In-Scope Personnel" (R2 + R3 identical), "All County Personnel and authorized non-employees shall..." (Gem3-2). 3+ rounds re-pushing under rotated framing — pattern #23 trigger; reflexive decline. (origin: 2.03 v2.0 commit `97a451e`)
 
 ---
 
@@ -224,9 +225,9 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 25, 2026 post-3.16 SIR bidirectional sweep — 3.07 v2.3, 3.15 v2.2 (commits `e61dd755`, `124f11b2`; closed #316, #319). Three originally-clustered tickets retired as misframed and re-filed with substantive scope: #313 → #450 (3.06 missing continuity-activation branch), #317 → #451 (3.11 missing third remediation-plan branch), #318 → #452 (3.16/3.12 contradiction). Prior session (April 25 morning): sanctions-restatement sweep — 1.11 v2.4, 2.01 v2.5, 2.04 v2.5, 2.06 v2.7 (commits `c0a97705`/`1bd53696`/`620e1849`/`8951f3a5`; closed #445–#448). April 24: 2.02 v2.6 architectural ruling (commit `1a3e737d`; closed #358, #376; filed #445–#449). Phase 5B LASO Priority Group complete (entries 25–31); prior archives #427–#438 plus #444 cover entries 21–31 and the April 20 §6.X strip batch.
+**Last refreshed:** April 25, 2026 post-2.03 v2.0 commit (entry 32, opens Phase 5C). 2.03 D → T (commit `97a451e`; closed #66, #67, #68, #213, #346, #351; filed #453 reciprocal ripple to 2.04 §6.9). Standing decline #31 promoted: catch-all "All County Personnel" label is manual-wide convention; alternate-label substitution proposals are reflexive declines. Three validator rounds, pattern #23 fired in rounds 2 and 3. Prior session (April 25 PM): 3.16 SIR bidirectional sweep — 3.07 v2.3, 3.15 v2.2 (commits `e61dd755`, `124f11b2`; closed #316, #319). Three originally-clustered tickets retired as misframed and re-filed with substantive scope: #313 → #450 (3.06 missing continuity-activation branch), #317 → #451 (3.11 missing third remediation-plan branch), #318 → #452 (3.16/3.12 contradiction). April 25 morning: sanctions-restatement sweep — 1.11 v2.4, 2.01 v2.5, 2.04 v2.5, 2.06 v2.7 (commits `c0a97705`/`1bd53696`/`620e1849`/`8951f3a5`; closed #445–#448). April 24: 2.02 v2.6 architectural ruling (commit `1a3e737d`; closed #358, #376; filed #445–#449). Phase 5B LASO Priority Group complete (entries 25–31); prior archives #427–#438 plus #444 cover entries 21–31 and the April 20 §6.X strip batch.
 
-**Phase 5B complete.** All seven LASO Priority Group entries closed (2.01 → 2.06 → 2.02 → 2.04 → 2.11 → 2.12 → 2.13). #220 LASO disentanglement queue absorbed. Recalc marker after entry 39 (end of 5C). **Next session: entry 32 — 2.03 (Security Awareness and Training), opens Phase 5C.** 2.03 open tickets: #66, #67, #68, #213, #346, #351 (6 tickets).
+**Phase 5C in progress.** Phase 5B closed (LASO Priority Group entries 25–31); Phase 5C opened with entry 32 (2.03 v2.0). Recalc marker after entry 39 (end of 5C). **Next session: entry 33 — 2.05 (Identification and Authentication).** 2.05 open tickets: #71, #72, #73, #292, #333 (5 tickets); depends on tightened 2.04; carries the FIPS 140-2/140-3 fix (#292).
 
 ### Chapter 0 / Front Matter
 
@@ -258,8 +259,8 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|
 | 2.01 | Acceptable Use | T+ | v2.5 | 1 | #356 |
 | 2.02 | Personnel Security | T | v2.6, April 24 | 0 | — |
-| 2.03 | Security Awareness | D | — | 6 | #66, #67, #68, #213, #346, #351 |
-| 2.04 | Access Control | T | v2.5, April 24 | 0 | — |
+| 2.03 | Security Awareness | T | v2.0, April 25 | 0 | — |
+| 2.04 | Access Control | T+ | v2.5 | 1 | #453 |
 | 2.05 | Identification and Authentication | D | — | 5 | #71, #72, #73, #292, #333 |
 | 2.06 | Privacy and Data Protection | T | v2.7, April 24 | 0 | — |
 | 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 |
@@ -436,8 +437,8 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
-| 32 | 2.03 (Training) | 4 | Training → access recertification tie (#66) with 2.04 |
-| 33 | 2.05 (I&A) | 4 | Depends on 2.04; FIPS fix (#292) |
+| 32 | ~~2.03 (Training)~~ — ✅ v2.0, April 25, 2026. Closed: #66, #67, #68, #213, #346, #351. Ripples: #453 (2.04 §6.9 reciprocal training-lapse trigger). Standing decline #31 promoted (catch-all "All County Personnel" label substitution). | 6 (#66, #67, #68, #213, #346, #351) | Training → access recertification tie (#66) with 2.04 |
+| 33 | 2.05 (I&A) | 5 | Depends on 2.04; FIPS fix (#292) |
 | 34 | 2.07 (Comms Protection) | 4 | FIPS fix (#293); pairs with 2.05 encryption |
 | 35 | 2.08 (Malware) | 3 | Feeds 4.02 (already tightened) |
 | 36 | 2.09 (Vuln/Patch) | 4 | Feeds 3.09 change management (already tightened) |
