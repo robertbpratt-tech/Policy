@@ -174,13 +174,13 @@ name "pol:2.03"
 
 \lang english
 Effective:
- July 01,
+ April 25,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -193,10 +193,7 @@ Version:
 \begin_layout Standard
 
 \lang english
-This policy defines the mandatory requirements for the Elko County Security Awareness and Training Program.
- It ensures that all personnel with access to County Information Technology (IT) resources possess the requisite knowledge to protect information assets,
- reduce operational risk,
- and maintain strict compliance with the FBI Criminal Justice Information Services (CJIS) Security Policy and Nevada Revised Statutes (NRS).
+This policy establishes the mandatory security awareness and role-based training requirements for all personnel granted access to Elko County information technology resources.
 \end_layout
 
 \begin_layout Subsection*
@@ -209,38 +206,163 @@ This policy defines the mandatory requirements for the Elko County Security Awar
 \begin_layout Standard
 
 \lang english
-This policy applies to all Elko County personnel—
-including full-time and part-time employees,
+This policy applies to all County personnel and authorized non-employees,
+ including employees,
  elected officials,
+ appointed officials,
  contractors,
  vendors,
  interns,
- and volunteers—
-who meet any of the following criteria:
+ volunteers,
+ and service providers,
+ who are granted logical access to County information technology resources,
+ who process or handle County data,
+ or who possess unescorted physical access to areas designated as physically secure locations.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Initial security awareness training prior to receipt of access.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Possess logical access to any County-managed information system or network.
+Annual refresher training for all personnel with continuing access.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Possess unescorted physical access to areas designated as Physically Secure Locations (e.g.,
- server rooms,
- dispatch centers).
+Role-based training for privileged users,
+ privacy-data handlers,
+ and physical security personnel.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Process,
- store,
- or transmit Criminal Justice Information (CJI) or Personally Identifiable Information (PII).
+Practical security exercises,
+ including spear-phishing simulations.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Retention of training-completion records.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Personnel screening and background investigation:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Access provisioning and account lifecycle mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Privacy program administration:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Acceptable use acknowledgment custody:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -253,19 +375,30 @@ Process,
 \series bold
 \lang english
 IT Director
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall Serve as the final Authorizing Official (AO) for the training curriculum.
+Shall approve the security awareness and role-based training curriculum design.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall review and update training content at least annually to align with CJIS v6.0 and NIST standards.
+Shall review the training curriculum at a minimum cadence of one (1) calendar year and update content to maintain alignment with applicable federal,
+ state,
+ and Manual requirements.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain this policy and its implementing procedures consistent with CJIS Security Policy v6.0:
+ Section AT-1 (Policy and Procedures).
 \end_layout
 
 \end_deeper
@@ -274,26 +407,23 @@ Shall review and update training content at least annually to align with CJIS v6
 \series bold
 \lang english
 Assistant IT Director
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall develop and provide the technical training content to Human Resources.
+Shall develop and deliver the technical and role-based training content.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall conduct technical practical exercises (e.g.,
- spear-phishing simulations).
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall proactively "push" emerging threat alerts to the workforce.
+Shall disseminate emerging threat advisories and security alerts to affected personnel within one (1) business day of identifying a threat materially affecting County users,
+ systems,
+ or data.
 \end_layout
 
 \end_deeper
@@ -301,34 +431,34 @@ Shall proactively "push" emerging threat alerts to the workforce.
 
 \series bold
 \lang english
-Human Resources (HR)
+Human Resources
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall serve as the Program Manager for general security literacy and must:
+Shall schedule and track completion of the general security awareness curriculum for all County personnel.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Schedule,
- track,
- and document completion of the General Security Awareness curriculum for all personnel.
+Shall collect training-completion documentation and transmit it to Information Operations for authoritative retention.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Prohibit the onboarding or credentialing of any personnel until initial training is verified.
+Shall verify completion of initial security awareness training prior to authorizing onboarding or credentialing of any individual.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Enforce administrative actions for personnel who fail to meet annual refresher deadlines.
+Shall enforce administrative actions for personnel who fail to meet the annual refresher cadence required by this policy.
 \end_layout
 
 \end_deeper
@@ -337,19 +467,21 @@ Enforce administrative actions for personnel who fail to meet annual refresher d
 \series bold
 \lang english
 Department Heads
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall ensure 100% of their assigned personnel complete training within the mandated windows.
+Shall ensure that one hundred percent (100%) of personnel and authorized non-employees under their operational authority complete initial and annual training within the cadence required by this policy.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall enforce immediate account suspension for non-compliant subordinates.
+Shall notify Information Operations and Human Resources of any subordinate who has not completed required training by the applicable deadline.
 \end_layout
 
 \end_deeper
@@ -357,20 +489,37 @@ Shall enforce immediate account suspension for non-compliant subordinates.
 
 \series bold
 \lang english
-All Personnel
+All County Personnel
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Must complete all assigned training modules and simulations by the defined deadlines.
+Shall complete all assigned training modules and practical exercises by the deadlines established under this policy.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Must apply training concepts to daily operations and report security anomalies immediately.
+Shall apply training concepts to daily operations and report suspected security anomalies in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures).
 \end_layout
 
 \end_deeper
@@ -381,50 +530,134 @@ Must apply training concepts to daily operations and report security anomalies i
  Compliance and Exceptions
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all County personnel and authorized non-employees who are granted logical access to County information technology resources,
+ who process or handle County data,
+ or who possess unescorted physical access to areas designated as physically secure locations.
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
 \lang english
-Mandatory Condition of Access
+Assessment
+\series default
+:
+ Adherence to this policy shall be assessed as part of the annual policy review and maturity scoring process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Annual Policy Review and Maturity Scoring) and through the training-completion verification performed during access provisioning and periodic access recertification under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Access Control Policy).
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Training completion is a prerequisite for system access.
- Access shall be denied or revoked for any individual without verified training records.
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-Account Suspension
+Enforcement
+\series default
+:
+ The IT Director shall enforce this policy. Violations constitute non-compliance subject to the enforcement framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-The Information Operations Department must disable the network account of any user who fails to complete the annual refresher training within 365 days of their last completion.
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
 Exceptions
+\series default
+:
+ Exceptions to this policy shall be processed in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
+\series bold
 \lang english
-Exceptions must be documented in writing and approved by the IT Director.
- No exceptions are permitted regarding the requirement to be trained prior to initial CJIS access.
+Constraint
+\series default
+:
+ Initial security awareness training prior to receipt of access to systems that process,
+ store,
+ or transmit Criminal Justice Information (CJI) is non-waivable per CJIS Security Policy v6.0:
+ Section AT-2 (Literacy Training and Awareness).
+ No exception under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ may waive this requirement.
 \end_layout
 
 \end_deeper
@@ -435,54 +668,203 @@ Exceptions must be documented in writing and approved by the IT Director.
  References
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
 
 \lang english
-ECIO Policy 1.07 (Workforce Roles,
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles,
  Responsibilities,
- and Competency Framework)
+ and Competency Framework
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-ECIO Policy 1.11 (Data Governance and Classification Policy)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-ECIO Policy 2.01 (Acceptable Use of Information Technology Resources Policy)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Acceptable Use of Information Technology Resources Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-ECIO Policy 2.02 (Personnel Security and Background Screening Policy)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Personnel Security and Background Screening Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-ECIO Policy 2.04 (Access Control Policy)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Access Control Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 603A (Security of Personal Information)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Privacy and Data Protection Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-LRDA 20070048 (Training Records)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Physical Security and Environmental Controls Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-LRDA 20071725 (IT Security Awareness Files)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Annual Policy Review and Maturity Scoring
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071725 (IT Employee Access Control and Security Awareness Files)
 \end_layout
 
 \begin_layout Itemize
@@ -511,6 +893,15 @@ CJIS Security Policy v6.0:
 \lang english
 CJIS Security Policy v6.0:
  Section AT-4 (Training Records)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -581,8 +972,42 @@ ITIL v4:
 \begin_layout Standard
 
 \lang english
-The IT Director shall design the curriculum,
- while HR shall manage the administration and tracking of the General Security Awareness Program.
+The IT Director shall design the security awareness and role-based training curriculum.
+ Human Resources shall administer the general security awareness program for County personnel.
+ The Assistant IT Director shall develop and deliver the technical and role-based training content.
+ The training program implements the workforce-competency requirements established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework) and the data-handling obligations established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -598,7 +1023,39 @@ The IT Director shall design the curriculum,
 Initial Training
 \series default
 :
- Must be completed prior to receiving initial system access.
+ All County Personnel shall complete initial security awareness training prior to receipt of access.
+ Initial training is paired with the user acknowledgment required under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Acceptable Use of Information Technology Resources Policy).
+ The IT Director shall not authorize provisioning of access under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Access Control Policy) until both initial training completion and acceptable use acknowledgment execution are verified.
 \end_layout
 
 \begin_layout Itemize
@@ -608,7 +1065,7 @@ Initial Training
 Annual Refresher
 \series default
 :
- Must be completed every 365 days.
+ All County Personnel shall complete annual refresher training at a maximum cadence of twelve (12) calendar months from the date of the most recent completion.
 \end_layout
 
 \begin_layout Itemize
@@ -618,7 +1075,36 @@ Annual Refresher
 Security Event Retraining
 \series default
 :
- Involved personnel must complete remedial training within 30 days of a major security event per CJIS AT-2.
+ Personnel involved in a security event shall complete remedial training within thirty (30) calendar days of the event,
+ consistent with CJIS Security Policy v6.0:
+ Section AT-2.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Account Suspension Trigger
+\series default
+:
+ The Assistant IT Director shall suspend the account of any user who fails to complete the annual refresher within the prescribed cadence,
+ or who fails to complete assigned remedial training within thirty (30) calendar days,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -630,7 +1116,9 @@ Security Event Retraining
 \begin_layout Standard
 
 \lang english
-The General Security Awareness program must cover:
+The general security awareness curriculum shall address,
+ at minimum,
+ the following topics:
 \end_layout
 
 \begin_layout Itemize
@@ -640,7 +1128,7 @@ The General Security Awareness program must cover:
 Insider Threat
 \series default
 :
- Recognizing indicators of malicious or accidental threat.
+ Recognition of indicators of malicious or accidental insider threat.
 \end_layout
 
 \begin_layout Itemize
@@ -650,7 +1138,9 @@ Insider Threat
 Social Engineering
 \series default
 :
- Identifying phishing and vishing.
+ Identification of phishing,
+ vishing,
+ and related deception techniques.
 \end_layout
 
 \begin_layout Itemize
@@ -660,7 +1150,24 @@ Social Engineering
 Data Handling
 \series default
 :
- Procedures for CJI and PII protection.
+ Protection of Criminal Justice Information (CJI),
+ Personally Identifiable Information (PII),
+ and other classified data in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -672,7 +1179,106 @@ Data Handling
 \begin_layout Standard
 
 \lang english
-Privileged users and physical security personnel shall receive targeted training relevant to their specific technical or environmental duties.
+Personnel in roles with elevated privileges or specialized data-handling obligations shall complete role-based training in addition to the general literacy program,
+ consistent with CJIS Security Policy v6.0:
+ Section AT-3 (Role-Based Training).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Privileged Users
+\series default
+:
+ Personnel holding privileged accounts (Tier L3 and above as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+) shall complete role-based training addressing administrative responsibilities,
+ privileged credential handling,
+ and audit accountability.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Privacy-Data Handlers
+\series default
+:
+ Personnel handling Criminal Justice Information (CJI),
+ Personally Identifiable Information (PII),
+ or Protected Health Information (PHI) shall complete role-based privacy training addressing the obligations defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Privacy and Data Protection Policy) and the data classification handling requirements defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Physical Access Holders
+\series default
+:
+ Personnel with unescorted access to physically secure locations as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Physical Security and Environmental Controls Policy) shall complete role-based training addressing visitor management,
+ tailgating prevention,
+ physical incident reporting,
+ and protection of Criminal Justice Information (CJI) from unauthorized observation or access.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -684,7 +1290,8 @@ Privileged users and physical security personnel shall receive targeted training
 \begin_layout Standard
 
 \lang english
-The Information Operations Department shall conduct not fewer than two (2) spear-phishing simulations annually.
+The Assistant IT Director shall conduct not fewer than two (2) spear-phishing simulations annually.
+ The Assistant IT Director shall assign remedial training within thirty (30) calendar days to personnel who fail a simulation.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -693,22 +1300,21 @@ The Information Operations Department shall conduct not fewer than two (2) spear
 6.6 Records Retention
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \lang english
-Training records must be retained for a minimum of three (3) years.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Separated personnel records shall be held for 3 years from date of separation (LRDA 20070048).
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-General IT awareness records shall be held for 3 years from date of access termination (LRDA 20071725).
+Information Operations shall retain training-completion records and signed acknowledgments in accordance with LRDA 20071725 (IT Employee Access Control and Security Awareness Files) and CJIS Security Policy v6.0:
+ Section AT-4 (Training Records) for a minimum of three (3) calendar years from the end of the calendar year in which the record was modified or the employee's access rights were terminated.
+ Each training record shall identify,
+ at minimum,
+ the individual,
+ the assigned role or access classification,
+ the training title,
+ the completion date,
+ the delivery method,
+ the result,
+ the remediation status where applicable,
+ and the record custodian.
 \end_layout
 
 \end_body
