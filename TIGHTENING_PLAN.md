@@ -258,9 +258,9 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 2.01 | Acceptable Use | T+ | v2.5 | 1 | #356 |
-| 2.02 | Personnel Security | T | v2.6, April 24 | 0 | — |
-| 2.03 | Security Awareness | T | v2.0, April 25 | 0 | — |
-| 2.04 | Access Control | T+ | v2.5 | 1 | #453 |
+| 2.02 | Personnel Security | T | v2.7, April 26 | 0 | — |
+| 2.03 | Security Awareness | T | v2.1, April 26 | 0 | — |
+| 2.04 | Access Control | T+ | v2.6, April 26 | 1 | #453 |
 | 2.05 | Identification and Authentication | D | — | 5 | #71, #72, #73, #292, #333 |
 | 2.06 | Privacy and Data Protection | T | v2.7, April 24 | 0 | — |
 | 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 |
