@@ -73,8 +73,8 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/205.lyx` | Identification and Authentication Policy | T | v2.2 |  |
 | `02/206.lyx` | Privacy and Data Protection Policy | T | v2.7 |  |
 | `02/207.lyx` | System and Communications Protection Policy | T | v2.2 |  |
-| `02/208.lyx` | System Integrity and Malware Protection Policy | D | v1.0 | #81, #83, #84 |
-| `02/209.lyx` | Vulnerability and Patch Management Policy | D | v1.0 | #85, #86, #87, #271, #326 |
+| `02/208.lyx` | System Integrity and Malware Protection Policy | T | v2.0 |  |
+| `02/209.lyx` | Vulnerability and Patch Management Policy | D | v1.0 | #85, #86, #87, #271, #326, #466 |
 | `02/210.lyx` | Secure Configuration Baselines and Hardening Policy | D | v1.0 | #88, #89, #90, #226 |
 | `02/211.lyx` | Audit Logging and Monitoring Policy | T | v2.4 |  |
 | `02/212.lyx` | Media Protection and Sanitization Policy | T+ | v2.4 | #449 |
