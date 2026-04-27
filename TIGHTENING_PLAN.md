@@ -172,7 +172,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #304 | Chapter 4 external self-containment quality gate | April 12 | All Ch4 policies tightened (4.01–4.07). |
 | #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | April 26 | All three children resolved: 1.11 v2.4 (April 11), 2.05 v2.2 (April 26 commit `fcf6b095`), 2.07 v2.2 (April 26 commit `f3d8f876`). CMVP by-reference pattern uniform manual-wide; standing decline #31 is the reflexive-decline rule for future re-push attempts. |
 
-**Sweep-style roots (#208, #211, #235, #245, #264, #291, #6)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched. **Phase-deferred roots (#353, #355)** are dormant and entered at their scheduled phase (Phase 10 and Phase 9 respectively); they are not absorbed into per-policy tightening.
+**Sweep-style roots (#208, #211, #235, #245, #264, #6)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched. **Phase-deferred roots (#353, #355)** are dormant and entered at their scheduled phase (Phase 10 and Phase 9 respectively); they are not absorbed into per-policy tightening.
 
 ### Deferred Cluster: `1.04_Procedural_Cleanup` ✅ CLOSED
 
