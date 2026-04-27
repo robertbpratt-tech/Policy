@@ -159,7 +159,6 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #235 | Prohibited language sweep per 1.04 §6.9 | Untightened policies | Open, absorbed-by-tightening | Listed in #235 body; resolved per-policy |
 | #245 | Replace `business hours` time-unit with end-of-business-day convention | Manual-wide | Open, sweep | Per #245 body |
 | #264 | Role obligation redistribution (L3 prep, L1 clerical, L2 inputs, AID synthesis) | Manual-wide | Open, root | Remaining subtasks absorb into tightening |
-| #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | 1.11, 2.05, 2.07 | Open, sweep | #292 (2.05), #293 (2.07); 1.11 resolved in v2.2 |
 | #6 | Product-name removal (Redmine) | 1.04, 1.08, 1.14, 3.01–3.17 | Open, absorbed-by-tightening | Multi-policy Redmine sweep. #7 (Office 365) and #10 (HID DigitalPersona) closed April 19 as duplicates of per-policy children #99 and #71 respectively; #8 closed previously. |
 | #353 | Set Header Date and Version to uniform `Effective: July 01, 2026 \| Version: 1.0` | Manual-wide | Open, phase-10-deferred | All policies; mechanical normalization at v1.0 declaration per Phase 10 step 3. Dormant until Phase 10 entry. |
 | #355 | Manual-wide LRDA citation verification sweep (numbers, titles, retention periods, NRS 239.125/NAC 239.155 companion citations) | Manual-wide | Open, phase-9-deferred | Scoped in §7 Open Questions for Phase 9: verification half → sub-phase 9A; companion-authority consistency → sub-phase 9B. Split into `phase-9a-intake` and `phase-9b-intake` child tickets at Phase 9 entry. Dormant until then. |
@@ -171,6 +170,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #220 | LASO Designation Disentanglement | v2.2, April 11 | Landed in 1.11 §6.11. IT Director holds LASO by policy mandate. Downstream cleanup batch (4.06 v2.2, 1.14 v2.3) complete. Untightened LASO queue (2.01/2.02/2.04/2.06/2.11/2.12/2.13) absorbs into normal tightening using "IT Director (as LASO)" pattern. |
 | #283 | LASO is a designation, not a §3 role | April 11 | Superseded by #220 landing. |
 | #304 | Chapter 4 external self-containment quality gate | April 12 | All Ch4 policies tightened (4.01–4.07). |
+| #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | April 26 | All three children resolved: 1.11 v2.4 (April 11), 2.05 v2.2 (April 26 commit `fcf6b095`), 2.07 v2.2 (April 26 commit `f3d8f876`). CMVP by-reference pattern uniform manual-wide; standing decline #31 is the reflexive-decline rule for future re-push attempts. |
 
 **Sweep-style roots (#208, #211, #235, #245, #264, #291, #6)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched. **Phase-deferred roots (#353, #355)** are dormant and entered at their scheduled phase (Phase 10 and Phase 9 respectively); they are not absorbed into per-policy tightening.
 
@@ -227,9 +227,9 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 26, 2026 post-2.05 v2.2 commit (entry 33 — Phase 5C). 2.05 D v1.0 → T v2.2 (commit `fcf6b095`; closed #71, #72, #73, #292, #333). Two validator rounds; standing declines #33 (sanctions-restatement push) and #34 (CJIS v6.0 §5.20.x hallucination) promoted to §4. Manual-wide oral-exceptions sweep spawned and closed mid-session: #454 patched 2.02 v2.7 (commit `81f522c4`), 2.03 v2.1 (`ee0644ca`), 2.04 v2.6 (`d4308d94`) to restore 1.04 §6.6 strict-reading compliance ("Oral exceptions are not valid" sentence). All 47 tightened policies now carry the sentence. Phase 5B LASO Priority Group complete (entries 25–31); prior archives #427–#438 plus #444 cover entries 21–31 and the April 20 §6.X strip batch.
+**Last refreshed:** April 26, 2026 post-2.07 v2.2 commit (entry 34 — Phase 5C). 2.07 D v1.0 → T v2.2 (commit `f3d8f876`; closed #78, #79, #80, #293). Two validator rounds; pattern #23 triggers identified in R2 for §4 promotion (CSO-Constraint reinsertion + FIPS 140-2 sunset language) but not promoted at session close pending IT Director ruling. Root #291 closes manual-wide (CMVP by-reference complete: 1.11 v2.4 → 2.05 v2.2 → 2.07 v2.2); moved to Closed Roots. Prior archive #455 covered entry 33 (2.05 v2.2 + manual-wide oral-exceptions sweep #454).
 
-**Phase 5C in progress.** Phase 5B closed (LASO Priority Group entries 25–31); Phase 5C entries 32–33 complete (2.03 v2.0, 2.05 v2.2). Recalc marker after entry 39 (end of 5C). **Next session: entry 34 — 2.07 (System and Communications Protection).** 2.07 open tickets: #78, #79, #80, #293 (4 tickets); pairs with 2.05 encryption posture; carries FIPS fix (#293) closing root #291 manual-wide.
+**Phase 5C in progress.** Phase 5B closed (LASO Priority Group entries 25–31); Phase 5C entries 32–34 complete (2.03 v2.0, 2.05 v2.2, 2.07 v2.2). Recalc marker after entry 39 (end of 5C). **Next session: entry 35 — 2.08 (System Integrity / Malware).** 2.08 open tickets: #81, #83, #84 (3 tickets); feeds 4.02 (already tightened).
 
 ### Chapter 0 / Front Matter
 
@@ -265,7 +265,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 2.04 | Access Control | T+ | v2.6, April 26 | 1 | #453 |
 | 2.05 | Identification and Authentication | T | v2.2, April 26 | 0 | — |
 | 2.06 | Privacy and Data Protection | T | v2.7, April 24 | 0 | — |
-| 2.07 | System and Communications Protection | D | — | 4 | #78, #79, #80, #293 |
+| 2.07 | System and Communications Protection | T | v2.2, April 26 | 0 | — |
 | 2.08 | System Integrity / Malware | D | — | 3 | #81, #83, #84 |
 | 2.09 | Vulnerability and Patch Management | D | — | 5 | #85, #86, #87, #271, #326 |
 | 2.10 | Secure Configuration Baselines | D | — | 4 | #88, #89, #90, #226 |
@@ -441,7 +441,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 |---|---|---|---|
 | 32 | ~~2.03 (Training)~~ — ✅ v2.0, April 25, 2026. Closed: #66, #67, #68, #213, #346, #351. Ripples: #453 (2.04 §6.9 reciprocal training-lapse trigger). Standing decline #31 promoted (catch-all "All County Personnel" label substitution). | 6 (#66, #67, #68, #213, #346, #351) | Training → access recertification tie (#66) with 2.04 |
 | 33 | ~~2.05 (I&A)~~ — ✅ v2.2, April 26, 2026. Closed: #71, #72, #73, #292, #333. Standing declines #33 (sanctions-restatement push), #34 (CJIS v6.0 §5.20.x hallucination) promoted. Manual-wide oral-exceptions sweep #454 spawned and closed mid-session (2.02 v2.7, 2.03 v2.1, 2.04 v2.6). [Archive: #455] | 5 (#71, #72, #73, #292, #333) | Depends on 2.04; FIPS fix (#292) |
-| 34 | 2.07 (Comms Protection) | 4 | FIPS fix (#293); pairs with 2.05 encryption |
+| 34 | ~~2.07 (System and Communications Protection)~~ — ✅ v2.2, April 26, 2026. Closed: #78, #79, #80, #293. Closes root #291 manual-wide. AID synthesis layer added; AO designation stripped (1.09 owns); CSO-exception Constraint stripped per April 23 ruling; §6.6 Authoritative DNS bullet added (SC-20) per Robert's confirmation that ECIO operates two authoritative DNS servers. Pattern #23 triggers observed in R2 (CSO-Constraint and FIPS-sunset re-push); §4 candidates surfaced but not promoted. [Archive: #465] | 4 (#78, #79, #80, #293) | FIPS fix (#293); pairs with 2.05 encryption |
 | 35 | 2.08 (Malware) | 3 | Feeds 4.02 (already tightened) |
 | 36 | 2.09 (Vuln/Patch) | 4 | Feeds 3.09 change management (already tightened) |
 | 37 | 2.10 (Config Baselines) | 4 | Shadow IT routing fix: split IoC → 4.02 vs. config-mgmt remediation → 3.09/2.10 |
