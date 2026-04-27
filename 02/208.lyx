@@ -174,13 +174,13 @@ name "pol:2.08"
 
 \lang english
 Effective:
- July 01,
+ April 27,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -193,12 +193,9 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish mandatory controls for maintaining the integrity of Elko County information systems.
- This policy mandates the implementation of malicious code protection,
- system monitoring,
- and integrity verification mechanisms to detect and prevent unauthorized changes,
+This policy establishes mandatory controls for maintaining the integrity of Elko County information systems and for protecting those systems from malicious code,
  exploitation,
- and data corruption.
+ and unauthorized changes.
 \end_layout
 
 \begin_layout Subsection*
@@ -212,18 +209,21 @@ The purpose of this policy is to establish mandatory controls for maintaining th
 
 \lang english
 This policy applies to all Elko County Information Operations (ECIO) personnel,
- employees,
+ County employees,
+ elected officials,
  contractors,
  vendors,
- and volunteers,
- and all information systems,
+ and any other individuals or services accessing County information systems.
+ Technical implementation requirements apply to all information systems,
  networks,
- and endpoints owned,
+ endpoints,
+ and supporting infrastructure owned,
  leased,
- or operated by Elko County.
- This specifically includes all systems that process,
+ managed,
+ or operated by Elko County,
+ including all systems that process,
  store,
- or transmit Criminal Justice Information (CJI) and the infrastructure supporting these systems.
+ or transmit Criminal Justice Information (CJI).
 \end_layout
 
 \begin_layout Subsection*
@@ -237,26 +237,58 @@ This policy applies to all Elko County Information Operations (ECIO) personnel,
 
 \series bold
 \lang english
-IT Director
+IT Director (as LASO)
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall serve as the final Authorizing Official (AO) for malicious code protection selection and system monitoring tools.
+Shall approve the selection of malicious code protection and system monitoring capabilities deployed on County information systems.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall oversee the security posture and ultimate accountability for the County’s information system integrity.
+Shall exercise the Local Agency Security Officer (LASO) designation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) for system integrity decisions involving Criminal Justice Information (CJI).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall sign Risk Acceptance Memos for systems unable to support standard integrity controls.
+Shall approve any exception to this policy in writing per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \end_deeper
@@ -271,13 +303,40 @@ Assistant IT Director
 \begin_layout Itemize
 
 \lang english
-Shall oversee the operational execution of the system integrity program and coordinate incident response for detected malware.
+Shall oversee the operational execution of the system integrity program.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall ensure technical personnel are trained and equipped to maintain protection mechanisms.
+Shall ensure information systems are monitored to detect attacks and indicators of potential attacks.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure all Information Operations Personnel performing system integrity duties under this policy receive role-based training under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Awareness and Training Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure all Information Operations Personnel performing system integrity duties under this policy are provisioned with access to approved protection tools.
 \end_layout
 
 \end_deeper
@@ -294,21 +353,25 @@ Systems Administrator
 \lang english
 Shall provision,
  harden,
- and maintain malware protection agents on all workstations and servers.
+ and maintain malicious code protection on workstations and servers.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall configure automated tools (e.g.,
- endpoint protection) to update signatures and scanning engines daily.
+Shall configure malicious code protection mechanisms to update signatures and scanning engines automatically.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall execute integrity checks (e.g.,
- File Integrity Monitoring) and remediate system flaws in accordance with 
+Shall execute integrity verification on County information systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall remediate information system flaws in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -323,7 +386,7 @@ nolink "false"
 
 
 \series default
-.
+ (Vulnerability and Patch Management Policy).
 \end_layout
 
 \end_deeper
@@ -338,8 +401,13 @@ Network Administrator
 \begin_layout Itemize
 
 \lang english
-Shall configure and monitor boundary protection devices (Firewalls,
- IDS/IPS) to detect and block malicious traffic at system entry and exit points.
+Shall configure boundary protection devices to detect and block malicious traffic at system entry and exit points.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall monitor boundary protection devices for indications of detected or attempted malicious activity.
 \end_layout
 
 \begin_layout Itemize
@@ -360,13 +428,34 @@ Support Specialist
 \begin_layout Itemize
 
 \lang english
-Shall verify the presence and compliance of antivirus and device encryption during endpoint deployment and troubleshooting.
+Shall verify the presence and current configuration of malicious code protection on endpoints during deployment and during work order activity.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall report and escalate confirmed malware infections to Administrators according to established incident protocols.
+Shall immediately report confirmed or suspected malware infections to the Systems Administrator and the Assistant IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall escalate confirmed malware events via the operational incident management process under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Operational Incident Management Policy).
 \end_layout
 
 \end_deeper
@@ -374,14 +463,14 @@ Shall report and escalate confirmed malware infections to Administrators accordi
 
 \series bold
 \lang english
-All Users
+All County Personnel
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall comply with the Acceptable Use Policy (
+Shall comply with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -396,13 +485,19 @@ nolink "false"
 
 
 \series default
-) and shall not disable or circumvent security controls.
+ (Acceptable Use Policy).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall report suspected security anomalies to the Service Desk immediately.
+Shall not disable or circumvent malicious code protection or system monitoring controls.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report suspected security anomalies to the Service Desk immediately upon discovery.
 \end_layout
 
 \end_deeper
@@ -413,42 +508,53 @@ Shall report suspected security anomalies to the Service Desk immediately.
  Compliance and Exceptions
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all individuals using or operating Elko County information systems.
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
 \lang english
-Mandatory Enforcement
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Personnel and systems must comply with the requirements defined herein.
- Failure to comply shall result in one or more of the following enforcement actions:
- (a) immediate isolation of the non-compliant system from the network;
- (b) revocation of user access privileges;
- (c) disciplinary action up to and including termination of employment.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exceptions
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Any deviation from this policy must be documented in a Risk Acceptance Memo in accordance with 
+Assessment
+\series default
+:
+ Compliance with system integrity and malicious code protection requirements shall be assessed through the internal audit process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.09"
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The IT Director shall enforce this policy.
+ Violations constitute non-compliance subject to the enforcement framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -459,17 +565,48 @@ nolink "false"
 
 \series default
 .
- Exceptions for CJI systems regarding malicious code protection or monitoring require:
- (a) explicit written approval from the IT Director,
- AND (b) documented consultation with the Nevada CJIS Systems Officer (CSO) if the exception involves removing mandatory CJIS controls.
 \end_layout
 
-\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be processed in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -478,7 +615,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.09"
+reference "pol:1.11"
 plural "false"
 caps "false"
 noprefix "false"
@@ -487,7 +624,43 @@ nolink "false"
 \end_inset
 
 :
- Risk Management Policy
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management (SCRM) and Vendor Governance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Acceptable Use Policy
 \end_layout
 
 \begin_layout Itemize
@@ -514,7 +687,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.01"
+reference "pol:2.15"
 plural "false"
 caps "false"
 noprefix "false"
@@ -523,26 +696,65 @@ nolink "false"
 \end_inset
 
 :
- Incident Response Policy Overview
+ System Development and Secure Software Lifecycle
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 205.473 (Unlawful acts regarding computers and information services)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 239.051 (Public Records)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-CJIS Security Policy v6.0:
- Section IR (Incident Response Family)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Itemize
@@ -563,9 +775,9 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
- Section SI-5 (Security Alerts,
- Advisories,
- and Directives)
+ Section SI-7 (Software,
+ Firmware,
+ and Information Integrity)
 \end_layout
 
 \begin_layout Itemize
@@ -580,6 +792,22 @@ CJIS Security Policy v6.0:
 \lang english
 CJIS Security Policy v6.0:
  Section SI-10 (Information Input Validation)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SI-16 (Memory Protection)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -600,14 +828,21 @@ NIST CSF 2.0:
 
 \lang english
 NIST CSF 2.0:
- DE.AE-01 (Anomalous Activity Detection)
+ PR.PS-05 (Installation and Execution of Unauthorized Software Are Prevented)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 NIST CSF 2.0:
- DE.CM-01 (Continuous Monitoring)
+ DE.AE-02 (Adverse Event Analysis)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ DE.CM-01 (Network Monitoring)
 \end_layout
 
 \begin_layout Itemize
@@ -672,7 +907,7 @@ NIST SP 800-53 Rev.
 
 \lang english
 COBIT 2019:
- DSS05.01 (Protect against malware)
+ DSS05.01 (Protect Against Malware)
 \end_layout
 
 \begin_layout Itemize
@@ -698,7 +933,7 @@ ITIL v4:
 \begin_layout Standard
 
 \lang english
-System Administrators shall implement malicious code protection mechanisms at system entry and exit points and on all workstations,
+The Systems Administrator shall implement malicious code protection mechanisms at system entry and exit points and on all workstations,
  servers,
  and mobile devices to detect and eradicate malicious code.
 \end_layout
@@ -710,10 +945,22 @@ System Administrators shall implement malicious code protection mechanisms at sy
 Automatic Updates
 \series default
 :
- Malicious code protection mechanisms shall be configured to perform automatic updates of virus definitions and scanning engines at least daily.
- If automatic updates are not feasible,
- manual updates shall be performed daily.
+ The Systems Administrator shall configure malicious code protection mechanisms to perform automatic updates of virus definitions and scanning engines every twenty-four (24) hours.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exception
+\series default
+:
+ Where a system does not support automatic updates,
+ the Systems Administrator shall perform manual updates every twenty-four (24) hours.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -722,7 +969,7 @@ Automatic Updates
 Real-Time Scanning
 \series default
 :
- Mechanisms shall be configured to perform real-time scanning of files from external sources as they are downloaded,
+ The Systems Administrator shall configure malicious code protection mechanisms to perform real-time scanning of files from external sources as files are downloaded,
  opened,
  or executed.
 \end_layout
@@ -734,7 +981,7 @@ Real-Time Scanning
 Periodic Scanning
 \series default
 :
- Mechanisms shall perform full system scans at weekly intervals or in accordance with the schedule defined in the System Security Plan (SSP).
+ The Systems Administrator shall configure malicious code protection mechanisms to perform full system scans every twenty-four (24) hours.
 \end_layout
 
 \begin_layout Itemize
@@ -744,9 +991,28 @@ Periodic Scanning
 Response Actions
 \series default
 :
- Upon detection of malicious code,
- the mechanism shall automatically block or quarantine the malicious code and alert the IT Service Desk.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall configure malicious code protection mechanisms to automatically block or quarantine detected malicious code.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall configure malicious code protection mechanisms to automatically alert the Systems Administrator and the Assistant IT Director upon detection of malicious code.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall review false positives generated by malicious code protection mechanisms prior to releasing quarantined files.
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsubsection*
 
@@ -754,39 +1020,61 @@ Response Actions
 6.2 System Monitoring
 \end_layout
 
-\begin_layout Standard
-
-\lang english
-The Department shall ensure that information systems are monitored to detect attacks and indicators of potential attacks.
-\end_layout
-
 \begin_layout Itemize
 
+\series bold
 \lang english
-Monitoring Tools:
- The Department shall employ automated tools (e.g.,
+Monitoring Tools
+\series default
+:
+ The Network Administrator shall employ automated monitoring tools (e.g.,
  IDS/IPS,
- SIEM) to monitor inbound and outbound communications traffic for unusual or unauthorized activities or conditions.
+ SIEM) to monitor inbound and outbound communications traffic for unusual or unauthorized activity.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Perimeter Monitoring:
- Monitoring shall check for indicators of attacks and unauthorized connections at external boundaries and at key internal boundaries.
+Perimeter Monitoring
+\series default
+:
+ The Network Administrator shall configure monitoring to check for indicators of attacks and unauthorized connections at external boundaries and at key internal boundaries.
 \end_layout
 
 \begin_layout Itemize
 
+\series bold
 \lang english
-Alerting:
- System-generated security alerts shall be transmitted to the ISO and designated System Administrators in real-time.
- Personnel shall analyze and respond to alerts in accordance with 
+Command-and-Control Detection
+\series default
+:
+ The Network Administrator shall use system monitoring tools to inspect network flow and Domain Name System (DNS) logs for traffic patterns indicative of malware command-and-control (C2) activity.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Alerting
+\series default
+:
+ The Systems Administrator and Network Administrator shall analyze and respond to system-generated security alerts.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Incident Escalation
+\series default
+:
+ The Systems Administrator and Network Administrator shall escalate alerts assessed as potential incidents through the operational incident management process under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.01"
+reference "pol:3.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -797,13 +1085,6 @@ nolink "false"
 
 \series default
 .
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Legal Review:
- The IT Director shall consult with the District Attorney's Office to ensure that monitoring activities comply with applicable federal and state privacy laws.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -819,12 +1100,21 @@ Legal Review:
 Integrity Checks
 \series default
 :
- System Administrators shall employ integrity verification tools (e.g.,
- File Integrity Monitoring - FIM) to detect unauthorized changes to software,
+ The Systems Administrator shall employ integrity verification tools (e.g.,
+ File Integrity Monitoring) to detect unauthorized changes to software,
  firmware,
  and information.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Integrity Verification
+\series default
+:
  For systems processing CJI,
- integrity checks shall be performed at least weekly.
+ the Systems Administrator shall perform integrity checks every seven (7) calendar days.
 \end_layout
 
 \begin_layout Itemize
@@ -834,14 +1124,56 @@ Integrity Checks
 Input Validation
 \series default
 :
- Developers and System Administrators shall ensure that information systems check the validity of information inputs (e.g.,
+ The Systems Administrator shall verify that information systems acquired or operated by the Department implement input validation controls (e.g.,
  character set,
  length,
  numerical range,
- format) to prevent injection attacks (e.g.,
- SQL injection,
- Cross-Site Scripting) and data corruption.
+ format) sufficient to prevent injection attacks and data corruption.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exception
+\series default
+:
+ For vendor-managed systems where input validation is implemented by the software vendor,
+ the Systems Administrator shall confirm the control during procurement review under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Supply Chain Risk Management (SCRM) and Vendor Governance Policy) and during secure software lifecycle review under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.15"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (System Development and Secure Software Lifecycle Policy).
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -850,8 +1182,17 @@ Input Validation
 Spam Protection
 \series default
 :
- The Department shall employ spam protection mechanisms at information system entry and exit points to detect and action unsolicited messages.
- Spam protection signatures shall be updated automatically.
+ The Systems Administrator shall employ spam protection mechanisms at information system entry and exit points.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Spam Protection Updates
+\series default
+:
+ The Systems Administrator shall configure spam protection signatures to update automatically every twenty-four (24) hours.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -863,27 +1204,7 @@ Spam Protection
 \begin_layout Standard
 
 \lang english
-Flaw remediation (patching) shall be executed in strict accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- System Administrators shall identify,
- report,
- and correct information system flaws,
- test software updates for effectiveness and potential side effects,
- and install security-relevant updates within the timelines mandated by 
+The Systems Administrator shall remediate information system flaws in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -910,9 +1231,9 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-System Administrators shall ensure that operating systems and applications utilize memory protection controls (e.g.,
- Data Execution Prevention [DEP],
- Address Space Layout Randomization [ASLR]) to prevent the execution of unauthorized code.
+The Systems Administrator shall configure operating systems and applications to utilize memory protection controls (e.g.,
+ Data Execution Prevention,
+ Address Space Layout Randomization) to prevent the execution of unauthorized code.
 \end_layout
 
 \end_body
