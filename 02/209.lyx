@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -193,15 +193,10 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish mandatory standards for the identification,
- classification,
- remediation,
- and mitigation of technical vulnerabilities within Elko County's information systems.
- This policy ensures that security flaws are addressed in a timely manner to prevent exploitation,
- protect the confidentiality,
- integrity,
- and availability of County data (including Criminal Justice Information),
- and maintain compliance with federal and state regulations.
+This policy establishes the requirements for identifying,
+ scoring,
+ remediating,
+ and verifying technical vulnerabilities in Elko County information systems.
 \end_layout
 
 \begin_layout Subsection*
@@ -214,140 +209,151 @@ The purpose of this policy is to establish mandatory standards for the identific
 \begin_layout Standard
 
 \lang english
-This policy applies to all information systems,
+This policy applies to all Elko County information systems,
  networks,
- hardware,
- software,
- and firmware owned,
+ endpoints,
+ applications,
+ and supporting infrastructure owned,
  leased,
  operated,
- or managed by Elko County Information Operations.
- This includes servers,
- workstations,
- mobile devices,
- network infrastructure,
- and third-party applications.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-3.
- Roles and Responsibilities
+ or managed by Elko County,
+ including all systems that process,
+ store,
+ or transmit Criminal Justice Information (CJI).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-IT Director
+In Scope
 \series default
 :
- Shall serve as the Authorizing Official (AO) for the vulnerability management program and shall approve all Risk Acceptance Memos for vulnerabilities that cannot be remediated within mandated timelines.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Vulnerability scanning,
+ scoring,
+ and prioritization.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Assistant IT Director
-\series default
-:
- Shall oversee the operational execution of the vulnerability management lifecycle and validate that scanning tools are functioning correctly and reports are generated and reviewed.
+Patch deployment for County-managed systems and endpoints.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-System Administrators
-\series default
-:
- Shall configure and maintain automated vulnerability scanning tools,
- analyze scan results,
- test patches,
- and implement remediation actions for server and endpoint systems.
+Verification scanning following remediation.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Network Administrators
-\series default
-:
- Shall manage vulnerabilities related to network infrastructure (routers,
- switches,
- firewalls) and remediate identified flaws in firmware or configuration.
+Receipt,
+ dissemination,
+ and implementation of vendor and federal security advisories.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Support Specialists
-\series default
-:
- Shall verify endpoint patch status during support engagements and deployment,
- ensuring antivirus and automated update agents are functional.
+End-of-life and end-of-support software identification and migration.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Department Heads
-\series default
-:
- Shall coordinate with Information Operations to schedule maintenance windows for business-critical applications.
+External vulnerability reports received through the public reporting channel.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-All Personnel
+Out of Scope
 \series default
 :
- Shall comply with reboot or update notifications to ensure security patches are applied to assigned workstations.
 \end_layout
 
-\begin_layout Subsection*
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
-4.
- Compliance and Exceptions
+Asset and software inventory:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Mandatory Compliance
+Configuration baselines and hardening:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Adherence to this policy is mandatory.
- Failure to patch or remediate known vulnerabilities within the specified timelines constitutes a security violation and may result in the quarantine of the non-compliant asset.
+.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-System Isolation
+Change authorization for patch deployment:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Systems that cannot be patched and pose a critical risk to the network shall be logically isolated or disconnected until remediation or an approved exception is in place.
+.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Exceptions
-\series default
-:
- Deviations from remediation timelines or scanning requirements must be documented in a Risk Acceptance Memo in accordance with 
+Risk acceptance for unremediated vulnerabilities:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -363,19 +369,445 @@ nolink "false"
 
 \series default
 .
- The memo must include technical justification,
- compensating controls,
- and a defined expiration date (not to exceed 12 months).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Incident response when vulnerabilities are exploited:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-CJI Constraints
+IT Director (as LASO):
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall approve the vulnerability and patch management program for Elko County Information Operations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve all Risk Acceptance Memos for vulnerabilities that cannot be remediated within the timelines defined in this policy,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall exercise the Local Agency Security Officer (LASO) designation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) for vulnerability management decisions involving CJI.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve any exception to this policy in writing per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall oversee the operational execution of the vulnerability and patch management lifecycle.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall subscribe to and review external security alerts,
+ advisories,
+ and directives from authoritative sources on an ongoing basis.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain the publicly available channel for the receipt of external vulnerability reports concerning County information systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall compile the Monthly Vulnerability Compliance Report from the domain-specific inputs prepared by the Systems Administrator and the Network Administrator.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall submit the compiled Monthly Vulnerability Compliance Report to the IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall validate the operability of vulnerability scanning tools and the timeliness of scan execution.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate vendor patching and vulnerability management obligations with the supply chain governance program defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Supply Chain Risk Management (SCRM) and Vendor Governance).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall configure and maintain authenticated vulnerability scanning across servers,
+ workstations,
+ and applications.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall analyze vulnerability scan results.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall test patches on a non-production subset of representative systems prior to County-wide deployment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall deploy remediation actions for server and endpoint systems within the timelines defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain vulnerability-management metadata associated with the software inventory,
+ including Common Vulnerabilities and Exposures (CVE) cross-references,
+ current patch state,
+ and last-scan timestamps.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare domain-specific monthly inputs to the Vulnerability Compliance Report covering open vulnerabilities by severity,
+ Mean Time to Remediate (MTTR),
+ patch compliance percentage,
+ and the list of overdue assets within the server and endpoint domain.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall manage vulnerabilities on network infrastructure components,
+ including routers,
+ switches,
+ firewalls,
+ and wireless access points.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall test firmware and configuration updates on a non-production subset of representative network components prior to County-wide deployment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall deploy firmware and configuration updates within the timelines defined in this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare domain-specific monthly inputs to the Vulnerability Compliance Report covering open vulnerabilities by severity,
+ Mean Time to Remediate (MTTR),
+ patch compliance percentage,
+ and the list of overdue assets within the network infrastructure domain.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Support Specialist:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall verify endpoint patch state during deployment and during work order activity.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall verify that automated update agents and endpoint protection mechanisms are functional during support engagements.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads and Elected Officials:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall coordinate with Information Operations to schedule maintenance windows for the deployment of patches affecting business-critical applications under their purview.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall comply with reboot and update notifications issued by Information Operations within the timeframe specified in the notification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not disable,
+ defer indefinitely,
+ or circumvent automated update mechanisms or endpoint protection agents.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all individuals using or operating Elko County information systems.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
 \series default
 :
- Exceptions for systems processing CJI must not violate mandatory FBI CJIS Security Policy requirements without written concurrence from the CJIS Systems Officer (CSO).
+ Compliance with vulnerability and patch management requirements shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The IT Director shall enforce this policy.
+ Violations constitute non-compliance subject to the enforcement framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be processed in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Risk acceptance for unremediated vulnerabilities shall additionally follow the Risk Acceptance Memo procedure defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -385,42 +817,13 @@ CJI Constraints
  References
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\series bold
 \lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
+Cited References
+\series default
 :
- Policy and Documentation Formatting Standards
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.07"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Workforce Roles,
- Responsibilities,
- and Competency Framework
 \end_layout
 
 \begin_layout Itemize
@@ -447,7 +850,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:2.08"
+reference "pol:1.11"
 plural "false"
 caps "false"
 noprefix "false"
@@ -456,7 +859,43 @@ nolink "false"
 \end_inset
 
 :
- System Integrity and Malware Protection Policy
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Asset Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Supply Chain Risk Management (SCRM) and Vendor Governance
 \end_layout
 
 \begin_layout Itemize
@@ -498,13 +937,59 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-NRS 205.4765 (Unlawful acts regarding computers and information services)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 603A.210 (Security measures for personal information)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Itemize
@@ -518,7 +1003,21 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
- Section SC (System and Communications Protection and Information Integrity Family)
+ Section RA-5(2) (Update Vulnerabilities to Be Scanned)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section RA-5(5) (Privileged Access)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section RA-5(11) (Public Disclosure Program)
 \end_layout
 
 \begin_layout Itemize
@@ -537,11 +1036,22 @@ CJIS Security Policy v6.0:
  and Directives)
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
 \begin_layout Itemize
 
 \lang english
 NIST CSF 2.0:
- ID.RA-01 (Vulnerability Identification)
+ ID.RA-01 (Vulnerabilities in Assets Are Identified,
+ Validated,
+ and Recorded)
 \end_layout
 
 \begin_layout Itemize
@@ -563,8 +1073,25 @@ NIST SP 800-53 Rev.
 \begin_layout Itemize
 
 \lang english
+NIST SP 800-53 Rev.
+ 5:
+ SI-5 (Security Alerts,
+ Advisories,
+ and Directives)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 COBIT 2019:
  BAI03 (Manage Solutions Identification and Build)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+COBIT 2019:
+ DSS05 (Manage Security Services)
 \end_layout
 
 \begin_layout Itemize
@@ -588,13 +1115,6 @@ ITIL v4:
  Release Management Practice
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-ITIL v4:
- Software Asset Management Practice
-\end_layout
-
 \begin_layout Subsection*
 
 \lang english
@@ -605,130 +1125,17 @@ ITIL v4:
 \begin_layout Subsubsection*
 
 \lang english
-6.1 Vulnerability Scanning and Identification
+6.1 Inventory Inputs
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Automated Scanning
+Hardware Inventory Source
 \series default
 :
- The Department shall employ automated tools to perform authenticated vulnerability scans on all active network assets.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Scanning Frequency
-\series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Internal Systems
-\series default
-:
- Shall be scanned at least Monthly.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-External-Facing Systems
-\series default
-:
- Shall be scanned at least Weekly.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-CJI Systems
-\series default
-:
- Shall be scanned in accordance with the stricter of the County Monthly baseline or CJIS RA-5 requirements.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Ad-Hoc
-\series default
-:
- Scans shall be initiated within 72 hours of the publication of Critical severity vendor security advisories affecting County assets.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Credentialed Scanning
-\series default
-:
- To ensure accuracy,
- scans shall be performed using privileged credentials (authenticated scans) whenever technically feasible.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Asset Discovery
-\series default
-:
- Scanning tools shall be configured to actively discover new or unauthorized devices connected to the network.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.2 Vulnerability Scoring and Prioritization
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Standard Scoring
-\series default
-:
- Vulnerabilities shall be assessed using the Common Vulnerability Scoring System (CVSS) v3.1 or higher.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Prioritization
-\series default
-:
- Remediation prioritization shall be determined by the base score and the asset's criticality classification (as defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.11"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and 
+ The Systems Administrator and the Network Administrator shall scope vulnerability scanning to the asset inventory maintained under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -743,7 +1150,391 @@ nolink "false"
 
 
 \series default
-).
+ (IT Asset Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Software Inventory Source
+\series default
+:
+ The Systems Administrator shall scope patch targeting and vulnerability identification to the software inventory and the field set defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Vulnerability Management Augmentation
+\series default
+:
+ The Systems Administrator shall maintain vulnerability management metadata linked to each software inventory record.
+ At a minimum,
+ the augmentation set shall include the following:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+CVE Cross-Reference
+\series default
+:
+ The Common Vulnerabilities and Exposures (CVE) identifiers known to affect the recorded software version.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Current Patch State
+\series default
+:
+ The patch level installed on each instance,
+ expressed as the vendor-defined version,
+ build,
+ or update identifier.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Last-Scan Timestamp
+\series default
+:
+ The date and time of the most recent vulnerability scan that evaluated the recorded instance.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+
+\lang english
+6.2 Security Advisories and Directives
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Intake
+\series default
+:
+ The Assistant IT Director shall subscribe to and review security alerts,
+ advisories,
+ and directives from authoritative external sources,
+ including the Multi-State Information Sharing and Analysis Center (MS-ISAC),
+ the Cybersecurity and Infrastructure Security Agency (CISA),
+ the United States Computer Emergency Readiness Team (US-CERT),
+ federal and state advisories,
+ and vendor security feeds for products in the asset inventory.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Dissemination
+\series default
+:
+ The Assistant IT Director shall route applicable advisories to the Systems Administrator and the Network Administrator within one (1) business day of receipt for review and applicability determination.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Implementation
+\series default
+:
+ The Systems Administrator and the Network Administrator shall implement remediation actions identified in advisories or directives within the timelines established for the corresponding severity in this policy,
+ consistent with CJIS Security Policy v6.0:
+ Section SI-5 (Security Alerts,
+ Advisories,
+ and Directives).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Internal Generation
+\series default
+:
+ The Assistant IT Director shall generate internal advisories where threat conditions affecting County assets warrant action beyond the scope of an external advisory.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Public Vulnerability Reporting Channel
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall maintain a publicly available email address for the receipt of vulnerability reports concerning County information systems from external sources,
+ consistent with CJIS Security Policy v6.0:
+ Section RA-5(11) (Public Disclosure Program).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall triage reports received through the public reporting channel under this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall escalate confirmed or suspected exploitation arising from a public vulnerability report under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Noncompliance Notification
+\series default
+:
+ Where a directive cannot be implemented within the established timeframe,
+ the Assistant IT Director shall notify the issuing organization of the degree of noncompliance and shall document the deviation in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.3 Vulnerability Scanning and Identification
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Automated Scanning
+\series default
+:
+ The Systems Administrator and the Network Administrator shall employ automated tools to perform vulnerability scans on all active assets within the scope of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+External-Facing Systems
+\series default
+:
+ For purposes of this policy,
+ external-facing systems are systems,
+ services,
+ interfaces,
+ gateways,
+ web applications,
+ application programming interfaces (APIs),
+ mail gateways,
+ and cloud services reachable from the public Internet or from networks not owned or operated by Elko County.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Scanning Frequency
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator and the Network Administrator shall scan internal systems no less frequently than monthly.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall scan external-facing systems no less frequently than weekly.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator and the Network Administrator shall scan systems that process,
+ store,
+ or transmit CJI at the stricter of the monthly internal-systems baseline or the cadence required by CJIS Security Policy v6.0:
+ Section RA-5 (Vulnerability Monitoring and Scanning).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator or the Network Administrator shall initiate an ad-hoc scan within seventy-two (72) hours of the publication of a Critical severity vendor security advisory affecting County assets.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Scan Content Currency
+\series default
+:
+ The Systems Administrator shall update vulnerability scanning tool content within twenty-four (24) hours prior to each scheduled scan and upon receipt of notification of new vulnerabilities affecting County assets,
+ consistent with CJIS Security Policy v6.0:
+ Section RA-5(2) (Update Vulnerabilities to Be Scanned).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Authenticated Scanning
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator and the Network Administrator shall perform vulnerability scans using privileged credentials.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator and the Network Administrator shall perform authenticated scans on all systems that process,
+ store,
+ or transmit CJI,
+ consistent with CJIS Security Policy v6.0:
+ Section RA-5(5) (Privileged Access).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator or the Network Administrator shall submit an exception under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for any asset whose architecture does not support privileged-credential scanning.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Asset Discovery
+\series default
+:
+ The Systems Administrator and the Network Administrator shall configure scanning tools to identify devices connected to County networks and to flag devices that are not present in the asset inventory.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Unauthorized Device Routing
+\series default
+:
+ The Systems Administrator or the Network Administrator who identifies through asset discovery a device that is not present in the asset inventory shall report the device as an Indicator of Compromise in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.4 Vulnerability Scoring and Prioritization
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Scoring Standard
+\series default
+:
+ The Systems Administrator and the Network Administrator shall assess vulnerabilities using the Common Vulnerability Scoring System (CVSS) version 3.1 or a successor version adopted by the IT Director.
 \end_layout
 
 \begin_layout Itemize
@@ -763,7 +1554,7 @@ Severity Categories
 Critical
 \series default
 :
- CVSS 9.0 - 10.0
+ CVSS base score of 9.0 through 10.0.
 \end_layout
 
 \begin_layout Itemize
@@ -773,7 +1564,7 @@ Critical
 High
 \series default
 :
- CVSS 7.0 - 8.9
+ CVSS base score of 7.0 through 8.9.
 \end_layout
 
 \begin_layout Itemize
@@ -783,7 +1574,7 @@ High
 Medium
 \series default
 :
- CVSS 4.0 - 6.9
+ CVSS base score of 4.0 through 6.9.
 \end_layout
 
 \begin_layout Itemize
@@ -793,14 +1584,54 @@ Medium
 Low
 \series default
 :
- CVSS 0.1 - 3.9
+ CVSS base score of 0.1 through 3.9.
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Prioritization
+\series default
+:
+ The Systems Administrator and the Network Administrator shall prioritize remediation by combining the CVSS base score with the asset criticality classification defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and the asset support classification defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
 \begin_layout Subsubsection*
 
 \lang english
-6.3 Patch Management and Remediation Timelines
+6.5 Patch Management and Remediation Timelines
 \end_layout
 
 \begin_layout Itemize
@@ -810,8 +1641,13 @@ Low
 Remediation Mandate
 \series default
 :
- System Administrators shall test and deploy security patches or implement compensating controls within the following strict timelines,
- measured from the date of vendor release or vulnerability discovery:
+ The Systems Administrator and the Network Administrator shall test and deploy security patches,
+ firmware updates,
+ or compensating controls within the following timelines,
+ measured from the date of vendor release or vulnerability discovery,
+ whichever is earlier,
+ consistent with CJIS Security Policy v6.0:
+ Section SI-2 (Flaw Remediation):
 \end_layout
 
 \begin_deeper
@@ -822,7 +1658,7 @@ Remediation Mandate
 Critical Severity
 \series default
 :
- Remediate within 15 days.
+ Within fifteen (15) calendar days.
 \end_layout
 
 \begin_layout Itemize
@@ -832,7 +1668,7 @@ Critical Severity
 High Severity
 \series default
 :
- Remediate within 30 days.
+ Within thirty (30) calendar days.
 \end_layout
 
 \begin_layout Itemize
@@ -842,7 +1678,7 @@ High Severity
 Medium Severity
 \series default
 :
- Remediate within 60 days.
+ Within sixty (60) calendar days.
 \end_layout
 
 \begin_layout Itemize
@@ -852,7 +1688,7 @@ Medium Severity
 Low Severity
 \series default
 :
- Remediate within 90 days.
+ Within ninety (90) calendar days.
 \end_layout
 
 \end_deeper
@@ -860,35 +1696,106 @@ Low Severity
 
 \series bold
 \lang english
-Flaw Remediation
+Patch Testing
 \series default
 :
- The Department shall identify,
- report,
- and correct information system flaws.
- Security-relevant software updates shall be installed automatically where feasible (e.g.,
- workstation OS updates).
+ The Systems Administrator and the Network Administrator shall test patches on a non-production subset of representative systems prior to County-wide deployment to identify operational impact.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Testing
+Emergency Patch Testing
 \series default
 :
- All patches shall be tested on a non-production subset of systems (e.g.,
- a "pilot group") prior to county-wide deployment to minimize operational disruption.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-Change Control
+Exception
 \series default
 :
- Critical and High severity patches may be treated as Standard Changes (pre-authorized) if defined in the 
+ The IT Director may authorize expedited patch deployment without full non-production testing where active exploitation of a Critical severity vulnerability creates immediate operational risk.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator or the Network Administrator shall document compensating monitoring and rollback steps within the Emergency Change record under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Change Management Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Automated Updates
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall configure workstations and endpoints to install security-relevant updates automatically.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall obtain a Risk Acceptance Memo approved under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for any deviation from automatic installation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Change Authorization
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator and the Network Administrator shall authorize patch deployments in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -904,13 +1811,52 @@ nolink "false"
 
 \series default
 .
- Emergency patching requiring immediate disruption shall follow the Emergency Change procedure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator and the Network Administrator may implement patches as Standard Changes when a documented procedure exists in the Knowledge Base.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator and the Network Administrator shall follow the Emergency Change procedure for patching that cannot await standard authorization.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Isolation of Unremediated Critical Vulnerabilities
+\series default
+:
+ The Network Administrator shall logically isolate from production networks any system with Critical severity vulnerabilities that remain unremediated past the timeline defined in this section,
+ where no Risk Acceptance Memo has been approved under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ The Network Administrator shall maintain logical isolation until remediation is complete or a Risk Acceptance Memo is in place.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.4 Unsupported Software (End-of-Life)
+6.6 Unsupported Software (End-of-Life)
 \end_layout
 
 \begin_layout Itemize
@@ -920,54 +1866,87 @@ nolink "false"
 Prohibition
 \series default
 :
- The use of software or operating systems that are End-of-Life (EOL) or End-of-Support (EOS) by the vendor is prohibited on County networks.
+ The Systems Administrator and the Network Administrator shall not deploy or maintain software,
+ firmware,
+ or operating systems that have reached End-of-Life or End-of-Support status as declared by the vendor on County networks.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Transition Plan
+Migration Plan
 \series default
 :
- The IT Director must approve a migration plan to replace or retire assets at least 90 days prior to their EOL date.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exception
-\series default
-:
- If EOL software must remain in use for critical business functions,
- it shall be:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Covered by a formal Risk Acceptance Memo.
+The Assistant IT Director shall present a migration plan to the IT Director for any asset approaching End-of-Life,
+ not later than ninety (90) calendar days prior to the vendor's declared End-of-Life date.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Isolated from the general network and the Internet (air-gapped or strictly firewalled).
+The IT Director shall approve the migration plan.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Continued-Use Compensating Controls
+\series default
+:
+ Where End-of-Life software remains in use to support a critical business function,
+ the IT Director shall require all of the following before authorizing continued use:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall obtain a Risk Acceptance Memo approved under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Blocked from accessing CJI.
+The Network Administrator shall enforce network isolation by air-gap or strict firewall segregation from the general County network and from external networks.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator and the Network Administrator shall not permit CJI processing,
+ storage,
+ or transmission on the affected asset.
 \end_layout
 
 \end_deeper
 \begin_layout Subsubsection*
 
 \lang english
-6.5 Verification and Rescanning
+6.7 Verification and Rescanning
 \end_layout
 
 \begin_layout Itemize
@@ -977,69 +1956,100 @@ Blocked from accessing CJI.
 Validation
 \series default
 :
- Remediation actions shall be verified through a follow-up vulnerability scan or manual verification within seven (7) days of patch deployment.
+ The Systems Administrator and the Network Administrator shall verify remediation actions through a follow-up vulnerability scan or by manual verification within seven (7) calendar days of patch deployment.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-False Positives
+False-Positive Disposition
 \series default
 :
- Vulnerabilities identified as "False Positives" by System Administrators must be validated,
- documented with evidence,
- and marked as such in the scanning tool.
- False positive designations shall be reviewed annually.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.6 Reporting
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Monthly Report
-\series default
-:
- The Assistant IT Director shall generate a Monthly Vulnerability Compliance Report for the IT Director.
- This report shall track:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Total open vulnerabilities by severity.
+The Systems Administrator or the Network Administrator who marks a vulnerability as a false positive shall validate the determination.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Mean Time to Remediate (MTTR).
+The Systems Administrator or the Network Administrator shall document supporting evidence for the false-positive determination.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Percentage of assets compliant with patching timelines.
+The Systems Administrator or the Network Administrator shall record the false-positive disposition in the scanning tool.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-List of assets with overdue patches.
+The Assistant IT Director shall review false-positive designations no less frequently than annually for continued accuracy.
 \end_layout
 
 \end_deeper
 \begin_layout Subsubsection*
 
 \lang english
-6.7 Cloud and Third-Party Systems
+6.8 Reporting
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Domain-Specific Inputs
+\series default
+:
+ The Systems Administrator and the Network Administrator shall each prepare monthly inputs covering open vulnerabilities by severity,
+ Mean Time to Remediate (MTTR),
+ patch compliance percentage,
+ and the list of overdue assets within their respective domains.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Compilation
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall compile the domain-specific inputs into a Monthly Vulnerability Compliance Report.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall perform cross-domain analysis prior to submission.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Submission
+\series default
+:
+ The Assistant IT Director shall submit the Monthly Vulnerability Compliance Report to the IT Director not later than the tenth (10th) calendar day of the following month.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.9 Cloud and Third-Party Systems
 \end_layout
 
 \begin_layout Itemize
@@ -1049,23 +2059,62 @@ List of assets with overdue patches.
 Shared Responsibility
 \series default
 :
- For cloud-based systems (SaaS,
- IaaS,
- PaaS),
- the Assistant IT Director shall ensure the contract or Service Level Agreement (SLA) specifies the vendor's responsibility for patching and vulnerability scanning.
+ For cloud-based systems,
+ including Software-as-a-Service (SaaS),
+ Infrastructure-as-a-Service (IaaS),
+ and Platform-as-a-Service (PaaS) deployments,
+ the Assistant IT Director shall ensure that the contract or Service Level Agreement specifies the vendor's responsibility for vulnerability scanning and patch deployment.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Vendor Assurance
+Vendor Vulnerability Assurance
 \series default
 :
- The Department shall review third-party security attestations (e.g.,
- SOC 2 Type II,
- FedRAMP authorization) annually to verify vendor vulnerability management practices comply with County standards.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall evaluate vendor vulnerability management practices,
+ including scan cadence,
+ remediation timelines,
+ and incident notification commitments,
+ in coordination with the supply chain governance program defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall evaluate vendor security attestations,
+ including Service Organization Control (SOC) 2 Type II reports and ISO/IEC 27001 certifications,
+ specifically for vulnerability management adequacy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall evaluate FedRAMP authorization status for federal-tier cloud services in the asset inventory.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
