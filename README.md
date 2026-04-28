@@ -36,6 +36,8 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | #353 | Uniform header: `Effective: July 01, 2026 | Version: 1.0` (Phase 10) |
 | #355 | Manual-wide LRDA citation verification sweep (Phase 9) |
 | #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references |
+| #467 | Manual-wide §3 role-title trailing-colon sweep (1.04 §6.5) — 36 policies, ~178 titles |
+| #468 | Manual-wide §6 governed-clarifier-tag-blending sweep (1.04 §6.12) — 7 policies, 10 defects |
 
 ## Chapter 0 — Front Matter
 
@@ -74,7 +76,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/206.lyx` | Privacy and Data Protection Policy | T | v2.7 |  |
 | `02/207.lyx` | System and Communications Protection Policy | T | v2.2 |  |
 | `02/208.lyx` | System Integrity and Malware Protection Policy | T | v2.0 |  |
-| `02/209.lyx` | Vulnerability and Patch Management Policy | D | v1.0 | #85, #86, #87, #271, #326, #466 |
+| `02/209.lyx` | Vulnerability and Patch Management Policy | T | v2.0 |  |
 | `02/210.lyx` | Secure Configuration Baselines and Hardening Policy | D | v1.0 | #88, #89, #90, #226 |
 | `02/211.lyx` | Audit Logging and Monitoring Policy | T | v2.4 |  |
 | `02/212.lyx` | Media Protection and Sanitization Policy | T+ | v2.4 | #449 |
