@@ -155,6 +155,7 @@ End
 \docbook_mathml_prefix 1
 \end_header
 
+
 \begin_body
 
 \begin_layout Section
@@ -180,7 +181,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -193,13 +194,9 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish the mandatory requirements for the secure configuration,
- hardening,
- and continuous monitoring of all Elko County Information Operations (ECIO) technology assets.
- This policy enforces the principle of least functionality to minimize the organizational attack surface and ensure the confidentiality,
- integrity,
- and availability of County systems,
- with specific emphasis on environments processing Criminal Justice Information (CJI).
+This policy establishes the secure configuration baselines,
+ hardening requirements,
+ and configuration compliance monitoring obligations for all Elko County information systems.
 \end_layout
 
 \begin_layout Subsection*
@@ -212,111 +209,113 @@ The purpose of this policy is to establish the mandatory requirements for the se
 \begin_layout Standard
 
 \lang english
-This policy applies to all ECIO personnel,
- contractors,
- and third-party vendors.
- The scope encompasses all physical and virtual hardware,
- operating systems,
- network infrastructure,
- software applications,
- and cloud environments owned,
+This policy applies to all Elko County information systems,
+ networks,
+ endpoints,
+ applications,
+ and supporting infrastructure owned,
  leased,
- or managed by Elko County.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-3.
- Roles and Responsibilities
+ operated,
+ or managed by Elko County,
+ and to all County Personnel,
+ contractors,
+ and third-party vendors interacting with these systems.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-IT Director
+In Scope
 \series default
 :
- Shall serve as the final approval authority for all enterprise baseline configuration standards,
- formal risk acceptance,
- and policy exceptions documented in the System Security Plan (SSP).
- Shall serve as the Configuration Control Authority (CCA) and Local Agency Security Officer (LASO) for all configuration decisions affecting CJI systems.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Establishment and maintenance of secure configuration baselines from DISA Security Technical Implementation Guides (STIGs) and CIS Benchmarks.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Assistant IT Director
-\series default
-:
- Shall define the secure configuration benchmarks based on mandatory frameworks,
- audit baseline compliance across all operational domains,
- mandate remediation for non-compliant assets,
- and maintain the Configuration Management Database (CMDB) as the authoritative record of approved configuration baselines.
+Application of approved baselines to assigned server,
+ endpoint,
+ and network assets prior to production deployment and throughout the asset lifecycle.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Systems Administrator
-\series default
-:
- Shall engineer,
- apply,
- and maintain approved configuration baselines on all assigned server and endpoint computing assets prior to production deployment and throughout the asset lifecycle.
+Default account,
+ credential,
+ and least-functionality hardening.
 \end_layout
 
 \begin_layout Itemize
 
+\lang english
+Configuration change control through the Configuration Control Authority (CCA).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Continuous monitoring of baseline compliance and drift detection.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Identification and routing of unauthorized systems and remediation of baseline drift on registered systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Network topological documentation under configuration control.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
 \series bold
 \lang english
-Network Administrator
+Out of Scope
 \series default
 :
- Shall engineer,
- apply,
- and maintain approved configuration baselines on all assigned network infrastructure,
- boundary protection,
- and communication assets prior to production deployment and throughout the asset lifecycle.
 \end_layout
 
-\begin_layout Subsection*
+\begin_deeper
+\begin_layout Itemize
 
 \lang english
-4.
- Compliance and Exceptions
+Configuration item record governance and the CMDB minimum field set:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Violations of this policy shall result in the immediate isolation of the non-compliant asset from the production network and may subject the responsible personnel to disciplinary action.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Any deviation from an approved configuration baseline must be submitted via a formal Exception Request.
- The request shall include a documented technical justification,
- compensating controls,
- and a defined expiration date.
- Exceptions are invalid unless formally approved in writing by both the Assistant IT Director and the IT Director.
- For exceptions affecting systems that process,
- store,
- or transmit Criminal Justice Information (CJI),
- written approval from the CJIS Systems Officer (CSO) shall be obtained prior to implementation.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Unauthorized systems discovered operating without an approved baseline shall be treated as Shadow IT.
- In such events,
- Incident Response isolation protocols shall trigger automatically,
- and asset handling shall default to the enforcement mechanisms defined in ECIO 
+Change authorization mechanics and the Request for Change (RFC) lifecycle:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -331,8 +330,165 @@ nolink "false"
 
 
 \series default
- (Change Management Policy),
- ECIO 
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vulnerability scanning and patch management:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Operational incident triage of unregistered or anomalous systems detected on the County network:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Indicator of Compromise (IoC) evaluation and Chapter 4 lifecycle handling:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Risk Acceptance Memo procedure for unremediated baseline deviations:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+3.
+ Roles and Responsibilities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+IT Director (as LASO):
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the final approval authority for all enterprise baseline configuration standards.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall exercise the Local Agency Security Officer (LASO) designation under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy) for configuration decisions affecting CJI systems.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve risk acceptance for unremediated baseline deviations per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve any exception to this policy in writing per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -347,13 +503,47 @@ nolink "false"
 
 
 \series default
- (Policy Implementation and Enforcement Framework),
- and ECIO 
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall define secure configuration benchmarks based on the frameworks identified in Section 6.1 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall audit baseline compliance across all operational domains.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall mandate remediation for non-compliant assets within the timelines defined in Section 6.6 of this policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain the registry of approved baseline standards in coordination with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.04"
+reference "pol:3.08"
 plural "false"
 caps "false"
 noprefix "false"
@@ -363,7 +553,240 @@ nolink "false"
 
 
 \series default
- (Eradication Procedures and Scenario Guides).
+ (Service Configuration Management (CMDB) Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall engineer,
+ apply,
+ and maintain approved configuration baselines on all assigned server and endpoint computing assets prior to production deployment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain compliance with approved baselines throughout the asset lifecycle.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall engineer,
+ apply,
+ and maintain approved configuration baselines on all assigned network infrastructure,
+ boundary protection,
+ and communication assets prior to production deployment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain compliance with approved baselines throughout the asset lifecycle.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall modify established configuration baselines only through the formal Change Management process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Change Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall route systems detected on the County network without an approved baseline to operational triage under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Operational Incident Management Policy).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall not connect unauthorized devices to the County network.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not modify,
+ disable,
+ or circumvent approved configuration baselines on assigned County devices.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all personnel involved in the configuration,
+ deployment,
+ or maintenance of Elko County information systems.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with secure configuration baseline requirements shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The IT Director shall enforce this policy.
+ Violations constitute non-compliance subject to the enforcement framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be processed in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Risk acceptance for unremediated baseline deviations shall additionally follow the Risk Acceptance Memo procedure defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -371,6 +794,15 @@ nolink "false"
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -397,6 +829,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:1.12"
 plural "false"
 caps "false"
@@ -415,7 +865,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:2.11"
+reference "pol:2.09"
 plural "false"
 caps "false"
 noprefix "false"
@@ -424,7 +874,61 @@ nolink "false"
 \end_inset
 
 :
- Audit Logging and Monitoring Policy
+ Vulnerability and Patch Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Catalog and SLA Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Operational Incident Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Service Configuration Management (CMDB) Policy
 \end_layout
 
 \begin_layout Itemize
@@ -451,7 +955,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:4.04"
+reference "pol:4.02"
 plural "false"
 caps "false"
 noprefix "false"
@@ -460,7 +964,7 @@ nolink "false"
 \end_inset
 
 :
- Eradication Procedures and Scenario Guides
+ Identification and Reporting Procedures
 \end_layout
 
 \begin_layout Itemize
@@ -478,26 +982,29 @@ nolink "false"
 \end_inset
 
 :
- Policy Implementation and Enforcement Framework
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 205 (Crimes Against Property)
-\end_layout
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
-\begin_layout Itemize
+\end_inset
 
-\lang english
-NRS 603A (Security of Personal Information)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
- Section CM-1 (Configuration Management Policy and Procedures)
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Itemize
@@ -532,13 +1039,6 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
- Section CM-6 (Configuration Settings)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
  Section CM-7 (Least Functionality)
 \end_layout
 
@@ -547,6 +1047,43 @@ CJIS Security Policy v6.0:
 \lang english
 CJIS Security Policy v6.0:
  Section CM-7(1) (Periodic Review)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Center for Internet Security (CIS):
+ CIS Benchmarks
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Defense Information Systems Agency (DISA):
+ Security Technical Implementation Guides (STIGs)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section CM-1 (Configuration Management Policy and Procedures)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section CM-6 (Configuration Settings)
 \end_layout
 
 \begin_layout Itemize
@@ -678,11 +1215,31 @@ ITIL v4:
  Service Configuration Management Practice
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+ITIL v4:
+ Change Enablement Practice
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 6.
  Policy Statement
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Secure configuration of information systems is the foundation of system integrity and the principle of least functionality.
+ By establishing,
+ enforcing,
+ and continuously monitoring approved baselines,
+ ECIO minimizes the organizational attack surface and protects the confidentiality,
+ integrity,
+ and availability of County systems,
+ with specific emphasis on environments processing Criminal Justice Information (CJI).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -694,21 +1251,26 @@ ITIL v4:
 \begin_layout Standard
 
 \lang english
-ECIO shall establish,
+The Assistant IT Director shall establish,
  document,
- and maintain secure configuration baselines for all information systems.
- Baselines must be strictly derived from Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIGs).
+ and maintain secure configuration baselines for all Elko County information systems,
+ consistent with CJIS Security Policy v6.0:
+ Section CM-2 (Baseline Configuration).
+ The Assistant IT Director shall derive baselines from Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIGs).
  Where an applicable DISA STIG does not exist for a specific system class,
- the Center for Internet Security (CIS) Benchmark at Level 2 or higher shall serve as the mandatory fallback baseline standard.
- The absence of an applicable STIG and the use of the CIS fallback shall be documented in the SSP.
- The Assistant IT Director shall review and update these baselines at least annually or upon the introduction of a new system architecture to ensure alignment with the latest releases.
+ the Assistant IT Director shall use the Center for Internet Security (CIS) Benchmark at Level 2 or higher as the mandatory fallback baseline standard.
+ The Assistant IT Director shall document the absence of an applicable STIG and the use of the CIS fallback in the System Security Plan (SSP).
+ The Assistant IT Director shall review and update these baselines at least annually,
+ or upon the introduction of a new system architecture,
+ to maintain alignment with the current approved release of the applicable STIG or CIS Benchmark.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-To support rollback capabilities,
- ECIO shall retain at least one (1) prior approved version of the baseline configuration for each system.
+The Assistant IT Director shall retain at least one (1) prior approved version of the baseline configuration for each system to support rollback capability,
+ consistent with CJIS Security Policy v6.0:
+ Section CM-2(3) (Retention of Previous Configurations).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -720,10 +1282,10 @@ To support rollback capabilities,
 \begin_layout Standard
 
 \lang english
-ECIO shall develop,
+The Network Administrator shall develop,
  document,
  and maintain under configuration control a current and complete topological drawing depicting the interconnectivity of the County network to criminal justice information systems and services.
- The Assistant IT Director shall review and update this drawing at least annually,
+ The Network Administrator shall review and update this drawing at least annually,
  upon security-relevant system changes,
  and when network components are installed or upgraded.
 \end_layout
@@ -737,19 +1299,39 @@ ECIO shall develop,
 \begin_layout Standard
 
 \lang english
-Information systems shall be configured to provide only essential capabilities.
- Services,
+The Systems Administrator and the Network Administrator shall configure each information system to provide only essential capabilities,
+ consistent with CJIS Security Policy v6.0:
+ Section CM-7 (Least Functionality).
+ Prior to production deployment,
+ the Systems Administrator and the Network Administrator shall enable only those services,
  daemons,
  ports,
  protocols,
- and applications not explicitly justified in the approved System Security Plan (SSP) and documented within the Configuration Management Database (CMDB) baseline shall be disabled or removed prior to production deployment.
+ and applications that are both explicitly justified in the approved System Security Plan (SSP) and authorized by the approved baseline.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Systems in production at the effective date of this policy shall be assessed against the applicable baseline within ninety (90) days of the effective date.
- Non-compliant systems shall be remediated or formally excepted under Section 4 within one hundred eighty (180) days.
+The Assistant IT Director shall ensure that systems in production at the effective date of this policy are assessed against the applicable baseline within ninety (90) days of the effective date.
+ The responsible Systems Administrator or Network Administrator shall remediate non-compliant systems,
+ or formally except them under Section 4 of this policy,
+ within one hundred eighty (180) days.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director shall conduct a least-functionality review of County information systems at least annually,
+ upon security-relevant system changes,
+ and when incidents identify unnecessary functions,
+ ports,
+ protocols,
+ software,
+ or services,
+ consistent with CJIS Security Policy v6.0:
+ Section CM-7(1) (Periodic Review).
+ The Systems Administrator and the Network Administrator shall remediate or formally except findings from each review under Section 4 of this policy.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -761,15 +1343,12 @@ Systems in production at the effective date of this policy shall be assessed aga
 \begin_layout Standard
 
 \lang english
-All default,
+The Systems Administrator and the Network Administrator shall disable,
+ rename,
+ or strictly restrict all default,
  guest,
- and built-in vendor accounts shall be disabled,
- renamed,
- or strictly restricted before an asset is joined to the production network.
- Default authentication credentials (e.g.,
- passwords,
- SNMP strings,
- SSH keys) shall be changed to meet current enterprise cryptographic and complexity standards prior to deployment.
+ and built-in vendor accounts before an asset is joined to the production network.
+ The Systems Administrator and the Network Administrator shall change all default authentication credentials to meet current enterprise cryptographic and complexity standards prior to deployment.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -781,8 +1360,7 @@ All default,
 \begin_layout Standard
 
 \lang english
-Modifications to established configuration baselines shall not occur outside of the formal ITIL Change Management process,
- in accordance with ECIO 
+Information Operations Personnel shall not modify established configuration baselines except through the formal Change Management process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -797,9 +1375,11 @@ nolink "false"
 
 
 \series default
- (Change Management Policy).
- System and Network Administrators must submit a Request for Change (RFC) and receive Configuration Control Authority (CCA) approval prior to altering configuration settings on production systems.
- Emergency changes shall follow the emergency change procedure and shall follow the emergency change procedure and complete catch-up documentation and CCA review in accordance with the timelines established in 
+.
+ The Systems Administrator and the Network Administrator shall submit a Request for Change (RFC) and receive Configuration Control Authority (CCA) approval prior to altering configuration settings on production systems,
+ consistent with CJIS Security Policy v6.0:
+ Section CM-5 (Access Restrictions for Change).
+ Information Operations Personnel executing emergency changes shall follow the emergency change procedure and complete catch-up documentation and CCA review in accordance with the timelines established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -826,14 +1406,115 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-ECIO shall deploy automated mechanisms to dynamically monitor systems for deviations from their approved DISA STIG or CIS baselines.
- When automated tools detect a deviation,
- the system shall generate an alert to the Assistant IT Director and the respective Systems or Network Administrator.
- Critical-risk deviations shall be remediated,
- or the affected asset logically isolated from the production network,
- within four (4) hours of detection.
- High-risk deviations shall be remediated within twenty-four (24) hours of detection.
- Deviations not remediated within the required timeframe shall be escalated to the IT Director and documented as an open exception in accordance with Section 4.
+The Assistant IT Director shall deploy automated mechanisms to monitor systems for deviations from their approved DISA STIG or CIS baselines,
+ scoped to the asset inventory maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Asset Management Policy),
+ consistent with CJIS Security Policy v6.0:
+ Section CM-2(2) (Automation Support for Accuracy and Currency).
+ The Assistant IT Director shall configure automated monitoring to generate a work order upon detection of a deviation.
+ The responsible Systems Administrator or Network Administrator shall classify the deviation work order at the severity produced by the standard priority calculation,
+ and shall remediate the deviation within the response and resolution timeframes defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Service Catalog and SLA Policy).
+ Where a Critical severity baseline deviation cannot be remediated within the resolution timeframe defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the responsible administrator shall logically isolate the affected asset from the production network until remediation is complete.
+ The responsible Systems Administrator or Network Administrator shall escalate any deviation not remediated within the assigned SLA to the IT Director and document it as an open exception in accordance with Section 4 of this policy.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Unauthorized System Detection and Routing
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Assistant IT Director,
+ the Systems Administrator,
+ or the Network Administrator who detects a system on the County network that is not registered in the System of Engagement and lacks an approved configuration baseline shall report the system as an operational incident under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ for triage.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The responsible Systems Administrator or Network Administrator shall remediate any registered County system found operating without the applicable approved baseline (e.g.,
+ baseline drift,
+ missed initial application,
+ or post-rebuild configuration gap) through the Configuration Change Control process defined in Section 6.5 of this policy and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Information Operations Personnel shall not route such cases through the incident response lifecycle.
 \end_layout
 
 \end_body
