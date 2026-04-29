@@ -174,13 +174,13 @@ name "pol:1.08"
 
 \lang english
 Effective:
- April 18,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.5
+ 1.6
 \end_layout
 
 \begin_layout Subsection*
@@ -226,9 +226,7 @@ This policy applies to all Information Operations personnel and to any County of
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -257,9 +255,7 @@ Shall maintain the Separation of Duties Matrix and review it at least annually.
 
 \series bold
 \lang english
-County Manager
-\series default
-:
+County Manager:
 \end_layout
 
 \begin_deeper
@@ -287,9 +283,7 @@ Shall serve as the mediation authority for conflicts between administrative and 
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -311,9 +305,7 @@ Shall serve as the primary operational decision-maker in the IT Director's absen
 
 \series bold
 \lang english
-Human Resources (HR)
-\series default
-:
+Human Resources (HR):
 \end_layout
 
 \begin_deeper
@@ -334,9 +326,7 @@ Shall not direct or influence technical decisions or access control timelines.
 
 \series bold
 \lang english
-Fiscal Affairs
-\series default
-:
+Fiscal Affairs:
 \end_layout
 
 \begin_deeper
@@ -357,9 +347,7 @@ Shall not prescribe technical standards or override IT design decisions.
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper

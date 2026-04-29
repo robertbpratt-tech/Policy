@@ -174,13 +174,13 @@ name "pol:1.10"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -394,9 +394,7 @@ Non-technology procurement conducted by County departments.
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -456,9 +454,7 @@ Shall document each technical-approver designation.
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -506,9 +502,7 @@ Shall resolve workflow exceptions that exceed Administrative Assistant authority
 
 \series bold
 \lang english
-Administrative Assistant
-\series default
-:
+Administrative Assistant:
 \end_layout
 
 \begin_deeper
@@ -527,9 +521,7 @@ Shall execute day-to-day procurement workflow tasks —
 
 \series bold
 \lang english
-Office of Fiscal Affairs
-\series default
-:
+Office of Fiscal Affairs:
 \end_layout
 
 \begin_deeper
@@ -558,9 +550,7 @@ Shall not process technology invoices,
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper

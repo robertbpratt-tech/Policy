@@ -174,13 +174,13 @@ name "pol:1.06"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -334,9 +334,7 @@ nolink "false"
 
 \series bold
 \lang english
-Board of County Commissioners
-\series default
-:
+Board of County Commissioners:
 \end_layout
 
 \begin_deeper
@@ -363,9 +361,7 @@ Shall exercise final budgetary authority for IT capital investments.
 
 \series bold
 \lang english
-County Manager
-\series default
-:
+County Manager:
 \end_layout
 
 \begin_deeper
@@ -408,9 +404,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -448,9 +442,7 @@ nolink "false"
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper

@@ -174,13 +174,13 @@ name "pol:1.13"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -378,9 +378,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -430,9 +428,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -461,9 +457,7 @@ Shall coordinate vendor access provisioning and revocation with the relevant Inf
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper
@@ -496,9 +490,7 @@ Shall not delegate contract ownership or business-logic decisions to Information
 
 \series bold
 \lang english
-Office of Fiscal Affairs
-\series default
-:
+Office of Fiscal Affairs:
 \end_layout
 
 \begin_deeper
@@ -519,9 +511,7 @@ Shall not finalize procurement processing for vendor engagements involving Crimi
 
 \series bold
 \lang english
-Human Resources
-\series default
-:
+Human Resources:
 \end_layout
 
 \begin_deeper

@@ -170,13 +170,13 @@ name "pol:1.09"
 
 \begin_layout Policy Metadata
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -211,9 +211,7 @@ This policy applies to all information systems,
 \begin_layout Itemize
 
 \series bold
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -258,9 +256,7 @@ Shall review and formally approve System Security Categorizations.
 \begin_layout Itemize
 
 \series bold
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -322,9 +318,7 @@ nolink "false"
 \begin_layout Itemize
 
 \series bold
-Systems Administrators and Network Administrators
-\series default
-:
+Systems Administrators and Network Administrators:
 \end_layout
 
 \begin_deeper
@@ -351,9 +345,7 @@ Shall report changes in system architecture that may alter the risk profile to t
 \begin_layout Itemize
 
 \series bold
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -392,9 +384,7 @@ Shall adhere to risk mitigation procedures and security controls defined in this
 \begin_layout Itemize
 
 \series bold
-Department Heads and Elected Officials
-\series default
-:
+Department Heads and Elected Officials:
 \end_layout
 
 \begin_deeper

@@ -174,13 +174,13 @@ name "pol:1.05"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -324,9 +324,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -367,9 +365,7 @@ Shall ensure that review and update records are maintained in the System of Enga
 
 \series bold
 \lang english
-County Manager
-\series default
-:
+County Manager:
 \end_layout
 
 \begin_deeper
@@ -392,9 +388,7 @@ Shall escalate to the Board of County Commissioners when a policy change require
 
 \series bold
 \lang english
-Board of County Commissioners
-\series default
-:
+Board of County Commissioners:
 \end_layout
 
 \begin_deeper
@@ -411,9 +405,7 @@ Shall approve policies requiring legal ratification,
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper

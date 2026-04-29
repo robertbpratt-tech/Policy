@@ -174,13 +174,13 @@ name "pol:1.11"
 
 \lang english
 Effective:
- April 24,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.4
+ 2.5
 \end_layout
 
 \begin_layout Subsection*
@@ -394,9 +394,7 @@ nolink "false"
 
 \series bold
 \lang english
-Board of County Commissioners
-\series default
-:
+Board of County Commissioners:
 \end_layout
 
 \begin_deeper
@@ -426,9 +424,7 @@ Constraint
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -509,9 +505,7 @@ Shall ensure required technical controls,
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper
@@ -538,9 +532,7 @@ Shall ensure departmental processes comply with the handling requirements define
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -559,9 +551,7 @@ Shall implement and operate the technical controls required to protect data acco
 
 \series bold
 \lang english
-All County Personnel
-\series default
-:
+All County Personnel:
 \end_layout
 
 \begin_deeper
@@ -1896,7 +1886,7 @@ Data classification is not static.
 
 \series bold
 \lang english
-CJI Reclassification Constraint
+CJI Reclassification
 \series default
 :
 \end_layout
@@ -1904,8 +1894,12 @@ CJI Reclassification Constraint
 \begin_deeper
 \begin_layout Itemize
 
+\series bold
 \lang english
-The IT Director (as LASO) shall not authorize downward reclassification of Restricted CJI without written authorization from any additional CJIS authority required by governing agreements.
+Constraint
+\series default
+:
+ The IT Director (as LASO) shall not authorize downward reclassification of Restricted CJI without written authorization from any additional CJIS authority required by governing agreements.
 \end_layout
 
 \begin_layout Itemize
