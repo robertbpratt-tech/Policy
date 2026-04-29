@@ -302,7 +302,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.11 | Capacity and Availability | T+ | v2.1, April 29 | 1 | #451 |
 | 3.12 | Monitoring and Event Management | T+ | v2.1, April 29 | 1 | #413 |
 | 3.13 | Knowledge Management | T | v2.3, April 29 | 0 | — |
-| 3.14 | IT Project Management | T | v2.3, April 29 | 0 | — |
+| 3.14 | IT Project Management | T+ | v2.3, April 29 | 1 | #478 |
 | 3.15 | Service Continuity | T+ | v2.3, April 29 | 1 | #314 |
 | 3.16 | Service Improvement | T+ | v2.1, April 29 | 1 | #452 |
 | 3.17 | System Maintenance and Vendor Repairs | T | v2.2, April 29 | 0 | — |
@@ -311,15 +311,13 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 4.01 | IR Policy Overview | T+ | v2.1, April 29 | 2 | #418, #457 |
+| 4.01 | IR Policy Overview | T+ | v2.1, April 29 | 3 | #418, #457, #477 |
 | 4.02 | Identification and Reporting | T | v2.2, April 29 | 0 | — |
 | 4.03 | Containment Strategy and Playbooks | T | v2.2, April 29 | 0 | — |
-| 4.04 | Eradication | T+ | v2.3, April 29 | 1 | #460 |
-| 4.05 | Recovery and Restoration | T+ | v2.3, April 29 | 2 | #458, #460 |
+| 4.04 | Eradication | T | v2.4, April 29 | 0 | — |
+| 4.05 | Recovery and Restoration | T+ | v2.4, April 29 | 2 | #458, #477 |
 | 4.06 | Communication Protocols | T+ | v2.3, April 29 | 1 | #378 |
-| 4.07 | Postmortem and Lessons Learned | T | v1.1, April 29 | 0 | — |
-
-> #460 is a Ch4-pair ticket — the false-positive disposition seam between 4.04 §6.6 (producing) and 4.05 §6.1 (consuming) requires both policies edited in one session per recalc ruling (April 29, 2026). Listed under both rows.
+| 4.07 | Postmortem and Lessons Learned | T+ | v1.1, April 29 | 2 | #477, #478 |
 
 ### Chapter 5 — Compliance
 
@@ -481,7 +479,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 | Session | Targets | Mode | Estimate |
 |---|---|---|---|
 | 5D.1 — Sweep ✅ | ~~#467~~ resolved (233 fixes/48 files); ~~#468~~ resolved (10 fixes/6 policies); #463 deferred (substantive 3.01/3.02 SLA-semantics session, see note below) | ✅ April 29, 2026 (1 session) | — |
-| 5D.2 — Ch4-Pair | #460 (4.04 §6.6 ↔ 4.05 §6.1 false-positive disposition seam) | Full tightening protocol on both files in one session | 1 session |
+| 5D.2 — Ch4-Pair ✅ | ~~#460~~ resolved (4.04 §6.6 ↔ 4.05 §6.1 false-positive disposition seam) | ✅ April 29, 2026 (1 session) | — |
 
 **Pre-flight items required before 5D.1 opens:**
 
@@ -518,7 +516,40 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 **Standing decline patterns (§4):** No new patterns surfaced. None of the existing 30 active patterns triggered (the 5D.1 mechanical sweep is below the conceptual layer where validator pushback usually appears).
 
-**Sequence:** Phase 5D.2 (Ch4-pair #460) is next. Phase 6 entry 40 (5.02 Internal Audits) does not open until 5D.2 is committed.
+**Sequence:** Phase 5D.2 closed April 29, 2026 (see completion note below). Phase 6 entry 40 (5.02 Internal Audits) is next.
+
+---
+
+### Phase 5D.2 Completion Note (April 29, 2026)
+
+5D.2 closed in a single session. **#460 resolved** at 4.04 v2.4 (commit `6c3fcef2`) and 4.05 v2.4 (commit `dcdbb6e9`).
+
+**Adjudication: Option A.** The recovery-gate seam between 4.04 §6.6 (producing) and 4.05 §6.1 (consuming) was resolved by introducing a second valid recovery-gate credential — *destructive false-positive recovery authorization* — alongside the existing *eradication-complete determination*. Destructive-FP rebuild remains under IC-controlled 4.05 recovery; the gate accepts either credential.
+
+**Edits applied:**
+- 4.04 §6.6 paragraph 2: rewritten to require IC documentation of the new authorization (FP determination, original-action justification, actions performed, affected systems) in the work order Notes; authorization included in 4.07 postmortem.
+- 4.05 §6.1: bridging sentence inserted before recovery gate establishing the new authorization as alternate handoff state in lieu of an eradication-complete determination and associated verification documentation.
+- 4.05 §6.1: gate sentence revised to accept either credential.
+- 4.05 §4: forbidden-practice entry revised to mirror the dual-credential gate.
+
+**Housekeeping (folded into 4.05 v2.4):** Two adjacent-section defects surfaced by validator round, single-line each, validator-confirmed independently:
+- 4.05 §1: cross-reference correction — "Section 6.6 governs the data and system classification framework for recovery" → "Section 6.2..." (§6.6 is Operational Handback; classification framework is at §6.2).
+- 4.05 §6.5: sentence-break repair after Policy 3.08 reference (period inserted, "the" → "The").
+
+**Cross-validator round disposition:** Both validators (ChatGPT, Gemini) reviewed the draft. Neither flagged a defect in the destructive-FP fix itself. Drift into adjacent sections produced standard validator findings; adjudicated as follows:
+- ChatGPT "fatal CJI loophole" (§6.2 audit-records language) — declined as logic error (necessary vs. sufficient condition reading).
+- ChatGPT "responsible for is prohibited" (4.04 §3 IT Director, 4.05 §2 Scope) — **declined permanently.** Misapplied prohibition. The "personal responsibility / shall not transfer to a designee" construct in 4.04 §3 is the deliberate non-transfer architecture from 1.07 IC role discipline, validated across 1.10/1.11/1.13/1.14. 4.05 §2 Scope's "responsible for maintaining" is boundary description, not a directive subject to shall-verb construct rules. New standing decline pattern (§4 candidate).
+- ChatGPT "3.15 BIA dependency gate" — declined as process noise.
+- Gemini credential-rollback proposal — declined as substantive scope expansion beyond #460.
+- Gemini IC-eligibility narrowing (optional) — declined as out of scope.
+- Gemini §1 cross-reference defect — folded as housekeeping (real publication blocker).
+- Gemini §6.5 sentence-break defect — folded as housekeeping (real structural defect).
+
+**Tickets filed:**
+- **#477 (ripple, 4.01/4.05/4.07):** Descriptive references to "eradication-complete determination" in 4.05 §2 In-Scope/Out-of-Scope, 4.01, and 4.07 §2 Scope need acknowledgment of the dual credential. Strip-at-next-touch; not a publication blocker.
+- **#478 (forward-look, 4.07/3.14):** Integrated postmortem rule for cases where 3.14 emergency project is invoked alongside 4.07 incident postmortem on a single destructive-FP event. Hypothetical until 3.14 invocation pattern surfaces in practice.
+
+**Standing decline pattern surfaced:** ChatGPT's "responsible for" prohibition flag (applied to 4.04 §3 non-transfer construct and 4.05 §2 Scope boundary description). To be added to §4 in a separate edit. Pattern: validator flags "responsible for" as prohibited terminology where it appears in legitimate non-transfer constructs (paired with "shall not transfer to a designee") or in Scope statements describing population boundaries.
 
 ---
 
