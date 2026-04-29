@@ -174,13 +174,13 @@ name "pol:4.06"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -529,9 +529,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -681,9 +679,7 @@ Shall ensure the incident response contact directory is validated annually in ac
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -725,9 +721,7 @@ nolink "false"
 
 \series bold
 \lang english
-Administrative Assistant
-\series default
-:
+Administrative Assistant:
 \end_layout
 
 \begin_deeper
@@ -763,9 +757,7 @@ Shall update the incident response contact directory within one (1) business day
 
 \series bold
 \lang english
-Incident Commander (when not the IT Director or Assistant IT Director)
-\series default
-:
+Incident Commander (when not the IT Director or Assistant IT Director):
 \end_layout
 
 \begin_deeper
@@ -814,9 +806,7 @@ Shall escalate any condition that may constitute a breach of personal informatio
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
