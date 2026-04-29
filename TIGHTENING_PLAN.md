@@ -163,6 +163,11 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #353 | Set Header Date and Version to uniform `Effective: July 01, 2026 \| Version: 1.0` | Manual-wide | Open, phase-10-deferred | All policies; mechanical normalization at v1.0 declaration per Phase 10 step 3. Dormant until Phase 10 entry. |
 | #355 | Manual-wide LRDA citation verification sweep (numbers, titles, retention periods, NRS 239.125/NAC 239.155 companion citations) | Manual-wide | Open, phase-9-deferred | Scoped in §7 Open Questions for Phase 9: verification half → sub-phase 9A; companion-authority consistency → sub-phase 9B. Split into `phase-9a-intake` and `phase-9b-intake` child tickets at Phase 9 entry. Dormant until then. |
 | #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references | Manual-wide | Open, active-root | Two absorption waves completed April 20–21: first wave #360–#372 (13 tickets against tightened Ch1/Ch2/Ch3/Ch4 peers), second wave #402–#424 (23 tickets covering strips + intra-policy disambiguation). 19 of the second wave closed in-session. #413 (3.12) and #418 (4.01) remain open tracking `of that policy` prose-rewrite cases (mechanical strips applied; prose rewrite pending — reopened April 22 post-audit). 1.04 v1.4 §6.15 residual (4 hits) resolved in 1.04 v1.5 via #439 (April 23, 2026). Untightened D-state policies (5.03/5.04/5.06/5.07) and Appendix 6.01 absorb into respective tightening/Phase 7 sessions. Scanner-based filing retired April 20 (regex-gap reliability); PDF-driven visual scan + LyX-source classifier is authoritative. Rule #1 in §4 is the underlying rule statement. [Archive: #436] |
+| #456 | LyX CommandInset ref trailing-whitespace defects — render-time space loss after cross-references | Manual-wide | Open, active-root | Children #457 (4.01, 50 occurrences), #458 (4.05, 38 occurrences). Audit method: PDF-rendered visual scan against LyX source. Surfaced April 26, 2026 cross-validator pass. |
+| #464 | PDF publication quality — metadata, accessibility tagging, ligature handling | Manual-wide | Open, phase-10-deferred | Compiled `Policy_Manual.pdf` defects affecting publication quality but not content correctness. Dormant until Phase 10 declaration entry. |
+| #467 | §3 role-title trailing-colon compliance per 1.04 §6.5 — manual-wide sweep | Manual-wide | Open, sweep | 36 policies / ~178 titles. Filed entry 36 (2.09 v2.0, April 28). Sweep-style absorption during per-policy touch, or dedicated sweep session per recalc decision. |
+| #468 | §6 governed-clarifier-tag blending compliance per 1.04 §6.12 — manual-wide sweep | Manual-wide | Open, sweep | 7 policies / 10 defects. Filed entry 36 (2.09 v2.0, April 28). Sweep-style absorption during per-policy touch, or dedicated sweep session per recalc decision. |
+| #469 | Convert prohibitive `shall not` directives to verifiable positive `shall` directives where appropriate | Manual-wide | Open, sweep | Filed April 28, 2026 between entries 36 and 37 from in-session observation. Pattern absorbed at 2.10 v2.3 §6.3 (entry 37). Remaining occurrences per parent ticket body. |
 ### Closed Roots
 
 | # | Title | Resolved | Notes |
@@ -172,7 +177,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #304 | Chapter 4 external self-containment quality gate | April 12 | All Ch4 policies tightened (4.01–4.07). |
 | #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | April 26 | All three children resolved: 1.11 v2.4 (April 11), 2.05 v2.2 (April 26 commit `fcf6b095`), 2.07 v2.2 (April 26 commit `f3d8f876`). CMVP by-reference pattern uniform manual-wide; standing decline #31 is the reflexive-decline rule for future re-push attempts. |
 
-**Sweep-style roots (#208, #211, #235, #245, #264, #6)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched. **Phase-deferred roots (#353, #355)** are dormant and entered at their scheduled phase (Phase 10 and Phase 9 respectively); they are not absorbed into per-policy tightening.
+**Sweep-style roots (#208, #211, #235, #245, #264, #6, #467, #468, #469)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched. **Active-root tickets with tracked children (#375, #456)** carry the children to closure under the parent. **Phase-deferred roots (#353, #355, #464)** are dormant and entered at their scheduled phase; they are not absorbed into per-policy tightening.
 
 ### Deferred Cluster: `1.04_Procedural_Cleanup` ✅ CLOSED
 
@@ -288,10 +293,10 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 3.02 | Service Level Management | T+ | v2.5 | 1 | #309 |
 | 3.03 | Service Communication | T | v2.0 | 0 | — |
 | 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
-| 3.05 | Service Request Fulfillment | T+ | v2.1 | 1 | #308 |
+| 3.05 | Service Request Fulfillment | T | v2.1 | 0 | — |
 | 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #450 |
 | 3.07 | Problem Management | T | v2.3 | 0 | — |
-| 3.08 | CMDB | T | v2.2 | 0 | — |
+| 3.08 | CMDB | T+ | v2.2 | 1 | #461 |
 | 3.09 | Change Management | T | v2.0 | 0 | — |
 | 3.10 | Release and Deployment | T+ | v2.0 | 1 | #377 |
 | 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #451 |
@@ -306,13 +311,15 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 4.01 | IR Policy Overview | T+ | v2.0 | 1 | #418 |
+| 4.01 | IR Policy Overview | T+ | v2.0 | 2 | #418, #457 |
 | 4.02 | Identification and Reporting | T | v2.1 | 0 | — |
 | 4.03 | Containment Strategy and Playbooks | T | v2.1 | 0 | — |
-| 4.04 | Eradication | T | v2.2 | 0 | — |
-| 4.05 | Recovery and Restoration | T | v2.2 | 0 | — |
+| 4.04 | Eradication | T+ | v2.2 | 1 | #460 |
+| 4.05 | Recovery and Restoration | T+ | v2.2 | 2 | #458, #460 |
 | 4.06 | Communication Protocols | T+ | v2.2 | 1 | #378 |
 | 4.07 | Postmortem and Lessons Learned | T | v1.0 | 0 | — |
+
+> #460 is a Ch4-pair ticket — the false-positive disposition seam between 4.04 §6.6 (producing) and 4.05 §6.1 (consuming) requires both policies edited in one session per recalc ruling (April 29, 2026). Listed under both rows.
 
 ### Chapter 5 — Compliance
 
@@ -331,9 +338,9 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 6.01 | Glossary | A | draft | 5 | #192, #193, #195, #328, #352 |
-| 6.02 | Policy Matrix | A | — | 3 | #196, #197, #198 |
+| 6.02 | Policy Matrix | A | — | 4 | #196, #197, #198, #459 |
 | 6.03 | Workforce Roles STAK Matrix | A | — | 3 | #199, #200, #214 |
-| 6.04 | Revision History and Version Control | A | — | 1 | #205 |
+| 6.04 | Revision History and Version Control | A | — | 0 | — |
 
 ---
 
@@ -631,7 +638,7 @@ All Wave 2 sub-phases depend on Wave 1's frozen-accurate baseline. Mutually inde
 
 - **#264 partial completion tracking** — confirm which subtasks are actually closed in the repo vs. carried in memory only. May need a sweep to align.
 - **#208/#211 sweep enforcement** — currently absorbed into per-policy tightening; consider whether a single dedicated sweep session would be faster.
-- **Ch3 ripple batch (now 11 tickets: #308, #309, #313, #314, #316, #317, #318, #319, #322, plus #323 on 4.03)** — batch session, defer to v1.0 validation, or absorb opportunistically? Decision pending.
+- **Ch3 ripple batch (current count 7: #309, #314, #377, #413, #450, #451, #452)** — batch session, defer to v1.0 validation, or absorb opportunistically? Decision pending. April 29, 2026 reconciliation: count reduced from 11 (April 25) via #308/#316/#319/#322 closure and #313→#450, #317→#451, #318→#452 re-filing. Adjacent: #378 (4.06) and the new Ch4-pair #460 (4.04/4.05).
 - **Ch1 ripples from 1.10 session** — #329 (1.12 NRS 239.125/NAC 239.155 consistency) — small Ch1 ripple; absorb when 1.12 touches next, or file as scheduled cleanup. #328 routes to 6.01 Glossary and absorbs into the 6.01 tightening session.
 - **Manual-wide LRDA verification sweep (#355)** — filed April 19, 2026. Scoped for Phase 9 under the April 19 scoping discussion: verification half (LRDA numbers, titles, retention periods) absorbs into sub-phase 9A; companion authority consistency (NRS 239.125 / NAC 239.155 presence across policies that create retained records) absorbs into sub-phase 9B. Action: split #355 into `phase-9a-intake` and `phase-9b-intake` child tickets at Phase 9 entry (or earlier if convenient). Both sit dormant until Phase 9 opens.
 
