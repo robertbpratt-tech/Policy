@@ -27,17 +27,20 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | Ticket | Scope |
 | --- | --- |
+| #6 | Product-name removal (Redmine) — multi-policy sweep |
 | #208 | Standardize "All IT Personnel" → "All Information Operations Personnel" |
 | #211 | Verify "Supervisors" matches Policy 1.07 §3 |
 | #235 | Prohibited language sweep per Policy 1.04 §6.9 |
 | #245 | Replace "business hours" with end-of-business-day convention |
 | #264 | Role obligation redistribution (L3 prep, L1 clerical, L2 inputs, AID synthesis) |
-| #291 | Remove hard-coded FIPS 140-2/140-3 transition dates (CMVP by-reference) |
 | #353 | Uniform header: `Effective: July 01, 2026 | Version: 1.0` (Phase 10) |
 | #355 | Manual-wide LRDA citation verification sweep (Phase 9) |
 | #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references |
+| #456 | Manual-wide LyX CommandInset trailing-whitespace defects (children: #457, #458) |
+| #464 | PDF publication quality — metadata, accessibility, ligatures (Phase 10) |
 | #467 | Manual-wide §3 role-title trailing-colon sweep (1.04 §6.5) — 36 policies, ~178 titles |
 | #468 | Manual-wide §6 governed-clarifier-tag-blending sweep (1.04 §6.12) — 7 policies, 10 defects |
+| #469 | Manual-wide `shall not` → positive `shall` directive sweep |
 
 ## Chapter 0 — Front Matter
 
@@ -95,7 +98,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `03/305.lyx` | Service Request Fulfillment Policy | T | v2.1 |  |
 | `03/306.lyx` | Operational Incident Management Policy | T+ | v2.1 | #450 |
 | `03/307.lyx` | Problem Management Policy | T | v2.3 |  |
-| `03/308.lyx` | Service Configuration Management (CMDB) Policy | T | v2.2 |  |
+| `03/308.lyx` | Service Configuration Management (CMDB) Policy | T+ | v2.2 | #461 |
 | `03/309.lyx` | Change Management Policy | T | v2.0 |  |
 | `03/310.lyx` | Release and Deployment Policy | T+ | v2.0 | #377 |
 | `03/311.lyx` | Capacity and Availability Management Policy | T+ | v2.0 | #451 |
@@ -110,11 +113,11 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `04/401.lyx` | Incident Response Policy Overview | T+ | v2.0 | #418 |
+| `04/401.lyx` | Incident Response Policy Overview | T+ | v2.0 | #418, #457 |
 | `04/402.lyx` | Identification and Reporting Procedures | T | v2.1 |  |
 | `04/403.lyx` | Containment Strategy and Playbooks | T | v2.1 |  |
-| `04/404.lyx` | Eradication Procedures and Scenario Guides | T | v2.2 |  |
-| `04/405.lyx` | Recovery Operations and Restoration Prioritization | T | v2.2 |  |
+| `04/404.lyx` | Eradication Procedures and Scenario Guides | T+ | v2.2 | #460 |
+| `04/405.lyx` | Recovery Operations and Restoration Prioritization | T+ | v2.2 | #458, #460 |
 | `04/406.lyx` | Communication Protocols and Partner Integration | T+ | v2.2 | #378 |
 | `04/407.lyx` | Postmortem Review and Lessons Learned | T | v1.0 |  |
 
@@ -135,7 +138,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
 | `06/601.lyx` | Glossary and Definitions | A | draft | #192, #193, #195, #328, #352 |
-| `06/602.lyx` | Policy Matrix | A | — | #196, #197, #198 |
+| `06/602.lyx` | Policy Matrix | A | — | #196, #197, #198, #459 |
 | `06/603.lyx` | Workforce Roles STAK Matrix | A | — | #199, #200, #214 |
 | `06/604.lyx` | Revision History and Version Control | A | v1.0 |  |
 
