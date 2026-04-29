@@ -174,13 +174,13 @@ name "pol:2.01"
 
 \lang english
 Effective:
- April 24,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.5
+ 2.6
 \end_layout
 
 \begin_layout Subsection*
@@ -395,9 +395,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -459,9 +457,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -524,9 +520,7 @@ Shall maintain the text of the Acceptable Use Policy Acknowledgment in the Syste
 
 \series bold
 \lang english
-Human Resources
-\series default
-:
+Human Resources:
 \end_layout
 
 \begin_deeper
@@ -547,9 +541,7 @@ Shall notify Information Operations of user separations and status changes that 
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper
@@ -572,9 +564,7 @@ Shall notify Information Operations immediately upon becoming aware of lost,
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -604,9 +594,7 @@ nolink "false"
 
 \series bold
 \lang english
-All Users of County IT Resources
-\series default
-:
+All Users of County IT Resources:
 \end_layout
 
 \begin_deeper

@@ -174,13 +174,13 @@ name "pol:2.07"
 
 \lang english
 Effective:
- April 26,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -432,9 +432,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director (as LASO)
-\series default
-:
+IT Director (as LASO):
 \end_layout
 
 \begin_deeper
@@ -499,9 +497,7 @@ nolink "false"
 
 \series bold
 \lang english
-County Manager
-\series default
-:
+County Manager:
 \end_layout
 
 \begin_deeper
@@ -531,9 +527,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -564,9 +558,7 @@ Shall implement compensating controls for approved exceptions to this policy.
 
 \series bold
 \lang english
-Network Administrator
-\series default
-:
+Network Administrator:
 \end_layout
 
 \begin_deeper
@@ -607,9 +599,7 @@ Shall review firewall rule sets monthly to ensure no unauthorized access points 
 
 \series bold
 \lang english
-Systems Administrator
-\series default
-:
+Systems Administrator:
 \end_layout
 
 \begin_deeper
@@ -642,9 +632,7 @@ Shall configure remote access mechanisms to disable split tunneling.
 
 \series bold
 \lang english
-All County Personnel
-\series default
-:
+All County Personnel:
 \end_layout
 
 \begin_deeper

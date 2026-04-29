@@ -174,13 +174,13 @@ name "pol:2.06"
 
 \lang english
 Effective:
- April 24,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.7
+ 2.8
 \end_layout
 
 \begin_layout Subsection*
@@ -441,9 +441,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -514,9 +512,7 @@ Shall maintain a register of applicable federal and state privacy laws in the Sy
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -588,9 +584,7 @@ nolink "false"
 
 \series bold
 \lang english
-Human Resources
-\series default
-:
+Human Resources:
 \end_layout
 
 \begin_deeper
@@ -607,9 +601,7 @@ Shall notify Information Operations of personnel separations and role changes af
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper
@@ -667,9 +659,7 @@ Shall acknowledge in writing the residual risk disposition documented in each ap
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -696,9 +686,7 @@ Shall support PIA preparation by providing system architecture,
 
 \series bold
 \lang english
-All County Personnel
-\series default
-:
+All County Personnel:
 \end_layout
 
 \begin_deeper

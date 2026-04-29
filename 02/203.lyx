@@ -174,13 +174,13 @@ name "pol:2.03"
 
 \lang english
 Effective:
- April 26,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -374,9 +374,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -406,9 +404,7 @@ Shall maintain this policy and its implementing procedures consistent with CJIS 
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -431,9 +427,7 @@ Shall disseminate emerging threat advisories and security alerts to affected per
 
 \series bold
 \lang english
-Human Resources
-\series default
-:
+Human Resources:
 \end_layout
 
 \begin_deeper
@@ -466,9 +460,7 @@ Shall enforce administrative actions for personnel who fail to meet the annual r
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper
@@ -489,9 +481,7 @@ Shall notify Information Operations and Human Resources of any subordinate who h
 
 \series bold
 \lang english
-All County Personnel
-\series default
-:
+All County Personnel:
 \end_layout
 
 \begin_deeper

@@ -174,13 +174,13 @@ name "pol:2.08"
 
 \lang english
 Effective:
- April 27,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -237,7 +237,7 @@ This policy applies to all Elko County Information Operations (ECIO) personnel,
 
 \series bold
 \lang english
-IT Director (as LASO)
+IT Director (as LASO):
 \end_layout
 
 \begin_deeper
@@ -296,7 +296,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -344,7 +344,7 @@ Shall ensure all Information Operations Personnel performing system integrity du
 
 \series bold
 \lang english
-Systems Administrator
+Systems Administrator:
 \end_layout
 
 \begin_deeper
@@ -394,7 +394,7 @@ nolink "false"
 
 \series bold
 \lang english
-Network Administrator
+Network Administrator:
 \end_layout
 
 \begin_deeper
@@ -421,7 +421,7 @@ Shall monitor network flow to identify anomalies or traffic patterns indicative 
 
 \series bold
 \lang english
-Support Specialist
+Support Specialist:
 \end_layout
 
 \begin_deeper
@@ -463,7 +463,7 @@ nolink "false"
 
 \series bold
 \lang english
-All County Personnel
+All County Personnel:
 \end_layout
 
 \begin_deeper

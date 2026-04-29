@@ -174,13 +174,13 @@ name "pol:2.02"
 
 \lang english
 Effective:
- April 26,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.7
+ 2.8
 \end_layout
 
 \begin_layout Subsection*
@@ -399,9 +399,7 @@ nolink "false"
 
 \series bold
 \lang english
-County Manager
-\series default
-:
+County Manager:
 \end_layout
 
 \begin_deeper
@@ -433,9 +431,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -510,9 +506,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -529,9 +523,7 @@ Shall document and maintain records of day-to-day access-gating decisions,
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper
@@ -568,9 +560,7 @@ nolink "false"
 
 \series bold
 \lang english
-Human Resources
-\series default
-:
+Human Resources:
 \end_layout
 
 \begin_deeper
@@ -636,9 +626,7 @@ Shall notify the IT Director of any court or law-enforcement action reported und
 
 \series bold
 \lang english
-All County Personnel
-\series default
-:
+All County Personnel:
 \end_layout
 
 \begin_deeper

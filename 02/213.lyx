@@ -174,13 +174,13 @@ name "pol:2.13"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -412,9 +412,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director (as LASO)
-\series default
-:
+IT Director (as LASO):
 \end_layout
 
 \begin_deeper
@@ -487,9 +485,7 @@ Shall direct changes to combinations,
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -566,9 +562,7 @@ Shall export camera footage segments capturing incidents,
 
 \series bold
 \lang english
-System and Network Administrators
-\series default
-:
+System and Network Administrators:
 \end_layout
 
 \begin_deeper
@@ -637,9 +631,7 @@ nolink "false"
 
 \series bold
 \lang english
-Buildings and Grounds
-\series default
-:
+Buildings and Grounds:
 \end_layout
 
 \begin_deeper
@@ -694,9 +686,7 @@ Shall maintain master shutoff valves,
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper
@@ -732,9 +722,7 @@ nolink "false"
 
 \series bold
 \lang english
-All County Personnel
-\series default
-:
+All County Personnel:
 \end_layout
 
 \begin_deeper

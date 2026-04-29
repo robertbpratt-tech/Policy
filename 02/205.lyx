@@ -174,13 +174,13 @@ name "pol:2.05"
 
 \lang english
 Effective:
- April 26,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -366,9 +366,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -433,9 +431,7 @@ nolink "false"
 
 \series bold
 \lang english
-County Manager
-\series default
-:
+County Manager:
 \end_layout
 
 \begin_deeper
@@ -465,9 +461,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -494,9 +488,7 @@ Shall ensure information systems implement the technical authentication controls
 
 \series bold
 \lang english
-Systems Administrator
-\series default
-:
+Systems Administrator:
 \end_layout
 
 \begin_deeper
@@ -523,9 +515,7 @@ Shall execute credential revocation within the timeframes defined in Section 6.3
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper
@@ -577,9 +567,7 @@ nolink "false"
 
 \series bold
 \lang english
-Human Resources
-\series default
-:
+Human Resources:
 \end_layout
 
 \begin_deeper
@@ -600,9 +588,7 @@ Shall manage the lifecycle of physical County identity credentials.
 
 \series bold
 \lang english
-All County Personnel
-\series default
-:
+All County Personnel:
 \end_layout
 
 \begin_deeper
@@ -1557,7 +1543,7 @@ Interactive Logon Prohibited
 
 \series bold
 \lang english
-Legacy Exception Controls
+Legacy Service-Account Controls
 \series default
 :
  Where an application requires interactive use of a service account:
@@ -1824,7 +1810,7 @@ The IT Director shall not approve advanced-authentication compensating-control e
 
 \series bold
 \lang english
-Exception Process
+Compensating Control Procedure
 \series default
 :
  Where a mobile device requires an exception to the advanced authentication requirement:
