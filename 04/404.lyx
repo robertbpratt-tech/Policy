@@ -175,7 +175,7 @@ Effective:
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -2603,7 +2603,12 @@ nolink "false"
 
 \lang english
 For Destructive Eradication actions that have already been executed,
- the affected systems shall be restored through the recovery process under 
+ the IC shall document a destructive false-positive recovery authorization in the work order Notes.
+ The authorization shall include the false positive determination,
+ the justification for the original Destructive Eradication action,
+ the actions performed,
+ and the affected systems.
+ The affected systems shall be restored through the recovery process under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2619,9 +2624,7 @@ nolink "false"
 
 \series default
 .
- The IC shall document the false positive determination,
- including the justification for the original eradication action,
- for inclusion in the postmortem under 
+ The IC shall include the authorization in the postmortem under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
