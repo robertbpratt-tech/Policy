@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -193,14 +193,10 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish the mandatory System Development Life Cycle (SDLC) and secure software engineering requirements for Elko County.
- This policy ensures that information security and privacy controls are systematically integrated into the acquisition,
- development,
- implementation,
- and maintenance of all county information systems,
- thereby protecting Elko County data and Criminal Justice Information (CJI) from unauthorized access,
- modification,
- or destruction.
+This policy establishes mandatory System Development Life Cycle (SDLC) and secure software engineering requirements for Elko County information systems,
+ including those processing,
+ storing,
+ or transmitting Criminal Justice Information (CJI).
 \end_layout
 
 \begin_layout Subsection*
@@ -213,22 +209,257 @@ The purpose of this policy is to establish the mandatory System Development Life
 \begin_layout Standard
 
 \lang english
-This policy applies to all Elko County employees,
+This policy applies to all Elko County information systems,
+ software,
+ and system components,
+ and to all County Personnel,
  contractors,
- external service providers,
- and vendors involved in the specification,
+ and External Service Providers involved in the specification,
  design,
  development,
  acquisition,
  testing,
  implementation,
- and modification of information systems,
- software,
- and system components that process,
- store,
- or transmit Elko County data.
+ or modification of those systems.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Acquisition of information systems,
+ software,
+ and system components.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Internal development,
+ scripting,
+ and configuration work performed by Information Operations Personnel.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Pre-production environments,
+ including development,
+ test,
+ and integration environments.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Secure design and engineering principles applied during system specification,
+ development,
+ and modification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Developer testing and evaluation prior to system acceptance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Flaw remediation gating to production promotion.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Acquisition-time prohibition on unsupported system components.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Intellectual property and source code ownership terms for County-developed and contracted work.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Procurement workflow and Technical Approval mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vendor risk assessment,
+ contract obligations,
+ and Assessment Approval:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data classification and pre-production data handling standards:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Production change authorization:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Release packaging and deployment mechanics:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vulnerability scanning,
+ patch deployment timelines,
+ and operational end-of-life governance:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Configuration baseline standards for production systems:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -240,68 +471,73 @@ This policy applies to all Elko County employees,
 
 \series bold
 \lang english
-IT Director
-\series default
-:
- Shall serve as the executive approval authority for major system acquisitions,
- development tasks requiring official county clearance,
- and formal risk acceptance of policy exceptions including intellectual property deviations and unsupported component exceptions.
+IT Director:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall approve external development engagements and major system acquisitions prior to contract execution.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Assistant IT Director
+Shall approve intellectual property deviations per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Shall manage day-to-day SDLC compliance tasks.
- This includes defining security and privacy roles within SDLC phases,
- integrating risk management into daily operational activities,
- reviewing developer processes and tools,
- and validating that system developers execute secure development processes prior to deployment.
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Risk Management Policy).
 \end_layout
 
 \begin_layout Itemize
 
+\lang english
+Shall approve risk acceptance for unsupported component retention per 
 \series bold
-\lang english
-IT Department Personnel / System Developers
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Shall execute software development and system integration tasks utilizing agency-documented security and privacy engineering principles in strict alignment with this policy.
- External Service Providers shall perform required testing,
- remediate identified flaws within the timeframes defined in Section 6.4,
- and provide all documentation defined in Section 6.2 prior to system acceptance.
-\end_layout
-
-\begin_layout Subsection*
-
-\lang english
-4.
- Compliance and Exceptions
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Mandatory Adherence
-\series default
-:
- All personnel defined in Section 2 must strictly adhere to the controls specified within this policy.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exception Handling
-\series default
-:
- All exceptions and deviations to this policy,
- including the retention of unsupported system components or deviations in software ownership,
- shall require a formal Risk Acceptance Memo signed by the IT Director and recorded in the central Risk Register in accordance with 
+ and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -319,11 +555,247 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall define security and privacy roles within SDLC phases prior to project initiation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall integrate the organizational risk management process into SDLC activities prior to system authorization.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure third-party contracts obligate External Service Providers to execute secure development processes consistent with NIST SP 800-53 Rev.
+ 5:
+ SA-8 (Security and Privacy Engineering Principles).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure third-party contracts identify functions,
+ ports,
+ protocols,
+ and services consistent with CJIS Security Policy v6.0:
+ Section SA-9(2) (Identification of Functions,
+ Ports,
+ Protocols,
+ and Services).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall validate External Service Provider testing evidence prior to system acceptance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review development tools,
+ processes,
+ and methodologies no less frequently than annually.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct and document a market survey within the preceding ninety (90) calendar days prior to any request to retain an unsupported component.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall maintain version control over all internal development artifacts,
+ including source code,
+ scripts,
+ and configuration files.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct security-focused testing on internally developed software prior to production promotion.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall document and provide test results as verifiable evidence of execution prior to system acceptance.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall apply County-documented security and privacy engineering principles in the specification,
+ design,
+ development,
+ implementation,
+ and modification of all systems and system components.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall apply the privacy principle of minimization,
+ using only the Personally Identifiable Information (PII) strictly necessary to perform system engineering and development tasks.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all personnel and entities defined in Section 2.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with SDLC and secure software engineering requirements shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The IT Director shall enforce this policy.
+ Violations constitute non-compliance subject to the enforcement framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be processed in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Risk acceptance for deviations shall additionally follow the Risk Acceptance Memo procedure defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
+\end_layout
+
 \begin_layout Subsection*
 
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -368,6 +840,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:1.13"
 plural "false"
 caps "false"
@@ -401,26 +891,95 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-NRS 205 (Computer Crimes)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Secure Configuration Baselines and Hardening Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 239 (Public Records)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Change Management Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 332 (Purchasing:
- Local Governments)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Release and Deployment Policy
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-NRS 603A (Security of Personal Information)
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
 \end_layout
 
 \begin_layout Itemize
@@ -435,30 +994,6 @@ CJIS Security Policy v6.0:
 \lang english
 CJIS Security Policy v6.0:
  Section SA-4 (Acquisition Process)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
- Section SA-4(1) (Functional Properties of Controls)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
- Section SA-4(2) (Design and Implementation Information for Controls)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
- Section SA-4(9) (Functions,
- Ports,
- Protocols,
- and Services In Use)
 \end_layout
 
 \begin_layout Itemize
@@ -519,14 +1054,95 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
- Section SA-15(1) (Criticality Analysis)
+ Section SA-22 (Unsupported System Components)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SA-3(1) (Manage Preproduction Environment)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SA-8 (Security and Privacy Engineering Principles)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 205 (Computer Crimes)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 603A (Security of Personal Information)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section SA-22 (Unsupported System Components)
+ Section SA-4(1) (Functional Properties of Controls)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SA-4(2) (Design and Implementation Information for Controls)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SA-4(9) (Functions,
+ Ports,
+ Protocols,
+ and Services In Use)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section SA-15(1) (Criticality Analysis)
 \end_layout
 
 \begin_layout Itemize
@@ -570,23 +1186,7 @@ NIST SP 800-53 Rev.
 \lang english
 NIST SP 800-53 Rev.
  5:
- SA-3(1) (Manage Preproduction Environment)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
  SA-4 (Acquisition Process)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
- SA-8 (Security and Privacy Engineering Principles)
 \end_layout
 
 \begin_layout Itemize
@@ -662,64 +1262,41 @@ ITIL v4:
 \begin_layout Subsubsection*
 
 \lang english
-6.1 System Development Life Cycle (SDLC) Baseline
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Elko County shall manage information systems using a formally defined System Development Life Cycle (SDLC) that incorporates information security and privacy considerations at every phase,
- from initiation through disposal.
+6.1 System Development Life Cycle Baseline
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The Assistant IT Director shall ensure that security and privacy roles and responsibilities are explicitly defined and assigned prior to the initiation of any SDLC project.
+The Assistant IT Director shall manage Elko County information systems using a formally defined System Development Life Cycle (SDLC) that incorporates information security and privacy considerations at every phase,
+ from initiation through disposal,
+ consistent with CJIS Security Policy v6.0:
+ Section SA-3 (System Development Life Cycle).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The Assistant IT Director shall integrate the organizational information security and privacy risk management process into all SDLC activities prior to system authorization.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Individuals executing SDLC tasks must possess the necessary skills and technical competencies corresponding to their assigned roles.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-All system preproduction environments,
+The Systems Administrator shall protect pre-production environments,
  including development,
  test,
  and integration environments,
- shall be protected commensurate with risk throughout the system development life cycle,
+ commensurate with risk throughout the system development life cycle,
  consistent with NIST SP 800-53 Rev.
  5:
- SA-3(1).
+ SA-3(1) (Manage Preproduction Environment).
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.2 Acquisition Process and Contracting (Hard Gate)
+6.2 Acquisition Process and Contracting
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Prior to executing contracts or initiating development involving third-party systems or external service providers,
- the procurement workflow must successfully pass the Supply Chain Risk Management and IT Financial Management stage gates.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-All SDLC acquisitions shall satisfy the vendor risk assessments and technical approvals mandated by ECIO 
+The Assistant IT Director shall not initiate engagements involving third-party systems or External Service Providers absent Assessment Approval per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -734,7 +1311,7 @@ nolink "false"
 
 
 \series default
- and 
+ (Supply Chain Risk Management (SCRM) and Vendor Governance) and Technical Approval per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -748,20 +1325,23 @@ nolink "false"
 \end_inset
 
 
+\series default
+ (IT Financial Management and Procurement Policy).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The Assistant IT Director must ensure that all third-party contracts legally obligate External Service Providers to execute secure development processes in strict alignment with NIST SP 800-53 Rev.
+The Assistant IT Director shall ensure third-party contracts obligate External Service Providers to execute secure development processes consistent with NIST SP 800-53 Rev.
  5:
- SA-8.
+ SA-8 and CJIS Security Policy v6.0:
+ Section SA-8.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Contracts with external service providers shall explicitly identify the functions,
+The Assistant IT Director shall ensure third-party contracts explicitly identify the functions,
  ports,
  protocols,
  and services employed,
@@ -775,7 +1355,9 @@ Contracts with external service providers shall explicitly identify the function
 For all system,
  system component,
  or system service acquisitions,
- the following requirements shall be included explicitly or by reference in the acquisition contract:
+ the Assistant IT Director shall ensure the following requirements are included explicitly or by reference in the acquisition contract,
+ consistent with CJIS Security Policy v6.0:
+ Section SA-4 (Acquisition Process):
 \end_layout
 
 \begin_deeper
@@ -824,7 +1406,7 @@ For all system,
 \begin_layout Itemize
 
 \lang english
-(h) Allocation of responsibility or identification of parties responsible for information security,
+(h) Allocation of accountability for information security,
  privacy,
  and supply chain risk management;
  and
@@ -846,20 +1428,65 @@ For all system,
 \begin_layout Standard
 
 \lang english
-IT Department personnel and system developers shall apply agency-documented systems security and privacy engineering principles in the specification,
+All Information Operations Personnel shall apply County-documented security and privacy engineering principles in the specification,
  design,
  development,
  implementation,
- and modification of all systems and system components.
+ and modification of all systems and system components,
+ consistent with CJIS Security Policy v6.0:
+ Section SA-8.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-System developers and IT Department personnel shall implement the privacy principle of minimization,
+All Information Operations Personnel shall implement the privacy principle of minimization,
  using only the Personally Identifiable Information (PII) strictly necessary to perform system engineering and development tasks,
  consistent with CJIS Security Policy v6.0:
  Section SA-8(33).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall not permit pre-production environments to contain Criminal Justice Information or Restricted data unless the environment is authorized and controlled to the same baseline required for production handling of that data classification per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall not permit pre-production environments to contain unmasked Confidential data without IT Director authorization,
+ consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -870,14 +1497,72 @@ System developers and IT Department personnel shall implement the privacy princi
  and Standards
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-All software developed or acquired for Elko County systems shall be subject to controlled development practices that ensure the integrity,
- security,
- and quality of the resulting product.
+Applicability
+\series default
+:
+ The developer testing,
+ evaluation,
+ and assessment-plan requirements in this section shall apply to:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Software,
+ scripts,
+ or system components developed or acquired for execution on production systems;
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Software,
+ scripts,
+ or system components that process,
+ store,
+ or transmit Criminal Justice Information,
+ Restricted data,
+ or Confidential data;
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Software,
+ scripts,
+ or system components that perform authentication,
+ authorization,
+ access control,
+ or audit logging functions;
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All deliverables developed by External Service Providers;
+ and
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Software intended for shared use,
+ scheduled execution,
+ or deployment beyond the authoring individual.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Ad-hoc administrative tooling executed interactively by authorized personnel against their own work product is not subject to this section.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -885,14 +1570,13 @@ All software developed or acquired for Elko County systems shall be subject to c
 Version Control and Configuration Integrity
 \series default
 :
- The IT Department shall require that all development artifacts,
+ The Systems Administrator shall maintain version control over all internal development artifacts,
  including source code,
  scripts,
- and configuration files,
- are maintained under version control.
+ and configuration files.
  Changes to development tools and processes shall be documented and managed to facilitate supply chain risk assessment,
  consistent with CJIS Security Policy v6.0:
- Section SA-10.
+ Section SA-10 (Developer Configuration Management).
 \end_layout
 
 \begin_layout Itemize
@@ -902,16 +1586,21 @@ Version Control and Configuration Integrity
 Developer Testing and Evaluation
 \series default
 :
- The IT Department shall require the developer to develop and implement a plan for ongoing security and privacy control assessments.
- Prior to deployment into any production environment,
- all software shall undergo security-focused testing including at minimum:
+ The Assistant IT Director shall require,
+ for all software meeting the criteria in the Applicability bullet above,
+ a documented security and privacy assessment plan executed during development.
+ Required testing shall include,
+ at minimum,
  functional testing,
  integration testing,
  regression testing,
- and information security testing.
- Test results shall be documented and provided to IT Department personnel as verifiable evidence of execution prior to system acceptance,
+ and information security testing,
+ with rigor proportionate to the criticality of the software's function and the sensitivity of the data it handles,
  consistent with CJIS Security Policy v6.0:
- Section SA-11.
+ Section SA-15(1) (Criticality Analysis).
+ The assessment plan and test results shall be documented and provided to the Assistant IT Director as verifiable evidence of execution prior to system acceptance,
+ consistent with CJIS Security Policy v6.0:
+ Section SA-11 (Developer Testing and Evaluation).
 \end_layout
 
 \begin_layout Itemize
@@ -921,15 +1610,13 @@ Developer Testing and Evaluation
 Development Process Standards
 \series default
 :
- IT Department personnel shall utilize approved development tools,
+ The Assistant IT Director shall review development tools,
  standards,
- and methodologies.
- The Assistant IT Director shall review development processes,
- tools,
- tool options,
- and configurations at least annually (every 365 calendar days) to confirm they satisfy security and privacy requirements throughout the development life cycle,
+ and methodologies no less frequently than annually to confirm they satisfy security and privacy requirements throughout the development life cycle,
  consistent with CJIS Security Policy v6.0:
- Section SA-15.
+ Section SA-15 (Development Process,
+ Standards,
+ and Tools).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -941,12 +1628,77 @@ Development Process Standards
 \begin_layout Standard
 
 \lang english
-The IT Department shall require all system developers and External Service Providers to implement a verifiable flaw remediation process.
- All flaws identified during development,
+The Assistant IT Director shall require all internal developers and External Service Providers to implement a verifiable flaw remediation process consistent with CJIS Security Policy v6.0:
+ Section SA-11.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall remediate all flaws identified during development,
  testing,
- or post-deployment operation shall be corrected according to the following severity-based schedule,
- consistent with CJIS Security Policy v6.0:
- Section SA-11 and ECIO 
+ or post-deployment operation according to the severity-based schedule established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Vulnerability and Patch Management Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall not promote into production any system containing an unmitigated Critical or High severity flaw.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Production Promotion Gate
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The Systems Administrator shall promote SDLC outputs to production environments only following documented change authorization issued under the change authorization framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:3.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Change Management Policy).
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 End of Life and Unsupported System Components
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Acquisition-time controls in this policy prohibit County entry into engagements that depend on unsupported system components.
+ Operational governance of components that become unsupported during their service life is governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -966,28 +1718,25 @@ nolink "false"
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Pre-production discovery
-\series default
-:
- Critical and High severity flaws identified during testing shall be fully remediated prior to production deployment.
- No system containing an unmitigated Critical or High severity flaw shall be accepted into production.
+The IT Director shall not approve acquisition of any system or system component for which the developer,
+ vendor,
+ or manufacturer has ceased to provide analytical support,
+ software updates,
+ or security patches,
+ consistent with CJIS Security Policy v6.0:
+ Section SA-22 (Unsupported System Components).
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Post-deployment discovery
-\series default
-:
- All severity timelines shall conform to the schedule established in 
+The IT Director shall not approve retention of an unsupported component beyond the vendor's declared end-of-support date except under a Risk Acceptance Memo issued per 
 \series bold
-ECIO Policy 
+Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:2.09"
+reference "pol:1.09"
 plural "false"
 caps "false"
 noprefix "false"
@@ -997,97 +1746,26 @@ nolink "false"
 
 
 \series default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Critical severity
-\series default
- (CVSS score 9.0–10.0):
- remediated within 15 days;
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-High severity
-\series default
- (CVSS score 7.0–8.9):
- remediated within 30 days;
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Medium severity
-\series default
- (CVSS score 4.0–6.9):
- remediated within 60 days;
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Low severity
-\series default
- (CVSS score 0.1–3.9):
- remediated within 90 days.
-\end_layout
-
-\end_deeper
-\begin_layout Subsubsection*
-
-\lang english
-6.6 End of Life and Unsupported System Components
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Elko County information systems and system components shall be proactively replaced or upgraded when the developer,
- vendor,
- or manufacturer ceases to provide analytical support,
- software updates,
- or security patches.
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-IT Department personnel shall replace system components when support is no longer available,
- or shall establish in-house support or obtain contractual vendor support as an alternative.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Retained unsupported components must be fully isolated from public and uncontrolled networks by placement in segmented,
- access-controlled network zones with documented compensating controls.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Retained unsupported components must operate under a documented Risk Acceptance Memo satisfying all criteria defined in Section 6.8.
+The Assistant IT Director shall conduct and document a market survey within the preceding ninety (90) calendar days prior to any request for retention authorization,
+ confirming that no vendor-supported replacement product or approved support alternative is commercially available that meets the functional requirements.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.7 Intellectual Property and Source Code Ownership
+6.8 Intellectual Property and Source Code Ownership
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-To ensure the continuous security,
+The IT Director shall enforce the following ownership terms to ensure the continuous security,
  maintainability,
  and auditability of Elko County systems:
 \end_layout
@@ -1095,108 +1773,62 @@ To ensure the continuous security,
 \begin_layout Itemize
 
 \lang english
-All software,
+The IT Director shall ensure that all software,
  source code,
  scripts,
  configurations,
- and related intellectual property engineered or developed by Elko County employees shall remain the exclusive and sole property of Elko County.
+ and related intellectual property engineered or developed by Elko County employees remains the exclusive and sole property of Elko County.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-All software and related intellectual property developed by External Service Providers,
+The IT Director shall ensure that all software and related intellectual property developed by External Service Providers,
  contractors,
  or vendors utilizing Elko County systems,
  funding,
- or data shall become the exclusive property of Elko County upon creation.
+ or data becomes the exclusive property of Elko County upon creation.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Pre-Commencement Exception Gate
-\series default
-:
- Any deviation from this ownership model —
+Any deviation from this ownership model —
  including commercial-off-the-shelf software licensing,
  shared-rights agreements,
- or vendor retention of underlying IP —
- must be explicitly documented in a legally binding contract and authorized via a Risk Acceptance Memo signed by the IT Director prior to the initiation of the project or procurement.
- Development or deployment shall not commence without this formalized clearance.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.8 Unsupported Component Exception Criteria
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-To obtain a Risk Acceptance Memo for an unsupported system component,
- the Assistant IT Director must verify and document that all of the following conditions are satisfied:
-\end_layout
-
-\begin_layout Itemize
-
+ or vendor retention of underlying intellectual property —
+ shall be documented in a legally binding contract and processed in accordance with the exception management framework defined in 
 \series bold
-\lang english
-Business Criticality
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- The component supports a mission or business function for which no operationally equivalent replacement exists,
- as documented in a written business impact analysis approved by the IT Director.
-\end_layout
-
-\begin_layout Itemize
-
+ and the Risk Acceptance Memo procedure defined in 
 \series bold
-\lang english
-Market Survey
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- IT Department personnel must conduct and document a formal market survey within the preceding 90 calendar days confirming that no vendor-supported replacement product is commercially available that meets the functional requirements.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Network Isolation
-\series default
-:
- The component must be logically and physically isolated from all public and uncontrolled networks,
- residing in a dedicated,
- access-controlled network segment with no direct inbound or outbound internet connectivity.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Compensating Controls
-\series default
-:
- IT personnel must document and implement compensating controls —
- including at minimum application whitelisting,
- enhanced monitoring,
- and restricted physical and logical access —
- sufficient to reduce residual risk to a level accepted by the IT Director.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Review Frequency
-\series default
-:
- The IT Director must review and reauthorize the exception no less than every 365 calendar days.
- Exceptions failing to satisfy all criteria shall be immediately revoked,
- requiring component decommissioning within 90 calendar days.
+.
+ The IT Director shall not authorize commencement of development or deployment without documented exception approval.
 \end_layout
 
 \end_body
