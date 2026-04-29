@@ -458,17 +458,45 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 | 38 | ~~2.14 (Mobile/Remote)~~ — ✅ v2.0, April 28, 2026. Closed: #99, #101, #102, #229, #332. Ripples: #470 (2.04 §6.6 CJC inactivity-exemption strike, closed in same session — companion commit `34e8edf1` advances 2.04 v2.6 → v2.7). Standing decline #37 promoted (inline §4 enforcement enumeration, 3-round confirmed rotation). CSO-exception Constraint stripped per April 23 ruling (Chapter 2 sweep complete). Three R-rounds; final commit `4556509b`. | 5 (#99, #101, #102, #229, #332) | Final Chapter 2 CSO-exception strip; companion 2.04 v2.7 amendment |
 | 39 | ~~2.15 (Secure Software Lifecycle)~~ — ✅ v2.0, April 29, 2026. Closed: #103, #104, #105. Architectural absorption: A1 (drop "System Developer" / "IT Department Personnel" non-roles; map to 1.07 anchors), A2 (ESPs exit §3, become AID contract-enforcement obligation), A3 (production gate single-routes to 3.09; 3.10 routing-pointer in §2 only), A4 (severity schedule by-reference to 2.09 — deduplication), A5 (acquisition-time scope only; operational EOL routes to 2.09; legacy §6.8 deleted), A6 (IP exception path by-reference to 5.01 + 1.09). C1: replaced "Hard Gate" placeholder heading and "stage gates" body language with named constructs Assessment Approval (1.13) + Technical Approval (1.10). §6.4 Applicability scope criteria added — artifact-function-based (Option A): production execution / protected data (CJI/Restricted/Confidential) / authn-authz-audit functions / ESP deliverables / shared-or-scheduled use; ad-hoc interactive admin tooling explicitly out of scope. SA-15(1) Criticality Analysis folded into §6.4 SA-11 testing plan with body cite (rigor-proportional language). Pre-prod data tightened: explicit prohibition on CJI/Restricted absent production-equivalent baseline (CG-7 accepted). All §6 directives role-anchored (§6.5 flaw remediation + production-acceptance to Sysadmin per 2.09 operator-owned pattern; §6.6 to Sysadmin; §6.8 IP property statements converted to IT Director ensure-clauses). Three R-rounds; ChatGPT R2 was textbook Pattern #14 (entire response stale-draft re-push of R1 findings already fixed); Gemini R2 produced three real residual orphans absorbed in R3. Final commit `7dc9aa9c`. | 3 (#103, #104, #105) | Lowest dependency; natural Ch2 closer |
 
-> ## ◆ RECALCULATE SEQUENCE HERE ◆
+> ## ◆ RECALCULATE SEQUENCE HERE ◆ — Completed April 29, 2026
 >
-> **Stop. Before starting Phase 6:**
+> **Recalc executed April 29, 2026** (commits `951a04c2` plan, `bf2a21ed` README; resolved #462). Five-step recalc protocol completed:
 >
-> - Re-run the architectural roots check — all sweep roots (#208, #211, #235, #245, #6/#7/#10) should be fully resolved or nearly so after Phase 5
-> - Refresh Ch3 ripple ticket status — determine if batch resolution is needed before Ch5 compliance work
-> - Refresh per-policy ticket counts for Ch5 and Ch6
-> - Verify 5.07 feeder chain: are 5.02–5.06 ready to sequence as planned?
-> - Evaluate whether any Phase 5 ripples affect Ch5/Ch6 ordering
+> 1. **Architectural roots check** — Active sweep roots refreshed: #208, #211, #235, #245, #264, #6, plus newly-promoted #467, #468, #469. Active-root tickets with tracked children: #375, #456. Phase-deferred: #353, #355, #464. #291 confirmed closed (April 26).
+> 2. **Ch3 ripple status** — Reduced from 11 (April 25) to 7 active: #309, #314, #377, #413, #450, #451, #452. Resolution decision (batch / defer / absorb) still pending in §7.
+> 3. **Ch5/Ch6 per-policy ticket counts refreshed** — §5 inventory reconciled against open-ticket ground truth (62 open issues verified). Drift corrections: 3.05 T+→T, 3.08 T→T+#461, 4.01 +#457, 4.04 T→T+#460, 4.05 T→T+#458/#460, 6.02 +#459, 6.04 closed.
+> 4. **5.07 feeder chain verified** — 1.09 (T v2.1, clean), 5.01 (T+ v1.1, 3 tickets), 3.16 (T+ v2.0, #452 ripple). Ch5 portion (5.02–5.06) is the actual blocker, all D-state, sequence intact.
+> 5. **Phase 5 ripples vs. Ch5/Ch6 ordering** — None of #449/#450/#451/#452/#453/#466 affects Phase 6 entry sequence. Sequence intact.
 >
-> The remaining phases are **provisional**. Treat them as a starting point for re-planning, not a fixed schedule.
+> **Outcome — Phase 5D inserted before Phase 6.** Manual-wide sweep roots #463 (folded under #245), #467, #468 are deterministically caught by post-April-28 tightening protocol (verified against entries 37/38/39). One-time sweep against existing T-state corpus is permanent — no regression risk on D-state Ch5/Ch6 or future ripple work. #469 retained as absorbed-by-tightening (per-occurrence judgment, not mechanical). Ch4-pair #460 separately scoped. Phase 5D blocks Phase 6 entry; sequencing detail below.
+
+---
+
+### Phase 5D — Pre-Phase-6 Cleanup (locked April 29, 2026)
+
+**Purpose:** Clear deck of mechanical 1.04-compliance defects against the T-state corpus and resolve the one open Ch4-pair logic seam before Phase 6 opens. Each session is a discrete unit; failure of one does not block the others, but all three must complete before Phase 6 entry 40.
+
+**Sequence:**
+
+| Session | Targets | Mode | Estimate |
+|---|---|---|---|
+| 5D.1 — Sweep | #463 (4 policies, 15 occurrences), #467 (36 policies, ~178 titles), #468 (7 policies, 10 defects) | Mechanical edits; light cross-validator review (correctness, not architecture) | 1–2 sessions |
+| 5D.2 — Ch4-Pair | #460 (4.04 §6.6 ↔ 4.05 §6.1 false-positive disposition seam) | Full tightening protocol on both files in one session | 1 session |
+
+**Pre-flight items required before 5D.1 opens:**
+
+1. **Version-bump ruling for sweep edits.** Mechanical 1.04-compliance corrections against already-tightened policies — patch bump (e.g., 2.10 v2.3 → v2.4), new effective date, or absorbed without version change? IT Director call.
+2. **Cross-validator scope for sweep work.** Full R1/R2/R3, single R1 mechanical-correctness check, or none (deterministic patterns)? Recommend single R1 mechanical-correctness round.
+3. **Commit granularity.** One file per commit, one chapter per commit, or one mega-commit? Recommend one chapter per commit for audit-trail clarity.
+4. **Validator script presence.** #467 references `colon_sweep.py`; #468 references "clarifier-tag-blending validator script". Confirm these exist in repo or address absence before sweep opens.
+
+**Verification evidence supporting one-time-sweep claim:**
+
+- Entries 37 (2.10 v2.3), 38 (2.14 v2.0), 39 (2.15 v2.0) — all tightened after #467/#468 filing date (April 28) — verified clean for §3 trailing-colon and §6 clarifier-tag patterns. Protocol absorbed both checks.
+- Entries 37/38/39 verified clean for `business hour` (#463 / #245-child) — protocol catches via 1.04 §6.9 prohibited-language audit.
+- D-state Ch5/Ch6 policies will emerge clean from their own future tightening; no latent regression mechanism.
+
+**Sequence enforcement:** Phase 6 entry 40 (5.02 Internal Audits) does not open until 5D.1 and 5D.2 are both committed and corresponding tickets closed.
 
 ---
 
