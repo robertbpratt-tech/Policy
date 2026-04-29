@@ -102,7 +102,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `03/311.lyx` | Capacity and Availability Management Policy | T+ | v2.1 | #451 |
 | `03/312.lyx` | Monitoring and Event Management Policy | T+ | v2.1 | #413 |
 | `03/313.lyx` | Knowledge Management Policy | T | v2.3 |  |
-| `03/314.lyx` | IT Project Management Policy | T | v2.3 |  |
+| `03/314.lyx` | IT Project Management Policy | T+ | v2.3 | #478 |
 | `03/315.lyx` | Service Continuity and Contingency Planning Policy | T+ | v2.3 | #314 |
 | `03/316.lyx` | Service Improvement and Continual Improvement Plan | T+ | v2.1 | #452 |
 | `03/317.lyx` | System Maintenance and Vendor Repairs | T | v2.2 |  |
@@ -111,13 +111,13 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `04/401.lyx` | Incident Response Policy Overview | T+ | v2.1 | #418, #457 |
+| `04/401.lyx` | Incident Response Policy Overview | T+ | v2.1 | #418, #457, #477 |
 | `04/402.lyx` | Identification and Reporting Procedures | T | v2.2 |  |
 | `04/403.lyx` | Containment Strategy and Playbooks | T | v2.2 |  |
-| `04/404.lyx` | Eradication Procedures and Scenario Guides | T+ | v2.3 | #460 |
-| `04/405.lyx` | Recovery Operations and Restoration Prioritization | T+ | v2.3 | #458, #460 |
+| `04/404.lyx` | Eradication Procedures and Scenario Guides | T | v2.4 |  |
+| `04/405.lyx` | Recovery Operations and Restoration Prioritization | T+ | v2.4 | #458, #477 |
 | `04/406.lyx` | Communication Protocols and Partner Integration | T+ | v2.3 | #378 |
-| `04/407.lyx` | Postmortem Review and Lessons Learned | T | v1.1 |  |
+| `04/407.lyx` | Postmortem Review and Lessons Learned | T+ | v1.1 | #477, #478 |
 
 ## Chapter 5 — Compliance
 
