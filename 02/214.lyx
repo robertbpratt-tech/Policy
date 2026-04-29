@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -193,16 +193,10 @@ Version:
 \begin_layout Standard
 
 \lang english
-The purpose of this policy is to establish mandatory security controls for mobile devices and remote access technologies connecting to Elko County Information Systems.
- This policy ensures the confidentiality,
- integrity,
- and availability of County data,
- including Criminal Justice Information (CJI),
- by defining strict configuration,
- authorization,
- and usage requirements for wireless networking,
- remote connectivity,
- and mobile computing assets.
+This policy establishes mandatory security controls for mobile devices and remote access technologies connecting to Elko County information systems,
+ including those processing,
+ storing,
+ or transmitting Criminal Justice Information (CJI).
 \end_layout
 
 \begin_layout Subsection*
@@ -215,57 +209,83 @@ The purpose of this policy is to establish mandatory security controls for mobil
 \begin_layout Standard
 
 \lang english
-This policy applies to all Elko County Information Operations personnel,
- employees,
+This policy applies to all Elko County information systems,
+ mobile devices,
+ wireless infrastructure,
+ and remote access connections,
+ and to all County Personnel,
  contractors,
- vendors,
- and agents who utilize mobile devices or remote access technologies to access County information assets.
- This scope includes:
+ and third-party vendors interacting with these resources.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Agency-Controlled Devices
+In Scope
 \series default
 :
- Devices owned,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+County-owned mobile devices,
+ including smartphones,
+ tablets,
+ and laptops authorized to process,
+ store,
+ or transmit County data.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Wireless access points,
+ wireless clients,
+ and wireless infrastructure owned,
  leased,
- and managed by Elko County.
+ or operated by Elko County.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Remote Access Connections
-\series default
-:
- Any logical connection originating from outside the County's internal trusted network.
+Remote access connections originating from outside the County's internal trusted network,
+ including Virtual Private Network (VPN) sessions,
+ remote desktop sessions,
+ and managed gateway traffic.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Wireless Infrastructure
-\series default
-:
- All wireless access points (APs) and clients managed by the County.
+Personally owned devices used to access County information assets.
 \end_layout
 
 \begin_layout Itemize
 
+\lang english
+Vendor remote access to County information systems.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
 \series bold
 \lang english
-Personally Owned Devices
+Out of Scope
 \series default
 :
- Personally owned devices are strictly prohibited from accessing CJI or internal County network infrastructure.
- Limited access to non-CJI cloud services (e.g.,
- Office 365 web access) via personally owned devices is permitted only if it does not require full Mobile Device Management (MDM) enrollment,
- consistent with the Zero Support Model defined in 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Contractor-owned device support and the contractor equipment model:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -283,6 +303,120 @@ nolink "false"
 .
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Identification and authentication mechanics,
+ including multi-factor authentication baselines and mobile device advanced authentication:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Cryptographic standards,
+ transmission protections,
+ and key management:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Device lock thresholds and remote access session termination:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Vulnerability management and patch deployment timelines:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Audit logging cadence and centralized log review:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -294,76 +428,65 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
- Shall authorize all remote access methods and mobile device platforms prior to deployment.
- Shall approve the selection of MDM solutions,
- designate compelling operational needs for privileged remote access,
- and approve all Risk Acceptance Memos for deviations.
- Serves as the Local Agency Security Officer (LASO) for CJI exception processing.
+IT Director (as LASO):
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall authorize each remote access connection type prior to deployment.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-Assistant IT Director
-\series default
-:
- Shall ensure validation testing for rogue wireless access points is performed quarterly.
- Shall review wireless access point logs,
- VPN connection logs,
- and remote desktop session logs at least monthly.
+Shall authorize each wireless access type prior to deployment.
 \end_layout
 
 \begin_layout Itemize
 
-\series bold
 \lang english
-System and Network Administrators
-\series default
-:
- Shall configure and maintain the MDM and VPN infrastructure,
- apply critical security patches,
- route all remote access traffic through managed gateways,
- and change administrative passwords on wireless access points in accordance with established baselines.
+Shall approve the enterprise mobile device management (MDM) platform.
 \end_layout
 
 \begin_layout Itemize
 
+\lang english
+Shall designate compelling operational needs for privileged remote access.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve compensating controls for advanced authentication exceptions per 
 \series bold
-\lang english
-All Users
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Shall physically protect mobile devices,
- immediately report lost or stolen devices to the Assistant IT Director,
- and initiate session locks before leaving devices unattended.
+.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Itemize
 
 \lang english
-4.
- Compliance and Exceptions
+Shall authorize the transport of CJI-authorized devices outside the United States in writing prior to departure.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \lang english
-Compliance with this policy is mandatory.
- Failure to comply shall result in the immediate revocation of remote access privileges,
- seizure of non-compliant County devices,
- and disciplinary action up to and including termination of employment or contract.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Exceptions to this policy must be documented using a formal Risk Acceptance Memo,
- including compensating controls,
- and approved in writing by the IT Director in accordance with 
+Shall approve risk acceptance for deviations from this policy per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -379,7 +502,324 @@ nolink "false"
 
 \series default
 .
- Exceptions involving CJI shall not be granted if they violate FBI CJIS Security Policy requirements without written concurrence from the CJIS Systems Officer (CSO).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve any exception to this policy in writing per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assistant IT Director:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall perform a pre-departure inspection on each CJI-authorized device approved for international travel.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall perform a post-return inspection on each CJI-authorized device upon its return to County custody from international travel.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall receive immediate reports of lost,
+ stolen,
+ or suspected-compromise mobile devices from County Personnel.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Systems Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall configure and maintain the enterprise mobile device management (MDM) platform per the requirements in Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall apply security patches to mobile operating systems per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall initiate remote lock and remote wipe procedures via the MDM platform upon notification of mobile device loss,
+ theft,
+ or compromise.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall configure cryptographic key extraction protections and remote-wipe-on-failure controls on CJI-authorized mobile devices.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall configure and maintain the County's Virtual Private Network (VPN) and remote access gateway infrastructure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall route remote access traffic through authorized and managed network access control points.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall perform validation testing for rogue wireless access points no less frequently than quarterly.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain the inventory of all County wireless access points.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall configure wireless infrastructure per the requirements in Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall change administrative credentials on wireless access points consistent with the configuration baselines defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All County Personnel:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall physically protect County mobile devices in their custody.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report the loss,
+ theft,
+ or suspected compromise of any County mobile device to the Assistant IT Director immediately upon discovery and no later than two (2) hours after discovery.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall report the loss,
+ theft,
+ or suspected compromise of any CJI-authorized mobile device to the IT Director (as LASO) immediately and no later than one (1) hour after discovery.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall initiate session locks before leaving County devices unattended.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not connect personally owned devices to the County's internal trusted network or use personally owned devices to access CJI.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall not transport CJI-authorized devices outside the United States without prior written authorization from the IT Director (as LASO).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\lang english
+4.
+ Compliance and Exceptions
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Compliance with this policy is mandatory for all personnel and entities defined in Section 2.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Assessment
+\series default
+:
+ Compliance with mobile device and remote access controls shall be assessed through the internal audit process defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Enforcement
+\series default
+:
+ The IT Director shall enforce this policy.
+ Violations constitute non-compliance subject to the enforcement framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to this policy shall be processed in accordance with the exception management framework defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Risk acceptance for deviations shall additionally follow the Risk Acceptance Memo procedure defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -387,6 +827,15 @@ nolink "false"
 \lang english
 5.
  References
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Cited References
+\series default
+:
 \end_layout
 
 \begin_layout Itemize
@@ -405,6 +854,24 @@ nolink "false"
 
 :
  Risk Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
 \end_layout
 
 \begin_layout Itemize
@@ -503,6 +970,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Secure Configuration Baselines and Hardening Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:2.11"
 plural "false"
 caps "false"
@@ -536,8 +1021,55 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Policy Implementation,
+ Enforcement,
+ and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Internal Audits,
+ Self-Assessment,
+ and Control Testing
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
- Section AC-11 (Device Lock)
+ Section AC-17 (Remote Access)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section AC-17(4) (Privileged Commands and Access)
 \end_layout
 
 \begin_layout Itemize
@@ -572,6 +1104,43 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
+ Section AC-20 (Use of External Systems)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Appendix G.4 (Mobile Device Guidance — Cellular Service Abroad)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section AC-11 (Device Lock)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
  Section IA-2(1) (Multi-Factor Authentication to Privileged Accounts)
 \end_layout
 
@@ -593,21 +1162,7 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
- Section IR-6 (Incident Reporting)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
  Section SC-8(1) (Cryptographic Protection)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
- Section Appendix G.4 (Mobile Device Guidance - Cellular Service Abroad)
 \end_layout
 
 \begin_layout Itemize
@@ -629,14 +1184,6 @@ NIST CSF 2.0:
 \lang english
 NIST SP 800-53 Rev.
  5:
- AC-11 (Device Lock)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
  AC-17 (Remote Access)
 \end_layout
 
@@ -645,7 +1192,7 @@ NIST SP 800-53 Rev.
 \lang english
 NIST SP 800-53 Rev.
  5:
- AC-17(4) (Privileged Commands Over Remote Access)
+ AC-17(4) (Privileged Commands)
 \end_layout
 
 \begin_layout Itemize
@@ -737,12 +1284,6 @@ ITIL v4:
 6.1 Remote Access Management
 \end_layout
 
-\begin_layout Standard
-
-\lang english
-The Information Operations Department shall establish and document usage restrictions and configuration requirements for each type of remote access allowed.
-\end_layout
-
 \begin_layout Itemize
 
 \series bold
@@ -750,7 +1291,9 @@ The Information Operations Department shall establish and document usage restric
 Authorization
 \series default
 :
- The IT Director must explicitly authorize each remote access connection type prior to use.
+ The IT Director (as LASO) shall authorize each remote access connection type prior to use,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-17 (Remote Access).
 \end_layout
 
 \begin_layout Itemize
@@ -760,21 +1303,31 @@ Authorization
 Managed Access Points
 \series default
 :
- Network Administrators shall route all remote access traffic through authorized and managed network access control points (e.g.,
- VPN Gateways).
+ The Network Administrator shall route all remote access traffic through authorized and managed network access control points,
+ including VPN gateways.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Encryption
+Privileged Remote Access
 \series default
 :
- System Administrators shall configure all remote access sessions to employ FIPS-validated cryptographic mechanisms (e.g.,
- TLS 1.2+,
- IPsec) to protect confidentiality and integrity in transit,
- consistent with the cryptographic standards established in 
+ The Systems Administrator and the Network Administrator shall not execute privileged commands via remote access except where the IT Director (as LASO) has documented a compelling operational need,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-17(4) (Privileged Commands and Access).
+ The Assistant IT Director shall ensure information systems generate assessable evidence of all privileged remote access sessions.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Cryptographic Protection of Remote Sessions
+\series default
+:
+ The Network Administrator shall protect remote access sessions in transit consistent with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -796,23 +1349,25 @@ nolink "false"
 
 \series bold
 \lang english
-Privileged Access
+Session Termination and Re-Authentication
 \series default
 :
- Users shall not execute privileged commands via remote access unless the IT Director has documented a compelling operational need in accordance with AC-17(4).
- Such access shall require automated generation of assessable evidence (logging).
-\end_layout
-
-\begin_layout Itemize
-
+ The Network Administrator shall configure remote access session termination and re-authentication consistent with 
 \series bold
-\lang english
-Session Termination
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
- Remote access sessions shall be configured to automatically terminate after twelve (12) hours of duration or fifteen (15) minutes of inactivity.
- Remote access sessions utilizing certificate-based authentication on devices located within a secure Criminal Justice Conveyance (e.g.,
- patrol vehicles) are exempt from the fifteen (15)-minute inactivity timeout to ensure officer safety.
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -821,10 +1376,16 @@ Session Termination
 6.2 Wireless Networking Security
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-The Information Operations Department shall manage all wireless access to Elko County networks in strict accordance with CJIS and NIST standards.
+Wireless Access Authorization
+\series default
+:
+ The IT Director (as LASO) shall authorize each type of wireless access to County information systems prior to allowing such connections,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-18 (Wireless Access).
 \end_layout
 
 \begin_layout Itemize
@@ -834,9 +1395,34 @@ The Information Operations Department shall manage all wireless access to Elko C
 Validation and Inventory
 \series default
 :
- Network Administrators shall perform validation testing quarterly to verify rogue APs do not exist and maintain a complete inventory of all APs.
- Network Administrators shall test AP range boundaries to determine the precise extent of wireless coverage and shall design AP coverage areas to be strictly limited to approved operational boundaries.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall perform validation testing for rogue wireless access points no less frequently than quarterly.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall maintain a complete inventory of all County wireless access points.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall test access point range boundaries to determine the extent of wireless coverage.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall design wireless coverage areas to remain within approved operational boundaries.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -845,22 +1431,56 @@ Validation and Inventory
 Physical and Logical Security
 \series default
 :
- APs shall be placed in secured areas to prevent unauthorized physical access and user manipulation.
- Network Administrators shall virtually insulate the wireless network from the wired operational infrastructure using boundary protection devices (e.g.,
- VLANs and ACLs),
- limiting access between wireless and wired networks to operational needs only.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall place wireless access points in secured areas to prevent unauthorized physical access and user manipulation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall logically separate the wireless network from the wired operational infrastructure using boundary protection mechanisms,
+ including Virtual Local Area Networks (VLANs) and Access Control Lists (ACLs).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall limit access between wireless and wired networks to operational needs only.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Required Protocol
+Required Authentication and Encryption
 \series default
 :
- Wireless access to County internal networks shall use WPA2 or WPA3 Enterprise authentication and encryption.
- All encryption key sizes shall be at least 128-bits,
- and default shared keys shall be replaced by unique keys.
+ The Network Administrator shall configure wireless access to County internal networks to use Wi-Fi Protected Access 2 (WPA2) or Wi-Fi Protected Access 3 (WPA3) Enterprise authentication and encryption,
+ with cryptographic protections governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-18(1) (Authentication and Encryption).
 \end_layout
 
 \begin_layout Itemize
@@ -870,7 +1490,7 @@ Required Protocol
 Prohibited Protocols
 \series default
 :
- Wired Equivalent Privacy (WEP) and Wi-Fi Protected Access (WPA) original shall not be used.
+ The Network Administrator shall not deploy Wired Equivalent Privacy (WEP) or original Wi-Fi Protected Access (WPA) on County wireless infrastructure.
 \end_layout
 
 \begin_layout Itemize
@@ -880,40 +1500,136 @@ Prohibited Protocols
 Configuration Baselines
 \series default
 :
- Network Administrators shall change default SSIDs,
- disable ad hoc mode,
- disable all nonessential management protocols,
- and utilize FIPS-compliant protocols (e.g.,
- SFTP,
- HTTPS,
- SNMP over TLS) for all management access.
- Non-FIPS compliant management access shall be disabled.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall change default Service Set Identifiers (SSIDs) prior to deployment.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall disable ad-hoc mode on County wireless infrastructure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall disable nonessential management protocols on County wireless infrastructure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall use management protocols whose cryptographic protections are consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-AP Reset Procedures
+Access Point Reset Procedures
 \series default
 :
- The AP reset function shall be used only when necessary and shall be invoked only by authorized personnel.
- Following any reset,
- APs shall be restored to the latest approved security configuration baselines;
- factory default configurations shall not be utilized.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall invoke access point reset functions only to resolve a documented operational fault or to apply an approved configuration change.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall restore the access point to the latest approved configuration baseline defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ immediately following any reset.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall not retain factory default configurations on County wireless infrastructure.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-AP Logging
+Access Point Logging
 \series default
 :
- AP logging shall be enabled on all access points.
- Access points incapable of logging shall not be deployed without a formal Risk Acceptance Memo approved by the IT Director.
- Logs shall be reviewed on a recurring basis at minimum monthly,
- consistent with 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall enable logging on all wireless access points.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall not deploy access points incapable of logging without an exception approved per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Network Administrator shall forward wireless access point logs to the centralized log repository consistent with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -931,6 +1647,8 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
+
 \begin_layout Itemize
 
 \series bold
@@ -938,13 +1656,11 @@ nolink "false"
 Mobile Hotspots
 \series default
 :
- If a County mobile device authorized to access CJI is used as a Wi-Fi hotspot,
- it must employ encryption,
- utilize a strong pre-shared key,
- enable port filtering,
- and allow connections only from agency-controlled devices.
- Because mobile hotspots are limited in providing infrastructure-grade device authentication,
- CJI shall not be transmitted or exposed on the hotspot network without appropriate application-layer encryption.
+ The Systems Administrator shall configure County mobile devices authorized to access CJI such that any Wi-Fi hotspot function employs encryption,
+ a non-default pre-shared key,
+ port filtering,
+ and connection restrictions to agency-controlled devices only.
+ All County Personnel shall not transmit CJI over a mobile hotspot connection absent application-layer encryption that satisfies CJIS Security Policy requirements.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -953,10 +1669,16 @@ Mobile Hotspots
 6.3 Mobile Device Management (MDM)
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-All County-owned mobile devices accessing CJI or County data must be managed via a centralized MDM solution.
+Enrollment Requirement
+\series default
+:
+ The Systems Administrator shall manage all County-owned mobile devices accessing CJI or County data through the centralized enterprise mobile device management (MDM) platform,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-19 (Access Control for Mobile Devices).
 \end_layout
 
 \begin_layout Itemize
@@ -966,22 +1688,52 @@ All County-owned mobile devices accessing CJI or County data must be managed via
 Mandatory Controls
 \series default
 :
- System Administrators shall configure the MDM to enforce remote locking,
- remote wiping,
- detection of jailbroken or rooted devices with automatic access blocking,
- folder- and disk-level encryption,
- and automatic device wiping after a maximum of ten (10) failed access attempts.
+ The Systems Administrator shall configure the MDM to enforce all of the following:
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Remote locking of County mobile devices on demand.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Remote wiping of County mobile devices on demand.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Detection of jailbroken or rooted devices,
+ with automatic access blocking upon detection.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Full-device or container-based encryption on managed devices,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-19(5) (Full Device or Container-Based Encryption).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Automatic device wipe after a maximum of ten (10) consecutive failed access attempts.
+\end_layout
+
+\end_deeper
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Device Patching
+Mobile Operating System Patching
 \series default
 :
- System Administrators shall apply critical security patches to mobile operating systems within fifteen (15) days of vendor release,
- consistent with 
+ The Systems Administrator shall apply mobile operating system patches consistent with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -994,22 +1746,36 @@ nolink "false"
 
 \end_inset
 
-.
 
 \series default
- Deferrals require a formal Risk Acceptance Memo approved by the IT Director.
+.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Encryption
+Mobile Device Encryption
 \series default
 :
- Full-device encryption shall be employed on all mobile devices authorized to process,
- store,
- or transmit CJI.
+ The Systems Administrator shall encrypt CJI processed,
+ stored,
+ or transmitted on County mobile devices consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1019,10 +1785,30 @@ Encryption
 Bluetooth
 \series default
 :
- Bluetooth capabilities on CJI-authorized mobile devices shall be disabled or restricted via MDM policy unless explicitly required for an approved operational purpose.
- Any authorized Bluetooth configuration shall restrict associations to known and agency-approved accessories only.
- Users shall not have the ability to create unapproved Bluetooth associations on CJI-capable devices.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall configure the MDM to disable Bluetooth on CJI-authorized devices except where explicitly required for an approved operational purpose.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Where Bluetooth is approved,
+ the Systems Administrator shall restrict associations to known agency-approved accessories only.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Where Bluetooth is approved,
+ the Systems Administrator shall prevent users from creating unapproved Bluetooth associations on CJI-capable devices.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -1031,26 +1817,68 @@ Bluetooth
 Prohibited Transmission Methods
 \series default
 :
- SMS,
- MMS,
- and consumer VoIP or chat applications (e.g.,
- FaceTime,
- standard SMS) shall not be used for the transmission of CJI.
- Any application-based communication used for CJI transmission must employ authentication and encryption mechanisms compliant with CJIS requirements,
- independent of the device PIN or password.
- VoIP applications are not granted the voice communication exemptions applicable to traditional cellular voice under CJIS.
+ All County Personnel shall not transmit CJI using Short Message Service (SMS),
+ Multimedia Messaging Service (MMS),
+ or consumer voice or chat applications,
+ including FaceTime and standard SMS.
+ The Systems Administrator shall configure approved application-based communication tools used for CJI transmission to employ authentication and encryption mechanisms compliant with CJIS Security Policy requirements,
+ independent of the device unlock authenticator.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 \lang english
-Cryptographic Key Protections
+Cryptographic Key Extraction Protections
 \series default
 :
- Any certificates or cryptographic keys stored on mobile devices shall include protections against extraction from the device.
- Certificates or keys that grant special access or unique device identification shall be configured for remote wipe on demand or self-deletion upon a defined number of unsuccessful access attempts.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall configure mobile devices to prevent extraction of stored certificates and cryptographic keys from the device hardware.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall configure certificates and cryptographic keys that grant special access or unique device identification for remote wipe on demand.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall configure certificates and cryptographic keys that grant special access or unique device identification for self-deletion upon a defined number of unsuccessful access attempts.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Systems Administrator shall manage cryptographic key generation,
+ distribution,
+ storage,
+ destruction,
+ and validation records for mobile devices consistent with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:2.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsubsection*
 
@@ -1058,10 +1886,14 @@ Cryptographic Key Protections
 6.4 Identification and Authentication
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-All mobile and remote access usage shall comply with the strict identification and authentication requirements defined in 
+By Reference
+\series default
+:
+ The Systems Administrator and the Network Administrator shall configure identification and authentication for mobile and remote access consistent with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1076,68 +1908,176 @@ nolink "false"
 
 
 \series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Local Device Authentication:
-
-\series default
- When mobile devices are authorized for CJI access,
- local device authentication shall be used to unlock the device.
- The authenticator used shall meet the minimum requirements defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.05"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Advanced Authentication (AA)
-\series default
-:
- Multi-factor authentication shall be used for all remote access to CJI and all privileged remote access.
- If a specific mobile scenario cannot support AA,
- the IT Director (LASO) must approve compensating controls prior to implementation in accordance with CJIS Security Policy IA-2(1) and IA-2(2).
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Session Lock
-\series default
-:
- Devices shall be configured to automatically initiate a pattern-hiding display lock after a maximum of fifteen (15) minutes of inactivity.
+,
+ including multi-factor authentication baselines and mobile device advanced authentication with compensating-control exceptions.
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.5 Mobile Device Incident Response
+6.5 Personally Owned Devices
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Prohibition
+\series default
+:
+ All County Personnel shall not use personally owned devices to access,
+ process,
+ store,
+ or transmit Criminal Justice Information,
+ consistent with CJIS Security Policy v6.0:
+ Section AC-20 (Use of External Systems).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Internal Network Prohibition
+\series default
+:
+ The Network Administrator shall deny personally owned devices connectivity to the County's internal trusted network.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Limited External-Service Access
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+All County Personnel may access County non-CJI cloud services from personally owned devices,
+ including productivity suite web access,
+ only where such access does not require enrollment of the personally owned device in the County mobile device management (MDM) platform.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All County Personnel shall not locally synchronize,
+ download,
+ cache,
+ or persistently store Restricted or Confidential County data on personally owned devices.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All County Personnel shall handle County data on personally owned devices consistent with the data classification and handling requirements in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Exceptions
+\series default
+:
+ Exceptions to the prohibitions in this section shall be processed per 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Vendor Remote Access
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Compliance with This Policy
+\series default
+:
+ Vendor remote access to County information systems shall comply with the requirements of this policy,
+ including authorization,
+ managed gateway routing,
+ cryptographic protection,
+ and session termination.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Additional Vendor Obligations
+\series default
+:
+ The IT Director (as LASO) shall require vendor compliance with the additional vendor-specific obligations defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.13"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ including least privilege,
+ named-account-only provisioning,
+ time-bounded authorization,
+ persistent-tunnel prohibition,
+ and vendor activity logging.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.7 Mobile Device Incident Response
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-In addition to the incident response requirements in 
+Cybersecurity incident response activities triggered by mobile device events shall be conducted within the program established under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1152,20 +2092,75 @@ nolink "false"
 
 
 \series default
-,
- specific reporting procedures shall apply to mobile device operating scenarios.
- Users shall immediately report the loss,
- theft,
- or suspected compromise of any County mobile device to the Assistant IT Director.
- If a lost,
- stolen,
- or compromised device is authorized to access CJI,
- the incident shall be reported to the IT Director (LASO) immediately and no later than one (1) hour after discovery.
- Enhanced incident handling procedures shall address,
- at minimum,
- the following tiered scenarios:
+.
+ The following mobile-specific procedures supplement the Chapter 4 lifecycle.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+Initial Reporting
+\series default
+:
+ All County Personnel shall report the loss,
+ theft,
+ or suspected compromise of any County mobile device to the Assistant IT Director immediately upon discovery and no later than two (2) hours after discovery.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Device Reporting Threshold
+\series default
+:
+ All County Personnel shall report the loss,
+ theft,
+ or suspected compromise of any CJI-authorized mobile device to the IT Director (as LASO) immediately and no later than one (1) hour after discovery,
+ consistent with CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Remote Lock and Wipe
+\series default
+:
+ Upon notification of mobile device loss,
+ theft,
+ or suspected compromise,
+ the Systems Administrator shall initiate remote lock and remote wipe procedures via the MDM platform within fifteen (15) minutes of notification.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Tiered Response Scenarios
+\series default
+:
+ The Incident Commander designated under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ shall ensure response procedures address,
+ at minimum,
+ the following physical-control-loss scenarios:
+\begin_deeper
 \begin_layout Itemize
 
 \lang english
@@ -1219,34 +2214,62 @@ Device compromise or suspected compromise.
 Device loss or compromise outside the United States.
 \end_layout
 
-\begin_layout Standard
-
-\lang english
-Upon notification of device loss,
- theft,
- or compromise,
- the System Administrator shall initiate remote lock and remote wipe procedures via the MDM platform without delay.
+\end_deeper
 \end_layout
 
 \begin_layout Subsubsection*
 
 \lang english
-6.6 International Travel
+6.8 International Travel
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-Devices authorized to access CJI shall not be transported outside the United States unless explicitly authorized in writing by the IT Director.
- If authorized,
- the Assistant IT Director shall perform a pre-departure inspection to verify all controls are functioning properly,
- and a post-return inspection immediately upon the device's return to County custody.
- Any device returned from international travel that was connected to foreign cellular networks or foreign wireless infrastructure shall be subject to a security assessment prior to being returned to operational use,
- consistent with 
+Authorization
+\series default
+:
+ All County Personnel shall not transport CJI-authorized devices outside the United States without prior written authorization from the IT Director (as LASO),
+ consistent with CJIS Security Policy v6.0:
+ Appendix G.4 (Mobile Device Guidance — Cellular Service Abroad).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Pre-Departure Inspection
+\series default
+:
+ The Assistant IT Director shall perform a pre-departure inspection of each authorized device to verify Mobile Device Management enrollment,
+ configuration baseline compliance,
+ cryptographic protection,
+ and managed-gateway connectivity,
+ evidenced by a documented inspection record in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Post-Return Inspection
+\series default
+:
+ The Assistant IT Director shall perform a post-return inspection of each authorized device within twenty-four (24) hours of its return to County custody,
+ evidenced by a documented inspection record in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Foreign Network Exposure
+\series default
+:
+ Any CJI-authorized device transported outside the United States shall be subject to a security assessment under 
 \series bold
 Policy 
-\series default
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.01"
@@ -1257,7 +2280,10 @@ nolink "false"
 
 \end_inset
 
-.
+
+\series default
+ prior to being returned to operational use,
+ regardless of known foreign network connectivity.
 \end_layout
 
 \end_body
