@@ -165,8 +165,6 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references | Manual-wide | Open, active-root | Two absorption waves completed April 20–21: first wave #360–#372 (13 tickets against tightened Ch1/Ch2/Ch3/Ch4 peers), second wave #402–#424 (23 tickets covering strips + intra-policy disambiguation). 19 of the second wave closed in-session. #413 (3.12) and #418 (4.01) remain open tracking `of that policy` prose-rewrite cases (mechanical strips applied; prose rewrite pending — reopened April 22 post-audit). 1.04 v1.4 §6.15 residual (4 hits) resolved in 1.04 v1.5 via #439 (April 23, 2026). Untightened D-state policies (5.03/5.04/5.06/5.07) and Appendix 6.01 absorb into respective tightening/Phase 7 sessions. Scanner-based filing retired April 20 (regex-gap reliability); PDF-driven visual scan + LyX-source classifier is authoritative. Rule #1 in §4 is the underlying rule statement. [Archive: #436] |
 | #456 | LyX CommandInset ref trailing-whitespace defects — render-time space loss after cross-references | Manual-wide | Open, active-root | Children #457 (4.01, 50 occurrences), #458 (4.05, 38 occurrences). Audit method: PDF-rendered visual scan against LyX source. Surfaced April 26, 2026 cross-validator pass. |
 | #464 | PDF publication quality — metadata, accessibility tagging, ligature handling | Manual-wide | Open, phase-10-deferred | Compiled `Policy_Manual.pdf` defects affecting publication quality but not content correctness. Dormant until Phase 10 declaration entry. |
-| #467 | §3 role-title trailing-colon compliance per 1.04 §6.5 — manual-wide sweep | Manual-wide | Open, sweep | 36 policies / ~178 titles. Filed entry 36 (2.09 v2.0, April 28). Sweep-style absorption during per-policy touch, or dedicated sweep session per recalc decision. |
-| #468 | §6 governed-clarifier-tag blending compliance per 1.04 §6.12 — manual-wide sweep | Manual-wide | Open, sweep | 7 policies / 10 defects. Filed entry 36 (2.09 v2.0, April 28). Sweep-style absorption during per-policy touch, or dedicated sweep session per recalc decision. |
 | #469 | Convert prohibitive `shall not` directives to verifiable positive `shall` directives where appropriate | Manual-wide | Open, sweep | Filed April 28, 2026 between entries 36 and 37 from in-session observation. Pattern absorbed at 2.10 v2.3 §6.3 (entry 37). Remaining occurrences per parent ticket body. |
 ### Closed Roots
 
@@ -176,8 +174,10 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #283 | LASO is a designation, not a §3 role | April 11 | Superseded by #220 landing. |
 | #304 | Chapter 4 external self-containment quality gate | April 12 | All Ch4 policies tightened (4.01–4.07). |
 | #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | April 26 | All three children resolved: 1.11 v2.4 (April 11), 2.05 v2.2 (April 26 commit `fcf6b095`), 2.07 v2.2 (April 26 commit `f3d8f876`). CMVP by-reference pattern uniform manual-wide; standing decline #31 is the reflexive-decline rule for future re-push attempts. |
+| #467 | §3 role-title trailing-colon compliance per 1.04 §6.5 — manual-wide sweep | April 29 (5D.1) | Resolved across 5 chapter commits (`8d9bb625`, `e805602a`, `d88efe9b`, `da3e8d36`, `c508bc1d`). 233 fixes / 48 files / 49 T-state policies in scope (sweep extended beyond ticket's 36-policy report; 14 ticket-undercount policies absorbed). Carve-outs: 1.04 (constitutional lock, 2 defects, batched to next constitutional revision per ticket text); 5.02 (D-state, 4 defects, tracked as #473 for Phase 6 entry 40 absorption). `sweep_467.py` retained as protocol validator. |
+| #468 | §6 governed-clarifier-tag blending compliance per 1.04 §6.12 — manual-wide sweep | April 29 (5D.1) | Resolved across same 5D.1 chapter commits. 10 defects / 6 policies. Per-defect dispositions: 7 Strip + 3 Promote (matches 2.09 v2.0 reference for governed sub-bullet form). Cross-validator review post-commit per IT Director ruling — validator brief produced as session deliverable. `sweep_468.py` retained as protocol validator. |
 
-**Sweep-style roots (#208, #211, #235, #245, #264, #6, #467, #468, #469)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched. **Active-root tickets with tracked children (#375, #456)** carry the children to closure under the parent. **Phase-deferred roots (#353, #355, #464)** are dormant and entered at their scheduled phase; they are not absorbed into per-policy tightening.
+**Sweep-style roots (#208, #211, #235, #245, #264, #6, #469)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched. **Active-root tickets with tracked children (#375, #456)** carry the children to closure under the parent. **Phase-deferred roots (#353, #355, #464)** are dormant and entered at their scheduled phase; they are not absorbed into per-policy tightening.
 
 ### Deferred Cluster: `1.04_Procedural_Cleanup` ✅ CLOSED
 
@@ -249,37 +249,37 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 1.02 | Code of Ethics | T | — | 0 | — |
-| 1.03 | Standard Operating Ethos | T | v2.0 | 0 | — |
+| 1.02 | Code of Ethics | T | v2.3, April 29 | 0 | — |
+| 1.03 | Standard Operating Ethos | T | v2.1, April 29 | 0 | — |
 | 1.04 | Formatting Standards | T | v1.5 | 0 | — |
-| 1.05 | Policy Review and Update Procedures | T | v2.2 | 0 | — |
-| 1.06 | IT Governance and Oversight Structure | T | v2.1 | 0 | — |
-| 1.07 | Workforce Roles | T+ | v1.3 | 1 | #354 |
-| 1.08 | Delegation of Authority | T | v1.5 | 0 | — |
-| 1.09 | Risk Management | T | v2.1 | 0 | — |
-| 1.10 | IT Financial / Procurement | T | v2.2 | 0 | — |
-| 1.11 | Data Governance and Classification | T | v2.4 | 0 | — |
-| 1.12 | IT Asset Management | T+ | v2.6 | 2 | #329, #426 |
-| 1.13 | Supply Chain Risk Management | T | v2.2 | 0 | — |
-| 1.14 | Stakeholder Engagement | T | v2.3 | 0 | — |
+| 1.05 | Policy Review and Update Procedures | T | v2.3, April 29 | 0 | — |
+| 1.06 | IT Governance and Oversight Structure | T | v2.2, April 29 | 0 | — |
+| 1.07 | Workforce Roles | T+ | v1.4, April 29 | 1 | #354 |
+| 1.08 | Delegation of Authority | T | v1.6, April 29 | 0 | — |
+| 1.09 | Risk Management | T | v2.2, April 29 | 0 | — |
+| 1.10 | IT Financial / Procurement | T | v2.3, April 29 | 0 | — |
+| 1.11 | Data Governance and Classification | T | v2.5, April 29 | 0 | — |
+| 1.12 | IT Asset Management | T+ | v2.7, April 29 | 2 | #329, #426 |
+| 1.13 | Supply Chain Risk Management | T | v2.4, April 29 | 0 | — |
+| 1.14 | Stakeholder Engagement | T | v2.4, April 29 | 0 | — |
 
 ### Chapter 2 — Security
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 2.01 | Acceptable Use | T+ | v2.5 | 1 | #356 |
-| 2.02 | Personnel Security | T | v2.7, April 26 | 0 | — |
-| 2.03 | Security Awareness | T | v2.1, April 26 | 0 | — |
-| 2.04 | Access Control | T+ | v2.7, April 28 | 1 | #453 |
-| 2.05 | Identification and Authentication | T | v2.2, April 26 | 0 | — |
-| 2.06 | Privacy and Data Protection | T | v2.7, April 24 | 0 | — |
-| 2.07 | System and Communications Protection | T | v2.2, April 26 | 0 | — |
-| 2.08 | System Integrity / Malware | T | v2.0, April 27 | 0 | — |
+| 2.01 | Acceptable Use | T+ | v2.6, April 29 | 1 | #356 |
+| 2.02 | Personnel Security | T | v2.8, April 29 | 0 | — |
+| 2.03 | Security Awareness | T | v2.2, April 29 | 0 | — |
+| 2.04 | Access Control | T+ | v2.8, April 29 | 1 | #453 |
+| 2.05 | Identification and Authentication | T | v2.3, April 29 | 0 | — |
+| 2.06 | Privacy and Data Protection | T | v2.8, April 29 | 0 | — |
+| 2.07 | System and Communications Protection | T | v2.3, April 29 | 0 | — |
+| 2.08 | System Integrity / Malware | T | v2.1, April 29 | 0 | — |
 | 2.09 | Vulnerability and Patch Management | T | v2.0, April 28 | 0 | — |
 | 2.10 | Secure Configuration Baselines | T | v2.3, April 28 | 0 | — |
-| 2.11 | Audit Logging and Monitoring | T | v2.3, April 22 | 0 | — |
-| 2.12 | Media Protection and Sanitization | T+ | v2.3, April 23 | 1 | #449 |
-| 2.13 | Physical Security | T | v2.3, April 24 | 0 | — |
+| 2.11 | Audit Logging and Monitoring | T | v2.5, April 29 | 0 | — |
+| 2.12 | Media Protection and Sanitization | T+ | v2.5, April 29 | 1 | #449 |
+| 2.13 | Physical Security | T | v2.4, April 29 | 0 | — |
 | 2.14 | Mobile and Remote Access | T | v2.0, April 28 | 0 | — |
 | 2.15 | Secure Software Lifecycle | T | v2.0 | 0 | — |
 
@@ -289,35 +289,35 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 3.01 | Service Catalog and SLA | T | v2.4 | 0 | — |
-| 3.02 | Service Level Management | T+ | v2.5 | 1 | #309 |
-| 3.03 | Service Communication | T | v2.0 | 0 | — |
-| 3.04 | Service Delivery Feedback | T | v2.1 | 0 | — |
-| 3.05 | Service Request Fulfillment | T | v2.1 | 0 | — |
-| 3.06 | Operational Incident Management | T+ | v2.1 | 1 | #450 |
-| 3.07 | Problem Management | T | v2.3 | 0 | — |
-| 3.08 | CMDB | T+ | v2.2 | 1 | #461 |
-| 3.09 | Change Management | T | v2.0 | 0 | — |
-| 3.10 | Release and Deployment | T+ | v2.0 | 1 | #377 |
-| 3.11 | Capacity and Availability | T+ | v2.0 | 1 | #451 |
-| 3.12 | Monitoring and Event Management | T+ | v2.0 | 1 | #413 |
-| 3.13 | Knowledge Management | T | v2.2 | 0 | — |
-| 3.14 | IT Project Management | T | v2.2 | 0 | — |
-| 3.15 | Service Continuity | T+ | v2.2 | 1 | #314 |
-| 3.16 | Service Improvement | T+ | v2.0 | 1 | #452 |
-| 3.17 | System Maintenance and Vendor Repairs | T | v2.1 | 0 | — |
+| 3.01 | Service Catalog and SLA | T | v2.5, April 29 | 0 | — |
+| 3.02 | Service Level Management | T+ | v2.6, April 29 | 1 | #309 |
+| 3.03 | Service Communication | T | v2.1, April 29 | 0 | — |
+| 3.04 | Service Delivery Feedback | T | v2.2, April 29 | 0 | — |
+| 3.05 | Service Request Fulfillment | T | v2.2, April 29 | 0 | — |
+| 3.06 | Operational Incident Management | T+ | v2.2, April 29 | 1 | #450 |
+| 3.07 | Problem Management | T | v2.4, April 29 | 0 | — |
+| 3.08 | CMDB | T+ | v2.3, April 29 | 1 | #461 |
+| 3.09 | Change Management | T | v2.1, April 29 | 0 | — |
+| 3.10 | Release and Deployment | T+ | v2.1, April 29 | 1 | #377 |
+| 3.11 | Capacity and Availability | T+ | v2.1, April 29 | 1 | #451 |
+| 3.12 | Monitoring and Event Management | T+ | v2.1, April 29 | 1 | #413 |
+| 3.13 | Knowledge Management | T | v2.3, April 29 | 0 | — |
+| 3.14 | IT Project Management | T | v2.3, April 29 | 0 | — |
+| 3.15 | Service Continuity | T+ | v2.3, April 29 | 1 | #314 |
+| 3.16 | Service Improvement | T+ | v2.1, April 29 | 1 | #452 |
+| 3.17 | System Maintenance and Vendor Repairs | T | v2.2, April 29 | 0 | — |
 
 ### Chapter 4 — Incident Response
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 4.01 | IR Policy Overview | T+ | v2.0 | 2 | #418, #457 |
-| 4.02 | Identification and Reporting | T | v2.1 | 0 | — |
-| 4.03 | Containment Strategy and Playbooks | T | v2.1 | 0 | — |
-| 4.04 | Eradication | T+ | v2.2 | 1 | #460 |
-| 4.05 | Recovery and Restoration | T+ | v2.2 | 2 | #458, #460 |
-| 4.06 | Communication Protocols | T+ | v2.2 | 1 | #378 |
-| 4.07 | Postmortem and Lessons Learned | T | v1.0 | 0 | — |
+| 4.01 | IR Policy Overview | T+ | v2.1, April 29 | 2 | #418, #457 |
+| 4.02 | Identification and Reporting | T | v2.2, April 29 | 0 | — |
+| 4.03 | Containment Strategy and Playbooks | T | v2.2, April 29 | 0 | — |
+| 4.04 | Eradication | T+ | v2.3, April 29 | 1 | #460 |
+| 4.05 | Recovery and Restoration | T+ | v2.3, April 29 | 2 | #458, #460 |
+| 4.06 | Communication Protocols | T+ | v2.3, April 29 | 1 | #378 |
+| 4.07 | Postmortem and Lessons Learned | T | v1.1, April 29 | 0 | — |
 
 > #460 is a Ch4-pair ticket — the false-positive disposition seam between 4.04 §6.6 (producing) and 4.05 §6.1 (consuming) requires both policies edited in one session per recalc ruling (April 29, 2026). Listed under both rows.
 
@@ -325,8 +325,8 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 5.01 | Implementation, Enforcement, Legal | T+ | v1.1 | 3 | #334, #345, #425 |
-| 5.02 | Internal Audits | D | — | 4 | #184, #185, #186, #278 |
+| 5.01 | Implementation, Enforcement, Legal | T+ | v1.2, April 29 | 3 | #334, #345, #425 |
+| 5.02 | Internal Audits | D | — | 5 | #184, #185, #186, #278, #473 |
 | 5.03 | Compliance Monitoring | D | — | 2 | #187, #279 |
 | 5.04 | Performance Metrics | D | — | 1 | #280 |
 | 5.05 | Security Control Assessment | D | — | 1 | #188 |
@@ -480,7 +480,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 | Session | Targets | Mode | Estimate |
 |---|---|---|---|
-| 5D.1 — Sweep | #463 (4 policies, 15 occurrences), #467 (36 policies, ~178 titles), #468 (7 policies, 10 defects) | Mechanical edits; light cross-validator review (correctness, not architecture) | 1–2 sessions |
+| 5D.1 — Sweep ✅ | ~~#467~~ resolved (233 fixes/48 files); ~~#468~~ resolved (10 fixes/6 policies); #463 deferred (substantive 3.01/3.02 SLA-semantics session, see note below) | ✅ April 29, 2026 (1 session) | — |
 | 5D.2 — Ch4-Pair | #460 (4.04 §6.6 ↔ 4.05 §6.1 false-positive disposition seam) | Full tightening protocol on both files in one session | 1 session |
 
 **Pre-flight items required before 5D.1 opens:**
@@ -497,6 +497,28 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 - D-state Ch5/Ch6 policies will emerge clean from their own future tightening; no latent regression mechanism.
 
 **Sequence enforcement:** Phase 6 entry 40 (5.02 Internal Audits) does not open until 5D.1 and 5D.2 are both committed and corresponding tickets closed.
+
+---
+
+### Phase 5D.1 Completion Note (April 29, 2026)
+
+5D.1 closed in a single session. Three sweep tickets were in pre-flight scope: **#467 (resolved), #468 (resolved), #463 (deferred)**.
+
+**#467 outcome.** 233 §3 trailing-colon fixes across 48 files. Sweep extended past the ticket's reported 36-policy / ~178-title scope: my locator (`sweep_467.py`) found 14 additional T-state policies (1.02, 1.03, 1.08, 1.09, 3.02, 3.08, 3.10–3.12, 3.13, 3.14, 3.16, 3.17, 4.04) plus more defects per policy than the manual sweep had counted. All absorbed into the same 5D.1 sweep. 1.04 carve-out (2 defects, constitutional lock) preserved per ticket text; 5.02 carve-out (4 defects, D-state) tracked as #473 for Phase 6 entry 40 absorption.
+
+**#468 outcome.** 10 §6 governed-clarifier-tag-blending fixes across 6 policies. Per-defect dispositions: 7 Strip (single-line label rewrite) + 3 Promote (structural — split parent into topic + governed-tag sub-bullet, matching 2.09 v2.0 reference). Cross-validator review post-commit per IT Director ruling; validator brief produced as session deliverable.
+
+**#463 deferral.** Locator surfaced 17 occurrences (vs. ticket's 15) across 3.01, 3.02, 3.05, 3.06. Replacement is **not** mechanical — changing "business hour(s)" to either continuous-hour or end-of-business-day form materially changes SLA timer semantics. 3.01 contains the manual-wide *definition* of "business hours" as a unit; 3.02 inherits it via pipeline reference. **Recommendation: handle as a substantive maintenance pass against 3.01 (primary) with 3.02/3.05/3.06 absorbing reciprocally.** The architectural question — should the manual standardize on a business-hours clock or a continuous-hours clock for SLA cadences? — is an IT Director decision, not a sweep edit. Open standalone or inserted into Phase 6 sequencing as appropriate.
+
+**Pre-flight rulings (April 29, 2026):**
+1. Patch version bump per touched file with `Effective: April 29, 2026` stamp — applied across all 48 files.
+2. No cross-validator pass for the mechanical work — applied. (#468 changes go to validators post-commit.)
+3. One chapter per commit — 5 commits: `8d9bb625` (Ch1), `e805602a` (Ch2), `d88efe9b` (Ch3), `da3e8d36` (Ch4), `c508bc1d` (Ch5).
+4. Validator scripts on Claude side — `sweep_467.py`, `sweep_468.py`, `sweep_463.py`, `apply_5d1.py`, `commit_chapters.py` retained in working tree. Not committed to repo (session ephemera).
+
+**Standing decline patterns (§4):** No new patterns surfaced. None of the existing 30 active patterns triggered (the 5D.1 mechanical sweep is below the conceptual layer where validator pushback usually appears).
+
+**Sequence:** Phase 5D.2 (Ch4-pair #460) is next. Phase 6 entry 40 (5.02 Internal Audits) does not open until 5D.2 is committed.
 
 ---
 
