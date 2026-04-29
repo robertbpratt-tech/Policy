@@ -174,13 +174,13 @@ name "pol:3.07"
 
 \lang english
 Effective:
- April 25,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -275,9 +275,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -348,9 +346,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -420,9 +416,7 @@ Shall monitor open Problem records for compliance with the investigation activit
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper

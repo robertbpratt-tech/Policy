@@ -174,13 +174,13 @@ name "pol:3.01"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.4
+ 2.5
 \end_layout
 
 \begin_layout Subsection*
@@ -374,9 +374,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -431,9 +429,7 @@ Shall approve vendor SLA terms at contract execution.
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -505,9 +501,7 @@ Shall present identified vendor SLA gaps to the IT Director no later than ninety
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -544,9 +538,7 @@ Shall refer work orders for Unsupported assets to the IT Director for dispositio
 
 \series bold
 \lang english
-Administrative Assistant
-\series default
-:
+Administrative Assistant:
 \end_layout
 
 \begin_deeper
@@ -567,9 +559,7 @@ Shall update contact procedures and rotation schedules within one (1) business d
 
 \series bold
 \lang english
-County Personnel and Department Heads
-\series default
-:
+County Personnel and Department Heads:
 \end_layout
 
 \begin_deeper

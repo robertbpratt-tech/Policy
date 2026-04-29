@@ -174,13 +174,13 @@ name "pol:3.03"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -310,9 +310,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -377,9 +375,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -406,9 +402,7 @@ Shall maintain documentation templates and work order notation standards in the 
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -893,7 +887,7 @@ Out-of-Band Summarization
 
 \series bold
 \lang english
-Constraint on Private Notes
+Private Notes Use
 \series default
 :
  All Information Operations Personnel shall default to standard,
@@ -954,7 +948,7 @@ Vendor and External Partner Communications
 
 \series bold
 \lang english
-Exception Documentation
+Documentation Substitution
 \series default
 :
  When an approved exception to this policy precludes full documentation,

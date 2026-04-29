@@ -174,13 +174,13 @@ name "pol:3.14"
 
 \lang english
 Effective:
- April 18,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -407,9 +407,7 @@ External budget appropriation and funding timelines outside the Department's dir
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -476,9 +474,7 @@ Shall provide final sign-off for project closure on all complex projects and on 
 
 \series bold
 \lang english
-County Manager
-\series default
-:
+County Manager:
 \end_layout
 
 \begin_deeper
@@ -536,9 +532,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -618,9 +612,7 @@ Shall provide sign-off for routine project closure,
 
 \series bold
 \lang english
-Project Owner
-\series default
-:
+Project Owner:
 \end_layout
 
 \begin_deeper
@@ -655,9 +647,7 @@ Shall serve as the primary notification recipient if IT withdrawal is invoked on
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper

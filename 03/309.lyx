@@ -174,13 +174,13 @@ name "pol:3.09"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -394,9 +394,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -476,9 +474,7 @@ nolink "false"
 
 \series bold
 \lang english
-County Manager
-\series default
-:
+County Manager:
 \end_layout
 
 \begin_deeper
@@ -499,9 +495,7 @@ Shall be notified no later than four (4) hours following the initiation of imple
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -569,9 +563,7 @@ May designate a change as Emergency in accordance with Section 6.2.
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -660,9 +652,7 @@ Shall create catch-up RFC documentation for Emergency changes within twenty-four
 
 \series bold
 \lang english
-Incident Commander
-\series default
-:
+Incident Commander:
 \end_layout
 
 \begin_deeper

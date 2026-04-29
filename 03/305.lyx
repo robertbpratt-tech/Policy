@@ -174,13 +174,13 @@ name "pol:3.05"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -372,9 +372,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -424,9 +422,7 @@ Shall review emergency exception work orders in aggregate no less than quarterly
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -483,9 +479,7 @@ Shall conduct monthly audits of work order closure quality and report findings t
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -525,9 +519,7 @@ Shall document emergency actions and create catch-up work orders within the time
 
 \series bold
 \lang english
-County Personnel and Department Heads
-\series default
-:
+County Personnel and Department Heads:
 \end_layout
 
 \begin_deeper

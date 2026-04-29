@@ -175,13 +175,13 @@ name "pol:3.17"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -502,9 +502,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -548,9 +546,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -612,9 +608,7 @@ Shall directly observe,
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -704,9 +698,7 @@ Shall verify that remote maintenance sessions and all associated network connect
 
 \series bold
 \lang english
-Network Administrator
-\series default
-:
+Network Administrator:
 \end_layout
 
 \begin_deeper
@@ -736,9 +728,7 @@ nolink "false"
 
 \series bold
 \lang english
-Systems Administrator
-\series default
-:
+Systems Administrator:
 \end_layout
 
 \begin_deeper

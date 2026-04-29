@@ -174,13 +174,13 @@ name "pol:3.13"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -457,9 +457,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -510,9 +508,7 @@ Shall authorize any formal deviation from the documentation,
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -620,9 +616,7 @@ Shall establish and maintain the operational standard governing KB procedure for
 
 \series bold
 \lang english
-Network Administrator
-\series default
-:
+Network Administrator:
 \end_layout
 
 \begin_deeper
@@ -683,9 +677,7 @@ Shall author Standard change pre-authorization procedures within the network dom
 
 \series bold
 \lang english
-Systems Administrator
-\series default
-:
+Systems Administrator:
 \end_layout
 
 \begin_deeper
@@ -743,9 +735,7 @@ Shall author Standard change pre-authorization procedures within the systems dom
 
 \series bold
 \lang english
-Support Specialist
-\series default
-:
+Support Specialist:
 \end_layout
 
 \begin_deeper
@@ -772,9 +762,7 @@ Shall reference applicable KB entries in all work orders.
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper

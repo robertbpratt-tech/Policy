@@ -174,13 +174,13 @@ name "pol:3.11"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -395,9 +395,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -424,9 +422,7 @@ Shall authorize deviations from the planning cadences or threshold documentation
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -472,9 +468,7 @@ nolink "false"
 
 \series bold
 \lang english
-Systems Administrator
-\series default
-:
+Systems Administrator:
 \end_layout
 
 \begin_deeper
@@ -495,9 +489,7 @@ Shall provide domain-specific availability data for systems within their domain 
 
 \series bold
 \lang english
-Network Administrator
-\series default
-:
+Network Administrator:
 \end_layout
 
 \begin_deeper
@@ -518,9 +510,7 @@ Shall provide domain-specific availability data for network infrastructure to th
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper

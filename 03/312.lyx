@@ -174,13 +174,13 @@ name "pol:3.12"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -439,9 +439,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -498,9 +496,7 @@ Shall authorize any formal deviation from the monitoring cadences,
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -569,9 +565,7 @@ nolink "false"
 
 \series bold
 \lang english
-Network Administrator
-\series default
-:
+Network Administrator:
 \end_layout
 
 \begin_deeper
@@ -619,9 +613,7 @@ nolink "false"
 
 \series bold
 \lang english
-Systems Administrator
-\series default
-:
+Systems Administrator:
 \end_layout
 
 \begin_deeper
@@ -670,9 +662,7 @@ nolink "false"
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper

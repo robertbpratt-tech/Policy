@@ -173,13 +173,13 @@ name "pol:3.15"
 
 \lang english
 Effective:
- April 25,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.2
+ 2.3
 \end_layout
 
 \begin_layout Subsection*
@@ -510,9 +510,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -577,9 +575,7 @@ Shall receive the annual tabletop exercise findings report.
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -651,9 +647,7 @@ nolink "false"
 
 \series bold
 \lang english
-Systems Administrator
-\series default
-:
+Systems Administrator:
 \end_layout
 
 \begin_deeper
@@ -709,9 +703,7 @@ Shall participate in annual tabletop exercises.
 
 \series bold
 \lang english
-Network Administrator
-\series default
-:
+Network Administrator:
 \end_layout
 
 \begin_deeper
@@ -738,9 +730,7 @@ Shall support recovery operations as directed by the Incident Commander upon pla
 
 \series bold
 \lang english
-Administrative Assistant
-\series default
-:
+Administrative Assistant:
 \end_layout
 
 \begin_deeper
@@ -759,9 +749,7 @@ Shall coordinate tabletop exercise logistics,
 
 \series bold
 \lang english
-All Information Operations Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
