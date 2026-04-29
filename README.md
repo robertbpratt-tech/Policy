@@ -71,7 +71,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/201.lyx` | Acceptable Use of Information Technology Resources Policy | T+ | v2.5 | #356 |
 | `02/202.lyx` | Personnel Security and Background Screening Policy | T | v2.7 |  |
 | `02/203.lyx` | Security Awareness and Training Policy | T | v2.1 | — |
-| `02/204.lyx` | Access Control Policy | T+ | v2.6 | #453 |
+| `02/204.lyx` | Access Control Policy | T+ | v2.7 | #453 |
 | `02/205.lyx` | Identification and Authentication Policy | T | v2.2 |  |
 | `02/206.lyx` | Privacy and Data Protection Policy | T | v2.7 |  |
 | `02/207.lyx` | System and Communications Protection Policy | T | v2.2 |  |
@@ -81,7 +81,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/211.lyx` | Audit Logging and Monitoring Policy | T | v2.4 |  |
 | `02/212.lyx` | Media Protection and Sanitization Policy | T+ | v2.4 | #449 |
 | `02/213.lyx` | Physical Security and Environmental Controls Policy | T | v2.3 |  |
-| `02/214.lyx` | Mobile Device and Remote Access Policy | D | v1.0 | #99, #101, #102, #229, #332 |
+| `02/214.lyx` | Mobile Device and Remote Access Policy | T | v2.0 |  |
 | `02/215.lyx` | System Development and Secure Software Lifecycle Policy | D | v1.0 | #103, #104, #105 |
 
 ## Chapter 3 — Service Management
