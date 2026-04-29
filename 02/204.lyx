@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 2.6
+ 2.7
 \end_layout
 
 \begin_layout Subsection*
@@ -1967,19 +1967,6 @@ The Assistant IT Director shall ensure that information systems automatically te
  consistent with CJIS Security Policy v6.0:
  Section AC-12 (Session Termination) and Section IA-11 (Re-Authentication).
 \end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Exception
-\series default
-:
- Certificate-authenticated remote access sessions on devices located within a criminal justice conveyance are exempt from the fifteen (15)-minute inactivity timeout for officer safety.
-\end_layout
-
-\end_deeper
 
 \begin_layout Subsubsection*
 
