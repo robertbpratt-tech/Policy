@@ -176,13 +176,13 @@ name "pol:5.01"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.1
+ 1.2
 \end_layout
 
 \begin_layout Subsection*
@@ -407,9 +407,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -500,9 +498,7 @@ nolink "false"
 
 \series bold
 \lang english
-County Manager
-\series default
-:
+County Manager:
 \end_layout
 
 \begin_deeper
@@ -544,9 +540,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -561,9 +555,7 @@ Shall approve operational exceptions within the parameters and notification requ
 
 \series bold
 \lang english
-Human Resources (HR)
-\series default
-:
+Human Resources (HR):
 \end_layout
 
 \begin_deeper
@@ -592,9 +584,7 @@ Shall maintain sanctions documentation and personnel records in accordance with 
 
 \series bold
 \lang english
-District Attorney's Office
-\series default
-:
+District Attorney's Office:
 \end_layout
 
 \begin_deeper
@@ -617,9 +607,7 @@ Shall determine next steps in coordination with HR when emergency protective act
 
 \series bold
 \lang english
-Department Heads
-\series default
-:
+Department Heads:
 \end_layout
 
 \begin_deeper
@@ -676,9 +664,7 @@ nolink "false"
 
 \series bold
 \lang english
-All County Personnel and Contractors
-\series default
-:
+All County Personnel and Contractors:
 \end_layout
 
 \begin_deeper
@@ -2295,7 +2281,7 @@ nolink "false"
 
 \series bold
 \lang english
-Operational Exception Tier
+Operational Tier
 \series default
 :
  The Assistant IT Director may approve an operational exception without IT Director pre-approval when the exception meets all of the following criteria:
@@ -2372,7 +2358,7 @@ nolink "false"
 
 \series bold
 \lang english
-Operational Exception Controls
+Operational Tier Controls
 \series default
 :
  The Assistant IT Director shall document each approved operational exception in writing and notify the IT Director within one (1) business day of approval.
@@ -2652,7 +2638,7 @@ Sanctions Documentation
 
 \series bold
 \lang english
-Exception Records
+Recordkeeping
 \series default
 :
  Approved exception documentation,
