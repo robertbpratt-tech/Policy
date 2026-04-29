@@ -179,7 +179,7 @@ Effective:
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -1138,7 +1138,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Initiation of recovery activity before the Incident Commander has documented an eradication-complete determination under 
+Initiation of recovery activity before the Incident Commander has documented either an eradication-complete determination or a destructive false-positive recovery authorization under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1817,7 +1817,7 @@ Recovery is the phase of the cybersecurity incident response lifecycle in which 
 This policy governs two distinct functions under a single policy number.
  Sections 6.1 through 6.5 and Section 6.7 govern the operational recovery process —
  the phase-specific activities that occur during an active cybersecurity incident.
- Section 6.6 governs the data and system classification framework for recovery —
+ Section 6.2 governs the data and system classification framework for recovery —
  support infrastructure that is maintained during the Preparation phase and consumed during the Recovery phase.
  The 
 \series bold
@@ -2024,7 +2024,29 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The IC shall not initiate recovery activity until the IC has documented an eradication-complete determination under 
+For cases involving Destructive Eradication actions disposed as false positives,
+ a destructive false-positive recovery authorization issued by the IC under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ establishes the handoff state in lieu of an eradication-complete determination and associated verification documentation.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IC shall not initiate recovery activity until the IC has documented either an eradication-complete determination or a destructive false-positive recovery authorization under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2839,7 +2861,8 @@ nolink "false"
 
 
 \series default
- the CI record update obligation is deferred but not waived and runs on the same concurrent twenty-four (24) hour clock per 
+.
+ The CI record update obligation is deferred but not waived and runs on the same concurrent twenty-four (24) hour clock per 
 \series bold
 Policy 
 \begin_inset CommandInset ref
