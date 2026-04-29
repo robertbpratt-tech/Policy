@@ -82,7 +82,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/212.lyx` | Media Protection and Sanitization Policy | T+ | v2.4 | #449 |
 | `02/213.lyx` | Physical Security and Environmental Controls Policy | T | v2.3 |  |
 | `02/214.lyx` | Mobile Device and Remote Access Policy | T | v2.0 |  |
-| `02/215.lyx` | System Development and Secure Software Lifecycle Policy | D | v1.0 | #103, #104, #105 |
+| `02/215.lyx` | System Development and Secure Software Lifecycle Policy | T | v2.0 |  |
 
 ## Chapter 3 — Service Management
 
