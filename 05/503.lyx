@@ -174,13 +174,13 @@ name "pol:5.03"
 
 \lang english
 Effective:
- July 01,
+ April 30,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -488,27 +488,6 @@ nolink "false"
  (Communication Protocols and Partner Integration) when reporting is required.
 \end_layout
 
-\begin_layout Itemize
-
-\lang english
-Shall authorize exceptions to this policy in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Delegation of Authority and Decision Rights).
-\end_layout
-
 \end_deeper
 \begin_layout Itemize
 
@@ -523,19 +502,49 @@ Assistant IT Director
 \begin_layout Itemize
 
 \lang english
-Shall develop the Corrective Action Plan for each deficiency routed to this policy within the timeframes defined in Section 6.2.
+Shall coordinate development of each Corrective Action Plan within the timeframes defined in Section 6.2.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall maintain all open Corrective Action Plans in the System of Engagement (Redmine).
+Shall review the technical content drafted by the responsible domain administrator for completeness.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall review all open Corrective Action Plans no less than monthly and shall update milestone status as material progress occurs.
+Shall add the Risk Register linkage to each Corrective Action Plan.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall confirm the CJIS impact indicator for each Corrective Action Plan.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall submit each completed Corrective Action Plan to the IT Director for approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain all open Corrective Action Plans in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall review all open Corrective Action Plans no less than monthly.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall update milestone status in accordance with Section 6.3.
 \end_layout
 
 \begin_layout Itemize
@@ -556,7 +565,9 @@ nolink "false"
 
 
 \series default
- upon completion of remediation activities.
+ (Internal Audits,
+ Self-Assessment,
+ and Control Testing) upon completion of remediation activities.
 \end_layout
 
 \begin_layout Itemize
@@ -577,7 +588,7 @@ nolink "false"
 
 
 \series default
-.
+ (Risk Management Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -604,7 +615,7 @@ nolink "false"
 
 
 \series default
- and 
+ (Service Level Management and Metrics Reporting) and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -627,6 +638,87 @@ nolink "false"
 
 \series bold
 \lang english
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall draft the technical content of each Corrective Action Plan —
+ root cause analysis,
+ remediation actions,
+ and milestone proposals —
+ for deficiencies in the systems administration operational domain.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide each draft to the Assistant IT Director for review and integration in accordance with Section 6.2.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall draft the technical content of each Corrective Action Plan —
+ root cause analysis,
+ remediation actions,
+ and milestone proposals —
+ for deficiencies in the network operational domain.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide each draft to the Assistant IT Director for review and integration in accordance with Section 6.2.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Support Specialist
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall draft the technical content of each Corrective Action Plan —
+ root cause analysis,
+ remediation actions,
+ and milestone proposals —
+ for deficiencies in the end-user support operational domain.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall provide each draft to the Assistant IT Director for review and integration in accordance with Section 6.2.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
 All Information Operations Personnel
 \series default
 :
@@ -642,7 +734,7 @@ Shall execute remediation tasks assigned under an approved Corrective Action Pla
 \begin_layout Itemize
 
 \lang english
-Shall document remediation actions in the System of Engagement (Redmine) as they are completed.
+Shall document remediation actions in the System of Engagement as they are completed.
 \end_layout
 
 \end_deeper
@@ -656,9 +748,25 @@ Shall document remediation actions in the System of Engagement (Redmine) as they
 \begin_layout Standard
 
 \lang english
-Compliance with this policy is mandatory for all Information Operations personnel involved in deficiency remediation,
- compliance monitoring,
- or Corrective Action Plan management.
+Adherence to this policy is mandatory for all personnel within scope,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Policy Implementation,
+ Enforcement,
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -701,7 +809,7 @@ nolink "false"
 
 
 \series default
-.
+ (Annual Policy Review and Maturity Scoring).
 \end_layout
 
 \begin_layout Itemize
@@ -711,9 +819,7 @@ nolink "false"
 Enforcement
 \series default
 :
- Failure to develop required Corrective Action Plans within the timelines defined in Section 6.2,
- failure to maintain milestone tracking,
- or failure to conduct required compliance monitoring reviews shall be treated as non-compliance and may result in corrective action in accordance with 
+ Violations of this policy shall be addressed through the enforcement framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -738,12 +844,12 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with 
+ Exceptions to this policy shall be governed by the exception management framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:5.01"
 plural "false"
 caps "false"
 noprefix "false"
@@ -755,8 +861,6 @@ nolink "false"
 \series default
 .
  Oral exceptions are not valid.
- No exception shall be granted on an open-ended basis;
- each exception shall specify a defined remediation timeline.
 \end_layout
 
 \begin_layout Subsection*
@@ -781,7 +885,7 @@ Cited References
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:1.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -790,7 +894,9 @@ nolink "false"
 \end_inset
 
 :
- Delegation of Authority and Decision Rights
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
 \end_layout
 
 \begin_layout Itemize
@@ -962,6 +1068,12 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+NRS 239 (Public Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NRS 239.125 (Local Government Records Management Program)
 \end_layout
 
@@ -974,15 +1086,20 @@ NRS 603A.220 (Disclosure of Breach of Security of System Data)
 \begin_layout Itemize
 
 \lang english
-CJIS Security Policy v6.0:
- CA-5 (Plan of Action and Milestones)
+NAC 239.165 (Destruction of Confidential Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071256 (Quality Assurance Review Audits and Reports)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- CA-7 (Continuous Monitoring)
+ CA-5 (Plan of Action and Milestones)
 \end_layout
 
 \begin_layout Itemize
@@ -995,23 +1112,41 @@ CJIS Security Policy v6.0:
 \begin_layout Itemize
 
 \lang english
-NIST CSF 2.0:
- ID.IM-01 (Improvements Are Identified from Evaluations)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST CSF 2.0:
- ID.IM-03 (Improvements Are Identified from Execution of Operational Processes)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 NIST SP 800-53 Rev.
  5:
  CA-5 (Plan of Action and Milestones)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-7 (Continuous Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-01 (Improvements are identified from evaluations)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-03 (Improvements are identified from execution of operational processes,
+ procedures,
+ and activities)
 \end_layout
 
 \begin_layout Itemize
@@ -1028,15 +1163,6 @@ NIST SP 800-53 Rev.
 NIST SP 800-53 Rev.
  5:
  PM-4 (Plan of Action and Milestones Process)
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-\lang english
-Framework Alignment
-\series default
-:
 \end_layout
 
 \begin_layout Itemize
@@ -1076,7 +1202,7 @@ ITIL v4:
 \begin_layout Standard
 
 \lang english
-This policy governs two functions.
+This policy governs two (2) functions.
  First,
  it defines the lifecycle for Corrective Action Plans (CAPs) —
  the documented remediation instruments used to correct deficiencies,
@@ -1130,7 +1256,7 @@ nolink "false"
 
 
 \series default
- Section 6.5 and routed to this policy for corrective action plan development.
+ and routed to this policy for corrective action plan development.
 \end_layout
 
 \begin_layout Itemize
@@ -1155,7 +1281,7 @@ nolink "false"
 
 
 \series default
- Section 6.3.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1294,13 +1420,13 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Each CAP shall be documented in the System of Engagement (Redmine) and shall include,
+Each CAP shall be documented in the System of Engagement and shall include,
  at minimum,
  the following content:
 \end_layout
@@ -1348,11 +1474,30 @@ Remediation Actions
 Milestones
 \series default
 :
- Each CAP shall include one or more defined milestones with target completion dates.
- Milestones shall represent measurable interim checkpoints —
- not a single end-state target.
- The milestone structure shall be sufficient to enable progress tracking and early detection of delays.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Each Corrective Action Plan shall include one or more defined milestones with target completion dates.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Milestones shall represent measurable interim checkpoints,
+ not a single end-state target.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall structure milestones to support progress tracking and early detection of delays.
+\end_layout
+
+\end_deeper
+
 
 \begin_layout Itemize
 
@@ -1430,38 +1575,7 @@ CJIS Impact Indicator
 \series default
 :
  A determination of whether the deficiency affects a control implementing a CJIS Security Policy requirement.
- When the indicator is affirmative,
- the IT Director shall evaluate whether the deficiency triggers external or interagency reporting requirements and shall ensure that required notifications are executed in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ The conditional directives that apply when the indicator is affirmative are established in Section 3 (IT Director).
 \end_layout
 
 \begin_layout Standard
@@ -1483,7 +1597,7 @@ The IT Director shall review and approve each CAP prior to execution.
 \begin_layout Standard
 
 \lang english
-The Assistant IT Director shall maintain all open CAPs in the System of Engagement (Redmine).
+The Assistant IT Director shall maintain all open CAPs in the System of Engagement.
  The Assistant IT Director shall review all open CAPs no less than monthly and shall update milestone status upon the completion of any milestone,
  upon discovery of a delay,
  or no less than monthly.
@@ -1524,7 +1638,7 @@ nolink "false"
 
 
 \series default
- Section 6.4.
+.
  Open CAPs shall be available as an input to the annual policy review and maturity scoring process under 
 \series bold
 Policy 
@@ -1641,16 +1755,16 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-A CAP shall not be closed solely on the basis of task completion.
- Closure requires documented verification that the remediation achieved the stated control,
+The Assistant IT Director shall close a CAP only upon documented verification that the remediation achieved the stated control,
  process,
  or compliance outcome.
+ Task completion alone is not sufficient for closure.
 \end_layout
 
 \begin_layout Standard
@@ -1801,7 +1915,22 @@ Whether incidents meeting the CJIS IR-6 reporting criteria were reported within 
 \begin_layout Itemize
 
 \lang english
-Whether breach notifications required by NRS 603A.220 were issued within the timeframes mandated by that statute.
+Whether breach notifications required by NRS 603A.220 were issued within the timelines established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1898,7 +2027,7 @@ nolink "false"
 \series default
  or as a standalone review.
  Regardless of the mechanism,
- the Assistant IT Director shall document the results and retain them in the System of Engagement (Redmine).
+ the Assistant IT Director shall document the results and retain them in the System of Engagement.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1915,32 +2044,10 @@ The Assistant IT Director shall retain all CAP records —
  milestone tracking updates,
  verification evidence,
  and closure approvals —
- in the System of Engagement (Redmine) in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.11"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Data Governance and Classification Policy) and the applicable Nevada Local Government Records Retention Schedule under NRS 239.125.
- Where multiple retention requirements apply,
- the longest applicable period shall govern.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-The Assistant IT Director shall retain compliance monitoring review records under the same framework.
- All records generated under this policy are subject to NRS 239 and may be subject to public disclosure unless protected by a specific statutory exemption.
- Classification and handling shall follow 
+ in the System of Engagement.
+ Compliance monitoring review records produced under Section 6.5 shall be retained under the same framework.
+ Retention periods shall be applied in accordance with NRS 239.125 and the Nevada Local Government Records Retention Schedule.
+ Records produced under this policy shall be classified in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1956,6 +2063,81 @@ nolink "false"
 
 \series default
 .
+ CAP records may be subject to disclosure under NRS 239 unless protected by a specific statutory exemption.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Quality Assurance Review Audits and Reports
+\series default
+:
+ The Assistant IT Director shall retain CAP records and compliance monitoring review records produced under this policy for a minimum of three (3) calendar years from the end of the calendar year to which they pertain,
+ in accordance with LRDA 20071256 (Quality Assurance Review Audits and Reports).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS-Affecting Records
+\series default
+:
+ For CAP records and compliance monitoring review records that document the remediation or assessment of controls implementing CJIS Security Policy requirements,
+ the Assistant IT Director shall apply the greater of the CJIS minimum retention period or the applicable Nevada retention requirement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Destruction Standards
+\series default
+:
+ The Assistant IT Director shall ensure destruction of confidential CAP records and compliance monitoring review records complies with NAC 239.165.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Legal Holds
+\series default
+:
+ The Assistant IT Director shall suspend retention and disposition actions for CAP records and compliance monitoring review records during litigation holds,
+ public records preservation requirements,
+ ongoing audits,
+ CJIS reviews,
+ external investigations,
+ or other legal hold events,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Multiple Schedules
+\series default
+:
+ Where multiple retention requirements apply to a single record,
+ the Assistant IT Director shall apply the longest applicable period.
 \end_layout
 
 \end_body
