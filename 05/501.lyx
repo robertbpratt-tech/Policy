@@ -176,13 +176,13 @@ name "pol:5.01"
 
 \lang english
 Effective:
- April 29,
+ April 30,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.2
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -664,7 +664,7 @@ nolink "false"
 
 \series bold
 \lang english
-All County Personnel and Contractors:
+All County Personnel:
 \end_layout
 
 \begin_deeper
@@ -1150,6 +1150,45 @@ NAC 239.155 (Adoption of Records Retention Schedule)
 \begin_layout Itemize
 
 \lang english
+LRDA 20070321 (Master Personnel File)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071300 (Vendor Performance Case Files)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20121869 (Administrative Hearing Files)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section AC-7 (Unsuccessful Logon Attempts)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section IR-6 (Incident Reporting)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ Section PS-3 (Personnel Screening)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 CJIS Security Policy v6.0:
  Section PS-8 (Personnel Sanctions)
 \end_layout
@@ -1614,7 +1653,7 @@ nolink "false"
 
 \lang english
 The IT Director maintains independent authority over the County's information technology infrastructure.
- This authority includes the right to take immediate system-level action to protect County assets,
+ This authority extends to taking immediate system-level action to protect County assets,
  reduce liability,
  or manage operational and compliance risk.
  This authority exists regardless of the position,
@@ -1997,13 +2036,18 @@ Emergency Protective Action
 \series default
 :
  Where the IT Director identifies an immediate threat to County assets,
- evidence of a bad act,
+ evidence indicating unauthorized activity,
+ misuse,
+ policy violation,
+ or suspected criminal activity,
  or conditions requiring immediate protective action,
  the IT Director shall take immediate system-level action and shall notify the County Manager,
  HR,
- and the District Attorney's Office immediately,
- providing the reasoning for the action.
- The appropriate authority shall determine next steps.
+ and the District Attorney's Office within one (1) hour of the action,
+ providing the basis for the action.
+ The County Manager,
+ in coordination with Human Resources and the District Attorney's Office,
+ shall determine next steps.
  The IT Director shall document the emergency protective action and the notifications provided in the Department's system of record within twenty-four (24) hours,
  consistent with the documentation requirement in Section 6.3.
 \end_layout
@@ -2201,7 +2245,8 @@ CJIS Notification Requirement
  when a formal sanctions process is initiated against any individual with access to Criminal Justice Information (CJI),
  the IT Director (as LASO) shall notify the appropriate Information Security Officer (ISO),
  HR representative,
- and System or Network Administrator within twenty-four (24) hours.
+ System or Network Administrator,
+ and personnel with account management responsibilities within twenty-four (24) hours.
  The notification shall identify the individual sanctioned and the reason for the sanction,
  unless County legal counsel determines a different timing is legally required.
 \end_layout
@@ -2245,9 +2290,12 @@ Written Documentation
  All exceptions shall be documented in writing prior to implementation.
  The documentation shall include the specific policy requirement from which the exception is sought,
  the business justification,
- the proposed duration,
- the compensating controls (if any),
+ the duration of the exception,
+ the remediation timeline,
+ the compensating measures in effect during the exception period or written justification for why none are needed,
  and the residual risk accepted.
+ Exceptions shall not be granted on an open-ended basis.
+ No exception shall place County systems or Criminal Justice Information out of compliance with applicable CJIS Security Policy obligations.
 \end_layout
 
 \begin_layout Itemize
@@ -2372,6 +2420,46 @@ Operational Tier Controls
 
 \series bold
 \lang english
+Oversight Mechanism Integrity
+\series default
+:
+ Where a policy establishes an oversight,
+ audit,
+ monitoring,
+ assurance,
+ or review mechanism that applies to other policies in the manual,
+ that mechanism's application to its targets shall not be waived by exception.
+ Operational details of such a mechanism —
+ including cadence,
+ scope,
+ and methodology —
+ remain subject to the standard exception framework established in this section.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJI Exceptions
+\series default
+:
+ Exceptions involving the handling,
+ storage,
+ transmission,
+ or access to Criminal Justice Information shall be approved by the IT Director (as LASO) under the standard exception process established in this section.
+ No separate CJIS Systems Officer (CSO) concurrence is required for the exception itself.
+ CSO concurrence is operationally required only where the CJIS Security Policy or a written CJIS user agreement to which the County is party explicitly requires it —
+ for example,
+ CJIS IR-6 Part (b) external incident notification,
+ CJIS PS-3 adjudication of CJI access,
+ and CJIS AC-7 authorization for automatic account unlock.
+ All approvals shall be retained for audit.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
 Policy-Specific Requirements
 \series default
 :
@@ -2395,24 +2483,6 @@ nolink "false"
 ) are subject to the approval requirements in Section 4,
  which require County Manager approval;
  the IT Director shall not approve exceptions to this policy acting alone.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-CJI Exceptions
-\series default
-:
- Exceptions to any policy requirement that governs the handling,
- storage,
- transmission,
- or access to CJI shall require explicit written approval of the IT Director (as LASO) and,
- where applicable,
- written approval by the CJIS Systems Agency (CSA),
- CJIS Systems Officer (CSO),
- or other governing authority required by applicable CJIS agreements.
- All such approvals shall be retained for audit.
 \end_layout
 
 \begin_layout Itemize
@@ -2460,11 +2530,9 @@ nolink "false"
 
 \series bold
 \lang english
-Duration and Review
+Active Exception Review
 \series default
 :
- Exceptions shall specify a duration.
- Open-ended exceptions are prohibited.
  The IT Director shall review all active exceptions during each annual policy review cycle and shall close,
  renew,
  or escalate each exception based on current risk conditions.
@@ -2611,7 +2679,7 @@ nolink "false"
 
 \series bold
 \lang english
-Corrective Action Records
+IT-Administrative Enforcement Records
 \series default
 :
  Documentation of IT-administrative enforcement actions,
@@ -2619,7 +2687,10 @@ Corrective Action Records
  the action taken,
  notification records,
  and any remediation completed,
- shall be retained for a minimum period consistent with the applicable retention schedule series for personnel security and disciplinary records.
+ shall be retained under the record series applicable to the affected population class:
+ LRDA 20070321 (Master Personnel File) for County employees;
+ LRDA 20121869 (Administrative Hearing Files) for appointed and elected officials;
+ and LRDA 20071300 (Vendor Performance Case Files) for contractors and vendors.
 \end_layout
 
 \begin_layout Itemize
@@ -2631,7 +2702,7 @@ Sanctions Documentation
 :
  Records of formal sanctions referrals,
  including CJIS PS-8 notification records,
- shall be retained in coordination with HR and in accordance with the applicable retention schedule.
+ shall be retained by Human Resources in accordance with LRDA 20070321 (Master Personnel File).
 \end_layout
 
 \begin_layout Itemize
@@ -2653,23 +2724,8 @@ Recordkeeping
 Acknowledgment Records
 \series default
 :
- Policy acknowledgment records shall be retained for a minimum of seven (7) years following separation of employment or contract termination,
- consistent with the retention requirements established in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and the applicable CJIS requirements.
+ Policy acknowledgment records shall be retained in accordance with the applicable Nevada Local Government Records Retention Schedule series,
+ as specified in the originating policy.
 \end_layout
 
 \begin_layout Itemize
