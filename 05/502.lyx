@@ -176,13 +176,13 @@ name "pol:5.02"
 
 \lang english
 Effective:
- July 01,
+ April 29,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -423,9 +423,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -462,7 +460,7 @@ Shall ensure that audit activities maintain sufficient objectivity as defined in
 \begin_layout Itemize
 
 \lang english
-Shall evaluate the need for external assessment services when internal objectivity cannot be achieved for Criminal Justice Information Services (CJIS) relevant controls,
+Shall obtain external assessment services or document County Manager-approved compensating oversight when no internal reviewer satisfying the independence test in Section 6.4 can be assigned to controls implementing Criminal Justice Information Services (CJIS) Security Policy requirements,
  consistent with CJIS Security Policy v6.0:
  CA-2(1) (Independent Assessors) and CA-7(1) (Independent Assessment).
 \end_layout
@@ -472,9 +470,7 @@ Shall evaluate the need for external assessment services when internal objectivi
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -487,15 +483,19 @@ Shall develop the draft Annual Audit Plan for IT Director approval.
 \begin_layout Itemize
 
 \lang english
-Shall execute or coordinate the execution of all internal audits,
- self-assessments,
- and control tests scheduled under this policy.
+Shall execute or coordinate the execution of all internal audits and control tests scheduled under this policy.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall maintain audit records and evidence in the System of Engagement (Redmine).
+Shall coordinate the quarterly self-assessment cycle defined in Section 6.2 and consolidate results from the domain administrators.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall maintain audit records and evidence in the System of Engagement.
 \end_layout
 
 \begin_layout Itemize
@@ -520,12 +520,6 @@ Shall classify findings and route deficiencies in accordance with Section 6.5.
 \begin_layout Itemize
 
 \lang english
-Shall conduct or coordinate the quarterly self-assessments defined in Section 6.2.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 Shall maintain the Control Testing Register defined in Section 6.3.
 \end_layout
 
@@ -534,9 +528,102 @@ Shall maintain the Control Testing Register defined in Section 6.3.
 
 \series bold
 \lang english
-All Information Operations Personnel
+Systems Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall conduct self-assessments for controls within the systems administration operational area as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework),
+ and document results in the System of Engagement.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall conduct self-assessments for controls within the network administration operational area as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and document results in the System of Engagement.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Support Specialist:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall conduct self-assessments for controls within the end-user support operational area as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ and document results in the System of Engagement.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -546,13 +633,7 @@ All Information Operations Personnel
 Shall cooperate fully with internal audit and control testing activities,
  including providing access to systems,
  records,
- and documentation within their operational responsibility.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall conduct self-assessments of controls within their assigned operational areas when directed by the Assistant IT Director.
+ and documentation within their operational scope.
 \end_layout
 
 \begin_layout Itemize
@@ -568,9 +649,7 @@ Shall not obstruct,
 
 \series bold
 \lang english
-Department Heads (Non-IT County Departments)
-\series default
-:
+Department Heads (Non-IT County Departments):
 \end_layout
 
 \begin_deeper
@@ -622,10 +701,7 @@ nolink "false"
 Assessment
 \series default
 :
- Compliance with audit planning,
- execution,
- documentation,
- and reporting obligations shall be assessed through the annual policy review and maturity scoring process defined in 
+ Compliance with this policy shall be assessed through the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -650,10 +726,7 @@ nolink "false"
 Enforcement
 \series default
 :
- Failure to execute scheduled audits,
- failure to document audit findings,
- failure to route deficiencies as required,
- or obstruction of audit activities shall be treated as non-compliance and may result in corrective action in accordance with 
+ Violations of this policy shall be addressed through the enforcement framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -678,27 +751,7 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented in writing with a business justification,
- identification of residual risk,
- and any compensating measures.
- Exceptions affecting audit scope minimums,
- CJIS testing cadences,
- or the objectivity safeguards established in Section 6.4 shall be approved by the County Manager in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Delegation of Authority and Decision Rights) and the exception management framework established in 
+ Exceptions to this policy shall be governed by the exception management framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -714,39 +767,7 @@ nolink "false"
 
 \series default
 .
- All other exceptions shall be approved by the IT Director in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- No exception shall be granted on an open-ended basis;
- each exception shall specify a defined remediation timeline.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -789,7 +810,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:1.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -798,7 +819,9 @@ nolink "false"
 \end_inset
 
 :
- Delegation of Authority and Decision Rights
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
 \end_layout
 
 \begin_layout Itemize
@@ -853,6 +876,42 @@ nolink "false"
 
 :
  Knowledge Management Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Identification and Reporting Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Communication Protocols and Partner Integration
 \end_layout
 
 \begin_layout Itemize
@@ -917,6 +976,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Vendor Compliance and Third-Party Assurance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:5.07"
 plural "false"
 caps "false"
@@ -932,7 +1009,25 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+NRS 239 (Public Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NAC 239.165 (Destruction of Confidential Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071256 (Quality Assurance Review Audits and Reports)
 \end_layout
 
 \begin_layout Itemize
@@ -946,9 +1041,30 @@ CJIS Security Policy v6.0:
 
 \lang english
 CJIS Security Policy v6.0:
- CA-1 (Assessment,
- Authorization,
- and Monitoring Policy and Procedures)
+ CA-2(1) (Independent Assessors)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-7(1) (Independent Assessment)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang english
+Framework Alignment
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-1 (Policy and Procedures)
 \end_layout
 
 \begin_layout Itemize
@@ -976,7 +1092,8 @@ NIST CSF 2.0:
 
 \lang english
 NIST CSF 2.0:
- ID.IM-02 (Improvements are identified from security tests and exercises)
+ ID.IM-02 (Improvements are identified from security tests and exercises,
+ including those done in coordination with suppliers and relevant third parties)
 \end_layout
 
 \begin_layout Itemize
@@ -993,15 +1110,6 @@ NIST SP 800-53 Rev.
 NIST SP 800-53 Rev.
  5:
  CA-7 (Continuous Monitoring)
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-\lang english
-Framework Alignment
-\series default
-:
 \end_layout
 
 \begin_layout Itemize
@@ -1050,7 +1158,7 @@ The Annual Audit Plan shall identify,
  self-assessment,
  or control test);
  the planned quarter of execution;
- and the personnel or role responsible for conducting each assessment.
+ and the personnel or role assigned to conduct each assessment.
 \end_layout
 
 \begin_layout Standard
@@ -1103,8 +1211,25 @@ Every policy in the ECIO Policy Manual shall be assessed through at least one of
  self-assessment,
  or control test —
  within each annual cycle.
- Policies governing controls subject to CJIS Security Policy obligations shall be assessed no less than annually through internal audit or control testing;
- self-assessment alone does not satisfy the CJIS assessment requirement.
+ Policies governing controls subject to CJIS Security Policy obligations,
+ or controls associated with risks rated High or Critical in the Risk Register maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ shall be assessed no less than annually through internal audit or control testing;
+ self-assessment alone does not satisfy this requirement.
 \end_layout
 
 \begin_layout Standard
@@ -1155,10 +1280,45 @@ Self-assessments are process-owner evaluations that determine whether the contro
 \begin_layout Standard
 
 \lang english
-The Assistant IT Director shall conduct or coordinate self-assessments on a quarterly cadence.
+The Assistant IT Director shall coordinate the quarterly self-assessment cycle.
+ Self-assessment execution shall be assigned to the domain administrators (Systems Administrator,
+ Network Administrator,
+ and Support Specialist) for controls within their respective operational areas as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  Each quarterly self-assessment cycle shall cover the policies and controls designated in the Annual Audit Plan for that quarter.
  Where the Annual Audit Plan designates a policy for self-assessment rather than internal audit,
  the quarterly self-assessment constitutes the annual assessment obligation for that policy.
+ Self-assessment shall not serve as the sole annual assessment mechanism for a policy associated with an open Corrective Action Plan under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ or designated by the IT Director as requiring objective assurance.
+ Restrictions on self-assessment as the sole annual assessment mechanism for CJIS-governed and High or Critical risk-rated controls are established in Section 6.1.
 \end_layout
 
 \begin_layout Standard
@@ -1174,7 +1334,7 @@ Each self-assessment shall evaluate,
 \begin_layout Standard
 
 \lang english
-The Assistant IT Director shall document self-assessment results in a work order in the System of Engagement in accordance with 
+The assigned domain administrator shall document self-assessment results in a work order in the System of Engagement in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1203,7 +1363,8 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Where a self-assessment reveals a condition that requires deeper evaluation,
+The Assistant IT Director shall consolidate self-assessment results across the cycle.
+ Where a self-assessment reveals a condition that requires deeper evaluation,
  the Assistant IT Director shall escalate the finding to the IT Director with a recommendation to initiate an unplanned internal audit or control test of the affected area.
 \end_layout
 
@@ -1228,6 +1389,23 @@ The Assistant IT Director shall maintain a Control Testing Register in the Syste
  the governing policy,
  the testing method,
  the testing cadence,
+ the risk rating maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ the CJIS applicability of the control,
  and the date and result of the most recent test.
  The register is a living instrument;
  the Assistant IT Director shall update it as policies are added,
@@ -1253,12 +1431,29 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The Assistant IT Director shall select testing methods appropriate to the control being tested.
+The Assistant IT Director shall select testing methods based on the control type,
+ the control objective,
+ and the risk rating maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
  Testing methods shall include one or more of the following:
  examination of documentation,
  records,
  or configuration artifacts;
- interview of personnel responsible for the control's operation;
+ interview of personnel who operate the control;
  and direct testing through observation,
  execution,
  or simulation of the control mechanism.
@@ -1270,10 +1465,16 @@ The Assistant IT Director shall select testing methods appropriate to the contro
 Each control test shall document:
  the control tested and the governing policy reference,
  the testing method used,
+ the population tested,
+ the sample size and sampling method where sampling was employed,
+ the evidence identifiers,
+ the assessor name or role,
+ the date the test was conducted,
  the expected outcome,
  the actual outcome,
  the pass or fail determination,
- and any anomalies or observations noted during the test.
+ any anomalies or observations noted during the test,
+ and any systems excluded from the test scope or limitations affecting the test.
 \end_layout
 
 \begin_layout Standard
@@ -1291,7 +1492,7 @@ Controls implementing CJIS Security Policy requirements shall be tested no less 
 \begin_layout Itemize
 
 \lang english
-Controls identified as high-risk under 
+Controls associated with risks rated High or Critical in the Risk Register maintained under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1370,13 +1571,14 @@ Scoping
 Evidence Collection
 \series default
 :
- The auditor shall gather sufficient evidence to support a determination of control effectiveness.
+ The auditor shall gather objective evidence to support a determination of control effectiveness.
  Evidence may include system configurations,
  log records,
  work order histories,
  training records,
  policy acknowledgment records,
  and direct observation of operational procedures.
+ Verbal attestation alone shall not constitute objective evidence.
 \end_layout
 
 \begin_layout Itemize
@@ -1410,10 +1612,10 @@ Reporting
 
 \lang english
 Objectivity is a core requirement of the audit function.
- Personnel shall not serve as the primary auditor for controls they materially implement,
- administer,
- or routinely operate.
- Where staffing constraints make full independence impractical,
+ Personnel shall not serve as the primary auditor for any control for which they hold administrative access,
+ configuration authority,
+ or operational execution duties.
+ When the Information Operations Department lacks an internal reviewer satisfying the independence test established in this Section,
  the IT Director shall document the constraint and ensure that audit results receive independent review.
  For the purposes of this policy,
  independent review means review by a person who did not participate in the implementation,
@@ -1424,8 +1626,10 @@ Objectivity is a core requirement of the audit function.
 \begin_layout Standard
 
 \lang english
-The IT Director shall evaluate the need for external assessment services when internal objectivity cannot be achieved for CJIS-relevant controls,
- consistent with CJIS Security Policy CA-2(1) and CA-7(1).
+For controls implementing CJIS Security Policy requirements,
+ when no internal reviewer satisfying the independence test established in this Section can be assigned,
+ the IT Director shall obtain assessment services from qualified external assessors or document compensating oversight approved by the County Manager prior to accepting the assessment as complete.
+ This requirement is consistent with CJIS Security Policy CA-2(1) and CA-7(1).
 \end_layout
 
 \begin_layout Standard
@@ -1522,9 +1726,13 @@ nolink "false"
 Observation
 \series default
 :
- A minor gap,
+ A control deviation,
  inconsistency,
- or area for improvement that does not constitute a material failure of the control's protective or operational function.
+ or area for improvement that does not violate a statutory or regulatory obligation,
+ does not violate a CJIS Security Policy requirement,
+ does not permit unauthorized access to County systems or data,
+ does not compromise audit evidence integrity,
+ and does not constitute a failure of the control's primary protective or operational function.
  The Assistant IT Director shall document and track observations.
  The Assistant IT Director shall reclassify observations that recur across two (2) or more consecutive assessment cycles as deficiencies.
 \end_layout
@@ -1539,9 +1747,12 @@ Deficiency
  The control is not implemented,
  is not operating as intended,
  or is not producing the desired outcome,
- and the gap creates material risk to the security,
- compliance,
- or operational posture of the Department.
+ and one or more of the following conditions is present:
+ the gap violates a statutory or regulatory obligation,
+ violates a CJIS Security Policy requirement,
+ permits unauthorized access to County systems or data,
+ compromises audit evidence integrity,
+ or constitutes a failure of the control's primary protective or operational function.
  The Assistant IT Director shall route deficiencies to 
 \series bold
 Policy 
@@ -1557,14 +1768,50 @@ nolink "false"
 
 
 \series default
- for corrective action plan development within ten (10) business days of classification.
+ for corrective action plan development no later than one (1) business day after classification.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
 When a deficiency affects a control implementing a CJIS Security Policy requirement,
- the IT Director shall evaluate whether the deficiency constitutes a reportable condition under the applicable CJIS notification obligations and shall act accordingly.
+ the IT Director shall determine whether the deficiency constitutes a reportable condition under the applicable CJIS notification obligations.
+ The IT Director shall document the determination,
+ the basis for the determination,
+ the required notification recipients,
+ the notification deadline,
+ and the completion evidence.
+ Reportable conditions shall be routed through 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Identification and Reporting Procedures) and 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Communication Protocols and Partner Integration) as applicable.
 \end_layout
 
 \begin_layout Standard
@@ -1618,7 +1865,7 @@ The Assistant IT Director shall prepare a consolidated Annual Audit Summary Repo
  the policies and controls with open deficiencies;
  trend data comparing current-year results to prior-year results;
  and recommendations for the next annual cycle.
- The Assistant IT Director shall submit the Annual Audit Summary Report to the IT Director and shall make it available as an input to the annual policy review and maturity scoring process under 
+ The Assistant IT Director shall submit the Annual Audit Summary Report to the IT Director no later than thirty (30) calendar days after the conclusion of each fiscal year and shall make it available as an input to the annual policy review and maturity scoring process under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1649,7 +1896,9 @@ The Assistant IT Director shall retain audit records,
  self-assessment documentation,
  control test results,
  evidence artifacts,
- and audit summary reports in the System of Engagement in accordance with 
+ and audit summary reports in the System of Engagement.
+ Retention periods shall be applied in accordance with NRS 239.125 and the Nevada Local Government Records Retention Schedule.
+ Audit records shall be classified in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1664,10 +1913,85 @@ nolink "false"
 
 
 \series default
- and the applicable Nevada Local Government Records Retention Schedule.
- Where multiple retention requirements apply,
- the longest applicable period shall govern.
- Audit records shall be retained for a minimum of three (3) years from the date of the assessment where no longer retention period is specified by an applicable schedule.
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Quality Assurance Review Audits and Reports
+\series default
+:
+ The Assistant IT Director shall retain audit records,
+ self-assessment documentation,
+ control test results,
+ evidence artifacts,
+ and audit summary reports produced under this policy for a minimum of three (3) calendar years from the end of the calendar year to which they pertain,
+ in accordance with LRDA 20071256 (Quality Assurance Review Audits and Reports).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS Audit Records
+\series default
+:
+ For audit records produced under this policy that document the assessment of controls implementing CJIS Security Policy requirements,
+ the Assistant IT Director shall apply the greater of the CJIS minimum retention period or the applicable Nevada retention requirement.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Destruction Standards
+\series default
+:
+ The Assistant IT Director shall ensure destruction of confidential audit records complies with NAC 239.165.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Legal Holds
+\series default
+:
+ The Assistant IT Director shall suspend retention and disposition actions for audit records during litigation holds,
+ public records preservation requirements,
+ ongoing audits,
+ CJIS reviews,
+ external investigations,
+ or other legal hold events,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Multiple Schedules
+\series default
+:
+ Where multiple retention requirements apply to a single record,
+ the Assistant IT Director shall apply the longest applicable period.
 \end_layout
 
 \end_body
