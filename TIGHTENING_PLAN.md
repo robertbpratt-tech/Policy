@@ -328,7 +328,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 |---|---|---|---|---|---|
 | 5.01 | Implementation, Enforcement, Legal | T | v2.0, April 30 | 0 | — |
 | 5.02 | Internal Audits | T | v2.0, April 29 | 0 | — |
-| 5.03 | Compliance Monitoring | D | — | 2 | #187, #279 |
+| 5.03 | Compliance Monitoring | T | v2.0, April 30 | 0 | — |
 | 5.04 | Performance Metrics | D | — | 1 | #280 |
 | 5.05 | Security Control Assessment | D | — | 1 | #188 |
 | 5.06 | Vendor Compliance | D | — | 2 | #281, #331 |
@@ -564,7 +564,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 |---|---|---|---|
 | 40 | 5.02 (Internal Audits) | ✅ Closed v2.0 (`3da57572`, April 29) | Produces audit findings that feed 5.03 CAPs |
 | 41 | 5.01 (Implementation, Enforcement, Legal — re-tightening) | ✅ Closed v2.0 (`f453669d`, April 30) | OMI clause + exception discipline + CJI explicit-negative + LRDA fixes; pulled forward per IT Director option (a) so OMI propagates transitively to 5.03–5.07 |
-| 42 | 5.03 (Compliance Monitoring) | 2 | CAP lifecycle; consumes 5.02 findings |
+| 42 | 5.03 (Compliance Monitoring) | ✅ Closed v2.0 (`2373f03d`, April 30) | CAP lifecycle; #279 split-architecture applied; OMI inheritance transitive through 5.01 §6.6 by-reference |
 | 43 | 5.04 (Performance Metrics) | 1 | KPI data feeds 5.07 |
 | 44 | 5.05 (Security Control Assessment) | 1 | Control assessment results feed 5.07 |
 | 45 | 5.06 (Vendor Compliance) | 1 | Consumes 1.13 (tightened in Phase 5A); feeds 5.07 |
@@ -618,6 +618,42 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 **Standing decline patterns added:** none inscribed this session. Watch-list (2 rounds; need 3+ for promotion): ChatGPT enumerated non-waivable list; ChatGPT OMI cadence/scope/methodology constraint; ChatGPT §6.3 catch-all narrowing (institutional-founding-adjacent); ChatGPT CJI verification gate (Pattern #23 territory); Gemini "appropriate" → "designated" ISO substitution.
 
 **Open ripples filed:** none.
+
+---
+
+### Phase 6 Entry 42 Completion Note (April 30, 2026)
+
+**Policy 5.03 (Compliance Monitoring and Corrective Action) D v1.0 → T v2.0** (commit `2373f03d`).
+
+**Tickets closed:** #187 (upstream routing verification: 1.09 post-POA&M→CAP), #279 (GLOBAL-G role redistribution split: domain admin drafts technical content; AID coordinates/integrates/submits within 10 BD).
+
+**Substantive transitions:**
+- §3 split-architecture per #279: Systems Administrator / Network Administrator / Support Specialist draft CAP technical content (root cause, remediation actions, milestones) for deficiencies in their respective operational domains and provide drafts to AID; Assistant IT Director coordinates the cycle, reviews drafts for completeness, adds Risk Register linkage, confirms CJIS impact indicator, and submits completed CAPs to IT Director for approval. The 10 business day development window covers the full chain unchanged. Role names match 1.07 §6.2 canonical labels.
+- §3 IT Director: 1.08 exception bullet removed (5.01 §6.6 owns exception management manual-wide; standing decline #6).
+- §4 restructured to 5.02 v2.0 by-reference pattern: 5.01 lead-in with first-use title; Assessment routes to 5.02 + 5.07; Enforcement clean by-reference 5.01; Exceptions clean by-reference 5.01 + retained "Oral exceptions are not valid" per 1.04 §6.6 constitutional mandate. Stripped open-ended-basis sentence (now consolidated in 5.01 v2.0 §6.6 Written Documentation).
+- §5 References body-cite split per 1.04 §6.7: added 1.07 (body-cited §6.2 Responsible Role), NAC 239.165 (body-cited §6.6), LRDA 20071256 (body-cited §6.6), NRS 239 (subject acknowledgment per 5.02 v2.0 precedent); removed 1.08 (no longer body-cited after §3/§4 fixes); moved CJIS CA-7, NIST SP CA-7/PM-4, CSF ID.IM-01/-03 to Framework Alignment per body-cite test. Cited ordering ECIO → NRS/NAC/LRDA → CJIS → NIST SP. Framework ordering CJIS → CSF → NIST SP → COBIT → ITIL.
+- §6.X-strip per Rule #1 / Root #375: 5 cross-policy section-depth violations stripped (5.02 §6.5 references and 3.02 §6.3/§6.4 references); 8 internal self-references retained per Rule #1 in-document scope.
+- §6.2 lead reflects #279 split (10-BD window unchanged); CJIS Impact Indicator content bullet stripped of duplicative directive (single source of truth in §3 IT Director); descriptive line + §3 pointer retained. Milestones bullet converted to bold-label topic-block + 3 atomic sub-bullets per 1.04 §6.8 Clarification + §6.12.
+- §6.4: passive "shall not be closed" recast to role-anchored positive form ("AID shall close a CAP only upon documented verification...").
+- §6.5: NRS 603A.220 monitoring criterion timing delegated to 4.06 (which operationalizes the statute with measurable 24h/48h/5BD windows) replacing imprecise R1 phrasing "within the timeframes mandated by that statute" — NRS 603A.220 mandates a standard (expedient/unreasonable-delay), not fixed timeframes. Annual cadence retained per Q3 lock.
+- §6.6 retention: full restructure to 5.02 v2.0 / 1.11 §6.9 canonical pattern. Quality Assurance Review Audits and Reports bullet (LRDA 20071256, three-year minimum from end of calendar year), CJIS-Affecting Records (greater-of CJIS/Nevada), Destruction Standards (NAC 239.165), Legal Holds (1.11 by-reference), Multiple Schedules (longest applicable). Single-line bare NRS 239 subject acknowledgment per 5.02 v2.0 precedent.
+- 1.04 §6.5 atomic-bullet compliance: §3 obligation count grew 16 → 24 single-`shall` bullets via decomposition of three compounds (AID review/add/confirm/submit; AID monthly review + update milestone status; SysAdmin/NetAdmin/SupportSpec draft + provide).
+- 1.04 §6.10 quantity syntax: "two (2) functions" padded.
+- Root #6 (Redmine product-name removal) absorbed: 6 occurrences stripped manual-wide.
+
+**OMI inheritance:** Transitive through 5.01 v2.0 §6.6 by-reference per Phase 6 Entry 41 closure decision; no inline OMI clause needed in 5.03.
+
+**Cross-validator round summary:**
+- **R1** — Gemini Gap 1 (chained §3 obligations) full accept (1.04 §6.5 constitutional); Gemini Gap 2 (chained §6 directives) partial accept (§6.2 CJIS Impact Indicator Itemize bullet via dual-maintenance strip; Milestones Itemize via topic-block conversion; §6.3/§6.4/§6.5 prose declined per §6.8 Clarification scope limit to bulleted/numbered items); Gemini Gap 3 (quantity syntax) partial accept ("two (2) functions" padded; "one or more" declined per peer convention 5.02/5.01 v2.0 retain bare for indefinite quantifiers); ChatGPT Gap 1 (inline §4 non-waivable list + 1.08) reflexive multi-pattern decline (#6+#20+#36+#37+#39); ChatGPT Gap 2 (§6.2 one-directive) accept (overlap with Gemini); ChatGPT event-driven trigger declined per Q3 lock; version-control note pre-empted by phase-10 root #353; NRS 603A.220 verification disclosure handled per pattern #22.
+- **R2** — Gemini Gap 1 prose-paragraph §6.8 application re-push declined (2nd round, watch-list); Gemini Gap 2 "one or more" padding re-push declined (2nd round, watch-list); ChatGPT Gap 1 inline-§4 non-waivable list re-push reflexive decline (2nd round, surface framing rotated R1 5-item → R2 8-item; watch-list for §23 promotion at R3); ChatGPT Gap 2 §5 flat-list reordering reflexive decline #1 (proposed reordering would intermix Cited and Framework on same CJIS line); ChatGPT NRS 603A.220 phrasing partial accept (delegating fix to Policy 4.06 instead of inline statutory restatement); event-driven trigger re-push declined per Q3 (2nd round, watch-list); uniform topic-block treatment declined (style preference, no compliance gap).
+- R3 declined per diminishing returns from R2 verbatim/refined repeats.
+
+**Standing decline patterns added:** None inscribed this session. Watch-list (2 rounds; need 3+ for promotion):
+- Gemini prose-paragraph §6.8 application — wants atomic-bullet rule extended to Standard prose narrative.
+- Gemini "one or more" §6.10 padding — wants padding on indefinite quantifiers; 5.02/5.01 peer convention is bare.
+- ChatGPT §4 inline non-waivable list — already protected by #20/#36/#37/#39 stack; consolidated promotion candidate at R3 if list expands again.
+
+**Open ripples filed:** None. All upstream routings verified intact; downstream consumers (5.04, 5.07) absorb 5.03 v2.0 references in their respective tightening sessions.
 
 ---
 
