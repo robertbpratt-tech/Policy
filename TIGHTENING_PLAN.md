@@ -228,6 +228,9 @@ Cross-validator feedback matching these patterns is reflexively declined.
 35. **ChatGPT: risk-based softening of CJIS-floor cadences (SI-3 "at least daily" scan, SI-8(2) "at least daily" spam updates)** — CJIS v6.0 SI-3 Control item (c)(1) and SI-8(2) verbatim specify "at least daily" as a hard floor; per authority hierarchy CJIS (#3) outranks NIST SP 800-53 (#4). 2.08 R1/R2/R3 confirmed 3+ rotations: "based on system criticality, operational impact, and CJI exposure" (R1 + R2 + R3 with rotating surface rationale: weekend/holiday compliance trap, server performance, vendor appliances, isolated systems). Operational edge cases route through 5.01 §6.6 exception framework, not policy softening. Reflexive decline; cite CJIS v6.0 Control text + #29 trigger. (origin: 2.08 v2.0 commit `b7384712`)
 36. **ChatGPT: restore inline §4 hard-boundary CJI exception language with CSO concurrence requirement** — locked architecture: 5.01 §6.6 owns exception management with CJI Exceptions sub-bullet (CSO concurrence), and 1.09 §6.8 RAM-Prohibition clause forbids waiving CJIS or statutory requirements. 2.09 R1/R2/R3/R4 confirmed 4 rotations of the same architectural target with progressively refined surface framings: "hard boundary statement" (R1) → verbatim repeat (R2) → "exception regression vs. v1.0" (R3) → "exception regression with 12-month cap and remediation owner" (R4). 4-round verbatim/refined repeat satisfies pattern #23 promotion criteria with margin. Reflexive decline; cite #20 (inline 5.01 §6.6 language) + #279 (CJI Constraint strip) + #23 (surface-framing rotation). (origin: 2.09 v2.0 commit `4609e957`)
 37. **ChatGPT: enumerate specific non-compliance conditions inline in §4 Enforcement** — locked architecture: 5.01 §6.5 owns the sanctions and enforcement framework manual-wide; per-policy §4 Enforcement uses by-reference to 5.01 (canonical pattern: 2.10 v2.3 §4). Inline enumeration of non-compliance conditions creates dual-maintenance with 5.01 §6.5 and produces an "exhaustive list" interpretation risk that worsens audit posture (auditor zooms to the list, ignores other §3/§6 obligations). 2.14 R1/R2/R3 confirmed 3 rotations of the same architectural target with refined surface framings: "audit defense, mirror Chapter 4 enumeration" (R1) → "audit defense, easier to enforce, easier to audit" (R2) → "drafting pattern in Chapter 4 + audit defense" (R3). 3-round confirmed rotation satisfies pattern #23 promotion criteria. Reflexive decline; cite #20 (inline 5.01 architecture) + #29 (locked-architecture re-push). (origin: 2.14 v2.0 commit `4556509b`)
+38. **ChatGPT: substitute "the greater of [framework X] retention or [framework Y] retention" with a hard-coded numeric retention value** — formulation is manual-wide convention from 1.11 v2.5 §6.9. The "greater of" construction is operationally concrete (both values are knowable; computation is deterministic), distinct from genuine subjective thresholds like "sufficient" or "material." ChatGPT substitutes typically hard-code the LRDA value as if it satisfies CJIS — but CJIS AU-9/AU-11 only require the agency to *define* a retention period, not a specific number. Hard-coding eliminates durability across CJIS revisions and creates dual-maintenance with the source schedule. 5.02 R1 + R2 confirmed re-push. Reflexive decline; cite 1.11 §6.9 manual-wide pattern. (origin: 5.02 v2.0 commit `3da57572`)
+39. **Validator demands inline restatement of obligations already imposed by upstream policy** — locked by-reference architecture: 1.04 §6.7 establishes Cited References body-cite test, 1.04 §6.11 enforces "Policy X.XX (Title)" first-use citation pattern; both presume by-reference inheritance. Validator findings demanding inline restatement of 1.11 retention/legal-review obligations, 5.01 enforcement/exception obligations, or 1.09 risk obligations within downstream policies create dual-maintenance and progressive divergence as upstream policies are revised. 5.02 R1 (Gemini Gap 4 public-records inline restatement) + R2 (Gemini Gap 5 source-record retention inline restatement) confirmed. Reflexive decline; the upstream policy is the single source of truth. Distinct from #20 (5.01 §6.6 specifically) — this is general by-reference architecture across all upstream policies. (origin: 5.02 v2.0 commit `3da57572`)
+40. **ChatGPT: "responsible for" prohibition flagged against non-transfer constructs in §3 role bullets and §2 Scope boundary descriptions** — 1.04 §6.9 prohibits "responsible for" as a directive softener (replacing "shall" with non-binding language). Non-transfer constructs ("The IT Director shall not transfer responsibility for X") and §2 Scope boundary descriptions (describing what is/is not in operational scope) use "responsibility" in its denotative sense, not as a directive softener. 4.04 v2.4 §3 non-transfer construct + 4.05 v2.4 §2 Scope boundary description confirmed during 5D.2. Reflexive decline; the prohibition targets the directive-softening usage, not all forms of "responsibility/responsible." (origin: 5D.2 close note, April 29, 2026; inscribed at 5.02 v2.0 commit `3da57572`)
 
 ---
 
@@ -237,7 +240,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 **Last refreshed:** April 29, 2026 post-2.15 v2.0 commit (entry 39 — Phase 5C closer / Chapter 2 closer). 2.15 D v1.0 → T v2.0 (commit `7dc9aa9c`; closed #103, #104, #105). Three validator rounds; R2 ChatGPT response was textbook Pattern #14 (stale-draft access — entire response re-pushing R1 findings already fixed); Gemini R2 caught three real residual orphans absorbed in R3. Adjudicated architectural decisions: A1 (drop "System Developer" role; map to 1.07 roles), A2 (ESPs exit §3, obligations become AID contract-enforcement), A3 (production gate single-routes to 3.09 only — 3.10 routing-pointer in §2 only), A4 (severity schedule by-reference to 2.09), A5 (acquisition-time scope; operational EOL routes to 2.09; §6.8 deleted), A6 (IP exception path by-reference to 5.01 + 1.09). C1: replaced "Hard Gate" placeholder with named constructs Assessment Approval (1.13) + Technical Approval (1.10). §6.4 Applicability scope criteria added (artifact-function-based — Option A: production execution / protected data / authn-authz-audit / ESP deliverables / shared use). Pattern #36 cumulative manual-wide rotation count: 7 (unchanged this session). **Recalculate marker fires now** — Phase 5C complete; Phase 6 sequencing requires fresh recalculation pass.
 
-**Phase 5C complete.** Phase 5B closed (LASO Priority Group entries 25–31); Phase 5C entries 32–39 complete (2.03 v2.0, 2.05 v2.2, 2.07 v2.2, 2.08 v2.0, 2.09 v2.0, 2.10 v2.3, 2.14 v2.0, 2.15 v2.0). **Chapter 2 closed at entry 39.** Manual-wide tightening count: 39 of 49. **◆ RECALCULATE SEQUENCE — Phase 6 sequencing requires fresh pass before next-session selection.**
+**Phase 6 entry 40 complete.** Phase 5C closed (entries 32–39, Chapter 2 cleared); Phase 5D pre-Phase-6 cleanup closed April 29 (5D.1, 5D.2). Phase 6 entry 40 = 5.02 (Internal Audits) committed April 29, 2026 at v2.0 (commit `3da57572`). Manual-wide tightening count: 40 of 49. Next: Phase 6 entry 41.
 
 ### Chapter 0 / Front Matter
 
@@ -324,7 +327,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 5.01 | Implementation, Enforcement, Legal | T+ | v1.2, April 29 | 3 | #334, #345, #425 |
-| 5.02 | Internal Audits | D | — | 5 | #184, #185, #186, #278, #473 |
+| 5.02 | Internal Audits | T | v2.0, April 29 | 0 | — |
 | 5.03 | Compliance Monitoring | D | — | 2 | #187, #279 |
 | 5.04 | Performance Metrics | D | — | 1 | #280 |
 | 5.05 | Security Control Assessment | D | — | 1 | #188 |
@@ -559,12 +562,35 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
-| 40 | 5.02 (Internal Audits) | 5 | Produces audit findings that feed 5.03 CAPs |
+| 40 | 5.02 (Internal Audits) | ✅ Closed v2.0 (`3da57572`, April 29) | Produces audit findings that feed 5.03 CAPs |
 | 41 | 5.03 (Compliance Monitoring) | 2 | CAP lifecycle; consumes 5.02 findings |
 | 42 | 5.04 (Performance Metrics) | 1 | KPI data feeds 5.07 |
 | 43 | 5.05 (Security Control Assessment) | 1 | Control assessment results feed 5.07 |
 | 44 | 5.06 (Vendor Compliance) | 1 | Consumes 1.13 (tightened in Phase 5A); feeds 5.07 |
 | 45 | 5.07 (Annual Policy Review) | 3 | Capstone — consumes 5.02–5.06, 3.16, 1.09, 1.05 outputs |
+
+> **5.01 OMI touch-up — pending IT Director sequencing decision.** 5.02 v2.0 R2 adjudication (Q4 Option C-generalized) carries forward an Oversight Mechanism Integrity clause for 5.01 §6.6. 5.01 is currently T+ (v1.2). Two sequencing options for IT Director: (a) next-session pull-forward (insert before entry 41, advancing 5.03–5.07 by one slot) — propagates OMI to 5.03–5.07 transitively before they tighten; (b) in-sequence after Phase 6 (post-entry 45) — OMI lands after Chapter 5 D-state policies are tight, but they will need to be re-validated against the new clause. Recommendation pending. Default if not directed: option (b), in-sequence.
+
+---
+
+### Phase 6 Entry 40 Completion Note (April 29, 2026)
+
+**Policy 5.02 (Internal Audits, Self-Assessment, and Control Testing) D v1.0 → T v2.0** (commit `3da57572`).
+
+**Tickets closed:** #184 (retention trigger), #185 (ASR deadline), #186 (LRDA citation add), #278 (self-assessment role split), #473 (§3 trailing-colon carve-out from 5D.1).
+
+**Substantive transitions:**
+- §3 split-architecture: Sys Admin / Net Admin / Support Specialist receive self-assessment execution; AITD coordinates the cycle and consolidates results.
+- §4 stripped to clean by-reference (5.01-only routing for Assessment, Enforcement, Exceptions); "Oral exceptions are not valid" added per 1.04 §6.6 constitutional mandate.
+- §5 References reconciled against 1.04 §6.7 body-cite test; Cited References vs. Framework Alignment split corrected (CJIS CA-1/CA-2 base/CA-7 base, CSF ID.IM-01/02, NIST SP CA-2/CA-7 moved to Framework Alignment).
+- §6 substantive tightening: risk-tier nomenclature aligned to 1.09 vocabulary; pipeline timing fix (§6.5 deficiency routing → next business day, preserving 5.03's full 10-BD CAP development window); Annual Audit Summary Report 30-day post-fiscal-year deadline (60-day buffer for 5.07's 90-day output deadline); §6.6 retention restructured per 1.11 v2.5 §6.9 pattern with NRS/NAC/LRDA/Legal Holds/Multiple Schedules bullets.
+- R2 cross-validator hardening: subjective term elimination (sufficient → objective; impractical → independence-test anchor; materially/routinely → access-rights mapping); CJIS reportable routing expanded (4.02 + 4.06 as applicable); self-assessment-only restrictions extended to open CAPs and IT Director designation.
+
+**Deferred to entry 41 (5.01):** Oversight Mechanism Integrity clause for §6.6 — adopted as general principle (oversight mechanism's *application to its targets* is not waivable; cadence/scope/methodology details remain waivable through standard framework). Naming locked at "Oversight Mechanism Integrity," scoped to 5.01 §6.6 only, no manual-wide propagation. Inherited transitively by 5.03–5.07 through by-reference architecture; no special clause needed in those policies.
+
+**Standing decline patterns added:** #38 (greater-of retention substitution), #39 (inline restatement of upstream policy obligations), #40 (5D.2 "responsible for" non-transfer pattern, retroactively inscribed).
+
+**Cross-validator round summary:** R1 — ChatGPT GAP 01 (Oral exceptions) constitutional miss accepted; R2 — Robert direction on subjective-term elimination drove ChatGPT GAP 03/04 acceptance; Gemini Gap 1/4/5 refinements accepted; ChatGPT GAP 02 retention declined for third recurrence (now pattern #38).
 
 ---
 
