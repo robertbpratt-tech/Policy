@@ -238,9 +238,9 @@ Cross-validator feedback matching these patterns is reflexively declined.
 
 State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with open ripples, **D** = Drafted/untightened, **A** = Appendix.
 
-**Last refreshed:** April 30, 2026 post-5.02 v2.0 commit (entry 40 — Phase 6 opener). 5.02 D v1.0 → T v2.0 (commit `3da57572`; closed #184, #185, #186, #278, #473). Two validator rounds. R1 architectural moves: §3 split-architecture for self-assessment execution (Sys Admin + Net Admin + Support Specialist; AITD coordinates and consolidates); §4 stripped to clean by-reference (5.01-only routing); §5 References reconciled against 1.04 §6.7 body-cite test (CJIS CA-1/CA-2-base/CA-7-base, CSF ID.IM-01/02, NIST SP CA-2/CA-7 moved to Framework Alignment); §6.6 retention restructured per 1.11 v2.5 §6.9 pattern. R1 constitutional miss (1.04 §6.6 "Oral exceptions are not valid") accepted from ChatGPT GAP 01. R2 substantive hardening per IT Director direction on subjective-term elimination: sufficient → objective; impractical → independence-test anchor; materially/routinely → access-rights mapping; CJIS reportable routing expanded (4.02 + 4.06); self-assessment-only restrictions extended to open CAPs and IT Director designation; Legal Holds bullet added with expanded trigger list; Control Testing Register expanded with risk rating + CJIS applicability fields. **Q4 Option C-generalized adjudication:** Oversight Mechanism Integrity clause carried forward to 5.01 §6.6 (filed as #479); locked at 5.01 only, no manual-wide propagation. Three new standing decline patterns inscribed: #38 (greater-of retention substitution), #39 (inline restatement of upstream policy obligations), #40 (5D.2 "responsible for" non-transfer pattern, retroactively).
+**Last refreshed:** April 30, 2026 post-5.01 v2.0 commit (entry 41 — Phase 6 OMI touch-up). 5.01 T+ v1.2 → T v2.0 (commit `f453669d`; closed #334, #345, #425, #479). Two validator rounds (R3 declined — both validators recycled R1 findings essentially verbatim; diminishing returns). R1 substantive moves: §6.6 Oversight Mechanism Integrity clause inserted (general principle locked from #479; existence/coverage non-waivable, cadence/scope/methodology remain in standard exception path); §6.6 Written Documentation consolidated (remediation timeline, affirmative compensating measures, open-ended bar moved in, CJIS substantive-compliance backstop sentence); §6.6 CJI Exceptions reframed to explicit-negative on CSO concurrence with named CJIS-control examples (IR-6 Part (b), PS-3, AC-7) and instrument-neutral CJIS user agreement language; §6.6 Active Exception Review (renamed from Duration and Review). §6.8 IT-Administrative Enforcement Records (renamed from Corrective Action Records) restructured with population-class LRDA mapping (LRDA 20070321 employees / LRDA 20121869 appointed and elected officials / LRDA 20071300 contractors and vendors); Sanctions Documentation anchored to LRDA 20070321 with HR custodianship; Acknowledgment Records by-reference to originating policy. §6.5 closes CJIS v6.0 PS-8 alignment gap (added "personnel with account management responsibilities"). §6.4 Emergency Protective Action: hard 1-hour notification lock; named-authority next-steps determination; formal-language replacement for "bad act"; "basis" in place of "reasoning". §3 universal label aligned to manual-wide convention ("All County Personnel" per #32). §5 Cited References ripple: CJIS AC-7/IR-6/PS-3 + LRDA 20070321/20071300/20121869 added per body-cite test. R2 absorbed C5-R2 (population-class architecture from ChatGPT). **Watch-list patterns (2 rounds; not yet promoted, need 3+):** ChatGPT enumerated non-waivable list (R1 C1 + R2 Gap 1); ChatGPT OMI cadence/scope/methodology constraint (R1 C2 + R2 Gap 2); ChatGPT §6.3 catch-all narrowing (R1 C3 + R2 Gap 3); ChatGPT CJI verification gate (R1 C4 + R2 Gap 4 — Pattern #23 territory); Gemini "appropriate" → "designated" ISO substitution (R1 G2 + R2 Gap 2). No new standing decline patterns inscribed this session.
 
-**Phase 6 entry 40 complete.** Phase 5C closed (entries 32–39, Chapter 2 cleared); Phase 5D pre-Phase-6 cleanup closed April 29 (5D.1, 5D.2). Phase 6 entry 40 = 5.02 (Internal Audits) committed April 29, 2026 at v2.0 (commit `3da57572`). Manual-wide tightening count: 40 of 49. Next: Phase 6 entry 41.
+**Phase 6 entry 41 complete.** Phase 5C closed (entries 32–39, Chapter 2 cleared); Phase 5D pre-Phase-6 cleanup closed April 29 (5D.1, 5D.2). Phase 6 entry 40 = 5.02 (Internal Audits) committed April 29 at v2.0 (commit `3da57572`). Phase 6 entry 41 = 5.01 (Implementation, Enforcement, Legal — re-tightening) committed April 30 at v2.0 (commit `f453669d`); pulled forward from in-sequence position per IT Director option (a) decision so OMI propagates transitively to 5.03–5.07 before they tighten. Manual-wide tightening count: 41 of 49. Next: Phase 6 entry 42.
 
 ### Chapter 0 / Front Matter
 
@@ -326,7 +326,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 5.01 | Implementation, Enforcement, Legal | T+ | v1.2, April 29 | 3 | #334, #345, #425 |
+| 5.01 | Implementation, Enforcement, Legal | T | v2.0, April 30 | 0 | — |
 | 5.02 | Internal Audits | T | v2.0, April 29 | 0 | — |
 | 5.03 | Compliance Monitoring | D | — | 2 | #187, #279 |
 | 5.04 | Performance Metrics | D | — | 1 | #280 |
@@ -563,13 +563,12 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
 | 40 | 5.02 (Internal Audits) | ✅ Closed v2.0 (`3da57572`, April 29) | Produces audit findings that feed 5.03 CAPs |
-| 41 | 5.03 (Compliance Monitoring) | 2 | CAP lifecycle; consumes 5.02 findings |
-| 42 | 5.04 (Performance Metrics) | 1 | KPI data feeds 5.07 |
-| 43 | 5.05 (Security Control Assessment) | 1 | Control assessment results feed 5.07 |
-| 44 | 5.06 (Vendor Compliance) | 1 | Consumes 1.13 (tightened in Phase 5A); feeds 5.07 |
-| 45 | 5.07 (Annual Policy Review) | 3 | Capstone — consumes 5.02–5.06, 3.16, 1.09, 1.05 outputs |
-
-> **5.01 OMI touch-up — pending IT Director sequencing decision.** 5.02 v2.0 R2 adjudication (Q4 Option C-generalized) carries forward an Oversight Mechanism Integrity clause for 5.01 §6.6. 5.01 is currently T+ (v1.2). Two sequencing options for IT Director: (a) next-session pull-forward (insert before entry 41, advancing 5.03–5.07 by one slot) — propagates OMI to 5.03–5.07 transitively before they tighten; (b) in-sequence after Phase 6 (post-entry 45) — OMI lands after Chapter 5 D-state policies are tight, but they will need to be re-validated against the new clause. Recommendation pending. Default if not directed: option (b), in-sequence.
+| 41 | 5.01 (Implementation, Enforcement, Legal — re-tightening) | ✅ Closed v2.0 (`f453669d`, April 30) | OMI clause + exception discipline + CJI explicit-negative + LRDA fixes; pulled forward per IT Director option (a) so OMI propagates transitively to 5.03–5.07 |
+| 42 | 5.03 (Compliance Monitoring) | 2 | CAP lifecycle; consumes 5.02 findings |
+| 43 | 5.04 (Performance Metrics) | 1 | KPI data feeds 5.07 |
+| 44 | 5.05 (Security Control Assessment) | 1 | Control assessment results feed 5.07 |
+| 45 | 5.06 (Vendor Compliance) | 1 | Consumes 1.13 (tightened in Phase 5A); feeds 5.07 |
+| 46 | 5.07 (Annual Policy Review) | 3 | Capstone — consumes 5.02–5.06, 3.16, 1.09, 1.05 outputs |
 
 ---
 
@@ -594,16 +593,44 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 ---
 
+### Phase 6 Entry 41 Completion Note (April 30, 2026)
+
+**Policy 5.01 (Policy Implementation, Enforcement, and Legal Alignment) T+ v1.2 → T v2.0** (commit `f453669d`).
+
+**Tickets closed:** #334 (§6.6 exception discipline strengthening), #345 (§6.8 acknowledgment records by-reference), #425 (§6.6 CJI Exceptions explicit-negative reframe), #479 (OMI clause carry-forward from 5.02 v2.0).
+
+**Substantive transitions:**
+- **§6.6 Oversight Mechanism Integrity (new):** locked architectural principle from #479 — where a policy establishes an oversight, audit, monitoring, assurance, or review mechanism that applies to other policies in the manual, that mechanism's application to its targets shall not be waived by exception; cadence/scope/methodology operational details remain in the standard exception path. 5.01 §6.6 only; no manual-wide propagation; downstream policies inherit transitively through by-reference architecture.
+- **§6.6 Written Documentation (consolidated):** remediation timeline (semantic upgrade from "proposed duration"); affirmative compensating measures or written justification for none; explicit bar on open-ended exceptions (consolidated from former Duration and Review clause); CJIS substantive-compliance backstop sentence (parallel to 1.09 §6.8 RAM-Prohibition for the policy-exception deviation channel).
+- **§6.6 CJI Exceptions (reframed):** explicit-negative on CSO concurrence at policy-framework level per April 23 #425 reframing; CSO concurrence operationally required only where specific CJIS Security Policy control or written CJIS user agreement so requires (named examples: IR-6 Part (b), PS-3, AC-7); instrument-neutral CJIS user agreement language; reordered before Policy-Specific Requirements.
+- **§6.6 Active Exception Review (renamed):** former Duration and Review; open-ended bar moved to Written Documentation; clause focuses on annual review obligation only.
+- **§6.8 IT-Administrative Enforcement Records (renamed and restructured):** former Corrective Action Records (renamed to disambiguate from 5.03 CAP Lifecycle); population-class LRDA mapping (LRDA 20070321 Master Personnel File for County employees; LRDA 20121869 Administrative Hearing Files for appointed and elected officials; LRDA 20071300 Vendor Performance Case Files for contractors and vendors).
+- **§6.8 Sanctions Documentation:** HR custodianship explicit; LRDA 20070321 anchor (formal HR-track sanctions process is employee-only by construction; non-employee enforcement records land in IT-Administrative Enforcement Records).
+- **§6.8 Acknowledgment Records:** by-reference to originating policy via applicable LRDA series (replaces unsupported 7-year retention figure; 2.01 v2.6 §3 LRDA 20071725 anchor at 3 calendar years aligns with CJIS AT-4(b) 3-year minimum).
+- **§6.5 CJIS notification recipients:** added "personnel with account management responsibilities" — closes CJIS v6.0 PS-8(b) alignment gap.
+- **§6.4 Emergency Protective Action:** hard one-hour notification lock (replaces unbounded "immediately"); named-authority next-steps determination ("County Manager, in coordination with Human Resources and the District Attorney's Office"); formal-language replacement for "evidence of a bad act"; "basis" in place of "reasoning".
+- **§3 universal label:** "All County Personnel and Contractors" → "All County Personnel" (manual-wide convention per standing decline #32).
+- **§6.3 lead:** "the right to take" → "extends to taking" (policy-grade verb).
+- **§5 Cited References ripple:** added CJIS AC-7, IR-6, PS-3 (body-cite from §6.6 CJI Exceptions); added LRDA 20070321, 20071300, 20121869 (body-cite from §6.8 population-class architecture).
+
+**Cross-validator round summary:** R1 — five accepts (C7 rename, D1 instrument-neutral, D7 verb form, D5(b) PS-8 fourth role, R1 G3 named authority + D4 1-hour lock + C5 formal language + D8 reasoning→basis); seven declines (G1 §5 flat list, C1 enumerated non-waivable list, C2 OMI cadence/scope/methodology constraint, C3 §6.3 catch-all narrowing, C4 CJI verification gate, C6 1.05 placement misroute, D3 retention floor restoration). R2 — one accept (C5-R2 population-class LRDA architecture); R1 repeats from both validators reflexively declined (no new substance). R3 declined by IT Director — diminishing returns evident from R2 verbatim repeats.
+
+**Standing decline patterns added:** none inscribed this session. Watch-list (2 rounds; need 3+ for promotion): ChatGPT enumerated non-waivable list; ChatGPT OMI cadence/scope/methodology constraint; ChatGPT §6.3 catch-all narrowing (institutional-founding-adjacent); ChatGPT CJI verification gate (Pattern #23 territory); Gemini "appropriate" → "designated" ISO substitution.
+
+**Open ripples filed:** none.
+
+---
+
 ### Phase 7 — Chapter 6 Appendices (provisional)
 
 **Goal:** Complete 6.01 Glossary at content level. Establish skeleton-only scaffolding for 6.02, 6.03, and 6.04 — the content for these three appendices is populated in Phase 9 (6.02, 6.03 from matrix outputs) or Phase 10 (6.04 from declaration). Completing 6.02/6.03 content at Phase 7 is prohibited; the N-wise analysis required to populate them correctly runs only in Phase 9.
 
 | Seq | Policy | Tickets | Rationale |
 |---|---|---|---|
-| 46 | 6.01 (Glossary) | 3 | Content-complete at Phase 7. Term harvest from all tightened policies. |
-| 47 | 6.02 (Policy Matrix) | 3 | **Skeleton only at Phase 7.** LyX scaffolding, headers, cross-reference machinery. Content populated in Phase 9 from aggregate-audit outputs. |
-| 48 | 6.03 (STAK Matrix) | 3 | **Skeleton only at Phase 7.** LyX scaffolding only. NICE/SFIA alignment against 1.07 tightened tiers verified in Phase 9; content populated from Phase 9 role and construct outputs. |
-| 49 | 6.04 (Revision History) | 1 | **Skeleton only at Phase 7.** Entry format established. First entry ("v1.0 — Initial publication — July 01, 2026") written at Phase 10. |
+| 47 | 6.01 (Glossary) | 3 | Content-complete at Phase 7. Term harvest from all tightened policies. |
+| 48 | 6.02 (Policy Matrix) | 3 | **Skeleton only at Phase 7.** LyX scaffolding, headers, cross-reference machinery. Content populated in Phase 9 from aggregate-audit outputs. |
+| 49 | 6.03 (STAK Matrix) | 3 | **Skeleton only at Phase 7.** LyX scaffolding only. NICE/SFIA alignment against 1.07 tightened tiers verified in Phase 9; content populated from Phase 9 role and construct outputs. |
+| 50 | 6.04 (Revision History) | 1 | **Skeleton only at Phase 7.** Entry format established. First entry ("v1.0 — Initial publication — July 01, 2026") written at Phase 10. |
 
 ---
 
@@ -623,7 +650,7 @@ Phase 8 was eliminated on April 16, 2026. #31 (the last remaining cluster member
 2. Phase 7 appendix skeletons complete — 6.01 content-complete; 6.02/6.03/6.04 scaffolding in place.
 3. Open ripple tickets either resolved or explicitly relabeled `phase-9-intake` with documented scope.
 
-Entry 49 (6.04 skeleton) completion is the trigger. "Same level" means the whole manual at T before any N-wise work begins.
+Entry 50 (6.04 skeleton) completion is the trigger. "Same level" means the whole manual at T before any N-wise work begins.
 
 **Freeze discipline.** Phase 9 findings fall into two classes.
 
