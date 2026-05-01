@@ -699,6 +699,36 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 ---
 
+### Phase 5F — Section Audit Cleanup (forward placeholder, locked May 1, 2026)
+
+**Origin.** Manual-wide section consistency audit initiated May 1, 2026 — sweep every policy's §1, then §2, then §3, §4, §5, §6, verifying internal consistency in formatting and voice. Audit produces a per-section report; per-policy cleanup tickets are filed at section close and held open until execution.
+
+**Section 1 audit ✅ (May 1, 2026).** 60 numbered policies (Ch 1–5) checked against 1.04 §6.3. Mechanical compliance uniform (60 / 60 on every spec item). Variance lives at the voice / convention layer.
+
+- **Findings filed:** #484 (F5 — §1 rationale leakage in 1.11 / 1.13 / 3.04 / 3.14, substantive); #485 (F7 + F8 — §1 cross-policy references and bold-named-construct introduction in 3.13 / 4.04 / 4.05, structural per new Rule #3).
+- **Architectural codification:** Rule #3 added to §9.1 (May 1, 2026).
+- **F2 / F3 / F9 (entity-naming, IT-acronym, capitalization variance):** confirmed as 1.04 §6.10 non-compliance (Acronym Protocol + Institutional Capitalization). No new rule required — existing constitutional standard governs. Manual-wide §6.10 sweep ticket deferred until all six section audits complete; §6.10 applies to all sections, so a §1-only sweep would be premature.
+- **Audit deliverable:** `Section1_Audit_Report.md` (working document).
+
+**Sections 2 / 3 / 4 / 5 / 6 audits.** Pending. Each section runs as its own working session; tickets filed at section close on the same model as Section 1.
+
+**Execution disposition (locked May 1, 2026, IT Director ruling).** Defer all audit-driven cleanup ticket execution until two gates clear:
+
+1. **Phase 6 closes** (E46 = 5.07 capstone committed).
+2. **Sections 1–6 audits all complete.**
+
+When both gate, run Phase 5F as a unified per-policy patch-bump cleanup pass — each touched policy gets ONE patch bump covering all section findings at once, one validator round per policy, instead of N patch bumps across N section-cleanup sessions. Sequencing: after Phase 6 close, before Phase 7 (Chapter 6 Appendices).
+
+**Why this works at Phase 5F and not Phase 9.** The §1–§6 audit findings are voice / formatting / construct-labeling cleanups — Phase 9H Editorial and Phase 9C Construct Consistency territory. But Phase 9 entry criteria require Phase 7 appendix skeletons complete; Phase 5F runs the cleanup against the T-state corpus *before* appendix skeletons are built, so 6.02 / 6.03 scaffolding work in Phase 7 sees a clean §1–§6 surface across the manual.
+
+**Out of Phase 5F scope:**
+- Manual-wide 1.04 §6.10 sweep (entity-naming, IT-acronym, capitalization). Folds into Phase 9 — likely 9H Editorial Pass — or runs as its own dedicated sweep session if found impractical to absorb.
+- Substantive content edits identified during audit that change what a directive *does*. Those reopen targeted tightening sessions per Phase 9 substantive/fix split discipline.
+
+**Tickets in Phase 5F intake (will accumulate as Sections 2–6 audits run):** #484, #485.
+
+---
+
 ### Phase 7 — Chapter 6 Appendices (provisional)
 
 **Goal:** Complete 6.01 Glossary at content level. Establish skeleton-only scaffolding for 6.02, 6.03, and 6.04 — the content for these three appendices is populated in Phase 9 (6.02, 6.03 from matrix outputs) or Phase 10 (6.04 from declaration). Completing 6.02/6.03 content at Phase 7 is prohibited; the N-wise analysis required to populate them correctly runs only in Phase 9.
@@ -892,6 +922,7 @@ Cross-policy definitions Claude needs to preserve during tightening. Modifying a
 - **LASO Designation.** Per 1.11 §6.11, the IT Director holds LASO by policy mandate. In body text of other policies, cite as "IT Director (as LASO)" when the CJIS liaison function is specifically invoked.
 - **No section-specific cross-references in body prose (Rule #1, April 20, 2026).** Cross-references to other ECIO policies in the body of any policy use `Policy X.XX (Policy Title)` on first use within that policy and `Policy X.XX` thereafter. Section-specific depth (`§6.X`, `Section 6.X`, `§6.11`) shall not appear appended to cross-policy references. Self-references within the same policy are permitted — navigation within the current document is in-scope.
 - **§2 Out of Scope routing pointer format (Rule #2, April 20, 2026).** Out of Scope routing pointers end at `Policy [X.XX].` — no parenthetical title, no section depth. Per 1.04 §6.4 format spec and §6.11 exception clause.
+- **§1 Purpose is plain prose (Rule #3, May 1, 2026).** Section 1 shall contain no cross-policy references and no typographical emphasis. Cross-policy references belong in §2 routing pointers (Rule #2 / 1.04 §6.4), §5 References, and §6 body prose (Rule #1 / 1.04 §6.11). Named-construct and Glossary-term bold introduction belongs at first use within §6 (1.04 §6.10). Origin: Section 1 Audit, May 1, 2026 (Findings F7 + F8). Open application tickets: #484 (rationale-leak cleanup, distinct), #485 (Rule #3 strip across 3.13 / 4.04 / 4.05). Phase 9 absorption: rolls into 1.04 §6.3 amendment at Phase 10 alongside Rules #1 and #2.
 
 ### §9.2 Named Constructs
 
