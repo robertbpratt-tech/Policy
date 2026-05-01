@@ -710,7 +710,25 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 - **F2 / F3 / F9 (entity-naming, IT-acronym, capitalization variance):** confirmed as 1.04 §6.10 non-compliance (Acronym Protocol + Institutional Capitalization). No new rule required — existing constitutional standard governs. Manual-wide §6.10 sweep ticket deferred until all six section audits complete; §6.10 applies to all sections, so a §1-only sweep would be premature.
 - **Audit deliverable:** `Section1_Audit_Report.md` (working document).
 
-**Sections 2 / 3 / 4 / 5 / 6 audits.** Pending. Each section runs as its own working session; tickets filed at section close on the same model as Section 1.
+**Section 2 audit ✅ (May 1, 2026).** 60 numbered policies checked against 1.04 §6.4 + Rule #2. Eight defect classes (D1–D8) plus two structure classes (D9 — asymmetric §2; D10 — exemption claimed but not warranted) spanning 22 unique policies.
+
+- **Findings filed (six tickets per IT Director split-by-defect-class ruling):**
+  - **#486** (D1 + D2 + D3 — applicability statement cleanup: wrong opener, multi-sentence, parenthetical titles; 10 policies). Substantive.
+  - **#487** (D4 — Out of Scope parenthetical-title strip per Rule #2; 3 policies / 8 occurrences). Mechanical.
+  - **#488** (D5 — Out of Scope compound-reference split per 1.04 §6.4 strict singular; 7 policies, 8 → 16 items). Mechanical with topic recomposition.
+  - **#489** (D6 — In Scope policy-pointer strip; 2 policies / 3 items). Mechanical.
+  - **#490** (D7 + D8 — narrative prose strip in §2 + non-Policy routing convert to In Scope; 3.08 and 3.09). Substantive (3.08 also strips "shall not" compliance language).
+  - **#491** (D9 + D10 — §2 structure additions: draft In/Out Scope where missing or asymmetric; 8 policies). Substantive — heaviest §2 ticket; per-policy authorship.
+- **IT Director rulings (May 1, 2026):**
+  - D2 multi-sentence applicability per content class: rationale strip; scope extension migrate; definition to Glossary; §3 pointer strip; order issue (4.01) drops sentence 1 + recasts sentence 2.
+  - D5 strict singular form (split compounds, no compound-permitted convention codification).
+  - 2.08 brought into Ch 2 In/Out Scope structural compliance.
+  - 3.08 EPP routing converted to In Scope.
+  - D9 (Only Out of Scope group: 1.06, 1.14, 3.03, 3.07) brought into compliance.
+  - D10 simple-policy exemption test: applies only to genuinely aspirational/cultural policies with no operational mechanics or specific obligations. **Exemption preserved:** 1.01 (Mission), 1.03 (Standard Operating Ethos). **Exemption revoked, structure required:** 1.02 (Code of Ethics), 1.08 (Delegation), 1.09 (Risk Management), 2.08 (System Integrity).
+- **Audit deliverable:** `Section2_Audit_Report.md` (working document).
+
+**Sections 3 / 4 / 5 / 6 audits.** Pending. Each section runs as its own working session; tickets filed at section close on the same model as Sections 1 and 2.
 
 **Execution disposition (locked May 1, 2026, IT Director ruling).** Defer all audit-driven cleanup ticket execution until two gates clear:
 
@@ -725,7 +743,7 @@ When both gate, run Phase 5F as a unified per-policy patch-bump cleanup pass —
 - Manual-wide 1.04 §6.10 sweep (entity-naming, IT-acronym, capitalization). Folds into Phase 9 — likely 9H Editorial Pass — or runs as its own dedicated sweep session if found impractical to absorb.
 - Substantive content edits identified during audit that change what a directive *does*. Those reopen targeted tightening sessions per Phase 9 substantive/fix split discipline.
 
-**Tickets in Phase 5F intake (will accumulate as Sections 2–6 audits run):** #484, #485.
+**Tickets in Phase 5F intake (will accumulate as Sections 3–6 audits run):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2). Total: 8 tickets.
 
 ---
 
