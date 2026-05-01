@@ -816,7 +816,41 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 - **No new standing decline patterns inscribed.** §4 audit absorbed into existing pattern stack (#20, #36, #37, #41); architectural narrowings produced new amendments rather than new declines.
 - **Audit deliverable:** `Section4_Audit_Report.md` (working document).
 
-**Sections 5 / 6 audits.** Pending. Each section runs as its own working session; tickets filed at section close on the same model as Sections 1, 2, 3, 4.
+**Section 5 audit ✅ (May 1, 2026).** 60 numbered policies checked against 1.04 §6.7 + §6.11. **Mechanical floor uniform** — all 60 have §5 Subsection*, both Cited References and Framework Alignment subsection labels present, no narrative prose anywhere in §5, no terminal periods on citation lines, no bolding within §5 Itemize bullets, all ECIO Policy/Appendix references use CommandInset ref, no citation outside a labeled subsection, cross-category ordering uniform compliant. ~1,700 citations across the manual. Defect surface concentrates in within-category sub-ordering (D28; 11 occurrences across 7 policies), default-placement anomalies (D29; 5 occurrences across 4 policies — body-cite test required), and citation syntax compliance (D30; 34 occurrences across 21 policies — mix of mechanical defects and §6.11 spec-gap signals).
+
+- **Findings filed (eleven tickets per IT Director split-by-defect-class ruling, plus #355 scope amendment):**
+  - **#510** (Ticket AA — D28.1 CJIS legacy Section 5.X.Y.Z migration to v6.0 control-family form; 5 policies: 1.09, 1.11, 1.14, 2.05, 2.06). Substantive. Gated on #515.
+  - **#511** (Ticket BB — D28.2 + D28.3 mechanical sub-ordering: 4.01 NIST CSF function order, 2.10 ITIL alphabetical). Mechanical.
+  - **#512** (Ticket CC — D30.1 CJIS Section-word sweep on 1.10; 5.02 / 5.03 / 5.05 / 5.07 already canonical post-amendment). Mechanical. Gated on #515.
+  - **#513** (Ticket DD — D30.2 + D30.3 + D30.5 + Q6 + title corrections: publication-level NIST SP / CJIS Appendix / NIST SP RMF-step reformat per amendment + 800-37 r2 / 800-61 r3 / 800-137 / 800-181 r1 title corrections + 800-61 r3 "Cyber"→"Cybersecurity" + hybrid colon-then-parens normalization; ~15 policies). **Substantive — heaviest §5 ticket.** Gated on #515.
+  - **#514** (Ticket EE — D30.4 NIST CSF Category-level → Subcategory restructure for 3.12). Substantive — content review. Gated on #515.
+  - **#515** (Ticket II — 1.04 §6.11 amendment to v1.6: CJIS Section-drop + v6.0 form lock; CJIS Appendix permission; publication-level NIST SP permission; NIST SP RMF-step permission; NIST CSF Subcategory required). **Constitutional.**
+  - **#516** (Ticket JJ — NIST SP 800-88 Rev. 1 → Rev. 2 citation update + execution-time alignment spot-check; 1.12, 2.12). Substantive — withdrawn-document remediation.
+  - **#517** (Ticket KK — D29 placement verification: 2.15 Framework ECIO Policy 1.07). Verification.
+  - **#518** (Ticket LL — D29 placement verification: 3.14 Cited COBIT 2019 BAI02). Verification.
+  - **#519** (Ticket MM — D29 placement verification: 4.03 Framework ECIO Policy 1.09). Verification.
+  - **#520** (Ticket NN — D29 placement verification: 4.05 Framework ECIO Policy 1.09 + ECIO Policy 1.12). Verification.
+  - **#355 scope amendment:** Title and body amended to expand scope from "Manual-wide LRDA citation verification" to "Manual-wide reference verification sweep — body-cite test + citation accuracy (all categories)." Per IT Director Q1 ruling.
+- **IT Director rulings (May 1, 2026):**
+  - **Q1 (Body-cite test scope):** Expand #355 to verify EACH reference, not just LRDA. All citation categories + body-cite test compliance with 1.04 §6.7.
+  - **Q2 (D28.1 CJIS heterogeneous-form):** Use new format (v6.0 control-family form), not legacy Section 5.X.Y.Z. Architectural codification via §6.11 amendment E1.
+  - **Q3 (D28.2 / D28.3 mechanical fixes):** OK — absorb to Phase 5F.
+  - **Q4 (D30.1 CJIS dropped-"Section"):** Amend 1.04 first, then sweep residual older instances. §6.11 amendment makes recent Phase 6 canonical (no "Section" prefix) the new spec.
+  - **Q5 (Spec-gap accommodation):** OK — mixed approach. Amend §6.11 to permit publication-level NIST SP, CJIS Appendix, NIST SP 800-37 RMF-step forms; restructure D30.4 NIST CSF Category-level via content review.
+  - **Q6 ("Cyber"→"Cybersecurity"):** Fix mechanically. Subsumed into Ticket DD (#513).
+- **D29 placement disposition (IT Director ruling, May 1, 2026):** Filed as four individual tickets (#517–#520) rather than folded into #355 expansion. Belt-and-suspenders against being missed. If #355 catches and resolves, individual tickets close as duplicates.
+- **Bonus title verification (IT Director ruling, May 1, 2026):**
+  - **NIST SP 800-30 Rev. 1:** "Guide for Conducting Risk Assessments" — manual citation accurate. ✓
+  - **NIST SP 800-37 Rev. 2:** "Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy" — manual missing subtitle (1.09, 5.06). Ticket DD covers.
+  - **NIST SP 800-61 Rev. 3:** "Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile" — manual missing subtitle across 4.01–4.07; "Cyber"→"Cybersecurity" needed in 4.01 + 4.06. Ticket DD covers.
+  - **NIST SP 800-88 Rev. 1:** Title accurate, BUT **Rev. 1 was withdrawn September 26, 2025** and superseded by Rev. 2. Ticket JJ (#516) covers Rev. 1 → Rev. 2 substitution with execution-time alignment spot-check per IT Director ruling.
+  - **NIST SP 800-137:** "Information Security Continuous Monitoring (ISCM) for Federal Information Systems and Organizations" — manual missing "(ISCM) for Federal Information Systems and Organizations" portion (1.09). Ticket DD covers.
+  - **NIST SP 800-181 Rev. 1:** "Workforce Framework for Cybersecurity (NICE Framework)" — manual has title and parenthetical inverted as "NICE Workforce Framework for Cybersecurity" (1.07). Per IT Director option (i) ruling, canonical form preserves nested parens: `NIST SP 800-181 Rev. 1 (Workforce Framework for Cybersecurity (NICE Framework))`. Ticket DD covers.
+- **Architectural codification:** 1.04 §6.11 amendment via #515 — five sub-changes (E1–E5): **(E1)** CJIS citation form drops "Section" word + specifies v6.0 control-family identifier (legacy section numbering prohibited); **(E2)** CJIS Appendix references permitted; **(E3)** publication-level NIST SP references permitted (parenthesized form, hybrid forms prohibited); **(E4)** NIST SP 800-37 RMF-step references permitted; **(E5)** NIST CSF Subcategory `-NN` suffix required. Couples into 1.04 v1.5 → v1.6 release alongside #494, #498, #506, #509 — **five-amendment v1.6 single-release.**
+- **No new standing decline patterns inscribed.** §5 audit absorbed into existing pattern stack; architectural amendments produced via §6.11 rather than new declines.
+- **Audit deliverable:** `Section5_Audit_Report.md` (working document).
+
+**Section 6 audit.** Pending. Runs as its own working session; tickets filed at section close on the same model as Sections 1, 2, 3, 4, 5.
 
 **Execution disposition (locked May 1, 2026, IT Director ruling).** Defer all audit-driven cleanup ticket execution until two gates clear:
 
@@ -831,13 +865,14 @@ When both gate, run Phase 5F as a unified per-policy patch-bump cleanup pass —
 - Manual-wide 1.04 §6.10 sweep (entity-naming, IT-acronym, capitalization). Folds into Phase 9 — likely 9H Editorial Pass — or runs as its own dedicated sweep session if found impractical to absorb.
 - Substantive content edits identified during audit that change what a directive *does*. Those reopen targeted tightening sessions per Phase 9 substantive/fix split discipline.
 
-**Tickets in Phase 5F intake (will accumulate as Sections 5–6 audits run):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2); #492, #494, #495, #496, #497, #498 (Section 3 — #493 closed, absorbed by #509); #499, #500, #501, #502, #503, #504, #505, #506, #507, #508, #509 (Section 4). Total: 25 tickets.
+**Tickets in Phase 5F intake (will accumulate as Section 6 audit runs):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2); #492, #494, #495, #496, #497, #498 (Section 3 — #493 closed, absorbed by #509); #499, #500, #501, #502, #503, #504, #505, #506, #507, #508, #509 (Section 4); #510, #511, #512, #513, #514, #515, #516, #517, #518, #519, #520 (Section 5). Total: 36 tickets.
 
 **Constitutional amendments queued for 1.04 v1.5 → v1.6 release (gated, not yet executed):**
 - **§6.5 amendment (#494):** locked authority sequence + flat institutional-title-before-Department-Heads sub-rule. Updates the example sequence.
 - **§9.1 amendment (#498):** add `(as Incident Commander)` to the role-clarifier convention alongside `(as LASO)` and `(as Authorizing Official)`.
 - **§6.6 amendment (#506):** optional-bullet set narrowed to Sanctions only; mandatory-three contiguity locked as first-three-bullets requirement.
 - **§6.12 amendment (#509):** governed clarifier-tag set narrowed to Rationale + Exception; Rationale definition semantically tightened to audit-defensibility use case.
+- **§6.11 amendment (#515):** five sub-changes (E1–E5) — CJIS citation form drops "Section" word + v6.0 control-family identifier specified (legacy Section 5.X.Y.Z prohibited); CJIS Appendix references permitted; publication-level NIST SP references permitted (parenthesized form, hybrid forms prohibited); NIST SP 800-37 RMF-step references permitted; NIST CSF Subcategory `-NN` suffix required.
 
 ---
 
