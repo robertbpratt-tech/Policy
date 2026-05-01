@@ -766,7 +766,27 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
   - D10 simple-policy exemption test: applies only to genuinely aspirational/cultural policies with no operational mechanics or specific obligations. **Exemption preserved:** 1.01 (Mission), 1.03 (Standard Operating Ethos). **Exemption revoked, structure required:** 1.02 (Code of Ethics), 1.08 (Delegation), 1.09 (Risk Management), 2.08 (System Integrity).
 - **Audit deliverable:** `Section2_Audit_Report.md` (working document).
 
-**Sections 3 / 4 / 5 / 6 audits.** Pending. Each section runs as its own working session; tickets filed at section close on the same model as Sections 1 and 2.
+**Section 3 audit ✅ (May 1, 2026).** 60 numbered policies checked against 1.04 §6.5. **Heaviest defect surface yet — 30+ unique policies touched.** Mechanical floor on title format, post-#467 colon placement, and bullet structure uniform (60 / 60). Variance concentrated in obligation atomicity (chained / multi-sentence) and role label canonicalization.
+
+- **Findings filed (six tickets per IT Director split-by-defect-class ruling):**
+  - **#492** (Ticket I — D11 + D12 chained / multi-sentence obligation decomposition; 18 policies / 23 instances). Substantive.
+  - **#493** (Ticket J — D13 Constraint-tag strip + D14 May reframe to "Shall be authorized to..."; 6 policies / 10 obligations). Substantive.
+  - **#494** (Ticket K1 — 1.04 §6.5 amendment locking authority sequence + flat institutional-title-before-Department-Heads sub-rule). Substantive constitutional amendment. **Gates Ticket K2.**
+  - **#495** (Ticket K2 — §3 authority-order corrections per amended 1.04 §6.5; 25 policies). Mechanical reorder. Gated on #494 closing first.
+  - **#496** (Ticket L — D17 §3 prose block strip in 3.15). Mechanical.
+  - **#497** (Ticket M — D20 role label normalization; ~12 policies covering D20.1 / D20.2 / D20.3 / D20.4 / D20.5 / D20.8). Mostly mechanical.
+- **Deferred (workshopping):** D20.6 Incident Commander architecture sweep. To be resolved in subsequent session; Ticket N filed when architecture locks. Affected policies: 3.06, 4.01, 4.02, 4.03, 4.04, 4.05, 4.06, 4.07. Three obligations from Ticket I (4.02 + 4.05 IC chains) deferred into Ticket N coverage.
+- **IT Director rulings (May 1, 2026):**
+  - **D13 Constraint:** strip from §3; reframe as direct "Shall" / "Shall not" bullets. Constraint clarifier preserved as 1.04 §6.12 capability for future editors.
+  - **D14 May:** reframe to "Shall be authorized to..." Maintains §6.5 strict Shall opener; eliminates ambiguity about permitted vs required action.
+  - **D15 / D16 authority order:** locked sequence — BoCC → County Manager → IT Director → AID → Sys Admin → Net Admin → Support Specialist → Admin Asst → All IO Personnel → institutional titles → Department Heads → All County Personnel → external stakeholders. Flat rule; institutional titles always precede Department Heads catch-all.
+  - **D20.1 plural / D20.2 split / D20.3 acronym strip / D20.4 Department Heads canonical / D20.5 Office of Fiscal Affairs / D20.8 activity-derivative strip:** all locked per Section 3 audit report.
+  - **D18 (2.01 deprecated catch-all):** covered by existing #356; no new ticket.
+  - **D19 (5.06 Redmine product name):** absorbs at Phase 6 Entry 45 tightening per pattern #6; no separate ticket.
+- **Architectural codification:** 1.04 §6.5 amendment via #494 establishes the locked authority sequence as constitutional standard. Update to §6.5 example sequence (currently illustrative "IT Director, County Manager, AID..." reverses correct authority order — corrected by amendment). Sub-rule added: institutional titles always precede Department Heads.
+- **Audit deliverable:** `Section3_Audit_Report.md` (working document).
+
+**Sections 4 / 5 / 6 audits.** Pending. Each section runs as its own working session; tickets filed at section close on the same model as Sections 1, 2, 3.
 
 **Execution disposition (locked May 1, 2026, IT Director ruling).** Defer all audit-driven cleanup ticket execution until two gates clear:
 
@@ -781,7 +801,7 @@ When both gate, run Phase 5F as a unified per-policy patch-bump cleanup pass —
 - Manual-wide 1.04 §6.10 sweep (entity-naming, IT-acronym, capitalization). Folds into Phase 9 — likely 9H Editorial Pass — or runs as its own dedicated sweep session if found impractical to absorb.
 - Substantive content edits identified during audit that change what a directive *does*. Those reopen targeted tightening sessions per Phase 9 substantive/fix split discipline.
 
-**Tickets in Phase 5F intake (will accumulate as Sections 3–6 audits run):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2). Total: 8 tickets.
+**Tickets in Phase 5F intake (will accumulate as Sections 4–6 audits run, plus Ticket N when D20.6 IC architecture resolves):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2); #492, #493, #494, #495, #496, #497 (Section 3 — D20.6 IC architecture deferred to Ticket N). Total: 14 tickets.
 
 ---
 
