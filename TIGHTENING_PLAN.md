@@ -775,7 +775,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
   - **#495** (Ticket K2 — §3 authority-order corrections per amended 1.04 §6.5; 25 policies). Mechanical reorder. Gated on #494 closing first.
   - **#496** (Ticket L — D17 §3 prose block strip in 3.15). Mechanical.
   - **#497** (Ticket M — D20 role label normalization; ~12 policies covering D20.1 / D20.2 / D20.3 / D20.4 / D20.5 / D20.8). Mostly mechanical.
-- **Deferred (workshopping):** D20.6 Incident Commander architecture sweep. To be resolved in subsequent session; Ticket N filed when architecture locks. Affected policies: 3.06, 4.01, 4.02, 4.03, 4.04, 4.05, 4.06, 4.07. Three obligations from Ticket I (4.02 + 4.05 IC chains) deferred into Ticket N coverage.
+- **D20.6 Incident Commander architecture (Ticket N #498, May 1, 2026):** **Option B locked** — accountability/execution split. IT Director holds IC function by policy mandate (LASO precedent); execution delegation to any IO Personnel for specific incidents permitted in writing; accountability non-transferable. Non-transferable authorities enumerated: CCA review, exception approval, incident severity classification, law enforcement referral, postmortem report approval, external communications under One Voice Rule. Affected: 3.06, 3.09, 4.01, 4.02, 4.03, 4.04, 4.05, 4.06, 4.07. Includes 4.01 §6.1 substantive amendment + 1.04 §9.1 "(as Incident Commander)" clarifier convention addition (couples into 1.04 v1.6 with K1).
 - **IT Director rulings (May 1, 2026):**
   - **D13 Constraint:** strip from §3; reframe as direct "Shall" / "Shall not" bullets. Constraint clarifier preserved as 1.04 §6.12 capability for future editors.
   - **D14 May:** reframe to "Shall be authorized to..." Maintains §6.5 strict Shall opener; eliminates ambiguity about permitted vs required action.
@@ -801,7 +801,7 @@ When both gate, run Phase 5F as a unified per-policy patch-bump cleanup pass —
 - Manual-wide 1.04 §6.10 sweep (entity-naming, IT-acronym, capitalization). Folds into Phase 9 — likely 9H Editorial Pass — or runs as its own dedicated sweep session if found impractical to absorb.
 - Substantive content edits identified during audit that change what a directive *does*. Those reopen targeted tightening sessions per Phase 9 substantive/fix split discipline.
 
-**Tickets in Phase 5F intake (will accumulate as Sections 4–6 audits run, plus Ticket N when D20.6 IC architecture resolves):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2); #492, #493, #494, #495, #496, #497 (Section 3 — D20.6 IC architecture deferred to Ticket N). Total: 14 tickets.
+**Tickets in Phase 5F intake (will accumulate as Sections 4–6 audits run):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2); #492, #493, #494, #495, #496, #497, #498 (Section 3). Total: 15 tickets.
 
 ---
 
