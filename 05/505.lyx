@@ -174,13 +174,13 @@ name "pol:5.05"
 
 \lang english
 Effective:
- July 01,
+ May 01,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -208,9 +208,7 @@ This policy establishes the authorization decision process by which the IT Direc
 \begin_layout Standard
 
 \lang english
-This policy applies to all information systems,
- controls,
- and assets governed by the ECIO Policy Manual that require formal authorization to operate within the County production environment.
+This policy applies to all County information systems and security controls governed by the ECIO Policy Manual that require formal authorization before production use or persistent production-network connectivity.
 \end_layout
 
 \begin_layout Itemize
@@ -416,9 +414,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -476,33 +472,21 @@ Shall attach risk-based conditions or require compensating controls when grantin
 \begin_layout Itemize
 
 \lang english
-Shall ensure that each authorization decision is documented in an authorization decision record and retained in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.13"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Knowledge Management Policy).
+Shall ensure that each authorization decision is documented in an authorization decision record.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall evaluate whether denial of authorization for a system processing Criminal Justice Information Services (CJIS) data affects active CJIS compliance obligations and,
- when warranted,
- shall ensure that appropriate operational,
+Shall evaluate and document whether denial of authorization for a system processing Criminal Justice Information Services (CJIS) data affects active CJIS compliance obligations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall direct operational,
  service-restriction,
- or partner-notification steps are taken through the applicable policies:
- 
+ or partner-notification action through 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -517,24 +501,7 @@ nolink "false"
 
 
 \series default
- (Compliance Monitoring and Corrective Action),
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Identification and Reporting Procedures),
- and 
+ (Compliance Monitoring and Corrective Action) and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -549,7 +516,13 @@ nolink "false"
 
 
 \series default
- (Communication Protocols and Partner Integration).
+ (Communication Protocols and Partner Integration) if the evaluation identifies impaired CJIS compliance obligations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall conduct an annual review of all active authorization decisions to confirm that no event-driven trigger under Section 6.4 has been missed.
 \end_layout
 
 \end_deeper
@@ -557,9 +530,7 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
@@ -625,7 +596,7 @@ Shall present the compiled decision inputs to the IT Director with a risk summar
 \begin_layout Itemize
 
 \lang english
-Shall document the IT Director's authorization decision in the System of Engagement (Redmine) and maintain the authorization decision record.
+Shall document the IT Director's authorization decision in the System of Engagement as an authorization decision record.
 \end_layout
 
 \begin_layout Itemize
@@ -675,9 +646,7 @@ nolink "false"
 
 \series bold
 \lang english
-All Department Personnel
-\series default
-:
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -752,9 +721,9 @@ nolink "false"
 Enforcement
 \series default
 :
- Deployment of any information system to the County production network without a valid authorization,
- or failure to document authorization decisions as required by this policy,
- may result in corrective action in accordance with 
+ Failure to maintain required authorization decision records,
+ conduct required reauthorization reviews,
+ or route deficiencies in accordance with this policy may result in corrective action in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -798,8 +767,6 @@ nolink "false"
 \series default
 .
  Oral exceptions are not valid.
- No exception shall be granted on an open-ended basis;
- each exception shall specify a defined remediation timeline.
 \end_layout
 
 \begin_layout Subsection*
@@ -842,7 +809,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.13"
+reference "pol:1.11"
 plural "false"
 caps "false"
 noprefix "false"
@@ -851,25 +818,7 @@ nolink "false"
 \end_inset
 
 :
- Knowledge Management Policy
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Identification and Reporting Procedures
+ Data Governance and Classification Policy
 \end_layout
 
 \begin_layout Itemize
@@ -972,6 +921,18 @@ nolink "false"
 NRS 239.125 (Local Government Records Management Program)
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+NAC 239.165 (Destruction Standards)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071256 (Quality Assurance Review Audits and Reports)
+\end_layout
+
 \begin_layout Standard
 
 \series bold
@@ -993,6 +954,20 @@ CJIS Security Policy v6.0:
 \begin_layout Itemize
 
 \lang english
+CJIS Security Policy v6.0:
+ CA-6 (Authorization)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ CA-7 (Continuous Monitoring)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NIST CSF 2.0:
  ID.RA-06 (Risk Responses)
 \end_layout
@@ -1002,7 +977,7 @@ NIST CSF 2.0:
 \lang english
 NIST SP 800-37 Rev.
  2:
- (Risk Management Framework for Information Systems and Organizations)
+ Authorize step
 \end_layout
 
 \begin_layout Itemize
@@ -1043,7 +1018,7 @@ ITIL v4:
 \begin_layout Standard
 
 \lang english
-No County information system shall process production data or maintain persistent connectivity to the County production network without a valid authorization decision rendered by the IT Director.
+The IT Director shall require every County information system to hold a valid authorization decision before processing production data or maintaining persistent connectivity to the County production network.
  This policy implements the Authorize step of the NIST Risk Management Framework lifecycle adopted in 
 \series bold
 Policy 
@@ -1059,13 +1034,13 @@ nolink "false"
 
 
 \series default
- Section 6.1.
+.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
-Authorization decisions shall be made solely on the basis of assessment results and audit findings delivered under 
+The IT Director shall base authorization decisions solely on the assessment results and audit findings delivered under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1113,9 +1088,9 @@ nolink "false"
 
 \series default
 .
- No separate or parallel testing,
+ This policy does not establish a separate or parallel testing,
  assessment,
- or evidence-collection activity shall be performed under this policy.
+ or evidence-collection program.
  Where the IT Director determines that existing assessment coverage is insufficient to support an authorization decision,
  the IT Director shall direct the Assistant IT Director to schedule supplemental assessment activity through the mechanisms defined in 
 \series bold
@@ -1215,7 +1190,7 @@ Conditional Authorization
  the compensating control or remediation action required,
  and the timeframe for resolution.
  When a conditional authorization depends on acceptance of residual risk above tolerance,
- the condition shall be supported by a Risk Acceptance Memo under 
+ the condition shall be supported by an approved Risk Acceptance Memo under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1230,7 +1205,7 @@ nolink "false"
 
 
 \series default
- and documented in the Risk Register.
+ and the corresponding Risk Register entry before the authorization decision is rendered.
  Conditions shall be tracked through the Corrective Action Plan lifecycle under 
 \series bold
 Policy 
@@ -1258,7 +1233,7 @@ Denial of Authorization
 \series default
 :
  Issued when controls are inadequate and residual risk exceeds tolerance without acceptable compensating controls.
- A denial prohibits the system from operating in the production environment.
+ The IT Director shall prohibit production operation of any system that receives a denial of authorization.
  The Assistant IT Director shall route the underlying deficiencies to 
 \series bold
 Policy 
@@ -1302,22 +1277,20 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Each authorization decision shall be documented in the System of Engagement (Redmine) as an authorization decision record.
- The record shall include,
+The Assistant IT Director shall document each authorization decision in the System of Engagement as an authorization decision record containing,
  at minimum:
- the system or control name and identifier,
- the security categorization,
- the decision outcome,
- the assessment results summary relied upon,
- the risk rationale supporting the decision,
+ the system or control name and identifier;
+ the security categorization and CJI indicator;
+ the decision outcome and authorization effective date;
+ the assessment results summary relied upon;
+ the risk rationale supporting the decision;
  any conditions attached to a conditional authorization,
- and the IT Director's approval.
- The Assistant IT Director shall maintain authorization decision records in accordance with 
+ with cross-references to the corresponding Corrective Action Plan tracked under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.13"
+reference "pol:5.03"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1327,8 +1300,26 @@ nolink "false"
 
 
 \series default
- and the Nevada Local Government Records Retention Schedule under NRS 239.125,
- for a minimum of three (3) years from the date of the decision unless a longer period is required by another applicable authority.
+ and the corresponding Risk Register entry maintained under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.09"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+;
+ the IT Director's approval;
+ and revocation status,
+ where applicable.
+ The Assistant IT Director shall retain authorization decision records in accordance with Section 6.6.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1391,9 +1382,29 @@ A Corrective Action Plan associated with a conditional authorization fails to ac
 \begin_layout Standard
 
 \lang english
+Where the IT Director invokes the discretionary trigger described in the preceding list,
+ the IT Director shall document the basis,
+ source evidence,
+ affected system,
+ and required review deadline in the resulting authorization decision record.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The IT Director shall conduct an annual review of all active authorization decisions to confirm that no preceding trigger has been missed during the review period.
+ Where the annual review identifies a missed trigger,
+ the IT Director shall render a reauthorization decision following the process defined in Sections 6.1 and 6.2.
+ Where no missed trigger is identified,
+ the Assistant IT Director shall document the annual review outcome in the corresponding authorization decision records.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
 The IT Director shall render a new authorization decision following the same process defined in Sections 6.1 and 6.2.
- The new decision shall supersede the prior authorization decision record.
- The prior record shall be retained in accordance with Section 6.3.
+ The Assistant IT Director shall mark the prior authorization decision record as superseded;
+ retention of superseded records is governed by Section 6.6.
 \end_layout
 
 \begin_layout Standard
@@ -1401,7 +1412,8 @@ The IT Director shall render a new authorization decision following the same pro
 \lang english
 The IT Director may revoke an existing authorization at any time when the risk posture requires immediate action,
  without waiting for a reauthorization trigger.
- A revocation shall be documented as a new authorization decision record with Denial of Authorization as the outcome and shall include the risk rationale for immediate action.
+ The Assistant IT Director shall document a revocation as a new authorization decision record with Denial of Authorization as the outcome,
+ and the documentation shall include the risk rationale for immediate action.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1413,8 +1425,8 @@ The IT Director may revoke an existing authorization at any time when the risk p
 \begin_layout Standard
 
 \lang english
-For systems processing Criminal Justice Information Services (CJIS) data,
- authorization decisions shall incorporate the CJIS-specific assessment frequency and independent-assessor requirements already defined in 
+For systems processing CJIS data,
+ the IT Director shall incorporate the CJIS-specific assessment frequency and independent-assessor requirements already defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1447,9 +1459,12 @@ nolink "false"
 
 \series default
  produces.
- Denial or revocation of authorization for any system processing CJIS data shall trigger the IT Director's evaluation of whether the system's inability to operate affects active CJIS compliance obligations,
- and when warranted,
- the IT Director shall ensure that appropriate operational and notification steps are taken through 
+ Upon denial or revocation of authorization for any system processing CJIS data,
+ the IT Director shall evaluate whether the system's inability to operate affects active CJIS compliance obligations and document the determination.
+ If the evaluation identifies impaired CJIS compliance obligations,
+ the IT Director shall direct operational,
+ service-restriction,
+ or partner-notification action through 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1464,23 +1479,6 @@ nolink "false"
 
 
 \series default
-,
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
  and 
 \series bold
 Policy 
@@ -1497,6 +1495,101 @@ nolink "false"
 
 \series default
 .
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang english
+6.6 Records Retention
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The authorization decision record is the authoritative record of each authorization decision rendered under this policy.
+ The Assistant IT Director shall apply retention periods in accordance with NRS 239.125 and the Nevada Local Government Records Retention Schedule.
+ The Assistant IT Director shall classify authorization decision records in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Authorization Decision Records
+\series default
+:
+ The Assistant IT Director shall retain authorization decision records,
+ including conditions attached to conditional authorizations,
+ supporting risk rationale,
+ and superseded prior records,
+ for a minimum of three (3) calendar years from the end of the calendar year in which the decision was rendered,
+ in accordance with LRDA 20071256 (Quality Assurance Review Audits and Reports).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Destruction Standards
+\series default
+:
+ The Assistant IT Director shall ensure destruction of confidential authorization decision records complies with NAC 239.165.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Legal Holds
+\series default
+:
+ The Assistant IT Director shall suspend retention and disposition actions for authorization decision records during litigation holds,
+ public records preservation requirements,
+ ongoing audits,
+ external investigations,
+ or other legal hold events,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Multiple Schedules
+\series default
+:
+ Where multiple retention requirements apply to a single record,
+ the Assistant IT Director shall apply the longest applicable period.
 \end_layout
 
 \end_body
