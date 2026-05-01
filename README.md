@@ -50,33 +50,33 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `01/101.lyx` | Department Mission and Strategic Objectives | T | v1.0 |  |
-| `01/102.lyx` | Code of Ethics and Professional Conduct | T | v2.3 |  |
-| `01/103.lyx` | Standard Operating Ethos | T | v2.1 |  |
+| `01/101.lyx` | Department Mission and Strategic Objectives | T+ | v1.0 | #486 |
+| `01/102.lyx` | Code of Ethics and Professional Conduct | T+ | v2.3 | #491 |
+| `01/103.lyx` | Standard Operating Ethos | T+ | v2.1 | #486 |
 | `01/104.lyx` | Policy and Documentation Formatting Standards | T | v1.5 |  |
 | `01/105.lyx` | Policy Review and Update Procedures | T | v2.3 |  |
-| `01/106.lyx` | IT Governance and Oversight Structure | T | v2.2 |  |
+| `01/106.lyx` | IT Governance and Oversight Structure | T+ | v2.2 | #491 |
 | `01/107.lyx` | Workforce Roles, Responsibilities, and Competency Framework | T+ | v1.4 | #354 |
-| `01/108.lyx` | Delegation of Authority and Decision Rights | T | v1.6 |  |
-| `01/109.lyx` | Risk Management Policy | T | v2.2 |  |
-| `01/110.lyx` | IT Financial Management and Procurement Policy | T | v2.3 |  |
-| `01/111.lyx` | Data Governance and Classification Policy | T+ | v2.5 | #484 |
-| `01/112.lyx` | IT Asset Management Policy | T+ | v2.7 | #329, #426 |
-| `01/113.lyx` | Supply Chain Risk Management (SCRM) and Vendor Governance | T+ | v2.4 | #484 |
-| `01/114.lyx` | Stakeholder Engagement and Communications Policy | T | v2.4 |  |
+| `01/108.lyx` | Delegation of Authority and Decision Rights | T+ | v1.6 | #491 |
+| `01/109.lyx` | Risk Management Policy | T+ | v2.2 | #491 |
+| `01/110.lyx` | IT Financial Management and Procurement Policy | T+ | v2.3 | #488 |
+| `01/111.lyx` | Data Governance and Classification Policy | T+ | v2.5 | #484, #488 |
+| `01/112.lyx` | IT Asset Management Policy | T+ | v2.7 | #329, #426, #487 |
+| `01/113.lyx` | Supply Chain Risk Management (SCRM) and Vendor Governance | T+ | v2.4 | #484, #486 |
+| `01/114.lyx` | Stakeholder Engagement and Communications Policy | T+ | v2.4 | #491 |
 
 ## Chapter 2 — Security
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `02/201.lyx` | Acceptable Use of Information Technology Resources Policy | T+ | v2.6 | #356 |
-| `02/202.lyx` | Personnel Security and Background Screening Policy | T | v2.8 |  |
+| `02/201.lyx` | Acceptable Use of Information Technology Resources Policy | T+ | v2.6 | #356, #486 |
+| `02/202.lyx` | Personnel Security and Background Screening Policy | T+ | v2.8 | #487 |
 | `02/203.lyx` | Security Awareness and Training Policy | T | v2.2 | — |
 | `02/204.lyx` | Access Control Policy | T+ | v2.8 | #453 |
 | `02/205.lyx` | Identification and Authentication Policy | T | v2.3 |  |
-| `02/206.lyx` | Privacy and Data Protection Policy | T | v2.8 |  |
+| `02/206.lyx` | Privacy and Data Protection Policy | T+ | v2.8 | #486 |
 | `02/207.lyx` | System and Communications Protection Policy | T | v2.3 |  |
-| `02/208.lyx` | System Integrity and Malware Protection Policy | T | v2.1 |  |
+| `02/208.lyx` | System Integrity and Malware Protection Policy | T+ | v2.1 | #486, #491 |
 | `02/209.lyx` | Vulnerability and Patch Management Policy | T | v2.0 |  |
 | `02/210.lyx` | Secure Configuration Baselines and Hardening Policy | T | v2.3 |  |
 | `02/211.lyx` | Audit Logging and Monitoring Policy | T | v2.5 |  |
@@ -90,28 +90,28 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
 | `03/301.lyx` | Service Catalog and SLA Policy | T | v2.5 |  |
-| `03/302.lyx` | Service Level Management and Metrics Reporting | T+ | v2.6 | #309 |
-| `03/303.lyx` | Service Communications Policy | T | v2.1 |  |
-| `03/304.lyx` | Service Delivery Feedback and Grievance Policy | T+ | v2.2 | #484 |
+| `03/302.lyx` | Service Level Management and Metrics Reporting | T+ | v2.6 | #309, #486 |
+| `03/303.lyx` | Service Communications Policy | T+ | v2.1 | #491 |
+| `03/304.lyx` | Service Delivery Feedback and Grievance Policy | T+ | v2.2 | #484, #488 |
 | `03/305.lyx` | Service Request Fulfillment Policy | T | v2.2 |  |
 | `03/306.lyx` | Operational Incident Management Policy | T+ | v2.2 | #450 |
-| `03/307.lyx` | Problem Management Policy | T | v2.4 |  |
-| `03/308.lyx` | Service Configuration Management (CMDB) Policy | T+ | v2.3 | #461 |
-| `03/309.lyx` | Change Management Policy | T | v2.1 |  |
-| `03/310.lyx` | Release and Deployment Policy | T+ | v2.1 | #377 |
+| `03/307.lyx` | Problem Management Policy | T+ | v2.4 | #487, #491 |
+| `03/308.lyx` | Service Configuration Management (CMDB) Policy | T+ | v2.3 | #461, #488, #490 |
+| `03/309.lyx` | Change Management Policy | T+ | v2.1 | #490 |
+| `03/310.lyx` | Release and Deployment Policy | T+ | v2.1 | #377, #486 |
 | `03/311.lyx` | Capacity and Availability Management Policy | T+ | v2.1 | #451 |
 | `03/312.lyx` | Monitoring and Event Management Policy | T+ | v2.1 | #413 |
-| `03/313.lyx` | Knowledge Management Policy | T+ | v2.3 | #485 |
+| `03/313.lyx` | Knowledge Management Policy | T+ | v2.3 | #485, #488 |
 | `03/314.lyx` | IT Project Management Policy | T+ | v2.3 | #478, #484 |
 | `03/315.lyx` | Service Continuity and Contingency Planning Policy | T+ | v2.3 | #314 |
 | `03/316.lyx` | Service Improvement and Continual Improvement Plan | T+ | v2.1 | #452 |
-| `03/317.lyx` | System Maintenance and Vendor Repairs | T | v2.2 |  |
+| `03/317.lyx` | System Maintenance and Vendor Repairs | T+ | v2.2 | #489 |
 
 ## Chapter 4 — Incident Response
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `04/401.lyx` | Incident Response Policy Overview | T+ | v2.1 | #418, #457, #477 |
+| `04/401.lyx` | Incident Response Policy Overview | T+ | v2.1 | #418, #457, #477, #486 |
 | `04/402.lyx` | Identification and Reporting Procedures | T | v2.2 |  |
 | `04/403.lyx` | Containment Strategy and Playbooks | T | v2.2 |  |
 | `04/404.lyx` | Eradication Procedures and Scenario Guides | T+ | v2.4 | #485 |
@@ -125,11 +125,11 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | --- | --- | --- | --- | --- |
 | `05/501.lyx` | Policy Implementation, Enforcement, and Legal Alignment | T | v2.0 |  |
 | `05/502.lyx` | Internal Audits, Self-Assessment, and Control Testing | T | v2.0 | — |
-| `05/503.lyx` | Compliance Monitoring and Corrective Action | T | v2.0 |  |
+| `05/503.lyx` | Compliance Monitoring and Corrective Action | T+ | v2.0 | #488 |
 | `05/504.lyx` | Performance Metrics and Operational KPIs | T | v2.0 |  |
 | `05/505.lyx` | Security Control Assessment and Authorization | D | v1.0 | #188 |
-| `05/506.lyx` | Vendor Compliance and Third-Party Assurance | D | v1.0 | #281, #331 |
-| `05/507.lyx` | Annual Policy Review and Maturity Scoring | D | v1.0 | #191, #282, #300 |
+| `05/506.lyx` | Vendor Compliance and Third-Party Assurance | D | v1.0 | #281, #331, #486, #489 |
+| `05/507.lyx` | Annual Policy Review and Maturity Scoring | D | v1.0 | #191, #282, #300, #488 |
 
 ## Chapter 6 — Appendices
 
