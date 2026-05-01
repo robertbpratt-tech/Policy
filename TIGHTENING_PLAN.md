@@ -786,7 +786,37 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 - **Architectural codification:** 1.04 §6.5 amendment via #494 establishes the locked authority sequence as constitutional standard. Update to §6.5 example sequence (currently illustrative "IT Director, County Manager, AID..." reverses correct authority order — corrected by amendment). Sub-rule added: institutional titles always precede Department Heads.
 - **Audit deliverable:** `Section3_Audit_Report.md` (working document).
 
-**Sections 4 / 5 / 6 audits.** Pending. Each section runs as its own working session; tickets filed at section close on the same model as Sections 1, 2, 3.
+**Section 4 audit ✅ (May 1, 2026).** 60 numbered policies checked against 1.04 §6.6. **Mechanical floor uniform** — all 60 have §4 Subsection*, mandatory three bullets present at d=0 with A < En < Ex relative ordering, zero numbered subsections, zero non-Standard / non-Itemize layouts, zero cross-policy §6.X depth violations (Rule #1 clean). Variance concentrated in Exceptions-bullet inline drift (24 T+ policies — substantially understated by #481), §6.12 clarifier-tag importation into §4 (10 policies), and a smaller surface of multi-Standard openers, ordering interleaves, custom labels, unlabeled d=1 sub-lists, and Sanctions-warrant misuse.
+
+- **Findings filed (eleven tickets per IT Director split-by-defect-class ruling, plus two superseded tickets closed):**
+  - **#499** (Ticket O — D21 "Oral exceptions are not valid" constitutional sentence add; 3 policies). Mechanical.
+  - **#500** (Ticket P — D23 inline §4 exception drift strip + Q7 Standard canonical replacement; 24 policies). **Substantive — heaviest §4 ticket. Supersedes #481.**
+  - **#501** (Ticket Q — D22 multi-Standard opening sentence strip in 4.03; 1 policy). Mechanical.
+  - **#502** (Ticket S — D25.1 §6.12 clarifier-tag strip from §4, narrowed to Constraint + Clarification + Exclusion per locked §6.12 amendment; 10 policies). Substantive. Gated on #509.
+  - **#503** (Ticket T — D25.2 custom §4 sub-architecture restructure into inline prose; 1.08, 2.11, 2.12). Substantive.
+  - **#504** (Ticket U — D26 unlabeled d=1 sub-list restructure; 4.03, 4.05, 4.07; 1.10 absorbed by #508). Substantive.
+  - **#505** (Ticket V — D27 2.13 Sanctions strip and inline into Enforcement). Substantive.
+  - **#506** (Ticket W — 1.04 §6.6 amendment to v1.6: optional-bullet set narrowed to Sanctions only; mandatory-three contiguity locked). Constitutional.
+  - **#507** (Ticket X — Universal Applicability strip + §2 Scope migration; 5 policies). Substantive. Gated on #506.
+  - **#508** (Ticket Y — Emergency Deviations strip + §6 body migration; 1.05, 1.10). Substantive. Gated on #506.
+  - **#509** (Ticket Z — 1.04 §6.12 amendment to v1.6: governed clarifier set narrowed to Rationale + Exception only + manual-wide strip-and-restructure of Constraint, Clarification, Exclusion; ~25 policies, 49 use sites). Constitutional + manual-wide substantive sweep. **Absorbs #493 Constraint-strip component.**
+  - **#481** closed — superseded by #500 (24-policy scope replaces 9-policy scope).
+  - **#493** closed — Constraint-strip component absorbed by #509; D14 May reframe component preserved as forward action item for Phase 5F intake or absorption.
+- **IT Director rulings (May 1, 2026):**
+  - **Q1 (D24 contiguity):** strict — Assessment / Enforcement / Exceptions are the first three bullets in §4. Optional bullets follow. Resolves 1.05, 1.10, 2.01 ordering by stripping the interleaving optional bullets entirely (Emergency Deviations / Universal Applicability stripped per §6.6 amendment).
+  - **Q2 (D25.1 §6.12 clarifier tags in §4):** strip Constraint + Clarification + Exclusion from §4. Same architectural ruling extended manual-wide (see Q-supplemental architectural review below).
+  - **Q3 (D25.2 1.08 custom labels):** restructure into Exceptions bullet body inline prose; substance preserved verbatim, d=1 label scaffolding strips.
+  - **Q4 (D25.2 2.11 / 2.12 Sanctions sub-architecture):** restructure into Sanctions bullet body inline prose; substance preserved verbatim, extra-framework Sanctions warrant maintained, d=1 label scaffolding strips.
+  - **Q5 (D26 unlabeled d=1 sub-lists):** strict — d=1 nesting not permitted in §4. Restructure 4.03 / 4.05 / 4.07 Enforcement enumeration as inline prose. 1.10 Emergency Technical Approval procedural sub-list dissolves into §6 body via Ticket Y migration.
+  - **Q6 (D27 2.13 Sanctions warrant):** strip the Sanctions label from 2.13; inline violation enumeration into Enforcement bullet body. Future architectural decision to elevate physical security to 2.11 / 2.12 Sanctions parity is preserved as a separate substantive tightening question, not absorbed into Phase 5F.
+  - **Q7 (D23 canonical Exceptions form):** Standard form (5.04 / 5.05 v2.0 pattern) as default — names IT Director as approver explicitly. Compact form (5.02 / 5.03 v2.0 pattern) preserved as a controlled variant where policy-specific approver applies (e.g., 1.06 routes governance exceptions to County Manager).
+- **Q-supplemental architectural review (manual-wide §6.12 clarifier-set narrowing).** During audit, IT Director surfaced concern that the §6.6 optional-bullet set carried weasel architecture — soft addenda that should have been load-bearing in their architecturally-correct location. Audit confirmed: Universal Applicability is §2 Scope content; Emergency Deviations is §6 procedural content; Constructive Notice and Mandatory Compliance are unused. Sanctions is the only optional label doing distinct architectural work. **Locked decision (May 1, 2026):** strip the four; retain Sanctions as sole governed §6.6 optional. Future-editor preservation rationale explicitly retracted.
+  - Ruling extended to §6.12 governed clarifier set after manual-wide inventory (66 uses across 27 policies; 50 in §6 body). Inventory surfaced that Rationale (8 §6 uses — audit-defensibility documentation of County standards intentionally exceeding federal/state minimums) and Exception (9 §6 uses — defined-circumstance directive carve-outs) carry distinct architectural status that prose alone signals weakly. Constraint, Clarification, Exclusion are decorative. **Locked decision (May 1, 2026):** retain Rationale + Exception in §6.12; strip Constraint + Clarification + Exclusion. Rationale definition tightened semantically to the audit-defensibility use case ("…requirement that exceeds an external minimum or carries architectural status not self-evident…").
+- **Architectural codification:** 1.04 §6.6 amendment via #506 narrows §4 optional-bullet set to Sanctions only and locks mandatory-three contiguity. 1.04 §6.12 amendment via #509 narrows governed clarifier-tag set to Rationale + Exception. Both couple into 1.04 v1.5 → v1.6 release alongside #494 (§6.5) and #498 (§9.1) — four-amendment v1.6 single-release.
+- **No new standing decline patterns inscribed.** §4 audit absorbed into existing pattern stack (#20, #36, #37, #41); architectural narrowings produced new amendments rather than new declines.
+- **Audit deliverable:** `Section4_Audit_Report.md` (working document).
+
+**Sections 5 / 6 audits.** Pending. Each section runs as its own working session; tickets filed at section close on the same model as Sections 1, 2, 3, 4.
 
 **Execution disposition (locked May 1, 2026, IT Director ruling).** Defer all audit-driven cleanup ticket execution until two gates clear:
 
@@ -801,7 +831,13 @@ When both gate, run Phase 5F as a unified per-policy patch-bump cleanup pass —
 - Manual-wide 1.04 §6.10 sweep (entity-naming, IT-acronym, capitalization). Folds into Phase 9 — likely 9H Editorial Pass — or runs as its own dedicated sweep session if found impractical to absorb.
 - Substantive content edits identified during audit that change what a directive *does*. Those reopen targeted tightening sessions per Phase 9 substantive/fix split discipline.
 
-**Tickets in Phase 5F intake (will accumulate as Sections 4–6 audits run):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2); #492, #493, #494, #495, #496, #497, #498 (Section 3). Total: 15 tickets.
+**Tickets in Phase 5F intake (will accumulate as Sections 5–6 audits run):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2); #492, #494, #495, #496, #497, #498 (Section 3 — #493 closed, absorbed by #509); #499, #500, #501, #502, #503, #504, #505, #506, #507, #508, #509 (Section 4). Total: 25 tickets.
+
+**Constitutional amendments queued for 1.04 v1.5 → v1.6 release (gated, not yet executed):**
+- **§6.5 amendment (#494):** locked authority sequence + flat institutional-title-before-Department-Heads sub-rule. Updates the example sequence.
+- **§9.1 amendment (#498):** add `(as Incident Commander)` to the role-clarifier convention alongside `(as LASO)` and `(as Authorizing Official)`.
+- **§6.6 amendment (#506):** optional-bullet set narrowed to Sanctions only; mandatory-three contiguity locked as first-three-bullets requirement.
+- **§6.12 amendment (#509):** governed clarifier-tag set narrowed to Rationale + Exception; Rationale definition semantically tightened to audit-defensibility use case.
 
 ---
 
