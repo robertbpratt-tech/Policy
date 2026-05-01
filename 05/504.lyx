@@ -174,13 +174,13 @@ name "pol:5.04"
 
 \lang english
 Effective:
- July 01,
+ April 30,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -414,9 +414,7 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director
-\series default
-:
+IT Director:
 \end_layout
 
 \begin_deeper
@@ -472,16 +470,14 @@ nolink "false"
 
 \series bold
 \lang english
-Assistant IT Director
-\series default
-:
+Assistant IT Director:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall maintain the live KPI register in the System of Engagement (Redmine) as the authoritative operational catalog of KPI definitions,
+Shall maintain the live KPI register in the System of Engagement as the authoritative operational catalog of KPI definitions,
  calculation methods,
  targets,
  and current status.
@@ -490,20 +486,31 @@ Shall maintain the live KPI register in the System of Engagement (Redmine) as th
 \begin_layout Itemize
 
 \lang english
-Shall validate source data practicality and record integrity for each KPI maintained in the register.
+Shall validate domain inputs received from the Systems Administrator,
+ Network Administrator,
+ and Support Specialist for completeness,
+ source-data integrity,
+ and consistency with the KPI register definitions.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall coordinate quarterly KPI review preparation,
- incorporating formal feeder summaries produced under source policies.
+Shall perform cross-domain trend analysis to identify underperformance patterns,
+ recurring deficiencies,
+ and improvement opportunities not visible within a single operational domain.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall prepare the Quarterly KPI Review Summary and the annual executive KPI summary.
+Shall consolidate validated domain inputs and trend analysis into the Quarterly KPI Review Summary for IT Director review.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare the annual executive KPI summary.
 \end_layout
 
 \begin_layout Itemize
@@ -555,9 +562,137 @@ Shall propose KPI additions,
 
 \series bold
 \lang english
-All Information Operations Personnel
+Systems Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall prepare KPI data inputs for metrics sourced from the systems administration operational area as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
 \series default
-:
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall validate source data integrity for those inputs prior to submission to the Assistant IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall meet the Assistant IT Director's quarterly preparation deadline established for the KPI review cycle.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall prepare KPI data inputs for metrics sourced from the network administration operational area as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall validate source data integrity for those inputs prior to submission to the Assistant IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall meet the Assistant IT Director's quarterly preparation deadline established for the KPI review cycle.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Support Specialist:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall prepare KPI data inputs for service desk metrics including first-contact resolution rate,
+ Recurring Ticket Ratio,
+ and other front-line measures sourced from the end-user support operational area as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall validate source data integrity for those inputs prior to submission to the Assistant IT Director.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall meet the Assistant IT Director's quarterly preparation deadline established for the KPI review cycle.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+All Information Operations Personnel:
 \end_layout
 
 \begin_deeper
@@ -667,40 +802,6 @@ nolink "false"
  (Policy Implementation,
  Enforcement,
  and Legal Alignment).
- KPI deviations requiring improvement intake or formal remediation shall be routed through the existing mechanisms defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.16"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.03"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- Parallel improvement logs,
- corrective-action trackers,
- or memo-only review processes shall not be created under this policy.
 \end_layout
 
 \begin_layout Itemize
@@ -781,6 +882,24 @@ nolink "false"
 
 :
  IT Financial Management and Procurement Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
 \end_layout
 
 \begin_layout Itemize
@@ -1030,6 +1149,12 @@ NRS 239.125 (Local Government Records Management Program)
 \begin_layout Itemize
 
 \lang english
+NAC 239.165 (Destruction of Confidential Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 LRDA 20071558 (Activity Reports)
 \end_layout
 
@@ -1046,7 +1171,14 @@ Framework Alignment
 
 \lang english
 NIST CSF 2.0:
- PR.AT-03 (Information Security Performance Is Measured and Evaluated)
+ GV.OV-03 (Performance Evaluated and Reviewed)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ ID.IM-01 (Improvements Identified from Evaluations)
 \end_layout
 
 \begin_layout Itemize
@@ -1152,7 +1284,7 @@ A measure shall qualify as a KPI under this policy only when it meets all of the
 \begin_layout Enumerate
 
 \lang english
-It is reviewed at the IT Director or Assistant IT Director quarterly governance level
+It is reviewed at the IT Director or Assistant IT Director quarterly governance level.
 \end_layout
 
 \begin_layout Enumerate
@@ -1160,13 +1292,13 @@ It is reviewed at the IT Director or Assistant IT Director quarterly governance 
 \lang english
 It reflects departmental outcome,
  control health,
- or operational resilience
+ or operational resilience.
 \end_layout
 
 \begin_layout Enumerate
 
 \lang english
-It is stable enough to trend across review periods
+It is stable enough to trend across review periods.
 \end_layout
 
 \begin_layout Enumerate
@@ -1190,7 +1322,7 @@ Measures that do not meet this threshold remain supporting metrics owned by thei
 \begin_layout Standard
 
 \lang english
-The Department shall maintain KPI coverage across,
+The Assistant IT Director shall maintain KPI coverage across,
  at minimum,
  the following domains:
 \end_layout
@@ -1319,7 +1451,7 @@ Security and Control Health
 \series default
 :
  Measures reflecting security hygiene and control effectiveness.
- Source data governed by the applicable Chapter 2 policies and 
+ Source data governed by the specific Chapter 2 source policy identified in the KPI register and by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1334,7 +1466,7 @@ nolink "false"
 
 
 \series default
-.
+ where monitoring data is used.
 \end_layout
 
 \begin_layout Itemize
@@ -1460,7 +1592,7 @@ nolink "false"
 
 
 \series default
- Section 6.5 and 
+ and 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1482,7 +1614,7 @@ nolink "false"
 
 \lang english
 Not every domain must contain the same number of KPIs.
- The KPI register shall remain deliberately limited and shall prioritize measures that are decision-useful at the departmental governance level.
+ The Assistant IT Director shall keep the KPI register deliberately limited and shall prioritize measures that are decision-useful at the departmental governance level.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1494,7 +1626,7 @@ Not every domain must contain the same number of KPIs.
 \begin_layout Standard
 
 \lang english
-The Assistant IT Director shall maintain a live KPI register in the System of Engagement (Redmine).
+The Assistant IT Director shall maintain a live KPI register in the System of Engagement.
  The KPI register is the authoritative operational catalog for KPI definitions and current status.
  The policy manual defines governance requirements;
  the KPI register carries current formulas,
@@ -1572,6 +1704,49 @@ Trend direction convention.
 Expected routing action when performance falls outside approved tolerances.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Approving authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Approval date.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Effective date.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Retired date,
+ where applicable.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data owner.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Source-system owner.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Known data-quality limitations.
+\end_layout
+
 \begin_layout Standard
 
 \lang english
@@ -1590,11 +1765,8 @@ Initial KPI selection and all target or threshold changes shall be proposed by t
 \begin_layout Standard
 
 \lang english
-All KPI data shall be sourced exclusively from existing authoritative systems and the data collection processes governed by the source policies identified in the KPI register.
- Personnel shall not create manual tracking spreadsheets,
- shadow databases,
- or parallel data collection pipelines for KPIs where system-generated reporting is technically feasible.
- The Quarterly Service Level Performance Summary required by 
+All Information Operations Personnel shall source KPI data exclusively from existing authoritative systems and the data collection processes governed by the source policies identified in the KPI register.
+ The Assistant IT Director shall incorporate the Quarterly Service Level Performance Summary required by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1609,7 +1781,7 @@ nolink "false"
 
 
 \series default
- Section 6.4,
+,
  the project performance data feed required by 
 \series bold
 Policy 
@@ -1625,8 +1797,8 @@ nolink "false"
 
 
 \series default
- Section 6.8,
- and other formal feeder summaries produced under source policies shall be incorporated into the KPI review process rather than duplicated.
+,
+ and other formal feeder summaries produced under source policies into the KPI review process rather than duplicating them.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1641,7 +1813,7 @@ nolink "false"
 No later than fifteen (15) business days following the close of each calendar quarter,
  the Assistant IT Director shall prepare a Quarterly KPI Review Summary for IT Director review.
  The IT Director shall review the summary and document review acknowledgment.
- The Quarterly KPI Review Summary shall be maintained in the System of Engagement (Redmine) as the authoritative internal record of quarterly KPI governance review.
+ The Quarterly KPI Review Summary shall be maintained in the System of Engagement as the authoritative internal record of quarterly KPI governance review.
 \end_layout
 
 \begin_layout Standard
@@ -1750,7 +1922,7 @@ Single-Period Miss
 \series default
 :
  A KPI single-period miss exists when a KPI falls below its approved target or outside its approved tolerance during one quarterly review period.
- A single-period miss shall be documented in the Quarterly KPI Review Summary and monitored during the next review cycle.
+ The Assistant IT Director shall document a single-period miss in the Quarterly KPI Review Summary and shall monitor it during the next review cycle.
 \end_layout
 
 \begin_layout Itemize
@@ -1765,6 +1937,13 @@ Underperformance Pattern
  or (b) the IT Director determines that a single deviation is sufficiently severe,
  persistent,
  or strategically significant to require tracked improvement despite the absence of a second consecutive miss.
+ Where the IT Director invokes (b),
+ the IT Director shall document the determination in the Quarterly KPI Review Summary,
+ including the affected KPI,
+ the affected service or control domain,
+ the operational impact,
+ any security or compliance impact,
+ and the reason immediate tracked improvement is required.
 \end_layout
 
 \begin_layout Itemize
@@ -1836,7 +2015,7 @@ nolink "false"
 Pattern Analysis
 \series default
 :
- Recurring Ticket Ratio and similar pattern-based KPIs shall be reviewed for evidence of documentation weakness,
+ The Assistant IT Director shall review Recurring Ticket Ratio and similar pattern-based KPIs for evidence of documentation weakness,
  training need,
  recurring failure mode,
  or process design deficiency.
@@ -1857,9 +2036,13 @@ Organizational Health KPIs shall be limited to indicators that affect workforce 
  delivery capacity,
  succession fragility,
  or operational overdependence on specific personnel.
- Such indicators shall be reviewed primarily in aggregate.
- This policy shall not be used as an employee ranking or disciplinary scorecard.
- Individual personnel actions arising from organizational health review shall be handled through normal supervisory and HR processes,
+ The Assistant IT Director shall present Organizational Health KPIs in aggregate within the Quarterly KPI Review Summary.
+ KPI governance records shall not include named employee performance ratings,
+ disciplinary facts,
+ medical information,
+ or HR-confidential details.
+ This policy is not an employee ranking or disciplinary scorecard.
+ The IT Director shall route any individual personnel action arising from organizational health review through normal supervisory and HR processes,
  not through the KPI governance process defined in this policy.
 \end_layout
 
@@ -1887,7 +2070,7 @@ nolink "false"
 
 
 \series default
- Section 6.2.
+.
  The Monthly Executive Report content is the IT Director's executive communication derivative;
  it draws from,
  but does not replace,
@@ -1913,21 +2096,98 @@ No later than the end of the first calendar quarter following year-end,
 \lang english
 The Quarterly KPI Review Summary is the authoritative record of KPI governance review.
  Annual executive summaries are derivative communication artifacts and do not replace the quarterly record.
+ The Assistant IT Director shall apply retention periods in accordance with NRS 239.125 and the Nevada Local Government Records Retention Schedule.
+ The Assistant IT Director shall classify KPI governance records in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-Quarterly KPI Review Summaries shall be maintained in the System of Engagement (Redmine) and retained in accordance with the Nevada Local Government Records Retention Schedule under NRS 239.125,
- for a minimum of three (3) years from the date of production unless a longer period is required by another applicable authority:
- LRDA 20071558 (Activity Reports).
+Quarterly KPI Governance Records
+\series default
+:
+ The Assistant IT Director shall retain Quarterly KPI Review Summaries,
+ KPI register history documenting target and threshold approvals,
+ IT Director review acknowledgments,
+ and other quarterly KPI governance records produced under this policy in the System of Engagement for a minimum of three (3) calendar years from the date of production,
+ in accordance with LRDA 20071558 (Activity Reports).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-Where annual executive summaries are issued as formal reports or memoranda,
- they shall be retained in accordance with the applicable County records-management practice for the record series under which they are filed.
+Annual KPI Performance Summaries
+\series default
+:
+ The Assistant IT Director shall retain annual KPI and operational performance summaries that constitute annual activity reports permanently in accordance with LRDA 20071558 (Activity Reports).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Destruction Standards
+\series default
+:
+ The Assistant IT Director shall ensure destruction of confidential KPI governance records complies with NAC 239.165.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Legal Holds
+\series default
+:
+ The Assistant IT Director shall suspend retention and disposition actions for KPI governance records during litigation holds,
+ public records preservation requirements,
+ ongoing audits,
+ external investigations,
+ or other legal hold events,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Multiple Schedules
+\series default
+:
+ Where multiple retention requirements apply to a single record,
+ the Assistant IT Director shall apply the longest applicable period.
 \end_layout
 
 \end_body
