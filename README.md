@@ -34,7 +34,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | #245 | Replace "business hours" with end-of-business-day convention |
 | #264 | Role obligation redistribution (L3 prep, L1 clerical, L2 inputs, AID synthesis) |
 | #353 | Uniform header: `Effective: July 01, 2026 | Version: 1.0` (Phase 10) |
-| #355 | Manual-wide LRDA citation verification sweep (Phase 9) |
+| #355 | Manual-wide reference verification sweep — body-cite test + citation accuracy (all categories) (Phase 9) |
 | #375 | Universal §6.X-strip sweep — strip section-specific depth from cross-policy body references |
 | #456 | Manual-wide LyX CommandInset trailing-whitespace defects (children: #457, #458) |
 | #464 | PDF publication quality — metadata, accessibility, ligatures (Phase 10) |
