@@ -53,7 +53,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `01/101.lyx` | Department Mission and Strategic Objectives | T+ | v1.0 | #486 |
 | `01/102.lyx` | Code of Ethics and Professional Conduct | T+ | v2.3 | #491 |
 | `01/103.lyx` | Standard Operating Ethos | T+ | v2.1 | #486, #492 |
-| `01/104.lyx` | Policy and Documentation Formatting Standards | T+ | v1.5 | #494 |
+| `01/104.lyx` | Policy and Documentation Formatting Standards | T+ | v1.5 | #494, #498 |
 | `01/105.lyx` | Policy Review and Update Procedures | T+ | v2.3 | #495 |
 | `01/106.lyx` | IT Governance and Oversight Structure | T+ | v2.2 | #491, #497 |
 | `01/107.lyx` | Workforce Roles, Responsibilities, and Competency Framework | T+ | v1.4 | #354, #495 |
@@ -94,10 +94,10 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `03/303.lyx` | Service Communications Policy | T+ | v2.1 | #491, #492 |
 | `03/304.lyx` | Service Delivery Feedback and Grievance Policy | T+ | v2.2 | #484, #488, #495, #497 |
 | `03/305.lyx` | Service Request Fulfillment Policy | T+ | v2.2 | #492 |
-| `03/306.lyx` | Operational Incident Management Policy | T+ | v2.2 | #450, #492, #493 |
+| `03/306.lyx` | Operational Incident Management Policy | T+ | v2.2 | #450, #492, #493, #498 |
 | `03/307.lyx` | Problem Management Policy | T+ | v2.4 | #487, #491, #492 |
 | `03/308.lyx` | Service Configuration Management (CMDB) Policy | T+ | v2.3 | #461, #488, #490, #492 |
-| `03/309.lyx` | Change Management Policy | T+ | v2.1 | #490, #492, #493, #495 |
+| `03/309.lyx` | Change Management Policy | T+ | v2.1 | #490, #492, #493, #495, #498 |
 | `03/310.lyx` | Release and Deployment Policy | T+ | v2.1 | #377, #486 |
 | `03/311.lyx` | Capacity and Availability Management Policy | T+ | v2.1 | #451 |
 | `03/312.lyx` | Monitoring and Event Management Policy | T+ | v2.1 | #413, #495 |
@@ -111,13 +111,13 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `04/401.lyx` | Incident Response Policy Overview | T+ | v2.1 | #418, #457, #477, #486 |
-| `04/402.lyx` | Identification and Reporting Procedures | T+ | v2.2 | #492, #495 |
-| `04/403.lyx` | Containment Strategy and Playbooks | T+ | v2.2 | #493, #495 |
-| `04/404.lyx` | Eradication Procedures and Scenario Guides | T+ | v2.4 | #485, #492, #493, #495 |
-| `04/405.lyx` | Recovery Operations and Restoration Prioritization | T+ | v2.4 | #458, #477, #485, #492, #495, #497 |
-| `04/406.lyx` | Communication Protocols and Partner Integration | T+ | v2.3 | #378, #492 |
-| `04/407.lyx` | Postmortem Review and Lessons Learned | T+ | v1.1 | #477, #478, #492 |
+| `04/401.lyx` | Incident Response Policy Overview | T+ | v2.1 | #418, #457, #477, #486, #498 |
+| `04/402.lyx` | Identification and Reporting Procedures | T+ | v2.2 | #492, #495, #498 |
+| `04/403.lyx` | Containment Strategy and Playbooks | T+ | v2.2 | #493, #495, #498 |
+| `04/404.lyx` | Eradication Procedures and Scenario Guides | T+ | v2.4 | #485, #492, #493, #495, #498 |
+| `04/405.lyx` | Recovery Operations and Restoration Prioritization | T+ | v2.4 | #458, #477, #485, #492, #495, #497, #498 |
+| `04/406.lyx` | Communication Protocols and Partner Integration | T+ | v2.3 | #378, #492, #498 |
+| `04/407.lyx` | Postmortem Review and Lessons Learned | T+ | v1.1 | #477, #478, #492, #498 |
 
 ## Chapter 5 — Compliance
 
