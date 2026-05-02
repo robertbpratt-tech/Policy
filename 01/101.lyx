@@ -193,7 +193,11 @@ Version:
 \begin_layout Standard
 
 \lang english
-This policy defines the mission and strategic objectives of the Elko County Information Operations Department (ECIO).
+This policy defines the mission and strategic objectives of the 
+\series bold
+Elko County Information Operations
+\series default
+ Department (ECIO).
 \end_layout
 
 \begin_layout Subsection*
