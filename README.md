@@ -8,7 +8,7 @@ Authoritative index of the Elko County Information Operations (ECIO) Policy Manu
 
 | Code | Meaning |
 | --- | --- |
-| **L** | Locked — no changes without explicit authorization |
+| **L** | Locked — PRISTINE state; full ticket-list walked and applied; no changes without explicit authorization |
 | **T** | Tightened, clean |
 | **T+** | Tightened with open ripples |
 | **D** | Drafted, untightened |
@@ -51,10 +51,10 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `01/101.lyx` | Department Mission and Strategic Objectives | T+ | v1.0 | #486, #526 |
+| `01/101.lyx` | Department Mission and Strategic Objectives | L | v1.1 |  |
 | `01/102.lyx` | Code of Ethics and Professional Conduct | T+ | v2.3 | #491 |
 | `01/103.lyx` | Standard Operating Ethos | T+ | v2.1 | #486, #492, #526 |
-| `01/104.lyx` | Policy and Documentation Formatting Standards | T | v2.0 |  |
+| `01/104.lyx` | Policy and Documentation Formatting Standards | L | v2.0 |  |
 | `01/105.lyx` | Policy Review and Update Procedures | T+ | v2.3 | #495, #502, #508, #509, #526 |
 | `01/106.lyx` | IT Governance and Oversight Structure | T+ | v2.2 | #491, #497, #502, #509 |
 | `01/107.lyx` | Workforce Roles, Responsibilities, and Competency Framework | T+ | v1.4 | #354, #495, #509, #513, #526 |
