@@ -13,7 +13,7 @@ This plan is operational scaffolding for the tightening project. It is not a per
 
 ### §1.1 Session Start
 
-1. Fetch `TIGHTENING_PLAN.md`, `README.md`, and `01/104.lyx` from the repo.
+1. Fetch `TIGHTENING_PLAN.md`, `README.md`, and `01/104.lyx` from the repo. For D-state tightening sessions, also fetch `ECIO_Section_Audit_Handoff.md` (Sections 1–5 audit closures and locked rulings) and `Section6_Audit_Handoff.md` (Section 6 audit pending; gates on Phase 6 closure). The audit handoffs carry locked rulings from #484–#520 that absorb during D-state tightening — equivalent in force to §4 standing declines for the relevant section work.
 2. Check §3 (Architectural Roots). Anything changed that affects what's safe to execute?
 3. Check §4 (Standing Decline Patterns). Which validator findings get reflexive decline?
 4. Check §5 (Per-Policy Defect Inventory). What's the current ticket list against the target?
@@ -741,6 +741,12 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 **Origin.** Manual-wide section consistency audit initiated May 1, 2026 — sweep every policy's §1, then §2, then §3, §4, §5, §6, verifying internal consistency in formatting and voice. Audit produces a per-section report; per-policy cleanup tickets are filed at section close and held open until execution.
 
+**Session-handoff documents.** Two canonical briefing documents live in repo root and carry the cross-session context for the audit work:
+- `ECIO_Section_Audit_Handoff.md` — produced May 1, 2026 at §3 audit close. Briefs §4-§5-§6 audit work with §1-§3 audit closures and locked rulings (Tickets I, K1, K2, M, N — #492, #494, #495, #497, #498). §4 and §5 audits subsequently completed; §6 still pending.
+- `Section6_Audit_Handoff.md` — produced May 1, 2026 at §5 audit close. Briefs §6 audit (pending) with §1-§5 audit summaries, Phase 5F intake state (36 tickets), v1.6 amendment package (five amendments), and pre-session checklist gating on Phase 6 closure.
+
+D-state tightening sessions reference these handoffs at session start (per §1.1 step 1) for locked rulings that absorb during tightening.
+
 **Section 1 audit ✅ (May 1, 2026).** 60 numbered policies (Ch 1–5) checked against 1.04 §6.3. Mechanical compliance uniform (60 / 60 on every spec item). Variance lives at the voice / convention layer.
 
 - **Findings filed:** #484 (F5 — §1 rationale leakage in 1.11 / 1.13 / 3.04 / 3.14, substantive); #485 (F7 + F8 — §1 cross-policy references and bold-named-construct introduction in 3.13 / 4.04 / 4.05, structural per new Rule #3).
@@ -850,7 +856,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 - **No new standing decline patterns inscribed.** §5 audit absorbed into existing pattern stack; architectural amendments produced via §6.11 rather than new declines.
 - **Audit deliverable:** `Section5_Audit_Report.md` (working document).
 
-**Section 6 audit.** Pending. Runs as its own working session; tickets filed at section close on the same model as Sections 1, 2, 3, 4, 5.
+**Section 6 audit.** Pending. Gates on Phase 6 closure (E45 = 5.06 and E46 = 5.07 tightening committed). Pre-session brief: `Section6_Audit_Handoff.md`. Runs as its own working session; tickets filed at section close on the same model as Sections 1, 2, 3, 4, 5.
 
 **Execution disposition (locked May 1, 2026, IT Director ruling).** Defer all audit-driven cleanup ticket execution until two gates clear:
 
