@@ -136,7 +136,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `06/601.lyx` | Glossary and Definitions | A | draft | #192, #193, #195, #328, #352 |
+| `06/601.lyx` | Glossary and Definitions | L | v2.0 |  |
 | `06/602.lyx` | Policy Matrix | A | — | #196, #197, #198, #459 |
 | `06/603.lyx` | Workforce Roles STAK Matrix | A | — | #199, #200, #214 |
 | `06/604.lyx` | Revision History and Version Control | A | v1.0 |  |
