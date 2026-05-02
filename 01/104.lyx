@@ -174,13 +174,13 @@ name "pol:1.04"
 
 \lang english
 Effective:
- April 23,
+ May 02,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.5
+ 1.6
 \end_layout
 
 \begin_layout Subsection*
@@ -539,6 +539,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Data Governance and Classification Policy
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:2.11"
 plural "false"
 caps "false"
@@ -611,6 +629,24 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Incident Response Policy Overview
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "pol:4.03"
 plural "false"
 caps "false"
@@ -641,6 +677,24 @@ nolink "false"
  Policy Implementation,
  Enforcement,
  and Legal Alignment
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Security Control Assessment and Authorization
 \end_layout
 
 \begin_layout Itemize
@@ -710,6 +764,28 @@ NRS 239.010 (Applicability and Public Records)
 Framework Alignment
 \series default
 :
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.PO-01 (Policy Establishment)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST CSF 2.0:
+ GV.PO-02 (Policy Review)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PL-1 (Policy and Procedures)
 \end_layout
 
 \begin_layout Itemize
@@ -909,7 +985,7 @@ Prohibited Constructions
  The preamble "The purpose of this policy is to..." is prohibited.
  Introductory filler,
  risk justification,
- and framework alignment rationale shall not appear in the Purpose section.
+ and framework alignment rationale belong elsewhere per the Rationale Placement rule below.
 \end_layout
 
 \begin_layout Itemize
@@ -986,15 +1062,10 @@ Cross-references within the Scope section shall use the routing pointer format p
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-Exclusion
-\series default
-:
- The Scope section shall not contain directives,
+The Scope section shall contain only scope-defining content;
+ directives,
  compliance language,
- or enforcement statements.
- Those belong in Section 4.
+ and enforcement statements belong in Section 4.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1003,12 +1074,168 @@ Exclusion
 
 \begin_layout Standard
 The Roles and Responsibilities section shall identify every role with accountability under the policy.
- Roles shall be listed in descending order of authority (e.g.,
- IT Director,
- County Manager,
- Assistant IT Director,
- then operational roles,
- then external stakeholders).
+ Roles shall be listed in descending order of authority.
+ The canonical sequence is:
+\end_layout
+
+\begin_layout Enumerate
+Board of County Commissioners (when applicable).
+\end_layout
+
+\begin_layout Enumerate
+County Manager (when applicable).
+\end_layout
+
+\begin_layout Enumerate
+IT Director.
+\end_layout
+
+\begin_layout Enumerate
+Assistant IT Director.
+\end_layout
+
+\begin_layout Enumerate
+Systems Administrator.
+\end_layout
+
+\begin_layout Enumerate
+Network Administrator.
+\end_layout
+
+\begin_layout Enumerate
+Support Specialist.
+\end_layout
+
+\begin_layout Enumerate
+Administrative Assistant (when applicable).
+\end_layout
+
+\begin_layout Enumerate
+All Information Operations Personnel.
+\end_layout
+
+\begin_layout Enumerate
+Named institutional titles (Human Resources,
+ Office of Fiscal Affairs,
+ Buildings and Grounds,
+ District Attorney's Office,
+ Project Owner,
+ Elected Officials,
+ and similar,
+ when applicable).
+\end_layout
+
+\begin_layout Enumerate
+Department Heads.
+\end_layout
+
+\begin_layout Enumerate
+All County Personnel.
+\end_layout
+
+\begin_layout Enumerate
+External stakeholders (vendors,
+ contractors,
+ third parties) when relevant.
+\end_layout
+
+\begin_layout Standard
+Named institutional titles always precede the Department Heads catch-all,
+ regardless of which holds the policy-specific authority.
+ This is a flat ordering rule —
+ not a context-dependent precedence judgment.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Role-Clarifier Convention
+\series default
+:
+ When the IT Director acts in a defined delegated capacity established by a specific policy,
+ the role title may carry a parenthetical clarifier identifying the function being invoked.
+ The governed clarifiers are:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+(as LASO)
+\series default
+:
+ the CJIS Local Agency Security Officer function established by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Data Governance and Classification Policy).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+(as Authorizing Official)
+\series default
+:
+ the NIST Risk Management Framework Authorizing Official function established by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Security Control Assessment and Authorization).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+(as Incident Commander)
+\series default
+:
+ the cybersecurity incident response Incident Commander function established by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Incident Response Policy Overview).
+\end_layout
+
+\begin_layout Standard
+The clarifier shall appear in Section 3 role bullets and in Section 6 body prose at the point where the specific function is invoked.
+ In Section 6 body prose,
+ the function-name form (e.g.,
+ "the LASO," "the Authorizing Official," "the Incident Commander") may be used when describing what the function does,
+ regardless of who currently holds the role.
+ No other clarifiers shall be introduced without IT Director approval and incorporation into this convention.
 \end_layout
 
 \begin_layout Standard
@@ -1026,8 +1253,7 @@ Each distinct obligation shall appear as a sub-bullet beneath the role,
 \end_layout
 
 \begin_layout Itemize
-Obligations shall not be chained together in a single comma-separated sentence.
- Each auditable obligation requires its own sub-bullet.
+Each auditable obligation shall appear as its own atomic sub-bullet.
 \end_layout
 
 \begin_layout Standard
@@ -1059,9 +1285,9 @@ nolink "false"
  Board of County Commissioners),
  or a defined group with a clear membership boundary (e.g.,
  "All Information Operations Personnel," "All County Personnel," "Department Heads").
- Descriptive activity labels (e.g.,
- "Policy Authors," "Approving Authorities," "System Owners") shall not be used as role identifiers in Section 3.
- If a responsibility applies to any person performing a given activity,
+ Activity-derivative labels (e.g.,
+ "Policy Authors," "Approving Authorities," "System Owners") shall be replaced with the defined role identifier responsible for the activity.
+ Where a responsibility applies to any person performing a given activity,
  it shall be assigned to the defined role or group that performs that activity.
 \end_layout
 
@@ -1082,6 +1308,7 @@ The Compliance and Exceptions section shall open with a single sentence establis
 
 \begin_layout Standard
 The section shall contain the following three (3) mandatory labeled bullet items,
+ as the first three bullets in the section,
  in this order:
 \end_layout
 
@@ -1114,26 +1341,8 @@ Exceptions
 \end_layout
 
 \begin_layout Standard
-Additional labeled bullets may be included when the policy warrants them.
- The following are the governed set of optional labels:
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Constructive Notice
-\series default
-:
- For policies where publication constitutes notice.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Emergency Deviations
-\series default
-:
- For policies with time-critical override procedures.
+A single additional labeled bullet may be included when the policy warrants it.
+ The governed optional label is:
 \end_layout
 
 \begin_layout Itemize
@@ -1145,30 +1354,9 @@ Sanctions
  For policies with specific disciplinary consequences beyond the standard enforcement framework.
 \end_layout
 
-\begin_layout Itemize
-
-\series bold
-Universal Applicability
-\series default
-:
- For policies that apply regardless of location or work status.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Mandatory Compliance
-\series default
-:
- For policies that apply without exception to all personnel classes.
-\end_layout
-
 \begin_layout Standard
 No other labels shall be introduced without IT Director approval and incorporation into this governing list.
- The Compliance and Exceptions section shall not use numbered subsections (e.g.,
- 4.1,
- 4.2);
- it shall use the flat bolded-bullet-label structure defined above.
+ The Compliance and Exceptions section shall use the flat bolded-bullet-label structure defined above.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1189,7 +1377,7 @@ Cited References
 \series default
 :
  This subsection contains citations that are directly referenced by number or identifier in the body of the policy (Sections 1 through 4 and Section 6).
- A policy or framework that is not cited in the body text shall not appear in this subsection.
+ All entries in this subsection shall be body-cited in the policy text.
  Conversely,
  any policy or framework cited by number in the body text shall have a corresponding entry in this subsection.
  Cited References are load-bearing —
@@ -1312,23 +1500,20 @@ Formatting Rules
 \begin_layout Itemize
 Each citation shall be a distinct,
  individual line item.
- Citations shall not be grouped on a single line.
 \end_layout
 
 \begin_layout Itemize
-Reference line items shall not end with a terminal period.
- They are citations,
- not sentences.
+Reference line items shall be punctuated as citation identifiers,
+ not as sentences.
 \end_layout
 
 \begin_layout Itemize
-Internal ECIO policy and appendix references shall not be bolded in either subsection.
+Internal ECIO policy and appendix references shall appear in plain (non-bolded) text in both subsections.
  All citation line items shall receive uniform formatting to avoid visually privileging internal references over upstream frameworks.
 \end_layout
 
 \begin_layout Itemize
 Internal ECIO policy and appendix references shall use LyX cross-reference insets (CommandInset ref) to maintain link integrity.
- They shall not be manually typed.
 \end_layout
 
 \begin_layout Standard
@@ -1445,11 +1630,17 @@ To ensure clear enforceability during audits,
 Anchoring Requirement
 \series default
 :
- Every directive shall be anchored to a specific,
+ Every directive that requires a role to perform an action shall be anchored to a specific,
  capitalized role.
- Orphaned directives (e.g.,
+ Orphaned action directives (e.g.,
  "Logs shall be reviewed weekly" with no identified role) are prohibited.
- The correct form is "The Systems Administrator shall review logs weekly."
+ The correct form is "The Systems Administrator shall review logs weekly." Structural and categorical rules —
+ those describing properties of the document,
+ content classifications,
+ or document state —
+ anchor to the document object they govern and do not require role anchoring (e.g.,
+ "Nesting beyond two levels is prohibited" anchors to the document;
+ "The Purpose section shall consist of one (1) sentence" anchors to a section).
 \end_layout
 
 \begin_layout Standard
@@ -1656,7 +1847,6 @@ Official Systems Terminology
 :
  Software and platforms referenced in policy documents shall be cited by their governance function label only (e.g.,
  "System of Engagement," "Authoritative System of Record," "Endpoint Protection Platform," "Productivity Suite").
- Vendor and product names shall not appear in policy text.
  Product-specific names,
  configurations,
  and implementation details belong in operational documentation maintained in the System of Engagement.
@@ -1702,8 +1892,8 @@ Every reference shall use the singular construction "Policy [X.XX]" (e.g.,
 \begin_layout Itemize
 The first reference to an internal policy within each policy shall include the parenthetical title immediately after the cross-reference (e.g.,
  "Policy 1.08 (Delegation of Authority and Decision Rights)").
- The parenthetical title shall not be bolded;
- bold applies only to the cross-reference itself.
+ Bold applies only to the cross-reference itself;
+ the parenthetical title appears in plain text.
  All subsequent references within the same policy shall use the short form only (e.g.,
  "Policy 1.08").
 \end_layout
@@ -1714,7 +1904,7 @@ Every in-body cross-reference (Sections 1 through 4 and Section 6) shall be bold
 \end_layout
 
 \begin_layout Itemize
-Cross-references within Section 5 (References) shall not be bolded,
+Cross-references within Section 5 (References) shall appear in plain text,
  consistent with the uniform citation formatting rule in Section 6.7.
  They shall still use LyX cross-reference insets.
 \end_layout
@@ -1779,13 +1969,24 @@ LRDA:
 \begin_layout Itemize
 CJIS:
  CJIS Security Policy v[Version]:
- Section [ID] ([Topic])
+ [Control Identifier] ([Topic]).
+ Citations shall use the CJIS v6.0 control identifier form exclusively (e.g.,
+ AC-1,
+ IR-6,
+ PS-3).
+\end_layout
+
+\begin_layout Itemize
+CJIS Appendix:
+ Appendix-level normative material shall be cited as CJIS Security Policy v[Version]:
+ Appendix [ID] ([Topic]).
 \end_layout
 
 \begin_layout Itemize
 NIST CSF:
  NIST CSF [Version]:
- [Function].[Category]-[ID] ([Title])
+ [Function].[Category]-[Subcategory ID] ([Title]).
+ Every NIST CSF citation shall include the Subcategory identifier (the numeric suffix after the hyphen).
 \end_layout
 
 \begin_layout Itemize
@@ -1793,6 +1994,22 @@ NIST SP:
  NIST SP [Number] Rev.
  [Revision]:
  [Control ID] ([Control Title])
+\end_layout
+
+\begin_layout Itemize
+NIST SP (publication-level):
+ Where a citation points to a foundational document rather than a specific control,
+ the form NIST SP [Number] Rev.
+ [Revision] ([Full Publication Title]) shall be used.
+ The parenthesized title shall match the publication's official title as published by NIST.
+\end_layout
+
+\begin_layout Itemize
+NIST SP 800-37 RMF step:
+ Where a citation points to a NIST SP 800-37 Risk Management Framework lifecycle step rather than a control,
+ the form NIST SP 800-37 Rev.
+ [Revision]:
+ [Step Name] step may be used.
 \end_layout
 
 \begin_layout Itemize
@@ -1814,7 +2031,7 @@ Reference Sub-Ordering Within Categories
 \series default
 :
  The following ordering rules apply within each subsection (Cited References and Framework Alignment) independently.
- Citations shall not be interleaved across subsections.
+ Citations shall be grouped within their respective subsections.
 \end_layout
 
 \begin_layout Enumerate
@@ -1856,7 +2073,7 @@ State of Nevada
 CJIS
 \series default
 :
- Sorted alphanumerically by Section or Control Family identifier.
+ Sorted alphanumerically by Control Identifier.
 \end_layout
 
 \begin_layout Enumerate
@@ -1964,12 +2181,13 @@ Structural Labels
 \end_layout
 
 \begin_layout Standard
-Bold shall not be applied to external framework references (CJIS,
+Bold shall be reserved exclusively for the uses defined above;
+ external framework references (CJIS,
  NIST,
  COBIT control IDs),
  numerical values,
  parenthetical titles accompanying cross-references,
- or general emphasis within prose.
+ and general emphasis within prose appear in plain text.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1992,7 +2210,7 @@ Terminal Periods
 Exception
 \series default
 :
- Citation line items in Section 5 (References) shall not end with a terminal period.
+ Citation line items in Section 5 (References) shall close at the final character of the closing identifier or topic descriptor.
 \end_layout
 
 \begin_layout Standard
@@ -2006,7 +2224,6 @@ Bulleted Lists vs.
  Numbered lists (Enumerate) shall be used only when the items represent an ordered sequence where position is meaningful (e.g.,
  a workflow,
  a hierarchy of precedence).
- Numbered lists shall not be used solely for the purpose of counting items.
 \end_layout
 
 \begin_layout Standard
@@ -2040,21 +2257,10 @@ Bold Label Formatting
 Contextual Clarifiers
 \series default
 :
- When a directive requires boundary-setting,
- explanation,
- or qualification,
- the clarifying statement shall be separated from the primary directive using a bolded tag followed by a colon,
+ When a directive requires institutional justification or a defined circumstance under which the directive does not apply,
+ the qualifying statement shall be separated from the primary directive using a bolded tag followed by a colon,
  placed on a new line or as a sub-bullet.
  The following tags constitute the governed vocabulary of permitted contextual clarifiers:
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Constraint
-\series default
-:
- Defines a hard limitation or boundary condition on the directive.
 \end_layout
 
 \begin_layout Itemize
@@ -2063,7 +2269,7 @@ Constraint
 Rationale
 \series default
 :
- Provides the justification for a requirement that may not be self-evident.
+ Provides the institutional justification for a requirement that exceeds an external minimum or carries architectural status not self-evident from the directive itself.
 \end_layout
 
 \begin_layout Itemize
@@ -2074,26 +2280,6 @@ Exception
 :
  Identifies a specific,
  defined circumstance under which the directive does not apply.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Exclusion
-\series default
-:
- Carves out a specific item,
- group,
- or system from the scope of the directive.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Clarification
-\series default
-:
- Resolves a potential ambiguity in the directive's application.
 \end_layout
 
 \begin_layout Standard
@@ -2116,10 +2302,9 @@ Typography,
 Manual Overrides
 \series default
 :
- Authors shall not use manual formatting commands (e.g.,
- forcing font sizes,
- manual line breaks,
- or changing margins) within the LyX editor.
+ Authors shall maintain the document class formatting without overriding font sizes,
+ line breaks,
+ or margins within the LyX editor.
 \end_layout
 
 \begin_layout Itemize
@@ -2140,7 +2325,8 @@ Images and Diagrams
 Term Definitions
 \series default
 :
- Policies shall not redefine standard terms already defined in the central Glossary (
+ Policies shall use Glossary-defined terms in their established meaning,
+ deferring to the central Glossary (
 \series bold
 Appendix 
 \begin_inset CommandInset ref
@@ -2232,7 +2418,7 @@ The term is an acronym or abbreviation whose expansion is not obvious to the int
 Exclusion Criteria
 \series default
 :
- The following shall not receive Glossary entries:
+ The Glossary shall exclude the following:
 \end_layout
 
 \begin_layout Itemize
@@ -2260,7 +2446,7 @@ Bold Treatment
 :
  Terms that appear in the Glossary shall be bolded on first use within each policy,
  as defined in Section 6.11.
- Glossary terms shall not be hyperlinked to 
+ Glossary terms shall remain plain text without hyperlinks to 
 \series bold
 Appendix 
 \begin_inset CommandInset ref
@@ -2285,7 +2471,11 @@ nolink "false"
 Maintenance Cadence
 \series default
 :
- The Glossary shall be reviewed as part of each annual policy review cycle defined in 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The Glossary shall be reviewed as part of each annual policy review cycle defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2301,8 +2491,13 @@ nolink "false"
 
 \series default
 .
- Terms that are no longer referenced by any active policy shall be candidates for removal.
 \end_layout
+
+\begin_layout Itemize
+Terms that are no longer referenced by any active policy shall be candidates for removal.
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsubsection*
 6.15 Procedural and Informational Documentation
@@ -2341,7 +2536,7 @@ Document Types
 \series default
 :
  The following two types are the closed set of document classes.
- A new type shall not be introduced without IT Director approval and incorporation into this list.
+ Introduction of a new type shall require IT Director approval and incorporation into this list.
 \end_layout
 
 \begin_layout Itemize
@@ -2373,7 +2568,7 @@ Document Subtypes
 \series default
 :
  Each type has a closed set of subtypes.
- A new subtype shall not be introduced without IT Director approval and incorporation into this list.
+ Introduction of a new subtype shall require IT Director approval and incorporation into this list.
 \end_layout
 
 \begin_layout Itemize
@@ -2502,7 +2697,7 @@ Category
 Owner
 \series default
 :
- The role responsible for keeping the document current.
+ The role that shall keep the document current.
  The Owner shall be a role,
  not a named individual.
 \end_layout
