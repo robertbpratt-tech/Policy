@@ -126,10 +126,10 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `05/501.lyx` | Policy Implementation, Enforcement, and Legal Alignment | T+ | v2.0 | #495, #497 |
 | `05/502.lyx` | Internal Audits, Self-Assessment, and Control Testing | T | v2.0 | — |
 | `05/503.lyx` | Compliance Monitoring and Corrective Action | T+ | v2.0 | #488 |
-| `05/504.lyx` | Performance Metrics and Operational KPIs | T | v2.0 |  |
+| `05/504.lyx` | Performance Metrics and Operational KPIs | T+ | v2.0 | #522 |
 | `05/505.lyx` | Security Control Assessment and Authorization | T | v2.0 | #513 |
 | `05/506.lyx` | Vendor Compliance and Third-Party Assurance | T | v2.0 |  |
-| `05/507.lyx` | Annual Policy Review and Maturity Scoring | D | v1.0 | #191, #282, #300, #488, #509 |
+| `05/507.lyx` | Annual Policy Review and Maturity Scoring | T | v2.0 |  |
 
 ## Chapter 6 — Appendices
 
