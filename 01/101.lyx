@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 1.1
 \end_layout
 
 \begin_layout Subsection*
@@ -206,15 +206,7 @@ This policy defines the mission and strategic objectives of the Elko County Info
 \begin_layout Standard
 
 \lang english
-This policy applies to all Information Operations personnel and informs the development,
- execution,
- and evaluation of all policies,
- procedures,
- and services maintained by the Department.
- It serves as the strategic anchor point for departmental planning,
- service delivery,
- policy enforcement,
- and cross-departmental coordination.
+This policy applies to all Information Operations personnel.
 \end_layout
 
 \begin_layout Subsection*
@@ -238,9 +230,9 @@ IT Director
 
 \lang english
 Shall define,
- approve,
+ maintain,
  and update the Department mission and strategic objectives to ensure alignment with County goals,
- in accordance with the review cadence established in 
+ in accordance with the review and approval procedures established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -356,7 +348,7 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to this policy shall be documented in writing with justification and approved by the IT Director in accordance with the exception management framework defined in 
+ Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -371,22 +363,7 @@ nolink "false"
 
 
 \series default
- and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Delegation of Authority and Decision Rights).
+.
  Oral exceptions are not valid.
 \end_layout
 
@@ -422,24 +399,6 @@ nolink "false"
 
 :
  Policy Review and Update Procedures
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Delegation of Authority and Decision Rights
 \end_layout
 
 \begin_layout Itemize
@@ -492,29 +451,8 @@ Framework Alignment
 \begin_layout Itemize
 
 \lang english
-NRS 242.171 (Responsibilities of Office/Director)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-CJIS Security Policy v6.0:
- Section 5.1 (Information Exchange Agreements)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
 NIST CSF 2.0:
  GV.OC-01 (Organizational Context)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
- PM-1 (Information Security Program Plan)
 \end_layout
 
 \begin_layout Itemize
@@ -529,7 +467,7 @@ NIST SP 800-53 Rev.
 
 \lang english
 COBIT 2019:
- EDM01 (Ensure Governance Framework Setting and Maintenance)
+ EDM01 (Ensured Governance Framework Setting and Maintenance)
 \end_layout
 
 \begin_layout Subsection*
@@ -622,11 +560,24 @@ Service Enablement
 Decision Support
 \series default
 :
- The Department shall streamline and automate processes to reduce manual burden and shall provide accurate,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Department shall streamline and automate processes to reduce manual burden.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Department shall provide accurate,
  current,
  and well-governed data to County leadership.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
