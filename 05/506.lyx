@@ -174,13 +174,13 @@ name "pol:5.06"
 
 \lang english
 Effective:
- July 01,
+ May 01,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -227,7 +227,7 @@ nolink "false"
 
 
 \series default
- (Supply Chain Risk Management (SCRM) and Vendor Governance).
+.
 \end_layout
 
 \begin_layout Itemize
@@ -261,22 +261,7 @@ Criminal Justice Information Services (CJIS) vendor compliance assessment.
 \begin_layout Itemize
 
 \lang english
-Vendor enforcement notification intake from 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+Vendor enforcement notification intake.
 \end_layout
 
 \begin_layout Itemize
@@ -294,22 +279,7 @@ Contract action recommendations based on sustained non-compliance.
 \begin_layout Itemize
 
 \lang english
-Vendor compliance data feed to the KPI framework in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+Vendor compliance data feed to the KPI framework.
 \end_layout
 
 \end_deeper
@@ -545,7 +515,7 @@ nolink "false"
 
 
 \series default
- Section 6.3,
+ (Supply Chain Risk Management (SCRM) and Vendor Governance),
  including the authority to initiate triennial audits and unannounced security inspections of vendors with access to Criminal Justice Information (CJI).
 \end_layout
 
@@ -576,25 +546,6 @@ nolink "false"
 
 \series default
  (Risk Management Policy).
- This policy identifies and routes risk-relevant findings;
- 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.09"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- governs risk scoring,
- acceptance,
- and Risk Register maintenance.
 \end_layout
 
 \begin_layout Itemize
@@ -618,7 +569,7 @@ Assistant IT Director
 
 \lang english
 Shall maintain the Vendor Compliance Record for each vendor within scope,
- in the System of Engagement (Redmine),
+ in the System of Engagement,
  in accordance with 
 \series bold
 Policy 
@@ -640,7 +591,23 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Shall conduct or coordinate all scheduled and unscheduled vendor compliance reviews defined in Section 6.2.
+Shall coordinate all scheduled and unscheduled vendor compliance reviews defined in Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall validate vendor compliance review input packages received from the Systems Administrator,
+ Network Administrator,
+ and Support Specialist for completeness,
+ source-data integrity,
+ and consistency with the review-input requirements established in Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall render the compliance posture determination for each vendor compliance review and document the determination in the Vendor Compliance Record.
 \end_layout
 
 \begin_layout Itemize
@@ -710,7 +677,153 @@ Shall document contract action recommendations for IT Director review in accorda
 
 \series bold
 \lang english
-Requesting Department Head
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the vendor technical point of contact for vendors supporting the systems administration operational area as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (Workforce Roles,
+ Responsibilities,
+ and Competency Framework).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare the vendor compliance review input package for assigned vendors,
+ including service level agreement (SLA) performance data,
+ enforcement notification history,
+ and assurance evidence currency status,
+ in accordance with Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall submit each prepared input package to the Assistant IT Director within the preparation timeline established by the Assistant IT Director for the review cycle.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the vendor technical point of contact for vendors supporting the network administration operational area as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare the vendor compliance review input package for assigned vendors,
+ including SLA performance data,
+ enforcement notification history,
+ and assurance evidence currency status,
+ in accordance with Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall submit each prepared input package to the Assistant IT Director within the preparation timeline established by the Assistant IT Director for the review cycle.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Support Specialist
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the vendor technical point of contact for vendors supporting the end-user support operational area as defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall prepare the vendor compliance review input package for assigned vendors,
+ including SLA performance data,
+ enforcement notification history,
+ and assurance evidence currency status,
+ in accordance with Section 6.2.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall submit each prepared input package to the Assistant IT Director within the preparation timeline established by the Assistant IT Director for the review cycle.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Department Heads
 \series default
 :
 \end_layout
@@ -800,10 +913,10 @@ nolink "false"
 Enforcement
 \series default
 :
- Failure to conduct required vendor compliance reviews,
- failure to maintain Vendor Compliance Records,
- failure to collect or evaluate required assurance evidence,
- or failure to act on enforcement notifications received under 
+ Failure to maintain required Vendor Compliance Records,
+ conduct required vendor compliance reviews,
+ evaluate required third-party assurance evidence,
+ or route deficiencies in accordance with this policy may result in corrective action in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -820,22 +933,7 @@ nolink "false"
 \series default
  (Policy Implementation,
  Enforcement,
- and Legal Alignment) shall be treated as non-compliance and may result in corrective action in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -845,7 +943,7 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to any requirement of this policy shall be documented in writing with a business justification and approved by the IT Director in accordance with the exception management framework established in 
+ Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -861,27 +959,7 @@ nolink "false"
 
 \series default
 .
- Exceptions affecting CJIS vendor compliance assessment cadences,
- CJIS Security Addendum verification requirements,
- or the exercise of contractual audit rights for vendors with access to CJI shall require County Manager approval in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Delegation of Authority and Decision Rights).
- No exception shall be granted on an open-ended basis;
- each exception shall specify a defined remediation timeline.
- No exception shall be granted that would place County systems or CJI out of compliance with applicable CJIS Security Policy obligations.
+ Oral exceptions are not valid.
 \end_layout
 
 \begin_layout Subsection*
@@ -906,7 +984,7 @@ Cited References
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:1.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -915,7 +993,9 @@ nolink "false"
 \end_inset
 
 :
- Delegation of Authority and Decision Rights
+ Workforce Roles,
+ Responsibilities,
+ and Competency Framework
 \end_layout
 
 \begin_layout Itemize
@@ -1177,7 +1257,19 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+NRS 239 (Public Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NAC 239.165 (Destruction Standards)
 \end_layout
 
 \begin_layout Itemize
@@ -1190,28 +1282,51 @@ LRDA 20071300 (Vendor Performance Case Files)
 
 \lang english
 CJIS Security Policy v6.0:
- Section CA-2 (Control Assessments)
+ CA-2 (Control Assessments)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section CA-2(1) (Independent Assessors)
+ CA-2(1) (Independent Assessors)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section SA-9 (External System Services)
+ PS-7 (External Personnel Security)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section SR-8 (Notification Agreements)
+ SA-9 (External System Services)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CJIS Security Policy v6.0:
+ SR-8 (Notification Agreements)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ CA-2 (Control Assessments)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ PS-7 (External Personnel Security)
 \end_layout
 
 \begin_layout Itemize
@@ -1243,22 +1358,22 @@ Framework Alignment
 
 \lang english
 NIST CSF 2.0:
- GV.SC-06 (Cybersecurity Supply Chain Risk Management)
+ GV.SC-07 (Supplier Risks Monitored Throughout Relationship)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 NIST SP 800-37 Rev.
- 2:
- (Risk Management Framework for Information Systems and Organizations)
+ 2 (Risk Management Framework for Information Systems and Organizations:
+ A System Life Cycle Approach for Security and Privacy)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 COBIT 2019:
- APO10 (Manage Vendors)
+ APO10.05 (Monitor Vendor Performance and Compliance)
 \end_layout
 
 \begin_layout Itemize
@@ -1425,7 +1540,7 @@ nolink "false"
 The Assistant IT Director shall establish and maintain a Vendor Compliance Record for each vendor,
  contractor,
  or third-party service provider within scope of this policy.
- The Vendor Compliance Record shall be maintained in the System of Engagement (Redmine) in accordance with 
+ The Vendor Compliance Record shall be maintained in the System of Engagement in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1517,8 +1632,7 @@ Whether the vendor has logical or physical access to Criminal Justice Informatio
 \begin_layout Itemize
 
 \lang english
-The current CJIS Security Addendum status,
- where applicable.
+The current CJIS Security Addendum status for vendor personnel with CJI access.
 \end_layout
 
 \begin_layout Itemize
@@ -1539,7 +1653,7 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1619,7 +1733,7 @@ nolink "false"
 
 
 \series default
- Section 6.5,
+,
  enforcement actions received under 
 \series bold
 Policy 
@@ -1635,7 +1749,7 @@ nolink "false"
 
 
 \series default
- Section 6.4,
+,
  and maintenance events recorded under 
 \series bold
 Policy 
@@ -1678,7 +1792,7 @@ nolink "false"
 
 
 \series default
- Section 6.4 (Contractors and Vendors),
+,
  the Assistant IT Director shall log the notification in the applicable Vendor Compliance Record within two (2) business days of receipt.
  The log entry shall document the date the notification was received to establish the logging deadline.
 \end_layout
@@ -1762,7 +1876,7 @@ Unscheduled Review Trigger
 \begin_layout Standard
 
 \lang english
-The Assistant IT Director shall conduct or coordinate a vendor compliance review for each vendor within scope no less than annually.
+The Assistant IT Director shall coordinate a vendor compliance review for each vendor within scope no less than annually.
  The annual vendor compliance review establishes the minimum review floor;
  pre-renewal reviews under Section 6.3 and unscheduled reviews triggered under Section 6.1 or Section 6.5 are additional and do not reset the annual cycle.
 \end_layout
@@ -1798,7 +1912,7 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1816,8 +1930,7 @@ The currency and sufficiency of third-party assurance evidence under Section 6.4
 \begin_layout Itemize
 
 \lang english
-CJIS Security Addendum compliance status,
- where applicable.
+CJIS Security Addendum compliance status for vendors with CJI access.
 \end_layout
 
 \begin_layout Itemize
@@ -1932,7 +2045,7 @@ nolink "false"
 
 
 \series default
- (Service Catalog and SLA Policy) Section 6.5.
+ (Service Catalog and SLA Policy).
 \end_layout
 
 \begin_layout Itemize
@@ -1972,7 +2085,7 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1996,8 +2109,7 @@ The status and outcome of any Corrective Action Plans associated with the vendor
 \begin_layout Itemize
 
 \lang english
-CJIS compliance status,
- where applicable.
+CJIS compliance status for vendors with CJI access.
 \end_layout
 
 \begin_layout Itemize
@@ -2020,7 +2132,7 @@ IT Director Action
  Renew With Conditions (specifying the conditions),
  Do Not Renew,
  or Escalate to Contract Administrator and Legal Counsel.
- The documented renewal recommendation shall be provided to the Requesting Department Head identified in 
+ The documented renewal recommendation shall be provided to the Department Head identified in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2035,7 +2147,7 @@ nolink "false"
 
 
 \series default
- Section 3.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2077,7 +2189,10 @@ nolink "false"
 \series default
 ,
  or whose services involve access to CJI,
- the Information Operations Department shall maintain an ongoing program of third-party assurance evidence collection and evaluation.
+ the Information Operations Department shall maintain an ongoing program of third-party assurance evidence collection and evaluation,
+ consistent with NIST SP 800-53 Rev.
+ 5:
+ SR-6 (Supplier Assessments and Reviews).
 \end_layout
 
 \begin_layout Itemize
@@ -2136,7 +2251,7 @@ nolink "false"
 
 
 \series default
- Section 6.3.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2146,6 +2261,25 @@ Any deviation from or substitution for these approved artifact types shall requi
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Currency Standards
+\series default
+:
+ Assurance evidence shall be considered current only when it satisfies the following minimum criteria.
+ SOC 2 Type II reports shall cover a period ending within the preceding eighteen (18) months.
+ SOC 2 Type I reports shall be accepted only for initial onboarding or first-year review,
+ unless the IT Director documents compensating evidence.
+ Independent security assessments and penetration test summaries shall be dated within the preceding twelve (12) months,
+ unless a longer vendor testing cadence is contractually documented and approved by the IT Director.
+ Certifications and attestation letters shall be active on the evaluation date.
+ The Assistant IT Director shall log expired,
+ superseded,
+ or scope-mismatched evidence as a compliance deficiency in the Vendor Compliance Record.
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
@@ -2249,8 +2383,8 @@ nolink "false"
 
 
 \series default
- Section 6.3 and the control assessment requirements of CJIS Security Policy v6.0:
- Section CA-2 (Control Assessments).
+ and the control assessment requirements of CJIS Security Policy v6.0:
+ CA-2 (Control Assessments) and SA-9 (External System Services).
  This policy governs the County's ongoing monitoring of CJIS vendor compliance after activation;
  it does not create,
  modify,
@@ -2269,7 +2403,7 @@ nolink "false"
 
 
 \series default
- Section 6.3.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2281,13 +2415,15 @@ Triennial Assessment
 :
  The IT Director shall ensure that each CJIS vendor undergoes a compliance assessment no less than once every three (3) years,
  consistent with CJIS Security Policy v6.0:
- Section CA-2.
+ CA-2 and NIST SP 800-53 Rev.
+ 5:
+ CA-2 (Control Assessments).
  The assessment shall evaluate the vendor's implementation and operating effectiveness of controls applicable to CJI protection.
  The IT Director shall determine whether the assessment is conducted by Information Operations personnel,
  by an independent assessor,
  or through a combination of both,
  considering the objectivity requirements of CJIS Security Policy v6.0:
- Section CA-2(1) (Independent Assessors) and the assessment resources available.
+ CA-2(1) (Independent Assessors) and the assessment resources available.
  Where internal personnel are utilized,
  the IT Director shall ensure the selected assessors possess organizational independence from the vendor management activities being assessed,
  consistent with the objectivity safeguards established in 
@@ -2305,7 +2441,18 @@ nolink "false"
 
 
 \series default
- Section 6.4.
+.
+ Each CJIS vendor compliance assessment shall be conducted under a written assessment plan approved by the IT Director before assessment activities begin.
+ The plan shall identify the controls under assessment,
+ assessment procedures,
+ the assessment environment,
+ the assessment team,
+ assessment roles and responsibilities,
+ and the basis for assessor independence.
+ The IT Director shall ensure each assessment produces a written assessment report documenting findings,
+ evidence reviewed,
+ and required remediation,
+ and shall ensure the report is documented in the Vendor Compliance Record.
 \end_layout
 
 \begin_layout Itemize
@@ -2331,7 +2478,7 @@ nolink "false"
 
 
 \series default
- Section 6.3.
+.
  The IT Director shall exercise this authority when risk conditions,
  enforcement notification patterns,
  or assurance evidence deficiencies indicate that a planned assessment may not provide sufficient assurance.
@@ -2361,8 +2508,28 @@ nolink "false"
 
 
 \series default
- Section 6.3.
+.
  Any gap in Security Addendum coverage shall be treated as a compliance deficiency and logged in the Vendor Compliance Record.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Personnel Change Monitoring
+\series default
+:
+ Consistent with CJIS Security Policy v6.0:
+ PS-7 (External Personnel Security) and NIST SP 800-53 Rev.
+ 5:
+ PS-7 (External Personnel Security),
+ the IT Director shall ensure that each CJIS vendor's contract requires the vendor to notify the County of personnel transfers,
+ terminations,
+ or other changes affecting CJI access,
+ County-issued credentials,
+ or County-issued physical access within twenty-four (24) hours of the change.
+ The Assistant IT Director shall track vendor compliance with the personnel-change notification requirement in the Vendor Compliance Record.
+ Failure to provide timely notification shall be treated as a compliance deficiency.
 \end_layout
 
 \begin_layout Itemize
@@ -2373,7 +2540,7 @@ Notification Agreements
 \series default
 :
  Consistent with CJIS Security Policy v6.0:
- Section SR-8 (Notification Agreements) and NIST SP 800-53 Rev.
+ SR-8 (Notification Agreements) and NIST SP 800-53 Rev.
  5:
  SA-9 (External System Services),
  the IT Director shall verify that each CJIS vendor's contract includes the incident notification and cooperation provisions required by 
@@ -2391,7 +2558,7 @@ nolink "false"
 
 
 \series default
- Section 6.3.
+.
  Where a CJIS vendor fails to meet the notification timelines established in 
 \series bold
 Policy 
@@ -2553,7 +2720,7 @@ Vendor Notification
 \series default
 :
  Upon IT Director approval of the CAP referral,
- the Assistant IT Director shall provide written notification to the vendor and to the Requesting Department Head.
+ the Assistant IT Director shall provide written notification to the vendor and to the relevant Department Head.
  The notification shall identify the deficiencies,
  the required remediation outcomes,
  and the CAP timeline established under 
@@ -2604,10 +2771,10 @@ Closure or Escalation
 
 \series bold
 \lang english
-Clarification
+Sub-Threshold Observations
 \series default
 :
- Observations that do not meet the threshold for formal CAP development shall be documented in the Vendor Compliance Record and communicated to the vendor in writing.
+ Observations that do not meet the threshold for formal Corrective Action Plan development shall be documented in the Vendor Compliance Record and communicated to the vendor in writing.
  The observations shall be evaluated during the next scheduled vendor compliance review.
 \end_layout
 
@@ -2691,7 +2858,7 @@ nolink "false"
 
 
 \series default
- Section 6.4 (Contractors and Vendors).
+.
  The IT Director's authority to revoke or restrict system access under 
 \series bold
 Policy 
@@ -2746,7 +2913,7 @@ nolink "false"
 
 
 \series default
- Section 6.2.
+.
  The Assistant IT Director shall ensure that vendor compliance review outcomes,
  CAP status,
  assurance evidence currency,
@@ -2765,7 +2932,7 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
  This data feed supplements the vendor SLA performance data provided by 
 \series bold
 Policy 
@@ -2781,7 +2948,7 @@ nolink "false"
 
 
 \series default
- Section 6.5 and shall not duplicate data already captured in the service level management function.
+ and shall not duplicate data already captured in the service level management function.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2793,64 +2960,9 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-Records generated under this policy shall be retained in accordance with NRS 239.125 and the Nevada Local Government Records Retention Schedule.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Vendor Compliance Records
-\series default
-:
- Vendor Compliance Records,
- including all compliance review records,
- assurance evidence evaluations,
- enforcement notification logs,
- CAP referrals,
- and contract action recommendations,
- shall be retained in the System of Engagement (Redmine) for six (6) calendar years after the record is closed,
- in accordance with LRDA 20071300 (Vendor Performance Case Files).
- A Vendor Compliance Record is closed when the vendor no longer provides services to the County and all open compliance actions,
- Corrective Action Plans,
- and contract action recommendations associated with the vendor have been resolved or formally closed.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-CJIS Assessment Records
-\series default
-:
- For vendors with access to CJI,
- assessment records shall be retained for the greater of the LRDA 20071300 retention period or the CJIS-required retention period applicable at the time of the assessment.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Litigation and Legal Holds
-\series default
-:
- The IT Director shall ensure that retention and disposition actions are suspended during litigation holds,
- public records preservation requirements,
- or other legal hold events.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Public Records
-\series default
-:
- All records generated under this policy are subject to NRS 239 and may be subject to public disclosure unless protected by a specific statutory exemption.
- Disclosure determinations for vendor compliance records containing security findings,
- assurance evidence,
- or CJIS-related materials shall be made in coordination with the County's public records process and legal counsel,
- consistent with applicable exemptions and the data classification requirements of 
+The Vendor Compliance Record is the authoritative record of each vendor's compliance posture rendered under this policy.
+ The Assistant IT Director shall apply retention periods in accordance with NRS 239.125 and the Nevada Local Government Records Retention Schedule.
+ The Assistant IT Director shall classify Vendor Compliance Records in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2866,6 +2978,101 @@ nolink "false"
 
 \series default
 .
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Vendor Compliance Records
+\series default
+:
+ The Assistant IT Director shall retain Vendor Compliance Records,
+ including all compliance review records,
+ assurance evidence evaluations,
+ enforcement notification logs,
+ Corrective Action Plan referrals,
+ and contract action recommendations,
+ in the System of Engagement for a minimum of six (6) calendar years after the record is closed,
+ in accordance with LRDA 20071300 (Vendor Performance Case Files).
+ A Vendor Compliance Record is closed when the vendor no longer provides services to the County and all open compliance actions,
+ Corrective Action Plans,
+ and contract action recommendations associated with the vendor have been resolved or formally closed.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+CJIS Assessment Records
+\series default
+:
+ For vendors with access to CJI,
+ the Assistant IT Director shall retain assessment records for the greater of the LRDA 20071300 retention period or the CJIS-required retention period applicable at the time of the assessment.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Destruction Standards
+\series default
+:
+ The Assistant IT Director shall ensure destruction of confidential vendor compliance records complies with NAC 239.165.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Legal Holds
+\series default
+:
+ The Assistant IT Director shall suspend retention and disposition actions for vendor compliance records during litigation holds,
+ public records preservation requirements,
+ ongoing audits,
+ external investigations,
+ or other legal hold events,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Multiple Schedules
+\series default
+:
+ Where multiple retention requirements apply to a single record,
+ the Assistant IT Director shall apply the longest applicable period.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Public Records
+\series default
+:
+ All records generated under this policy are subject to NRS 239 and may be subject to public disclosure unless protected by a specific statutory exemption.
+ Disclosure determinations for vendor compliance records containing security findings,
+ assurance evidence,
+ or CJIS-related materials shall be made in coordination with the County's public records process and legal counsel.
 \end_layout
 
 \end_body
