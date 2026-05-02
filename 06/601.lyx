@@ -230,10 +230,8 @@ of
 Record
 \series default
  The designated master repository for governance controls.
- Within the ECIO framework,
- the LyX source file of the Information Operations Policy Manual constitutes the Authoritative System of Record.
- In the event of a discrepancy between the master file and any derivative copy,
- the master file and its compiled PDF take precedence.
+ Within the ECIO framework, the LyX source file of the Information Operations Policy Manual constitutes the Authoritative System of Record.
+ In the event of a discrepancy between the master file and any derivative copy, the master file and its compiled PDF take precedence.
  Defined in 
 \series bold
 Policy 
@@ -269,9 +267,7 @@ Breach
 
 Determination
 \series default
- The formal finding,
- rendered exclusively by the IT Director,
- that a security incident constitutes a breach of personal information requiring notification under NRS 603A.220.
+ The formal finding, rendered exclusively by the IT Director, that a security incident constitutes a breach of personal information requiring notification under NRS 603A.220.
  The breach determination triggers the statutory notification process.
  Defined in 
 \series bold
@@ -317,12 +313,9 @@ Catch-up
 
 RFC
 \series default
- A retroactive Request for Change (RFC) record created after an Emergency change has already been implemented.
- The catch-up RFC documents the change action,
- captures the justification for Emergency designation,
- and provides the basis for the mandatory Change Control Authority review.
- Catch-up RFC documentation shall be completed within twenty-four (24) hours of implementation or by noon on the next business day,
- whichever is later.
+ A retroactive Request for Change record created after an Emergency change has already been implemented.
+ The catch-up RFC documents the change action, captures the justification for Emergency designation, and provides the basis for the mandatory Change Control Authority review.
+ Catch-up RFC documentation shall be completed within twenty-four (24) hours of implementation or by noon on the next business day, whichever is later.
  Defined in 
 \series bold
 Policy 
@@ -370,10 +363,8 @@ Authority
 (CCA)
 \series default
  The governance function that authorizes changes to County IT systems and infrastructure.
- The IT Director holds CCA authority for all Significant changes;
- CCA authority for Standard changes may be delegated to the Assistant IT Director.
- Emergency changes receive provisional CCA authorization for immediate implementation,
- followed by a mandatory catch-up CCA review.
+ The IT Director holds CCA authority for all Significant changes; CCA authority for Standard changes may be delegated to the Assistant IT Director.
+ Emergency changes receive provisional CCA authorization for immediate implementation, followed by a mandatory catch-up CCA review.
  Defined in 
 \series bold
 Policy 
@@ -397,6 +388,45 @@ nolink "false"
 
 \series bold
 \lang english
+Chief
+\begin_inset space ~
+\end_inset
+
+Security
+\begin_inset space ~
+\end_inset
+
+Officer
+\begin_inset space ~
+\end_inset
+
+(CSO)
+\series default
+ The state-level authority designated under the FBI Criminal Justice Information Services Security Policy who acts as the state's coordinating CJIS agent and as the liaison between local agencies and the FBI.
+ The CSO concurrence is required for CJI-affecting policy exceptions per the exception management framework.
+ Defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.6.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 Child
 \begin_inset space ~
 \end_inset
@@ -409,8 +439,7 @@ Order
 \series default
  An operational work order that has been linked to a Parent Problem record under the Parent-Child Linkage mechanic.
  Child work orders are suppressed from independent troubleshooting while the Parent Problem investigation is active.
- Upon issuance of the Formal Closure Declaration,
- child work orders are mass-closed with a disposition status determined by the resolution outcome.
+ Upon issuance of the Formal Closure Declaration, child work orders are mass-closed with a disposition status determined by the resolution outcome.
  Defined in 
 \series bold
 Policy 
@@ -434,9 +463,27 @@ nolink "false"
 
 \series bold
 \lang english
+CI
+\series default
+ See Configuration Item.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 CJI
 \series default
  See Criminal Justice Information.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+CJIS
+\series default
+ See Criminal Justice Information Services Security Policy.
 \end_layout
 
 \begin_layout Description
@@ -452,14 +499,22 @@ CMDB
 
 \series bold
 \lang english
+COBIT
+\series default
+ See Control Objectives for Information and Related Technologies.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 Configuration
 \begin_inset space ~
 \end_inset
 
 Baseline
 \series default
- The documented,
- approved configuration state of an information system from which all authorized changes are tracked.
+ The documented, approved configuration state of an information system from which all authorized changes are tracked.
  Baselines are derived from mandatory frameworks and serve as the reference point for drift detection and compliance assessment.
  Defined in 
 \series bold
@@ -494,10 +549,7 @@ Item
 
 (CI)
 \series default
- A discrete entity — hardware,
- software,
- service,
- or documentation artifact — recorded in the Configuration Management Database (CMDB) and subject to configuration control.
+ A discrete entity — hardware, software, service, or documentation artifact — recorded in the Configuration Management Database and subject to configuration control.
  Each CI shall have a defined set of attributes and relationships maintained in accordance with the CI record governance standards.
  Defined in 
 \series bold
@@ -536,9 +588,7 @@ Database
 
 (CMDB)
 \series default
- The authoritative repository of Configuration Item records,
- their attributes,
- and their relationships.
+ The authoritative repository of Configuration Item records, their attributes, and their relationships.
  The CMDB is maintained in the System of Engagement and serves as the operational source of truth for the current state of all managed IT assets and services.
  Defined in 
 \series bold
@@ -569,8 +619,7 @@ Constructive
 
 Notice
 \series default
- The legal principle by which publication of a policy in the Knowledge Base constitutes notice to all Information Operations personnel,
- regardless of whether each individual has personally read the document.
+ The legal principle by which publication of a policy in the Knowledge Base constitutes notice to all Information Operations Personnel, regardless of whether each individual has personally read the document.
  Used as a compliance label in Section 4 when applicable.
  Defined in 
 \series bold
@@ -595,6 +644,44 @@ nolink "false"
 
 \series bold
 \lang english
+Control
+\begin_inset space ~
+\end_inset
+
+Objectives
+\begin_inset space ~
+\end_inset
+
+for
+\begin_inset space ~
+\end_inset
+
+Information
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+Related
+\begin_inset space ~
+\end_inset
+
+Technologies
+\begin_inset space ~
+\end_inset
+
+(COBIT)
+\series default
+ The ISACA-published governance and management framework for enterprise information and technology, used in this manual for governance-domain alignment.
+ Current version: COBIT 2019.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 Corrective
 \begin_inset space ~
 \end_inset
@@ -610,7 +697,9 @@ Plan
 (CAP)
 \series default
  A structured remediation instrument that tracks deficiencies from identification through resolution.
- All remediation tracking instruments across the manual — regardless of originating label — follow the CAP lifecycle governed by 
+ All remediation tracking instruments across the manual — regardless of originating label — follow the CAP lifecycle.
+ Intake sources include audit deficiencies, sustained SLA non-compliance, risk response remediation, and compliance monitoring findings.
+ Governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -626,10 +715,6 @@ nolink "false"
 
 \series default
 .
- Intake sources include audit deficiencies,
- sustained SLA non-compliance,
- risk response remediation,
- and compliance monitoring findings.
 \end_layout
 
 \begin_layout Description
@@ -650,12 +735,61 @@ Information
 
 (CJI)
 \series default
- Data defined by the FBI Criminal Justice Information Services (CJIS) Security Policy as requiring specific handling,
- access,
- and protection controls.
- Includes Criminal History Record Information (CHRI),
- National Crime Information Center (NCIC) data,
- and related law enforcement data accessed through CJIS systems.
+ Data defined by the FBI Criminal Justice Information Services Security Policy as requiring specific handling, access, and protection controls.
+ Includes Criminal History Record Information (CHRI), National Crime Information Center (NCIC) data, and related law enforcement data accessed through CJIS systems.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Criminal
+\begin_inset space ~
+\end_inset
+
+Justice
+\begin_inset space ~
+\end_inset
+
+Information
+\begin_inset space ~
+\end_inset
+
+Services
+\begin_inset space ~
+\end_inset
+
+Security
+\begin_inset space ~
+\end_inset
+
+Policy
+\begin_inset space ~
+\end_inset
+
+(CJIS)
+\series default
+ The federal standard published by the FBI Criminal Justice Information Services Division governing the protection, transmission, storage, and access of Criminal Justice Information.
+ Applicable to all entities accessing CJI systems.
+ Current version: CJIS Security Policy v6.0.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+CSF
+\series default
+ See NIST Cybersecurity Framework.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+CSO
+\series default
+ See Chief Security Officer.
 \end_layout
 
 \begin_layout Subsection*
@@ -706,7 +840,7 @@ Directed
 
 Deputization
 \series default
- A formal construct by which the IT Director designates Tier L3+ Information Operations Department personnel to exercise specific operational authority on the IT Director's behalf for a defined scope and duration.
+ A formal construct by which the IT Director designates Tier L3+ Information Operations Personnel to exercise specific operational authority on the IT Director's behalf for a defined scope and duration.
  Directed Deputization is limited to operational functions and excludes a defined set of non-delegable authorities.
  Defined in 
 \series bold
@@ -739,8 +873,33 @@ E
 \lang english
 ECIO
 \series default
- Elko County Information Operations.
- The departmental abbreviation used throughout this manual to refer to the Information Operations Department and its governance framework.
+ See Elko County Information Operations.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Elko
+\begin_inset space ~
+\end_inset
+
+County
+\begin_inset space ~
+\end_inset
+
+Information
+\begin_inset space ~
+\end_inset
+
+Operations
+\begin_inset space ~
+\end_inset
+
+(ECIO)
+\series default
+ The departmental designation used throughout this manual to refer to the Information Operations Department and its governance framework.
+ ECIO is the operational successor to the prior Information Technology Department and is the authoritative governance function for all County IT assets, personnel, and decisions.
 \end_layout
 
 \begin_layout Description
@@ -753,12 +912,8 @@ Emergency
 
 Change
 \series default
- A change that must be implemented immediately to restore service,
- address a security vulnerability,
- or prevent imminent harm,
- without the time to complete the standard Change Control Authority review process.
- Emergency changes receive provisional CCA authorization and require a catch-up RFC and CCA review within twenty-four (24) hours or by noon on the next business day,
- whichever is later.
+ A change that must be implemented immediately to restore service, address a security vulnerability, or prevent imminent harm, without the time to complete the standard Change Control Authority review process.
+ Emergency changes receive provisional CCA authorization and require a catch-up RFC and CCA review within twenty-four (24) hours or by noon on the next business day, whichever is later.
  Defined in 
 \series bold
 Policy 
@@ -782,16 +937,48 @@ nolink "false"
 
 \series bold
 \lang english
+Emergency
+\begin_inset space ~
+\end_inset
+
+Technical
+\begin_inset space ~
+\end_inset
+
+Approval
+\series default
+ An emergency-scoped bypass of the standard Technical Approval workflow, authorized only by the IT Director, the Assistant IT Director, or a delegated technical approver acting within written delegation scope.
+ Emergency Technical Approval does not constitute purchasing authority, contract execution authority, or payment authorization, all of which remain governed by the Financial Authority chain.
+ Defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 4.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 Evidence
 \begin_inset space ~
 \end_inset
 
 Artifact
 \series default
- Any preserved item — including screenshots,
- exported logs,
- camera footage segments,
- and forensic captures — attached to a work order or incident record as supporting evidence.
+ Any preserved item — including screenshots, exported logs, camera footage segments, and forensic captures — attached to a work order or incident record as supporting evidence.
  Evidence artifacts are stored in the Files field of the applicable record in the System of Engagement.
  Defined in 
 \series bold
@@ -816,6 +1003,72 @@ nolink "false"
 
 \lang english
 F
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+FBI
+\series default
+ See Federal Bureau of Investigation.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Federal
+\begin_inset space ~
+\end_inset
+
+Bureau
+\begin_inset space ~
+\end_inset
+
+of
+\begin_inset space ~
+\end_inset
+
+Investigation
+\begin_inset space ~
+\end_inset
+
+(FBI)
+\series default
+ The U.S. federal law enforcement agency.
+ Referenced in this manual as the issuing authority of the CJIS Security Policy and as the federal partner for cybersecurity incident notification.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Financial
+\begin_inset space ~
+\end_inset
+
+Authority
+\series default
+ Authority over budget verification and lawful purchasing execution.
+ Financial Authority is held by the Finance Department and the County Manager within their respective scopes; it is distinct from and operates in tandem with Technical Authority through the Technical-Fiscal Handshake.
+ Defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.1.
 \end_layout
 
 \begin_layout Description
@@ -870,39 +1123,8 @@ Hard
 
 Fork
 \series default
- The mandatory,
- non-discretionary jurisdictional transfer from 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (operational incident management) to Chapter 4 (cybersecurity incident response) upon discovery of an Indicator of Compromise during an operational response.
- The Hard Fork suspends 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- SLA obligations for the affected work order.
+ The mandatory, non-discretionary jurisdictional transfer from operational incident management to cybersecurity incident response upon discovery of an Indicator of Compromise during an operational response.
+ The Hard Fork suspends Service Level Agreement obligations for the affected work order.
  No other SLA suspension mechanism exists within the operational framework.
  Defined in 
 \series bold
@@ -952,43 +1174,11 @@ Commander
 
 (IC)
 \series default
- The singular title for the individual exercising command authority during an active incident — operational (
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-) or cybersecurity (Chapter 4).
- No parallel title (e.g.,
- Major Incident Manager) exists.
- For operational incidents,
- the Assistant IT Director serves as default IC.
- For cybersecurity incidents,
- the IT Director serves as IC unless a designee is appointed per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ The singular title for the individual exercising command authority during an active incident — operational or cybersecurity.
+ No parallel title (e.g., Major Incident Manager) exists.
+ For operational incidents, the Assistant IT Director serves as default IC.
+ For cybersecurity incidents, the IT Director serves as IC unless a designee is appointed under the Chapter 4 incident response framework.
+ Designation Authority (who can be named IC) is broad; Declaration Authority (who calls an incident) is narrow and defined by incident type.
  Defined in 
 \series bold
 Policy 
@@ -1005,7 +1195,24 @@ nolink "false"
 
 \series default
 ,
- Section 6.3.
+ Section 6.3
+;
+ \series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.1.
 \end_layout
 
 \begin_layout Description
@@ -1026,11 +1233,10 @@ Compromise
 
 (IoC)
 \series default
- An observable artifact or pattern — including but not limited to anomalous network traffic,
- unauthorized access attempts,
- malicious code signatures,
- and known threat intelligence indicators — that provides evidence of a security compromise.
- IoC definitions are maintained in a two-layer structure under 
+ An observable artifact or pattern — including but not limited to anomalous network traffic, unauthorized access attempts, malicious code signatures, and known threat intelligence indicators — that provides evidence of a security compromise.
+ IoC definitions are maintained in a two-layer structure.
+ Discovery of an IoC during an operational incident triggers the mandatory Hard Fork transition.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1046,7 +1252,32 @@ nolink "false"
 
 \series default
 .
- Discovery of an IoC during an operational incident triggers the mandatory Hard Fork transfer.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Information
+\begin_inset space ~
+\end_inset
+
+Technology
+\begin_inset space ~
+\end_inset
+
+Infrastructure
+\begin_inset space ~
+\end_inset
+
+Library
+\begin_inset space ~
+\end_inset
+
+(ITIL)
+\series default
+ The Axelos-published service management framework, used in this manual for service-management-domain alignment.
+ Current version: ITIL v4.
 \end_layout
 
 \begin_layout Description
@@ -1056,6 +1287,15 @@ nolink "false"
 IoC
 \series default
  See Indicator of Compromise.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+ITIL
+\series default
+ See Information Technology Infrastructure Library.
 \end_layout
 
 \begin_layout Subsection*
@@ -1075,11 +1315,7 @@ Knowledge
 Base
 \series default
  The departmental knowledge repository maintained as governed artifacts in the System of Engagement.
- The Knowledge Base serves as the operational distribution mechanism for policies,
- SOPs,
- playbooks,
- Known Error workaround documentation,
- and other governed content.
+ The Knowledge Base serves as the operational distribution mechanism for policies, Standard Operating Procedures, playbooks, Known Error workaround documentation, and other governed content.
  Governed by 
 \series bold
 Policy 
@@ -1109,26 +1345,10 @@ Known
 Error
 \series default
  A Problem for which the root cause has been identified and documented but for which a permanent fix has not yet been implemented.
- Upon Known Error declaration,
- the Investigator shall document the workaround in the Knowledge Base within two (2) business days.
- The workaround becomes searchable and feeds the mandatory workaround search step in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-,
- Section 6.4.
- Known Error lifecycle is defined in 
+ Upon Known Error declaration, the Investigator shall document the workaround in the Knowledge Base within two (2) business days.
+ The workaround becomes searchable and feeds the mandatory workaround search step in operational incident management.
+ Known Error lifecycle obligations include deactivation upon Formal Closure Declaration.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1172,12 +1392,9 @@ Legal
 
 Hold
 \series default
- A directive suspending retention and disposition actions for specified records during litigation,
- public records preservation requirements,
- audits,
- or other legal events.
+ A directive suspending retention and disposition actions for specified records during litigation, public records preservation requirements, audits, or other legal events.
  The IT Director shall suspend applicable retention schedules for the duration of the hold.
- Referenced in 
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1217,9 +1434,10 @@ Officer
 
 (LASO)
 \series default
- The individual designated under the CJIS Security Policy to serve as the security point of contact for the local agency's access to CJI systems.
- Within Elko County,
- designation currently defaults to the IT Director under 
+ The individual designated under the FBI Criminal Justice Information Services Security Policy to serve as the security point of contact for the local agency's access to CJI systems.
+ Within Elko County, designation defaults to the IT Director by policy mandate.
+ The LASO carries non-delegable accountability for CJIS Security Policy incident reporting obligations, though execution of CJIS notifications may be delegated.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1235,9 +1453,42 @@ nolink "false"
 
 \series default
 ,
- Section 3.
- The LASO carries non-delegable accountability for CJIS Security Policy incident reporting obligations,
- though execution of CJIS notifications may be delegated.
+ Section 6.11.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Local
+\begin_inset space ~
+\end_inset
+
+Records
+\begin_inset space ~
+\end_inset
+
+Disposition
+\begin_inset space ~
+\end_inset
+
+Authority
+\begin_inset space ~
+\end_inset
+
+(LRDA)
+\series default
+ The mandatory records retention schedule promulgated by the Nevada Local Government Records Management Program under NRS 239.125.
+ LRDA schedules establish the minimum retention periods for County records by record type and govern disposition authority following expiration.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+LRDA
+\series default
+ See Local Records Disposition Authority.
 \end_layout
 
 \begin_layout Subsection*
@@ -1256,10 +1507,7 @@ Maturity
 
 Tier
 \series default
- The rating assigned to each policy during the annual policy review and maturity scoring process,
- reflecting the policy's implementation completeness,
- operational effectiveness,
- and audit readiness.
+ The rating assigned to each policy during the annual policy review and maturity scoring process, reflecting the policy's implementation completeness, operational effectiveness, and audit readiness.
  Maturity tier assignments are rendered by the IT Director and reported to the County Manager.
  Defined in 
 \series bold
@@ -1290,6 +1538,211 @@ N
 
 \series bold
 \lang english
+NAC
+\series default
+ See Nevada Administrative Code.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+National
+\begin_inset space ~
+\end_inset
+
+Initiative
+\begin_inset space ~
+\end_inset
+
+for
+\begin_inset space ~
+\end_inset
+
+Cybersecurity
+\begin_inset space ~
+\end_inset
+
+Education
+\begin_inset space ~
+\end_inset
+
+(NICE)
+\begin_inset space ~
+\end_inset
+
+Workforce
+\begin_inset space ~
+\end_inset
+
+Framework
+\series default
+ The NIST-published workforce framework for cybersecurity, formalized as NIST Special Publication 800-181.
+ Used in this manual for workforce role alignment under the workforce competency framework.
+ NICE does not participate in the authority resolution hierarchy.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+National
+\begin_inset space ~
+\end_inset
+
+Institute
+\begin_inset space ~
+\end_inset
+
+of
+\begin_inset space ~
+\end_inset
+
+Standards
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+Technology
+\begin_inset space ~
+\end_inset
+
+(NIST)
+\series default
+ The U.S. federal agency whose Special Publications, Cybersecurity Framework, and Risk Management Framework are referenced in this manual for security control standards, cybersecurity strategy, and risk management methodology.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Nevada
+\begin_inset space ~
+\end_inset
+
+Administrative
+\begin_inset space ~
+\end_inset
+
+Code
+\begin_inset space ~
+\end_inset
+
+(NAC)
+\series default
+ The codified body of administrative regulations adopted by Nevada state agencies under authority of the Nevada Revised Statutes.
+ Second in the authority resolution hierarchy after NRS.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Nevada
+\begin_inset space ~
+\end_inset
+
+Revised
+\begin_inset space ~
+\end_inset
+
+Statutes
+\begin_inset space ~
+\end_inset
+
+(NRS)
+\series default
+ The codified body of state law enacted by the Nevada Legislature.
+ First in the authority resolution hierarchy for the manual.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+NICE
+\series default
+ See National Initiative for Cybersecurity Education Workforce Framework.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+NIST
+\series default
+ See National Institute of Standards and Technology.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+NIST
+\begin_inset space ~
+\end_inset
+
+Cybersecurity
+\begin_inset space ~
+\end_inset
+
+Framework
+\begin_inset space ~
+\end_inset
+
+(CSF)
+\series default
+ The NIST-published framework for managing cybersecurity risk, organized around six Functions: Govern, Identify, Protect, Detect, Respond, and Recover.
+ Referenced in this manual as the strategic risk-alignment framework.
+ Current version: NIST CSF 2.0.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+No
+\begin_inset space ~
+\end_inset
+
+Tag,
+\begin_inset space ~
+\end_inset
+
+No
+\begin_inset space ~
+\end_inset
+
+Pay
+\series default
+ Institutional shorthand for the asset-intake gatekeeping rule: no County asset proceeds to payment without a unique IT-issued asset tag and registration in the IT Asset Catalog.
+ Equivalently expressed as "No Registration, No Pay." The rule operates as a procurement-side enforcement mechanism for asset inventory integrity.
+ Defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.12"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.1.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 Non-Delegable
 \begin_inset space ~
 \end_inset
@@ -1297,12 +1750,7 @@ Non-Delegable
 Authority
 \series default
  A defined set of decision rights that the IT Director shall not delegate through the Directed Deputization construct or any other mechanism.
- Includes policy exception authority,
- risk acceptance authority,
- IC declaration,
- self-access-approval,
- NRS 603A.220 breach determination authority,
- and Separation of Duties Matrix functions.
+ Includes policy exception authority, risk acceptance authority, IC declaration, self-access-approval, NRS 603A.220 breach determination authority, and Separation of Duties Matrix functions.
  Defined in 
 \series bold
 Policy 
@@ -1333,26 +1781,9 @@ Notification
 Clock
 \series default
  The external reporting obligation timeframe triggered by the declaration of a cybersecurity incident under Chapter 4.
- The notification window — measured from declaration — continues running during all phases of incident response (containment,
- eradication,
- recovery) and is not paused or satisfied by internal response activities.
- Execution is governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- Clock parameters established in 
+ The notification window — measured from declaration — continues running during all phases of incident response (containment, eradication, recovery) and is not paused or satisfied by internal response activities.
+ Clock parameters are established by the applicable external authority (CJIS, NRS 603A.220, or contractual partner obligations).
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1369,6 +1800,31 @@ nolink "false"
 \series default
 ,
  Section 6.6.
+ Governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:4.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+NRS
+\series default
+ See Nevada Revised Statutes.
 \end_layout
 
 \begin_layout Subsection*
@@ -1387,23 +1843,8 @@ Operational
 
 Handback
 \series default
- The formal return of jurisdiction from Chapter 4 cybersecurity incident response to normal 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.06"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- operational management following completion of recovery operations.
- The Operational Handback restores SLA obligations and returns the affected assets or services to standard operational governance.
+ The formal return of jurisdiction from Chapter 4 cybersecurity incident response to normal operational management following completion of recovery operations.
+ The Operational Handback restores Service Level Agreement obligations and returns the affected assets or services to standard operational governance.
  Defined in 
 \series bold
 Policy 
@@ -1463,6 +1904,46 @@ nolink "false"
 
 \series bold
 \lang english
+Personally
+\begin_inset space ~
+\end_inset
+
+Identifiable
+\begin_inset space ~
+\end_inset
+
+Information
+\begin_inset space ~
+\end_inset
+
+(PII)
+\series default
+ Information that can be used to identify a specific individual, either alone or in combination with other available data.
+ Definition derives from federal and Nevada state authorities (NRS 603A.040 for personal information; NIST SP 800-122 for federal usage); the manual uses these external definitions without local modification.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+PHI
+\series default
+ See Protected Health Information.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+PII
+\series default
+ See Personally Identifiable Information.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 PIR
 \series default
  See Post-Implementation Review.
@@ -1475,9 +1956,9 @@ PIR
 Playbook
 \series default
  A scenario-based operational artifact governing decision-making and technical execution during defined incident or operational scenarios.
- Playbooks present branching decision logic rather than linear procedural steps and are distinct from SOPs.
+ Playbooks present branching decision logic rather than linear procedural steps and are distinct from Standard Operating Procedures.
  Maintained as governed Knowledge Base artifacts in the System of Engagement.
- Formatting standards are defined in 
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1493,13 +1974,60 @@ nolink "false"
 
 \series default
 ,
- Section 6.16.
- Content requirements are defined in 
-\series bold
+ Section 6.15
+;
+ \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pol:4.03"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.5.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Policy
+\begin_inset space ~
+\end_inset
+
+Matrix
+\series default
+ The cross-reference appendix that maps each policy to its applicable framework controls, statutory requirements, and upstream authority alignment.
+ Framework Alignment entries in Section 5 of each policy feed the Policy Matrix.
+ Defined in 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+ Governed by 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.07"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1516,37 +2044,6 @@ nolink "false"
 
 \series bold
 \lang english
-Policy
-\begin_inset space ~
-\end_inset
-
-Matrix
-\series default
- The cross-reference appendix (
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-) that maps each policy to its applicable framework controls,
- statutory requirements,
- and upstream authority alignment.
- Framework Alignment entries in Section 5 of each policy feed the Policy Matrix.
-\end_layout
-
-\begin_layout Description
-
-\series bold
-\lang english
 Post-Implementation
 \begin_inset space ~
 \end_inset
@@ -1557,9 +2054,7 @@ Review
 
 (PIR)
 \series default
- The formal review conducted after implementation of a Significant or Emergency change to verify that the change achieved its objectives,
- did not introduce unintended effects,
- and that all documentation obligations have been satisfied.
+ The formal review conducted after implementation of a Significant or Emergency change to verify that the change achieved its objectives, did not introduce unintended effects, and that all documentation obligations have been satisfied.
  Defined in 
 \series bold
 Policy 
@@ -1584,12 +2079,10 @@ nolink "false"
 \lang english
 Postmortem
 \series default
- The structured after-action review conducted following a cybersecurity incident to identify root causes,
- evaluate the effectiveness of the response,
- document lessons learned,
- and produce actionable recommendations.
+ The structured after-action review conducted following a cybersecurity incident to identify root causes, evaluate the effectiveness of the response, document lessons learned, and produce actionable recommendations.
  Postmortem participation is mandatory and shall not be deferred.
- Governed exclusively by 
+ Distinct from the operational Critical Incident Stakeholder Report.
+ Governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1605,12 +2098,26 @@ nolink "false"
 
 \series default
 .
- Distinct from the operational Critical Incident Stakeholder Report governed by 
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Privacy
+\begin_inset space ~
+\end_inset
+
+Incident
+\series default
+ A subset of security incidents involving unauthorized access to, disclosure of, modification of, or loss of Criminal Justice Information, Personally Identifiable Information, or Protected Health Information.
+ Privacy Incidents are distinct from security incidents generally; the privacy-data nexus triggers additional notification, documentation, and corrective-action obligations beyond the standard incident response framework.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.06"
+reference "pol:2.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1620,7 +2127,8 @@ nolink "false"
 
 
 \series default
-.
+,
+ Section 6.8.
 \end_layout
 
 \begin_layout Description
@@ -1653,19 +2161,32 @@ nolink "false"
 .
 \end_layout
 
-\begin_layout Subsection*
-
-\lang english
-R
-\end_layout
-
 \begin_layout Description
 
 \series bold
 \lang english
-RFC
+Protected
+\begin_inset space ~
+\end_inset
+
+Health
+\begin_inset space ~
+\end_inset
+
+Information
+\begin_inset space ~
+\end_inset
+
+(PHI)
 \series default
- See Request for Change.
+ Individually identifiable health information held or transmitted by a covered entity, as defined under the federal Health Insurance Portability and Accountability Act (HIPAA) and 45 CFR Part 160.
+ The manual uses the federal definition without local modification.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang english
+R
 \end_layout
 
 \begin_layout Description
@@ -1688,7 +2209,8 @@ Change
 \series default
  The formal record documenting a proposed or completed change to County IT systems or infrastructure.
  RFCs are the documentary basis for Change Control Authority review and approval.
- The RFC record structure and lifecycle are defined in 
+ The RFC record structure and lifecycle are defined in the change management framework.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1710,18 +2232,24 @@ nolink "false"
 
 \series bold
 \lang english
+RFC
+\series default
+ See Request for Change.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 Risk
 \begin_inset space ~
 \end_inset
 
 Register
 \series default
- The centralized record of identified risks,
- their assessed severity,
- assigned response strategies,
- responsible owners,
- and current status.
- Maintained under 
+ The centralized record of identified risks, their assessed severity, assigned response strategies, responsible owners, and current status.
+ Provided as an input to the annual policy review and maturity scoring process.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1736,7 +2264,7 @@ nolink "false"
 
 
 \series default
- and provided as an input to the annual policy review and maturity scoring process.
+.
 \end_layout
 
 \begin_layout Subsection*
@@ -1810,7 +2338,8 @@ Agreement
 (SLA)
 \series default
  The defined response and resolution timeframe commitments established for work orders based on their severity classification and asset lifecycle status.
- SLA targets are established in 
+ SLA targets are established in the Service Catalog and measured under Service Level Management.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1825,8 +2354,8 @@ nolink "false"
 
 
 \series default
- and measured under 
-\series bold
+;
+ \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1854,7 +2383,8 @@ Severity
 Classification
 \series default
  The standardized rating assigned to a work order at triage that determines its response and resolution timeframes under the service level commitments.
- Severity levels and their associated SLA targets are defined in 
+ Severity levels and their associated SLA targets are defined in the Service Catalog.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1870,6 +2400,15 @@ nolink "false"
 
 \series default
 .
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+SFIA
+\series default
+ See Skills Framework for the Information Age.
 \end_layout
 
 \begin_layout Description
@@ -1906,6 +2445,41 @@ nolink "false"
 
 \series bold
 \lang english
+Skills
+\begin_inset space ~
+\end_inset
+
+Framework
+\begin_inset space ~
+\end_inset
+
+for
+\begin_inset space ~
+\end_inset
+
+the
+\begin_inset space ~
+\end_inset
+
+Information
+\begin_inset space ~
+\end_inset
+
+Age
+\begin_inset space ~
+\end_inset
+
+(SFIA)
+\series default
+ The SFIA Foundation-published competency model used in this manual for workforce role alignment under the workforce competency framework.
+ SFIA does not participate in the authority resolution hierarchy.
+ Current version: SFIA 9.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 SLA
 \series default
  See Service Level Agreement.
@@ -1921,7 +2495,10 @@ SLA
 
 Suspension
 \series default
- The only condition under which 
+ The only condition under which Service Level Agreement obligations are suspended for a work order.
+ SLA Suspension occurs exclusively upon the Hard Fork jurisdictional transfer to Chapter 4.
+ No other suspension mechanism exists for routine operational incidents.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1936,9 +2513,7 @@ nolink "false"
 
 
 \series default
- service level obligations are suspended for a work order.
- SLA Suspension occurs exclusively upon the Hard Fork jurisdictional transfer to Chapter 4.
- No other suspension mechanism exists for routine operational incidents.
+.
 \end_layout
 
 \begin_layout Description
@@ -1982,9 +2557,7 @@ Spawn
 
 Trigger
 \series default
- One of two (2) objective conditions that mandate the formal opening of a Problem record:
- (1) Major Incident — every incident classified as Critical severity;
- (2) Recurring Incident — five (5) or more incidents in the same category within a rolling thirty (30) day window.
+ One of two (2) objective conditions that mandate the formal opening of a Problem record: (1) Major Incident — every incident classified as Critical severity; (2) Recurring Incident — five (5) or more incidents in the same category within a rolling thirty (30) day window.
  Spawn triggers are evaluated at incident closure.
  Defined in 
 \series bold
@@ -2002,9 +2575,9 @@ nolink "false"
 
 \series default
 ,
- Section 6.7;
- received as intake in 
-\series bold
+ Section 6.7
+;
+ \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2032,12 +2605,8 @@ STAK
 
 Matrix
 \series default
- The workforce competency mapping framework that categorizes each role's relationship to each policy across four (4) dimensions:
- Skill (technical competency),
- Task (operational execution),
- Awareness (knowledge requirement),
- and Knowledge (governance understanding).
- Maintained as 
+ The workforce competency mapping framework that categorizes each role's relationship to each policy across four (4) dimensions: Skill (technical competency), Task (operational execution), Awareness (knowledge requirement), and Knowledge (governance understanding).
+ Defined in 
 \series bold
 Appendix 
 \begin_inset CommandInset ref
@@ -2052,7 +2621,8 @@ nolink "false"
 
 
 \series default
- and governed by 
+.
+ Governed by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2080,14 +2650,14 @@ Standard
 
 Change
 \series default
- A pre-authorized,
- low-risk change type that follows established procedures and does not require individual CCA review.
- Standard change authorization is captured within the work order mechanics under 
+ A pre-authorized, low-risk change type that follows established procedures and does not require individual CCA review.
+ Standard change authorization is captured within the work order mechanics; the change type itself is defined in the change management framework.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.05"
+reference "pol:3.09"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2097,13 +2667,12 @@ nolink "false"
 
 
 \series default
-.
- Defined in 
-\series bold
+;
+ \series bold
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:3.09"
+reference "pol:3.05"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2136,7 +2705,7 @@ Procedure
 \series default
  A procedural document maintained in the System of Engagement that provides step-by-step instructions for a defined operational task.
  SOPs are distinct from policies (which establish governance requirements) and playbooks (which present branching decision logic).
- SOP formatting standards are defined in 
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2173,13 +2742,9 @@ Engagement
 
 (SoE)
 \series default
- The accessible operational interface for day-to-day reference,
- work order management,
- Knowledge Base access,
- and procedural documentation.
+ The accessible operational interface for day-to-day reference, work order management, Knowledge Base access, and procedural documentation.
  Content published in the System of Engagement shall be sourced from the Authoritative System of Record.
- In the event of a discrepancy,
- the Authoritative System of Record takes precedence.
+ In the event of a discrepancy, the Authoritative System of Record takes precedence.
  Defined in 
 \series bold
 Policy 
@@ -2203,6 +2768,68 @@ nolink "false"
 
 \lang english
 T
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Technical
+\begin_inset space ~
+\end_inset
+
+Approval
+\series default
+ The recorded approval status on a procurement work order indicating that the requested technology has been validated against technical, lifecycle, architectural, inventory-integration, and security criteria.
+ Technical Approval carries the approver's identity and timestamp and is a prerequisite to Financial Authority execution.
+ Defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.1.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Technical
+\begin_inset space ~
+\end_inset
+
+Authority
+\series default
+ Authority over the validation of technology need, compatibility, lifecycle and architectural impact, inventory integration, and security.
+ Technical Authority is held by the IT Director and may be delegated to the Assistant IT Director or named technical approvers within written delegation scope; it operates in tandem with Financial Authority through the Technical-Fiscal Handshake.
+ Defined in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.10"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ Section 6.1.
 \end_layout
 
 \begin_layout Description
@@ -2246,12 +2873,9 @@ Tier
 
 Level
 \series default
- The competency classification assigned to Information Operations personnel,
- ranging from Tier L0 (IT Trainee) through Tier L5 (IT Director).
- Tier level determines the scope of authorized operational functions,
- delegation eligibility,
- and competency maintenance requirements.
- Tier definitions and advancement criteria are established in 
+ The competency classification assigned to Information Operations Personnel, ranging from Tier L0 (IT Trainee) through Tier L5 (IT Director).
+ Tier level determines the scope of authorized operational functions, delegation eligibility, and competency maintenance requirements.
+ Defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2326,43 +2950,9 @@ Compliance
 
 Record
 \series default
- The consolidated compliance summary maintained per-vendor in the System of Engagement,
- documenting the vendor's compliance posture,
- review history,
- and assurance evidence.
- The Vendor Compliance Record layers over operational data from 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and enforcement data from 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- It is the compliance summary layer,
- not the operational evidence base.
+ The consolidated compliance summary maintained per-vendor in the System of Engagement, documenting the vendor's compliance posture, review history, and assurance evidence.
+ The Vendor Compliance Record layers over operational data from the service-management framework and enforcement data from the compliance-policy framework.
+ It is the compliance summary layer, not the operational evidence base.
  Defined in 
 \series bold
 Policy 
