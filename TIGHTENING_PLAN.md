@@ -244,7 +244,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 **Last refreshed:** April 30, 2026 post-5.01 v2.0 commit (entry 41 — Phase 6 OMI touch-up). 5.01 T+ v1.2 → T v2.0 (commit `f453669d`; closed #334, #345, #425, #479). Two validator rounds (R3 declined — both validators recycled R1 findings essentially verbatim; diminishing returns). R1 substantive moves: §6.6 Oversight Mechanism Integrity clause inserted (general principle locked from #479; existence/coverage non-waivable, cadence/scope/methodology remain in standard exception path); §6.6 Written Documentation consolidated (remediation timeline, affirmative compensating measures, open-ended bar moved in, CJIS substantive-compliance backstop sentence); §6.6 CJI Exceptions reframed to explicit-negative on CSO concurrence with named CJIS-control examples (IR-6 Part (b), PS-3, AC-7) and instrument-neutral CJIS user agreement language; §6.6 Active Exception Review (renamed from Duration and Review). §6.8 IT-Administrative Enforcement Records (renamed from Corrective Action Records) restructured with population-class LRDA mapping (LRDA 20070321 employees / LRDA 20121869 appointed and elected officials / LRDA 20071300 contractors and vendors); Sanctions Documentation anchored to LRDA 20070321 with HR custodianship; Acknowledgment Records by-reference to originating policy. §6.5 closes CJIS v6.0 PS-8 alignment gap (added "personnel with account management responsibilities"). §6.4 Emergency Protective Action: hard 1-hour notification lock; named-authority next-steps determination; formal-language replacement for "bad act"; "basis" in place of "reasoning". §3 universal label aligned to manual-wide convention ("All County Personnel" per #32). §5 Cited References ripple: CJIS AC-7/IR-6/PS-3 + LRDA 20070321/20071300/20121869 added per body-cite test. R2 absorbed C5-R2 (population-class architecture from ChatGPT). **Watch-list patterns (2 rounds; not yet promoted, need 3+):** ChatGPT enumerated non-waivable list (R1 C1 + R2 Gap 1); ChatGPT OMI cadence/scope/methodology constraint (R1 C2 + R2 Gap 2); ChatGPT §6.3 catch-all narrowing (R1 C3 + R2 Gap 3); ChatGPT CJI verification gate (R1 C4 + R2 Gap 4 — Pattern #23 territory); Gemini "appropriate" → "designated" ISO substitution (R1 G2 + R2 Gap 2). No new standing decline patterns inscribed this session.
 
-**Phase 6 entry 41 complete.** Phase 5C closed (entries 32–39, Chapter 2 cleared); Phase 5D pre-Phase-6 cleanup closed April 29 (5D.1, 5D.2). Phase 6 entry 40 = 5.02 (Internal Audits) committed April 29 at v2.0 (commit `3da57572`). Phase 6 entry 41 = 5.01 (Implementation, Enforcement, Legal — re-tightening) committed April 30 at v2.0 (commit `f453669d`); pulled forward from in-sequence position per IT Director option (a) decision so OMI propagates transitively to 5.03–5.07 before they tighten. Manual-wide tightening count: 41 of 49. Next: Phase 6 entry 42.
+**Phase 6 closed.** All Phase 6 entries committed (E40 = 5.02 `3da57572`, E41 = 5.01 `f453669d`, E42 = 5.03 `2373f03d`, E43 = 5.04 `266e9ab3`, E44 = 5.05 `74cbfd91`, E45 = 5.06 `0ccbaad0`, E46 = 5.07 `4ad3a2df`). Manual-wide tightening count: 49 of 49. Next: §6 audit (gates on Phase 6 closure — now runnable). Pre-session brief in `Section6_Audit_Handoff.md`.
 
 ### Chapter 0 / Front Matter
 
@@ -333,10 +333,10 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 5.01 | Implementation, Enforcement, Legal | T | v2.0, April 30 | 0 | — |
 | 5.02 | Internal Audits | T | v2.0, April 29 | 0 | — |
 | 5.03 | Compliance Monitoring | T | v2.0, April 30 | 0 | — |
-| 5.04 | Performance Metrics | T | v2.0, May 01 | 0 | — |
-| 5.05 | Security Control Assessment | D | — | 1 | #188 |
+| 5.04 | Performance Metrics | T+ | v2.0, May 01 | 1 | #522 |
+| 5.05 | Security Control Assessment | T | v2.0, May 01 | 0 | — |
 | 5.06 | Vendor Compliance | T | v2.0, May 01 | 0 | — |
-| 5.07 | Annual Policy Review | D | — | 3 | #191, #282, #300 |
+| 5.07 | Annual Policy Review | T | v2.0, May 02 | 0 | — |
 
 ### Chapter 6 — Appendices
 
@@ -572,7 +572,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 | 43 | 5.04 (Performance Metrics) | ✅ Closed v2.0 (`266e9ab3`, May 01) | KPI data feeds 5.07 |
 | 44 | 5.05 (Security Control Assessment) | ✅ Closed v2.0 (`74cbfd91`, May 01) | Control assessment results feed 5.07 |
 | 45 | 5.06 (Vendor Compliance) | ✅ Closed v2.0 (`0ccbaad0`, May 01) | GLOBAL-G role redistribution applied; Section 1–5 audit lockings absorbed; CA-2 + PS-7 + SR-6 mechanics added; CJIS PS-7 ripple to 1.13 filed |
-| 46 | 5.07 (Annual Policy Review) | 3 | Capstone — consumes 5.02–5.06, 3.16, 1.09, 1.05 outputs |
+| 46 | 5.07 (Annual Policy Review) | ✅ Closed v2.0 (`4ad3a2df`, May 02) | Capstone — consumes 5.02–5.06, 3.16, 1.09, 1.05 outputs. Closed #191/#282/#300; partial #488/#509. R1 caught 1.04 §6.4 OoS-parens defect + Cited Refs scope (5.05/5.06); R2 zero net edits. Filed #522 (5.04 ID.IM-01 drift ripple). |
 
 ---
 
@@ -773,6 +773,45 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 
 **Open ripples filed:**
 - **#521** ([1.13] Ripple from 5.06 v2.0): Add CJIS PS-7 personnel-change notification (24-hour cadence) to vendor agreement requirements. Source: 5.06 v2.0 §6.5 Personnel Change Monitoring requires the IT Director to ensure each CJIS vendor's contract includes the 24-hour notification clause; 1.13 owns vendor onboarding and contracting, so the contract clause requirement belongs in 1.13's vendor agreement template. Phase 5F absorption candidate or per-policy touch.
+
+---
+
+### Phase 6 Entry 46 Completion Note (May 02, 2026)
+
+**Policy 5.07 (Annual Policy Review and Maturity Scoring) D v1.0 → T v2.0** (commit `4ad3a2df`). Capstone closes Phase 6.
+
+**Tickets closed:** #191 (1.04 final compliance verification — closure-confirmation comment posted; was already closed with `partial` label), #282 (5.07-specific GLOBAL-G role redistribution — SysAdmin/NetAdmin domain summary preparation + AID aggregation), #300 (5.07-specific Board engagement reference — §6.6 closing Standard tied to 1.06).
+
+**5.07 absorption notes added to multi-policy tickets:** #488 (§2 OoS compound-reference split — SOP/playbook split into singular Documentation Taxonomy + Knowledge Artifact items), #509 (§6.12 clarifier-tag strip — §6.1 Clarification + §6.3 Constraint + §6.3 Clarification stripped per post-v1.6 vocabulary).
+
+**Architectural decision — Architecture A pipeline (Robert ruling May 02):** 5.07 consumes Ch5 outputs through indirect 5.02 audit summary rollup, NOT direct 5.05/5.06 feeders. §2 OoS adds 5.05 routing pointer (symmetric with 5.06); §6.2 feeder list unchanged from canonical (no direct 5.05/5.06 entries). Plan §9.2 unchanged. Pipeline economy preserved; capstone consumes consolidated rollups not raw operational records.
+
+**Substantive transitions:**
+- §2 OoS: SOP/playbook compound split (#488); 5.05 routing pointer added per Architecture A.
+- §3 GLOBAL-G applied (#282): Systems Administrator + Network Administrator role anchors added between IT Director and Assistant IT Director per locked authority sequence #494; each prepares operational-area assessment-results / control-test-outcome / open-items summary as input to annual review. AID obligation modified from "compile" → "aggregate the domain summaries with the policy-level outputs identified in Section 6.2 into the compiled input package."
+- §3 role order: County Manager → IT Director → Assistant IT Director → Systems Administrator → Network Administrator → All Information Operations Personnel.
+- §4 by-reference architecture: 1.08 reference stripped from Exceptions per Q5 lock (5.01 governs).
+- §5 Cited References: 1.06 added (§6.6 body cite per #300); 1.08 stripped (post-§4 strip body-cite test fail); 5.05 + 5.06 added per R1 Gemini Gap 3 (1.04 §6.7 line 1191: §2 OoS IS body for Cited Refs purposes); NAC 239.165 + LRDA 20071558 added (newly body-cited in restructured §6.8); NAC 239.165 title aligned to canonical "(Destruction of Confidential Records)" per 5.02/5.03/5.04 v2.0 pattern.
+- §5 Framework Alignment: PM-1 stripped (body-cite fail — 5.07 ≠ info security program plan); PM-6 retained; ID.IM-01 corrected to source-faithful lowercase "are identified from evaluations" (CSF 2.0 source verified); SI-12 added per R1 ChatGPT W5 (matches 5.01 L1274 canonical for retention content).
+- §6 substantive tightening: §6 opening prose §6.X depth strip; §6.1 Clarification block stripped per #509; §6.2 Annual Audit Summary Report defective 5.07→5.02 cross-reference fixed (was incorrectly self-referencing); §6.2 5.04 construct name aligned to canonical "annual KPI and operational performance summary"; §6.2 Domain operational summaries feeder bullet added per #282; §6.3 Constraint + Clarification blocks inlined as Standard paragraphs per #509 (descriptive-not-prescriptive + newly-adopted-tier carve-out); §6.4 audit program effectiveness review — 6 cross-policy §6.X depth violations stripped per #375; Rationale block reframed from awkward "Section 4 references through this policy" to clean "required by Policy 5.02"; §6.5 "should affect" precision fix to "require evaluation under the Policy 1.05 change control process" per R1 ChatGPT W1; §6.6 Board engagement Standard added per #300, restructured per R1 ChatGPT W3 to single-sentence form using objective 1.06-criteria-tied determination ("warrants" subjective language eliminated); §6.8 retention restructured to canonical 5.04 §6.9 / 5.02 §6.6 form — Annual Policy Review Reports permanent (LRDA 20071558), Working Records 3-yr (LRDA 20071256), Destruction Standards (NAC 239.165), Legal Holds (1.11 by-ref), Multiple Schedules.
+
+**Cross-validator round summary:**
+- **R1** — Major substantive findings: Gemini Gap 1+2 (1.04 §6.4 line 985 explicit: "first-use parenthetical title convention does not apply to Scope section routing pointers" — F2 / #191 reading was wrong, my v2.0 added OoS parens incorrectly; reverted; restored prose first-use titles in §3 5.02 / §4 5.01 / §6 1.05 / §6.2 5.03/5.04); Gemini Gap 3 (5.05/5.06 missing from Cited References per 1.04 §6.7 line 1191); ChatGPT W3 ("warrants" subjective — restructured); ChatGPT W1 ("should affect" subjective — 1.05-tied formulation). Reflexive declines: Gemini Gap 4 (move CSF/CJIS to Cited References — canonical operationalization is body-cite-by-identifier, not framework-name; 5.04 v2.0 keeps CSF in FA despite Tier-derived methodology; 5.05 v2.0 keeps CJIS in FA despite by-name §6 invocations; standing decline #7 stale-source-canonical applies); ChatGPT C-G1 (LRDA reclassification — Q4 locked); ChatGPT W2 ("may result in" → "shall be evaluated for" — manual-wide §4 convention; 5.04 L787 canonical). Robert FLAG dispositions: C-G2 1.05 boundary sentence DECLINE (canonical pattern doesn't include carve-out); C-W1 should-affect ACCEPT; C-W5 SI-12 ACCEPT.
+- **R2** — Zero net edits. Gemini submitted LyX with 940 lines of changes — ALL whitespace/format reflow (collapsed `Policy \n\begin_inset` to `Policy \begin_inset`, ~80 instances + header `\use_formatted_ref 0` line-break cosmetic). Standing decline #3 (LyX CommandInset false positives) applies; reflexive decline. ChatGPT three findings: (1) repeat W2 Enforcement language — second occurrence, watch for third → standing decline candidate; (2) softer-remedy access-restriction sentence on retention — declined as already covered by §6.8 opening Standard's 1.11 classification; (3) repeat 1.05 boundary sentence — Robert declined R1, second occurrence of pushback on locked decision (standing decline #10 territory).
+
+**Standing decline patterns added:** None inscribed this session. Pattern stack stable.
+
+**Watch-list patterns (2 rounds; not yet promoted, need 3+):**
+- ChatGPT W2 Enforcement language change ("may result in" → "shall be evaluated for") — R1 + R2 = 2 rotations. Manual-wide §4 convention is firm; 5.04 L787 canonical. Third recurrence triggers promotion.
+- ChatGPT 1.05/LRDA 20070057 boundary sentence — R1 + R2 = 2 rotations after Robert's explicit decline.
+- ChatGPT permanent-retention-of-sensitive-content concern — R1 reclassification + R2 access-restriction softer-remedy = 2 rotations against Q4-locked retention architecture.
+
+These three ChatGPT patterns are tracking together — all push back on Q4-class locked decisions via softer-each-round remedies. Worth a single grouped standing decline if any recurs in a future session.
+
+**Open ripples filed:**
+- **#522** ([5.04] Ripple from 5.07 v2.0 R1 verification): CSF 2.0 ID.IM-01 title drift — 5.04 v2.0 §5 Framework Alignment carries `(Improvements Identified from Evaluations)` title-case form; CSF 2.0 source (NIST.CSWP.29-1.pdf line 886) defines `Improvements are identified from evaluations` lowercase "are". 5.02 v2.0 + 5.03 v2.0 + 5.07 v2.0 all use source-faithful form; 5.04 is outlier. Phase 5F absorb candidate against #355 manual-wide reference verification sweep, OR fold into next 5.04 touch.
+
+**Procedural note on F2 / #191 interpretation correction:** My initial F2 work added parenthetical titles to §2 OoS routing pointers based on #191. R1 Gemini verification against 1.04 §6.4 line 985 showed this was wrong. Either #191 was malformed against 1.04 or my interpretation was. Canonical scope of #191 is now established: first-use parens in **§3, §4, and §6 prose only**, NOT §2 OoS. Closure-confirmation comment posted on #191.
 
 ---
 
