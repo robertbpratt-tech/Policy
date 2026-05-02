@@ -169,5 +169,6 @@ Policy/
 ├── README.md                — this file
 ├── TIGHTENING_PLAN.md       — operational plan, sequencing, standing declines
 ├── 00/ … 06/                — policy LyX source files by chapter
+├── Audits/                  — section-audit trail artifacts (handoffs + close reports)
 └── Reference/               — authoritative framework materials (PDF, xlsx, md)
 ```
