@@ -197,7 +197,11 @@ This policy establishes the mandatory formatting,
  structural,
  and stylistic standards governing all policies,
  procedures,
- and official documentation maintained by the Elko County Information Operations Department (ECIO).
+ and official documentation maintained by the 
+\series bold
+Elko County Information Operations
+\series default
+ Department (ECIO).
 \end_layout
 
 \begin_layout Subsection*
@@ -235,13 +239,21 @@ Policy documents within the Information Operations Policy Manual.
 \begin_layout Itemize
 
 \lang english
-Standard Operating Procedures (SOPs) maintained in the System of Engagement.
+Standard Operating Procedures (SOPs) maintained in the 
+\series bold
+System of Engagement
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Playbooks maintained as governed Knowledge Base artifacts in the System of Engagement.
+Playbooks maintained as governed 
+\series bold
+Knowledge Base
+\series default
+ artifacts in the System of Engagement.
 \end_layout
 
 \end_deeper
@@ -286,7 +298,11 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Configuration item records and CMDB entries:
+Configuration item records and 
+\series bold
+CMDB
+\series default
+ entries:
  
 \series bold
 Policy 
@@ -852,7 +868,11 @@ Master Repository
 Public Records Status
 \series default
 :
- Designation of an "authoritative" copy is for version control only and does not alter public records status or disclosure requirements applicable to records in any medium under NRS 239.010.
+ Designation of an "authoritative" copy is for version control only and does not alter public records status or disclosure requirements applicable to records in any medium under 
+\series bold
+NRS
+\series default
+ 239.010.
 \end_layout
 
 \end_deeper
@@ -996,7 +1016,11 @@ Rationale Placement
 :
  Context that explains why the policy matters,
  what risk it addresses,
- or how it aligns with external frameworks shall be placed in the opening paragraph of Section 6 (Policy Statement) or in the Policy Matrix appendix.
+ or how it aligns with external frameworks shall be placed in the opening paragraph of Section 6 (Policy Statement) or in the 
+\series bold
+Policy Matrix
+\series default
+ appendix.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1163,7 +1187,15 @@ Role-Clarifier Convention
 (as LASO)
 \series default
 :
- the CJIS Local Agency Security Officer function established by 
+ the 
+\series bold
+CJIS
+\series default
+ 
+\series bold
+Local Agency Security Officer
+\series default
+ function established by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1187,7 +1219,11 @@ nolink "false"
 (as Authorizing Official)
 \series default
 :
- the NIST Risk Management Framework Authorizing Official function established by 
+ the 
+\series bold
+NIST
+\series default
+ Risk Management Framework Authorizing Official function established by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1211,7 +1247,11 @@ nolink "false"
 (as Incident Commander)
 \series default
 :
- the cybersecurity incident response Incident Commander function established by 
+ the cybersecurity incident response 
+\series bold
+Incident Commander
+\series default
+ function established by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1233,7 +1273,11 @@ nolink "false"
 The clarifier shall appear in Section 3 role bullets and in Section 6 body prose at the point where the specific function is invoked.
  In Section 6 body prose,
  the function-name form (e.g.,
- "the LASO," "the Authorizing Official," "the Incident Commander") may be used when describing what the function does,
+ "the 
+\series bold
+LASO
+\series default
+," "the Authorizing Official," "the Incident Commander") may be used when describing what the function does,
  regardless of who currently holds the role.
  No other clarifiers shall be introduced without IT Director approval and incorporation into this convention.
 \end_layout
@@ -1440,11 +1484,17 @@ NRS.
 \end_layout
 
 \begin_layout Itemize
-NAC.
+\series bold
+NAC
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
-LRDA.
+\series bold
+LRDA
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1452,7 +1502,11 @@ CJIS.
 \end_layout
 
 \begin_layout Itemize
-NIST CSF.
+NIST 
+\series bold
+CSF
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1467,11 +1521,17 @@ The following categories shall default to Framework Alignment unless they are di
 
 \begin_deeper
 \begin_layout Itemize
-COBIT 2019.
+\series bold
+COBIT
+\series default
+ 2019.
 \end_layout
 
 \begin_layout Itemize
-ITIL v4.
+\series bold
+ITIL
+\series default
+ v4.
 \end_layout
 
 \end_deeper
@@ -1794,7 +1854,15 @@ nolink "false"
 \series default
 ),
  and named policy constructs (e.g.,
- "Incident Commander," "Hard Fork," "Operational Handback").
+ "Incident Commander," "
+\series bold
+Hard Fork
+\series default
+," "
+\series bold
+Operational Handback
+\series default
+").
 \end_layout
 
 \begin_layout Itemize
@@ -1805,7 +1873,11 @@ Acronym Protocol
 :
  The first instance of a technical term or organizational name within each policy shall be fully spelled out,
  followed by its abbreviation in parentheses (e.g.,
- "Criminal Justice Information Services (CJIS)").
+ "
+\series bold
+Criminal Justice Information
+\series default
+ Services (CJIS)").
  Subsequent references within the same policy may use the abbreviation alone.
  Acronym definitions do not carry across policies;
  each policy shall define its own terms on first use.
@@ -1846,7 +1918,11 @@ Official Systems Terminology
 \series default
 :
  Software and platforms referenced in policy documents shall be cited by their governance function label only (e.g.,
- "System of Engagement," "Authoritative System of Record," "Endpoint Protection Platform," "Productivity Suite").
+ "System of Engagement," "
+\series bold
+Authoritative System of Record
+\series default
+," "Endpoint Protection Platform," "Productivity Suite").
  Product-specific names,
  configurations,
  and implementation details belong in operational documentation maintained in the System of Engagement.
@@ -2589,7 +2665,11 @@ Procedure —
 \series default
 :
  A scenario-based incident response artifact.
- Playbook existence,
+ 
+\series bold
+Playbook
+\series default
+ existence,
  content,
  and review cadence are governed by 
 \series bold
