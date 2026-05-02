@@ -167,7 +167,6 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #464 | PDF publication quality — metadata, accessibility tagging, ligature handling | Manual-wide | Open, phase-10-deferred | Compiled `Policy_Manual.pdf` defects affecting publication quality but not content correctness. Dormant until Phase 10 declaration entry. |
 | #469 | Convert prohibitive `shall not` directives to verifiable positive `shall` directives where appropriate | Manual-wide | Open, sweep | Filed April 28, 2026 between entries 36 and 37 from in-session observation. Pattern absorbed at 2.10 v2.3 §6.3 (entry 37). Remaining occurrences per parent ticket body. |
 | #480 | Retention block architectural uniformity — three patterns coexist across 16 tightened policies (dedicated+bulleted canonical: 1.11/5.02/5.03/5.04; dedicated+prose: 1.10/3.12/4.07/5.01; embedded: 1.05/1.09/1.12/1.14/3.02/3.13/3.15/3.16/4.01) | Manual-wide | Open, phase-9-deferred | Filed May 01, 2026 from Phase 6 entry 43 (5.04 v2.0). Architectural question whether to standardize on dedicated+bulleted manual-wide. 13 policies in scope if standardized. Folds well with #355 LRDA verification sweep at Phase 9. R3 5.04 Gemini "minimum of" / explicit-destruction concerns folded into evaluation scope. Dormant until Phase 9 entry. |
-| #481 | Manual-wide open-ended exception inline drift — 9 tightened policies (1.14, 3.02, 3.11, 3.12, 3.13, 3.15, 3.16, 4.01, 4.07) carry inline 5.01 §6.6 exception-management language pre-dating the post-#430 by-reference architecture lock | Manual-wide | Open, sweep | Filed May 01, 2026 from Phase 6 entry 43 (5.04 v2.0) R1 standing-decline-pattern-#20 adjudication. Strip inline language; replace with by-reference form matching 5.02 v2.0 / 5.03 v2.0 / 5.04 v2.0 canonical. Stripping removes the legacy-source argument that drove ChatGPT pattern #41 promotion. Phase 9 sweep candidate or sweep-style absorption during future per-policy touches. |
 | #482 | Retention opening prose active-voice anchor needed in 1.11 §6.9, 5.02 §6.6, 5.03 §6.6 — passive "Retention periods shall be applied" / "shall be classified" directives lack explicit role anchor | 1.11, 5.02, 5.03 | Open, ripple | Filed May 01, 2026 from Phase 6 entry 43 (5.04 v2.0) R2 Gemini Gap 1.2 + 1.3 adjudication. 5.04 v2.0 §6.9 corrected in-policy to anchor to AID. May fold into #480 at Phase 9 if retention pattern uniformity sweep proceeds. Low-cost mechanical fix. |
 ### Closed Roots
 
@@ -179,6 +178,7 @@ These are tickets that establish manual-wide patterns or designate constructs ot
 | #291 | Remove hard-coded FIPS 140-2/140-3 transition dates — CMVP by-reference | April 26 | All three children resolved: 1.11 v2.4 (April 11), 2.05 v2.2 (April 26 commit `fcf6b095`), 2.07 v2.2 (April 26 commit `f3d8f876`). CMVP by-reference pattern uniform manual-wide; standing decline #31 is the reflexive-decline rule for future re-push attempts. |
 | #467 | §3 role-title trailing-colon compliance per 1.04 §6.5 — manual-wide sweep | April 29 (5D.1) | Resolved across 5 chapter commits (`8d9bb625`, `e805602a`, `d88efe9b`, `da3e8d36`, `c508bc1d`). 233 fixes / 48 files / 49 T-state policies in scope (sweep extended beyond ticket's 36-policy report; 14 ticket-undercount policies absorbed). Carve-outs: 1.04 (constitutional lock, 2 defects, batched to next constitutional revision per ticket text); 5.02 (D-state, 4 defects, tracked as #473 for Phase 6 entry 40 absorption). `sweep_467.py` retained as protocol validator. |
 | #468 | §6 governed-clarifier-tag blending compliance per 1.04 §6.12 — manual-wide sweep | April 29 (5D.1) | Resolved across same 5D.1 chapter commits. 10 defects / 6 policies. Per-defect dispositions: 7 Strip + 3 Promote (matches 2.09 v2.0 reference for governed sub-bullet form). Cross-validator review post-commit per IT Director ruling — validator brief produced as session deliverable. `sweep_468.py` retained as protocol validator. |
+| #481 | Manual-wide open-ended exception inline drift — strip per post-#430 by-reference architecture | May 1, 2026 | Closed as superseded by #500 at §4 audit close. §4 audit's structured manual-wide inventory found inline §4 exception drift surface to be 24 T+ policies vs. this ticket's documented scope of 9 — paralleling the #467 understatement pattern from §3 audit. Full 24-policy scope and Q7 Standard canonical replacement form filed under #500 (Ticket P, Phase 5F intake). |
 
 **Sweep-style roots (#208, #211, #235, #245, #264, #6, #469)** are applied as a quality gate during each policy's tightening session, not as standalone sweep sessions. Roots stay open until every policy has been touched. **Active-root tickets with tracked children (#375, #456)** carry the children to closure under the parent. **Phase-deferred roots (#353, #355, #464)** are dormant and entered at their scheduled phase; they are not absorbed into per-policy tightening.
 
@@ -246,6 +246,8 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 **Phase 6 closed.** All Phase 6 entries committed (E40 = 5.02 `3da57572`, E41 = 5.01 `f453669d`, E42 = 5.03 `2373f03d`, E43 = 5.04 `266e9ab3`, E44 = 5.05 `74cbfd91`, E45 = 5.06 `0ccbaad0`, E46 = 5.07 `4ad3a2df`). Manual-wide tightening count: 49 of 49. Next: §6 audit (gates on Phase 6 closure — now runnable). Pre-session brief in `Section6_Audit_Handoff.md`.
 
+**§5 inventory reconciled May 02, 2026** — per-policy ticket columns aligned with README per Option A reconciliation (IT Director ruling, May 2). Phase 5F intake tickets (#484–#520, 36 tickets) propagated into per-policy rows; Phase 5F batch identity preserved in §6 Phase 5F as the execution construct. Orphans placed: #463 (3.01/3.02/3.05/3.06 per #245 sweep gap); #476 (2.04 ripple from #468); #482 (1.11/5.02/5.03 retention prose ripple, also tracked in §3 Active Roots). #481 moved to Closed Roots (superseded by #500). #480 added to README Manual-Wide Open Roots. Policy 1.01 added to Chapter 1 inventory (previously absent). State refresh: 58 policies T+, 3 T (000, 5.06, 5.07). Reconciliation closes the README ↔ Plan §5 sync gap surfaced post-Phase-6 closure; ground truth verified against GitHub open-issue API (85 open).
+
 ### Chapter 0 / Front Matter
 
 | # | Title | State | Ver | Open | Tickets |
@@ -256,39 +258,40 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 1.02 | Code of Ethics | T | v2.3, April 29 | 0 | — |
-| 1.03 | Standard Operating Ethos | T | v2.1, April 29 | 0 | — |
-| 1.04 | Formatting Standards | T | v1.5 | 0 | — |
-| 1.05 | Policy Review and Update Procedures | T | v2.3, April 29 | 0 | — |
-| 1.06 | IT Governance and Oversight Structure | T | v2.2, April 29 | 0 | — |
-| 1.07 | Workforce Roles | T+ | v1.4, April 29 | 1 | #354 |
-| 1.08 | Delegation of Authority | T | v1.6, April 29 | 0 | — |
-| 1.09 | Risk Management | T | v2.2, April 29 | 0 | — |
-| 1.10 | IT Financial / Procurement | T | v2.3, April 29 | 0 | — |
-| 1.11 | Data Governance and Classification | T | v2.5, April 29 | 0 | — |
-| 1.12 | IT Asset Management | T+ | v2.7, April 29 | 2 | #329, #426 |
-| 1.13 | Supply Chain Risk Management | T | v2.4, April 29 | 0 | — |
-| 1.14 | Stakeholder Engagement | T | v2.4, April 29 | 0 | — |
+| 1.01 | Mission and Strategic Objectives | T+ | v1.0 | 1 | #486 |
+| 1.02 | Code of Ethics | T+ | v2.3, April 29 | 1 | #491 |
+| 1.03 | Standard Operating Ethos | T+ | v2.1, April 29 | 2 | #486, #492 |
+| 1.04 | Formatting Standards | T+ | v1.5 | 5 | #494, #498, #506, #509, #515 |
+| 1.05 | Policy Review and Update Procedures | T+ | v2.3, April 29 | 4 | #495, #502, #508, #509 |
+| 1.06 | IT Governance and Oversight Structure | T+ | v2.2, April 29 | 4 | #491, #497, #502, #509 |
+| 1.07 | Workforce Roles | T+ | v1.4, April 29 | 4 | #354, #495, #509, #513 |
+| 1.08 | Delegation of Authority | T+ | v1.6, April 29 | 5 | #491, #495, #497, #503, #509 |
+| 1.09 | Risk Management | T+ | v2.2, April 29 | 5 | #491, #497, #502, #510, #513 |
+| 1.10 | IT Financial / Procurement | T+ | v2.3, April 29 | 4 | #488, #508, #512, #513 |
+| 1.11 | Data Governance and Classification | T+ | v2.5, April 29 | 8 | #482, #484, #488, #495, #502, #509, #510, #513 |
+| 1.12 | IT Asset Management | T+ | v2.7, April 29 | 5 | #329, #426, #487, #509, #516 |
+| 1.13 | Supply Chain Risk Management | T+ | v2.4, April 29 | 7 | #484, #486, #492, #495, #509, #513, #521 |
+| 1.14 | Stakeholder Engagement | T+ | v2.4, April 29 | 5 | #491, #495, #499, #500, #510 |
 
 ### Chapter 2 — Security
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 2.01 | Acceptable Use | T+ | v2.6, April 29 | 1 | #356 |
-| 2.02 | Personnel Security | T | v2.8, April 29 | 0 | — |
-| 2.03 | Security Awareness | T | v2.2, April 29 | 0 | — |
-| 2.04 | Access Control | T+ | v2.8, April 29 | 1 | #453 |
-| 2.05 | Identification and Authentication | T | v2.3, April 29 | 0 | — |
-| 2.06 | Privacy and Data Protection | T | v2.8, April 29 | 0 | — |
-| 2.07 | System and Communications Protection | T | v2.3, April 29 | 0 | — |
-| 2.08 | System Integrity / Malware | T | v2.1, April 29 | 0 | — |
-| 2.09 | Vulnerability and Patch Management | T | v2.0, April 28 | 0 | — |
-| 2.10 | Secure Configuration Baselines | T | v2.3, April 28 | 0 | — |
-| 2.11 | Audit Logging and Monitoring | T | v2.5, April 29 | 0 | — |
-| 2.12 | Media Protection and Sanitization | T+ | v2.5, April 29 | 1 | #449 |
-| 2.13 | Physical Security | T | v2.4, April 29 | 0 | — |
-| 2.14 | Mobile and Remote Access | T | v2.0, April 28 | 0 | — |
-| 2.15 | Secure Software Lifecycle | T | v2.0 | 0 | — |
+| 2.01 | Acceptable Use | T+ | v2.6, April 29 | 5 | #356, #486, #495, #507, #509 |
+| 2.02 | Personnel Security | T+ | v2.8, April 29 | 4 | #487, #495, #502, #509 |
+| 2.03 | Security Awareness | T+ | v2.2, April 29 | 1 | #502 |
+| 2.04 | Access Control | T+ | v2.8, April 29 | 5 | #453, #476, #495, #502, #509 |
+| 2.05 | Identification and Authentication | T+ | v2.3, April 29 | 3 | #495, #507, #510 |
+| 2.06 | Privacy and Data Protection | T+ | v2.8, April 29 | 3 | #486, #495, #510 |
+| 2.07 | System and Communications Protection | T+ | v2.3, April 29 | 2 | #495, #507 |
+| 2.08 | System Integrity / Malware | T+ | v2.1, April 29 | 2 | #486, #491 |
+| 2.09 | Vulnerability and Patch Management | T+ | v2.0, April 28 | 1 | #497 |
+| 2.10 | Secure Configuration Baselines | T+ | v2.3, April 28 | 1 | #511 |
+| 2.11 | Audit Logging and Monitoring | T+ | v2.5, April 29 | 7 | #495, #497, #500, #502, #503, #507, #509 |
+| 2.12 | Media Protection and Sanitization | T+ | v2.5, April 29 | 6 | #449, #497, #500, #503, #507, #516 |
+| 2.13 | Physical Security | T+ | v2.4, April 29 | 5 | #497, #500, #502, #505, #509 |
+| 2.14 | Mobile and Remote Access | T+ | v2.0, April 28 | 1 | #513 |
+| 2.15 | Secure Software Lifecycle | T+ | v2.0 | 1 | #517 |
 
 **CSO-exception Constraint strip — pending #425 reframe (5.01 §6.6 clarifier):** All untightened Chapter 2 policies have been processed. Ruling during 2.12 v2.3 session (April 23, 2026) established this pattern reflects CJIS-adjacent formality rather than operational workflow. Standard 5.01 §6.6 exception framework governs. Stripped during tightening: 2.05 v2.2, 2.07 v2.2, 2.08 v2.0, 2.09 v2.0, 2.10 v2.3, 2.14 v2.0. Chapter 2 sweep complete. Does NOT touch genuine CJIS-control-specific CSO clauses (CJIS IR-6 Part (b), PS-3 delegation, AC-7 authorization) in 1.11, 1.13, 1.14, 2.02, 2.04, 4.01, 4.02, 4.05, 4.06, 5.01.
 
@@ -296,45 +299,45 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 3.01 | Service Catalog and SLA | T | v2.5, April 29 | 0 | — |
-| 3.02 | Service Level Management | T+ | v2.6, April 29 | 1 | #309 |
-| 3.03 | Service Communication | T | v2.1, April 29 | 0 | — |
-| 3.04 | Service Delivery Feedback | T | v2.2, April 29 | 0 | — |
-| 3.05 | Service Request Fulfillment | T | v2.2, April 29 | 0 | — |
-| 3.06 | Operational Incident Management | T+ | v2.2, April 29 | 1 | #450 |
-| 3.07 | Problem Management | T | v2.4, April 29 | 0 | — |
-| 3.08 | CMDB | T+ | v2.3, April 29 | 1 | #461 |
-| 3.09 | Change Management | T | v2.1, April 29 | 0 | — |
-| 3.10 | Release and Deployment | T+ | v2.1, April 29 | 1 | #377 |
-| 3.11 | Capacity and Availability | T+ | v2.1, April 29 | 1 | #451 |
-| 3.12 | Monitoring and Event Management | T+ | v2.1, April 29 | 1 | #413 |
-| 3.13 | Knowledge Management | T | v2.3, April 29 | 0 | — |
-| 3.14 | IT Project Management | T+ | v2.3, April 29 | 1 | #478 |
-| 3.15 | Service Continuity | T+ | v2.3, April 29 | 1 | #314 |
-| 3.16 | Service Improvement | T+ | v2.1, April 29 | 1 | #452 |
-| 3.17 | System Maintenance and Vendor Repairs | T | v2.2, April 29 | 0 | — |
+| 3.01 | Service Catalog and SLA | T+ | v2.5, April 29 | 4 | #463, #495, #497, #500 |
+| 3.02 | Service Level Management | T+ | v2.6, April 29 | 5 | #309, #463, #486, #500, #509 |
+| 3.03 | Service Communication | T+ | v2.1, April 29 | 4 | #491, #492, #500, #509 |
+| 3.04 | Service Delivery Feedback | T+ | v2.2, April 29 | 4 | #484, #488, #495, #497 |
+| 3.05 | Service Request Fulfillment | T+ | v2.2, April 29 | 4 | #463, #492, #500, #509 |
+| 3.06 | Operational Incident Management | T+ | v2.2, April 29 | 5 | #450, #463, #492, #498, #500 |
+| 3.07 | Problem Management | T+ | v2.4, April 29 | 5 | #487, #491, #492, #500, #509 |
+| 3.08 | CMDB | T+ | v2.3, April 29 | 6 | #461, #488, #490, #492, #500, #509 |
+| 3.09 | Change Management | T+ | v2.1, April 29 | 5 | #490, #492, #495, #498, #509 |
+| 3.10 | Release and Deployment | T+ | v2.1, April 29 | 2 | #377, #486 |
+| 3.11 | Capacity and Availability | T+ | v2.1, April 29 | 2 | #451, #500 |
+| 3.12 | Monitoring and Event Management | T+ | v2.1, April 29 | 4 | #413, #495, #500, #514 |
+| 3.13 | Knowledge Management | T+ | v2.3, April 29 | 6 | #485, #488, #492, #495, #500, #509 |
+| 3.14 | IT Project Management | T+ | v2.3, April 29 | 6 | #478, #484, #492, #495, #509, #518 |
+| 3.15 | Service Continuity | T+ | v2.3, April 29 | 4 | #314, #492, #496, #500 |
+| 3.16 | Service Improvement | T+ | v2.1, April 29 | 2 | #452, #500 |
+| 3.17 | System Maintenance and Vendor Repairs | T+ | v2.2, April 29 | 5 | #489, #492, #495, #500, #509 |
 
 ### Chapter 4 — Incident Response
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 4.01 | IR Policy Overview | T+ | v2.1, April 29 | 3 | #418, #457, #477 |
-| 4.02 | Identification and Reporting | T | v2.2, April 29 | 0 | — |
-| 4.03 | Containment Strategy and Playbooks | T | v2.2, April 29 | 0 | — |
-| 4.04 | Eradication | T | v2.4, April 29 | 0 | — |
-| 4.05 | Recovery and Restoration | T+ | v2.4, April 29 | 2 | #458, #477 |
-| 4.06 | Communication Protocols | T+ | v2.3, April 29 | 1 | #378 |
-| 4.07 | Postmortem and Lessons Learned | T+ | v1.1, April 29 | 2 | #477, #478 |
+| 4.01 | IR Policy Overview | T+ | v2.1, April 29 | 8 | #418, #457, #477, #486, #498, #500, #511, #513 |
+| 4.02 | Identification and Reporting | T+ | v2.2, April 29 | 6 | #492, #495, #498, #499, #500, #513 |
+| 4.03 | Containment Strategy and Playbooks | T+ | v2.2, April 29 | 8 | #495, #498, #500, #501, #504, #509, #513, #519 |
+| 4.04 | Eradication | T+ | v2.4, April 29 | 6 | #485, #492, #495, #498, #500, #513 |
+| 4.05 | Recovery and Restoration | T+ | v2.4, April 29 | 11 | #458, #477, #485, #492, #495, #497, #498, #500, #504, #513, #520 |
+| 4.06 | Communication Protocols | T+ | v2.3, April 29 | 6 | #378, #492, #498, #499, #500, #513 |
+| 4.07 | Postmortem and Lessons Learned | T+ | v1.1, April 29 | 8 | #477, #478, #492, #498, #500, #502, #504, #513 |
 
 ### Chapter 5 — Compliance
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 5.01 | Implementation, Enforcement, Legal | T | v2.0, April 30 | 0 | — |
-| 5.02 | Internal Audits | T | v2.0, April 29 | 0 | — |
-| 5.03 | Compliance Monitoring | T | v2.0, April 30 | 0 | — |
+| 5.01 | Implementation, Enforcement, Legal | T+ | v2.0, April 30 | 2 | #495, #497 |
+| 5.02 | Internal Audits | T+ | v2.0, April 29 | 1 | #482 |
+| 5.03 | Compliance Monitoring | T+ | v2.0, April 30 | 2 | #482, #488 |
 | 5.04 | Performance Metrics | T+ | v2.0, May 01 | 1 | #522 |
-| 5.05 | Security Control Assessment | T | v2.0, May 01 | 0 | — |
+| 5.05 | Security Control Assessment | T+ | v2.0, May 01 | 1 | #513 |
 | 5.06 | Vendor Compliance | T | v2.0, May 01 | 0 | — |
 | 5.07 | Annual Policy Review | T | v2.0, May 02 | 0 | — |
 
