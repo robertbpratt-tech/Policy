@@ -261,7 +261,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 1.01 | Mission and Strategic Objectives | T+ | v1.0 | 1 | #486 |
 | 1.02 | Code of Ethics | T+ | v2.3, April 29 | 1 | #491 |
 | 1.03 | Standard Operating Ethos | T+ | v2.1, April 29 | 2 | #486, #492 |
-| 1.04 | Formatting Standards | T+ | v1.5 | 5 | #494, #498, #506, #509, #515 |
+| 1.04 | Formatting Standards | T | v2.0, May 02 | 0 | — |
 | 1.05 | Policy Review and Update Procedures | T+ | v2.3, April 29 | 4 | #495, #502, #508, #509 |
 | 1.06 | IT Governance and Oversight Structure | T+ | v2.2, April 29 | 4 | #491, #497, #502, #509 |
 | 1.07 | Workforce Roles | T+ | v1.4, April 29 | 4 | #354, #495, #509, #513 |
@@ -961,14 +961,50 @@ When both gate, run Phase 5F as a unified per-policy patch-bump cleanup pass —
 
 **Tickets in Phase 5F intake (Section 6 audit closed May 02, 2026):** #484, #485 (Section 1); #486, #487, #488, #489, #490, #491 (Section 2); #492, #494, #495, #496, #497, #498 (Section 3 — #493 closed, absorbed by #509); #499, #500, #501, #502, #503, #504, #505, #506, #507, #508, #509 (Section 4); #510, #511, #512, #513, #514, #515, #516, #517, #518, #519, #520 (Section 5); **#523, #524, #525, #526, #527 (Section 6 — OO/PP/QQ/SS/TT)**. Total: 41 tickets. Phase 5F gating now clear: Phase 6 ✅ AND all six section audits ✅ — unified per-policy patch-bump cleanup pass becomes runnable before Phase 7.
 
-**Constitutional amendments queued for 1.04 v1.5 → v1.6 release (gated, not yet executed):**
-- **§6.5 amendment (#494):** locked authority sequence + flat institutional-title-before-Department-Heads sub-rule. Updates the example sequence.
-- **§9.1 amendment (#498):** add `(as Incident Commander)` to the role-clarifier convention alongside `(as LASO)` and `(as Authorizing Official)`.
-- **§6.6 amendment (#506):** optional-bullet set narrowed to Sanctions only; mandatory-three contiguity locked as first-three-bullets requirement.
-- **§6.12 amendment (#509):** governed clarifier-tag set narrowed to Rationale + Exception; Rationale definition semantically tightened to audit-defensibility use case.
-- **§6.11 amendment (#515):** five sub-changes (E1–E5) — CJIS citation form drops "Section" word + v6.0 control-family identifier specified (legacy Section 5.X.Y.Z prohibited); CJIS Appendix references permitted; publication-level NIST SP references permitted (parenthesized form, hybrid forms prohibited); NIST SP 800-37 RMF-step references permitted; NIST CSF Subcategory `-NN` suffix required.
-- **§6.8 amendment (§6 audit Q1b ruling, May 02, 2026):** conjoined-symmetric carve-out — five-criterion test (a)–(e) appended to "One Directive Per Item" rule. Permits two directives in a single atomic bullet only when ALL hold: (a) identical role anchor; (b) identical scope; (c) shared trigger or shared deadline binding both directives equally; (d) parallel prohibitions or parallel prescriptions completing single unified obligation; (e) splitting would change meaning. Where any criterion fails, bullet shall split into atomic bullets under shared bold-label parent. Drafted language in `Audits/Section6_Audit_Report.md`. Gates SS (#526) execution.
-- **§6.15 amendment (§6 audit micro-amendment, May 02, 2026):** L2499 Owner definition re-anchor — strip `responsible for` (1.04 §6.9 prohibited phrase) and replace with Shall form. Internal consistency between 1.04 §6.9 prohibited list and 1.04 §6.15 Owner definition. Tracked as part of OO (#523) D31 strip.
+**Constitutional amendments landed in 1.04 v1.5 → v2.0 release (commit `68e2f6eb`, May 02, 2026):**
+- **§6.5 amendment (#494, closed):** locked authority sequence (13-item canonical) + flat institutional-title-before-Department-Heads sub-rule applied. Role-Clarifier Convention codified inline within §6.5 (per IT Director Q1+Q2 ruling — chosen over separate §9.1 section as the natural fit since the convention governs role identity).
+- **§9.1 piece of #498 (kept open):** Role-Clarifier Convention with `(as LASO)`, `(as Authorizing Official)`, `(as Incident Commander)` clarifiers established with §3 + §6 body application rules and function-name-form permission. Ticket stays open for the 8-policy Ch4 §3 IC architecture sweep (4.01 §6.1 substantive amendment + 3.06, 3.09, 4.02–4.07 §3) per locked Option B accountability/execution split.
+- **§6.6 amendment (#506, closed):** optional-bullet set narrowed to Sanctions only; mandatory-three contiguity locked as first-three-bullets requirement.
+- **§6.12 amendment (#509, kept open):** governed clarifier-tag set narrowed to Rationale + Exception; Rationale definition semantically tightened to audit-defensibility use case. Ticket stays open for ~25-policy / 49-use-site manual-wide strip of Constraint / Clarification / Exclusion clarifier tags across §2/§3/§6 instances.
+- **§6.11 amendment (#515, closed):** E1–E5 applied (CJIS Section-word drop + v6.0 control identifier exclusivity; CJIS Appendix permitted; NIST SP publication-level form; NIST SP 800-37 RMF-step form; NIST CSF Subcategory required). Sub-amendments at session close: sub-ordering rule "Section or" stripped (E1 internal consistency); "Control-Family ID" → "Control Identifier" (NIST SP 800-53 canonical terminology, per cross-validator R2 non-blocking finding).
+- **§6.15 micro-amendment (part of #523, kept open):** L2499 Owner definition `responsible for keeping` → `that shall keep` per 1.04 §6.9 internal consistency. Ticket stays open for 8 other §6.9 prohibited-language drift sites in peer policies.
+
+**§6.8 carve-out REVERTED.** The Q1b ruling drafted a conjoined-symmetric five-criterion test (a)–(e). Drafted, applied to v1.6 working draft, then reverted after substantive analysis with the IT Director (May 02, 2026) — even with strict criteria, the practical effect was aesthetic-not-substantive (Q1b's PASS examples split cleanly under bold-label parent + atomic sub-bullets, the canonical §6.8 Clarification structural pattern). Reverting preserves the auditor's-pen sharpness of the strict 1:1 directive-per-bullet rule. **#528 closed won't-fix.** Q1b ruling superseded; **#526 (SS) scope expands from 21 sites to all 51 candidate sites** for Phase 5F per-policy execution. Standing decline candidate inscribed for any future cross-validator round proposing softening of the strict §6.8 rule.
+
+**1.04-internal PRISTINE absorption beyond the queued amendments (IT Director ruling May 02, 2026 — "1.04 needs to be PRISTINE before we do anything else to any other policy"):**
+- **§6.4 Exclusion strip:** 1.04-internal #509 absorption — content inlined as plain Standard prose.
+- **§6.14 Maintenance Cadence split:** 1.04-internal §6.8 canonical-pattern absorption — Standard with bold label restructured into bold-label parent + 2 atomic Itemize sub-bullets (the §6.8 Clarification structural pattern).
+- **§5 Cited References add:** 1.11, 4.01, 5.05 added per body-cite test (introduced by §6.5 Role-Clarifier Convention amendment).
+- **§5 Framework Alignment expand:** NIST CSF 2.0 GV.PO-01 (Policy Establishment) + GV.PO-02 (Policy Review) + NIST SP 800-53 PL-1 (Policy and Procedures) added — verified against `Reference/NIST.CSWP.29-1.pdf` and `Reference/03_NIST_800_53_R5.pdf`. PM-1 declined (= Information Security Program Plan; 1.04 ≠ ISPP — same logic as 5.07 R1). SI-12 declined (= Information Management and Retention; 1.04 has no retention language).
+- **§6.9 Anchoring Requirement scope clarification (NEW):** distinguishes performative directives (require role anchor) from structural/categorical descriptors (anchor to the document object they govern) with two concrete examples from 1.04 itself. Resolves Gemini R1+R2 passive-voice-prohibition recurring finding by clarifying §6.9's actual scope rather than retrofitting role anchors onto structural rules.
+- **#469 manual-wide sweep absorption:** ALL 26 `shall not` instances eliminated (18 CONVERT, 5 STRIP redundant, 3 CONVERT/COMBINE). 1.04 now models the §6.9 anchoring + positive-form rule via zero-instance compliance. The constitutional standard cannot serve as precedent for peer-policy `shall not` retention. #469 stays open for manual-wide sweep on other policies.
+
+---
+
+### Phase 5F Constitutional Gate Landing (May 02, 2026)
+
+**1.04 v1.5 → v2.0 (commit `68e2f6eb`).** Constitutional release. Phase 5F per-policy patch-bump execution is now unblocked.
+
+**Tickets closed:** #494 (§6.5), #506 (§6.6), #515 (§6.11), #528 (§6.8 carve-out — won't-fix).
+
+**Tickets noted and kept open** (1.04-internal piece complete; manual-wide work continues): #498 (§3 IC architecture sweep — 8 Ch4 policies), #509 (manual-wide §6.12 clarifier tag strip — ~25 policies), #523 (D31 prohibited-language drift — 8 peer policies), #469 (manual-wide `shall not` → positive `shall` sweep), #235 (manual-wide §6.9 prohibited-language sweep), #355 (manual-wide reference verification — Phase 9 deferred), #375 (universal §6.X-strip sweep).
+
+**1.04 v2.0 PRISTINE state.** Walked against every §1–§6 audit defect class:
+- §1: F5/F7/F8 clean
+- §2: D1–D10 clean
+- §3: D11/D12/D15/D16/D17/D20 clean
+- §4: D21–D27 clean post-#506 amendment
+- §5: D28 clean; D29 placement clean post-Cited References add; D30 clean post-#515 amendment + sub-ordering strip + Control Identifier terminology fix
+- §6: D31 clean (Owner micro applied; zero §6.9 prohibited-language hits in body); D34 zero (no cross-policy §6.X depth); D36 clean post-§6.12 amendment + §6.4 Exclusion strip; D37 clean (no bold-label terminal-period defects); D40 clean by audit's strict tight-conjoined rubric; D41 clean (all CommandInset ref); D42 clean (all `Section 6.X` self-references valid)
+- #469 manual-wide: zero `shall not` instances remaining
+
+**Watch-list patterns inscribed (R1+R2 = 2 rotations; need 3+ for promotion to standing decline):**
+1. **Cross-validator: "active manual still uses X label" — re-push for v1.04 to retain labels existing manual uses** (R1 §6.6 labels + R2 §6.6 labels = 2; R1 §6.12 + R2 §6.12 = 2). Softer-each-round re-push against locked Phase 5F downstream architecture (#506, #509). Standing decline territory after one more recurrence.
+2. **ChatGPT: role-clarifier convention should be role-agnostic** (R1 + R2 = 2 rotations against #498 Option B locked architecture — IT Director holds IC function by policy mandate, accountability does not transfer to designees). Standing decline territory after one more recurrence.
+3. **Gemini: passive-voice prohibitions need role anchoring per §6.9** (R1 + R2 = 2 rotations; resolved by §6.9 v1.6 amendment clarifying performative vs structural/categorical scope). **Future flags should be reflexive-decline citing the §6.9 clarification** — no further rotations expected, but if recurring, promote with citation to v1.6 §6.9 amendment text.
+
+**Standing decline candidate (1 rotation, watching):**
+- **Cross-validator: softening of strict §6.8 1:1 directive rule** (R1 §6.8 carve-out request; the carve-out was actually drafted and reverted within v1.6 itself after IT Director substantive review). Any future proposal to introduce conjoined-symmetric exceptions, percentage exceptions, role-approval exceptions, or any other softening of the strict §6.8 rule is reflexive decline citing the v1.6 reversal record.
 
 ---
 
