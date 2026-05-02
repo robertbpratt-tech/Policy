@@ -11,16 +11,18 @@ This directory holds the durable audit-trail artifacts for the ECIO Policy Manua
 | `Section1_Audit_Report.md` | Audit close report | May 1, 2026 | Final (regenerated May 2, 2026 to align with Section 6 format) |
 | `Section2_Audit_Report.md` | Audit close report | May 1, 2026 | Final (regenerated May 2, 2026 to align with Section 6 format) |
 | `Section3_Audit_Report.md` | Audit close report | May 1, 2026 | Final (regenerated May 2, 2026 to align with Section 6 format) |
+| `Section4_Audit_Report.md` | Audit close report | May 1, 2026 | Final (regenerated May 2, 2026 to align with Section 6 format) |
+| `Section5_Audit_Report.md` | Audit close report | May 1, 2026 | Final (regenerated May 2, 2026 to align with Section 6 format) |
 | `Section6_Audit_Report.md` | Audit close report | May 2, 2026 | Final |
 
-(Reports for §4 and §5 expected to be added when the audit team that ran those sessions produces them.)
+All six section audit close reports are now present.
 
 ## What's here
 
 - **Two session-handoff documents** that briefed the §4–§5–§6 audit work, preserved as historical evidence of (a) what closures had occurred at each handoff point, (b) what locked architectural rulings governed at that moment, and (c) what forward projections the audit team carried into the next session.
-- **Section close reports for §1, §2, §3, §6** — the durable audit-trail-of-record for each audit's findings, defect catalog, adjudication queue, ticket scope, and post-adjudication plan/README updates.
+- **Section close reports for §1, §2, §3, §4, §5, §6** — the durable audit-trail-of-record for each audit's findings, defect catalog, adjudication queue, ticket scope, and post-adjudication plan/README updates.
 
-The §1, §2, §3 reports were regenerated from session transcripts and analyzer outputs on May 2, 2026 to match the structured format established by the §6 audit close report. They preserve the same defect catalog, ruling history, and ticket scope that informed the original commits (`100c5574`, `2fbd74e7`, `f2cc5241`, `25753471`, `6c0abfef`, `d9550082`, `a5aba818`, `681f5146`).
+The §1, §2, §3, §4, §5 reports were regenerated from session transcripts and the canonical TIGHTENING_PLAN.md Phase 5F close-note paragraphs on May 2, 2026 to match the structured format established by the §6 audit close report. They preserve the defect catalog, ruling history, and ticket scope that informed the original commits (`100c5574`, `2fbd74e7`, `f2cc5241`, `25753471`, `6c0abfef`, `d9550082`, `a5aba818`, `681f5146`, `3f2f6687`, `df92134e`, `b5e7027c`, `0020777e`).
 
 ## Why this directory exists
 
@@ -32,16 +34,16 @@ The §6 audit report's Q1b walk (51 candidates partitioned PASS/FAIL against fiv
 
 The four section close reports interlock:
 
-- **Defect ID continuity:** §1 uses **F1–F9** (mechanical-floor framing). §2 uses **D1–D10**. §3 uses **D11–D20.x**. §6 uses **D31–D42** (continuing past §4 and §5 reports' D-numbering).
-- **Floor item ID continuity:** §1 = F1–F9; §2 = F10–F16; §3 = F17–F26; §6 = F1–F8 (§6 floor-item numbering restarts because §6 audit's mechanical floor is a different conceptual axis from the prior sections' content-floor/structure-floor distinction).
-- **Ticket letter codes:** §1 = A, B (#484, #485). §2 = C–H (#486–#491). §3 = I, J, K1, K2, L, M, N (#492–#498). §6 = OO, PP, QQ, SS, TT (#523–#527). The letters M and N reset between sections; codes following I–N continue at OO–TT after §4 and §5 audits filled in the intervening codes.
-- **v1.6 amendment package:** §3 audit produces #494 (§6.5 authority sequence) and #498 (§9.1 IC clarifier). §6 audit produces §6.15 Owner micro-amendment and §6.8 conjoined-symmetric carve-out. The §4/§5 reports (when added) likely contain #506, #509, #515.
+- **Defect ID continuity:** §1 uses **F1–F9** (mechanical-floor framing). §2 uses **D1–D10**. §3 uses **D11–D20.x**. §4 uses **D21–D27**. §5 uses **D28–D30**. §6 uses **D31–D42**.
+- **Floor item ID continuity:** §1 = F1–F9; §2 = F10–F16; §3 = F17–F26; §4 = F27–F32; §5 = F33–F40; §6 = F1–F8 (§6 floor-item numbering restarts because §6 audit's mechanical floor is a different conceptual axis from the prior sections' content-floor/structure-floor distinction).
+- **Ticket letter codes:** §1 = A, B (#484, #485). §2 = C–H (#486–#491). §3 = I, J, K1, K2, L, M, N (#492–#498). §4 = O, P, Q, S, T, U, V, W, X, Y, Z (#499–#509; letter R skipped at filing time). §5 = AA, BB, CC, DD, EE, II, JJ, KK, LL, MM, NN (#510–#520; double-letter convention adopted at §5; FF / GG / HH skipped at filing time). §6 = OO, PP, QQ, SS, TT (#523–#527; letter RR skipped at filing time).
+- **v1.6 amendment package:** §3 audit produces #494 (§6.5 authority sequence) and #498 (§9.1 IC clarifier). §4 audit produces #506 (§6.6 optional-bullet narrowing + mandatory-three contiguity) and #509 (§6.12 governed-clarifier narrowing to Rationale + Exception). §5 audit produces #515 (§6.11 citation form amendments E1–E5). §6 audit produces §6.15 Owner micro-amendment and §6.8 conjoined-symmetric carve-out (folded into ticket OO #523 and ticket SS #526). Total v1.6 release at §6 audit close: five constitutional amendments plus two §6-audit-surfaced sub-amendments.
 
 ## Maintenance
 
 - **Do not edit archived artifacts.** Both handoffs carry archival headers locking their content. Future audit work produces new artifacts.
-- **The `Section{1,2,3,6}_Audit_Report.md` files are final** — they captured each audit's closure including locked rulings, ticket scope, and adjudication-queue resolution. No edits.
-- **Future section-audit reports** (e.g., the pending `Section4_Audit_Report.md` and `Section5_Audit_Report.md`) commit here as new files, named consistently with the established `Section{N}_Audit_Report.md` convention. The Section 6 report format is the canonical template for any retroactive or new audit close report.
+- **The `Section{1,2,3,4,5,6}_Audit_Report.md` files are final** — they captured each audit's closure including locked rulings, ticket scope, and adjudication-queue resolution. No edits.
+- **Future section-audit reports** (none currently pending — §1 through §6 complete) would commit here as new files, named consistently with the established `Section{N}_Audit_Report.md` convention. The Section 6 report format is the canonical template for any retroactive or new audit close report.
 
 ## Cross-references to plan and tracker
 
