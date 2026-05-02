@@ -62,7 +62,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `01/110.lyx` | IT Financial Management and Procurement Policy | T+ | v2.3 | #488, #508, #512, #513 |
 | `01/111.lyx` | Data Governance and Classification Policy | T+ | v2.5 | #484, #488, #495, #502, #509, #510, #513 |
 | `01/112.lyx` | IT Asset Management Policy | T+ | v2.7 | #329, #426, #487, #509, #516 |
-| `01/113.lyx` | Supply Chain Risk Management (SCRM) and Vendor Governance | T+ | v2.4 | #484, #486, #492, #495, #509, #513 |
+| `01/113.lyx` | Supply Chain Risk Management (SCRM) and Vendor Governance | T+ | v2.4 | #484, #486, #492, #495, #509, #513, #521 |
 | `01/114.lyx` | Stakeholder Engagement and Communications Policy | T+ | v2.4 | #491, #495, #499, #500, #510 |
 
 ## Chapter 2 — Security
@@ -128,7 +128,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `05/503.lyx` | Compliance Monitoring and Corrective Action | T+ | v2.0 | #488 |
 | `05/504.lyx` | Performance Metrics and Operational KPIs | T | v2.0 |  |
 | `05/505.lyx` | Security Control Assessment and Authorization | T | v2.0 | #513 |
-| `05/506.lyx` | Vendor Compliance and Third-Party Assurance | D | v1.0 | #281, #331, #486, #489, #492, #509, #513 |
+| `05/506.lyx` | Vendor Compliance and Third-Party Assurance | T | v2.0 |  |
 | `05/507.lyx` | Annual Policy Review and Maturity Scoring | D | v1.0 | #191, #282, #300, #488, #509 |
 
 ## Chapter 6 — Appendices
