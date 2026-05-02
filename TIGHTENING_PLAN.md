@@ -335,7 +335,7 @@ State key: **L** = Locked, **T** = Tightened (clean), **T+** = Tightened with op
 | 5.03 | Compliance Monitoring | T | v2.0, April 30 | 0 | — |
 | 5.04 | Performance Metrics | T | v2.0, May 01 | 0 | — |
 | 5.05 | Security Control Assessment | D | — | 1 | #188 |
-| 5.06 | Vendor Compliance | D | — | 2 | #281, #331 |
+| 5.06 | Vendor Compliance | T | v2.0, May 01 | 0 | — |
 | 5.07 | Annual Policy Review | D | — | 3 | #191, #282, #300 |
 
 ### Chapter 6 — Appendices
@@ -571,7 +571,7 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 | 42 | 5.03 (Compliance Monitoring) | ✅ Closed v2.0 (`2373f03d`, April 30) | CAP lifecycle; #279 split-architecture applied; OMI inheritance transitive through 5.01 §6.6 by-reference |
 | 43 | 5.04 (Performance Metrics) | ✅ Closed v2.0 (`266e9ab3`, May 01) | KPI data feeds 5.07 |
 | 44 | 5.05 (Security Control Assessment) | ✅ Closed v2.0 (`74cbfd91`, May 01) | Control assessment results feed 5.07 |
-| 45 | 5.06 (Vendor Compliance) | 1 | Consumes 1.13 (tightened in Phase 5A); feeds 5.07 |
+| 45 | 5.06 (Vendor Compliance) | ✅ Closed v2.0 (`0ccbaad0`, May 01) | GLOBAL-G role redistribution applied; Section 1–5 audit lockings absorbed; CA-2 + PS-7 + SR-6 mechanics added; CJIS PS-7 ripple to 1.13 filed |
 | 46 | 5.07 (Annual Policy Review) | 3 | Capstone — consumes 5.02–5.06, 3.16, 1.09, 1.05 outputs |
 
 ---
@@ -734,6 +734,45 @@ Closes #220 downstream queue. All policies in this group require the "IT Directo
 **Watch-list (2 rounds; need 3+ for promotion):** None active from 5.05. The validator pushback this session was either pattern-reflexive (already inscribed) or genuine micro-defect (accepted and absorbed). No new watch-list items carried forward.
 
 **Open ripples filed:** None. Clean session — no manual-wide drift surfaced; no downstream policy revisions required.
+
+---
+
+### Phase 6 Entry 45 Completion Note (May 1, 2026)
+
+**Policy 5.06 (Vendor Compliance and Third-Party Assurance) D v1.0 → T v2.0** (commit `0ccbaad0`).
+
+**Tickets closed:** #281 (5.06-specific GLOBAL-G role redistribution — applied as Sysadmin / Netadmin / Support Specialist three-domain breakout per 5.04 v2.0 canonical), #331 (5.06-specific "where applicable" reanchor in §6.1 Record Content).
+
+**5.06 absorption notes added to multi-policy tickets:** #486 (§2 parenthetical-title strip), #489 (§2 InS policy-pointer strip), #492 (§3 chained obligation decompose), #495 (§3 authority-order corrections — Department Heads moved to canonical position 11), #497 (§3 role label normalization — "Requesting Department Head" → "Department Heads"), #509 (§6.12 clarifier-tag strip — Clarification → Sub-Threshold Observations topic block), #513 (§5 NIST SP 800-37 subtitle append), #515 (CJIS Section-drop applied per Phase 6 canonical anticipation).
+
+**Substantive transitions:**
+- §2 Scope: parenthetical title stripped from opener per #486; InS items 4 and 7 policy pointers stripped per #489 (recomposed as bare noun phrases).
+- §3 GLOBAL-G applied: three new role blocks (Systems Administrator, Network Administrator, Support Specialist) added per #281, mirroring 5.04 v2.0 three-domain prep architecture. Each domain administrator serves as vendor technical point of contact for vendors in their operational area, prepares the vendor compliance review input package, and submits to AID. AID role split: coordinate (vs. conduct) reviews; new bullets validate input packages from domain administrators; render compliance posture determination; document determination in Vendor Compliance Record.
+- §3 Department Heads canonical (#497): "Requesting Department Head" renamed to "Department Heads" (plural). Authority-order locked sequence applied (#494 / #495): Department Heads moved from position 3 (between AID and Sysadmin) to canonical position 11 (after Support Specialist). §6.3 + §6.6 body references reanchored ("the Department Head identified in Policy 1.13" / "the relevant Department Head").
+- §3 IT Director chained obligation decomposed (#492): Risk Register routing meta-clarifier sentence dropped; single-directive form retained.
+- §4 by-reference architecture per canonical 5.04 / 5.05 v2.0 pattern: Enforcement reframed from inline non-compliance enumeration to generalized canonical form; Exceptions stripped of inline open-ended-basis + remediation-timeline + CJI Constraint + County Manager carve-out (Q2 ruling — "drop it entirely because it's covered elsewhere"). Canonical two-sentence form retained ("...framework established in Policy 5.01. Oral exceptions are not valid.").
+- §5 Cited References cleanup: Policy 1.08 dropped (orphaned post-§4 reframe); Policy 1.07 added (new body cite from §3 domain administrators); NIST SP 800-53 Rev. 5: CA-2 added (Q3 — companion authority body cite to CJIS CA-2 in §6.5 Triennial Assessment); CJIS SA-9 body cite added at §6.5 opener (resolves pre-existing body-cite test failure surfaced during tightening); CJIS PS-7 + NIST SP PS-7 added (Q3 — Personnel Change Monitoring sub-bullet); NRS 239 + NAC 239.165 added (new §6.9 body cites from canonical retention reframe). NIST SP 800-53 Rev. 5: SR-6 moved from Framework Alignment to Cited References per body-cite test (R2 finding accept; companion body cite added at §6.4 opener).
+- §5 Framework Alignment cleanup: NIST CSF GV.SC-06 → GV.SC-07 (R1 M2 accept — post-activation supplier risk monitoring is the architecturally correct subcategory; GV.SC-06 is pre-engagement / 1.13 territory); COBIT APO10 → APO10.05 (R1 M3 accept — Monitor Vendor Performance and Compliance is the precise pinpoint match); NIST SP 800-37 Rev. 2 reformatted with subtitle per #513.
+- §5 CJIS canonical form: "Section X" word stripped from all CJIS citations per #515 / Phase 6 canonical anticipation (5.02 / 5.03 / 5.05 v2.0 pattern). 9 strips total (8 §5 + 1 inline).
+- §6 cross-policy depth strips per #375: 17 cross-policy "Section X.Y" references stripped from body (§3 IT Director, §6.1, §6.2, §6.3, §6.5, §6.7, §6.8). Intra-policy "Section X.Y" references retained per canonical convention.
+- §6.1: "(Redmine)" stripped per #6 (2 occurrences — Vendor Compliance Record opener and Record Content); CJIS Security Addendum bullet reanchored from "where applicable" to "for vendor personnel with CJI access" per #331.
+- §6.2 Annual Vendor Compliance Review: opener narrowed from "conduct or coordinate" to "coordinate" (parallel to §3 AID GLOBAL-G split); "where applicable" reanchor on CJIS Security Addendum compliance status bullet.
+- §6.3 Pre-Renewal Compliance Evaluation: "where applicable" reanchor on CJIS compliance status bullet.
+- §6.4 Third-Party Assurance Evidence: SR-6 body cite added at opener; **NEW Currency Standards bullet** (Q2 ruling — ChatGPT R1 thresholds verbatim): SOC 2 Type II ≤18 calendar months, SOC 2 Type I onboarding-only with IT Director compensating evidence exception, independent assessments / pen tests ≤12 calendar months with contractual-cadence exception, certifications active on evaluation date, expired/superseded/scope-mismatched evidence logged as compliance deficiency.
+- §6.5 CJIS Vendor Compliance: opener body cite extended to include CJIS SA-9 (External System Services). **Triennial Assessment** extended with CA-2 written assessment plan + pre-approval + written report mechanics (Q1 ruling — minimal-form additions, R2 ChatGPT mechanical addition of "assessment roles and responsibilities" per CA-2(a)(3) accepted). NIST SP CA-2 companion body cite added per Q3. **NEW Personnel Change Monitoring sub-bullet** (Q3 ruling): CJIS PS-7 + NIST SP PS-7 24-hour notification of vendor personnel transfers, terminations, or changes affecting CJI access, County-issued credentials, or County-issued physical access; AID tracks compliance in Vendor Compliance Record; failure to provide timely notification logged as compliance deficiency.
+- §6.6 Vendor Remediation: §6.12 Clarification clarifier-tag stripped per #509 / standing decline #41 architecture; reframed as "Sub-Threshold Observations" topic-block label (matches surrounding §6.6 sub-bullet structure).
+- §6.9 Records Retention: full reframe to canonical 1.11 §6.9 / 5.04 v2.0 / 5.05 v2.0 form. Active-voice role-anchored opener (#482 fix — "The Vendor Compliance Record is the authoritative record... The Assistant IT Director shall apply retention periods... shall classify..."). Six-bullet block: Vendor Compliance Records (LRDA 20071300, six calendar years post-closure, in System of Engagement); CJIS Assessment Records (greater-of-LRDA-or-CJIS-required per 1.11 §6.9 manual-wide pattern); Destruction Standards (NAC 239.165); Legal Holds (Policy 1.11); Multiple Schedules (longest applicable); Public Records (NRS 239 + IT Director coordination with County's public records process and legal counsel). Redmine product name stripped (#6).
+
+**Cross-validator round summary:**
+- **R1** — Six accepts: M2 (CSF GV.SC-06 → GV.SC-07); M3 (COBIT APO10 → APO10.05); R2 (SR-6 Framework → Cited with §6.4 opener body cite); Q1 (CA-2 written plan + report mechanics, minimal-form); Q2 (Currency Standards bullet, ChatGPT thresholds verbatim); Q3 (Personnel Change Monitoring + CJIS/NIST SP PS-7 + 1.13 ripple). Reflexive declines: ChatGPT C1 inline §4 exception restoration with County Manager + open-ended bar + remediation timeline + CJIS no-waiver (standing decline #41 rotation 4 cumulative); Gemini G1 active-voice / role-anchor reframe of §6 body (standing decline #39 — would create manual-wide style inconsistency with 5.04 / 5.05 v2.0); Gemini G2 CJIS Section-prefix restoration (standing decline #14 stale source — pre-#515 spec); Gemini G3 NRS 239 → NRS 239.010 pinpoint (canonical chapter-level form per 5.01 v2.0); Gemini G4 "shall recommend" → "shall submit a formal request" (binding directive, not a 1.04 violation); ChatGPT M4 §6.7 contract-remedy clarification (already in current text).
+- **R2** — Two accepts: ChatGPT 5.06-02 mechanical addition of "assessment roles and responsibilities" to §6.5 Triennial Assessment plan content (CA-2(a)(3) compliance); Q4 declined as architecturally circular per IT Director ruling (IT Director is County's chief CJIS official; County Manager signs contracts with Board approval; CA-2(e) distribution covered transitively by IT Director/LASO authority chain). Reflexive declines: ChatGPT 5.06-01 inline §4 exception restoration (standing decline #41 rotation 5 cumulative — verbatim re-push of R1 C1); ChatGPT 5.06-03 reference block reorder (misread of canonical Cited/Framework split — within Framework, CSF before SP per 1.04 §6.11 / standing decline #2). Gemini submitted a wholesale .lyx rewrite implementing R1 declined findings as silent edits (style-overhaul rather than findings list — declined in toto per standing declines #14 / #39 / #41; positive signal that Gemini correctly absorbed the §3 audit lockings #494/#497 — Department Heads canonical applied without prompt).
+
+**Standing decline patterns added:** None inscribed this session. Pattern stack stable across R1/R2; #14 / #20 / #36 / #38 / #39 / #41 all observed at 1+ rotation each but no new architectural-target rotations reached the 3-round promotion threshold under genuinely novel surface framing. #41 reached rotation 5 cumulative (3 at 5.04 + R1 + R2) — pattern stable, no entry update needed.
+
+**Watch-list (1 round; observation only):** Gemini wholesale-rewrite cross-validator response format (May 1, 2026, 5.06 v2.0 R2). Validator submitted entire revised .lyx file rather than findings list. Procedural observation rather than architectural target. If recurrence at 5.07, consider a procedural note in §1.3 Cross-Validator Adjudication on rejecting wholesale-rewrite submissions until validator re-frames as findings.
+
+**Open ripples filed:**
+- **#521** ([1.13] Ripple from 5.06 v2.0): Add CJIS PS-7 personnel-change notification (24-hour cadence) to vendor agreement requirements. Source: 5.06 v2.0 §6.5 Personnel Change Monitoring requires the IT Director to ensure each CJIS vendor's contract includes the 24-hour notification clause; 1.13 owns vendor onboarding and contracting, so the contract clause requirement belongs in 1.13's vendor agreement template. Phase 5F absorption candidate or per-policy touch.
 
 ---
 
