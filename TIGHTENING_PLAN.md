@@ -68,6 +68,7 @@ Run the five steps in order against the target policy. Every finding notes locat
 - One-way references that should be bidirectional — flag.
 - Content restated in both target and dependency (vs. defined once and incorporated by reference) — flag as dual-maintenance.
 - Stub-policy references (empty skeleton) — note as pending dependency. Don't try to resolve.
+- Verify any term, construct, or role introduction or modification against `06/601.lyx` glossary entries. Definitions citing the target policy or its sections shall be checked for stability; flag drift as a 6.01 ripple ticket or absorb in-session. Phase 10 includes a manual-wide glossary sync-up that catches cumulative drift.
 
 #### §1.2.5 Substantive Tightening
 
@@ -346,7 +347,7 @@ State key: **L** = Locked / PRISTINE (full ticket-list walked and applied), **T*
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 6.01 | Glossary | A | draft | 5 | #192, #193, #195, #328, #352 |
+| 6.01 | Glossary | L | v2.0 | 0 | — |
 | 6.02 | Policy Matrix | A | — | 4 | #196, #197, #198, #459 |
 | 6.03 | Workforce Roles STAK Matrix | A | — | 3 | #199, #200, #214 |
 | 6.04 | Revision History and Version Control | A | — | 0 | — |
@@ -1160,12 +1161,13 @@ All Wave 2 sub-phases depend on Wave 1's frozen-accurate baseline. Mutually inde
 
 2. **External adversarial review.** Complete manual (compiled PDF + LyX source) handed to Gemini, ChatGPT, and Grok with instruction: "Aggressively tear this apart." Broad-overview sweeps. No session protocol, no structured finding format — raw output. This is the only role validators play in the final two phases.
 3. **Joint digest.** IT Director and Claude review all three validator outputs together. Each finding lands in LyX before declaration OR is explicitly declined with rationale captured in the session record. No deferrals to post-v1.0. Scaffolding dies with the repo; nothing gets carried forward as "follow-up."
-4. **Header normalization (#353).** Every policy metadata header set to a uniform string: `Effective: July 01, 2026 | Version: 1.0`. No policy carries its development version number into v1.0. This is the mechanical embodiment of the "fully formed from Zeus' head" posture — the manual reads as given, not as developed.
-5. **6.04 Revision History initialization.** Single entry: "v1.0 — Initial publication — July 01, 2026." No back-entries for tightening history. Development archaeology does not exist in the published manual.
-6. **Final compilation.** Compile master LyX to PDF. Verify clean render, clean TOC, clean cross-references.
-7. **v1.0 declaration.** IT Director marks the manual at v1.0.
-8. **Publication handoff.** LyX source and compiled PDF migrate to the System of Engagement as authoritative reference per 1.04 §6.1.
-9. **Repo retirement.** GitHub repo archived. `TIGHTENING_PLAN.md`, issue tracker, `Phase9/` matrix folder, all session archives retire with the repo.
+4. **6.01 Glossary sync-up.** Re-run the citation-stability and term-coverage check across all 6.01 entries against final-state policy bodies. Catches drift accumulated during the cleanup pass and any other inter-session changes since 6.01 v2.0 (May 02, 2026). Findings either land in 6.01 as patch-bump edits or are explicitly declined per the Phase 10 freeze discipline. Runs before header normalization so the v1.0 published glossary reflects settled LyX.
+5. **Header normalization (#353).** Every policy metadata header set to a uniform string: `Effective: July 01, 2026 | Version: 1.0`. No policy carries its development version number into v1.0. This is the mechanical embodiment of the "fully formed from Zeus' head" posture — the manual reads as given, not as developed.
+6. **6.04 Revision History initialization.** Single entry: "v1.0 — Initial publication — July 01, 2026." No back-entries for tightening history. Development archaeology does not exist in the published manual.
+7. **Final compilation.** Compile master LyX to PDF. Verify clean render, clean TOC, clean cross-references.
+8. **v1.0 declaration.** IT Director marks the manual at v1.0.
+9. **Publication handoff.** LyX source and compiled PDF migrate to the System of Engagement as authoritative reference per 1.04 §6.1.
+10. **Repo retirement.** GitHub repo archived. `TIGHTENING_PLAN.md`, issue tracker, `Phase9/` matrix folder, all session archives retire with the repo.
 
 **What survives v1.0:**
 
