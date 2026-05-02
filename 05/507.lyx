@@ -180,7 +180,7 @@ Effective:
 \end_inset
 
 Version:
- 1.0
+ 2.0
 \end_layout
 
 \begin_layout Subsection*
@@ -389,6 +389,28 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+Security control assessment execution and Authorization Decision Records:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 Vendor and third-party compliance assessments:
  
 \series bold
@@ -411,9 +433,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-Standard Operating Procedures,
- playbooks,
- and operational documentation maintained in the System of Engagement:
+Documentation taxonomy and System of Engagement boundary:
  
 \series bold
 Policy 
@@ -429,7 +449,16 @@ nolink "false"
 
 
 \series default
- and 
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Knowledge artifact creation,
+ maintenance,
+ and retirement within the System of Engagement:
+ 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -570,13 +599,13 @@ Assistant IT Director
 \begin_layout Itemize
 
 \lang english
-Shall compile the assessment inputs defined in Section 6.2.
+Shall aggregate the domain summaries prepared by the Systems Administrator and the Network Administrator with the policy-level outputs identified in Section 6.2 into the compiled input package for IT Director review.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall present compiled inputs to the IT Director prior to the start of the review.
+Shall present the compiled input package to the IT Director prior to the start of the review.
 \end_layout
 
 \begin_layout Itemize
@@ -632,6 +661,44 @@ nolink "false"
 
 \series bold
 \lang english
+Systems Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall prepare a summary of assessment results,
+ control test outcomes,
+ and open items within the Systems Administrator's operational area as an input to the annual policy review.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Network Administrator
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall prepare a summary of assessment results,
+ control test outcomes,
+ and open items within the Network Administrator's operational area as an input to the annual policy review.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
 All Information Operations Personnel
 \series default
 :
@@ -657,7 +724,7 @@ Shall provide requested evidence,
 \begin_layout Standard
 
 \lang english
-Compliance with this policy is mandatory for all Information Operations personnel involved in the annual policy review,
+Compliance with this policy is mandatory for all Information Operations Personnel involved in the annual policy review,
  maturity scoring,
  or executive reporting process.
 \end_layout
@@ -736,21 +803,6 @@ Exceptions
  alteration of the scoring methodology,
  or omission of the audit program effectiveness evaluation defined in Section 6.4 —
  shall be approved by the County Manager in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Delegation of Authority and Decision Rights) and the exception management framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -845,7 +897,7 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:1.08"
+reference "pol:1.06"
 plural "false"
 caps "false"
 noprefix "false"
@@ -854,7 +906,7 @@ nolink "false"
 \end_inset
 
 :
- Delegation of Authority and Decision Rights
+ IT Governance and Oversight Structure
 \end_layout
 
 \begin_layout Itemize
@@ -962,7 +1014,7 @@ nolink "false"
 \end_inset
 
 :
- (Postmortem Review and Lessons Learned)
+ Postmortem Review and Lessons Learned
 \end_layout
 
 \begin_layout Itemize
@@ -1044,6 +1096,42 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Security Control Assessment and Authorization
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ Vendor Compliance and Third-Party Assurance
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 ECIO Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1068,7 +1156,19 @@ NRS 239.125 (Local Government Records Management Program)
 \begin_layout Itemize
 
 \lang english
+NAC 239.165 (Destruction of Confidential Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
 LRDA 20071256 (Quality Assurance Review Audits and Reports)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071558 (Activity Reports)
 \end_layout
 
 \begin_layout Standard
@@ -1100,15 +1200,7 @@ NIST CSF 2.0:
 
 \lang english
 NIST CSF 2.0:
- ID.IM-01 (Improvements Are Identified from Evaluations)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
- PM-1 (Information Security Program Plan)
+ ID.IM-01 (Improvements are identified from evaluations)
 \end_layout
 
 \begin_layout Itemize
@@ -1117,6 +1209,14 @@ NIST SP 800-53 Rev.
 NIST SP 800-53 Rev.
  5:
  PM-6 (Measures of Performance)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NIST SP 800-53 Rev.
+ 5:
+ SI-12 (Information Management and Retention)
 \end_layout
 
 \begin_layout Itemize
@@ -1185,7 +1285,7 @@ nolink "false"
 
 
 \series default
-.
+ (Policy Review and Update Procedures).
  This policy does not conduct audits,
  self-assessments,
  or control tests —
@@ -1206,7 +1306,7 @@ nolink "false"
 \series default
 .
  This policy consumes the outputs of both and produces the annual maturity assessment and executive report that neither can produce independently.
- The annual policy review conducted under this policy operationalizes the annual internal review referenced in 
+ The annual policy review conducted under this policy operationalizes the annual internal review cadence established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1221,7 +1321,7 @@ nolink "false"
 
 
 \series default
- Section 6.1 and does not alter the review cadence,
+ and does not alter the review cadence,
  approval chain,
  or change control workflow established there.
 \end_layout
@@ -1346,65 +1446,6 @@ The review shall also encompass all appendices within Chapter 6 of the ECIO Poli
  not operational controls.
 \end_layout
 
-\begin_layout Itemize
-
-\series bold
-\lang english
-Clarification
-\series default
-:
- Standard Operating Procedures,
- playbooks,
- and other operational documentation maintained in the System of Engagement are not within the scope of this review.
- The currency of those documents is governed by 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Policy and Documentation Formatting Standards) and 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:3.13"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Knowledge Management Policy);
- their adequacy is tested through 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.02"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
 \begin_layout Standard
 
 \lang english
@@ -1432,7 +1473,7 @@ The IT Director shall base the annual policy review on the following governed se
 Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:5.07"
+reference "pol:5.02"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1448,7 +1489,22 @@ nolink "false"
  and control tests conducted during the fiscal year,
  including conforming findings,
  observations,
- and deficiencies classified under Policy 5.02 Section 6.5.
+ and deficiencies classified under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.02"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1466,11 +1522,26 @@ nolink "false"
 
 \end_inset
 
- annual KPI data
+ (Performance Metrics and Operational KPIs) annual KPI and operational performance summary
 \series default
 :
- the performance metrics and operational KPI results produced during the fiscal year,
- including any qualifying underperformance patterns identified under Policy 5.04.
+ the annual performance metrics and operational KPI summary produced under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+,
+ including any qualifying underperformance patterns identified during the fiscal year.
 \end_layout
 
 \begin_layout Itemize
@@ -1511,7 +1582,7 @@ nolink "false"
 
 \end_inset
 
- open Corrective Action Plan status
+ (Compliance Monitoring and Corrective Action) open Corrective Action Plan status
 \series default
 :
  the current inventory of open Corrective Action Plans,
@@ -1534,7 +1605,7 @@ nolink "false"
 
 \end_inset
 
- Risk Register status
+ (Risk Management Policy) Risk Register status
 \series default
 :
  the current risk ratings,
@@ -1561,6 +1632,19 @@ nolink "false"
 \series default
 :
  the summary of enforcement actions taken during the fiscal year and the current status of policy acknowledgment compliance across all population classes.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Domain operational summaries
+\series default
+:
+ the assessment-results,
+ control-test-outcome,
+ and open-items summaries prepared by the Systems Administrator and the Network Administrator under Section 3,
+ capturing operational-area perspective on policy implementation that supplements the policy-level outputs identified above.
 \end_layout
 
 \begin_layout Itemize
@@ -1772,31 +1856,23 @@ The IT Director shall document the rationale for each tier assignment.
  The rationale shall reference specific assessment inputs from Section 6.2 that support the determination.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
-\series bold
 \lang english
-Constraint
-\series default
-:
- The maturity tier assigned to a policy reflects the assessed state of implementation during the review period.
+The maturity tier assigned to a policy reflects the assessed state of implementation during the review period.
  It is not a target,
  a requirement,
  or a compliance standard.
- Tier assignment does not create an obligation to achieve a higher tier in the subsequent period.
- The IT Director may establish target tiers as a planning tool,
- but target tiers are advisory and do not carry enforcement consequences.
+ Tier assignment shall not create an obligation to achieve a higher tier in the subsequent period.
+ The IT Director may establish target tiers as a planning tool;
+ target tiers are advisory and shall not carry enforcement consequences.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
-\series bold
 \lang english
-Clarification
-\series default
-:
- A policy that has been recently adopted or substantially revised may appropriately receive a Tier 1 or Tier 2 assignment in its first review cycle.
- A lower-tier assignment for a newly adopted policy does not constitute a deficiency.
+A policy that has been recently adopted or substantially revised may appropriately receive a Tier 1 or Tier 2 assignment in its first review cycle.
+ A lower-tier assignment for a newly adopted policy shall not constitute a deficiency.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1852,7 +1928,7 @@ nolink "false"
 
 
 \series default
- Section 6.1.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1922,7 +1998,7 @@ nolink "false"
 
 
 \series default
- Section 6.2.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1943,7 +2019,7 @@ nolink "false"
 
 
 \series default
- Section 6.3 was applied consistently and produced documented results.
+ was applied consistently and produced documented results.
 \end_layout
 
 \begin_layout Itemize
@@ -1964,7 +2040,7 @@ nolink "false"
 
 
 \series default
- Section 6.5.
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1985,7 +2061,7 @@ nolink "false"
 
 
 \series default
- Section 6.4 were maintained.
+ were maintained.
 \end_layout
 
 \begin_layout Standard
@@ -2018,7 +2094,7 @@ nolink "false"
 
 \series default
  cannot serve as its own assessment mechanism.
- This section provides the independent evaluation of the audit program that 
+ This section provides the independent evaluation of the audit program required by 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2033,7 +2109,7 @@ nolink "false"
 
 
 \series default
- Section 4 references through this policy.
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2061,7 +2137,7 @@ nolink "false"
 
 
 \series default
-.
+ (Data Governance and Classification Policy).
 \end_layout
 
 \begin_layout Standard
@@ -2132,7 +2208,22 @@ A summary of open Corrective Action Plans and their impact on affected policy ma
 \lang english
 A summary of regulatory,
  technological,
- or operational changes that affected or should affect policy content during the next review period.
+ or operational changes that affected policy content or require evaluation under the 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.05"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ change control process.
 \end_layout
 
 \begin_layout Itemize
@@ -2234,6 +2325,28 @@ The County Manager shall provide written acknowledgment of receipt and review wi
  The County Manager may direct the IT Director to address specific concerns,
  conduct additional analysis,
  or revise maturity tier assignments with documented justification.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The County Manager shall determine whether the Annual Policy Review Report meets the Board engagement or governance escalation criteria established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Governance and Oversight Structure).
+ The IT Director shall provide the County Manager with the information and analysis necessary to support the determination.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2365,13 +2478,10 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The Assistant IT Director shall retain all annual policy review records —
- including scoring documentation,
- input summaries,
- working papers,
- the Annual Policy Review Report,
- and County Manager acknowledgment records —
- in the System of Engagement in accordance with 
+The Annual Policy Review Report is the authoritative record of the annual policy review and maturity scoring process.
+ Working records produced during the review are supporting artifacts and do not replace the report.
+ The Assistant IT Director shall apply retention periods in accordance with NRS 239.125 and the Nevada Local Government Records Retention Schedule.
+ The Assistant IT Director shall classify annual policy review records in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2386,16 +2496,81 @@ nolink "false"
 
 
 \series default
- and the applicable Nevada Local Government Records Retention Schedule.
- Where multiple retention requirements apply,
- the longest applicable period shall govern.
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
+\series bold
 \lang english
-The Assistant IT Director shall retain annual policy review records for a minimum of three (3) calendar years from the end of the calendar year to which they pertain,
- where no longer retention period is specified by an applicable schedule.
+Annual Policy Review Reports
+\series default
+:
+ The Assistant IT Director shall retain Annual Policy Review Reports and the corresponding County Manager acknowledgment records in the System of Engagement permanently in accordance with LRDA 20071558 (Activity Reports).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Annual Policy Review Working Records
+\series default
+:
+ The Assistant IT Director shall retain scoring documentation,
+ input summaries,
+ and working papers produced during the annual policy review in the System of Engagement for a minimum of three (3) calendar years from the end of the calendar year to which they pertain,
+ in accordance with LRDA 20071256 (Quality Assurance Review Audits and Reports).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Destruction Standards
+\series default
+:
+ The Assistant IT Director shall ensure destruction of confidential annual policy review records complies with NAC 239.165.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Legal Holds
+\series default
+:
+ The Assistant IT Director shall suspend retention and disposition actions for annual policy review records during litigation holds,
+ public records preservation requirements,
+ ongoing audits,
+ external investigations,
+ or other legal hold events,
+ in accordance with 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\lang english
+Multiple Schedules
+\series default
+:
+ Where multiple retention requirements apply to a single record,
+ the Assistant IT Director shall apply the longest applicable period.
 \end_layout
 
 \end_body
