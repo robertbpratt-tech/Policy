@@ -45,7 +45,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `00/000.lyx` | Front Matter | T | v3 |  |
+| `00/000.lyx` | Front Matter | L | v3.1 |  |
 
 ## Chapter 1 — Governance
 
