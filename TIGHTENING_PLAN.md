@@ -1113,6 +1113,74 @@ These two catches demonstrate the substantive value of the Pristine maximum-scop
 
 ---
 
+### Phase 5F Entry 4 — Policy 1.03 PRISTINE (May 02, 2026)
+
+**Policy 1.03 (Standard Operating Ethos) T+ v2.1 → L v2.2** (commit `0b3eec15`).
+
+Fourth Phase 5F per-policy patch-bump execution. Walked against full ticket list per IT Director PRISTINE directive (May 02, 2026). Fourteen findings inventoried; all resolved per IT Director adjudications on five decision points (F-5 v6.0 Appendix D.2 form; F-8 1.01 D10-exempt peer canonical 5.07-only; F-13 strip GV.SC-01/AT-2/PM-1; §6.1 Option B singular CJA + Glossary add; #211 PDF-grep test).
+
+**Tickets touched (8):**
+- **#486** — Pristine catch on closed sentence-2 strip; line item resolved via comment (ticket already closed before this session).
+- **#492** — §3 AID directive split; 1.03 line item closed via comment (ticket stays open for 17 other policies / 22 instances).
+- **#526** — §6.3 multi-directive split; 1.03 line items at Accountability + Crisis Discipline closed via comment (ticket stays open for 17 other policies).
+- **#515** — manual-wide §6.11 E1 root absorbed at 1.03 §5 + §6.1 (CJIS legacy citation → v6.0 Appendix D.2); 4 ripples filed for non-1.03 sites.
+- **#469** — manual-wide `shall not` → positive sweep absorbed at §6.1 Independence + §6.3 Decide Based on Standards.
+- **#532** — manual-wide bold-on-first-use Glossary sweep absorbed (4 first-use bolds: ECIO §1, CJIS §6.1, Criminal Justice Agency (CJA) §6.1, NRS §6.1).
+- **#211** — verified open via compiled `Policy_Manual.pdf` grep (15 hits manual-wide; 2 in 1.03 §4 stripped at this commit; 13 remain). Ticket reframing observation posted as comment; original "Supervisors and Leads" 1.07 §3 form was retired in prior 1.07 restructure. Likely Phase 9 holistic-read resolution.
+- **#208** — verified clean (1.03 already uses canonical "All Information Operations Personnel"; #208 line item was closed at originating Phase 5F Entry 3 1.02 PRISTINE).
+
+**Tickets closed in-session:** #539 (CJA Glossary add for 6.01 — file → execute → close transaction).
+
+**Adjacent commits:**
+- **6.01 v2.0 → v2.1** at commit `22b0eb6c` — CJA acronym entry + Criminal Justice Agency (CJA) full spelled-form entry added to support 1.03 §6.1 first-use bolding under #532. Per IT Director directive, ticket lifecycle executed in full (#539 file → 6.01 commit → #539 close), no hanging obligations.
+
+**Substantive transitions (fourteen findings, by category):**
+
+- **§1 Purpose first-use bolding (F-11, #532):** Bold **Elko County Information Operations** as 3-word spelled-form span; "Department (ECIO)" stays unbolded per 1.01 PRISTINE pattern.
+- **§2 Scope sentence-2 strip (F-1, #486 Pristine catch):** "It governs the cultural and professional baseline for Department interactions, decision-making, and conflict resolution." stripped — IT Director per-policy ruling missed at #486 global close. §6 Policy Statement opening already covers this ground.
+- **§3 AID directive split (F-2, #492):** Chained "Shall reinforce... and shall model..." → two atomic sub-bullets per D11/D12.
+- **§4 canonical rebuild (F-7, F-8, F-10, F-14, standing declines #39 + #42):**
+  - **Assessment:** 4-mechanism enumeration (individual perf reviews / 4.01 post-mortem / supervisor observations / 5.07) → canonical single-mechanism form per 1.01 D10-exempt peer (5.07 only). Subject "Adherence to the operational ethos defined in this policy" preserves 1.03's ethos framing while matching 1.01 architecture.
+  - **Enforcement:** Non-canonical "Non-compliance with this policy may result in corrective actions as defined under Policy 5.01 ... including coaching, supervisory feedback, or formal performance management. Failure to complete required policy acknowledgments under Section 6.5 ..." → canonical "Non-compliance may result in corrective actions defined under Policy 5.01 (Policy Implementation, Enforcement, and Legal Alignment)." Strips: enumeration tail (#37 territory + #42 canonical drift); §6.5 acknowledgment-sentence (#39 inline-restatement + #15 §6.X cross-reference rule + orphan post §6.5 strip).
+  - **Exceptions:** "framework in Policy 5.01" → canonical "framework established in Policy 5.01" per 1.01/1.02 PRISTINE.
+- **§5 Cited References cleanup (F-13):** Strip 2.03 (orphaned by §6.5 strip; no other body cite). Keep 4.01 (body cites preserved at §6.2 + §6.3).
+- **§5 NRS citation grain (F-12, 1.02 PRISTINE precedent):** `NRS 281A (Ethics in Government)` → `NRS 281A.400 (Code of Ethical Standards)`. Same web-verified canonical applied at 1.02 PRISTINE Entry 3 (May 02, 2026 against `https://www.leg.state.nv.us/nrs/nrs-281a.html`).
+- **§5 CJIS legacy citation migration (F-5, #515 §6.11 E1):** `Section 5.1.1.4 (Management Control Agreements)` → `Appendix D.2 (Management Control Agreement)` per E2 Appendix-form permission. Verified against v6.0 PDF TOC (D.2 is the singular MCA template). Same resolution applied to §6.1 body cite.
+- **§5 Framework Alignment strips (F-13):** GV.SC-01 (CSF 2.0; verified real but anchor is 1.13 SCRM, not Operating Ethos), AT-2 (NIST SP 800-53; was tied to §6.5 acknowledgment, orphaned by §6.5 strip), PM-1 (NIST SP 800-53; weak thematic anchor) — all stripped. Keep PL-4 (Rules of Behavior), PS-7 (External Personnel Security), APO01.01, APO07.01, ITIL Workforce.
+- **§6.1 Unified Authority (F-5 + F-11 + Option B):** CJIS legacy citation migration to v6.0 Appendix D.2 form; CJIS first-use bold; "Criminal Justice Agencies (CJA)" plural-noun-singular-acronym defect → "each **Criminal Justice Agency (CJA)**" with Glossary first-use bold (Option B per IT Director ruling). 6.01 Glossary entry added in coupling commit `22b0eb6c`.
+- **§6.1 Independence (F-6, F-11, F-12, #469):** "Political pressure or external influence shall not supersede ..." → positive form "Mandatory security controls, engineering standards, and the ethical obligations established under **NRS** 281A.400 (Code of Ethical Standards) shall take precedence over political pressure or external influence." NRS first-use bold; 281A.400 grain.
+- **§6.2 Escalate with Purpose (F-8 follow-up):** 4.01 first-body-cite title shifted from §4 (stripped) → §6.2 with `(Incident Response Policy Overview)` per 1.04 §6.11 first-use rule.
+- **§6.3 Accountability split (F-3, #526):** 3 chained directives → bold-label parent + 3 atomic sub-bullets in `\begin_deeper` block. Pattern matches 1.02 PRISTINE F-4/F-5/F-6 split implementation.
+- **§6.3 Crisis Discipline split (F-4, #526):** 3 chained directives → bold-label parent + 3 atomic sub-bullets. 4.01 here is now subsequent reference (no title) per shift to §6.2 first-cite.
+- **§6.3 Decide Based on Standards (F-6, #469):** "Political pressure, personal sentiment, or external influence shall not supersede..." → positive form "Technical standards and mandatory security controls shall take precedence over political pressure, personal sentiment, or external influence."
+- **§6.5 Policy Acknowledgment subsection STRIP (F-9, standing decline #39):** Entire subsection deleted. 5.01 §6.2 is manual-wide acknowledgment program owner; misrouted cite to 2.03 corrected by deletion. 1.01 PRISTINE has no §6.5; 1.02 PRISTINE stripped its acknowledgment-piece via F-3/F-10. Pattern alignment confirmed across all three D10-context peers.
+
+**Cross-validator round summary:** None — direct commit per IT Director ruling following 1.02 PRISTINE Entry 3 precedent. All changes are ticket-tracked sweep absorption (#486, #492, #526, #515, #469, #532) + locked architecture restoration (1.04 §6.7/§6.11/§6.14, 1.01 D10-exempt §4 canonical, 1.02 PRISTINE NRS grain) + audit-missed Pristine catches (none additional). No architectural surface for validator review.
+
+**Pristine-mode audit catches:** None new; all defects were ticket-tracked or standing-decline-anticipated.
+
+**Standing decline patterns added:** None. Patterns invoked:
+- **#39** (by-reference architecture preservation) — informed F-9 §6.5 strip + F-10 §4 acknowledgment-sentence strip + F-13 2.03/AT-2 strips. Three independent applications reinforce manual-wide reach.
+- **#42** (§4 Enforcement firm-direction rotation) — F-7 restored canonical "may result in" form from non-canonical "may result in corrective actions as defined under" surface drift.
+- **#15** (universal cross-reference rule) — F-10 §4 final-sentence strip removed intra-policy "Section 6.5" reference.
+- **#34** (CJIS v6.0 framework reorganization hallucination) — informed Class B vs Class A classification of ripple targets (#537 1.12 §5.9.1 + #538 2.05 §5.20.7.x are Class B since v6.0 retains those sections; #535 1.06 + #536 1.05 §5.1.1.X are Class A since v6.0 retired that subsection numbering).
+- **#40** (responsible-for non-transfer pattern) — no hits in 1.03.
+
+**Status designation:** Policy 1.03 lifted from T+ to **L** per IT Director ruling. PRISTINE walk completed against full ticket list (Phase 5F intake + manual-wide roots + standing decline reflexive checks).
+
+**Open ripples filed (4):**
+- **#535** (1.06) — Class A: legacy `Section 5.1.1.4 (Management Control Agreements)` × 2 sites needs v6.0 Appendix D.2 migration.
+- **#536** (1.05) — Class A: legacy `Section 5.1.1.6 (Policy and Procedures)` × 1 site needs v6.0 anchor verification.
+- **#537** (1.12) — Class B: `Section 5.9.1 (Physically Secure Location)` × 2 sites needs `Section` prefix strip (numbering preserved in v6.0).
+- **#538** (2.05) — Class B: `Section 5.20.7.x` × 7 sites needs `Section` prefix strip (numbering preserved in v6.0 per standing decline #34).
+
+**Adjacent ticket lifecycles completed:**
+- **#539** (6.01 CJA Glossary add) — filed → 6.01 v2.0 → v2.1 commit `22b0eb6c` → closed. In-session lifecycle per IT Director directive (no hanging obligations).
+
+[Archive: TBD]
+
+---
+
 ### Phase 7 — Chapter 6 Appendices (provisional)
 
 **Goal:** Complete 6.01 Glossary at content level. Establish skeleton-only scaffolding for 6.02, 6.03, and 6.04 — the content for these three appendices is populated in Phase 9 (6.02, 6.03 from matrix outputs) or Phase 10 (6.04 from declaration). Completing 6.02/6.03 content at Phase 7 is prohibited; the N-wise analysis required to populate them correctly runs only in Phase 9.
