@@ -265,7 +265,7 @@ State key: **L** = Locked / PRISTINE (full ticket-list walked and applied), **T*
 | 1.03 | Standard Operating Ethos | T+ | v2.1, April 29 | 2 | #486, #492 |
 | 1.04 | Formatting Standards | L | v2.0, May 02 | 0 | — |
 | 1.05 | Policy Review and Update Procedures | L | v2.4, May 03 | 0 | — |
-| 1.06 | IT Governance and Oversight Structure | T+ | v2.2, April 29 | 4 | #491, #497, #502, #509 |
+| 1.06 | IT Governance and Oversight Structure | L | v2.3, May 03 | 0 | — |
 | 1.07 | Workforce Roles | T+ | v1.4, April 29 | 4 | #354, #495, #509, #513 |
 | 1.08 | Delegation of Authority | T+ | v1.6, April 29 | 5 | #491, #495, #497, #503, #509 |
 | 1.09 | Risk Management | T+ | v2.2, April 29 | 5 | #491, #497, #502, #510, #513 |
@@ -1362,6 +1362,88 @@ All 33 Cited References pass body-cite test post-edit. All 11 Framework Alignmen
 **No new ripples filed.** Two 1.06 ripples (#541, #542) were filed mid-session per dedicated 1.06 dependency analysis; tracked under 1.06's open ticket queue, not 5.01's.
 
 **Phase 5F state at Entry 6 close:** 6 of N PRISTINE entries complete (1.01, Front Matter, 1.02, 1.03, 1.05, 5.01). Next session target: TBD per IT Director sequencing.
+
+[Archive: TBD]
+
+---
+
+### Phase 5F Entry 7 — Policy 1.06 PRISTINE (May 03, 2026)
+
+**Policy 1.06 (IT Governance and Oversight Structure) T+ v2.2 → L v2.3** (commit `18d8dd5d`).
+
+Seventh Phase 5F per-policy patch-bump execution. Walked against full ticket list per IT Director PRISTINE directive. Twenty-five findings inventoried plus reference verification deep audit; all resolved per IT Director adjudications on five decision points (DP1 §3 anchoring of HR + Office of Fiscal Affairs Option A; DP2 §4 Constraint strip-clean via 5.01 §6.6 chain trust, no ripple; DP3 §6.3 split into Access Authority + Change Authority + Constraint substance migrations; DP4 §6.7 Discretionary Board Engagement reframe to discretionary-authority recognition with explicit Board destination; DP5 §6 opening γ form with no-"This policy [verb]s" principle locally applied). Three tickets closed in full (#535, #541, #542); six multi-policy tickets line-item closed (#491, #497, #500, #502, #509, #532).
+
+**Tickets closed in full (3, 1.06-scoped):**
+- **#535** — CJIS legacy `Section 5.1.1.4` two-site migration to v6.0 `Appendix D.2 (Management Control Agreement)` (singular per v6.0 TOC); body fluency reword applied at §6.2 (singular both sides). Class A v6.0 migration complete.
+- **#541** — §4 Enforcement canonical drift restored (`shall be addressed through` → `may result in`) + Shadow IT inline enumeration stripped. Standing decline #42 + #37 surface forms restored; substance preserved in §6.6 Governance Violations existing labeled bullets.
+- **#542** — §4 Constraint sub-bullet stripped clean per DP2 architectural ruling; substance covered upstream by 5.01 v2.1 §6.6 Approval Authority sub#2 (CM routing for ITD-exceeding exceptions, dual-anchored to Policy 1.06) + Operational Tier criterion 5 (decision-rights/authority-structure carve-out from AID shortcut). No 5.01 ripple required — chain trust without inline restatement.
+
+**Multi-policy tickets — 1.06 line items closed via comment (6, ticket remains open):**
+- **#491** — D9 §2 In Scope addition (4 capitalized noun-phrase items reflecting actual §6 substantive scope: governance structure & authority designations / interdepartmental coordination dependencies / governance violations & escalation paths / Board engagement triggers & oversight cadence). 1.06 line item closed; ticket stays open for remaining D9/D10 policies.
+- **#497** — D20.4 1.06 Department Heads variant already clean in current v2.2 source (audit captured stale snapshot; no edit). D20.5 Office of Fiscal Affairs body-prose ripple resolved via DP1 §3 architectural addition (HR + OFA inserted as Named institutional titles between IT Director and Department Heads with their respective directives migrated from former §6.4). 1.06 line items closed; ticket stays open for remaining D20.X scope.
+- **#500** — D23 §4 Exceptions Q7 Standard canonical applied with IT Director as default approver (not County Manager — chain trust via 5.01 §6.6 sub#2 handles structural-exception escalation). The ticket-noted alternative ("1.06 routes governance exceptions to County Manager") was reconsidered during DP2 adjudication and superseded by chain-trust pattern. 1.06 line item closed; ticket stays open for remaining 23 policies.
+- **#502** — D25.1 §4 Constraint clarifier-tag strip via the strip-clean disposition (a fourth disposition path beyond ticket's three originally enumerated: inline / promote / migrate to §6 body). Strip-clean applies when local substance is implicitly covered by an upstream-policy mechanism. 1.06 line item closed; ticket stays open for remaining 9 policies.
+- **#509** — Three Constraint clarifier-tag sites stripped from 1.06 (§4 Exceptions, §6.3 Access Control, §6.3 Change Control). Three architectural patterns inscribed: strip-clean via upstream chain trust (§4); migration to architecturally-natural home (§6.3 Access CJI Constraint → §6.2 CJIS Management Control as `CJI Access Decisions:` atomic bullet); peer-bullet promotion within renamed/split subsection (§6.3 Change CM Constraint → §6.4 Change Authority `Cross-County Change Coordination:` atomic bullet). 1.06 line items closed; ticket stays open for remaining ~25-policy / 49-use-site scope.
+- **#532** — Bold-on-first-use applied to 7 Glossary terms in 1.06 body (NRS §3 BoCC; NIST §6.1 Program Leadership; CJIS / Criminal Justice Information (CJI) full span / Criminal Justice Agency (CJA) full span / LASO §6.2 CJIS Management Control; Risk Register §6.6 Governance Violations opening). Spelled-form ECIO not present in 1.06 body — no bolding site applies. 1.06 line items closed; ticket stays open for remaining 60 corpus files.
+
+**Substantive transitions (twenty-five findings + reference verification deep audit, by section):**
+
+- **§2 In Scope addition (F1, #491):** New In Scope subsection inserted before existing Out of Scope; 4 capitalized noun-phrase items drafted from actual §6 scope rather than indicative items per ticket text.
+- **§3 NRS first-use bolding (F24-1, #532):** Bold `NRS` in BoCC sub#2.
+- **§3 architectural addition (F2, DP1, #497 D20.5):** Inserted Human Resources (1 atomic obligation: notification per Policy 1.08) and Office of Fiscal Affairs (2 atomic obligations: procurement collaboration per 1.10 + 1.13; non-compliant requisition rejection) between IT Director and Department Heads. Order: BoCC → CM → ITD → HR → OFA → Department Heads (1.04 §6.5 canonical sequence with Named institutional titles preceding Department Heads). Policy 1.10 + 1.13 first-use parentheticals migrate from former §6.4 to §3.
+- **§3 D20.4 already clean (F3, #497):** Department Heads label was already correct in current v2.2 source. Audit-captured stale variant did not exist in actual LyX. 1.06 line item closed via comment.
+- **§4 Enforcement canonical (F9, #541, decline #42):** `shall be addressed through the corrective action framework defined in...` → canonical `Non-compliance may result in corrective actions defined under Policy 5.01 (Policy Implementation, Enforcement, and Legal Alignment).` Matches 1.01/1.02/1.03/1.05 PRISTINE precedent.
+- **§4 Enforcement enumeration strip (F10, #541, decline #37):** Inline Shadow IT / unauthorized procurement / unauthorized system changes enumeration stripped. Substance preserved in §6.6 Governance Violations existing labeled bullets (no content loss).
+- **§4 Exceptions Q7 canonical (F4, DP2, #500):** Pre-canonical short form + Constraint sub-bullet → canonical `Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework established in Policy 5.01. Oral exceptions are not valid.` Single bullet, no sub-bullet. IT Director as default approver (chain trust via 5.01 §6.6 sub#2 handles CM escalation for structural exceptions).
+- **§4 Constraint sub-bullet strip-clean (DP2, #542, #502, #509):** Stripped without local restructure. Substance covered upstream by 5.01 v2.1 §6.6 Approval Authority sub#2 + Operational Tier criterion 5 chain. No 5.01 ripple — first corpus instance of strip-clean disposition via upstream chain trust.
+- **§5 Cited References changes (F12, F16):** F12 (#535) — `CJIS Security Policy v6.0: Section 5.1.1.4 (Management Control Agreements)` → `CJIS Security Policy v6.0: Appendix D.2 (Management Control Agreement)` (singular). F16 — `PM-2 (Information Security Program Leadership)` → `PM-2 (Information Security Program Leadership Role)` (NIST SP 800-53 Rev. 5 source-verified title; missing-Role-word audit catch).
+- **§5 Framework Alignment changes (F14, F15, F18, F19):** F14 — stripped `CJIS Security Policy v6.0: Section 5.1 (Information Exchange Agreements)` (legacy form not body-cited; no v6.0 successor). F15 — stripped `NIST SP 800-53 Rev. 5: PM-1 (Information Security Program Plan)` (1.06 ≠ ISPP per 1.05 PRISTINE F12 / 1.04 PRISTINE precedent). F18 — `PM-3 (Information System Resources)` → `PM-3 (Information Security and Privacy Resources)` (NIST SP 800-53 Rev. 5 source-verified title; material citation correction). F19 — `EDM01 (Ensure Governance Framework Setting and Maintenance)` → `EDM01 (Ensured Governance Framework Setting and Maintenance)` (COBIT 2019 outcome past-participle form per 1.01 PRISTINE precedent + Reference/Governance_Map.md).
+- **§6 opening γ (F7, DP5):** 3-sentence 85-word block → single-sentence γ form (~25 words): `Information Technology governance connects strategic direction from County leadership to the technical execution of Information Operations through defined authority designations, interdepartmental dependencies, and escalation pathways.` "appropriate level" prohibited language stripped. S3 1.08-boundary substance dropped (already covered by §2 Out of Scope routing pointer + §6.1 Delegated Governance Framework opening). Local "no This policy [verb]s in §6 opening" principle applied to 1.06 only — IT Director ruling May 03, 2026 declined manual-wide ripple ("sometimes OK; this one had a LOT going on; may revisit later").
+- **§6.1 Program Leadership (F17, F24-2):** Bold first-use of `NIST`. PM-2 title fix in body cite (added "Role").
+- **§6.2 CJIS Management Control + new bullet (F13, F24-3,4,5,6, DP3a):** F13 — body cite legacy `Section 5.1.1.4` → `Appendix D.2` (singular both sides per #535 fluency note). F24 bold first-uses applied: `CJIS`, `Criminal Justice Information (CJI)` full span, `Criminal Justice Agency (CJA)` full span, `LASO`. DP3a — new atomic bullet `CJI Access Decisions:` migrated from former §6.3 Access Control Constraint sub-bullet (architectural fit — §6.2 already establishes CJI/CJA/LASO authority).
+- **§6.3 split + restructure (DP3):** §6.3 `Access and Change Governance` (bundled subsection with opening Standard "decision rights exclusively for Information Operations leadership") → split into §6.3 `Access Authority` (single atomic bullet, no opening Standard) + §6.4 `Change Authority` (two atomic bullets including new `Cross-County Change Coordination:` peer bullet, no opening Standard). The bundled framing tension (CM-coordination directive contradicting "exclusively for IO leadership" framing) resolved via subsection split.
+- **§6.4 Cross-County Change Coordination peer bullet (DP3b):** `Cross-County Change Coordination: For significant changes affecting County-wide operations, the IT Director shall notify or obtain approval from the County Manager in accordance with Policy 1.08.` Promoted from former §6.3 Change Control Constraint sub-bullet to peer atomic bullet within renamed §6.4 Change Authority subsection.
+- **§6.5 Interdepartmental Dependencies reframe (DP1, was §6.4):** HR + Fiscal Affairs originating bullets stripped (substance migrated to §3). Single-sentence Standard pointing at §3: `Effective Information Technology governance requires structured coordination with the Human Resources and Office of Fiscal Affairs functions, whose obligations are established in Section 3.` "Section 3" intra-policy self-reference permitted per 1.04 §9.1 Rule #1.
+- **§6.6 Governance Violations renumber + bold (was §6.5, F24-7):** Subsection renumbered. Bold first-use of `Risk Register` in opening Standard. Three violation bullets unchanged.
+- **§6.7 Board Engagement renumber + DP4 reframe (was §6.6):** Subsection renumbered. Discretionary Board Engagement parent prose: `The County Manager may present the following matters to the Board of County Commissioners when the County Manager determines that Board awareness or direction is warranted.` → `The County Manager retains discretionary authority to escalate the following matters to the Board of County Commissioners.` "Warranted" subjective qualifier stripped; reframed as recognition of pre-existing discretionary authority (option not permission per IT Director ruling) with explicit Board destination at parent level. Matches 5.07 v2.0 close precedent for objective-criteria-tied determination. Mandatory Board Engagement parent + 3 sub-bullets unchanged; Discretionary 3 sub-bullets unchanged (each carries its own objective trigger).
+
+**Reference verification (deep audit):**
+
+All 14 Cited References pass body-cite test post-edit. All 4 Framework Alignment items confirmed NOT body-cited by identifier (placement clean). Sources verified against authoritative material in `Reference/`:
+- **CSF 2.0 (NIST CSWP 29):** GV.OC-02 + GV.RR-01 verified present in CSF 2.0 Appendix A. No hallucinations (#9 standing decline reflexive check clean).
+- **NIST SP 800-53 Rev. 5:** PM-1 ✓ (correctly stripped), PM-2 title bug found and corrected (was missing "Role"), PM-3 title bug found and corrected (was "Information System Resources" — materially wrong; correct is "Information Security and Privacy Resources").
+- **CJIS v6.0:** Section 5.1.1.4 / Section 5.1 retired in v6.0; Appendix D.2 confirmed as Management Control Agreement template per v6.0 TOC.
+- **COBIT 2019:** EDM01 outcome past-participle form ("Ensured") verified against `Reference/Governance_Map.md` and 1.01 PRISTINE precedent.
+
+**Cross-validator round summary:** None — direct commit per IT Director ruling following Phase 5F Entry 1–6 precedent. All changes are ticket-tracked sweep absorption (#491, #497, #500, #502, #509, #532, #535, #541, #542) + locked architecture (1.04 v2.0 §6.5/§6.6/§6.7/§6.9/§6.11/§6.12/§6.14, 5.01 v2.1 §6.6 chain trust pattern, 1.04 §6.5 Named institutional titles convention) + reference verification fixes (PM-2 title, PM-3 title, EDM01 outcome form, CJIS v6.0 form) + IT Director adjudications on five decision points. No architectural surface for validator review.
+
+**Pristine-mode audit catches (3):**
+- **F16 / F17 PM-2 title bug:** Missing "Role" word in two sites (Cited Reference + body cite). Surfaced via deep NIST SP 800-53 source verification — would have escaped without the source check. Same Pristine-catch pattern as 1.04 v2.0 PL-1 / 5.01 v2.1 PL-1 title bugs.
+- **F18 PM-3 title bug:** Title was "Information System Resources" — materially wrong. Correct is "Information Security and Privacy Resources." Audit-significant correction; would persist as silent citation error otherwise. Same Pristine-catch pattern.
+- **F19 EDM01 form bug:** "Ensure" (COBIT 5 imperative) vs. "Ensured" (COBIT 2019 outcome past-participle). Caught via 1.01 PRISTINE precedent reference + Governance_Map.md verification. Standing reference-form drift risk for any policy with COBIT alignment that hasn't been PRISTINE-walked.
+
+**Standing decline patterns invoked:**
+- **#9** (CSF subcategory hallucination) — reflexive verification against CSF 2.0 source; both GV subcategories clean.
+- **#15** (universal cross-reference rule) — verified clean. §6.5 Standard contains "Section 3" intra-policy self-reference, permitted per 1.04 §9.1 Rule #1.
+- **#37** (§4 Enforcement enumeration drift) — F10 stripped Shadow IT inline enumeration.
+- **#40** ("responsible for" non-transfer) — §6.1 Program Leadership "responsibility and authority" paraphrases NIST PM-2 control text denotatively. Clean.
+- **#42** (§4 Enforcement firm-direction rotation) — F9 restored canonical "may result in" form.
+- **#469** ("shall not" → positive) — no instances; clean.
+
+**§6 architectural inscriptions:**
+
+- **Subsection split + renumber pattern:** When a multi-purpose subsection bundles architecturally-distinct domains (e.g., §6.3 Access and Change Governance), splitting into adjacent peer subsections + renumbering subsequent subsections is the resolution. Internal-only renumbering when no other policy cites the subsection depth (universal cross-reference rule guarantees no ripple).
+- **Three Constraint disposition patterns inscribed (resolves #509 architectural menu):**
+  1. **Strip-clean via upstream chain trust** — when local substance is implicitly covered by an existing upstream-policy mechanism. First instance: 1.06 §4 Constraint covered by 5.01 §6.6 Approval Authority sub#2 + Operational Tier criterion 5 chain.
+  2. **Migration to architecturally-natural home** — when sub-bullet substance is conceptually a continuation of a different parent subsection. First instance: 1.06 §6.3 Access Constraint (CJI access decisions) → §6.2 CJIS Management Control as `CJI Access Decisions:` atomic bullet.
+  3. **Peer-bullet promotion within renamed/split subsection** — when sub-bullet substance is an architectural counterpoint to its parent that warrants peer status. First instance: 1.06 §6.3 Change Constraint (CM coordination) → §6.4 Change Authority `Cross-County Change Coordination:` atomic bullet within split-subsection result.
+  These three patterns plus the previously inscribed 1.05 v2.4 PRISTINE Option I (strip + upstream ripple via #540) span the menu of architectural moves available when Constraint typographic tag strips but substance does not.
+- **Chain-trust without inline restatement:** When upstream policy chains (e.g., 5.01 §6.6 Approval Authority sub#2 + Operational Tier criterion 5) cover substance implicitly, downstream policies need not inline-restate — chain trust applies. Distinguishes from #540 OMI pattern (where 1.05 substance was new architectural territory requiring upstream landing).
+- **DP5 §6 opening "no This policy [verb]s" principle applied locally only:** IT Director ruled (May 03, 2026) the principle is "sometimes OK" and not a manual-wide ripple. 1.06 §6 opening γ form drops "This policy defines/establishes" framing; 1.05 v2.4 / 5.01 v2.1 §6 openings retain the construction. Decision held for possible future revision.
+
+**No new ripples filed.** The 1.04 v2.0 §6.8 Framing Preamble template + DP5 local application surfaces the "no This policy [verb]s in §6 opening" question, but IT Director declined manual-wide ripple at this entry. May revisit.
+
+**Phase 5F state at Entry 7 close:** 7 of N PRISTINE entries complete (1.01, Front Matter, 1.02, 1.03, 1.05, 5.01, 1.06). Next session target: TBD per IT Director sequencing.
 
 [Archive: TBD]
 
