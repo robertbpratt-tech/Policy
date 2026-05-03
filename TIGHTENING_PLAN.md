@@ -254,7 +254,7 @@ State key: **L** = Locked / PRISTINE (full ticket-list walked and applied), **T*
 
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
-| 000 | Front Matter | T | v3 | 0 | — |
+| 000 | Front Matter | L | v3.1, May 02 | 0 | — |
 
 ### Chapter 1 — Governance
 
@@ -1037,6 +1037,32 @@ First Phase 5F per-policy patch-bump execution. Walked against full ticket list 
 **Status designation:** Policy 1.01 lifted from T+ to **L** per IT Director ruling. **L now denotes PRISTINE state — full ticket-list walked and applied; no changes without explicit authorization.** Distinguishes ticket-list-walked policies from T (clean of open tickets but not necessarily walked). 1.04 v2.0 (May 02, 2026) also relabeled L per same definition — Constitutional Gate Landing close note at §6 above documents the §1–§6 PRISTINE walk.
 
 **Open ripples filed:** none.
+
+---
+
+### Phase 5F Entry 2 — Front Matter PRISTINE (May 02, 2026)
+
+**Front Matter (`00/000.lyx`) T v3 → L v3.1** (commit `08f6e79e`).
+
+Second Phase 5F per-policy patch-bump execution. Front Matter was T state with 0 open tickets and outside the §1–§6 audit scope (those covered the 60 numbered policies). PRISTINE walk consisted of verification against current 1.04 v2.0 standard plus citation-accuracy spot-check against `Reference/` PDFs.
+
+**Tickets touched:** #208 (group label canonicalization — Front Matter line item closed via comment; ticket remains open for non-Front-Matter targets).
+
+**Substantive transitions:**
+- §6.11 NIST SP publication-level form alignment, full titles verified against `Reference/03_NIST_800_53_R5.pdf`, `Reference/NIST.SP.800-37r2-1.pdf`, `Reference/NIST.SP.800-61r3-1.pdf`, `Reference/NIST.SP.800-181r1.pdf`:
+  - 800-53 Rev. 5: title unchanged (verified correct); `Revision 5` → `Rev. 5` syntax alignment.
+  - 800-37 Rev. 2: full title applied — `Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy` (was truncated to `Risk Management Framework`).
+  - 800-61 Rev. 3: **citation accuracy correction** — was `(Computer Security Incident Handling Guide)` which is the Rev. 2 title; replaced with verified Rev. 3 cover-page title `Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile`.
+  - 800-181 Rev. 1: NICE acronym/title inversion fix; full title applied — `Workforce Framework for Cybersecurity (NICE Framework)` per cover page (was inverted to `NICE Workforce Framework for Cybersecurity`).
+- CJIS Security Policy form aligned to §6.11 abbreviated form: `Version 6.0` → `v6.0`. "FBI" institutional prefix retained per cover-material context; not addressed by §6.11 strict form requirement.
+- Group label canonicalization (#208): `All Elko County Information Operations personnel.` → `All Information Operations Personnel.`
+- §6.11 / §6.14 Glossary-Defined Term bolding extended to Front Matter on first use, applied **by analogy** with the existing Internal Cross-Reference bolding precedent already established in Front Matter v3 (Policy 1.07 and Policy 5.01 cross-refs were bolded despite §6.11 literally scoping bold to "policy body §1–§6"; same scoping-by-analogy logic applied to Glossary terms). Three terms bolded on first use: **Authoritative System of Record** (Abstract), **Local Records Disposition Authority** (Order of Precedence #3 parenthetical), **System of Engagement** (Authority and Scope). External framework references (NRS, NAC, FBI, CJIS, NIST, COBIT, ITIL, NICE, SFIA, CSF) remain plain per §6.11 explicit framework-reference exclusion. **No 1.04 amendment filed** per IT Director directive (May 02, 2026): apply by analogy and move on; literal "within each policy" scoping language in §6.11 / §6.14 not amended.
+
+**Cross-validator round summary:** None. Direct commit per IT Director ruling — Front Matter touch-up, citation-accuracy and bold-convention work, no architectural surface for validator review.
+
+**Status designation:** Front Matter lifted from T to **L** per IT Director ruling. PRISTINE walk completed against current 1.04 v2.0 standard with citation accuracy verified against authoritative `Reference/` PDFs.
+
+**Open ripples filed:** None. No per-policy targets touched. The Glossary-bold-applied-to-Front-Matter-by-analogy decision is documented here for audit trail.
 
 ---
 
