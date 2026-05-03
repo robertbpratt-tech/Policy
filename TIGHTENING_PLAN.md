@@ -1263,12 +1263,14 @@ Fifth Phase 5F per-policy patch-bump execution. Walked against full ticket list 
 
 Sixth Phase 5F per-policy patch-bump execution. Walked against full ticket list per IT Director PRISTINE directive. Twenty-eight findings inventoried plus three readability list-restructure findings surfaced late-session via IT Director audit. Five tickets closed in full (#495, #497, #523, #526, #540). 1.05 dependency-acknowledgment commitment fulfilled — #540 (generic OMI cadence-to-CM rule) landed in §6.6 per locked DP1 wording, closing ITD self-approval gap.
 
-**Tickets closed in full (5):**
-- **#495** — §3 authority order reorder. CM → ITD → AID → HR → DA's Office → Dept Heads → All County Personnel. Type A authority-source convention applied.
-- **#497** — D20.3 HR(HR) acronym strip from §3 role label; harmonized 'HR and/or' → 'Human Resources and' for clarity in disciplinary referral routing; HR acronym retained where contextually appropriate (CJIS PS-8 notification list).
-- **#523** — D31 §6.9 prohibited-language strip across §3, §6.3, §6.5: 'where applicable', 'appropriate law enforcement authority', 'as warranted', 'appropriate personnel authority', 'operationally appropriate restrictions', 'appropriate parties' all replaced with explicit role-anchored or institutional set forms.
-- **#526** — D40 §6.8 multi-directive splits per Q1b reversal expanded scope. Headline §6.4 Emergency Protective Action (4 atomic sub-bullets); other §6.4/§6.5/§6.6/§6.7/§6.8 splits applied; §6.4 architectural conflict resolved within session.
+**Tickets closed in full (1, 5.01-scoped):**
 - **#540** — Generic OMI cadence-to-CM rule landed in §6.6 per locked DP1 wording (3 atomic sub-bullets: non-waivability + CM-required + ITD-bar). 1.05 pinky-promise sequencing pattern fulfilled.
+
+**Multi-policy tickets — 5.01 line items closed via comment (4, ticket remains open for other policies):**
+- **#495** — §3 authority order reorder (Type A IT Director ↔ County Manager swap). 5.01 line item closed; ticket stays open for remaining 24 policies in 25-policy scope.
+- **#497** — D20.3 HR(HR) acronym strip from §3 role label; harmonized 'HR and/or' → 'Human Resources and' for clarity in disciplinary referral routing; HR acronym retained where contextually appropriate (CJIS PS-8 notification list). 5.01 line item closed; ticket stays open for other policies in multi-policy scope.
+- **#523** — D31 §6.9 prohibited-language strip across §3, §6.3, §6.5: 'where applicable', 'appropriate law enforcement authority', 'as warranted', 'appropriate personnel authority', 'operationally appropriate restrictions', 'appropriate parties' all replaced with explicit role-anchored or institutional set forms. 5.01 §6.4 L1957 'attempt to' addressed via F9 lateral-circumvention strip. 5.01 line item closed; ticket stays open for remaining 7 of 8 policies in scope.
+- **#526** — D40 §6.8 multi-directive splits per Q1b reversal expanded scope. Headline §6.4 Emergency Protective Action (4 atomic sub-bullets); other §6.4/§6.5/§6.6/§6.7/§6.8 splits applied; §6.4 architectural conflict resolved within session. 5.01 line items closed; ticket stays open for other policies in multi-policy scope.
 
 **Substantive transitions (twenty-eight findings + three late-binding restructures, by section):**
 
