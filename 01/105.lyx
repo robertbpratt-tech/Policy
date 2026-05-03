@@ -174,13 +174,13 @@ name "pol:1.05"
 
 \lang english
 Effective:
- April 29,
+ May 03,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -198,7 +198,11 @@ This policy defines the lifecycle,
  and change control mechanisms governing the development,
  update,
  resanction,
- and retirement of policies within the Elko County Information Operations Policy Manual.
+ and retirement of policies within the 
+\series bold
+Elko County Information Operations
+\series default
+ Policy Manual.
 \end_layout
 
 \begin_layout Subsection*
@@ -244,7 +248,11 @@ Review cadence,
 \begin_layout Itemize
 
 \lang english
-Emergency temporary policy amendments (Technical Directives).
+Emergency temporary policy amendments and 
+\series bold
+Technical Directives
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -324,40 +332,16 @@ nolink "false"
 
 \series bold
 \lang english
-IT Director:
+Board of County Commissioners:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall conduct or coordinate the annual internal review of each policy as defined in Section 6.1.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall coordinate biennial resanction of the Policy Manual with the County Manager and,
- where required,
- the Board of County Commissioners.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall approve technical and operational policy revisions that do not alter governance structures or budget authority.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall issue Technical Directives in accordance with Section 6.3.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall ensure that review and update records are maintained in the System of Engagement and available for audit.
+Shall approve policies requiring legal ratification,
+ funding appropriation,
+ or significant changes to County governance structure.
 \end_layout
 
 \end_deeper
@@ -388,16 +372,44 @@ Shall escalate to the Board of County Commissioners when a policy change require
 
 \series bold
 \lang english
-Board of County Commissioners:
+IT Director:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall approve policies requiring legal ratification,
- funding appropriation,
- or significant changes to County governance structure.
+Shall conduct or coordinate the annual internal review of each policy as defined in Section 6.1.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall coordinate biennial resanction of the Policy Manual with the County Manager and,
+ where required,
+ the Board of County Commissioners.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve technical and operational policy revisions that do not alter governance structures or budget authority.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall issue any Technical Directive in accordance with Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall ensure that review and update records are maintained in the 
+\series bold
+System of Engagement
+\series default
+ and available for audit.
 \end_layout
 
 \end_deeper
@@ -464,9 +476,7 @@ nolink "false"
 Enforcement
 \series default
 :
- Failure to conduct required reviews,
- resanctions,
- or record updates in accordance with this policy shall be treated as non-compliance and escalated under 
+ Non-compliance may result in corrective actions defined under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -486,32 +496,6 @@ nolink "false"
  and Legal Alignment).
 \end_layout
 
-\begin_layout Itemize
-
-\series bold
-\lang english
-Emergency Deviations
-\series default
-:
- The IT Director shall document deviations from scheduled review timelines defined in Section 6.1,
- including justification and a revised review date,
- in the System of Engagement within five (5) business days of the missed deadline.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Clarification
-\series default
-:
- This label governs timeline deviations from the review cadence in Section 6.1.
- It does not govern the Technical Directives mechanism defined in Section 6.3,
- which is a distinct emergency authority.
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -538,37 +522,6 @@ nolink "false"
  Oral exceptions are not valid.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
-Constraint
-\series default
-:
- Exceptions that materially affect the annual review cadence,
- biennial resanction schedule,
- approval hierarchy,
- or acknowledgment obligations defined in this policy shall require County Manager approval,
- regardless of the IT Director's general delegated authority under 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -726,8 +679,8 @@ Framework Alignment
 \begin_layout Itemize
 
 \lang english
-CJIS Security Policy v6.0:
- Section 5.1.1.6 (Policy and Procedures)
+NIST CSF 2.0:
+ GV.PO-01 (Policy Establishment)
 \end_layout
 
 \begin_layout Itemize
@@ -742,15 +695,7 @@ NIST CSF 2.0:
 \lang english
 NIST SP 800-53 Rev.
  5:
- PM-1 (Information Security Program Plan)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
- PM-2 (Information Security Program Leadership)
+ PL-1 (Policy and Procedures)
 \end_layout
 
 \begin_layout Itemize
@@ -826,40 +771,22 @@ Biennial Resanction
  The IT Director shall coordinate biennial resanction of the Policy Manual with the County Manager and,
  where required,
  the Board of County Commissioners.
- Resanction reaffirms institutional support,
- risk tolerance,
- and funding alignment for the IT governance framework.
+ The Policy Manual remains in force during a lapsed resanction period;
+ policies do not expire for a lack of resanction.
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 
 \series bold
 \lang english
-Clarification
+Timeline Deviations
 \series default
 :
- Failure to complete biennial resanction by the scheduled date constitutes non-compliance subject to the enforcement framework in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
- The Policy Manual remains in force during a lapsed resanction period;
- policies do not expire for lack of resanction.
+ The IT Director shall document deviations from scheduled review timelines,
+ including justification and a revised review date,
+ in the System of Engagement within five (5) business days of the missed deadline.
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -875,9 +802,17 @@ Ad Hoc Reviews
 
 \lang english
 Regulatory or legal changes (e.g.,
- CJIS Security Policy updates,
+ 
+\series bold
+CJIS
+\series default
+ Security Policy updates,
  HIPAA requirements,
- or NRS amendments).
+ or 
+\series bold
+NRS
+\series default
+ amendments).
 \end_layout
 
 \begin_layout Itemize
@@ -992,8 +927,13 @@ The IT Director shall approve technical and operational changes that do not alte
 \lang english
 The County Manager shall approve changes that affect governance constructs,
  decision rights,
- or risk appetite,
- and shall escalate to the Board of County Commissioners when legal ratification or additional appropriation is required.
+ or risk appetite.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The County Manager shall escalate to the Board of County Commissioners when legal ratification or additional appropriation is required.
 \end_layout
 
 \end_deeper
@@ -1011,7 +951,12 @@ Notification
 
 \lang english
 The IT Director shall notify all affected personnel of every approved policy change within five (5) business days of approval.
- The notification shall include an effective date,
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The notification shall include an effective date,
  a summary of changes,
  and a link to the authoritative policy record.
 \end_layout
@@ -1058,13 +1003,84 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-The IT Director shall commit the new version to the Authoritative System of Record (LyX/PDF) and synchronize it to the System of Engagement.
+The IT Director shall commit the new version to the 
+\series bold
+Authoritative System of Record
+\series default
+ (LyX/PDF).
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-The IT Director shall mark the previous version "Obsolete" and archive it in accordance with 
+The IT Director shall synchronize the new version to the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall mark the previous version "Obsolete".
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall archive the obsolete version in accordance with 
+\series bold
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:6.04"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+LRDA
+\series default
+ 20070057 (Departmental Regulations,
+ Policies and Procedures).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\lang english
+Retirement
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall formally retire policies determined to be no longer necessary.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Each retirement shall require the same approval level as the policy's original creation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall remove retired policies from active circulation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall archive retired policies in accordance with 
 \series bold
 Appendix 
 \begin_inset CommandInset ref
@@ -1084,33 +1100,6 @@ nolink "false"
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-
-\series bold
-\lang english
-Retirement
-\series default
-:
- The IT Director shall formally retire policies determined to be no longer necessary.
- The retirement process requires the same approval level as the policy's original creation.
- The IT Director shall remove retired policies from active circulation and retain them in the archive in accordance with 
-\series bold
-Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:6.04"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- and LRDA 20070057 (Departmental Regulations,
- Policies and Procedures) for legal defensibility.
-\end_layout
 
 \begin_layout Subsubsection*
 
@@ -1121,7 +1110,7 @@ nolink "false"
 \begin_layout Standard
 
 \lang english
-The IT Director may issue temporary policy amendments ("Technical Directives") when standard policies obstruct legal compliance,
+The IT Director may issue Technical Directives when standard policies obstruct legal compliance,
  operational integrity,
  or incident response.
  The underlying policy provision remains in force except to the extent specifically modified by the Technical Directive.
@@ -1168,12 +1157,24 @@ Critical failure affecting escalation,
 Documentation Requirements
 \series default
 :
- The IT Director shall document each Technical Directive in the System of Engagement immediately upon issuance.
- The documentation shall include justification,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall document each Technical Directive in the System of Engagement immediately upon issuance.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The documentation shall include justification,
  scope,
  and a specific expiration date.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1181,21 +1182,43 @@ Documentation Requirements
 Automatic Expiration
 \series default
 :
- Technical Directives expire ninety (90) calendar days after issuance.
- Upon expiration,
- the IT Director shall either (a) incorporate the Technical Directive into a formally approved policy revision following the process in Section 6.2,
- or (b) explicitly rescind it and document the rescission in the System of Engagement.
- The IT Director shall not re-issue the same or a substantially similar Technical Directive within twelve (12) months of expiration without formal adoption through the standard approval process.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Each Technical Directive shall expire ninety (90) calendar days after issuance.
 \end_layout
 
 \begin_layout Itemize
 
+\lang english
+Upon expiration,
+ the IT Director shall either incorporate the Technical Directive into a formally approved policy revision under Section 6.2 or explicitly rescind it.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall document each rescission in the System of Engagement.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall obtain formal adoption through the standard approval process before re-issuing the same or substantially similar Technical Directive within twelve (12) months of expiration.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
 \series bold
 \lang english
-Constraint
+Scope Boundary
 \series default
 :
- The IT Director shall not use Technical Directives to alter budget authority or core governance roles defined in 
+ Each Technical Directive shall preserve budget authority and the core governance roles defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1304,7 +1327,11 @@ nolink "false"
 \series default
  (Data Governance and Classification Policy),
  NRS 239.125 (Local Government Records Management Program),
- NAC 239.155 (Adoption of Records Retention Schedule),
+ 
+\series bold
+NAC
+\series default
+ 239.155 (Adoption of Records Retention Schedule),
  and LRDA 20070057 (Departmental Regulations,
  Policies and Procedures).
 \end_layout
