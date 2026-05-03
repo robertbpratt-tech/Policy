@@ -53,16 +53,16 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | --- | --- | --- | --- | --- |
 | `01/101.lyx` | Department Mission and Strategic Objectives | L | v1.1 |  |
 | `01/102.lyx` | Code of Ethics and Professional Conduct | L | v2.4 |  |
-| `01/103.lyx` | Standard Operating Ethos | T+ | v2.1 | #486, #492, #526 |
+| `01/103.lyx` | Standard Operating Ethos | L | v2.2 |  |
 | `01/104.lyx` | Policy and Documentation Formatting Standards | L | v2.0 |  |
-| `01/105.lyx` | Policy Review and Update Procedures | T+ | v2.3 | #495, #502, #508, #509, #526 |
-| `01/106.lyx` | IT Governance and Oversight Structure | T+ | v2.2 | #491, #497, #502, #509 |
+| `01/105.lyx` | Policy Review and Update Procedures | T+ | v2.3 | #495, #502, #508, #509, #526, #536 |
+| `01/106.lyx` | IT Governance and Oversight Structure | T+ | v2.2 | #491, #497, #502, #509, #535 |
 | `01/107.lyx` | Workforce Roles, Responsibilities, and Competency Framework | T+ | v1.4 | #354, #495, #509, #513, #526 |
 | `01/108.lyx` | Delegation of Authority and Decision Rights | T+ | v1.6 | #491, #495, #497, #503, #509 |
 | `01/109.lyx` | Risk Management Policy | T+ | v2.2 | #491, #497, #502, #510, #513, #523, #526 |
 | `01/110.lyx` | IT Financial Management and Procurement Policy | T+ | v2.3 | #488, #508, #512, #513 |
 | `01/111.lyx` | Data Governance and Classification Policy | T+ | v2.5 | #482, #484, #488, #495, #502, #509, #510, #513, #526 |
-| `01/112.lyx` | IT Asset Management Policy | T+ | v2.7 | #329, #426, #487, #509, #516 |
+| `01/112.lyx` | IT Asset Management Policy | T+ | v2.7 | #329, #426, #487, #509, #516, #537 |
 | `01/113.lyx` | Supply Chain Risk Management (SCRM) and Vendor Governance | T+ | v2.4 | #484, #486, #492, #495, #509, #513, #521 |
 | `01/114.lyx` | Stakeholder Engagement and Communications Policy | T+ | v2.4 | #491, #495, #499, #500, #510, #523, #526 |
 
@@ -74,7 +74,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `02/202.lyx` | Personnel Security and Background Screening Policy | T+ | v2.8 | #487, #495, #502, #509 |
 | `02/203.lyx` | Security Awareness and Training Policy | T+ | v2.2 | #502 |
 | `02/204.lyx` | Access Control Policy | T+ | v2.8 | #453, #476, #495, #502, #509 |
-| `02/205.lyx` | Identification and Authentication Policy | T+ | v2.3 | #495, #507, #510 |
+| `02/205.lyx` | Identification and Authentication Policy | T+ | v2.3 | #495, #507, #510, #538 |
 | `02/206.lyx` | Privacy and Data Protection Policy | T+ | v2.8 | #486, #495, #510 |
 | `02/207.lyx` | System and Communications Protection Policy | T+ | v2.3 | #495, #507 |
 | `02/208.lyx` | System Integrity and Malware Protection Policy | T+ | v2.1 | #486, #491 |
@@ -136,7 +136,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `06/601.lyx` | Glossary and Definitions | L | v2.0 |  |
+| `06/601.lyx` | Glossary and Definitions | L | v2.1 |  |
 | `06/602.lyx` | Policy Matrix | A | — | #196, #197, #198, #459 |
 | `06/603.lyx` | Workforce Roles STAK Matrix | A | — | #199, #200, #214 |
 | `06/604.lyx` | Revision History and Version Control | A | v1.0 |  |
