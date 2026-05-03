@@ -176,13 +176,13 @@ name "pol:5.01"
 
 \lang english
 Effective:
- April 30,
+ May 03,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.0
+ 2.1
 \end_layout
 
 \begin_layout Subsection*
@@ -200,7 +200,11 @@ This policy establishes the enforcement framework,
  formal sanctions process,
  legal and regulatory alignment mechanism,
  exception governance,
- and record retention requirements that operationalize the Elko County Information Operations Policy Manual.
+ and record retention requirements that operationalize the 
+\series bold
+Elko County Information Operations
+\series default
+ Policy Manual.
 \end_layout
 
 \begin_layout Subsection*
@@ -245,7 +249,11 @@ Enforcement authority and IT-administrative corrective actions.
 \begin_layout Itemize
 
 \lang english
-Formal sanctions process and Criminal Justice Information Services (CJIS) notification requirements.
+Formal sanctions process and 
+\series bold
+Criminal Justice Information Services
+\series default
+ (CJIS) notification requirements.
 \end_layout
 
 \begin_layout Itemize
@@ -407,6 +415,50 @@ nolink "false"
 
 \series bold
 \lang english
+County Manager:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Shall serve as the escalation authority for enforcement disputes that cannot be resolved at the IT Director level.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall receive written notification from the IT Director when IT-administrative enforcement actions are taken against appointed or elected officials.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall approve formal policy exceptions that exceed the IT Director's delegated authority,
+ under the operational oversight authority established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+ (IT Governance and Oversight Structure) and in accordance with the exception management framework established in Section 6.6.
+\end_layout
+
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
 IT Director:
 \end_layout
 
@@ -441,13 +493,17 @@ Shall document enforcement decisions in the Department's system of record within
 \begin_layout Itemize
 
 \lang english
-Shall refer matters to the appropriate personnel authority or legal process when the non-compliance warrants action beyond the IT Director's IT-administrative authority.
+Shall refer matters to Human Resources, the County Manager, or the District Attorney's Office when the non-compliance warrants action beyond the IT Director's IT-administrative authority.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
-Shall serve as the Local Agency Security Officer (LASO) for CJIS notification purposes under the formal sanctions process defined in Section 6.5.
+Shall serve as the 
+\series bold
+Local Agency Security Officer
+\series default
+ (LASO) for CJIS notification purposes under the formal sanctions process defined in Section 6.5.
 \end_layout
 
 \begin_layout Itemize
@@ -498,48 +554,6 @@ nolink "false"
 
 \series bold
 \lang english
-County Manager:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\lang english
-Shall serve as the escalation authority for enforcement disputes that cannot be resolved at the IT Director level.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall receive written notification from the IT Director when IT-administrative enforcement actions are taken against appointed or elected officials.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Shall approve formal policy exceptions that exceed the IT Director's delegated authority in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-\lang english
 Assistant IT Director:
 \end_layout
 
@@ -555,7 +569,7 @@ Shall approve operational exceptions within the parameters and notification requ
 
 \series bold
 \lang english
-Human Resources (HR):
+Human Resources:
 \end_layout
 
 \begin_deeper
@@ -755,11 +769,7 @@ nolink "false"
 Enforcement
 \series default
 :
- Non-compliance with the requirements of this policy —
- including failure to complete required acknowledgments,
- failure to cooperate with IT-administrative enforcement actions,
- or failure to document and route enforcement actions as required —
- shall be addressed through the corrective action framework defined in Section 6.3 of this policy.
+ Non-compliance may result in corrective actions defined in Section 6.3.
 \end_layout
 
 \begin_layout Itemize
@@ -769,25 +779,8 @@ Enforcement
 Exceptions
 \series default
 :
- Exceptions to this policy shall be documented in writing with a business justification and approved by the County Manager in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:1.08"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
+ Exceptions to this policy shall be documented with justification and approved in writing by the County Manager in accordance with the exception management framework established in Section 6.6.
  Oral exceptions are not valid.
- Exceptions to this policy shall not be approved by the IT Director alone,
- as the IT Director is both the enforcement authority and a subject of this policy.
 \end_layout
 
 \begin_layout Subsection*
@@ -840,6 +833,24 @@ nolink "false"
 
 :
  Policy Review and Update Procedures
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+ECIO Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+ IT Governance and Oversight Structure
 \end_layout
 
 \begin_layout Itemize
@@ -1169,28 +1180,28 @@ LRDA 20121869 (Administrative Hearing Files)
 
 \lang english
 CJIS Security Policy v6.0:
- Section AC-7 (Unsuccessful Logon Attempts)
+ AC-7 (Unsuccessful Logon Attempts)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section IR-6 (Incident Reporting)
+ IR-6 (Incident Reporting)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section PS-3 (Personnel Screening)
+ PS-3 (Personnel Screening)
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 CJIS Security Policy v6.0:
- Section PS-8 (Personnel Sanctions)
+ PS-8 (Personnel Sanctions)
 \end_layout
 
 \begin_layout Itemize
@@ -1247,7 +1258,7 @@ NIST CSF 2.0:
 \lang english
 NIST SP 800-53 Rev.
  5:
- PL-1 (Planning Policy and Procedures)
+ PL-1 (Policy and Procedures)
 \end_layout
 
 \begin_layout Itemize
@@ -1256,14 +1267,6 @@ NIST SP 800-53 Rev.
 NIST SP 800-53 Rev.
  5:
  PL-4 (Rules of Behavior)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NIST SP 800-53 Rev.
- 5:
- PM-1 (Information Security Program Plan)
 \end_layout
 
 \begin_layout Itemize
@@ -1448,7 +1451,11 @@ Documentation as Standard
  enforcement actions,
  and decisions that establish direction,
  approval,
- or disposition shall be documented in the designated System of Engagement within twenty-four (24) hours of completion,
+ or disposition shall be documented in the designated 
+\series bold
+System of Engagement
+\series default
+ within twenty-four (24) hours of completion,
  except during active incident response where documentation shall occur during incident closure in accordance with 
 \series bold
 Policy 
@@ -1478,7 +1485,7 @@ nolink "false"
 Coordination with Review Lifecycle
 \series default
 :
- Implementation of policies shall be coordinated with the review lifecycle defined in 
+ The IT Director shall coordinate implementation of policies with the review lifecycle defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1493,10 +1500,10 @@ nolink "false"
 
 
 \series default
-.
- Event-driven reviews triggered by enforcement actions,
+,
+ including event-driven reviews triggered by enforcement actions,
  legal changes,
- or audit findings shall follow the procedures established in that policy.
+ or audit findings.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1668,7 +1675,9 @@ IT-administrative actions are distinct from personnel-disciplinary actions.
  IT-administrative actions are imposed by the IT Director under management authority over the technology infrastructure.
  Personnel-disciplinary actions are governed by the applicable labor agreement,
  County Personnel Policies,
- or employment contract and are processed through the appropriate personnel authority.
+ or employment contract and are processed through Human Resources,
+ the County Manager,
+ or the District Attorney's Office.
  This policy governs IT-administrative actions directly and defines the referral mechanism for personnel-disciplinary actions.
 \end_layout
 
@@ -1677,7 +1686,7 @@ IT-administrative actions are distinct from personnel-disciplinary actions.
 \lang english
 The following IT-administrative actions are available to the IT Director.
  This list constitutes the governed set of actions;
- the IT Director may also impose other operationally appropriate restrictions within the IT Director's management authority over the County's information technology infrastructure to protect County assets,
+ the IT Director may also impose other operational restrictions within the IT Director's management authority over the County's information technology infrastructure to protect County assets,
  reduce liability,
  or manage operational and compliance risk.
 \end_layout
@@ -1822,7 +1831,7 @@ The IT Director shall document all IT-administrative enforcement actions in the 
  Documentation shall include the nature of the non-compliance,
  the enforcement action taken,
  the affected individual or system,
- and the notification provided to the appropriate parties.
+ and the notification provided to the parties identified under Section 6.4 for the affected population class.
 \end_layout
 
 \begin_layout Standard
@@ -1848,7 +1857,7 @@ The IT Director's enforcement authority and notification obligations vary based 
  and dispute resolution routing for each class.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \series bold
 \lang english
@@ -1857,7 +1866,6 @@ Information Operations Personnel
 :
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1878,7 +1886,7 @@ Notification
 :
  No external notification is required for IT-administrative actions within the IT Director's supervisory authority.
  When the IT Director refers a matter to the personnel-disciplinary track,
- the IT Director shall provide written documentation of the non-compliance and the IT-administrative actions already taken to HR and/or the County Manager.
+ the IT Director shall provide written documentation of the non-compliance and the IT-administrative actions already taken to Human Resources and the County Manager.
 \end_layout
 
 \begin_layout Itemize
@@ -1888,7 +1896,7 @@ Notification
 Personnel-Disciplinary Referral
 \series default
 :
- Formal discipline beyond the IT Director's supervisory authority shall be initiated through the applicable labor agreement (Article 9,
+ Formal discipline beyond the IT Director's supervisory authority is initiated through the applicable labor agreement (Article 9,
  Disciplinary Action) or County Personnel Policies.
  The IT Director shall provide the written notice,
  supporting documentation,
@@ -1902,13 +1910,12 @@ Personnel-Disciplinary Referral
 Dispute Resolution
 \series default
 :
- Internal disputes shall follow the Department's chain of command.
+ Information Operations Personnel shall direct internal disputes through the Department's chain of command.
  Represented employees retain all rights under the applicable labor agreement,
  including grievance and arbitration rights.
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
+\begin_layout Standard
 
 \series bold
 \lang english
@@ -1917,7 +1924,6 @@ Non-IT County Employees
 :
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1925,9 +1931,22 @@ Non-IT County Employees
 Enforcement Posture
 \series default
 :
- The IT Director may impose system-level IT-administrative actions defined in Section 6.3.
- The IT Director shall not impose supervisory actions on personnel outside the Information Operations Department.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director may impose system-level IT-administrative actions defined in Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall not impose supervisory actions on personnel outside the Information Operations Department.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -1949,10 +1968,23 @@ Notification
 Personnel-Disciplinary Referral
 \series default
 :
- Where the IT Director determines that the non-compliance warrants personnel-disciplinary action,
- the IT Director shall refer the matter in writing to the affected employee's department head and/or HR.
- The department head shall initiate action through the applicable labor agreement or personnel process.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Where the IT Director determines that the non-compliance warrants personnel-disciplinary action,
+ the IT Director shall refer the matter in writing to the affected employee's department head and Human Resources.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The department head shall initiate action through the applicable labor agreement or personnel process upon receipt of the referral.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -1961,7 +1993,13 @@ Personnel-Disciplinary Referral
 Dispute Resolution
 \series default
 :
- Department heads who dispute an IT-administrative enforcement action shall direct the dispute through the service grievance pathway established in 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Department heads who dispute an IT-administrative enforcement action shall direct the dispute through the service grievance pathway established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1977,7 +2015,12 @@ nolink "false"
 
 \series default
 .
- Requests to relax or waive the underlying compliance standard shall be directed through the risk acceptance process established in 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Requests to relax or waive the underlying compliance standard shall be directed through the risk acceptance process established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -1993,12 +2036,11 @@ nolink "false"
 
 \series default
 .
- These pathways are the exclusive channels for resolving enforcement disputes;
- informal or lateral communications that attempt to circumvent them shall be redirected to the appropriate channel.
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+
+\begin_layout Standard
 
 \series bold
 \lang english
@@ -2007,7 +2049,6 @@ Appointed and Elected Officials
 :
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 
 \series bold
@@ -2035,22 +2076,46 @@ Notification
 Emergency Protective Action
 \series default
 :
- Where the IT Director identifies an immediate threat to County assets,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Where the IT Director identifies an immediate threat to County assets,
  evidence indicating unauthorized activity,
  misuse,
  policy violation,
  or suspected criminal activity,
  or conditions requiring immediate protective action,
- the IT Director shall take immediate system-level action and shall notify the County Manager,
- HR,
+ the IT Director shall take immediate system-level action.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall notify the County Manager,
+ Human Resources,
  and the District Attorney's Office within one (1) hour of the action,
- providing the basis for the action.
- The County Manager,
+ including the basis for the action.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The County Manager,
  in coordination with Human Resources and the District Attorney's Office,
  shall determine next steps.
- The IT Director shall document the emergency protective action and the notifications provided in the Department's system of record within twenty-four (24) hours,
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall document the emergency protective action and the notifications provided in the Department's system of record within twenty-four (24) hours,
  consistent with the documentation requirement in Section 6.3.
 \end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2059,7 +2124,13 @@ Emergency Protective Action
 Dispute Resolution
 \series default
 :
- Appointed and elected officials who dispute an IT-administrative enforcement action shall direct the dispute through the service grievance pathway established in 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Appointed and elected officials who dispute an IT-administrative enforcement action shall direct the dispute through the service grievance pathway established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2076,7 +2147,12 @@ nolink "false"
 \series default
 ,
  which provides for escalation to the County Manager.
- Requests to relax or waive the underlying compliance standard shall be directed through the risk acceptance process established in 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Requests to relax or waive the underlying compliance standard shall be directed through the risk acceptance process established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2095,7 +2171,8 @@ nolink "false"
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+
+\begin_layout Standard
 
 \series bold
 \lang english
@@ -2104,7 +2181,6 @@ Contractors and Vendors
 :
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 
 \series bold
@@ -2179,7 +2255,6 @@ nolink "false"
  is available to the extent the contractor or vendor is a recipient of IT services.
 \end_layout
 
-\end_deeper
 \begin_layout Subsubsection*
 
 \lang english
@@ -2197,27 +2272,10 @@ The Department shall employ a formal sanctions process for individuals who fail 
  PS-8 (Personnel Sanctions).
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
-\series bold
 \lang english
-Initiation
-\series default
-:
- The IT Director initiates the formal sanctions process by documenting the non-compliance,
- the IT-administrative actions taken,
- and a recommendation for formal discipline.
- The IT Director shall refer the documented matter to HR and/or the County Manager for processing through the applicable personnel framework.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\lang english
-Process Ownership
-\series default
-:
- The formal sanctions process is governed by the applicable labor agreement,
+The formal sanctions process is governed by the applicable labor agreement,
  County Personnel Policies,
  or employment contract —
  not by this policy.
@@ -2235,21 +2293,64 @@ Process Ownership
 
 \series bold
 \lang english
+Initiation
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall initiate the formal sanctions process by documenting the non-compliance,
+ the IT-administrative actions taken,
+ and a recommendation for formal discipline.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall refer the documented matter to Human Resources and the County Manager for processing through the applicable personnel framework.
+\end_layout
+
+\end_deeper
+
+\begin_layout Itemize
+
+\series bold
+\lang english
 CJIS Notification Requirement
 \series default
 :
- In accordance with CJIS Security Policy v6.0:
- Section PS-8 (Personnel Sanctions) and NIST SP 800-53 Rev.
- 5:
- PS-8,
- when a formal sanctions process is initiated against any individual with access to Criminal Justice Information (CJI),
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+When a formal sanctions process is initiated against any individual with access to 
+\series bold
+Criminal Justice Information
+\series default
+ (CJI),
  the IT Director (as LASO) shall notify the appropriate Information Security Officer (ISO),
  HR representative,
  System or Network Administrator,
- and personnel with account management responsibilities within twenty-four (24) hours.
- The notification shall identify the individual sanctioned and the reason for the sanction,
+ and personnel with account management responsibilities within twenty-four (24) hours,
+ in accordance with CJIS Security Policy v6.0:
+ PS-8 (Personnel Sanctions) and NIST SP 800-53 Rev.
+ 5:
+ PS-8 (Personnel Sanctions).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The notification shall identify the individual sanctioned and the reason for the sanction,
  unless County legal counsel determines a different timing is legally required.
 \end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2258,14 +2359,31 @@ CJIS Notification Requirement
 Legal Referral
 \series default
 :
- Where non-compliance involves suspected criminal activity —
- including but not limited to violations of NRS 205 (Computer Crimes) or unauthorized access to CJI —
- the IT Director shall refer the matter to the District Attorney's Office and,
- where applicable,
- to the appropriate law enforcement authority.
- Legal referral does not preclude concurrent IT-administrative action;
- the IT Director shall take immediate system-level protective action as warranted.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Where non-compliance involves suspected criminal activity —
+ including but not limited to violations of 
+\series bold
+NRS
+\series default
+ 205 (Computer Crimes) or unauthorized access to CJI —
+ the IT Director shall refer the matter to the District Attorney's Office and to the law enforcement authority with jurisdiction over the suspected offense.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Legal referral does not preclude concurrent IT-administrative action;
+ the IT Director shall take immediate system-level protective action to protect County assets,
+ reduce liability,
+ or manage operational and compliance risk.
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsubsection*
 
@@ -2287,16 +2405,65 @@ All policies within the ECIO Policy Manual are subject to a uniform exception ma
 Written Documentation
 \series default
 :
- All exceptions shall be documented in writing prior to implementation.
- The documentation shall include the specific policy requirement from which the exception is sought,
- the business justification,
- the duration of the exception,
- the remediation timeline,
- the compensating measures in effect during the exception period or written justification for why none are needed,
- and the residual risk accepted.
- Exceptions shall not be granted on an open-ended basis.
- No exception shall place County systems or Criminal Justice Information out of compliance with applicable CJIS Security Policy obligations.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+All exceptions shall be documented in writing prior to implementation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The documentation shall include the specific policy requirement from which the exception is sought.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The documentation shall include the business justification.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The documentation shall include the duration of the exception.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The documentation shall include the remediation timeline.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The documentation shall include the compensating measures in effect during the exception period,
+ or a written justification for why none are needed.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The documentation shall include the residual risk accepted.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Exceptions shall not be granted on an open-ended basis.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+No exception shall place County systems or Criminal Justice Information out of compliance with applicable CJIS Security Policy obligations.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2305,7 +2472,13 @@ Written Documentation
 Approval Authority
 \series default
 :
- Exceptions shall be approved in writing by the IT Director within delegated authority under 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Exceptions shall be approved in writing by the IT Director within delegated authority under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2321,9 +2494,37 @@ nolink "false"
 
 \series default
 .
- Exceptions that exceed the IT Director's delegated authority shall be approved by the County Manager.
- Oral exceptions are not valid.
 \end_layout
+
+\begin_layout Itemize
+
+\lang english
+Exceptions that exceed the IT Director's delegated authority shall be approved by the County Manager,
+ under the operational oversight authority established in 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.06"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Oral exceptions are not valid.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2409,12 +2610,40 @@ nolink "false"
 Operational Tier Controls
 \series default
 :
- The Assistant IT Director shall document each approved operational exception in writing and notify the IT Director within one (1) business day of approval.
- The IT Director may override any operational exception at any time.
- The Assistant IT Director shall not renew an operational exception;
- renewal requires IT Director approval.
- All other requirements in this section apply to operational exceptions without modification.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall document each approved operational exception in writing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The Assistant IT Director shall notify the IT Director within one (1) business day of approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director may override any operational exception at any time.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Renewal of an operational exception shall require IT Director approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+All other requirements in this section apply to operational exceptions without modification.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2423,18 +2652,52 @@ Operational Tier Controls
 Oversight Mechanism Integrity
 \series default
 :
- Where a policy establishes an oversight,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The application of any oversight,
  audit,
  monitoring,
  assurance,
- or review mechanism that applies to other policies in the manual,
- that mechanism's application to its targets shall not be waived by exception.
- Operational details of such a mechanism —
- including cadence,
- scope,
- and methodology —
- remain subject to the standard exception framework established in this section.
+ or review mechanism that applies to other policies in the manual shall not be waived by exception.
 \end_layout
+
+\begin_layout Itemize
+
+\lang english
+Exceptions affecting the cadence,
+ scope,
+ or methodology of an oversight mechanism shall require County Manager approval.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall not approve exceptions affecting the cadence,
+ scope,
+ or methodology of an oversight mechanism,
+ regardless of delegated authority under 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.08"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2443,18 +2706,36 @@ Oversight Mechanism Integrity
 CJI Exceptions
 \series default
 :
- Exceptions involving the handling,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Exceptions involving the handling,
  storage,
  transmission,
- or access to Criminal Justice Information shall be approved by the IT Director (as LASO) under the standard exception process established in this section.
- No separate CJIS Systems Officer (CSO) concurrence is required for the exception itself.
- CSO concurrence is operationally required only where the CJIS Security Policy or a written CJIS user agreement to which the County is party explicitly requires it —
+ or access to Criminal Justice Information shall be approved by the IT Director (as LASO) under the standard exception process established in this section,
+ without separate CJIS Systems Officer (CSO) concurrence.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+CSO concurrence shall be obtained where the CJIS Security Policy or a written CJIS user agreement to which the County is party explicitly requires it —
  for example,
  CJIS IR-6 Part (b) external incident notification,
  CJIS PS-3 adjudication of CJI access,
  and CJIS AC-7 authorization for automatic account unlock.
- All approvals shall be retained for audit.
 \end_layout
+
+\begin_layout Itemize
+
+\lang english
+All CJI exception approvals shall be retained for audit.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2465,24 +2746,6 @@ Policy-Specific Requirements
 :
  Where a policy's Section 4 establishes exception requirements that are stricter than this general framework,
  the stricter requirement governs.
- Exceptions to this policy (
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-) are subject to the approval requirements in Section 4,
- which require County Manager approval;
- the IT Director shall not approve exceptions to this policy acting alone.
 \end_layout
 
 \begin_layout Itemize
@@ -2492,7 +2755,13 @@ nolink "false"
 Risk Recording
 \series default
 :
- All approved exceptions shall be recorded in the central Risk Register maintained under 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+All approved exceptions shall be recorded in the central Risk Register maintained under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2508,7 +2777,18 @@ nolink "false"
 
 \series default
 .
- The risk entry shall reference the exception documentation and shall be reviewed during the annual policy review cycle defined in 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The risk entry shall reference the exception documentation.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The risk entry shall be reviewed during the annual policy review cycle defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -2526,6 +2806,8 @@ nolink "false"
 .
 \end_layout
 
+\end_deeper
+
 \begin_layout Itemize
 
 \series bold
@@ -2533,10 +2815,24 @@ nolink "false"
 Active Exception Review
 \series default
 :
- The IT Director shall review all active exceptions during each annual policy review cycle and shall close,
- renew,
- or escalate each exception based on current risk conditions.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall review all active exceptions during each annual policy review cycle.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall close,
+ renew,
+ or escalate each active exception based on current risk conditions following the review.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2545,11 +2841,30 @@ Active Exception Review
 Retroactive Exceptions
 \series default
 :
- Retroactive exceptions —
- documenting a deviation after the fact —
- shall be documented as a non-compliance event under Section 6.3 and evaluated for corrective action.
- A retroactive exception does not constitute a defense to an enforcement action already initiated.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Retroactive exceptions —
+ documenting a deviation after the fact —
+ shall be documented as a non-compliance event under Section 6.3.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall evaluate the retroactive exception for corrective action.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+A retroactive exception does not constitute a defense to an enforcement action already initiated.
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsubsection*
 
@@ -2573,12 +2888,26 @@ The ECIO Policy Manual operates within and supports compliance with applicable f
 Monitoring Responsibility
 \series default
 :
- The IT Director shall monitor changes to the Nevada Revised Statutes,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall monitor changes to the Nevada Revised Statutes,
  the Nevada Administrative Code,
  the CJIS Security Policy,
  and applicable federal law and regulation that affect the manual's scope.
- The IT Director may designate qualified personnel to assist with monitoring but retains accountability for the alignment determination.
 \end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director may designate qualified personnel to assist with monitoring,
+ retaining accountability for the alignment determination.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2587,7 +2916,13 @@ Monitoring Responsibility
 Event-Driven Review
 \series default
 :
- When a legal or regulatory change is identified that affects one or more policies in the manual,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+When a legal or regulatory change is identified that affects one or more policies in the manual,
  the IT Director shall initiate an event-driven review in accordance with 
 \series bold
 Policy 
@@ -2604,10 +2939,17 @@ nolink "false"
 
 \series default
 .
- The review shall assess the impact of the change,
- identify the affected policies,
- and produce the necessary updates.
 \end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall ensure the review assesses the impact of the change,
+ identifies the affected policies,
+ and produces the necessary updates.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
@@ -2630,18 +2972,66 @@ Order of Precedence
 Statutory Awareness (Non-Exhaustive)
 \series default
 :
- The following statutes and regulations are of primary relevance to the manual's enforcement and compliance obligations.
- This list is maintained for operational awareness and does not constitute a comprehensive legal analysis.
- NRS 205 (Computer Crimes),
- NRS 239 (Public Records),
- NRS 239.125 (Local Government Records Management Program),
- NRS 242.171 (Responsibilities of Office/Director),
- NRS 244 (Counties:
- Government),
- NRS 281A (Ethics in Government),
- NRS 603A (Security of Personal Information),
- and the CJIS Security Policy as published by the FBI Criminal Justice Information Services Division.
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director shall maintain awareness of the following statutes and regulations of primary relevance to the manual's enforcement and compliance obligations,
+ recognizing that this list is non-exhaustive and does not constitute a comprehensive legal analysis.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 205 (Computer Crimes)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239 (Public Records)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 239.125 (Local Government Records Management Program)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 242.171 (Responsibilities of Office/Director)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 244 (Counties:
+ Government)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 281A (Ethics in Government)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+NRS 603A (Security of Personal Information)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The CJIS Security Policy as published by the FBI Criminal Justice Information Services Division
+\end_layout
+
+\end_deeper
 
 \begin_layout Subsubsection*
 
@@ -2671,7 +3061,11 @@ nolink "false"
 \series default
  (Data Governance and Classification Policy),
  NRS 239.125 (Local Government Records Management Program),
- NAC 239.155 (Adoption of Records Retention Schedule),
+ 
+\series bold
+NAC
+\series default
+ 239.155 (Adoption of Records Retention Schedule),
  and the applicable series within the Nevada Local Government Records Retention Schedule.
 \end_layout
 
@@ -2682,16 +3076,43 @@ nolink "false"
 IT-Administrative Enforcement Records
 \series default
 :
- Documentation of IT-administrative enforcement actions,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Documentation of IT-administrative enforcement actions,
  including the nature of the non-compliance,
  the action taken,
  notification records,
  and any remediation completed,
- shall be retained under the record series applicable to the affected population class:
- LRDA 20070321 (Master Personnel File) for County employees;
- LRDA 20121869 (Administrative Hearing Files) for appointed and elected officials;
- and LRDA 20071300 (Vendor Performance Case Files) for contractors and vendors.
+ shall be retained under the 
+\series bold
+Local Records Disposition Authority
+\series default
+ (LRDA) series applicable to the affected population class.
 \end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20070321 (Master Personnel File) for County employees.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20121869 (Administrative Hearing Files) for appointed and elected officials.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+LRDA 20071300 (Vendor Performance Case Files) for contractors and vendors.
+\end_layout
+
+\end_deeper
 
 \begin_layout Itemize
 
