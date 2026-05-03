@@ -157,6 +157,9 @@ End
 
 \begin_body
 
+
+\begin_body
+
 \begin_layout Section
 
 \lang english
@@ -174,13 +177,13 @@ name "pol:1.02"
 
 \lang english
 Effective:
- April 29,
+ May 02,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.3
+ 2.4
 \end_layout
 
 \begin_layout Subsection*
@@ -193,7 +196,11 @@ Version:
 \begin_layout Standard
 
 \lang english
-This policy establishes the mandatory standard of professional conduct for all personnel within the Elko County Information Operations Department.
+This policy establishes the mandatory standard of professional conduct for all personnel within the 
+\series bold
+Elko County Information Operations
+\series default
+ Department.
 \end_layout
 
 \begin_layout Subsection*
@@ -206,7 +213,7 @@ This policy establishes the mandatory standard of professional conduct for all p
 \begin_layout Standard
 
 \lang english
-This policy applies to all Elko County Information Operations personnel,
+This policy applies to all Information Operations personnel,
  including full-time employees,
  part-time staff,
  contractors,
@@ -215,6 +222,126 @@ This policy applies to all Elko County Information Operations personnel,
  and volunteers who access County IT systems or data.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+\lang english
+In Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Professional conduct standards.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Ethical decision-making and integrity obligations.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Stewardship of County information and assets.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Conflict-of-interest and vendor-interaction conduct.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\lang english
+Out of Scope
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+General County employment and personnel discipline procedures.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Data classification and handling controls:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:1.11"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Policy enforcement,
+ exception management,
+ and acknowledgment program:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.01"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Annual review and maturity scoring:
+ 
+\series bold
+Policy 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pol:5.07"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 
 \lang english
@@ -226,14 +353,16 @@ This policy applies to all Elko County Information Operations personnel,
 
 \series bold
 \lang english
-IT Director:
+IT Director
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall conduct an annual review of this policy and adjudicate ethical conflicts that cannot be resolved at the staff level.
+Shall adjudicate ethical conflicts that cannot be resolved at the staff level.
 \end_layout
 
 \begin_layout Itemize
@@ -264,23 +393,27 @@ nolink "false"
 
 \series bold
 \lang english
-All Information Operations Personnel:
+All Information Operations Personnel
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \lang english
-Shall read,
- acknowledge,
- and adhere to this policy and the professional standards adopted in Section 6.1.
+Shall adhere to the professional standards adopted in Section 6.1.
 \end_layout
 
 \begin_layout Itemize
 
 \lang english
 Shall report suspected criminal conduct,
- Criminal Justice Information (CJI) misuse,
+ 
+\series bold
+Criminal Justice Information (CJI)
+\series default
+ misuse,
  or active threats to County systems or data to the IT Director immediately upon discovery.
 \end_layout
 
@@ -342,22 +475,6 @@ nolink "false"
 
 \series default
  (Policy Review and Update Procedures).
- All Information Operations Personnel shall acknowledge this policy upon hire and annually thereafter in accordance with the acknowledgment program defined in 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:5.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
-.
 \end_layout
 
 \begin_layout Itemize
@@ -367,7 +484,7 @@ nolink "false"
 Enforcement
 \series default
 :
- Non-compliance with this policy shall be addressed through the corrective action framework defined in 
+ Non-compliance may result in corrective actions defined under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -383,7 +500,6 @@ nolink "false"
 
 \series default
 .
- Violations involving misuse of CJIS data or County assets may result in criminal referral under NRS 205 (Computer Crimes) and applicable federal law.
 \end_layout
 
 \begin_layout Itemize
@@ -393,7 +509,7 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to the standards of conduct defined in this policy shall follow the exception management framework established in 
+ Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -505,13 +621,7 @@ nolink "false"
 \begin_layout Itemize
 
 \lang english
-NRS 205 (Computer Crimes)
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-NRS 281A (Ethics in Government)
+NRS 281A.400 (Code of Ethical Standards)
 \end_layout
 
 \begin_layout Itemize
@@ -534,7 +644,7 @@ Framework Alignment
 
 \lang english
 CJIS Security Policy v6.0:
- Section PS-8 (Personnel Sanctions)
+ PS-8 (Personnel Sanctions)
 \end_layout
 
 \begin_layout Itemize
@@ -600,7 +710,7 @@ Public trust in the administration of government technology requires that all pe
 \begin_layout Standard
 
 \lang english
-Elko County Information Operations formally adopts the ACM Code of Ethics and Professional Conduct as the baseline for professional behavior.
+The Elko County Information Operations Department formally adopts the ACM Code of Ethics and Professional Conduct as the baseline for professional behavior.
  Personnel shall uphold the principles of contributing to human well-being,
  avoiding harm,
  and respecting privacy.
@@ -641,10 +751,22 @@ is prohibited.
 User-Centered Service
 \series default
 :
- Personnel shall respond to service requests and inquiries from County staff in a professional and courteous manner.
- Dismissive or condescending responses to end-user communications are prohibited.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Personnel shall respond to service requests and inquiries from County staff in a professional and courteous manner.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Dismissive or condescending responses to end-user communications are prohibited.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -652,7 +774,7 @@ User-Centered Service
 Representation
 \series default
 :
- Personnel shall not express personal opinions as official County positions in any public forum or media channel unless explicitly authorized by the County Manager or IT Director.
+ Personnel shall confine public statements regarding County technology and County positions to communications that have been authorized by the County Manager or IT Director.
 \end_layout
 
 \begin_layout Itemize
@@ -695,7 +817,11 @@ Zero-Gift Policy
 Rationale
 \series default
 :
- This standard is intentionally stricter than the minimum requirements of NRS 281A (Ethics in Government) to eliminate ambiguity and protect personnel from even the appearance of impropriety.
+ This standard is intentionally stricter than the minimum requirements of 
+\series bold
+NRS
+\series default
+ 281A.400 (Code of Ethical Standards) to eliminate ambiguity and protect personnel from even the appearance of impropriety.
 \end_layout
 
 \end_deeper
@@ -706,11 +832,23 @@ Rationale
 Vendor Interaction
 \series default
 :
- When meeting with vendors over a meal,
- personnel shall pay for their own share or expense it through official County channels if applicable.
- The vendor is never permitted to pay.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+When meeting with vendors over a meal,
+ personnel shall pay for their own share or expense the meal through official County channels in accordance with County travel and reimbursement policy.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The vendor is never permitted to pay.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -737,9 +875,27 @@ Truthfulness
 Confidentiality
 \series default
 :
- Personnel shall protect sensitive data (PII,
- PHI,
- CJIS) in accordance with 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Personnel shall protect sensitive data (
+\series bold
+PII
+\series default
+,
+ 
+\series bold
+PHI
+\series default
+,
+ 
+\series bold
+CJIS
+\series default
+) in accordance with 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -755,10 +911,15 @@ nolink "false"
 
 \series default
  (Data Governance and Classification Policy).
- Curiosity is not a valid reason for accessing data;
- access is permitted only for specific business duties.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+Personnel shall access sensitive data only for specific business duties.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
