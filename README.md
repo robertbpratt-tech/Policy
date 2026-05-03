@@ -55,7 +55,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 | `01/102.lyx` | Code of Ethics and Professional Conduct | L | v2.4 |  |
 | `01/103.lyx` | Standard Operating Ethos | L | v2.2 |  |
 | `01/104.lyx` | Policy and Documentation Formatting Standards | L | v2.0 |  |
-| `01/105.lyx` | Policy Review and Update Procedures | T+ | v2.3 | #495, #502, #508, #509, #526, #536 |
+| `01/105.lyx` | Policy Review and Update Procedures | L | v2.4 |  |
 | `01/106.lyx` | IT Governance and Oversight Structure | T+ | v2.2 | #491, #497, #502, #509, #535 |
 | `01/107.lyx` | Workforce Roles, Responsibilities, and Competency Framework | T+ | v1.4 | #354, #495, #509, #513, #526 |
 | `01/108.lyx` | Delegation of Authority and Decision Rights | T+ | v1.6 | #491, #495, #497, #503, #509 |
@@ -124,7 +124,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `05/501.lyx` | Policy Implementation, Enforcement, and Legal Alignment | T+ | v2.0 | #495, #497, #523, #526 |
+| `05/501.lyx` | Policy Implementation, Enforcement, and Legal Alignment | T+ | v2.0 | #495, #497, #523, #526, #540 |
 | `05/502.lyx` | Internal Audits, Self-Assessment, and Control Testing | T+ | v2.0 | #482 |
 | `05/503.lyx` | Compliance Monitoring and Corrective Action | T+ | v2.0 | #482, #488 |
 | `05/504.lyx` | Performance Metrics and Operational KPIs | T+ | v2.0 | #522, #526 |
