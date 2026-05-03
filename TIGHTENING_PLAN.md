@@ -264,7 +264,7 @@ State key: **L** = Locked / PRISTINE (full ticket-list walked and applied), **T*
 | 1.02 | Code of Ethics | L | v2.4, May 02 | 0 | — |
 | 1.03 | Standard Operating Ethos | T+ | v2.1, April 29 | 2 | #486, #492 |
 | 1.04 | Formatting Standards | L | v2.0, May 02 | 0 | — |
-| 1.05 | Policy Review and Update Procedures | T+ | v2.3, April 29 | 4 | #495, #502, #508, #509 |
+| 1.05 | Policy Review and Update Procedures | L | v2.4, May 03 | 0 | — |
 | 1.06 | IT Governance and Oversight Structure | T+ | v2.2, April 29 | 4 | #491, #497, #502, #509 |
 | 1.07 | Workforce Roles | T+ | v1.4, April 29 | 4 | #354, #495, #509, #513 |
 | 1.08 | Delegation of Authority | T+ | v1.6, April 29 | 5 | #491, #495, #497, #503, #509 |
@@ -1176,6 +1176,82 @@ Fourth Phase 5F per-policy patch-bump execution. Walked against full ticket list
 
 **Adjacent ticket lifecycles completed:**
 - **#539** (6.01 CJA Glossary add) — filed → 6.01 v2.0 → v2.1 commit `22b0eb6c` → closed. In-session lifecycle per IT Director directive (no hanging obligations).
+
+[Archive: TBD]
+
+---
+
+### Phase 5F Entry 5 — Policy 1.05 PRISTINE (May 03, 2026)
+
+**Policy 1.05 (Policy Review and Update Procedures) T+ v2.3 → L v2.4** (commit `913fd93f`).
+
+Fifth Phase 5F per-policy patch-bump execution. Walked against full ticket list per IT Director PRISTINE directive. Twenty-six findings inventoried; all resolved per IT Director adjudications on five decision points (F-3 ITD sub#4 wording shift; Q1 paren convention verified clean; Q2 §6.3 Constraint = Option A object-anchored; Q3a Biennial Resanction parent rationale tail STRIP; Q3b Clarification S2 merged into parent body as state-fact prose). Six tickets with line-item closures, one ticket fully closed (#536), one ripple filed against 5.01 (#540 — generic Oversight Mechanism cadence-to-CM rule).
+
+**Tickets touched (8):**
+- **#495** — §3 authority order swap (BoCC → CM → ITD → All IO Personnel) per 1.04 v2.0 §6.5; 1.05 line item closed via comment (ticket stays open for other policies).
+- **#502** — Constraint label strip + substance disposition; 1.05 line items closed via comment (§4 Constraint stripped per Option I + ripple-to-5.01; §6.3 Constraint replaced with Scope Boundary directive). Ticket stays open for other policies.
+- **#508** — §4 Emergency Deviations strip; 1.05 line item closed via comment (substance migrated to §6.1 Timeline Deviations directive). Ticket stays open for other policies.
+- **#509** — manual-wide Constraint/Clarification/Exclusion strip; 1.05 line items closed via comment (4 sites stripped: §4 Constraint, §4 Clarification, §6.1 Clarification, §6.3 Constraint). Ticket stays open for other policies.
+- **#526** — §6.8 multi-directive splits; 1.05 line items closed via comment (splits applied across §6.2 Steps 3/4/5/6 + §6.3 Documentation Requirements/Automatic Expiration + Step 6 Retirement decompose). Ticket stays open for other policies.
+- **#536** — CJIS legacy `Section 5.1.1.6 (Policy and Procedures)` (Class A); FULL CLOSE — line stripped from 1.05 §5 Framework Alignment entirely rather than migrated to v6.0 form, per 1.04 v2.0 §5 constitutional precedent (no CJIS in Framework Alignment for meta-governance policies). Body cite test confirmed: 1.05 cites CJIS only colloquially in §6.1 Ad Hoc Reviews triggers, not as authority over policy review.
+- **#532** — manual-wide bold-on-first-use Glossary sweep; 1.05 line items closed via comment (7 first-use bolds: ECIO §1, Technical Directives §2, System of Engagement §3, CJIS §6.1, NRS §6.1, Authoritative System of Record §6.2, LRDA §6.2, NAC §6.4). Ticket stays open for other policies.
+- **#469** — manual-wide `shall not` → positive sweep; 1.05 line item closed via comment (§6.3 Automatic Expiration `shall not re-issue` → `shall obtain formal adoption ... before re-issuing`). Ticket stays open for other policies.
+
+**Substantive transitions (twenty-six findings, by section):**
+
+- **§1 Purpose first-use bolding (F1, #532):** Bold **Elko County Information Operations** as 3-word spelled-form span; matches 1.02/1.03 PRISTINE pattern.
+- **§3 reorder (F2, #495):** IT Director → County Manager → BoCC → All IO Personnel reordered to BoCC → County Manager → IT Director → All IO Personnel per 1.04 v2.0 §6.5 authority hierarchy.
+- **§3 ITD sub#4 wording (F3):** "Shall issue Technical Directives in accordance with Section 6.3" → "Shall issue any Technical Directive in accordance with Section 6.3" per IT Director ruling. Eliminates implied-universal-issuance reading; preserves obligation form alongside §6.3's "may issue" discretionary mechanism.
+- **§3 first-use bolding (F4, F5, #532):** Bold **Technical Directives** (initially placed at §3 ITD sub#4, then corrected late in session to §2 In-Scope per audit catch — see late-binding fixes below); bold **System of Engagement** at ITD sub#5.
+- **§4 canonical rebuild (F6, F7, F8, #502/#508/#509):**
+  - **Emergency Deviations bullet + Clarification stripped** (label not in 1.04 v2.0 §6.6 governed set; substance migrated to §6.1 as Timeline Deviations directive — see F12).
+  - **Enforcement canonicalization** (#42 standing decline): "Failure to conduct required reviews ... shall be treated as non-compliance and escalated under Policy 5.01 ..." → canonical "Non-compliance may result in corrective actions defined under Policy 5.01 (Policy Implementation, Enforcement, and Legal Alignment)." Matches 1.02/1.03 PRISTINE precedent.
+  - **Constraint sub-bullet STRIP entirely (Option I):** Architectural diagnosis showed 3 of 4 v2.3 Constraint items were redundant with 5.01 §6.6 + 1.08 §6.1 default routing (resanction/hierarchy/acknowledgment exceptions already route to CM by default; only cadence override was genuinely stricter). Robert ruled to strip the local override and file ripple #540 against 5.01 to add a generic Oversight Mechanism cadence-to-CM rule. 1.05 PRISTINE committed under explicit dependency-acknowledgment that #540 lands in the next session.
+- **§5 Framework Alignment cleanup (F9, F10, #536):** Stripped CJIS Section 5.1.1.6 line entirely (#536 full close); stripped PM-1 (Information Security Program Plan — 1.05 ≠ ISPP) and PM-2 (Program Leadership). Added GV.PO-01 (Policy Establishment) and PL-1 (Policy and Procedures) per 1.04 PRISTINE precedent. Final Framework Alignment: GV.PO-01, GV.PO-02, PL-1, MEA01, MEA03.
+- **§5 Cited References (F11):** All references pass body-cite test. Preserved.
+- **§6.1 Review Cadence (F12, F13, F14, F15):**
+  - **Timeline Deviations directive added** (F12): new bullet absorbing the deviation-documentation substance migrated from §4 Emergency Deviations.
+  - **Biennial Resanction parent rationale tail STRIPPED** (F13, Q3a): "Resanction reaffirms institutional support, risk tolerance, and funding alignment for the IT governance framework." stripped — generic narration, not §6.12 Rationale-gated (does not exceed external minimum or carry non-self-evident architectural status).
+  - **Biennial Resanction Clarification dissolved** (F14, Q3b, #509): label stripped; S1 ("lapsed = non-compliance subject to 5.01") stripped as redundant with §4 Enforcement post-canonicalization; S2 ("Manual remains in force during lapsed resanction period; policies do not expire for lack of resanction") merged into Biennial Resanction parent body as state-fact prose. §6.8 strict 1:1 directive-per-bullet rule preserved (parent now: directive + non-normative state-fact, parallel with 1.04 v2.0 §6.8 itself which models the same pattern).
+  - **First-use bolding (F15, #532):** Bold **CJIS** and **NRS** in Ad Hoc Reviews trigger sub-bullet (HIPAA stays unbolded — not in 6.01 Glossary).
+- **§6.2 Lifecycle and Change Control (F16–F20, #526/#532):**
+  - **Step 3 Approval split (F16):** CM-approve + CM-escalate chained obligations → 2 atomic sub-bullets.
+  - **Step 4 Notification split (F17):** Notify-personnel + content-spec chained → 2 atomic sub-bullets. Acknowledgment sub-bullet preserved with state-fact prose tail (directive + state-fact, §6.8-compliant).
+  - **Step 5 Publication splits (F18, F19):** Commit + sync → 2 atomic sub-bullets, bold **Authoritative System of Record** first use; mark obsolete + archive → 2 atomic sub-bullets, bold **LRDA** first use.
+  - **Step 6 Retirement decompose (F20):** Single bullet with 3 chained directives + descriptive tail → bold-label parent + 4 atomic sub-bullets. "for legal defensibility" rationale tail stripped (not §6.12 Rationale-gated).
+- **§6.3 Technical Directives (F21, F22, F23, #526/#469/#502/#509):**
+  - **Documentation Requirements decompose (F21):** Document-each-TD + content-spec chained → bold-label parent + 2 atomic sub-bullets.
+  - **Automatic Expiration decompose (F22):** 3 chained directives + #469 `shall not re-issue` → bold-label parent + 4 atomic sub-bullets, including positive-form re-issuance directive ("The IT Director shall obtain formal adoption through the standard approval process before re-issuing the same or substantially similar Technical Directive within twelve (12) months of expiration").
+  - **Constraint → Scope Boundary (F23, Option A):** Constraint label stripped; substance converted to positive object-anchored directive: "Each Technical Directive shall preserve budget authority and the core governance roles defined in Policy 1.06 (IT Governance and Oversight Structure)." New "Scope Boundary" bold label preserves visual consistency with surrounding §6.3 labeled bullets (Permissible Scenarios / Documentation Requirements / Automatic Expiration).
+- **§6.4 Policy Review Tracker (F24, #532):** Bold **NAC** first body use in retention by-reference paragraph.
+
+**Late-binding fixes (1.04 §6.9 paren-pattern compliance) — IT Director audit catches mid-session:**
+
+- **§2 In-Scope paren strip:** "Emergency temporary policy amendments (Technical Directives)." → "Emergency temporary policy amendments and **Technical Directives**." 1.04 §6.9 Acronym Protocol authorizes parens only for `term (abbreviation)` introduction; `descriptive-phrase (formal-term)` pattern is not authorized. IT Director audit catch surfaced after F4 first-use bolding correction (F4 originally placed bolding at §3 ITD sub#4; §2 audit revealed §2 In-Scope as actual first body use of "Technical Directives", and the parenthetical pattern itself as a 1.04 violation requiring rewrite).
+- **§6.3 opening prose paren strip:** 'The IT Director may issue temporary policy amendments ("Technical Directives") when standard policies obstruct ...' → 'The IT Director may issue Technical Directives when standard policies obstruct ...' (Option B — formal term used directly; descriptive phrase dropped entirely since term is glossary-defined and §2 first-use bolding signals defined meaning).
+
+**Cross-validator round summary:** None — direct commit per IT Director ruling following 1.02/1.03 PRISTINE Entry 3/4 precedent. All changes are ticket-tracked sweep absorption (#495, #502, #508, #509, #526, #536, #532, #469) + locked architecture restoration (1.04 v2.0 §6.5/§6.6/§6.8/§6.9/§6.11/§6.12/§6.14, 5.01 §6.6 + 1.08 §6.1 default-routing analysis, 1.04 v2.0 §6.7 body-cite test) + audit-missed Pristine catches (F3 ITD sub#4 wording; §2/§6.3 paren-pattern compliance). No architectural surface for validator review.
+
+**Pristine-mode audit catches (3):**
+- **F3 ITD sub#4 wording shift** (shall/may consistency between §3 obligation and §6.3 discretionary mechanism).
+- **§2 In-Scope first-use bolding correction** (F4 originally placed bolding at §3; audit revealed §2 as actual first body use).
+- **§2 + §6.3 paren-pattern compliance** (1.04 §6.9 Acronym Protocol does not authorize `descriptive-phrase (formal-term)` introduction; both sites rewritten without parens).
+
+**Standing decline patterns invoked:**
+- **#15** (universal cross-reference rule) — verified clean; 1.05 uses only intra-policy "Section 6.X" references (permitted per 1.04 v2.0 §6.11 explicit example).
+- **#20** (5.01 §6.6 inline) — 1.05 §4 Constraint substance was a policy-specific override per 5.01 §6.6 "Policy-Specific Requirements" carve-out, not framework restatement; analyzed and stripped via Option I (substance migrated upstream to 5.01 via ripple #540).
+- **#34** (CJIS v6.0 framework reorganization hallucination) — informed #536 disposition decision (full strip rather than v6.0 anchor migration; 1.04 v2.0 §5 constitutional precedent has no CJIS in Framework Alignment for meta-governance policies).
+- **#39** (by-reference architecture preservation) — informed F7 strip decision; 1.05 §4 Constraint was preserving a stricter local override that turned out to be redundant with upstream framework for 3 of 4 items.
+- **#40** ("responsible for" non-transfer pattern) — verified clean; "Responsible Reviewer" §6.4 metadata field LABEL is denotative (per Phase 6 Entry 40 inscription), not a directive.
+- **#42** (§4 Enforcement firm-direction rotation) — F8 restored canonical "may result in" form from non-canonical "shall be treated as non-compliance and escalated under" surface drift. Matches 1.02/1.03 PRISTINE precedent.
+- **#469** ("shall not" → positive) — F22 §6.3 Automatic Expiration absorbed at 1.05 PRISTINE (re-issuance directive rewritten in actor-anchored positive form).
+
+**Status designation:** Policy 1.05 lifted from T+ to **L** per IT Director ruling. PRISTINE walk completed against full ticket list (Phase 5F intake + manual-wide roots + standing decline reflexive checks).
+
+**Open ripple filed (1):**
+- **#540** ([5.01] Architectural addition) — Generic Oversight Mechanism cadence-to-CM rule. Source: 1.05 PRISTINE pass diagnosis showed 5.01 §6.6 Oversight Mechanism Integrity routes operational details (cadence/scope/methodology) to default ITD-approval, creating self-approval exposure for any oversight mechanism owner. Affects 1.05 review cadence, 5.07 maturity scoring, 5.06 audit/log retention, 5.02/5.03 control assessment, 4.x incident response, 2.x training/account-review/scan cadences. Phase 9I pulled forward to next session per IT Director commitment. 1.05 PRISTINE committed under explicit dependency-acknowledgment.
+
+**Architectural decision inscribed:** Single-operator pinky-promise sequencing pattern. Where a local policy's stricter-than-upstream rule is identified as architecturally belonging upstream (because the exposure is generic, not policy-specific), the cleanest path is to (a) strip the local override at the local PRISTINE commit, (b) file a high-priority ripple against the upstream policy, (c) commit the next-session work to closing the ripple. The intermediate state (between the two commits) leaves the manual internally consistent — just not at the preferred end state. Auditable via documentation requirement on any exception during the gap window. Pattern preconditions: single-operator manual, mechanism-owner = ripple-author, bounded-window pinky-promise, ripple-priority commitment binding.
 
 [Archive: TBD]
 
