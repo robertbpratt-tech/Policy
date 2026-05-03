@@ -124,7 +124,7 @@ Cross-cutting tickets that do not belong to a single policy. These are absorbed 
 
 | File | Title | Status | Version | Tickets |
 | --- | --- | --- | --- | --- |
-| `05/501.lyx` | Policy Implementation, Enforcement, and Legal Alignment | T+ | v2.0 | #495, #497, #523, #526, #540 |
+| `05/501.lyx` | Policy Implementation, Enforcement, and Legal Alignment | L | v2.1 | — |
 | `05/502.lyx` | Internal Audits, Self-Assessment, and Control Testing | T+ | v2.0 | #482 |
 | `05/503.lyx` | Compliance Monitoring and Corrective Action | T+ | v2.0 | #482, #488 |
 | `05/504.lyx` | Performance Metrics and Operational KPIs | T+ | v2.0 | #522, #526 |
