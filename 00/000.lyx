@@ -186,7 +186,11 @@ The Elko County Information Operations Policy Manual (maintained as the master
 \shape italic
 Policy_Manual.lyx
 \shape default
- file) is the designated Authoritative System of Record for all governance controls,
+ file) is the designated 
+\series bold
+Authoritative System of Record
+\series default
+ for all governance controls,
  including the departmental security and service management standards defined herein.
  It establishes the mandatory frameworks required to ensure consistency,
  accountability,
@@ -240,7 +244,11 @@ Administrative Regulation
 Records Retention
 \series default
 :
- Nevada Local Government Records Management Program and mandatory retention schedules (Local Records Disposition Authority) under NRS 239.125.
+ Nevada Local Government Records Management Program and mandatory retention schedules (
+\series bold
+Local Records Disposition Authority
+\series default
+) under NRS 239.125.
 \end_layout
 
 \begin_layout Enumerate
@@ -249,7 +257,7 @@ Records Retention
 Law Enforcement Compliance
 \series default
 :
- FBI CJIS Security Policy Version 6.0.
+ FBI CJIS Security Policy v6.0.
 \end_layout
 
 \begin_layout Enumerate
@@ -258,7 +266,7 @@ Law Enforcement Compliance
 Security Controls
 \series default
 :
- NIST SP 800-53 Revision 5 (Security and Privacy Controls for Information Systems and Organizations).
+ NIST SP 800-53 Rev. 5 (Security and Privacy Controls for Information Systems and Organizations).
 \end_layout
 
 \begin_layout Enumerate
@@ -276,7 +284,7 @@ Strategic Risk
 Risk Management
 \series default
 :
- NIST SP 800-37 Revision 2 (Risk Management Framework).
+ NIST SP 800-37 Rev. 2 (Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy).
 \end_layout
 
 \begin_layout Enumerate
@@ -285,7 +293,7 @@ Risk Management
 Incident Response
 \series default
 :
- NIST SP 800-61 Revision 3 (Computer Security Incident Handling Guide).
+ NIST SP 800-61 Rev. 3 (Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile).
 \end_layout
 
 \begin_layout Enumerate
@@ -308,7 +316,7 @@ Service Management
 
 \begin_layout Standard
 Additional Frameworks Referenced:
- NIST SP 800-181 Revision 1 (NICE Workforce Framework for Cybersecurity) and SFIA 9 (Skills Framework for the Information Age) are referenced for workforce role alignment under 
+ NIST SP 800-181 Rev. 1 (Workforce Framework for Cybersecurity (NICE Framework)) and SFIA 9 (Skills Framework for the Information Age) are referenced for workforce role alignment under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -334,7 +342,11 @@ Authority and Scope
 
 \begin_layout Standard
 This manual,
- alongside the procedural library maintained in the System of Engagement,
+ alongside the procedural library maintained in the 
+\series bold
+System of Engagement
+\series default
+,
  serves as the primary reference for governance,
  operational decision-making,
  audit defense,
@@ -346,7 +358,7 @@ Compliance with these policies is mandatory for:
 \end_layout
 
 \begin_layout Enumerate
-All Elko County Information Operations personnel.
+All Information Operations Personnel.
 \end_layout
 
 \begin_layout Enumerate
