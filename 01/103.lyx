@@ -174,13 +174,13 @@ name "pol:1.03"
 
 \lang english
 Effective:
- April 29,
+ May 02,
  2026
 \begin_inset space \hfill{}
 \end_inset
 
 Version:
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Subsection*
@@ -195,7 +195,11 @@ Version:
 \lang english
 This policy defines the internal culture,
  operational mindset,
- and behavioral expectations of the Elko County Information Operations Department (ECIO).
+ and behavioral expectations of the 
+\series bold
+Elko County Information Operations
+\series default
+ Department (ECIO).
 \end_layout
 
 \begin_layout Subsection*
@@ -214,9 +218,6 @@ This policy applies to all Information Operations personnel,
  contractors,
  vendors,
  and volunteers.
- It governs the cultural and professional baseline for Department interactions,
- decision-making,
- and conflict resolution.
 \end_layout
 
 \begin_layout Subsection*
@@ -279,7 +280,13 @@ Assistant IT Director:
 \begin_layout Itemize
 
 \lang english
-Shall reinforce the standards defined in this policy through active mentorship and shall model the operational ethos in daily operations.
+Shall reinforce the standards defined in this policy through active mentorship.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Shall model the operational ethos in daily operations.
 \end_layout
 
 \end_deeper
@@ -321,25 +328,7 @@ Adherence to this policy is mandatory for all Information Operations personnel.
 Assessment
 \series default
 :
- Adherence to this policy shall be evaluated through individual performance reviews,
- incident post-mortem analysis examining adherence to escalation and documentation standards per 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:4.01"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Incident Response Policy Overview),
- supervisor observations,
- and the annual policy review and maturity scoring process defined in 
+ Adherence to the operational ethos defined in this policy shall be assessed as part of the annual policy review and maturity scoring process defined in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -364,7 +353,7 @@ nolink "false"
 Enforcement
 \series default
 :
- Non-compliance with this policy may result in corrective actions as defined under 
+ Non-compliance may result in corrective actions defined under 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -381,11 +370,7 @@ nolink "false"
 \series default
  (Policy Implementation,
  Enforcement,
- and Legal Alignment),
- including coaching,
- supervisory feedback,
- or formal performance management.
- Failure to complete required policy acknowledgments under Section 6.5 constitutes non-compliance enforceable under this section.
+ and Legal Alignment).
 \end_layout
 
 \begin_layout Itemize
@@ -395,7 +380,7 @@ nolink "false"
 Exceptions
 \series default
 :
- Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework in 
+ Exceptions to this policy shall be documented with justification and approved in writing by the IT Director in accordance with the exception management framework established in 
 \series bold
 Policy 
 \begin_inset CommandInset ref
@@ -490,24 +475,6 @@ nolink "false"
 ECIO Policy 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "pol:2.03"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-:
- Security Awareness and Training Policy
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-ECIO Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "pol:4.01"
 plural "false"
 caps "false"
@@ -559,12 +526,12 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
-NRS 281A (Ethics in Government)
+NRS 281A.400 (Code of Ethical Standards)
 \end_layout
 
 \begin_layout Itemize
 CJIS Security Policy v6.0:
- Section 5.1.1.4 (Management Control Agreements)
+ Appendix D.2 (Management Control Agreement)
 \end_layout
 
 \begin_layout Standard
@@ -577,26 +544,9 @@ Framework Alignment
 \end_layout
 
 \begin_layout Itemize
-NIST CSF 2.0:
- GV.SC-01 (Cybersecurity Supply Chain Risk Management)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- AT-2 (Literacy Training and Awareness)
-\end_layout
-
-\begin_layout Itemize
 NIST SP 800-53 Rev.
  5:
  PL-4 (Rules of Behavior)
-\end_layout
-
-\begin_layout Itemize
-NIST SP 800-53 Rev.
- 5:
- PM-1 (Information Security Program Plan)
 \end_layout
 
 \begin_layout Itemize
@@ -693,11 +643,19 @@ nolink "false"
 Unified Authority
 \series default
 :
- To support compliance with the strict connectivity and security requirements of the CJIS Security Policy Section 5.1.1.4 (Management Control Agreements),
+ To support compliance with the strict connectivity and security requirements of the 
+\series bold
+CJIS
+\series default
+ Security Policy v6.0 Appendix D.2 (Management Control Agreement),
  Elko County has adopted a unified governance structure for shared infrastructure.
  Under this structure,
  the IT Director retains final decision-making authority over all technical controls and risk mitigation strategies across the enterprise,
- subject to the statutory management control authority of Criminal Justice Agencies (CJA) over CJIS data policy.
+ subject to the statutory management control authority of each 
+\series bold
+Criminal Justice Agency (CJA)
+\series default
+ over CJIS data policy.
 \end_layout
 
 \begin_layout Itemize
@@ -711,9 +669,13 @@ Independence
  the Department's operational decisions shall be driven by technical standards,
  security mandates,
  and risk assessments.
- Political pressure or external influence shall not supersede mandatory security controls,
+ Mandatory security controls,
  engineering standards,
- or the ethical obligations established under NRS 281A.
+ and the ethical obligations established under 
+\series bold
+NRS
+\series default
+ 281A.400 (Code of Ethical Standards) shall take precedence over political pressure or external influence.
  Technical decisions shall be made in accordance with the delegation framework defined in 
 \series bold
 Policy 
@@ -781,7 +743,7 @@ nolink "false"
 
 
 \series default
-.
+ (Incident Response Policy Overview).
 \end_layout
 
 \begin_layout Itemize
@@ -848,9 +810,9 @@ Decide Based on Standards
  The IT Director and Assistant IT Director shall base operational decisions on data,
  policy,
  and formal risk assessment.
- Political pressure,
+ Technical standards and mandatory security controls shall take precedence over political pressure,
  personal sentiment,
- or external influence shall not supersede technical standards or mandatory security controls.
+ or external influence.
 \end_layout
 
 \begin_layout Itemize
@@ -860,10 +822,28 @@ Decide Based on Standards
 Accountability
 \series default
 :
- The IT Director and Assistant IT Director shall acknowledge errors transparently and shall document lessons learned within five (5) business days of incident closure.
- The IT Director shall ensure remediation actions are tracked to completion in the Department's system of record.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The IT Director and Assistant IT Director shall acknowledge errors transparently.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director and Assistant IT Director shall document lessons learned within five (5) business days of incident closure.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director shall ensure remediation actions are tracked to completion in the Department's system of record.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -871,7 +851,13 @@ Accountability
 Crisis Discipline
 \series default
 :
- During major incidents,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+During major incidents,
  all Information Operations Personnel shall adhere to the incident response protocols defined in 
 \series bold
 Policy 
@@ -888,10 +874,23 @@ nolink "false"
 
 \series default
 .
- The IT Director and Assistant IT Director shall provide clear,
- evidence-based direction to maintain operational discipline and shall participate in formal post-incident reviews to document lessons learned.
 \end_layout
 
+\begin_layout Itemize
+
+\lang english
+During major incidents,
+ the IT Director and Assistant IT Director shall provide clear,
+ evidence-based direction to maintain operational discipline.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The IT Director and Assistant IT Director shall participate in formal post-incident reviews to document lessons learned.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection*
 
 \lang english
@@ -964,36 +963,6 @@ Resolve or Escalate
 :
  All Information Operations Personnel shall actively move every ticket or work order toward resolution or escalate it to the appropriate tier with sufficient context for action.
  No ticket or work order shall remain without a documented status update beyond the timeframes established in the applicable service level targets.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\lang english
-6.5 Policy Acknowledgment
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-All Information Operations Personnel shall acknowledge receipt and understanding of this policy upon hire,
- upon any substantive revision,
- and annually thereafter.
- The IT Director shall ensure acknowledgments are documented and maintained in accordance with 
-\series bold
-Policy 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pol:2.03"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-
-\series default
- (Security Awareness and Training Policy).
 \end_layout
 
 \end_body
