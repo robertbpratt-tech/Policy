@@ -1257,6 +1257,114 @@ Fifth Phase 5F per-policy patch-bump execution. Walked against full ticket list 
 
 ---
 
+### Phase 5F Entry 6 — Policy 5.01 PRISTINE (May 03, 2026)
+
+**Policy 5.01 (Implementation, Enforcement, and Legal Alignment) T+ v2.0 → L v2.1** (commit `0c2ee9fd`).
+
+Sixth Phase 5F per-policy patch-bump execution. Walked against full ticket list per IT Director PRISTINE directive. Twenty-eight findings inventoried plus three readability list-restructure findings surfaced late-session via IT Director audit. Five tickets closed in full (#495, #497, #523, #526, #540). 1.05 dependency-acknowledgment commitment fulfilled — #540 (generic OMI cadence-to-CM rule) landed in §6.6 per locked DP1 wording, closing ITD self-approval gap.
+
+**Tickets closed in full (5):**
+- **#495** — §3 authority order reorder. CM → ITD → AID → HR → DA's Office → Dept Heads → All County Personnel. Type A authority-source convention applied.
+- **#497** — D20.3 HR(HR) acronym strip from §3 role label; harmonized 'HR and/or' → 'Human Resources and' for clarity in disciplinary referral routing; HR acronym retained where contextually appropriate (CJIS PS-8 notification list).
+- **#523** — D31 §6.9 prohibited-language strip across §3, §6.3, §6.5: 'where applicable', 'appropriate law enforcement authority', 'as warranted', 'appropriate personnel authority', 'operationally appropriate restrictions', 'appropriate parties' all replaced with explicit role-anchored or institutional set forms.
+- **#526** — D40 §6.8 multi-directive splits per Q1b reversal expanded scope. Headline §6.4 Emergency Protective Action (4 atomic sub-bullets); other §6.4/§6.5/§6.6/§6.7/§6.8 splits applied; §6.4 architectural conflict resolved within session.
+- **#540** — Generic OMI cadence-to-CM rule landed in §6.6 per locked DP1 wording (3 atomic sub-bullets: non-waivability + CM-required + ITD-bar). 1.05 pinky-promise sequencing pattern fulfilled.
+
+**Substantive transitions (twenty-eight findings + three late-binding restructures, by section):**
+
+- **§1 Purpose first-use bolding (F1, #532):** Bold **Elko County Information Operations** spelled-form span.
+- **§2 In Scope first-use bolding (F2, #532):** Bold **Criminal Justice Information Services** spelled-form span.
+- **§3 reorder (F3, #495):** CM → ITD → AID → HR → DA → Dept Heads → All CP. CM positioned first per Type A authority-source convention.
+- **§3 ITD sub#5 (F4, #523):** 'appropriate personnel authority' → 'Human Resources, the County Manager, or the District Attorney's Office'.
+- **§3 ITD sub#6 first-use bolding (F5, #532):** Bold **Local Agency Security Officer** spelled-form span.
+- **§3 CM sub#3 dual-anchor (F6, DP5 Option A):** "...under the operational oversight authority established in **Policy 1.06** (IT Governance and Oversight Structure) and in accordance with the exception management framework established in Section 6.6." Establishes 1.06 first-use parenthetical title; provides architectural symmetry between ITD authority routing (1.08) and CM authority routing (1.06).
+- **§3 HR rename (F7, #497):** 'Human Resources (HR):' → 'Human Resources:' per D20.3.
+- **§4 Enforcement canonical (F8, #42):** Inline failure-mode enumeration stripped; canonical 'may result in corrective actions defined in Section 6.3' restored.
+- **§4 Exceptions Q7 canonical (F9):** 1.08 reference dropped; ITD-alone shall-not stripped (positive routing to CM achieves the same bar via §6.6 framework reference); COI carve-out preserved through routing.
+- **§5 Cited References (F10):** Added ECIO Policy 1.06 between 1.05 and 1.07 (numerical ordering preserved).
+- **§5 CJIS Section-word strip (F11, #515):** All four CJIS controls (AC-7, IR-6, PS-3, PS-8) plus §6.5 body cite normalized to bare control-identifier form.
+- **§5 PM-1 strip (F12):** PM-1 (Information Security Program Plan) stripped from Framework Alignment; 5.01 ≠ ISPP per 1.04 PRISTINE precedent.
+- **§5 PL-1 title correction (F13):** PL-1 title 'Planning Policy and Procedures' → 'Policy and Procedures' (NIST SP 800-53 Rev. 5 source-verified; Planning is family name, not part of control title; matches 1.04 v2.0 PRISTINE form).
+- **§6.1 Documentation as Standard first-use bolding (F14, #532):** Bold **System of Engagement** spelled-form span.
+- **§6.1 Coordination with Review Lifecycle (F15):** Passive chained directives compressed to single ITD-anchored directive with event-driven trigger as descriptive tail.
+- **§6.3 prose appropriate-replacements (F16, #523):** Three sites — 'appropriate personnel authority' (institutional set), 'operationally appropriate restrictions' (bare 'operational restrictions'), 'appropriate parties' (anchored to §6.4 population class).
+- **§6.4 architectural restructure (F17, #526):** Population class headers (Information Operations Personnel, Non-IT County Employees, Appointed and Elected Officials, Contractors and Vendors) converted from level-1 Itemize bullets to bold-label Standard paragraphs (1.04 §6.11 established pattern). Frees depth budget so #526 splits land at level 2 within §6.12 limit. Resolves §6.8/§6.12/#526 architectural conflict within session (no Phase 9I deferral required).
+- **§6.4 splits (F18, #526) — five sites:**
+  - Non-IT County Employees Enforcement Posture (2 atomic sub-bullets: may impose + shall not impose)
+  - Non-IT County Employees Personnel-Disciplinary Referral (2 atomic sub-bullets: ITD refers + dept head initiates)
+  - Non-IT County Employees Dispute Resolution (2 atomic sub-bullets: grievance + risk acceptance) with F9 lateral-circumvention strip retained
+  - Appointed/Elected Emergency Protective Action (4 atomic sub-bullets: ITD acts → ITD notifies → CM determines → ITD documents) — #526 headline site
+  - Appointed/Elected Dispute Resolution (2 atomic sub-bullets: grievance + risk acceptance)
+- **§6.4 IO Personnel reframes (F19):** Personnel-Disciplinary Referral passive 'shall be initiated' reframed to state-fact ('is initiated through...'); Dispute Resolution passive 'disputes shall follow' reframed active ('Information Operations Personnel shall direct internal disputes through...').
+- **§6.4 F9 strip (F20, DP2):** Lateral-circumvention sentence stripped from Non-IT County Employees Dispute Resolution.
+- **§6.5 Process Ownership state-fact promotion (F21):** State-fact-only bullet promoted to second opening Standard paragraph; removes §6.8 violation cleanly.
+- **§6.5 Initiation split (F22, #526):** State-fact 'initiates' + chained 'shall refer' → 2 atomic ITD directives.
+- **§6.5 CJIS Notification Requirement split (F23, #526, #532):** 2 atomic sub-bullets (notify directive + content-spec directive); bold first-use of **Criminal Justice Information** spelled-form span; CJIS Section-word strip on body cite.
+- **§6.5 Legal Referral split (F24, #523, #526, #532):** 2 atomic sub-bullets (refer directive + protective-action directive); bold first-use of **NRS** spelled-form span; prohibited language stripped.
+- **§6.6 Approval Authority dual-anchor (F25, DP5):** 3 atomic sub-bullets; **Policy 1.06** anchor on CM sub-bullet provides ITD/CM symmetry (extends §3 CM sub#3 dual-anchor pattern).
+- **§6.6 Operational Tier Controls (F26, #469, #526):** 5 atomic sub-bullets; 'shall not renew' → positive form 'Renewal of an operational exception shall require IT Director approval'.
+- **§6.6 OMI #540 architectural addition (F27, DP1, #540):** 3 atomic sub-bullets per locked DP1 wording — (1) non-waivability of mechanism application; (2) cadence/scope/methodology exceptions require CM approval; (3) ITD shall not approve such exceptions regardless of 1.08 delegation. ITD self-approval gap closed.
+- **§6.6 CJI Exceptions (F28, #526):** 3 atomic sub-bullets; preserves locked v2.0 architecture (no separate CSO concurrence + explicit CJIS-required carve-out + audit retention).
+- **§6.6 Policy-Specific Requirements (F29, #39):** 5.01-clause stripped (dual-maintained with §4 Exceptions); retained general stricter-governs principle.
+- **§6.6 Risk Recording / Active Exception Review / Retroactive Exceptions (F30, #526):** Each split into atomic sub-bullets.
+- **§6.7 Monitoring Responsibility / Event-Driven Review (F31, #526):** Each split; passive 'review shall' reframed active 'IT Director shall ensure review'.
+- **§6.8 IT-Administrative Enforcement Records first-use bolding (F32, #532, DP4):** Bold **Local Records Disposition Authority** spelled-form span on first body use.
+- **§6.8 NAC first-use bolding (F33, #532):** Bold **NAC** at §6.8 opener.
+
+**Late-binding restructures (IT Director audit catches mid-session — three readability sites):**
+
+- **§6.6 Written Documentation §6.8 strict split (R1):** IT Director surfaced this site via readability question (long inline 6-element content-spec list). Audit revealed bullet was actually a §6.8 strict 1:1 violation I missed during initial §6.6 walk — 4 distinct obligations blended (documentation directive + 6-element content-spec + 2 prohibitions). Restructured to bold-label parent + 9 atomic sub-bullets at level 2.
+- **§6.7 Statutory Awareness restructure (R2):** Long inline 8-statute list converted to bold-label parent + 9 sub-bullets (1 directive + 8 enumeration items per statute/regulation). Each enumeration sub-bullet is scope-of-directive content, not separate obligation; pattern matches 1.04 §6.11.
+- **§6.8 IT-Administrative Enforcement Records restructure (R3):** Inline 3-LRDA-mapping list converted to bold-label parent + 4 sub-bullets (1 directive with LRDA spelled-form first-use bolding + 3 LRDA-to-population-class mappings).
+
+**§6.4 architectural restructure decision-point disposition:**
+
+- **DP1 (locked):** OMI #540 wording — 3 atomic sub-bullets per IT Director-corrected wording ('methodology' typo for 'review mechanism' caught and corrected).
+- **DP2 (locked):** §6.4 lateral-circumvention sentence stripped entirely (F9).
+- **DP3 (locked):** `shall not` retentions adjudicated — keep L1946 (boundary), L2415 (open-ended bar), L2616 (OMI non-waivability), L2630 (OMI ITD-bar #540) as architectural locks; convert AID renewal to positive form per 1.05 F22 precedent; strip Operational Tier Controls 'shall not renew' / Policy-Specific Requirements 'ITD shall not approve' / §6.4 IO Personnel Dispute Resolution passive 'shall follow' via F4/F5 restructures.
+- **DP4 (locked):** Bold spelled-form 'Local Records Disposition Authority' on first body use at §6.8 IT-Administrative Enforcement Records (Front Matter v3 precedent).
+- **DP5 (locked, dual anchor):** §3 CM sub#3 + §6.6 Approval Authority sub-bullet 2 — Option A wording with **Policy 1.06** first-use parenthetical at §3 + short-form at §6.6.
+- **DP6 (locked):** Direct commit per Phase 5F Entry 1-5 precedent (no validator round).
+
+**Reference verification (deep audit per IT Director request):**
+
+All 33 Cited References pass body-cite test post-edit. All 11 Framework Alignment items confirmed NOT body-cited by identifier (placement clean). Sources verified against authoritative material in `Reference/`:
+- **CSF 2.0 (NIST CSWP 29):** All 4 GV subcategories (GV.OC-03, GV.PO-01, GV.PO-02, GV.RR-02) exist with correct semantic content. No hallucinations (#9 standing decline reflexive check clean).
+- **NIST SP 800-53 Rev. 5:** PL-1 title bug found and corrected (was 'Planning Policy and Procedures'; correct is 'Policy and Procedures'). PL-4 ✓, SI-12 ✓, PS-8 ✓.
+- **CJIS v6.0:** AC-7, IR-6, PS-3, PS-8 — all verified.
+- **COBIT 2019:** APO01.01 ✓, APO01.09 ✓, MEA03 ✓ (minor casing 'with' vs source 'With' — Phase 9 #355 candidate, not blocking).
+- **ITIL v4:** Continual Improvement Practice confirmed as Practice 5.1.2.
+
+**Cross-validator round summary:** None — direct commit per IT Director ruling following Phase 5F Entry 1–5 precedent. All changes are ticket-tracked sweep absorption (#495, #497, #523, #526, #540, #469, #532, #515, #42, #37, #39) + locked architecture (1.04 v2.0 §6.5/§6.7/§6.8/§6.9/§6.11/§6.12, 1.06 dual-anchor pattern, OMI #540 generic mechanism rule) + reference verification fixes (PL-1 title correction) + readability restructures surfaced via IT Director audit (§6.6 Written Documentation, §6.7 Statutory Awareness, §6.8 IT-Administrative Enforcement Records). No architectural surface for validator review.
+
+**Pristine-mode audit catches (4):**
+- **R1 §6.6 Written Documentation §6.8 strict violation** — IT Director surfaced via readability question; I missed during initial §6.6 walk (4 blended obligations).
+- **R2 §6.7 Statutory Awareness readability** — IT Director surfaced; 8-statute inline list converted to bold-label parent + sub-bullets.
+- **R3 §6.8 IT-Administrative Enforcement Records readability** — IT Director surfaced; 3-LRDA-mapping inline list converted to bold-label parent + sub-bullets.
+- **F13 PL-1 title bug** — surfaced via deep reference verification against NIST SP 800-53 Rev. 5 source after IT Director challenge ('Can you verify that you did the full, deep review of all the references?').
+
+**Standing decline patterns invoked:**
+- **#9** (CSF subcategory hallucination) — reflexive verification against CSF 2.0 source; all 4 GV subcategories clean.
+- **#15** (universal cross-reference rule) — verified clean; 5.01 uses 'Section X.Y' form for intra-policy refs.
+- **#36** (CJI exception architecture preservation) — informed §6.6 CJI Exceptions split structure (substance preserved across 3 atomic sub-bullets).
+- **#37** (§4 Enforcement enumeration drift) — F8 Enforcement canonicalization stripped inline failure-mode list.
+- **#39** (by-reference architecture preservation) — F29 Policy-Specific Requirements 5.01-clause strip per dual-maintenance-with-§4-Exceptions analysis.
+- **#40** ('responsible for' non-transfer) — verified clean.
+- **#42** (§4 Enforcement firm-direction rotation) — F8 canonical form restored.
+- **#469** ('shall not' → positive) — F26 Operational Tier Controls AID renewal converted to positive form.
+
+**Status designation:** Policy 5.01 lifted from T+ v2.0 to **L v2.1** per IT Director ruling. PRISTINE walk completed against full ticket list (Phase 5F intake + manual-wide roots + standing decline reflexive checks + late-binding readability restructures).
+
+**§6.4 architectural decision inscribed:** Population × Action structural pattern resolution. Where a policy uses a level-1 categorical organization (e.g., population class) plus a level-2 sub-categorical organization (e.g., action category), and the §6.8 strict 1:1 split requirement applies to level-2 bullets, the bold-label Standard paragraph pattern (1.04 §6.11) for the level-1 organization frees the depth budget so level-2 splits land within §6.12's two-level nesting limit. This pattern is now corpus-precedent for any future policy with similar structural needs.
+
+**No new ripples filed.** Two 1.06 ripples (#541, #542) were filed mid-session per dedicated 1.06 dependency analysis; tracked under 1.06's open ticket queue, not 5.01's.
+
+**Phase 5F state at Entry 6 close:** 6 of N PRISTINE entries complete (1.01, Front Matter, 1.02, 1.03, 1.05, 5.01). Next session target: TBD per IT Director sequencing.
+
+[Archive: TBD]
+
+---
+
 ### Phase 7 — Chapter 6 Appendices (provisional)
 
 **Goal:** Complete 6.01 Glossary at content level. Establish skeleton-only scaffolding for 6.02, 6.03, and 6.04 — the content for these three appendices is populated in Phase 9 (6.02, 6.03 from matrix outputs) or Phase 10 (6.04 from declaration). Completing 6.02/6.03 content at Phase 7 is prohibited; the N-wise analysis required to populate them correctly runs only in Phase 9.
