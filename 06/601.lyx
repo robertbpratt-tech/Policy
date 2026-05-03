@@ -472,6 +472,15 @@ CI
 
 \series bold
 \lang english
+CJA
+\series default
+ See Criminal Justice Agency.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
 CJI
 \series default
  See Criminal Justice Information.
@@ -715,6 +724,32 @@ nolink "false"
 
 \series default
 .
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\lang english
+Criminal
+\begin_inset space ~
+\end_inset
+
+Justice
+\begin_inset space ~
+\end_inset
+
+Agency
+\begin_inset space ~
+\end_inset
+
+(CJA)
+\series default
+ A government agency authorized under federal or state law to receive Criminal Justice Information for the administration of criminal justice.
+ Examples include law enforcement agencies,
+ prosecutors' offices,
+ courts,
+ and corrections agencies.
+ Defined in the FBI Criminal Justice Information Services Security Policy v6.0.
 \end_layout
 
 \begin_layout Description
