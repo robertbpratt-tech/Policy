@@ -261,7 +261,7 @@ State key: **L** = Locked / PRISTINE (full ticket-list walked and applied), **T*
 | # | Title | State | Ver | Open | Tickets |
 |---|---|---|---|---|---|
 | 1.01 | Mission and Strategic Objectives | L | v1.1, May 02 | 0 | — |
-| 1.02 | Code of Ethics | T+ | v2.3, April 29 | 1 | #491 |
+| 1.02 | Code of Ethics | L | v2.4, May 02 | 0 | — |
 | 1.03 | Standard Operating Ethos | T+ | v2.1, April 29 | 2 | #486, #492 |
 | 1.04 | Formatting Standards | L | v2.0, May 02 | 0 | — |
 | 1.05 | Policy Review and Update Procedures | T+ | v2.3, April 29 | 4 | #495, #502, #508, #509 |
@@ -1063,6 +1063,53 @@ Second Phase 5F per-policy patch-bump execution. Front Matter was T state with 0
 **Status designation:** Front Matter lifted from T to **L** per IT Director ruling. PRISTINE walk completed against current 1.04 v2.0 standard with citation accuracy verified against authoritative `Reference/` PDFs.
 
 **Open ripples filed:** None. No per-policy targets touched. The Glossary-bold-applied-to-Front-Matter-by-analogy decision is documented here for audit trail.
+
+---
+
+### Phase 5F Entry 3 — Policy 1.02 PRISTINE (May 02, 2026)
+
+**Policy 1.02 (Code of Ethics and Professional Conduct) T+ v2.3 → L v2.4** (commit `680f234d`).
+
+Third Phase 5F per-policy patch-bump execution. Walked against full ticket list per IT Director PRISTINE directive (May 02, 2026). Eighteen findings inventoried (eight MUST, ten SHOULD/adjudicate); all resolved per IT Director rulings Q1–Q6 + F-6.
+
+**Tickets touched (3 — all remain open for non-1.02 targets):** #491 (D9+D10 §2 structure additions — 1.02 line item closed via comment, 7 other policies still in scope); #208 (manual-wide group identifier sweep — 1.02 line item closed; 1.02 was originating policy for canonical "All Information Operations Personnel" form); #532 (manual-wide bold-on-first-use Glossary sweep — 1.02 line item closed via comment with 6 first-use bold targets).
+
+**Tickets closed:** 0 (1.02's only column ticket was #491 which is a sweep parent; 1.02 line item closed but ticket stays open for the other 7 policies in scope).
+
+**Substantive transitions (eighteen findings, by category):**
+
+- **§2 Scope rebuild (F-1, #491):** D10 simple-policy exemption revoked per IT Director ruling May 1, 2026. Universal applicability sentence tightened to drop `Elko County` prefix per institutional canonical short form (1.04 v2.0 §2 precedent + #208 spirit). Added In Scope (4 items: professional conduct standards / ethical decision-making / stewardship / conflict-of-interest) and Out of Scope (4 items, Rule #2-compliant: HR discipline / 1.11 data classification / 5.01 enforcement+exceptions+acknowledgment / 5.07 review+maturity).
+- **§3 dual-maintenance strips (F-2, F-3, standing decline #39):** IT Director sub-bullet 1 chained "annual review of this policy AND adjudicate ethical conflicts" → collapsed to single directive "Shall adjudicate ethical conflicts that cannot be resolved at the staff level." Annual-review piece dropped — dual-maintained with 1.05 §3 ("Shall conduct or coordinate the annual internal review of each policy") + 5.07 §6.1. All IO Personnel sub-bullet 1 chained "read, acknowledge, and adhere" → collapsed to single directive "Shall adhere to the professional standards adopted in Section 6.1." Acknowledgment piece dropped — owned by 5.01 §6.5 manual-wide.
+- **§4 canonical restorations (F-7, F-8, standing declines #42 + #500):** Enforcement non-canonical "shall be addressed through the corrective action framework defined in Policy 5.01" → canonical "Non-compliance may result in corrective actions defined under Policy 5.01." Exact match to standing decline #42 surface form (1.01 v1.1 R1 promotion); Pristine catch absorbed without validator round. Exceptions under-specified compact form → Q7 Standard canonical with documentation/written-approval/IT-Director-as-approver content.
+- **§4 inline-restatement strip (F-10, standing decline #39):** Assessment sentence 2 ("All Information Operations Personnel shall acknowledge this policy upon hire and annually thereafter in accordance with the acknowledgment program defined in Policy 5.01") stripped — directive misplaced in §4, dual-maintained with 5.01 §6.5.
+- **§4 criminal-referral drop (F-16, IT Director Q2 ruling):** Enforcement second sentence ("Violations involving misuse of CJIS data or County assets may result in criminal referral under NRS 205 (Computer Crimes) and applicable federal law") dropped entirely. 5.01 owns escalation pathways including criminal referral; inline restatement created standing decline #39 territory plus exhaustive-list audit risk (auditor reading the listed authorities as the complete set of criminal exposure would miss NRS 281A penalties + federal CJIS / 18 U.S.C. exposure). NRS 205 also dropped from §5 Cited References (no longer body-cited).
+- **§5 CJIS Section-word strip (F-11, §6.11 E1):** Framework Alignment `CJIS Security Policy v6.0: Section PS-8 (Personnel Sanctions)` → `CJIS Security Policy v6.0: PS-8 (Personnel Sanctions)`. Pristine catch — missed by §5 audit's #510 (5-policy scope) and #512 (1.10-only sweep). 1.02 had v6.0 control identifier (PS-8) with legacy `Section` prefix; §6.11 E1 amendment (locked May 02 with #515) prohibits the `Section` word.
+- **§5 NRS citation grain (F-12, IT Director Q4-final ruling):** `NRS 281A (Ethics in Government)` → `NRS 281A.400 (Code of Ethical Standards)`. IT Director ruled "no deferrals" against initial #355-deferral proposal. Web-verified May 02, 2026 against `https://www.leg.state.nv.us/nrs/nrs-281a.html` and Justia 2023 NRS Chapter 281A — NRS 281A.400 is current and in force; sub-chapter heading "Code of Ethical Standards" chosen as auditor-informative topic descriptor over literal section title "General requirements; exceptions" per §6.11 "Short Topic Description" interpretive scope. §6.3 Rationale body-cite synchronized to match.
+- **§6 Glossary first-use bolding (F-13, #532):** Six first-use bolds applied per 1.04 §6.14 / 6.01 v2.0 canonical term set: **Elko County Information Operations** (§1, spelled-form 3-word span), **Criminal Justice Information (CJI)** (§3, full spelled-form-with-acronym span), **PII** / **PHI** / **CJIS** (§6.4, individual acronyms — first in-body occurrences), **NRS** (§6.3 Rationale, acronym only).
+- **§6.1 voice tightening (F-17, IT Director Q3 ruling):** Opening reframed to "The Elko County Information Operations Department formally adopts..." — full institutional formal name; couples with #532 first-use bold above.
+- **§6.2 multi-directive split (F-4, #526 51-site expansion):** User-Centered Service inline blend → bold-label parent + 2 atomic sub-bullets (positive directive + prohibition).
+- **§6.2 Representation `shall not` → positive form (F-9, #469, IT Director Q1 ruling):** "Personnel shall not express personal opinions as official County positions...unless explicitly authorized" → "Personnel shall confine public statements regarding County technology and County positions to communications that have been authorized by the County Manager or IT Director." Positive authorization-gate form replaces negative-with-conditional.
+- **§6.3 multi-directive split + ambiguity tighten (F-5, #526):** Vendor Interaction inline blend → bold-label parent + 2 atomic sub-bullets. "if applicable" ambiguity replaced with "in accordance with County travel and reimbursement policy."
+- **§6.4 multi-directive split + redundant-sentence strip (F-6, #526, IT Director ruling on F-6):** Confidentiality inline blend → bold-label parent + 2 atomic sub-bullets. "Curiosity is not a valid reason for accessing data" sentence stripped per IT Director ruling — redundant with the access-only-for-business-duties rule and "feels sort of like a direct attack." Replaced with positive-form access constraint: "Personnel shall access sensitive data only for specific business duties."
+
+**Cross-validator round summary:** None — direct commit per IT Director ruling. Pristine session: maximum-scope-default ticket walk + adjudication + commit. No architectural surface for validator review (all changes are either ticket-tracked sweep absorption, locked architecture restoration, or audit-missed Pristine catches).
+
+**Pristine-mode audit misses caught (2):**
+1. **F-11 §5 CJIS Section-word:** §5 audit's D30.1 ticket #512 was scoped only to 1.10. 1.02's parallel `Section PS-8` defect was missed. Pristine maximum-scope-default checked §6.11 E1 amendment compliance against current 1.02 source and caught it.
+2. **F-7 §4 Enforcement #42 surface:** Standing decline #42 was promoted at 1.01 v1.1 R1 (May 02 same day, hours earlier). The exact same non-canonical phrasing was present in 1.02 v2.3 and not flagged by any Phase 5F ticket. Pattern-matching against the just-promoted #42 caught it.
+
+These two catches demonstrate the substantive value of the Pristine maximum-scope-default posture beyond per-section audit ticket walks.
+
+**Standing decline patterns added:** None. Three existing patterns invoked:
+- **#39** (by-reference architecture preservation) — informed F-2, F-3, F-10 inline-restatement strips. Three independent applications in one session reinforce the pattern's manual-wide reach.
+- **#42** (§4 Enforcement firm-direction rotation) — F-7 confirms #42's canonical "may result in" form by restoring it from the exact non-canonical phrasing that promoted #42 at 1.01 v1.1 R1 the same day.
+- **#40** (responsible-for non-transfer pattern) — no hits in 1.02.
+
+**Status designation:** Policy 1.02 lifted from T+ to **L** per IT Director ruling. PRISTINE walk completed against full ticket list (Phase 5F intake + manual-wide roots + standing decline reflexive checks).
+
+**Open ripples filed:** None. All identified inline-restatement strips are 1.02-internal — they remove dual-maintenance with 1.05 / 5.01 / 5.07 by deletion, not by adding obligations elsewhere.
+
+[Archive: #534]
 
 ---
 
